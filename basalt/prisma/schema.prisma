@@ -1,0 +1,177 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String
+  password      String
+  bio           String?
+  avatar        String?
+  monthlyBudget Float     @default(0)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Votes given by this user
+  votesGiven    Vote[]    @relation("VotesGiven")
+
+  // Votes received by this user (from other users delegating to them)
+  votesReceived Vote[]    @relation("VotesReceived")
+
+  // Problems created by this user
+  problems      Problem[]
+
+  // Solutions created by this user
+  solutions     Solution[]
+
+  // Users this user follows
+  following     Follow[]  @relation("Following")
+
+  // Users following this user
+  followers     Follow[]  @relation("Followers")
+
+  // Funding allocations
+  fundingAllocations FundingAllocation[]
+
+  // Vote allocations per month
+  voteAllocations VoteAllocation[]
+
+  // Onboarding status
+  onboardingCompleted Boolean @default(false)
+}
+
+model Problem {
+  id          String    @id @default(cuid())
+  title       String
+  description String
+  category    String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  createdBy   User      @relation(fields: [createdById], references: [id])
+  createdById String
+
+  // Votes received by this problem
+  votesReceived Vote[]  @relation("ProblemVotes")
+
+  // Solutions addressing this problem
+  solutions   Solution[]
+
+  // Funding allocations
+  fundingAllocations FundingAllocation[]
+}
+
+model Solution {
+  id          String    @id @default(cuid())
+  title       String
+  description String
+  website     String?
+  category    String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  createdBy   User      @relation(fields: [createdById], references: [id])
+  createdById String
+
+  // Problem this solution addresses
+  problem     Problem?  @relation(fields: [problemId], references: [id])
+  problemId   String?
+
+  // Votes received by this solution
+  votesReceived Vote[]  @relation("SolutionVotes")
+
+  // Funding allocations
+  fundingAllocations FundingAllocation[]
+}
+
+model Vote {
+  id          String    @id @default(cuid())
+  amount      Int       // Number of votes allocated
+  month       String    // Format: "YYYY-MM"
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  // User who gave this vote
+  fromUser    User      @relation("VotesGiven", fields: [fromUserId], references: [id])
+  fromUserId  String
+
+  // Target user (if delegating to another user)
+  toUser      User?     @relation("VotesReceived", fields: [toUserId], references: [id])
+  toUserId    String?
+
+  // Target problem (if voting for a problem)
+  toProblem   Problem?  @relation("ProblemVotes", fields: [toProblemId], references: [id])
+  toProblemId String?
+
+  // Target solution (if voting for a solution)
+  toSolution  Solution? @relation("SolutionVotes", fields: [toSolutionId], references: [id])
+  toSolutionId String?
+
+  @@unique([fromUserId, toUserId, month])
+  @@unique([fromUserId, toProblemId, month])
+  @@unique([fromUserId, toSolutionId, month])
+}
+
+model VoteAllocation {
+  id          String    @id @default(cuid())
+  userId      String
+  month       String    // Format: "YYYY-MM"
+  totalVotes  Int       @default(100)
+  usedVotes   Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  user        User      @relation(fields: [userId], references: [id])
+
+  @@unique([userId, month])
+}
+
+model FundingAllocation {
+  id          String    @id @default(cuid())
+  amount      Float     // Amount of funding
+  month       String    // Format: "YYYY-MM"
+  enabled     Boolean   @default(true) // Can opt-out of funding on specific nodes
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  // User who is funding
+  fromUser    User      @relation(fields: [fromUserId], references: [id])
+  fromUserId  String
+
+  // Target user (if funding flows to another user)
+  toUserId    String?
+
+  // Target problem (if funding flows to a problem)
+  toProblem   Problem?  @relation(fields: [toProblemId], references: [id])
+  toProblemId String?
+
+  // Target solution (if funding flows to a solution)
+  toSolution  Solution? @relation(fields: [toSolutionId], references: [id])
+  toSolutionId String?
+
+  @@unique([fromUserId, toUserId, month])
+  @@unique([fromUserId, toProblemId, month])
+  @@unique([fromUserId, toSolutionId, month])
+}
+
+model Follow {
+  id          String    @id @default(cuid())
+  createdAt   DateTime  @default(now())
+
+  follower    User      @relation("Following", fields: [followerId], references: [id])
+  followerId  String
+
+  following   User      @relation("Followers", fields: [followingId], references: [id])
+  followingId String
+
+  @@unique([followerId, followingId])
+}
