@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szczury z Kamieńca</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #1a1a2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: monospace;
+            overflow: hidden;
+            image-rendering: pixelated;
+        }
+        #gameContainer {
+            position: relative;
+            width: 960px;
+            height: 640px;
+        }
+        canvas {
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            display: block;
+        }
+        #gameCanvas {
+            position: absolute;
+            top: 0; left: 0;
+            width: 960px;
+            height: 640px;
+        }
+        #uiCanvas {
+            position: absolute;
+            top: 0; left: 0;
+            width: 960px;
+            height: 640px;
+            pointer-events: none;
+        }
+        #menuOverlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 960px;
+            height: 640px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="480" height="320"></canvas>
+        <canvas id="uiCanvas" width="480" height="320"></canvas>
+        <canvas id="menuOverlay" width="480" height="320"></canvas>
+    </div>
+    <script src="src/utils.js"></script>
+    <script src="src/map.js"></script>
+    <script src="src/sprites.js"></script>
+    <script src="src/characters.js"></script>
+    <script src="src/rats.js"></script>
+    <script src="src/items.js"></script>
+    <script src="src/ai.js"></script>
+    <script src="src/ui.js"></script>
+    <script src="src/game.js"></script>
+</body>
+</html>
