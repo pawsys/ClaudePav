@@ -3,309 +3,370 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dig Text</title>
+  <title>Dig.txt</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: Georgia, 'Times New Roman', serif;
-      background: #fff;
+      background: #f2ede4;
       color: #1a1a1a;
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
-    /* ── Header ── */
-    header {
-      background: #e03;
-      color: #fff;
-      padding: 10px 24px;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 0.05em;
+    /* ── Top nav ── */
+    nav.topnav {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 16px;
+      padding: 22px 48px;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
     }
-    header .logo {
+    nav.topnav .brand {
+      font-family: 'Arial Black', Arial, sans-serif;
       font-size: 15px;
-      line-height: 1.2;
-      border: 2px solid #fff;
-      padding: 4px 8px;
-      text-align: center;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #1a1a1a;
     }
-    header nav { display: flex; gap: 20px; font-size: 12px; font-weight: normal; }
-    header nav a { color: #fff; text-decoration: none; }
-    header nav a:hover { text-decoration: underline; }
+    nav.topnav .tagline {
+      font-family: Georgia, serif;
+      font-size: 14px;
+      color: #888;
+      font-style: normal;
+    }
 
-    /* ── Article wrapper ── */
+    /* ── Page layout ── */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ── Article ── */
     .article {
-      max-width: 680px;
-      margin: 40px auto;
-      padding: 0 24px 80px;
+      padding: 56px 0 80px;
     }
 
     .article-meta {
       font-family: Arial, sans-serif;
-      font-size: 12px;
-      color: #777;
-      margin-bottom: 24px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .article h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: 1.25;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #888;
       margin-bottom: 16px;
     }
 
-    .article h2.subtitle {
-      font-size: 1.15rem;
-      font-style: italic;
-      font-weight: normal;
-      color: #333;
-      margin-bottom: 24px;
+    .article h1 {
+      font-size: 2.6rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #111;
     }
 
-    .article p {
-      margin-bottom: 18px;
-      font-size: 1rem;
+    .article .subtitle {
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 36px;
+      line-height: 1.5;
+    }
+
+    .article hr {
+      border: none;
+      border-top: 1px solid rgba(0,0,0,0.15);
+      width: 48px;
+      margin-bottom: 36px;
     }
 
     /* ── Collapse-all toolbar ── */
     .toolbar {
       display: flex;
       justify-content: flex-end;
-      margin-bottom: 12px;
-      min-height: 24px;
+      margin-bottom: 20px;
+      min-height: 20px;
     }
-
     #collapseAllBtn {
       display: none;
       font-family: Arial, sans-serif;
       font-size: 11px;
-      font-weight: bold;
-      letter-spacing: 0.08em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       background: none;
-      border: 1px solid #999;
-      border-radius: 3px;
-      padding: 4px 10px;
+      border: none;
       cursor: pointer;
-      color: #555;
+      color: #888;
+      padding: 0;
     }
-    #collapseAllBtn:hover { background: #f0f0f0; }
+    #collapseAllBtn:hover { color: #111; }
     #collapseAllBtn.visible { display: inline-block; }
 
-    /* ── Inline expand toggle button ── */
+    /* ── Body text ── */
+    #articleBody p {
+      font-size: 1.1rem;
+      margin-bottom: 24px;
+      color: #222;
+    }
+
+    /* ── Toggle button ── */
     .dig-toggle {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
-      border: 1.5px solid #555;
+      border: 1px solid #999;
       background: none;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1;
-      color: #555;
+      color: #777;
       vertical-align: middle;
-      margin: 0 2px;
+      margin: 0 1px;
       padding: 0;
-      transition: background 0.15s, color 0.15s;
       font-family: Arial, sans-serif;
+      transition: border-color 0.1s, color 0.1s, background 0.1s;
+      flex-shrink: 0;
     }
-    .dig-toggle:hover { background: #eee; }
+    .dig-toggle:hover {
+      border-color: #333;
+      color: #333;
+    }
     .dig-toggle.open {
-      background: #222;
-      border-color: #222;
-      color: #fff;
+      background: #333;
+      border-color: #333;
+      color: #f2ede4;
     }
 
     /* ── Expanded inline content ── */
     .dig-content {
       display: none;
-      background: #f0f0f0;
-      border-radius: 2px;
-      padding: 1px 3px;
+      background: rgba(0,0,0,0.07);
+      border-radius: 3px;
+      padding: 1px 4px;
     }
     .dig-content.open { display: inline; }
 
-    /* ── Demo editor section ── */
+    /* ── Divider ── */
+    .section-divider {
+      border: none;
+      border-top: 1px solid rgba(0,0,0,0.15);
+      margin: 0 0 48px;
+    }
+
+    /* ── What is dig.txt section ── */
+    .about {
+      padding-bottom: 80px;
+    }
+    .about h3 {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 16px;
+    }
+    .about p {
+      font-size: 1.05rem;
+      color: #444;
+      max-width: 600px;
+      line-height: 1.75;
+    }
+
+    /* ── Editor section ── */
     .editor-section {
-      max-width: 680px;
-      margin: 0 auto 60px;
-      padding: 0 24px;
+      border-top: 1px solid rgba(0,0,0,0.15);
+      padding: 48px 0 80px;
     }
     .editor-section h3 {
       font-family: Arial, sans-serif;
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #777;
-      margin-bottom: 12px;
-    }
-    .editor-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-    .editor-pane label {
-      font-family: Arial, sans-serif;
       font-size: 11px;
-      font-weight: bold;
-      color: #999;
-      display: block;
-      margin-bottom: 6px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-    textarea#digInput {
-      width: 100%;
-      height: 220px;
-      font-family: 'Courier New', monospace;
-      font-size: 13px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 10px;
-      resize: vertical;
-      line-height: 1.6;
-    }
-    #livePreview {
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 10px 14px;
-      min-height: 220px;
-      font-size: 14px;
-      line-height: 1.7;
-      background: #fafafa;
+      color: #888;
+      margin-bottom: 8px;
     }
     .syntax-hint {
       font-family: 'Courier New', monospace;
       font-size: 12px;
-      background: #f5f5f5;
-      border: 1px solid #e0e0e0;
-      border-radius: 4px;
-      padding: 10px 14px;
-      margin-bottom: 16px;
-      color: #555;
+      color: #777;
+      margin-bottom: 20px;
     }
-    .syntax-hint strong { color: #c00; }
+    .syntax-hint strong { color: #c44; }
+    .editor-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .editor-pane label {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #aaa;
+      display: block;
+      margin-bottom: 8px;
+    }
+    textarea#digInput {
+      width: 100%;
+      height: 240px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      border: 1px solid rgba(0,0,0,0.18);
+      border-radius: 4px;
+      padding: 12px;
+      resize: vertical;
+      line-height: 1.65;
+      background: rgba(255,255,255,0.6);
+      color: #222;
+    }
+    textarea#digInput:focus {
+      outline: none;
+      border-color: rgba(0,0,0,0.35);
+    }
+    #livePreview {
+      border: 1px solid rgba(0,0,0,0.18);
+      border-radius: 4px;
+      padding: 12px 16px;
+      min-height: 240px;
+      font-size: 1rem;
+      line-height: 1.75;
+      background: rgba(255,255,255,0.6);
+      color: #222;
+    }
+    #livePreview p { margin-bottom: 14px; }
   </style>
 </head>
 <body>
 
-<!-- ── Header ── -->
-<header>
-  <div class="logo">The<br>Economist</div>
-  <nav>
-    <a href="#">Topics ▾</a>
-    <a href="#">Print edition</a>
-    <a href="#">More ▾</a>
-  </nav>
-</header>
+<nav class="topnav">
+  <span class="brand">Dig.txt</span>
+  <span class="tagline">Progressive reading</span>
+</nav>
 
-<!-- ── Article ── -->
-<div class="article">
-  <div class="article-meta">
-    <span>The Economist explains &rsaquo; Jun 6th 2017 | by J.P. | BEIJING</span>
-  </div>
+<div class="page">
 
-  <h1>China's reluctance to gay rights</h1>
-  <h2 class="subtitle">Despite a historically relaxed view of homosexuality, China seems reluctant to embrace gay rights</h2>
+  <!-- ── Article ── -->
+  <div class="article">
+    <div class="article-meta">The Economist Explains &middot; Jun 6th 2017</div>
+    <h1>China's reluctance to gay rights</h1>
+    <p class="subtitle">Despite a historically relaxed view of homosexuality, China seems reluctant to embrace gay rights</p>
+    <hr>
 
-  <div class="toolbar">
-    <button id="collapseAllBtn">&#x2715; COLLAPSE ALL</button>
-  </div>
-
-  <div id="articleBody"></div>
-</div>
-
-<!-- ── Live editor ── -->
-<div class="editor-section">
-  <h3>Try it — Dig Text editor</h3>
-  <div class="syntax-hint">
-    Wrap expandable detail in <strong>&gt;&gt;</strong> &hellip; <strong>&lt;&lt;</strong><br>
-    Example: <code>Taiwan >>On May 24th the court ruled in favour.<&lt;&lt; , China proved...</code>
-  </div>
-  <div class="editor-row">
-    <div class="editor-pane">
-      <label>Source (.dig)</label>
-      <textarea id="digInput" spellcheck="false"></textarea>
+    <div class="toolbar">
+      <button id="collapseAllBtn">&#x2715;&nbsp; Collapse all</button>
     </div>
-    <div class="editor-pane">
-      <label>Rendered</label>
-      <div id="livePreview"></div>
+
+    <div id="articleBody"></div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ── About ── -->
+  <div class="about">
+    <h3>What is Dig.txt?</h3>
+    <p>Dig.txt presents text in its most collapsed form by default. Click the <button class="dig-toggle" style="pointer-events:none;display:inline-flex;">+</button> buttons to expand sections you find valuable or interesting. This reverses the traditional approach of showing everything at once, letting you dig into the depth you choose.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ── Editor ── -->
+  <div class="editor-section">
+    <h3>Try it &mdash; write your own</h3>
+    <p class="syntax-hint">Wrap detail in <strong>&gt;&gt;</strong> &hellip; <strong>&lt;&lt;</strong> &nbsp;&mdash;&nbsp; nesting works too: <strong>&gt;&gt;</strong>outer <strong>&gt;&gt;</strong>inner<strong>&lt;&lt;</strong> end<strong>&lt;&lt;</strong></p>
+    <div class="editor-row">
+      <div class="editor-pane">
+        <label>Source</label>
+        <textarea id="digInput" spellcheck="false"></textarea>
+      </div>
+      <div class="editor-pane">
+        <label>Rendered</label>
+        <div id="livePreview"></div>
+      </div>
     </div>
   </div>
-</div>
+
+</div><!-- /page -->
 
 <script>
 // ─────────────────────────────────────────────
-//  Dig Text parser & renderer
+//  Recursive parser — handles nested >> … <<
 // ─────────────────────────────────────────────
 
-let expandCount = 0; // tracks how many sections are currently open
-
-/**
- * Parse a dig-text string into an array of tokens:
- *   { type: 'text', value }
- *   { type: 'dig',  id, content }
- */
 function parseDigText(src) {
-  const tokens = [];
-  const re = />>([\s\S]*?)<<(?!\S)/g; // >>…<< not followed by non-space
-  let last = 0;
-  let match;
-  let idx = 0;
-  while ((match = re.exec(src)) !== null) {
-    if (match.index > last) {
-      tokens.push({ type: 'text', value: src.slice(last, match.index) });
+  const nodes = [];
+  let i = 0;
+  let textStart = 0;
+
+  while (i < src.length) {
+    if (src[i] === '>' && src[i + 1] === '>') {
+      if (i > textStart) {
+        nodes.push({ type: 'text', value: src.slice(textStart, i) });
+      }
+      // find matching << accounting for nesting
+      let depth = 1;
+      let j = i + 2;
+      while (j < src.length && depth > 0) {
+        if (src[j] === '>' && src[j + 1] === '>') { depth++; j += 2; }
+        else if (src[j] === '<' && src[j + 1] === '<') { depth--; j += 2; }
+        else j++;
+      }
+      const innerSrc = depth === 0 ? src.slice(i + 2, j - 2) : src.slice(i + 2);
+      nodes.push({ type: 'dig', children: parseDigText(innerSrc) });
+      i = j;
+      textStart = i;
+    } else {
+      i++;
     }
-    tokens.push({ type: 'dig', id: 'dig-' + (idx++), content: match[1] });
-    last = re.lastIndex;
   }
-  if (last < src.length) {
-    tokens.push({ type: 'text', value: src.slice(last) });
+
+  if (textStart < src.length) {
+    nodes.push({ type: 'text', value: src.slice(textStart) });
   }
-  return tokens;
+  return nodes;
 }
 
-/** Render tokens into a DocumentFragment */
-function renderTokens(tokens) {
-  const frag = document.createDocumentFragment();
-  tokens.forEach(tok => {
-    if (tok.type === 'text') {
-      frag.appendChild(document.createTextNode(tok.value));
+// ─────────────────────────────────────────────
+//  Renderer
+// ─────────────────────────────────────────────
+
+let digIdCounter = 0;
+let expandCount = 0;
+
+function renderNodes(nodes, container) {
+  nodes.forEach(node => {
+    if (node.type === 'text') {
+      container.appendChild(document.createTextNode(node.value));
     } else {
-      // Toggle button ⊕ / ⊗
+      const id = 'dig-' + (digIdCounter++);
+
       const btn = document.createElement('button');
       btn.className = 'dig-toggle';
       btn.setAttribute('aria-expanded', 'false');
-      btn.setAttribute('aria-controls', tok.id);
+      btn.setAttribute('aria-controls', id);
       btn.textContent = '+';
       btn.title = 'Expand';
 
-      // Hidden content span
       const span = document.createElement('span');
       span.className = 'dig-content';
-      span.id = tok.id;
-      span.textContent = tok.content;
+      span.id = id;
+      renderNodes(node.children, span); // recursive
 
       btn.addEventListener('click', () => toggleDig(btn, span));
 
-      frag.appendChild(btn);
-      frag.appendChild(span);
+      container.appendChild(btn);
+      container.appendChild(span);
     }
   });
-  return frag;
 }
 
 function toggleDig(btn, span) {
@@ -326,30 +387,30 @@ function updateCollapseAll() {
 }
 
 document.getElementById('collapseAllBtn').addEventListener('click', () => {
-  document.querySelectorAll('.dig-content.open').forEach(span => {
+  // only collapse article sections, not preview
+  document.querySelectorAll('#articleBody .dig-content.open').forEach(span => {
     const btn = document.querySelector(`[aria-controls="${span.id}"]`);
     if (btn) toggleDig(btn, span);
   });
 });
 
 // ─────────────────────────────────────────────
-//  Article source (Economist demo)
+//  Article
 // ─────────────────────────────────────────────
 
-const articleSource = `In the context of the recent legal changes in Taiwan >>On May 24th Taiwan's highest court ruled in favour of gay rights and marriage equality. The court ruled that marriage should not be limited to a man and a woman and ordered parliament either to change the law or award marriage rights to gay couples within two years. China reacted with surprising indifference and only one newspaper took notice. <<, China proved once more that it is reluctant to embrace gay rights. >>China's Communist Party does not like the public expression of rights of any kind and has squelched most discussion of gay concerns.<< This is perplexing because Chinese spiritual >>Buddhism and Taoism, China's dominant spiritual traditions, have historically shown no strong condemnation of same-sex relationships.<< and artistic tradition >>In poetry of the 9th century, usually held to be the golden age of Chinese literature, it is sometimes hard to tell whether a love poem is addressed to a woman or a man. Also China's greatest novel, "The Dream of the Red Chamber", written in the late 18th century, includes both heterosexual and same-sex relations. Among literate elites, China does not seem to have shared the strong bias evident elsewhere.<< has long been relaxed about homosexuality.
+const articleSource = `In the context of the recent legal changes in Taiwan >>On May 24th Taiwan's highest court ruled in favour of gay rights and marriage equality. The court ruled that marriage should not be limited to a man and a woman and ordered parliament either to change the law or award marriage rights to gay couples within two years. China reacted with surprising indifference and only one newspaper took notice.<<, China proved once more that it is reluctant to embrace gay rights. >>China's Communist Party does not like the public expression of rights of any kind and has squelched most discussion of gay concerns.<< This is perplexing because Chinese spiritual >>Buddhism and Taoism, China's dominant spiritual traditions, have historically shown no strong condemnation of same-sex relationships.<< and artistic tradition >>In poetry of the 9th century, usually held to be the golden age of Chinese literature, it is sometimes hard to tell whether a love poem is addressed to a woman or a man. Also China's greatest novel, "The Dream of the Red Chamber", written in the late 18th century, includes both heterosexual and same-sex relations. Among literate elites, China does not seem to have shared the strong bias evident elsewhere.<< has long been relaxed about homosexuality.
 
 Two factors contribute to this lingering disdain. 1) Traditional family values remain strong. Sons are expected to represent family's good name, and are supposed to marry and have sons. >>The pressure on young men to marry and produce male heirs is enormous in China, and can override personal feelings or sexual orientation.<< 2) China's not a democracy and forbids protest and activism, that helped establish gay rights in most countries. >>In most countries, gays have had to establish their rights by holding meetings and marches, arguing their case in the media. China's Communist Party does not like the public expression of rights of any kind and has squelched most discussion of gay concerns.<<
 
 However, Chinese attitudes are also changing. Young people are much more tolerant, which may in some time bring official perspective to the change. >>Surveys show that among urban Chinese under 30, acceptance of homosexuality has risen sharply over the past decade, approaching levels seen in many Western countries.<<`;
 
-// Render the article (paragraph-aware)
 function renderArticle(src) {
   const container = document.getElementById('articleBody');
   container.innerHTML = '';
   src.split(/\n\n+/).forEach(para => {
     if (!para.trim()) return;
     const p = document.createElement('p');
-    p.appendChild(renderTokens(parseDigText(para)));
+    renderNodes(parseDigText(para), p);
     container.appendChild(p);
   });
 }
@@ -360,23 +421,21 @@ renderArticle(articleSource);
 //  Live editor
 // ─────────────────────────────────────────────
 
-const editorDefault = `Dig Text collapses content by default >>this is the hidden detail that appears inline when you click the + button<< making articles easier to scan.
+const editorDefault = `Dig.txt collapses content by default >>this hidden detail appears inline when you click the + button<< making articles easier to scan.
 
-Try writing >>extra detail goes between >> and <<<< your own text here.`;
+Nesting works too: climate change >>is accelerating >>faster than models predicted <<, with consequences for every ecosystem on Earth.<< according to recent studies.`;
 
 const input = document.getElementById('digInput');
 const preview = document.getElementById('livePreview');
-
 input.value = editorDefault;
 
 function renderPreview() {
   preview.innerHTML = '';
-  const src = input.value;
-  src.split(/\n\n+/).forEach(para => {
+  digIdCounter = 10000; // avoid id collisions with article
+  input.value.split(/\n\n+/).forEach(para => {
     if (!para.trim()) return;
     const p = document.createElement('p');
-    p.style.marginBottom = '12px';
-    p.appendChild(renderTokens(parseDigText(para)));
+    renderNodes(parseDigText(para), p);
     preview.appendChild(p);
   });
 }
@@ -384,6 +443,5 @@ function renderPreview() {
 input.addEventListener('input', renderPreview);
 renderPreview();
 </script>
-
 </body>
 </html>
