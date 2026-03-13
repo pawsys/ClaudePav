@@ -355,7 +355,7 @@
 <body>
 
 <nav class="topnav">
-  <span class="brand" onclick="showHome()">Dig.txt</span>
+  <span class="brand" onclick="navigate(null)">Dig.txt</span>
   <span class="tagline">Progressive reading</span>
 </nav>
 
@@ -378,7 +378,7 @@
   <!-- ── Article view ── -->
   <div id="articleView" class="article-view">
     <div class="article">
-      <button class="back-link" onclick="showHome()">&larr; All articles</button>
+      <button class="back-link" onclick="navigate(null)">&larr; All articles</button>
       <div id="articleMeta" class="article-meta"></div>
       <h1 id="articleTitle"></h1>
       <p id="articleSubtitle" class="subtitle"></p>
@@ -651,6 +651,36 @@ function showArticle(index) {
   window.scrollTo(0, 0);
 }
 
+function navigate(index) {
+  if (index === null) {
+    history.pushState({ page: 'home' }, '', location.pathname);
+    showHome();
+  } else {
+    history.pushState({ page: 'article', index }, '', `#${index}`);
+    showArticle(index);
+  }
+}
+
+window.addEventListener('popstate', e => {
+  if (e.state && e.state.page === 'article') {
+    showArticle(e.state.index);
+  } else {
+    showHome();
+  }
+});
+
+// Handle initial load with hash
+(function () {
+  const hash = location.hash.slice(1);
+  const index = parseInt(hash, 10);
+  if (!isNaN(index) && articles[index]) {
+    history.replaceState({ page: 'article', index }, '', `#${index}`);
+    showArticle(index);
+  } else {
+    history.replaceState({ page: 'home' }, '', location.pathname);
+  }
+})();
+
 // ─────────────────────────────────────────────
 //  Build home screen
 // ─────────────────────────────────────────────
@@ -659,7 +689,7 @@ const listEl = document.getElementById('articleList');
 articles.forEach((a, i) => {
   const card = document.createElement('div');
   card.className = 'article-card';
-  card.onclick = () => showArticle(i);
+  card.onclick = () => navigate(i);
   card.innerHTML = `
     <div class="card-meta">${a.meta}</div>
     <div class="card-title">${a.title}</div>
