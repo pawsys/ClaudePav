@@ -29,6 +29,7 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #1a1a1a;
+      cursor: pointer;
     }
     nav.topnav .tagline {
       font-family: Georgia, serif;
@@ -44,10 +45,88 @@
       padding: 0 48px;
     }
 
+    /* ── Home screen ── */
+    .home {
+      padding: 56px 0 80px;
+    }
+    .home h2 {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 32px;
+    }
+    .article-card {
+      display: block;
+      padding: 28px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+    }
+    .article-card:first-of-type {
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    .article-card:hover {
+      background: rgba(0,0,0,0.03);
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-left: -12px;
+      margin-right: -12px;
+      border-radius: 4px;
+    }
+    .article-card .card-meta {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 6px;
+    }
+    .article-card .card-title {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.25;
+      color: #111;
+      margin-bottom: 8px;
+    }
+    .article-card .card-subtitle {
+      font-size: 1rem;
+      font-style: italic;
+      color: #666;
+      line-height: 1.5;
+    }
+
     /* ── Article ── */
+    .article-view {
+      display: none;
+    }
+    .article-view.active, .home.active {
+      display: block;
+    }
     .article {
       padding: 56px 0 80px;
     }
+
+    .back-link {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #999;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      margin-bottom: 32px;
+      display: inline-block;
+    }
+    .back-link:hover { color: #333; }
 
     .article-meta {
       font-family: Arial, sans-serif;
@@ -90,7 +169,7 @@
       margin-bottom: 20px;
       min-height: 20px;
     }
-    #collapseAllBtn {
+    .collapse-all-btn {
       display: none;
       font-family: Arial, sans-serif;
       font-size: 11px;
@@ -103,11 +182,11 @@
       color: #888;
       padding: 0;
     }
-    #collapseAllBtn:hover { color: #111; }
-    #collapseAllBtn.visible { display: inline-block; }
+    .collapse-all-btn:hover { color: #111; }
+    .collapse-all-btn.visible { display: inline-block; }
 
     /* ── Body text ── */
-    #articleBody p {
+    .article-body p {
       font-size: 1.1rem;
       margin-bottom: 24px;
       color: #222;
@@ -244,53 +323,97 @@
       color: #222;
     }
     #livePreview p { margin-bottom: 14px; }
+
+    /* ── Raw source section ── */
+    .raw-section {
+      border-top: 1px solid rgba(0,0,0,0.15);
+      padding: 48px 0 80px;
+    }
+    .raw-section h3 {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 16px;
+    }
+    .raw-source {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      line-height: 1.7;
+      color: #444;
+      white-space: pre-wrap;
+      background: rgba(255,255,255,0.5);
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 4px;
+      padding: 20px;
+      overflow-x: auto;
+    }
   </style>
 </head>
 <body>
 
 <nav class="topnav">
-  <span class="brand">Dig.txt</span>
+  <span class="brand" onclick="showHome()">Dig.txt</span>
   <span class="tagline">Progressive reading</span>
 </nav>
 
 <div class="page">
 
-  <!-- ── Article ── -->
-  <div class="article">
-    <div class="article-meta">The Economist Explains &middot; Jun 6th 2017</div>
-    <h1>China's reluctance to gay rights</h1>
-    <p class="subtitle">Despite a historically relaxed view of homosexuality, China seems reluctant to embrace gay rights</p>
-    <hr>
+  <!-- ── Home screen ── -->
+  <div id="homeScreen" class="home active">
+    <h2>Articles</h2>
+    <div id="articleList"></div>
 
-    <div class="toolbar">
-      <button id="collapseAllBtn">&#x2715;&nbsp; Collapse all</button>
+    <div style="margin-top:56px;">
+      <hr class="section-divider">
+      <div class="about">
+        <h3>What is Dig.txt?</h3>
+        <p>Dig.txt presents text in its most collapsed form by default. Click the <button class="dig-toggle" style="pointer-events:none;display:inline-flex;">+</button> buttons to expand sections you find valuable or interesting. This reverses the traditional approach of showing everything at once, letting you dig into the depth you choose.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Article view ── -->
+  <div id="articleView" class="article-view">
+    <div class="article">
+      <button class="back-link" onclick="showHome()">&larr; All articles</button>
+      <div id="articleMeta" class="article-meta"></div>
+      <h1 id="articleTitle"></h1>
+      <p id="articleSubtitle" class="subtitle"></p>
+      <hr>
+
+      <div class="toolbar">
+        <button class="collapse-all-btn" id="collapseAllBtn">&#x2715;&nbsp; Collapse all</button>
+      </div>
+
+      <div id="articleBody" class="article-body"></div>
     </div>
 
-    <div id="articleBody"></div>
-  </div>
+    <hr class="section-divider">
 
-  <hr class="section-divider">
+    <!-- ── Raw source ── -->
+    <div class="raw-section">
+      <h3>Raw source (indented)</h3>
+      <pre id="rawSource" class="raw-source"></pre>
+    </div>
 
-  <!-- ── About ── -->
-  <div class="about">
-    <h3>What is Dig.txt?</h3>
-    <p>Dig.txt presents text in its most collapsed form by default. Click the <button class="dig-toggle" style="pointer-events:none;display:inline-flex;">+</button> buttons to expand sections you find valuable or interesting. This reverses the traditional approach of showing everything at once, letting you dig into the depth you choose.</p>
-  </div>
+    <hr class="section-divider">
 
-  <hr class="section-divider">
-
-  <!-- ── Editor ── -->
-  <div class="editor-section">
-    <h3>Try it &mdash; write your own</h3>
-    <p class="syntax-hint">Wrap detail in <strong>&gt;&gt;</strong> &hellip; <strong>&lt;&lt;</strong> &nbsp;&mdash;&nbsp; nesting works too: <strong>&gt;&gt;</strong>outer <strong>&gt;&gt;</strong>inner<strong>&lt;&lt;</strong> end<strong>&lt;&lt;</strong></p>
-    <div class="editor-row">
-      <div class="editor-pane">
-        <label>Source</label>
-        <textarea id="digInput" spellcheck="false"></textarea>
-      </div>
-      <div class="editor-pane">
-        <label>Rendered</label>
-        <div id="livePreview"></div>
+    <!-- ── Editor ── -->
+    <div class="editor-section">
+      <h3>Try it &mdash; write your own</h3>
+      <p class="syntax-hint">Wrap detail in <strong>&gt;&gt;</strong> &hellip; <strong>&lt;&lt;</strong> &nbsp;&mdash;&nbsp; nesting works too: <strong>&gt;&gt;</strong>outer <strong>&gt;&gt;</strong>inner<strong>&lt;&lt;</strong> end<strong>&lt;&lt;</strong></p>
+      <div class="editor-row">
+        <div class="editor-pane">
+          <label>Source</label>
+          <textarea id="digInput" spellcheck="false"></textarea>
+        </div>
+        <div class="editor-pane">
+          <label>Rendered</label>
+          <div id="livePreview"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -298,6 +421,63 @@
 </div><!-- /page -->
 
 <script>
+// ─────────────────────────────────────────────
+//  Articles data
+// ─────────────────────────────────────────────
+
+const articles = [
+  {
+    meta: 'The Economist Explains \u00b7 Jun 6th 2017',
+    title: "China\u2019s reluctance to gay rights",
+    subtitle: 'Despite a historically relaxed view of homosexuality, China seems reluctant to embrace gay rights',
+    source: `In the context of the recent legal changes in Taiwan, >>On May 24th Taiwan\u2019s highest court ruled in favour of guy rights and marriage equality. >>The court ruled on that marriage should not be limited to a man and a woman and ordered parliament either to change the law or award marriage rights to gay couples within two years.<< China reacted with surprising indifference and only one newspaper took notice. >>English-language newspaper took notice of a decision that would be the first to legalise gay marriage in an Asian country (not counting New Zealand). The more widely read Chinese version ignored it, as did television and other news outlets.<<<< China proved once more that it\u2019s reluctant to embrace gay rights. >>Homosexuality was removed from the health ministry\u2019s list of mental disorders only in 2001. Additionally China recently banned the depiction of homosexuals on television (not that there were many in the first place.)<< This is perplexing because Chinese spiritual >>Taoism regarded sex as neither good nor bad, while Confucianism, by encouraging close relations between master and pupils, is sometimes thought to have indirectly encouraged it.<< and artistic tradition >>In poetry of the 9th century, usually held to be the golden age of Chinese literature, it is sometimes hard to tell whether a love poem is addressed to a woman or a man. Also China\u2019s greatest novel, \u201cThe Dream of the Red Chamber\u201d, written in the late 18th century, includes both heterosexual and same-sex relations. Among literate elites, China does not seem to have shared the strong bias evident elsewhere.<< has long been relaxed about homosexuality. Two factors contribute to this lingering disdain. 1) Traditional family values remain strong. Sons are expected to represent family\u2019s good name, and are supposed to marry and have sons. >>In 2016 Peking University\u2019s sociology department carried out the largest survey of attitudes to, and among, homosexuals and other sexual minorities on behalf of the UN Development Programme. It found that 58% of respondents (gay and straight) agreed with the statement that gays are rejected by their families a higher level of rejection than occurs at work or school. Fewer than 15% of homosexuals said they had come out to their families, and more than half of those who did said they had experienced discrimination as a result.<<
+
+2) China\u2019s not a democracy and forbids protest and activism, that helped establish gay rights in most countries. >>In most countries, gays have had to establish their rights by holding meetings and marches, arguing their case in the media. China\u2019s Communist Party does not like the public expression of rights of any kind and has squelched most discussion of gay concerns.<<
+
+However, Chinese attitudes are also changing. Young people are much more tolerant, which may in some time bring official perspective to the change. >>The Peking University survey revealed a big generation gap: 35% of those born before 1970 said they would reject a child who was gay; only 9% born after 1990 agreed. >>Though official media suppressed discussion of the pro gay-rights ruling in Taiwan, Weibo, China\u2019s Twitter, lit up with millions of reactions, most of them positive. Li Yinhe, a sociologist at the Chinese Academy of Social Sciences, pointed out that the average age of members of China\u2019s National People\u2019s Congress (the rubber-stamp parliament that would have to change marriage laws) is 49, at a time when the majority of people under the age of 35 approve of gay marriage. \u201cDue to the influence of Taiwan, we\u2019re 14 years away from legalising it,\u201d she concluded.<<<<<`
+  },
+  {
+    meta: 'C. Thi Nguyen \u00b7 Journal of Ethics and Social Philosophy, 2024',
+    title: 'Value Capture',
+    subtitle: 'How simplified metrics come to dominate our practical reasoning, and what we lose when they do',
+    source: `Value capture occurs when an agent\u2019s values are rich and subtle, they enter a social environment that presents simplified \u2014 typically quantified \u2014 versions of those values, and those simplified articulations come to dominate their practical reasoning. >>Examples include becoming motivated by FitBit\u2019s step counts, Twitter Likes and Retweets, citation rates, ranked lists of best schools, and Grade Point Averages. We are vulnerable to value capture because of the competitive advantage that such crisp and clear expressions of value have in our private reasoning and our public justification.<< There is a price: in value capture, we take a central component of our autonomy \u2014 our ongoing deliberation over the exact articulation of our values \u2014 and we outsource it. >>And the metrics to which we outsource are usually engineered for the interests of some external force, like a large-scale institution\u2019s interest in cross-contextual comprehensibility and quick aggregability. In value capture, we no longer adjust our values and their articulations in light of our own rich experience of the world. Our values should often be carefully tailored to our particular selves or our small-scale communities, but in value capture, we buy our values off the rack. >>In some cases \u2014 like decreasing CO2 emissions \u2014 the costs of non-tailored values are outweighed by the benefit of precise collective coordination. In other cases, like in our aesthetic lives, they are not. This suggests that we should want different values suited to different scales. We should want value federalism.<<<<<
+
+Here is a story about how metrics can change people. >>A relative had been planning a long European vacation with friends John and Shelley \u2014 touring the museums, seeing operas, having long dinners. But the entire vacation was dominated by John and Shelley\u2019s relationship with their FitBits. They wouldn\u2019t go to the opera: not enough steps. They\u2019d cancel dinner dates because they hadn\u2019t met their daily step-goals. >>My guess is that John and Shelley never consciously decided that step-counts were more important than art or friendship. The FitBit just spoke more loudly in their internal deliberation, and there was no ArtBit or FriendBit to compete. The clarity of those metrics just swamped quieter considerations.<<<< And even if fitness was your main goal, the FitBit exerts a narrowing influence. >>Exercise can be valuable in ways not measured by a FitBit \u2014 the ecstasy of complex skillful motion, the camaraderie of team sports, the meditative calm of paddling a canoe across a quiet lake, or the aesthetic loveliness of a delicate rock climbing move. A FitBit measures exactly one thing: steps. That limitation arises from what mass-produced devices can easily measure and aggregate, given present-day technologies.<< When you buy into the FitBit\u2019s preferred value system, you are outsourcing the process of value deliberation. >>You don\u2019t have to value what the FitBit measures. You could just use it as a source of data. But the FitBit presents its output not just as mere information, but as an evaluation: a score. And when you adopt its scores as your values, you gain the motivational benefits of clear feedback and competition along a well-defined scale. All you have to do is give up on having fine and detailed control over your own values.<<
+
+FitBit is just one example of a larger phenomenon. >>You start exercising for your health, but come to care about losing weight or optimizing your Body Mass Index. You go on Twitter to connect to people and have fun, but come to care more about maximizing your Like, Retweet, and Follower counts. You go into philosophy graduate school for a love of wisdom, but come out aimed at getting fancy grants, publications into highly ranked journals, and placement at a highly ranked institution. >>As anthropologist Sally Engle Merry puts it, the culture of indicators and metrics is \u201ca form of governance that engages a person in governing himself or herself in terms of standards set by others.\u201d<<<< Many of us feel an intuitive horror when contemplating cases of institutional value capture. >>But it is rather difficult to say, in a principled way, exactly why value capture is so horrifying. For one thing, value capture is often consensual. People buy FitBits precisely because they know that those step counts will motivate them; they want to be captured, because the motivational bump seems worthwhile. >>Such gamified technologies are frequently sold as a way to overcome weakness of the will, and seem to succeed at doing so. The point of a FitBit is to motivate you to walk more, and it does seem to work.<<<<<
+
+A case study: the law school rankings. >>Before the USN&WR, there were no law school rankings. Students often picked law schools through a complex process of evaluation, deliberation, and self-reflection. Different law schools pursued different missions \u2014 some tuned to academic legal research, others to the corporate world, some devoted to social activism. >>The process of choosing a law school often triggered a certain degree of soul-searching. The complex value plurality pushed students to reflect on what they wanted from their legal education and legal career.<< The rankings displaced all that. >>Once USN&WR started publishing rankings, those rankings came to dominate the choice process for most students. Many schools abandoned their original missions and re-oriented toward performance in the ranking calculations. >>What matters most to that ranking is the GPA and LSAT score of the incoming class, and the employment rate of the outgoing class.<< With prospective students, the rankings seemed to exert a magnetic pull over their values. >>Instead of exploring their own values and desires for their legal education, they seemed to presume that the process should be oriented towards getting into the \u201cbest\u201d law school, where \u201cbest\u201d is determined strictly by the rankings. The existence of that clear, vivid, objective-seeming list offers an easy substitute for the process of personal value deliberation.<<<<<<<<
+
+Value capture happens when: 1) An agent has values which are rich, subtle, or inchoate. 2) That agent is immersed in a context that presents an explicit, typically simplified and quantified, expression of some value. 3) This explicit expression comes to dominate the entity\u2019s practical reasoning. >>Or more portably: value capture happens when a person or group adopts an externally-sourced value as their own, without adapting it to their particular context.<<
+
+Value capture includes both voluntary and non-voluntary adoptions. >>It counts as value capture if you were brainwashed and an external value was injected against your will. But it equally counts if you willingly adopted that external value \u2014 because it is easier, helps you fit within your profession, or lets you avoid painful value deliberation.<< It is narrowly aimed at cases where the entity uses the external expression of value precisely as given, >>without further contouring, interpreting, or fine-tuning it. If you get the starting seed for your values from family, culture, or religion, but then tweak them to fit your personality and place in the world \u2014 that\u2019s not value capture. Value capture is when an externally-sourced value comes to dominate your practical reasoning in its given form \u2014 when your goal is simply to get to that higher ranking, those higher citation rates, those more Likes.<< And value capture can afflict groups too. >>A philosophy department can be captured by the larger university\u2019s focus on student evaluation scores. Even when a group agrees they care more about some inchoate value \u2014 like fostering curiosity \u2014 the actual day-to-day decisions end up driven by whatever clear metrics happen to be on hand. >>When the United Nations published the Human Development Index, governments worldwide became incredibly invested in advancing their ranking \u2014 even though the score wasn\u2019t attached to any concrete real-world incentives or rewards. The committee behind the HDI published lengthy qualifications about its oversimplification. Unsurprisingly, the fuller report was largely ignored.<<<<<
+
+It is not value capture if I adopt an external value in a controlled manner \u2014 as a temporary instrument, accountable to my own richer values. >>Suppose I want to get healthier. By \u201chealthy\u201d I mean something complex and textured and difficult to express. But such inchoate expressions of value are pretty hard to use in the rush of daily life. I can pick a heuristic, like increasing step counts, as a quick-and-easy decision procedure. >>But such heuristics aren\u2019t supposed to supplant our fuller values entirely. After a few months, I step back and reflect: has pursuing step-counts made me happier? Is my body performing better? Perhaps the answer is affirmative and I keep going; perhaps it\u2019s negative and I try some other proxy goal. This controlled use of a proxy value is not value capture, since the externally-sourced value doesn\u2019t dominate my deliberative procedure. The FitBit is not in charge.<< Similarly, it isn\u2019t value capture when I merely take metrics into account in pursuit of my own rich goal. >>I know going to a high-ranked law school will be important for influence. I\u2019ll pay attention to rankings but they don\u2019t dominate my reasoning. I won\u2019t just go to the highest ranked school possible \u2014 I\u2019ll find a compromise between a well-ranked school and one that helps me learn the activist work I want to do.<<<<<
+
+Value capture can also be \u201capplication capture\u201d \u2014 where the external value dominates not how we conceive of our values in the abstract, but how we apply them day-to-day. >>Say I care about truth, wisdom, and understanding. But whenever I evaluate my articles\u2019 success, I turn to citation rates or the status of the publication venue on some ranked list. Those institutional metrics, not my vaguer values, effectively dominate my actual actions and self-evaluation. >>There is a crucial difference between controlled proxy use and application capture. When we use a metric as a mere proxy, our richer values are in charge. We regularly reflect on the proxy from the perspective of our fuller values. In application capture, we let the proxy take charge \u2014 it functions as the effective translator connecting our abstract values into specific evaluations.<< Many cases of value capture start as innocuous-seeming uses of a proxy. >>Many people say they put on a FitBit to pursue some other goal, like health or happiness, but then years later found that they had forgotten about that larger goal \u2014 that doing well in the FitBit\u2019s terms had come to occlude all else.<<<<<
+
+If you want a slogan: our values should be tailored to our particular selves and our particular context \u2014 but in value capture, we buy our values off-the-rack.
+
+What, then, is the cost of outsourcing one\u2019s values? >>Value capture, as with any form of outsourcing, involves a trade-off between efficiency and fine-tuning. I think we are often clear on the benefits but fail to plainly see the costs.<< Value self-determination yields values that are finely tuned to our particular context. >>By substantively participating in formulating our values, we can get values that nicely fit our particular circumstances \u2014 our individual psychologies, our group culture, our local context. Value capture intrudes on that process of value self-determination, substituting pre-fabricated and standardized values for finely tailored ones.<<
+
+Here is an example from my own life. >>For the first two decades of life, I avoided most physical activity. I had an incredibly simplistic conception of the value of exercise \u2014 basically pounding out some miles on a treadmill to burn calories. Eventually, I took a long meandering journey through many different sports, each paying off in profoundly different ways. >>Long-distance running turns out to be zen-like and calming. Trail-running offers a thrilling sense of reactive flow. Deadlifting is brutal and intense, a pure shot of grueling focus. Rock climbing is a fascinating fusion of bodily aesthetics and puzzle-solving. >>And even inside rock climbing, there isn\u2019t one singular value. You can seek thrills and risk; do easy climbs in rapturously beautiful terrain; focus on finding climbs with graceful movement; or go for gruelingly athletic climbs on a cave roof eight feet off the ground. Each different way of valuing suggests a different approach, which yields richly different textures of activity.<<<<<<<< When you are value-captured by a FitBit, you don\u2019t go through that process of exploration and fine-tuning. >>FitBit presents its step-counts as a score. It is a gamified system that doesn\u2019t force value capture, but certainly invites it.<<
+
+Elijah Millgram offers a useful account of how we adapt and improve our values. >>We acquire our particular values via a process of practical induction. We try on particular goals and values for awhile, then get feedback from the experience of living life under that value system. >>Positive feedback: feeling engaged, happy, interested; we find ourselves savoring the details of our life. Negative feedback: feeling bored, listless, disengaged. This is feedback about the fit between the values we have adopted and the particular circumstances of our lives: our personality, our culture, our place in society.<< When we tailor our values in light of our rich experience, those adjusted values will be better suited to support a more emotionally positive life. >>But in institutional value capture, we do not adjust our values in light of our particular experiences. We take values as provided by some large-scale institution. Those values will have been formulated to take deeply into account various institutional interests \u2014 like the ability to be counted reliably across a large institution, and the ability to be readily aggregated in a bureaucracy. They will not have been formulated in light of the rich feedback of how our particular lives have gone when we live under these values.<<<<<
+
+The argument extends to group value capture too. >>Groups have particular articulations of their values \u2014 the analytic philosophy community\u2019s value in rigor, the creative writing community\u2019s value in personal expression. >>The contemporary improv comedy community puts a strong value in collaboration via automatic agreement \u2014 the core rule of \u201cYes, And\u2026\u201d: always accept other people\u2019s suggestions and build on them. This value works extremely well in improv comedy, evolved through trial and error. But its success is context dependent. Imagine trying to center such a value in analytic philosophy \u2014 a century-long social experiment in the value of harsh criticism and the radical refusal to accept anything.<<<<< Jane Jacobs offers a vivid example of tailoring values to context. >>City-dwellers have learned to cherish privacy in a way suburban and rural people do not. So much of life is conducted in dense public environments that they\u2019ve developed a profound devotion to not making unnecessary eye contact, not intruding into nearby conversations. Valuing eager \u201cfriendliness\u201d makes sense in lower-density areas, but in a dense city, without that collective devotion to privacy, city-dwellers would be utterly overwhelmed by constant social interactions and demands.<<
+
+Let\u2019s focus on value capture by institutional metrics. >>Metrics are formulated to serve key institutional interests \u2014 to work at large scale. Institutions want metrics that are narrowly specified, standardized, and inflexible. Precisely what makes a metric good in the institutional context will make it problematic to internalize as a personal value.<< One might think we just need to pick better metrics. >>But institutional metrics are typically formulated to fit the demands of scaled-up informational agency: for easy recording in institutional memory, for transmission across bureaucratic layers, and for manipulability by institutional methods. When we internalize institutional values, we are letting such interests play a powerful role in the formulation of our own values. Value capture gets us to take an institution\u2019s eye view on ourselves.<<
+
+Theodore Porter\u2019s history of quantification culture shows that qualitative ways of knowing are nuanced and context-sensitive, but difficult to manage en masse. >>When we transform information from qualitative to quantitative format, we strip off much of the nuance, texture, and context-sensitivity \u2014 creating a portable package of information, easily sent across contexts and understood by people with little shared background. >>Quantitative methods are preferred by large-scale institutions that must pass information across many levels of hierarchy, between distant administrators with low shared context. Quantifications are preferred precisely because of their narrowness and context-invariant stability.<< Even quantitative measures vary in nuance. >>Once, land in England was measured in hides \u2014 the amount of land required to support the average family. A hide in a fertile river valley is smaller than a hide in a desert. The hide is a measure that can only be effectively managed at the administrative periphery, by locals who know their environment. >>When we shift from small, local governance to large-scale centralized governance, we inevitably shift from informationally rich measures like the hide to standardized but informationally impoverished measures like the acre.<<<<<<< James Scott calls this \u201cthe state\u2019s view of the world\u201d \u2014 states can only manage what they can see, and they can only see information which has been rendered legible to them. >>Student grades provide a familiar example. Qualitative evaluation \u2014 written feedback on good qualities and problems \u2014 can address different dimensions and be tailored to each student\u2019s goals. >>But we must offer a quantified measure permitting instant comparison: the grade. All efforts in a class expressed in a single number. All class grades averaged to a single number representing an entire educational career \u2014 a Grade Point Average. The existence of GPAs enables fast, easy, and objective-seeming manipulations at institutional scale. >>Jack Schneider and Ethan Hutt argue that standardized grading schemes were implemented to make grades more legible and usable to administrators and employers. Before grading, evaluations required intimate communication between teacher and student. The modern system of grading serves not a pedagogical purpose, but an organizational purpose.<<<<<<<<
+
+Why might we internalize metrics rather than keeping them at emotional arm\u2019s length? >>First, quantifications are seductive in their clarity and crispness. >>We often use cognitive fluency \u2014 the subjective experience of ease in processing information \u2014 as an epistemic heuristic. The easier an idea is to comprehend, the more likely we are to accept it as true. Numbers are extremely familiar, the universal abstraction. Information in quantified form wears an extremely familiar face, leading to unwarranted credibility.<< Second, standardized values make it easy to explain our actions and justify our decisions to others. >>Metrics offer engineered communicability for values. But institutional metrics trade away nuance, richness, and contextual sensitivity for easy portability. Because removing contextual nuance increases communicability, metrics by their essential nature invite excess trust.<< Third, metrics offer the pleasures of value clarity. >>In games, values are easy \u2014 clearly articulated, with explicit criteria. We know exactly what we should be doing and how well we\u2019ve done. When we internalize simplified values, we bring the pleasures of value clarity into the real world. Our purposes become clearer, our achievements more comprehensible. >>And this becomes even more powerful when standardized. Once we collectively internalize a pre-fabricated metric \u2014 citation rates, Twitter followers, GPA \u2014 much of the existential friction of social life suddenly disappears. Metrics create a common currency for justification. We no longer need to struggle to explain our way of valuing to others. We have gone on the same value standard.<<<<<<<<
+
+Value swamping is a related phenomenon \u2014 it happens when an agent participates in a large-scale social process that yields shared values, and those shared values come to dominate their practical reasoning. >>Unlike value capture, the agent isn\u2019t getting values from an external source; they participate in formulating them. But as the size of the community scales up, the values generated are more subject to demands of cross-contextual communication and consensus. >>The processes of context-stripping and de-nuancing are problems of scale, not of externality. In value capture by institutional metrics, we are exposed to both problems: externality and scale. In value swamping, the values may be our own, but still subject to the demands of scale.<<<<<
+
+This suggests we should want value federalism. >>Some values are perhaps best pursued at the largest-scale level, some at smaller community levels, and some individually. >>We have lots of reasons to participate in large-scale collective efforts \u2014 reducing carbon emissions, increasing vaccination rates. In those cases, the upsides of precise, stable, shared specification of value may outweigh the cost. But in other cases \u2014 like fitness, musical values, or family organization \u2014 we care more about the goods of local tailoring.<<<<< The problem occurs when we exhibit an excess preference for the largest-scale values \u2014 when we consistently let the universal metrics swamp our quieter interests. >>The tensions between value swamping and contextual tailoring are baked into our nature as limited beings with varying personalities and contexts who need to coordinate across those contexts. We are beings perpetually stuck in a painful compromise \u2014 between the intimacy of small-scale understanding, and the de-contextualized comprehensibility demanded of large-scale shared understanding.<<`
+  }
+];
+
 // ─────────────────────────────────────────────
 //  Recursive parser — handles nested >> … <<
 // ─────────────────────────────────────────────
@@ -312,7 +492,6 @@ function parseDigText(src) {
       if (i > textStart) {
         nodes.push({ type: 'text', value: src.slice(textStart, i) });
       }
-      // find matching << accounting for nesting
       let depth = 1;
       let j = i + 2;
       while (j < src.length && depth > 0) {
@@ -359,7 +538,7 @@ function renderNodes(nodes, container) {
       const span = document.createElement('span');
       span.className = 'dig-content';
       span.id = id;
-      renderNodes(node.children, span); // recursive
+      renderNodes(node.children, span);
 
       btn.addEventListener('click', () => toggleDig(btn, span));
 
@@ -373,7 +552,7 @@ function toggleDig(btn, span) {
   const opening = !span.classList.contains('open');
   span.classList.toggle('open', opening);
   btn.classList.toggle('open', opening);
-  btn.textContent = opening ? '×' : '+';
+  btn.textContent = opening ? '\u00d7' : '+';
   btn.setAttribute('aria-expanded', String(opening));
   btn.title = opening ? 'Collapse' : 'Expand';
   expandCount += opening ? 1 : -1;
@@ -387,7 +566,6 @@ function updateCollapseAll() {
 }
 
 document.getElementById('collapseAllBtn').addEventListener('click', () => {
-  // only collapse article sections, not preview
   document.querySelectorAll('#articleBody .dig-content.open').forEach(span => {
     const btn = document.querySelector(`[aria-controls="${span.id}"]`);
     if (btn) toggleDig(btn, span);
@@ -395,27 +573,86 @@ document.getElementById('collapseAllBtn').addEventListener('click', () => {
 });
 
 // ─────────────────────────────────────────────
-//  Article
+//  Dig-text to indented raw text
 // ─────────────────────────────────────────────
 
-const articleSource = `In the context of the recent legal changes in Taiwan, >>On May 24th Taiwan's highest court ruled in favour of guy rights and marriage equality. >>The court ruled on that marriage should not be limited to a man and a woman and ordered parliament either to change the law or award marriage rights to gay couples within two years.<< China reacted with surprising indifference and only one newspaper took notice. >>English-language newspaper took notice of a decision that would be the first to legalise gay marriage in an Asian country (not counting New Zealand). The more widely read Chinese version ignored it, as did television and other news outlets.<<<< China proved once more that it's reluctant to embrace gay rights. >>Homosexuality was removed from the health ministry's list of mental disorders only in 2001. Additionally China recently banned the depiction of homosexuals on television (not that there were many in the first place.)<< This is perplexing because Chinese spiritual >>Taoism regarded sex as neither good nor bad, while Confucianism, by encouraging close relations between master and pupils, is sometimes thought to have indirectly encouraged it.<< and artistic tradition >>In poetry of the 9th century, usually held to be the golden age of Chinese literature, it is sometimes hard to tell whether a love poem is addressed to a woman or a man. Also China's greatest novel, "The Dream of the Red Chamber", written in the late 18th century, includes both heterosexual and same-sex relations. Among literate elites, China does not seem to have shared the strong bias evident elsewhere.<< has long been relaxed about homosexuality. Two factors contribute to this lingering disdain. 1) Traditional family values remain strong. Sons are expected to represent family's good name, and are supposed to marry and have sons. >>In 2016 Peking University's sociology department carried out the largest survey of attitudes to, and among, homosexuals and other sexual minorities on behalf of the UN Development Programme. It found that 58% of respondents (gay and straight) agreed with the statement that gays are rejected by their families a higher level of rejection than occurs at work or school. Fewer than 15% of homosexuals said they had come out to their families, and more than half of those who did said they had experienced discrimination as a result.<<
+function digToIndented(src) {
+  let result = '';
+  let depth = 0;
+  let i = 0;
+  while (i < src.length) {
+    if (src[i] === '>' && src[i + 1] === '>') {
+      depth++;
+      result += '\n' + '    '.repeat(depth);
+      i += 2;
+    } else if (src[i] === '<' && src[i + 1] === '<') {
+      depth = Math.max(0, depth - 1);
+      if (depth > 0) {
+        result += '\n' + '    '.repeat(depth);
+      }
+      i += 2;
+    } else {
+      result += src[i];
+      i++;
+    }
+  }
+  return result.trim();
+}
 
-2) China's not a democracy and forbids protest and activism, that helped establish gay rights in most countries. >>In most countries, gays have had to establish their rights by holding meetings and marches, arguing their case in the media. China's Communist Party does not like the public expression of rights of any kind and has squelched most discussion of gay concerns.<<
+// ─────────────────────────────────────────────
+//  Navigation
+// ─────────────────────────────────────────────
 
-However, Chinese attitudes are also changing. Young people are much more tolerant, which may in some time bring official perspective to the change. >>The Peking University survey revealed a big generation gap: 35% of those born before 1970 said they would reject a child who was gay; only 9% born after 1990 agreed. >>Though official media suppressed discussion of the pro gay-rights ruling in Taiwan, Weibo, China's Twitter, lit up with millions of reactions, most of them positive. Li Yinhe, a sociologist at the Chinese Academy of Social Sciences, pointed out that the average age of members of China's National People's Congress (the rubber-stamp parliament that would have to change marriage laws) is 49, at a time when the majority of people under the age of 35 approve of gay marriage. "Due to the influence of Taiwan, we're 14 years away from legalising it," she concluded.<<<<<`;
+function showHome() {
+  document.getElementById('homeScreen').classList.add('active');
+  document.getElementById('articleView').classList.remove('active');
+  window.scrollTo(0, 0);
+}
 
-function renderArticle(src) {
+function showArticle(index) {
+  const a = articles[index];
+  document.getElementById('articleMeta').textContent = a.meta;
+  document.getElementById('articleTitle').textContent = a.title;
+  document.getElementById('articleSubtitle').textContent = a.subtitle;
+
   const container = document.getElementById('articleBody');
   container.innerHTML = '';
-  src.split(/\n\n+/).forEach(para => {
+  digIdCounter = 0;
+  expandCount = 0;
+  updateCollapseAll();
+
+  a.source.split(/\n\n+/).forEach(para => {
     if (!para.trim()) return;
     const p = document.createElement('p');
     renderNodes(parseDigText(para), p);
     container.appendChild(p);
   });
+
+  // Raw source
+  const rawEl = document.getElementById('rawSource');
+  rawEl.textContent = digToIndented(a.source);
+
+  document.getElementById('homeScreen').classList.remove('active');
+  document.getElementById('articleView').classList.add('active');
+  window.scrollTo(0, 0);
 }
 
-renderArticle(articleSource);
+// ─────────────────────────────────────────────
+//  Build home screen
+// ─────────────────────────────────────────────
+
+const listEl = document.getElementById('articleList');
+articles.forEach((a, i) => {
+  const card = document.createElement('div');
+  card.className = 'article-card';
+  card.onclick = () => showArticle(i);
+  card.innerHTML = `
+    <div class="card-meta">${a.meta}</div>
+    <div class="card-title">${a.title}</div>
+    <div class="card-subtitle">${a.subtitle}</div>
+  `;
+  listEl.appendChild(card);
+});
 
 // ─────────────────────────────────────────────
 //  Live editor
@@ -431,7 +668,7 @@ input.value = editorDefault;
 
 function renderPreview() {
   preview.innerHTML = '';
-  digIdCounter = 10000; // avoid id collisions with article
+  digIdCounter = 10000;
   input.value.split(/\n\n+/).forEach(para => {
     if (!para.trim()) return;
     const p = document.createElement('p');
