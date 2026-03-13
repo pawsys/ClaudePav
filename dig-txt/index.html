@@ -105,8 +105,28 @@
     .article-view {
       display: none;
     }
-    .article-view.active, .home.active {
+    .home.active {
       display: block;
+    }
+    .article-view.active {
+      display: block;
+      position: fixed;
+      inset: 0;
+      overflow-y: auto;
+      background: #fff;
+      z-index: 200;
+    }
+    .article-view.active .article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .article-view.active .section-divider,
+    .article-view.active .raw-section,
+    .article-view.active .editor-section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
     }
     .article {
       padding: 56px 0 80px;
