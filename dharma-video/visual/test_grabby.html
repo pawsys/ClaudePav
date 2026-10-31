@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block;position:absolute;top:0;left:0}</style></head>
+<body><canvas id="gl" width="540" height="675" style="display:none"></canvas><canvas id="c" width="1080" height="1350"></canvas>
+<script src="engine.js"></script><script src="type.js"></script><script src="prims.js"></script><script src="grabby.js"></script>
+<script>
+(async()=>{
+  await ENGINE.loadFonts(); ENGINE.initGL(); ENGINE.init2d(); ENGINE.initGrain();
+  const E=ENGINE, P=PRIM;
+  window.renderFrame=(t)=>{
+    const ctx=E.ctx;
+    ctx.fillStyle='#111014'; ctx.fillRect(0,0,1080,1350);
+    GRABBY.grabby(t,300,400,230,{});
+    GRABBY.grabby(t,700,400,230,{arm:{tx:1000,ty:150,ext:1,open:1},eyes:'big',mouth:'o'});
+    GRABBY.grabby(t,300,1000,230,{arm:{tx:400,ty:1030,ext:0.6,open:0},eyes:'worried',holding:(x,y)=>P.blob(t,x,y,70,{jitter:1})});
+    GRABBY.grabby(t,750,1000,230,{eyes:'closed',bob:0.3});
+    E.grain(t,0.06);
+  };
+  window.READY=true;
+})();
+</script></body></html>

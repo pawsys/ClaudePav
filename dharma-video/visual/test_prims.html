@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block;position:absolute;top:0;left:0}</style></head>
+<body><canvas id="gl" width="540" height="675" style="display:none"></canvas><canvas id="c" width="1080" height="1350"></canvas>
+<script src="engine.js"></script><script src="type.js"></script><script src="prims.js"></script>
+<script>
+(async()=>{
+  await ENGINE.loadFonts(); ENGINE.initGL(); ENGINE.init2d(); ENGINE.initGrain();
+  const E=ENGINE, P=PRIM;
+  window.renderFrame=(t)=>{
+    const ctx=E.ctx;
+    const mode=Math.floor(t);
+    if(mode===0){ // storm interior
+      E.sky({t, top:'#2a2e35', bot:'#4b5260', horizon:'#5b6270', cloud:1, storm:1, flash:0.15, warp:2, zoom:1.6});
+      ctx.drawImage(E.glCanvas,0,0,1080,1350);
+      P.rain(t,{amount:1});
+      P.thoughts(t,['am i doing this right','is this jhana?','reply to him','rent','did i lock it','my back','i should be calmer by now','what if they'],{});
+      P.bolt(300,0,420,700,7,0.9);
+      TYPE.drawCaption(t+5, TYPE.caption('you are *not* the cloud.', [0,0.2,0.4,0.6,0.8], {style:'serif', t1:99}));
+    } else if(mode===1){ // dawn sky
+      E.sky({t, top:'#3f78c0', bot:'#e3eef6', horizon:'#ffd7b0', cloud:0.45, sun:0.6, sunPos:[0.72,0.78]});
+      ctx.drawImage(E.glCanvas,0,0,1080,1350);
+      P.godrays(t,780,300,1);
+      P.motes(t,{count:80});
+      TYPE.drawCaption(5, TYPE.caption('you are the sky', [0,0.2,0.4,0.6], {style:'hook', t1:99}));
+    } else if(mode===2){ // blob + hands
+      E.sky({t, top:'#2a2e35', bot:'#3b4250', horizon:'#5b6270', cloud:0.8, storm:0.6});
+      ctx.drawImage(E.glCanvas,0,0,1080,1350);
+      P.blob(t,300,400,110,{jitter:1});
+      P.blob(t,780,400,110,{jitter:0.2,warm:0.8});
+      P.hand(220,1000,170,0); P.hand(540,1000,170,0.5); P.hand(860,1000,170,1);
+      TYPE.drawCaption(5, TYPE.caption('the grip.', [0,0.2], {style:'punch', y:650, t1:99}));
+    } else if(mode===3){ // arrows + seated
+      E.sky({t, top:'#5d8fd0', bot:'#f3e2cf', horizon:'#ffd2a8', cloud:0.4});
+      ctx.drawImage(E.glCanvas,0,0,1080,1350);
+      P.arrow(700,300,0.15,260,{label:'what if i\'m meditating wrong'});
+      P.ripple(540,330,0.4);
+      P.seated(540,900,190,{width:4,head:0.6});
+      TYPE.drawCaption(5, TYPE.caption('space for the world', [0,0.2,0.4,0.6], {style:'whisper', y:1250, t1:99}));
+    }
+    E.grain(t,0.07);
+  };
+  window.READY=true;
+})();
+</script></body></html>

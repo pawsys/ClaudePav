@@ -1,0 +1,6 @@
+out/
+audio/tests/
+audio/build/
+__pycache__/
+# private Notion source excerpts stay local
+notion_*.md
