@@ -24,6 +24,17 @@
     ['Newsreader', 'newsreader-latin-400-italic.woff2', '400', 'italic'],
     ['Instrument Sans', 'instrument-sans-latin-500-normal.woff2', '500', 'normal'],
     ['Instrument Sans', 'instrument-sans-latin-700-normal.woff2', '700', 'normal'],
+    ['Archivo', 'archivo-latin-200-normal.woff2', '200', 'normal'],
+    ['Archivo', 'archivo-latin-300-normal.woff2', '300', 'normal'],
+    ['Archivo', 'archivo-latin-600-normal.woff2', '600', 'normal'],
+    ['Archivo', 'archivo-latin-900-normal.woff2', '900', 'normal'],
+    ['EB Garamond', 'eb-garamond-latin-500-italic.woff2', '500', 'italic'],
+    ['EB Garamond', 'eb-garamond-latin-400-italic.woff2', '400', 'italic'],
+    ['EB Garamond', 'eb-garamond-latin-500-normal.woff2', '500', 'normal'],
+    ['EB Garamond', 'eb-garamond-latin-600-italic.woff2', '600', 'italic'],
+    ['JBM', 'JetBrainsMono-Medium.ttf', '500', 'normal'],
+    ['JBM', 'JetBrainsMono-SemiBold.ttf', '600', 'normal'],
+    ['JBM', 'JetBrainsMono-Bold.ttf', '700', 'normal'],
   ];
 
   async function loadFonts() {
@@ -58,7 +69,7 @@
 precision highp float;
 uniform vec2 uRes; uniform float uT;
 uniform vec3 uTop, uBot, uHorizon; uniform float uCloud, uStorm, uSun, uFlash, uZoom, uDrift, uFog, uWarp, uDark, uRain, uGlowR;
-uniform vec2 uSunPos, uCam;
+uniform vec2 uSunPos, uCam, uOff, uOff2;
 out vec4 o;
 float h(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
 float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+1.),f.x),f.y);}
@@ -72,9 +83,9 @@ void main(){
   vec3 sky=mix(uBot,uTop,smoothstep(0.,1.,gy));
   sky=mix(sky,uHorizon,exp(-pow((gy-.18)*3.2,2.))*.55);
   // clouds (domain-warped fbm with directional edge lighting)
-  sky=mix(sky,vec3(.15,.16,.21),uStorm*.85);
-  vec2 q=p*2.2+vec2(uT*uDrift,0.);
-  vec2 wv=vec2(fbm(q*.6+uT*.02),fbm(q*.6+5.2-uT*.015));
+  sky=mix(sky,vec3(.165,.155,.20),uStorm*.85);
+  vec2 q=p*2.2+uOff;
+  vec2 wv=vec2(fbm(q*.6+uOff2),fbm(q*.6+5.2-uOff2));
   float d=fbm(q+wv*uWarp);
   float d2=fbm(q+wv*uWarp+vec2(.035,.06));
   float cov=mix(.80,.30,uCloud);
@@ -86,7 +97,7 @@ void main(){
   cloudCol*=mix(1.,.72,smoothstep(.62,1.,d)*uStorm);
   vec3 col=mix(sky,cloudCol,cl);
   // lightning flash (internal glow, stronger where cloud is thin / lit)
-  col+=uFlash*vec3(.82,.86,1.)*(.22+cl*(.25+light*.75));
+  col+=uFlash*vec3(1.,.96,.88)*(.22+cl*(.25+light*.75));
   // sun / sunshinification
   vec2 sp=(uSunPos-.5)*vec2(uRes.x/uRes.y,1.);
   float ds=length((uv-.5)*vec2(uRes.x/uRes.y,1.)-sp);
@@ -120,7 +131,7 @@ in vec2 p;void main(){gl_Position=vec4(p,0,1);}`;
     const loc = gl.getAttribLocation(prog, 'p');
     gl.enableVertexAttribArray(loc);
     gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
-    ['uRes', 'uT', 'uTop', 'uBot', 'uHorizon', 'uCloud', 'uStorm', 'uSun', 'uFlash', 'uZoom', 'uDrift', 'uFog', 'uWarp', 'uDark', 'uRain', 'uSunPos', 'uCam', 'uGlowR']
+    ['uOff', 'uOff2', 'uRes', 'uT', 'uTop', 'uBot', 'uHorizon', 'uCloud', 'uStorm', 'uSun', 'uFlash', 'uZoom', 'uDrift', 'uFog', 'uWarp', 'uDark', 'uRain', 'uSunPos', 'uCam', 'uGlowR']
       .forEach(k => U[k] = gl.getUniformLocation(prog, k));
   }
 
@@ -133,6 +144,12 @@ in vec2 p;void main(){gl_Position=vec4(p,0,1);}`;
     gl.viewport(0, 0, glCanvas.width, glCanvas.height);
     gl.uniform2f(U.uRes, glCanvas.width, glCanvas.height);
     gl.uniform1f(U.uT, P.t);
+    // periodic (60 s) drift so the loop seam matches; P.off adds a manual offset (pans)
+    const ph = 2 * Math.PI * P.t / 60;
+    const R = P.driftR ?? 0.6;
+    const off = P.off || [0, 0];
+    gl.uniform2f(U.uOff, R * Math.cos(ph) + off[0], R * Math.sin(ph) + off[1]);
+    gl.uniform2f(U.uOff2, 0.3 * Math.cos(ph + 1.0), 0.3 * Math.sin(ph + 1.0));
     const c3 = (k, v) => { const c = Array.isArray(v) ? v : hexToRgb(v); gl.uniform3f(U[k], c[0], c[1], c[2]); };
     c3('uTop', P.top); c3('uBot', P.bot); c3('uHorizon', P.horizon);
     gl.uniform1f(U.uCloud, P.cloud); gl.uniform1f(U.uStorm, P.storm); gl.uniform1f(U.uSun, P.sun);

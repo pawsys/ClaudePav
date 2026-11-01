@@ -1,0 +1,444 @@
+{
+ "spoken": [
+  {
+   "id": "V01",
+   "t": 0.12,
+   "voice": "narrator",
+   "speed": 1.05,
+   "text": "You're clenching something right now."
+  },
+  {
+   "id": "V03",
+   "t": 2.25,
+   "voice": "narrator",
+   "text": "Not your jaw."
+  },
+  {
+   "id": "V04",
+   "t": 3.75,
+   "voice": "narrator",
+   "speed": 1.0,
+   "text": "A thought about later."
+  },
+  {
+   "id": "V05",
+   "t": 5.25,
+   "voice": "narrator",
+   "text": "That one."
+  },
+  {
+   "id": "V06",
+   "t": 6.0,
+   "voice": "narrator",
+   "text": "Some guy found the cause of"
+  },
+  {
+   "id": "V07a",
+   "t": 9.0,
+   "voice": "narrator",
+   "speed": 0.9,
+   "text": "all",
+   "gain_db": 2.0
+  },
+  {
+   "id": "V07b",
+   "t": 9.6,
+   "voice": "narrator",
+   "text": "suffering."
+  },
+  {
+   "id": "V08",
+   "t": 10.5,
+   "voice": "narrator",
+   "text": "Same cause."
+  },
+  {
+   "id": "V09",
+   "t": 12.0,
+   "voice": "narrator",
+   "text": "It's this little guy."
+  },
+  {
+   "id": "V11",
+   "t": 15.0,
+   "voice": "narrator",
+   "speed": 1.0,
+   "text": "It buzzes. So he squeezes. So it buzzes."
+  },
+  {
+   "id": "V13",
+   "t": 18.75,
+   "voice": "guide_slow",
+   "whisper": 0.25,
+   "text": "Don't let go. Just look."
+  },
+  {
+   "id": "V16",
+   "t": 28.5,
+   "voice": "guide",
+   "text": "The cloud can stay."
+  },
+  {
+   "id": "V17",
+   "t": 30.0,
+   "voice": "narrator_soft",
+   "text": "Arrows pass through."
+  },
+  {
+   "id": "V18",
+   "t": 31.5,
+   "voice": "guide",
+   "text": "The sky doesn't mind."
+  },
+  {
+   "id": "V19",
+   "t": 32.9,
+   "voice": "narrator_soft",
+   "speed": 1.05,
+   "text": "The reward hack:"
+  },
+  {
+   "id": "V20",
+   "t": 34.05,
+   "voice": "narrator_soft",
+   "speed": 1.05,
+   "text": "Don't close, not even for this."
+  },
+  {
+   "id": "V22",
+   "t": 37.5,
+   "voice": "guide",
+   "text": "Turns out the joy was free."
+  },
+  {
+   "id": "V24",
+   "t": 42.75,
+   "voice": "guide",
+   "text": "Don't fight him."
+  },
+  {
+   "id": "V24b",
+   "t": 43.875,
+   "voice": "guide_slow",
+   "text": "He's just scared."
+  },
+  {
+   "id": "V31",
+   "t": 54.0,
+   "voice": "guide_slow",
+   "text": "Rest."
+  },
+  {
+   "id": "V32",
+   "t": 55.5,
+   "voice": "whisper",
+   "whisper": 0.4,
+   "text": "When he grabs again,"
+  },
+  {
+   "id": "V33",
+   "t": 57.0,
+   "voice": "whisper",
+   "whisper": 0.3,
+   "text": "just come back."
+  }
+ ],
+ "choir": [
+  {
+   "id": "C1",
+   "t": 13.5,
+   "gain_db": -2,
+   "oohs": false,
+   "items": [
+    [
+     "grab",
+     0.375,
+     "B4",
+     [
+      0,
+      -5,
+      -9,
+      -12
+     ]
+    ],
+    [
+     "by",
+     0.375,
+     "D5",
+     [
+      0,
+      -3,
+      -8,
+      -12
+     ]
+    ],
+    [
+     "grab",
+     0.75,
+     "F#5",
+     [
+      0,
+      -4,
+      -7,
+      -12
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "C2",
+   "t": 21.0,
+   "oohs": true,
+   "items": [
+    [
+     "un",
+     0.75,
+     "A4",
+     [
+      0,
+      -3,
+      -7,
+      -19
+     ]
+    ],
+    [
+     "clench",
+     1.5,
+     "F#4",
+     [
+      0,
+      -2,
+      -9,
+      -16
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "C3",
+   "t": 24.0,
+   "oohs": true,
+   "items": [
+    [
+     "you",
+     0.75,
+     "D4",
+     [
+      0,
+      -3,
+      -7,
+      -19
+     ]
+    ],
+    [
+     "are",
+     0.75,
+     "E4",
+     [
+      0,
+      -3,
+      -9,
+      -21
+     ]
+    ],
+    [
+     "the",
+     0.375,
+     "F#4",
+     [
+      0,
+      -4,
+      -11,
+      -23
+     ]
+    ],
+    [
+     "sky",
+     1.875,
+     "A4",
+     [
+      0,
+      -3,
+      -10,
+      -26
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "C4",
+   "t": 36.0,
+   "oohs": true,
+   "items": [
+    [
+     "un",
+     0.75,
+     "A4",
+     [
+      5,
+      0,
+      -3,
+      -7,
+      -19
+     ]
+    ],
+    [
+     "clench",
+     0.75,
+     "F#4",
+     [
+      10,
+      0,
+      -2,
+      -9,
+      -16
+     ]
+    ]
+   ],
+   "split": 3
+  },
+  {
+   "id": "C5",
+   "t": 39.0,
+   "oohs": true,
+   "items": [
+    [
+     "you",
+     0.75,
+     "D4",
+     [
+      0,
+      -3,
+      -7,
+      -19
+     ]
+    ],
+    [
+     "are",
+     0.75,
+     "E4",
+     [
+      0,
+      -3,
+      -9,
+      -21
+     ]
+    ],
+    [
+     "the",
+     0.375,
+     "F#4",
+     [
+      0,
+      -4,
+      -11,
+      -23
+     ]
+    ],
+    [
+     "sky",
+     1.875,
+     "A4",
+     [
+      0,
+      -3,
+      -10,
+      -26
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "C6",
+   "t": 45.0,
+   "oohs": true,
+   "items": [
+    [
+     "love",
+     0.75,
+     "F#4",
+     [
+      0,
+      -3,
+      -9,
+      -14
+     ]
+    ],
+    [
+     "him",
+     0.75,
+     "E4",
+     [
+      0,
+      -4,
+      -9,
+      -16
+     ]
+    ],
+    [
+     "oh",
+     0.75,
+     "D4",
+     [
+      0,
+      -3,
+      -7,
+      -12
+     ]
+    ],
+    [
+     "pen",
+     1.5,
+     "D4",
+     [
+      0,
+      -3,
+      -7,
+      -12
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "C7",
+   "t": 59.25,
+   "gain_db": -4,
+   "oohs": false,
+   "items": [
+    [
+     "grab",
+     0.1875,
+     "B4",
+     [
+      0,
+      -5,
+      -9,
+      -12
+     ]
+    ],
+    [
+     "by",
+     0.1875,
+     "D5",
+     [
+      0,
+      -3,
+      -8,
+      -12
+     ]
+    ],
+    [
+     "grab",
+     0.375,
+     "F#5",
+     [
+      0,
+      -4,
+      -7,
+      -12
+     ]
+    ]
+   ]
+  }
+ ]
+}

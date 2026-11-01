@@ -629,6 +629,10 @@ def choir_words(items, voice="af_heart", speed=0.85, harmony=(0, -5, -9, -12), v
             a0, a1 = vi[0], vi[-1] + 1
         pre = np.arange(0, a0)
         post = np.arange(a1, len(f0))
+        # keep the last ~120 ms of the voiced core (offglide / coda) at natural speed
+        og = min(24, max(0, (a1 - a0) // 3))
+        post = np.concatenate([np.arange(a1 - og, a1), post]) if og > 0 else post
+        a1 = a1 - og
         core = np.arange(a0, a1)
         core_v = v[a0:a1]
         target = max(int(dur / fp) - len(pre) - len(post), len(core))
@@ -957,3 +961,14 @@ def reverse_swell(x, tail_sec=2.0, rev_sec=3.0):
     w = reverb(to_stereo(x), rev_sec, wet=1.0, dry=0.0)
     w = w[: int(tail_sec * SR)][::-1].copy()
     return fade(w, 0.3, 0.02)
+
+
+def whisperize(a, amount=0.4, fs=SR):
+    """Blend a WORLD-resynthesized unvoiced (whispered) version with the dry take."""
+    x = resample(a, fs, 24000).astype(np.float64)
+    f0, sp, ap = world_analyze(x, 24000)
+    w = pw.synthesize(np.zeros_like(f0), sp, np.ones_like(ap), 24000, frame_period=5.0)
+    w = resample(w.astype(np.float32), 24000, fs)
+    n = min(len(w), len(a))
+    w = hp(w[:n], 180) * (np.sqrt((a[:n] ** 2).mean()) / (np.sqrt((w[:n] ** 2).mean()) + 1e-9))
+    return (a[:n] * (1 - amount) + w * amount * 1.1).astype(np.float32)

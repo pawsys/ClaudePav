@@ -10,14 +10,17 @@
 <script src="prims.js"></script>
 <script src="grabby.js"></script>
 <script src="timing.js"></script>
+<script src="common.js"></script>
 <script src="scenes.js"></script>
+<script src="scenes/act1.js"></script>
+<script src="scenes/act2.js"></script>
+<script src="scenes/act3.js"></script>
 <script>
 (async () => {
   await ENGINE.loadFonts();
   ENGINE.initGL();
   ENGINE.init2d();
   ENGINE.initGrain();
-  if (window.SCENES_INIT) await window.SCENES_INIT();
   window.renderFrame = (t) => window.DRAW(t);
   window.READY = true;
 })();

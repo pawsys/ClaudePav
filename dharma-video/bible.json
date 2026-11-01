@@ -1,0 +1,627 @@
+{
+ "title": "UNCLENCH (you are the sky)",
+ "logline": "A deadpan field guide to grabbygrab, the cute little guy who causes all suffering, set as lo-fi spoken word with a Bon Iver-style vocoder choir. You catch yourself clenching. Then you look right at the grab, unclench into the sky and love the little guy open. Tilopa's six words strip the song down to 'rest.' Then he grabs again and the video starts over, because coming back is the practice.",
+ "bpm": 80,
+ "key": "D major. The hook and verses lean on B minor; the 'you are the sky' lines use a G Lydian color (C# over G). The loop seam is a deceptive cadence: Asus4 goes to Bm9 instead of D.",
+ "duration_sec": 60,
+ "sound_design": "GRID: 80 BPM, 4/4. 1 beat = 0.75 s, 1 bar = 3.0 s, 20 bars = exactly 60.000 s = 1800 frames at 30 fps. 56% swing on 8ths and 16ths. 48 kHz.\n\nSOUND PALETTE\nGeneralUser GS programs:\n- Acoustic Grand 0: muted, LP 2.5 kHz, low velocity.\n- Rhodes/EP1 4: tape wobble (2 ms at 0.6 Hz) up to 27 s, clean afterwards.\n- Celesta 8, Music Box 10, Marimba 12, Harp 46, Slow Strings 49, Choir Aahs 52, Voice Oohs 53, Warm Pad 89, Kalimba 108.\n- Drums: GM Standard kit (bank 128, prog 0) for the clenched boom-bap; GS Brush kit (bank 128, prog 40) after the unclench. The lib kick/snare/rim/hat/shaker synths may layer underneath.\nFrom audio/lib.py: sub_bass (sine), singing_bowl (D), vinyl, noise_riser, whoosh, thwip, bzzt, thunder, tape_stop, reverse_swell. The tanpura is a pad_saw/sine pair on D2+A2 with a slow 0.3 Hz shimmer.\n\nSIGNATURE: THE BUZZ/DRONE MIRROR\nThe evil-blob buzz is:\n- an A1 (55 Hz) sine plus a low-passed saw (LP 400 Hz)\n- 11 Hz amplitude tremolo at 60% depth\n- two oscillators detuned \u00b19 cents\n- 10-bit crush\nHow it moves through the song:\n- 0-17.55: plays under the hook and verse 1 at about -26 dB.\n- 15.0-17.55: rises to -14 dB and its tremolo speeds up to 16 Hz.\n- 17.55: dies in the tape-stop.\n- 18.40: returns ALONE and exposed at -20 dB, so you hear the suffering as a sound.\n- 21.00: glides up a fourth (A1 to D2) over 1.5 s while tremolo, detune and crush go to zero and an A2 fades in. It becomes the clean tanpura, the sky's drone from 21 s to 59.25.\n- 59.25: the tanpura detunes back down into the buzz, which is what's playing at 0.00.\nGrabbing turns drone into buzz; letting go turns buzz into drone.\n\nGRAB MOTIF\nKalimba B4-D5-F#5 as 16ths, 0.1875 s apart, plus a rubbery thwip (300 to 1400 Hz, 70 ms). It sounds at 4.50 (grab), 13.50 (doubling the choir chop) and 59.25 (the regrab). It returns at 42.75 on music box as a slow lullaby (B4, D5, F#5, D5, B4 in quarter notes).\n\nARRANGEMENT BY SECTION\n0-6 HOOK\n- No drums.\n- 0.00: sub thump B1 + muted grand Bm(add9) cluster stab (B2 F#3 C#4 D4), buzz, vinyl crackle at -30 dB.\n- Lightning crackles at 0.40 and 1.60 (noise burst + 60 Hz thump).\n- 3.00: piano G2 + soft Rhodes Gmaj9 swell.\n- 4.50: grab motif + bubble pop.\n- 5.25: everything ducks -8 dB; felt-marker squeak (2 strokes).\n- 5.40-6.00: reverse snare swell.\n\n6-18 VERSE 1\n- 6.00 beat drops: kick on 1 and the and-of-2, snare+rim on 2 and 4, swung closed-hat 8ths (velocity \u00b112), Rhodes with wobble, sine sub on the roots, Warm Pad sidechained to the kick (depth 0.35, release 220 ms).\n- 9.00 STOP-TIME: everything cuts. Only a reversed-piano swell peaking at 9.00, a sub drop on 'ALL' (sine 55 to 30 Hz over 1.2 s), crackle and voice. Render 'all' as its own TTS take, +2 dB, with a 60 ms breath before it.\n- 10.50: beat slams back with a 1-beat rim fill on A.\n- 12.90: soft marimba blink tick.\n- 13.50: paper-slide foley + vocoder chop; drums duck -4 dB.\n- 15.00: paper-tear foley. A thought-chatter bed starts: six Kokoro voices (af_bella, af_nicole, bf_emma, am_puck, af_sky, am_michael) murmur the on-screen fragments, band-passed 300 Hz-3 kHz, panned wide, rising from -24 to -16 dB.\n- 16.50: hats go to 16ths, noise riser 300 Hz to 8 kHz.\n- 17.55-18.00: tape_stop on the whole mix (the end of 'shakes' gets caught in it).\n\n18-21 PRE-CHORUS\n- 18.00-18.40: silence except crackle.\n- 18.40: the buzz alone.\n- 18.75: af_heart whisper, dry.\n- 20.25: 0.75 s reverse swell of the 'un' chord.\n\n21-30 CHORUS 1\n- No drums until 27.0.\n- Vocoder 'un-clench' + buzz-to-tanpura glide, Warm Pad Dadd9, soft sub D1.\n- Singing bowl on D at 22.25 as the last finger opens; celesta at 22.50 and 23.25.\n- 23.60-24.00: harp glissando up D major pentatonic + reverse cymbal.\n- 24.00: choir 'you are the sky' over Gmaj9, Slow Strings swell, sub G1, celesta A6 on 'sky'.\n- 27.00: Brush kit enters at 60% velocity (kick 1, brush snare 2 & 4, shaker 16ths), Rhodes clean, light sidechain.\n\n30-36 VERSE 2\n- Half-time: kick on 1, brush snare on 3.\n- Arrows at 30.75, 31.50, 32.25 and 33.00: band-passed whoosh (400 Hz to 3 kHz, panned L to R). Where the impact should be there is ONLY a celesta note (D6, F#6, A6, E6). The missing hit is the joke and the teaching.\n- 33.00: kalimba 'unlock' blip (A5 to D6).\n- 34.50-35.40: volley of 12 whooshes with a cascade of celesta 16ths, like wind chimes.\n- 35.25: brush roll + riser.\n- 35.60: soft glass ting as the orb lands.\n\n36-42.75 CHORUS 2\n- 36.00 DROP: warm kick 1 + and-of-2, brush snare + soft clap on 2 & 4, shaker 16ths, sidechained Rhodes, sub D1, Slow Strings, music box + celesta 16th arpeggios (light on water), Choir Aahs doubling the vocoder, big snare reverb.\n- 39.00: everything in, plus a harp arpeggio.\n\n42.75-46.5 METTA\n- Snare out; kick + shaker only.\n- Music-box lullaby, low aahs pad.\n- 45.00: Voice Oohs cluster D4-E4-F#4-A4 enters as the sustain the outro will strip.\n\n46.5-54 OUTRO SUBTRACTION (each of Tilopa's six words removes one layer)\n- 46.50 'Don't recall.': shaker + music box out.\n- 48.00 'Don't imagine.': kick out (no drums left).\n- 49.50 'Don't think.': sub out.\n- 51.00 'Don't examine.': Rhodes out.\n- 52.50 'Don't control.': strings out; the oohs thin to a single F#4.\n- The tanpura stays throughout.\n\n54-60 REST AND SEAM\n- 54.00: singing bowl on D (8 s ring); the F#4 ooh fades over 2 s. Only tanpura, crackle and bowl remain.\n- 57.00: felt piano Asus4 (A2 D3 E3), pp.\n- 58.50: pad swell.\n- 59.25: grab motif + tiny 'hup', and the tanpura detunes into the buzz.\n- A reverse cymbal peaks at 59.97, so the 0.00 sub + Bm9 stab lands as the drop.\n\nVOCODER CHOIR\nBuilt with lib.choir_words. The upper two voices come from af_heart and the lower two from bm_george; render separately and sum. Formant preserved, humanize 0.015, vibrato 0.22, light chorus. 4.5 s hall, 40 ms pre-delay, reverb HP 150 Hz.\nItems are (word, dur, melody midi, offsets):\n(1) 13.500 'grab-by-grab', comic and dry: grab 0.30 s B4(71) (0,-5,-9,-12) / by 0.30 s D5(74) (0,-3,-8,-12) / grab 0.60 s F#5(78) (0,-4,-7,-12). Onsets 13.500, 13.875, 14.250. 110 ms slapback and a 0.6 s room, not the hall. Add a bm_george pass one octave down at -6 dB.\n(2) 21.000 'un-clench': un 0.75 A4(69) (0,-3,-7,-19) = A4 F#4 D4 D3 / clench 1.5 s F#4(66) (0,-2,-9,-16) = F#4 E4 A3 D3, the Dadd9 rub. A falling third, like an exhale.\n(3) 24.000 'you are the sky' (onsets 24.00 / 24.75 / 25.50 / 26.25): you 0.75 D4(62) (0,-3,-7,-19) / are 0.75 E4(64) (0,-3,-9,-21), giving a Lydian C#4 / the 0.75 F#4(66) (0,-4,-11,-23) / sky 1.5 s A4(69) (0,-3,-10,-26) = A4 F#4 B3 G2 (Gmaj9).\n(4) 36.000 'un-clench' with a contrary-motion descant: un 0.75 A4 (+5,0,-3,-7,-19) / clench 0.75 F#4 (+10,0,-2,-9,-16), so the descant goes D5 to E5. Doubled by Choir Aahs.\n(5) 39.000 'you are the sky' as in (3), with 'sky' held 41.25-42.75. Choir Aahs double the soprano and sing a descant B4 (41.25) resolving to A4 (41.75).\nQUALITY GATE: render (2) and (3) before anything else and A/B them against a 'Woods'-style reference.\n- If consonants smear: shorten the onsets.\n- If it sounds robotic: raise vibrato and humanize, and put Choir Aahs under it at -8 dB.\n- Choir and speech never overlap, except a pad tail at -10 dB or lower.\n\nSPOKEN VOICES (Kokoro)\n- bm_george, the deadpan field-guide narrator: speed 0.95, dry and close (0.3 s room at 5%), firm compression. From 30 s he is 'unclenched': speed 0.92, 1.2 s plate at 12%.\n- af_heart, the tender guide: speed 0.85-0.92. Dry at 18.75 (-3 dB, high-shelf +2 dB for breath). 1.8 s plate at 15-18% from 28.5. Dry whisper again at 56.25 and 57.75.\n- No Pali is spoken anywhere (labels only), so nothing gets mispronounced in front of sutta nerds.\n- Place every line by its Kokoro word timestamps (lib.speak_timed) on the 8th-note grid.\n\nMIX\n- Speech sits 3-4 dB above the bed; a speech-bus sidechain ducks the bed 3 dB.\n- Pad-to-kick sidechain only in the groove sections; no sidechain from 45 s on.\n- Master with lib.master2 to -14 LUFS integrated, -1 dBTP.\n- LOOP RENDER: render two cycles back to back (120 s) and export 60.000-120.000, so reverb tails, the bowl ring and the crackle spill across the seam.\n- Check 59.9 to 0.1 for clicks. The hook must not be quieter than the regrab.\n\nENERGY ARC (0-10)\nhook 5 / verse 6-8 / tape-stop / pre 2 / un-clench 6 / sky 8 / verse 2 5-6 / drop 9 / poster 10 / metta 6 / subtraction 4 to 2 / rest 1 / regrab 3, then slam.",
+ "chord_progression": "80 BPM, bar = 3.0 s. Voicings use bass / upper structure.\nBar 1 (0-3): Bm9 (B1 / B2 F#3 A3 C#4 D4). Hook.\nBar 2 (3-6): Gmaj9 (G1 / G2 D3 F#3 A3 B3).\nBar 3 (6-9): D/F# (F#1 / D3 F#3 A3 E4). Beat drops.\nBar 4 (9-12): Asus4, held in stop-time on 'ALL' (A1 / A2 D3 E3 A3), resolving to A on the slam-back at 10.5.\nBar 5 (12-15): Bm9. The 'grab-by-grab' chop outlines the Bm triad.\nBar 6 (15-18): Gmaj9. Tape-stop at 17.55.\nBar 7 (18-21): no chord. Only the A1 buzz as a dominant pedal.\nBar 8 (21-24): Dadd9 (D1 / D2 A2 tanpura, choir A4/F#4/E4/D3). 'un-clench'.\nBar 9 (24-27): Gmaj9 with a Lydian C# under 'are'. 'you are the sky'.\nBar 10 (27-30): D/F#, then Asus4 on beat 3.\nBar 11 (30-33): Bm9. Half-time.\nBar 12 (33-36): Gmaj9, then A13sus (A1 / G3 B3 D4 F#4) on beat 3.\nBar 13 (36-39): Dadd9. THE DROP.\nBar 14 (39-42): Gmaj9. 'you are the sky' #2.\nBar 15 (42-45): Bm11 (B1 / A3 D4 E4 F#4). Metta lullaby.\nBar 16 (45-48): D/F#. Voice Oohs D4 E4 F#4 A4 enter.\nBar 17 (48-51): Gmaj9.\nBar 18 (51-54): Asus4.\nBar 19 (54-57): Dadd9. Only drone and bowl: 'rest.' (V to I).\nBar 20 (57-60): Asus4 on felt piano, unresolved. It loops into the Bm9 stab at 0.00, a deceptive V to vi. The ear expects rest (D) and gets clenched again (B minor). The same A chord that resolved to rest at 54 s relapses at the seam.",
+ "sections": [
+  {
+   "name": "HOOK A: cold open (frame 0 = poster)",
+   "start_sec": 0,
+   "end_sec": 2.25,
+   "energy": 5,
+   "music": "0.00: sub thump B1 + muted grand-piano Bm(add9) cluster stab. This is the same downbeat the loop lands on. The evil-blob buzz drone (A1, 11 Hz tremolo, bitcrushed) and vinyl crackle play underneath. Lightning crackle sfx at 0.40 and 1.60. bm_george, dry and deadpan, at 0.05 and 1.35. No drums.",
+   "visual": "Frame 0 is fully composed, with no fade-in.\n- Background: full-bleed storm-cloud interior from the sky shader (uStorm 1, uDark 0.35). Charcoal #1B1A22 with slow, dull grey-violet #3A3348 fbm wisps. The drift offset travels on a 60 s circle so the fog is periodic. 6% grain, vignette.\n- Grabbygrab at (540, 900), body ~330 px wide. Flat cream #F6EDE0 with no gradient, 5 px ink #23202B outline, eyes squeezed '> <', one sweat drop, tight zigzag mouth.\n- His noodle arm is bent in front of him. The mitten fist clamps a charcoal blob (#4A4556, r ~75 px) that jitters \u00b13 px at 12 Hz and flicks 3-5 tiny spark ticks.\n- Top third (y 170-560): yellow Anton caps, fully visible from frame 0.\n- Lightning lights the fog from inside at 0.40 and 1.60: 2 warm-white frames, 6-frame decay, never lilac.\n- Camera push-in 1.00 to 1.03."
+  },
+  {
+   "name": "HOOK B: not your jaw / a thought about later / that one",
+   "start_sec": 2.25,
+   "end_sec": 6,
+   "energy": 5,
+   "music": "- 2.25: 'Not your jaw.' over the drone.\n- 3.00: piano G2 + soft Rhodes Gmaj9 swell.\n- 4.50: kalimba grab motif (B4-D5-F#5 16ths) + rubbery thwip + bubble pop; buzz +3 dB.\n- 5.25: everything ducks -8 dB under 'That one.'; felt-marker squeak (2 strokes).\n- 5.40-6.00: reverse snare swell into the drop.",
+   "visual": "- 2.25: the caption hard-cuts to 'NOT YOUR JAW.' (punch-in 1.08 to 1.00 over 2 frames).\n- 3.00: the mono wink types on beneath it.\n- 3.75: a white line-art thought bubble pops above him, holding a tiny calendar glyph and the mono word 'later'.\n- 4.50: his arm shoots out (5-frame smear), snatches the bubble and squishes it into the blob. The blob grows 15%, darkens, and its jitter rises to \u00b14 px.\n- 5.25: freeze-frame; grain keeps running. 'THAT ONE.' appears. A hand-drawn yellow #FFD23F marker circle scribbles TWICE around the blob (10 px wobbly stroke, 6 frames per loop). It is tight and closed, the opposite of the ens\u014d to come.\n- Grabbygrab slowly side-eyes the camera, guilty."
+  },
+  {
+   "name": "VERSE 1: some guy",
+   "start_sec": 6,
+   "end_sec": 9,
+   "energy": 6,
+   "music": "The beat drops at 6.00: lo-fi boom-bap.\n- Kick on 1 and the and-of-2, snare+rim on 2 and 4, swung closed-hat 8ths.\n- Rhodes D/F# with tape wobble, sine sub, Warm Pad sidechained to the kick.\n- The buzz is tucked to -26 dB.\n- bm_george at 6.00. After 'cause' comes a deliberate 1.8 s instrumental gap for suspense.",
+   "visual": "- 6-frame horizontal whip-pan smear through the fog.\n- Center: a minimal, faceless cream line-art meditator (3 px stroke, solid plain oval head, no features), seated, ~280 px tall, under a five-stroke line-art bodhi tree. This is the same seated pose that returns huge and headless at 39 s.\n- Yellow Anton caption builds word by word on the TTS timestamps.\n- 6.60: a mono tag types on beside the figure."
+  },
+  {
+   "name": "VERSE 1: stop-time ALL",
+   "start_sec": 9,
+   "end_sec": 10.5,
+   "energy": 7,
+   "music": "STOP-TIME: drums, Rhodes, pad and bass all cut on the 9.00 downbeat. What remains: a reversed-piano swell that peaks at 9.00, a sub drop on 'ALL' (sine 55 to 30 Hz over 1.2 s), crackle, and the dry voice. 'all' is its own TTS take, +2 dB.",
+   "visual": "- Cut to near-black #0E0D12.\n- 'OF' small (90 px) at the top. 'ALL' in yellow Anton ~600 px tall, filling 90% of the frame width, with a 2 px tremor. 'SUFFERING.' small underneath.\n- 9.40: one jagged warm-white lightning crack splits the background behind 'ALL'."
+  },
+  {
+   "name": "VERSE 1: same cause (3x3 grid)",
+   "start_sec": 10.5,
+   "end_sec": 12,
+   "energy": 7,
+   "music": "The beat slams back at 10.50 with a 1-beat rim fill on A major; hats in 8ths; the buzz returns.",
+   "visual": "- 3x3 grid of tiny grabbygrabs (~150 px each). Each one clutches its own jittering charcoal blob, with the jitter locked to the hi-hats.\n- A mono label sits under each cell.\n- In the 'jhanas' cell, he is squeezing a small gold orb. It pops grey at 11.10, with a pff.\n- The caption sits across the middle on a charcoal band.\n- 11.10: the jhana aside appears at the bottom."
+  },
+  {
+   "name": "VERSE 1: this little guy + PLATE 01 + choir chop",
+   "start_sec": 12,
+   "end_sec": 15,
+   "energy": 7,
+   "music": "Bm9.\n- 12.90: soft marimba blink tick.\n- 13.50: paper-slide foley.\n- Vocoder chop 'grab-by-grab' (13.500 / 13.875 / 14.250, melody B4-D5-F#5, Bm stacks, 110 ms slapback), doubled by the kalimba grab motif.\n- Drums duck -4 dB under the chop.",
+   "visual": "- 12.00: eight cells shrink to dots and vanish. The center grabbygrab scales up to hero size (~420 px), still clutching his blob, and blinks slowly at the camera, deadpan.\n- 13.50: freeze on him. A cream paper specimen plate (#F3EBDD, thin ink double border, 2% paper texture) slides up (200 ms, ease-out-back) and fills 86% of the frame.\n- Left of the plate: grabbygrab redrawn as ink line art with a 45\u00b0 hatch fill at 12%. Right: the mono header and fields.\n- 'GRABBYGRAB' stamps in ink Anton one syllable per choir note (GRAB / BY / GRAB), each with a 3-frame 4 px shake."
+  },
+  {
+   "name": "VERSE 1: the tighter he holds + tape-stop",
+   "start_sec": 15,
+   "end_sec": 18,
+   "energy": 8,
+   "music": "Gmaj9.\n- 15.00: paper-tear foley.\n- The buzz climbs from -26 to -14 dB and its tremolo speeds from 11 to 16 Hz.\n- Thought-chatter bed: six Kokoro voices murmuring, band-passed and panned wide, rising from -24 to -16 dB.\n- 16.50: hats go to 16ths; noise riser.\n- 17.55-18.00: tape-stop on the whole mix.",
+   "visual": "- 15.00: the plate rips away diagonally (paper-tear mask) back to the storm.\n- He squeezes harder: fingers curl tighter and the blob darkens from #4A4556 to #121117. Its jitter doubles to \u00b16 px. A small white wisp visible inside it flickers out.\n- Mono thought fragments pop in and orbit in the fog at different depths (prims.thoughts).\n- 16.50: a 2 px ink leader line with a 6 px dot draws from the blob to a mono label.\n- 17.00: the frame shakes 4 px; lightning.\n- 17.55-18.00 TAPE-STOP: animation time is warped to a freeze. Blob jitter, fog drift and particles all slow to a stop, and colors desaturate 40%."
+  },
+  {
+   "name": "PRE-CHORUS: look right at the grab",
+   "start_sec": 18,
+   "end_sec": 21,
+   "energy": 2,
+   "music": "- 18.00-18.40: silence except crackle.\n- 18.40: the evil-blob buzz returns ALONE, quiet and exposed.\n- 18.75: af_heart enters for the first time. Dry, close, almost whispered, speed 0.85.\n- 20.25: reversed vocoder 'un' chord swells for 0.75 s into 21.00.",
+   "visual": "- Hard cut to a macro: grabbygrab's mitten fist fills the frame (~700 px, same cream/ink style and same finger count), clenched around the blob. White-knuckle crease lines, 1 px tremble.\n- 18.40: a warm attention-flashlight cone switches on from the top edge, as if from the viewer's eyes. It is a soft-edged additive gradient, ~20\u00b0 wide, with floating dust motes. It lands on the fist; everything outside it falls to near black.\n- 18.75: the first serif in the film, Instrument Serif italic in warm white.\n- 19.80: the mono aside fades in.\n- Nothing pries the fingers. They just tremble less."
+  },
+  {
+   "name": "CHORUS 1: un-clench (the release)",
+   "start_sec": 21,
+   "end_sec": 24,
+   "energy": 6,
+   "music": "- Vocoder 'un-clench' (un 21.00 on A4, clench 21.75 on F#4 held 1.5 s) in a 4.5 s hall.\n- On the same downbeat, the buzz glides A1 to D2 over 1.5 s and becomes the clean tanpura (D2+A2).\n- Warm Pad Dadd9, soft sub D1.\n- Singing bowl on D at 22.25.\n- Celesta at 22.50 and 23.25.\n- No drums.",
+   "visual": "THE RELEASE.\n- On 'clench' the fingers open one at a time (120 ms stagger, ease-out). They open because they are seen.\n- The blob's jitter decays to zero and it lifts from charcoal to dove grey to white. It rises out of the open palm as a small fluffy cloud.\n- THE TYPE UNCLENCHES, center frame:\n  - 'UNCLENCH' starts in tight jittering yellow Anton (tracking -0.02 em).\n  - 21.75-22.75: the letters drift apart to +0.3 em and the horizontal scale goes 0.9 to 1.25. Each glyph cross-fades Anton, then Archivo 900, 500 and 200 (static local weights), staggered 40 ms left to right. Color goes yellow to warm white; jitter goes to 0.\n  - 22.75-23.25: it dissolves into Instrument Serif italic lowercase 'unclench.'\n- The flashlight cone widens from ~20\u00b0 to fill the frame (narrow attention becoming open awareness), and the black warms to dove-grey fog.\n- The camera pulls back to grabbygrab's whole body: palm open, eyes melting from '> <' to '^ ^'."
+  },
+  {
+   "name": "CHORUS 1: you are the sky (reveal)",
+   "start_sec": 24,
+   "end_sec": 27,
+   "energy": 8,
+   "music": "- 23.60-24.00: harp glissando up + reverse cymbal.\n- Choir 'you are the sky' (24.00 / 24.75 / 25.50 / sky 26.25 held 1.5 s) over Gmaj9, with the Lydian C# under 'are'.\n- Slow Strings swell, sub G1, celesta A6 on 'sky'.\n- Tanpura continues. No drums.",
+   "visual": "SKY REVEAL.\n- 24.00-25.20: fast dolly-out (ease-out-expo). Four parallax fog planes rush past the frame edges and we burst out into an immense dawn sky: zenith #5B8FCB, mid #A9CBE8, horizon haze #F4EFE6 with peach #F9DDB1, parallax cumulus, faint god rays.\n- The storm we were inside is now one small grey-white cloud mid-frame. Grabbygrab is a tiny cream figure floating beside it, palm open.\n- Each choir word lands in Instrument Serif italic 150 px, navy #1E2B47, centered at y ~420. 'sky' keeps slowly widening its tracking while it holds.\n- 26.25: thin ink viewfinder corner brackets draw in at all four frame corners (60 px inset), with a mono label top-left."
+  },
+  {
+   "name": "CHORUS 1: the cloud can stay",
+   "start_sec": 27,
+   "end_sec": 30,
+   "energy": 6,
+   "music": "- D/F#, then Asus4 on beat 3.\n- 27.00: Brush kit enters at 60% velocity (kick 1, brush snare 2 & 4, shaker 16ths).\n- Rhodes is now clean, with no tape wobble. Light sidechain.\n- af_heart at 28.50 with a 1.8 s plate.",
+   "visual": "- Gentle sideways drift.\n- The little grey cloud simply stays and drifts. Nobody fixes it.\n- Grabbygrab floats beside it, palm up, with a small mono label.\n- The line sits below center in Instrument Serif italic 88 px navy."
+  },
+  {
+   "name": "VERSE 2: arrows / the sky doesn't mind",
+   "start_sec": 30,
+   "end_sec": 33,
+   "energy": 5,
+   "music": "- Half-time (kick 1, brush snare 3), Bm9, Rhodes, sub, tanpura.\n- Arrows at 30.75, 31.50 and 32.25: a band-passed whoosh panned L to R, and where the hit should be, only one celesta note (D6, F#6, A6).\n- bm_george (unclenched: 0.92, light plate) at 30.00; af_heart at 31.50.",
+   "visual": "- The mid-morning sky is a touch deeper (zenith #3F78C0 to #A9CBE8) so the cream arrows read.\n- Thin cream line-art arrows (3 px, ink fletching, prims.arrow) fly in from the edges at different heights, each with a mono tag riding the shaft.\n- Each passes straight through the sky and the little cloud. The sky ripples (2-3 soft refraction rings, prims.ripple) and heals within 10 frames. No mark, no stop.\n- Text is warm white #FFF6E0 with a soft navy shadow (35%, 20 px blur).\n- As the '2014' arrow passes, grabbygrab's fingers twitch toward it once, then relax open."
+  },
+  {
+   "name": "VERSE 2: the reward hack + the jhana orb",
+   "start_sec": 33,
+   "end_sec": 36,
+   "energy": 6,
+   "music": "- Gmaj9, then A13sus on beat 3.\n- 33.00: a fourth arrow + celesta E6, and the kalimba unlock blip (A5 to D6).\n- 34.50-35.40: arrow volley with a celesta 16th cascade.\n- 35.25: brush roll + riser.\n- 35.60: glass ting as the orb lands.",
+   "visual": "- 'reward hack' is set as an inline-code token: JetBrains Mono 500 inside a thin rounded rectangle. A mono '[exploit found]' badge with a blinking block cursor sits beneath it.\n- 34.125: the line appears in Instrument Serif regular.\n- ~12 untagged arrows streak through from every direction at once. The sky ripples and heals. Grabbygrab stays palm-up the whole time.\n- 34.50: a small glowing gold orb (#FFC861, bloom, sparkles) labeled 'jhana?' drifts past. His fingers twitch, but he does not reach.\n- 35.60: the orb drifts into his open palm by itself and glows brighter. Callback: when he grabbed it at 11 s, it popped."
+  },
+  {
+   "name": "CHORUS 2: drop / sunshinification / the joy was free",
+   "start_sec": 36,
+   "end_sec": 39,
+   "energy": 9,
+   "music": "THE DROP on Dadd9.\n- Full brush groove plus a soft clap, sidechained Rhodes, sub D1, strings.\n- Music box + celesta 16th arpeggios in D major pentatonic.\n- Vocoder 'un-clench' with a contrary-motion descant (D5 to E5), doubled by Choir Aahs, releasing at 37.50.\n- af_heart at 37.50 over the groove.",
+   "visual": "SUNSHINIFICATION: the orb's light floods outward.\n- A sun disk rises behind the cloud (shader uSun). Volumetric god rays (prims.godrays) rake diagonally.\n- Every cloud gets a warm gold #FFC861 rim. Gold piti motes rise (prims.motes). The sky shifts toward peach-gold. 3% grain.\n- 'unclench.' blooms in Instrument Serif italic navy.\n- 36.30: a mono caption types on, top-left, with a cursor.\n- 37.50: the spoken line appears. 'free' is the only word in marigold. The meme color returns only as light."
+  },
+  {
+   "name": "CHORUS 2: you are the sky (poster frame, headless)",
+   "start_sec": 39,
+   "end_sec": 42.75,
+   "energy": 10,
+   "music": "- Gmaj9, with everything in: full kit, strings, harp arpeggio, celesta on 'sky', big snare reverb.\n- Full SATB choir 'you are the sky' (39.00 / 39.75 / 40.50 / sky 41.25 held to 42.75).\n- Choir Aahs double it and sing a descant B4 resolving to A4 on 'sky'.",
+   "visual": "POSTER FRAME.\n- A slow 3x pull-back reveals that the whole sky we were in sits where a head should be.\n- A large seated navy #1E2B47 silhouette fills the bottom 45%: shoulders, torso, crossed legs, hands resting open in the lap. It is the same pose as 'some guy' (prims.seated with fill, head = 0).\n- Above the collarbones there is no head, only sky. The silhouette's top fades to 0% over 160 px, so it never reads as a hard cut.\n- Grabbygrab sits in the cupped hands with the glowing orb beside him like a tiny sun.\n- The words land one per syllable in the head-space (y ~420): Instrument Serif italic 150 px, navy.\n- A mono plate number sits top-left; at 40.50 Pawel's own line appears in mono under the lyric."
+  },
+  {
+   "name": "METTA: don't fight him. love him open.",
+   "start_sec": 42.75,
+   "end_sec": 46.5,
+   "energy": 6,
+   "music": "- Bm11. Snare out; kick + shaker only.\n- Music box plays the grab motif as a slow lullaby. Choir Aahs pad sits low.\n- af_heart at 42.75 and 44.25: closer, 1.8 s plate.\n- 45.00 (D/F#): Voice Oohs cluster D4-E4-F#4-A4 enters.",
+   "visual": "- Push-in to the lap.\n- 42.75: a gold dry-brush ens\u014d (#FFC861, bristle texture, gap at top-right) paints itself around grabbygrab in 1.2 s. This open circle answers the tight, closed marker scribble at 5 s.\n- 44.25: a rose-gold glow (#FF9E7A to #FFD9A0) blooms in the silhouette's chest and flows down into the palms. Soft concentric rings pulse out on each beat.\n- Grabbygrab's eyes go '^ ^' and blush appears for the first time (35%). He gives a small, shy, open-handed wave; waving is the opposite of grabbing.\n- Lines in Instrument Serif italic 88 px navy; 'open' gets +0.2 em tracking.\n- 44.60: a small mono aside appears beside him.\n- 45.00: a mono header fades in at the top."
+  },
+  {
+   "name": "OUTRO: Tilopa subtraction",
+   "start_sec": 46.5,
+   "end_sec": 54,
+   "energy": 3,
+   "music": "Each instruction removes one layer (af_heart, speed 0.85, 1.8 s plate):\n- 46.50 'Don't recall.': shaker + music box out.\n- 48.00 'Don't imagine.': kick out, so no drums are left.\n- 49.50 'Don't think.': sub out.\n- 51.00 'Don't examine.' (bar 18, Asus4): Rhodes out.\n- 52.50 'Don't control.': strings out; the oohs thin to a single F#4.\nThe tanpura stays throughout.",
+   "visual": "Each instruction replaces the previous one, centered, in Instrument Serif italic 80 px navy, and removes one visual layer:\n- 'don't recall.': every label, plate number and aside pops out (memory).\n- 'don't imagine.': the clouds dissolve into the gradient.\n- 'don't think.': god rays, motes and the header line fade.\n- 'don't examine.': the ens\u014d un-paints from tail to head.\n- 'don't control.': camera motion stops dead. The silhouette loosens into slow particles that drift up into the sky. The pawel.world watermark fades too: even the credit gets let go.\nGrabbygrab is left floating small where the hands were, eyes closing."
+  },
+  {
+   "name": "REST",
+   "start_sec": 54,
+   "end_sec": 57.75,
+   "energy": 1,
+   "music": "- Bar 19, Dadd9: singing bowl on D at 54.00 (8 s ring); the last F#4 ooh fades over 2 s.\n- Only tanpura, crackle and bowl: about 2 seconds of near-silence.\n- 56.25: af_heart, dry whisper.\n- 57.00: felt piano Asus4 (A2 D3 E3), pp.",
+   "visual": "- Pure gradient: warm peach #FFE3C8 at the bottom to pale blue #CFE3F2 at the top. Luminance breathes at 0.2 Hz.\n- Only 'rest.' in Instrument Serif italic 64 px navy, dead center.\n- Tiny grabbygrab (~150 px) floats asleep at (540, 1000): eyes closed arcs, palm open.\n- 56.25: the next line fades in beneath 'rest.' at 52 px.\n- 57.00: he opens ONE eye and looks straight at the camera, deadpan (2-frame micro-zoom 1.00 to 1.03).\n- 57.40: a mono '(i will.)' appears beside his open eye with a tiny speech tick."
+  },
+  {
+   "name": "LOOP SEAM: just come back / the regrab",
+   "start_sec": 57.75,
+   "end_sec": 60,
+   "energy": 3,
+   "music": "- 57.75: af_heart, 'Just come back.'\n- 58.50: Asus4 pad swell.\n- 59.25: kalimba grab motif + thwip + tiny 'hup'. The tanpura detunes down into the evil-blob buzz (D2 to A1, tremolo 0 to 11 Hz, bitcrush on).\n- A reverse cymbal peaks at 59.97, so the 0.00 sub + Bm9 stab hits as the drop. Asus4 to Bm9 is the relapse cadence.",
+   "visual": "- 57.75: 'just come back.' replaces the previous line. His one open eye closes; small smile.\n- 58.50: a tiny white wisp of cloud drifts in from the right.\n- 59.25: his noodle arm shoots out (5-frame smear) and the mitten snaps shut on the wisp. The wisp turns charcoal and jitters; his eyes go '> <'. By 59.55 the arm has retracted to the frame-0 clutch pose.\n- 59.25-59.97: storm fog slams in from all four edges, the gradient crushes to charcoal, and the camera zooms in fast. Frame 59.97 matches frame 0 exactly (pose, blob, fog field, camera 1.00), minus all text.\n- Cut to 0.00: 'YOU'RE CLENCHING SOMETHING / RIGHT NOW.' slams back in as the punchline."
+  }
+ ],
+ "vocal_lines": [
+  {
+   "id": "V01",
+   "start_sec": 0.05,
+   "text": "You're clenching something.",
+   "type": "spoken",
+   "voice": "bm_george, deadpan British male, speed 0.95, dry and close",
+   "onscreen": "YOU'RE CLENCHING | SOMETHING",
+   "text_style": "Anton caps, 150 px, yellow #FFD23F, 8 px ink #141018 stroke, line-height 0.92, top third (y 170-560). Fully visible from frame 0. Each word pops 1.06 to 1.00 when spoken. 1 px per-glyph tremor."
+  },
+  {
+   "id": "V02",
+   "start_sec": 1.35,
+   "text": "Right now.",
+   "type": "spoken",
+   "voice": "bm_george, deadpan, speed 0.95, dry",
+   "onscreen": "RIGHT NOW.",
+   "text_style": "Third line of the frame-0 Anton stack, visible from frame 0. Pops on the word. Same tremor."
+  },
+  {
+   "id": "V03",
+   "start_sec": 2.25,
+   "text": "Not your jaw.",
+   "type": "spoken",
+   "voice": "bm_george, deadpan (not soothing), speed 0.95, dry",
+   "onscreen": "NOT YOUR JAW.",
+   "text_style": "The caption block hard-cuts and this punches in (1.08 to 1.00 over 2 frames). Anton yellow, 150 px, top third."
+  },
+  {
+   "id": "V04",
+   "start_sec": 3.75,
+   "text": "A thought about later.",
+   "type": "spoken",
+   "voice": "bm_george, deadpan, speed 0.95, dry",
+   "onscreen": "A THOUGHT | ABOUT LATER.",
+   "text_style": "Anton yellow, 140 px, two lines, word by word on TTS timestamps. Hard cut from the previous caption."
+  },
+  {
+   "id": "V05",
+   "start_sec": 5.25,
+   "text": "That one.",
+   "type": "spoken",
+   "voice": "bm_george, deadpan, slightly slower, dry",
+   "onscreen": "THAT ONE.",
+   "text_style": "Anton yellow, 170 px, on the freeze-frame, together with the tight yellow marker scribble around the blob."
+  },
+  {
+   "id": "V06",
+   "start_sec": 6,
+   "text": "Some guy found the cause",
+   "type": "spoken",
+   "voice": "bm_george, deadpan nature-documentary read, speed 0.95",
+   "onscreen": "SOME GUY | FOUND THE CAUSE",
+   "text_style": "Anton yellow, 140 px, top third, word by word on the beat. A 1.8 s gap follows for suspense."
+  },
+  {
+   "id": "V07",
+   "start_sec": 9,
+   "text": "of ALL suffering.",
+   "type": "spoken",
+   "voice": "bm_george, dry. 'all' is a separate take, +2 dB, with a 60 ms breath before it",
+   "onscreen": "OF | ALL | SUFFERING.",
+   "text_style": "Near-black frame. 'OF' at 90 px top; 'ALL' in yellow Anton ~600 px tall, filling 90% of the width, with a 2 px tremor; 'SUFFERING.' at 90 px below."
+  },
+  {
+   "id": "V08",
+   "start_sec": 10.5,
+   "text": "Same cause. Every time.",
+   "type": "spoken",
+   "voice": "bm_george, deadpan, speed 0.95",
+   "onscreen": "SAME CAUSE. | EVERY TIME.",
+   "text_style": "Anton yellow, 130 px, on a charcoal band across the middle of the 3x3 grid."
+  },
+  {
+   "id": "V09",
+   "start_sec": 12,
+   "text": "It's this little guy.",
+   "type": "spoken",
+   "voice": "bm_george, deadpan, a hair slower",
+   "onscreen": "IT'S THIS | LITTLE GUY.",
+   "text_style": "Anton yellow, 140 px, top third, above the hero creature who is blinking at the camera."
+  },
+  {
+   "id": "V10",
+   "start_sec": 13.5,
+   "text": "grab-by-grab",
+   "type": "choir",
+   "voice": "vocoder choir, 3-4 part, too-earnest staccato (af_heart top + bm_george octave below), 110 ms slapback",
+   "onscreen": "GRAB | BY | GRAB",
+   "text_style": "Stamped in ink Anton onto the cream PLATE 01, one syllable per note (13.500 / 13.875 / 14.250), each with a 3-frame 4 px shake. Together they read 'GRABBYGRAB'."
+  },
+  {
+   "id": "V11",
+   "start_sec": 15,
+   "text": "The tighter he holds,",
+   "type": "spoken",
+   "voice": "bm_george, deadpan, speed 0.95",
+   "onscreen": "THE TIGHTER | HE HOLDS,",
+   "text_style": "Anton yellow, 130 px, top third. The tremor increases to 2 px."
+  },
+  {
+   "id": "V12",
+   "start_sec": 16.5,
+   "text": "the harder it shakes.",
+   "type": "spoken",
+   "voice": "bm_george, deadpan; the tail is caught by the tape-stop at 17.55",
+   "onscreen": "THE HARDER | IT SHAKES.",
+   "text_style": "Anton yellow, 130 px. Shakes with the frame (4 px), then freezes with the tape-stop. This is the last clenched caption until the loop."
+  },
+  {
+   "id": "V13",
+   "start_sec": 18.75,
+   "text": "So look right at the grab.",
+   "type": "spoken",
+   "voice": "af_heart, warm American female, speed 0.85, dry, almost whispered, -3 dB",
+   "onscreen": "so look right | at the grab.",
+   "text_style": "The FIRST serif in the film: Instrument Serif italic, lowercase, 88 px, warm white #FFF6E0, at the top of the flashlight cone. Enters with an 8-frame rise (12 px) and blur 10 to 0; never bounces."
+  },
+  {
+   "id": "V14",
+   "start_sec": 21,
+   "text": "un-clench",
+   "type": "choir",
+   "voice": "vocoder choir, 4-part SATB, falling third A4 to F#4, 4.5 s hall",
+   "onscreen": "UNCLENCH \u2192 unclench.",
+   "text_style": "THE TYPE UNCLENCHES, center frame.\n- 21.00: 'UNCLENCH' in tight yellow Anton, jittering.\n- 21.75-22.75: tracking 0 to +0.3 em, scaleX 0.9 to 1.25, each glyph cross-fading Anton to Archivo 900, 500 and 200 (40 ms stagger), color yellow to warm white, jitter to 0.\n- 22.75-23.25: dissolves into Instrument Serif italic lowercase 'unclench.' at 120 px."
+  },
+  {
+   "id": "V15",
+   "start_sec": 24,
+   "text": "you are the sky",
+   "type": "choir",
+   "voice": "vocoder choir, 4-part SATB, rising D4-E4-F#4-A4 over Gmaj9, 4.5 s hall",
+   "onscreen": "you | are | the | sky",
+   "text_style": "Instrument Serif italic, lowercase, 150 px, navy #1E2B47 on the dawn sky, centered at y ~420. One word lands per syllable (24.00 / 24.75 / 25.50 / 26.25) with a soft light flare. 'sky' keeps widening its tracking while held."
+  },
+  {
+   "id": "V16",
+   "start_sec": 28.5,
+   "text": "The cloud can stay.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.88, 1.8 s plate at 15%",
+   "onscreen": "the cloud can stay.",
+   "text_style": "Instrument Serif italic, lowercase, 88 px navy, below center. Vapor entrance and exit."
+  },
+  {
+   "id": "V17",
+   "start_sec": 30,
+   "text": "Arrows pass right through.",
+   "type": "spoken",
+   "voice": "bm_george, unclenched: speed 0.92, light 1.2 s plate",
+   "onscreen": "arrows pass | right through.",
+   "text_style": "Instrument Serif REGULAR (roman, his unclenched voice), lowercase, 88 px, warm white #FFF6E0 with a soft navy shadow (35%, 20 px blur), upper third."
+  },
+  {
+   "id": "V18",
+   "start_sec": 31.5,
+   "text": "The sky doesn't mind.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.88, plate, a little smile in it",
+   "onscreen": "the sky doesn't MIND.",
+   "text_style": "Instrument Serif italic, 88 px, warm white with a navy shadow. CAPS here only marks the emphasized word: render 'mind' lowercase in a slightly larger italic (the no-mind pun, left unexplained)."
+  },
+  {
+   "id": "V19",
+   "start_sec": 33,
+   "text": "The reward hack:",
+   "type": "spoken",
+   "voice": "bm_george, unclenched, dry wink, speed 0.92",
+   "onscreen": "the | reward hack:",
+   "text_style": "'the' in Instrument Serif regular, 88 px, warm white. 'reward hack' as an inline-code token: JetBrains Mono 500, 64 px, inside a thin 2 px rounded rectangle. A mono '[exploit found]' badge sits beneath."
+  },
+  {
+   "id": "V20",
+   "start_sec": 34.125,
+   "text": "never clench, whatever shows up.",
+   "type": "spoken",
+   "voice": "bm_george, unclenched, warm, speed 0.92",
+   "onscreen": "never clench, | whatever shows up.",
+   "text_style": "Instrument Serif regular, lowercase, 88 px, warm white with a navy shadow, below the token. The arrow volley passes behind it."
+  },
+  {
+   "id": "V21",
+   "start_sec": 36,
+   "text": "un-clench",
+   "type": "choir",
+   "voice": "vocoder choir, 4-part + rising descant D5 to E5, doubled by GS Choir Aahs",
+   "onscreen": "unclench.",
+   "text_style": "Instrument Serif italic, 140 px, navy, blooming with the drop: a light flare plus letter-spacing opening from 0 to +0.15 em."
+  },
+  {
+   "id": "V22",
+   "start_sec": 37.5,
+   "text": "Turns out the joy was free.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.92, plate, bright",
+   "onscreen": "turns out | the joy was FREE.",
+   "text_style": "Instrument Serif regular, lowercase, 96 px navy. CAPS only marks emphasis: render 'free' lowercase italic in marigold #F2A900 with a 1.5 px navy hairline and a soft gold glow. It is the only marigold word after the unclench."
+  },
+  {
+   "id": "V23",
+   "start_sec": 39,
+   "text": "you are the sky",
+   "type": "choir",
+   "voice": "vocoder choir, full SATB, GS Choir Aahs descant B4 to A4 on 'sky'",
+   "onscreen": "you | are | the | sky.",
+   "text_style": "Instrument Serif italic, 150 px navy, in the HEAD-SPACE above the headless silhouette (y ~420). One word per syllable (39.00 / 39.75 / 40.50 / 41.25) with a light flare."
+  },
+  {
+   "id": "V24",
+   "start_sec": 42.75,
+   "text": "Don't fight him.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.88, close, 1.8 s plate",
+   "onscreen": "don't fight him.",
+   "text_style": "Instrument Serif italic, 88 px navy, above the ens\u014d in the lap area (y ~620)."
+  },
+  {
+   "id": "V25",
+   "start_sec": 44.25,
+   "text": "Love him open.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.85, closest and softest line",
+   "onscreen": "love him OPEN.",
+   "text_style": "Instrument Serif italic, 88 px navy, replacing the previous line. CAPS only marks emphasis: render 'open' lowercase with +0.2 em tracking, letters gently drifting apart."
+  },
+  {
+   "id": "V26",
+   "start_sec": 46.5,
+   "text": "Don't recall.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.85, plate 18%",
+   "onscreen": "don't recall.",
+   "text_style": "Instrument Serif italic, 80 px navy, dead center. Each Tilopa line replaces the previous one with a vapor exit."
+  },
+  {
+   "id": "V27",
+   "start_sec": 48,
+   "text": "Don't imagine.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.85",
+   "onscreen": "don't imagine.",
+   "text_style": "Instrument Serif italic, 80 px navy, center. Replaces the previous line."
+  },
+  {
+   "id": "V28",
+   "start_sec": 49.5,
+   "text": "Don't think.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.85",
+   "onscreen": "don't think.",
+   "text_style": "Instrument Serif italic, 76 px navy, center."
+  },
+  {
+   "id": "V29",
+   "start_sec": 51,
+   "text": "Don't examine.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.85",
+   "onscreen": "don't examine.",
+   "text_style": "Instrument Serif italic, 72 px navy, center."
+  },
+  {
+   "id": "V30",
+   "start_sec": 52.5,
+   "text": "Don't control.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.85",
+   "onscreen": "don't control.",
+   "text_style": "Instrument Serif italic, 68 px navy, center. Text gets slightly smaller with each instruction (subtraction)."
+  },
+  {
+   "id": "V31",
+   "start_sec": 54,
+   "text": "Rest.",
+   "type": "spoken",
+   "voice": "af_heart, speed 0.85, barely there, on the bowl strike",
+   "onscreen": "rest.",
+   "text_style": "Instrument Serif italic, 64 px navy, dead center on the pure peach-to-blue gradient. Held to 59.25."
+  },
+  {
+   "id": "V32",
+   "start_sec": 56.25,
+   "text": "When he grabs again\u2014",
+   "type": "spoken",
+   "voice": "af_heart, dry whisper, speed 0.85",
+   "onscreen": "when he grabs again\u2014",
+   "text_style": "Instrument Serif italic, 52 px navy at 80%, fading in beneath 'rest.' (y ~760)."
+  },
+  {
+   "id": "V33",
+   "start_sec": 57.75,
+   "text": "Just come back.",
+   "type": "spoken",
+   "voice": "af_heart, dry whisper, speed 0.85, tender",
+   "onscreen": "just come back.",
+   "text_style": "Instrument Serif italic, 52 px navy, replacing 'when he grabs again\u2014'. Wiped away by the storm fog at 59.25."
+  }
+ ],
+ "extra_onscreen_text": [
+  {
+   "start_sec": 0,
+   "end_sec": 52.5,
+   "text": "pawel.world",
+   "style": "JetBrains Mono 500, 20 px, top-right (right-aligned x = 1000, y = 78). Warm white at 40% on dark, navy at 40% on sky. Fades out on 'don't control.' (52.5)."
+  },
+  {
+   "start_sec": 3,
+   "end_sec": 5.25,
+   "text": "(ok, also your jaw)",
+   "style": "JetBrains Mono 500, 26 px, warm white at 80%. Typed on at 40 chars/s with a block cursor, right-aligned under the caption at y ~600."
+  },
+  {
+   "start_sec": 3.75,
+   "end_sec": 4.6,
+   "text": "later",
+   "style": "JetBrains Mono 500, 28 px ink, inside a white line-art thought bubble with a tiny calendar glyph above grabbygrab. Squished into the blob at 4.5."
+  },
+  {
+   "start_sec": 6.6,
+   "end_sec": 9,
+   "text": "~500 BCE \u00b7 n=1 \u00b7 no funding",
+   "style": "JetBrains Mono 500, 26 px, warm white at 85%. Typed on beside the line-art meditator under the bodhi tree."
+  },
+  {
+   "start_sec": 10.5,
+   "end_sec": 12,
+   "text": "money / being right / a text back / the past / later / certainty / jhanas / enlightenment / this video doing numbers",
+   "style": "JetBrains Mono 500, 20 px, warm white. One label centered under each 3x3 grid cell, in reading order."
+  },
+  {
+   "start_sec": 11.1,
+   "end_sec": 12,
+   "text": "(that's not how jhana works, buddy)",
+   "style": "JetBrains Mono 500, 24 px, warm white at 80%, bottom center (y ~1110), right after the orb pops in the jhanas cell."
+  },
+  {
+   "start_sec": 13.5,
+   "end_sec": 15,
+   "text": "FIELD GUIDE TO THE MIND \u00b7 PLATE 01",
+   "style": "JetBrains Mono 600 caps, 24 px, ink #23202B, top-left inside the double border of the cream plate."
+  },
+  {
+   "start_sec": 13.6,
+   "end_sec": 15,
+   "text": "pali: ta\u1e47h\u0101 (lit. 'thirst') / speed: faster than thought / habitat: every mind / diet: whatever's next / causes: all of it",
+   "style": "JetBrains Mono 500, 26 px ink, one field per line, typed down the right column of the plate at 60 chars/s. Check that \u1e47 and \u0101 render; if not, use 'tanha'."
+  },
+  {
+   "start_sec": 15,
+   "end_sec": 17.55,
+   "text": "am i doing this right / reply to him / is this jhana? / i should be calmer by now / did i lock it / what if they / rent",
+   "style": "JetBrains Mono, 22-30 px, warm white at 50-80%. Fragments pop in every 0.25 s and orbit in the fog at pseudo-3D depths (prims.thoughts). They freeze in the tape-stop and are gone by 18.0."
+  },
+  {
+   "start_sec": 16.5,
+   "end_sec": 18,
+   "text": "EVIL VIBRATING BLOB / pali: dukkha / (was a perfectly nice cloud)",
+   "style": "JetBrains Mono 600 (first line caps) / 500, 26 px, warm white. 2 px ink-white leader line with a 6 px dot terminal from the blob to the label (right side, y ~700)."
+  },
+  {
+   "start_sec": 19.8,
+   "end_sec": 21,
+   "text": "(no prying. just look.)",
+   "style": "JetBrains Mono 500, 24 px, warm white at 70%, at the bottom of the flashlight cone."
+  },
+  {
+   "start_sec": 26.25,
+   "end_sec": 30,
+   "text": "\u2196 you (all of this)",
+   "style": "JetBrains Mono 500, 26 px navy, top-left inside four thin 2 px ink viewfinder corner brackets drawn at the frame corners (60 px inset)."
+  },
+  {
+   "start_sec": 27,
+   "end_sec": 30,
+   "text": "\u2199 grabbygrab (off duty)",
+   "style": "JetBrains Mono 500, 22 px navy at 80%, beside the tiny floating creature."
+  },
+  {
+   "start_sec": 30.75,
+   "end_sec": 33.6,
+   "text": "what if i'm meditating wrong / the thing you said in 2014 / inbox (847) / someone is wrong online",
+   "style": "JetBrains Mono 500, 22 px, warm white, one tag riding each arrow's shaft. Arrows at 30.75, 31.50, 32.25 and 33.00 respectively; each tag exits the frame with its arrow."
+  },
+  {
+   "start_sec": 33,
+   "end_sec": 36,
+   "text": "[exploit found]",
+   "style": "JetBrains Mono 500, 24 px, warm white, with a blinking block cursor beneath the 'reward hack' token."
+  },
+  {
+   "start_sec": 34.5,
+   "end_sec": 35.9,
+   "text": "jhana?",
+   "style": "JetBrains Mono 500, 22 px navy, floating beside the gold orb until it lands in his palm."
+  },
+  {
+   "start_sec": 36.3,
+   "end_sec": 39,
+   "text": "(the sunshinification of sensory experience)",
+   "style": "JetBrains Mono 500, 26 px navy at 85%. Typed on with a blinking cursor, top-left at y ~200."
+  },
+  {
+   "start_sec": 39,
+   "end_sec": 46.5,
+   "text": "PLATE 02 \u00b7 THE SKY (you)",
+   "style": "JetBrains Mono 600 caps, 24 px navy, top-left. Pops out on 'don't recall.'"
+  },
+  {
+   "start_sec": 40.5,
+   "end_sec": 46.5,
+   "text": "not a face. space for the world.",
+   "style": "JetBrains Mono 500, 24 px navy at 80%, under the lyric in the head-space (y ~600). Pops out on 'don't recall.'"
+  },
+  {
+   "start_sec": 44.6,
+   "end_sec": 46.5,
+   "text": "(may you be happy. even you.)",
+   "style": "JetBrains Mono 500, 22 px navy, beside grabbygrab inside the ens\u014d. Pops out on 'don't recall.'"
+  },
+  {
+   "start_sec": 45,
+   "end_sec": 49.5,
+   "text": "there is no adding happiness. only subtracting.",
+   "style": "JetBrains Mono 500, 26 px navy at 80%, top center (y ~200). Fades on 'don't think.'"
+  },
+  {
+   "start_sec": 46.5,
+   "end_sec": 49.5,
+   "text": "\u2014 tilopa's six words",
+   "style": "JetBrains Mono 500, 22 px navy at 60%, under the Tilopa line (y ~720). Fades on 'don't think.'"
+  },
+  {
+   "start_sec": 57.4,
+   "end_sec": 58.6,
+   "text": "(i will.)",
+   "style": "JetBrains Mono 500, 30 px navy, beside grabbygrab's one open eye with a tiny 2 px speech tick: the creature's deadpan confession."
+  }
+ ],
+ "hook_first_2s": "FRAME 0 IS THE POSTER: no fade-in, fully composed, and it doubles as X's thumbnail.\n\nSEEN\n- Background: a full-bleed charcoal storm-cloud interior (#1B1A22 with slow, dull grey-violet #3A3348 fog wisps), 6% grain, vignette.\n- Top third (y 170-560): three stacked lines of yellow #FFD23F Anton caps, 150 px, 8 px ink stroke, already fully on screen: 'YOU'RE CLENCHING / SOMETHING / RIGHT NOW.' Every glyph has a 1 px tremor. This yellow condensed caption is the visual grammar of the video Harry quoted.\n- Center-bottom (540, 900): grabbygrab. He is a flat cream bean creature with a thick ink outline, '> <' squeezed eyes and one sweat drop. His single noodle arm is bent in front of him, and his mitten fist is clamped on a fist-sized charcoal blob that jitters at 12 Hz and spits tiny sparks.\n- A muted viewer reads a complete, second-person sentence in about one second and checks their own jaw and hands without meaning to. That self-check is the scroll-stop.\n\nMOTION\n- Lightning lights the fog from inside at 0.40 s (2 warm-white frames, 6-frame decay) and again at 1.60 s.\n- The camera creeps in from 1.00 to 1.03.\n- The word being spoken pops from 1.06 to 1.00.\n\nHEARD\n- At 0.00: a sub thump and a muted grand-piano B-minor(add9) cluster stab (the same downbeat the loop lands on), the low bitcrushed 'evil blob' buzz (A1, 11 Hz tremolo), vinyl crackle, and a lightning crackle at 0.40.\n- A close, dry, deadpan British male voice: 'You're clenching something.' (0.05-1.25) ... 'Right now.' (1.35-1.95).\n\nAt 2.25 the caption hard-cuts to 'NOT YOUR JAW.', and at 3.0 '(ok, also your jaw)' types on. That wink tells meditation TPOT this is not a wellness reel.",
+ "loop_strategy": "Three locks make the end and the start one continuous moment.\n\n1. NARRATIVE LOCK\nAfter 'rest.', grabbygrab opens one eye, '(i will.)' appears, and the voice says 'just come back.' Then he regrabs a passing wisp, and the cut lands on 'YOU'RE CLENCHING SOMETHING / RIGHT NOW.'\n- On the first watch that line is the hook. On every replay it is the punchline: you rested for three seconds and you're already clenching.\n- It is also Pawel's Meditation 101 in one gesture: 'everybody fails at this... just keep coming back.' The rewatch IS the coming back.\n- There is no end card or logo. The watermark is let go on 'don't control.'\n\n2. VISUAL LOCK\n- 59.25-59.97: storm fog slams in from the edges and the camera zooms in, so frame 59.97 matches frame 0 exactly (same '> <' pose, jittering blob, fog field, camera 1.00 scale), minus the text. Frame 0 has its text fully on with no fade, so the cut reads as the caption slamming in.\n- The fog's noise drift moves on a 60 s circle (offset = R\u00b7(cos 2\u03c0t/60, sin 2\u03c0t/60)), so the shader is periodic and does not jump at the seam.\n- Grain uses the same seed. Export exactly 1800 frames at 30 fps.\n\n3. AUDIO LOCK\n- 20 bars at 80 BPM = exactly 60.000 s.\n- The last bar sits on an unresolved Asus4. The same A chord resolved to D for 'rest.' at 54 s, but at the seam it falls to the Bm9 stab at 0.00. That deceptive cadence is the relapse, heard.\n- The tanpura (the sky's drone) detunes back into the bitcrushed evil-blob buzz that is playing at 0.00. The kalimba grab motif at 59.25 is the pickup. A reverse cymbal peaks at 59.97, so the 0.00 sub thump lands as a drop.\n- Render two cycles back to back and export the second, so reverb tails and crackle spill across the seam. The hook is never quieter than the regrab.\n\nThe dense mono layer rewards the second and third watch: n=1 \u00b7 no funding, the specimen plate, the grid label 'this video doing numbers', the arrow tags, '(i will.)'. That is what drives watch time.",
+ "palette": [
+  "#1B1A22 storm charcoal: hook/verse-1 background and the loop seam",
+  "#3A3348 dull grey-violet fog wisps: kept low-saturation, never galaxy purple",
+  "#FFD23F clenched-caption yellow: Anton captions and the tight marker scribble, 0-21 s only. A homage to the yellow condensed captions in the video Harry quoted",
+  "#4A4556 to #121117 the evil vibrating blob: charcoal darkening as it is squeezed",
+  "#F6EDE0 grabbygrab cream: flat fill, no gradient. #F2A7A0 blush appears only in the metta beat",
+  "#23202B ink: all line art, outlines, leader lines and plate text",
+  "#F4EFE6 warm white: lightning, the released cloud, mono text on dark. #FFF6E0 for serif text on dark or deep sky",
+  "#5B8FCB zenith / #A9CBE8 mid / #F4EFE6 horizon haze with #F9DDB1 peach: the dawn sky. Verse 2 is deeper (#3F78C0 zenith)",
+  "#1E2B47 sky-ink navy: every serif lyric on the sky, and the headless meditator silhouette",
+  "#FFC861 sunshine gold: god rays, cloud rims, piti motes, the jhana orb and the ens\u014d. Yellow comes back only as light",
+  "#F2A900 marigold: the single word 'free'",
+  "#FF9E7A to #FFD9A0 metta rose-gold: the glow in the chest and palms",
+  "#FFE3C8 to #CFE3F2 the final 'rest.' gradient (peach at the bottom, pale blue at the top)"
+ ],
+ "fonts": "Three families carry the film. The type itself unclenches.\n\n1. ANTON 400 (local: visual/fonts/anton-latin-400-normal.woff2), the CLENCHED voice, 0-18 s, plus 'UNCLENCH' at 21 s.\n- ALL CAPS, yellow #FFD23F, 120-170 px ('ALL' ~600 px), 8 px ink stroke #141018, line-height 0.92, tracking -0.01 em, real kerning.\n- Word-by-word punch-ins on Kokoro word timestamps (1.08 to 1.00 over 2 frames) and a 1-2 px per-glyph tremor.\n- Captions hard-cut, with no crossfades.\n\n2. INSTRUMENT SERIF 400 regular + italic (local woff2), every UNCLENCHED line from 18.75 s on.\n- Italic lowercase: af_heart's lines (80-96 px) and the choir lines (120-150 px).\n- Regular (roman) lowercase: bm_george's unclenched lines in verse 2.\n- Navy #1E2B47 on sky; warm white #FFF6E0 (with a 35% navy shadow) on dark or deep sky.\n- Enter: 8-frame rise of 12 px, blur 10 to 0, opacity. Exit like vapor: opacity, 6 px blur, 10 px upward drift over 12 frames. Never bounces.\n\n3. JETBRAINS MONO 500/600 (system install at /usr/share/fonts/truetype/jetbrains-mono/; copy Medium and SemiBold into visual/fonts and register them with FontFace), the FIELD-GUIDE / HUD layer.\n- Labels, plates, asides, arrow tags, the '[exploit found]' badge, the 'reward hack' code token, the watermark.\n- 20-30 px, lowercase except plate headers. Typed on at 40-60 chars/s with a block cursor.\n- Labels use 2 px leader lines with 6 px dot terminals.\n\nTHE MORPH (21.00-23.25)\nThere is no variable-width Archivo offline, so fake the axis.\n- Per glyph: cross-fade Anton, then Archivo static 900, 500 and 200 (add 200 and 300 to ENGINE.FONTS), staggered 40 ms left to right.\n- At the same time, ctx horizontal scale goes 0.9 to 1.25, tracking -0.02 em to +0.3 em, color yellow to warm white, tremor to 0.\n- Then dissolve into Instrument Serif italic 'unclench.'\n- Archivo appears ONLY in these in-between frames.\n\nDrop Caveat, Fraunces and Space Grotesk from this piece.\n\nLAYOUT (1080x1350)\n- All text within x 80-1000 and y 120-1150 (clear of X's player UI).\n- No more than 3 lines of main caption at once.\n- Clenched captions live in the top 40%; creatures live in the lower half.",
+ "visual_motifs": "ONE CHARACTER: GRABBYGRAB\n- Built on visual/grabby.js: a bean body with ONE noodle arm and a mitten hand.\n- Restyle to a flat cream #F6EDE0 fill. Remove the radial white gradient (allow at most a 4% highlight). Single-weight 5 px ink #23202B outline, no pastel softness.\n- Eye states: dots; '> <' squeeze (with sweat drop and zigzag mouth); '^ ^' content; closed arcs; one-eye-open; big worried. Add '> <' and one-eye-open to the rig.\n- Acting is limited to: arm extend/retract (5-frame smear), mitten open 0-1, squash, blink, small wave.\n- The macro fist (18-23 s) uses prims.hand in the same cream/ink style with a 120 ms finger stagger, at the same finger count as the mitten.\n- No lip-sync and no walk cycles.\n\nTHE CLOUD'S LIFE CYCLE\n1. A perfectly nice cloud.\n2. Squeezed into the evil vibrating blob (prims.blob: jitter 12 Hz, darkening).\n3. Released as a white cloud.\n4. Allowed to stay.\n5. At the seam, a new wisp gets grabbed and the cycle restarts.\n\nCLOSED VS OPEN CIRCLE\nThe tight, closed yellow marker scribble around the blob ('THAT ONE.', 5.25 s) rhymes with the open gold dry-brush ens\u014d around grabbygrab ('love him open', 42.75 s). Both are the same pointing gesture: one is blame, the other is love. The ens\u014d uses the existing ens\u014d primitive.\n\nYELLOW AS CLENCH, THEN AS LIGHT\nYellow Anton is the clenched mind up to 21 s. After the unclench, yellow never returns as type, only as light: the jhana orb, sun, god rays, piti motes, gold cloud rims, the ens\u014d, and the single word 'free'. The seam brings yellow type back as the relapse.\n\nTHE TYPE UNCLENCHES\nCondensed caps, then hairline-wide, then serif italic (21 s). Elsewhere, letters act out their meaning: 'sky' keeps widening, 'open' spreads its letters, and the Tilopa lines shrink with each instruction.\n\nTHE FIELD-GUIDE LAYER\nA mono labeling system that makes every frame a screenshot:\n- PLATE 01: a cream paper plate with an ink double border and a hatched line-art creature (ta\u1e47h\u0101).\n- The leader-line label 'EVIL VIBRATING BLOB / pali: dukkha'.\n- Viewfinder corner brackets labeled 'you (all of this)' around the whole sky.\n- PLATE 02: the sky (you).\n- The labels are the first thing removed on 'don't recall.'\n\nTHE SEATED FIGURE RHYME\n'Some guy' (a small line-art meditator under a five-stroke bodhi tree, 6 s) becomes YOU (a huge navy headless silhouette whose head-space is the whole sky, 39 s; prims.seated, head = 0, top faded over 160 px so it never reads as a cut). Then the silhouette dissolves into particles on 'don't control.'\n\nATTENTION AS A FLASHLIGHT\nA narrow warm cone lands on the grab (18.4 s), then widens until it IS the open sky (21-24 s).\n\nARROWS WITH NO IMPACT\nThin cream line-art arrows with mono tags pass through the sky (prims.arrow + prims.ripple). The refraction rings heal within 10 frames, and the sound is a celesta note instead of a hit.\n\nTHE JHANA ORB\nGrabbed in the grid (11 s), it pops grey. Left alone (35.6 s), it drifts into the open palm by itself and becomes the sunrise of the sunshinification drop.\n\nSHADER LOOKS\nAll from the existing ENGINE.sky shader:\n- Storm interior: uStorm 1, uDark 0.35, warm-white uFlash lightning.\n- Dawn sky: parallax cumulus.\n- Sunshine: uSun, uGlowR, plus prims.godrays and motes.\n- Final gradient: clouds 0.\nDomain-warped fbm only; no raymarching. Grain is 6% on dark and 3% on light, with a soft vignette.\n\nTRANSITION VOCABULARY\nHard cuts and punch-ins (clenched half); a 6-frame whip-pan smear; the stop-time black frame; plate slide-up (ease-out-back) and paper-tear; a tape-stop time-freeze (warp the animation clock); a dolly-out burst through parallax fog planes; slow pull-backs; and, in the outro, layer-by-layer subtraction instead of cuts.\n\nEverything is deterministic in t, so the loop can match to the pixel.",
+ "tweet_copy": [
+  "made you one.\n\nUNCLENCH (you are the sky): 60 seconds on grabbygrab (ta\u1e47h\u0101), the evil vibrating blob (dukkha), and the reward hack\n\nmade with claude from my meditation notes. sound on. it loops, which is kind of the whole practice",
+  "@harry_taussig you asked for AI music videos like that but for dharma, so i turned my notion meditation notes into one\n\n~700 hours in since 2013 and i still grab. this is what i'd tell myself",
+  "some guy found the cause of all suffering 2,500 years ago\n\nit's this little guy\n\n(60s dharma music video, made with claude from my meditation notes. sound on. it loops, like samsara)"
+ ],
+ "alt_text": "A 60-second looping animated music video.\n\n- Inside a dark storm cloud, a small cream bean-shaped cartoon creature with one noodle arm squeezes a dark, vibrating blob. Bold yellow captions read 'You're clenching something. Right now. Not your jaw. A thought about later. That one.'\n- A deadpan narrator explains that some guy found the cause of all suffering 2,500 years ago, and that it is this little guy. A grid shows tiny copies of him clutching blobs labeled money, being right, jhanas and 'this video doing numbers'. A field-guide plate names him grabbygrab (ta\u1e47h\u0101), and his blob is labeled 'evil vibrating blob (dukkha), was a perfectly nice cloud.'\n- A soft female voice says 'So look right at the grab.' A choir sings 'unclench' as his fist opens finger by finger, the blob becomes a white cloud, and the tight yellow type relaxes into a serif.\n- The camera bursts out of the storm into a huge dawn sky as the choir sings 'you are the sky.' Labeled arrows pass harmlessly through ('the sky doesn't mind'), and the caption reads 'the reward hack: never clench, whatever shows up.' A glowing orb settles into his open hand, and sunlight floods everything: 'turns out the joy was free.'\n- The sky turns out to be the space where the head of a seated meditator would be. The creature rests in the open hands inside a gold ens\u014d: 'don't fight him. love him open.'\n- Tilopa's six words remove the music and imagery layer by layer until only 'rest.' remains.\n- The creature opens one eye ('i will'), the voice says 'just come back', he grabs a passing wisp, and the video loops to the beginning."
+}
