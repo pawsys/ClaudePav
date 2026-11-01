@@ -76,7 +76,7 @@ narr = pb_chain(narr, [P.HighpassFilter(90), P.PeakFilter(3500, 2.0, 1.0), P.Low
 narr_wet = reverb(narr, 1.2, wet=1.0, dry=0.0, predelay=0.02, seed=3)
 narr = narr + narr_wet * env_from([(0, 0.05), (29.9, 0.05), (30.0, 0.12), (59.9, 0.12), (60, 0.05)])
 guide = S["voice_guide"]
-guide = pb_chain(guide, [P.HighpassFilter(80), P.HighShelfFilter(7000, 2.0), P.Compressor(-22, 2.5, 6, 120), P.Gain(4)])
+guide = pb_chain(guide, [P.HighpassFilter(80), P.HighShelfFilter(7000, 0.0), P.PeakFilter(7500, -3.0, 1.4), P.Compressor(-22, 2.5, 6, 120), P.Gain(4)])
 guide = guide * env_from([(0, 1), (53.9, 1), (54.0, db(-5)), (55.4, db(-5)), (55.45, db(-3)), (58.4, db(-3)), (58.5, 1), (60, 1)])
 g_wet = reverb(guide, 1.8, wet=1.0, dry=0.0, predelay=0.04, seed=4)
 guide = guide + g_wet * env_from([(0, 0.0), (21.0, 0.0), (28.0, 0.16), (55.9, 0.16), (56.1, 0.03), (60, 0.0)])
