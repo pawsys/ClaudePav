@@ -356,3 +356,61 @@
 
   window.PRIM = { rain, bolt, motes, stars, godrays, blob, arrow, ripple, seated, hand, thoughts, vnoise };
 })();
+
+// -------------------------------------------------------------- ensō brush circle
+// p: 0..1 drawn progress, unp: 0..1 erased from tail. Gap at top-right.
+(function () {
+  const E = window.ENGINE, H = E.hash, TAU = Math.PI * 2;
+  function enso(cx, cy, r, p, { color = '255,214,140', alpha = 1, width = 64, start = -0.95, sweep = 5.6, unp = 0, glow = 16, seed = 2 } = {}) {
+    if (p <= 0 || alpha <= 0) return;
+    const ctx = E.ctx;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    const N = 320;
+    const prof = f => (f < 0.04 ? 0.75 + f / 0.04 * 0.45 : 1.2 - 0.95 * Math.pow((f - 0.04) / 0.96, 1.35));
+    const pt = (f, off) => {
+      const a = start + f * sweep;
+      const rr = r * (1 + 0.03 * Math.sin(a * 2 + seed) + 0.012 * Math.sin(a * 5 + seed * 3));
+      const rad = rr + off * width * prof(f);
+      return [cx + Math.cos(a) * rad, cy + Math.sin(a) * rad];
+    };
+    const f0 = Math.max(unp, 0), f1 = Math.min(p, 1);
+    // solid core ribbon (wet ink) for the first part
+    const coreEnd = Math.min(f1, 0.62);
+    if (coreEnd > f0) {
+      ctx.beginPath();
+      const M = 160;
+      for (let i = 0; i <= M; i++) { const f = f0 + (coreEnd - f0) * i / M; const q = pt(f, -0.32); i ? ctx.lineTo(q[0], q[1]) : ctx.moveTo(q[0], q[1]); }
+      for (let i = M; i >= 0; i--) { const f = f0 + (coreEnd - f0) * i / M; const q = pt(f, 0.32); ctx.lineTo(q[0], q[1]); }
+      ctx.closePath();
+      ctx.fillStyle = `rgba(${color},0.92)`;
+      if (glow) { ctx.shadowColor = `rgba(${color},0.55)`; ctx.shadowBlur = glow; }
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+    // bristles
+    const nb = 34;
+    for (let b = 0; b < nb; b++) {
+      const off = (b / (nb - 1) - 0.5);
+      const dry = H(b * 3.7 + seed);
+      const endF = 0.7 + 0.3 * H(b * 5.1 + seed) - Math.abs(off) * 0.35; // outer bristles end sooner
+      ctx.beginPath();
+      let started = false;
+      for (let i = 0; i <= N; i++) {
+        const f = i / N;
+        if (f > f1 || f < f0 || f > endF) { started = false; continue; }
+        const gap = f > 0.5 && Math.sin(f * (40 + dry * 50) + b * 2.3) > 1.15 - (f - 0.5) * 1.6 * (0.4 + dry);
+        if (gap) { started = false; continue; }
+        const q = pt(f, off);
+        if (!started) { ctx.moveTo(q[0], q[1]); started = true; } else ctx.lineTo(q[0], q[1]);
+      }
+      ctx.strokeStyle = `rgba(${color},${0.35 + 0.6 * H(b * 1.9 + seed)})`;
+      ctx.lineWidth = Math.max(1.2, width / nb * (1.2 + H(b * 7.7) * 1.2));
+      ctx.lineCap = 'round';
+      if (glow) { ctx.shadowColor = `rgba(${color},0.35)`; ctx.shadowBlur = glow * 0.5; }
+      ctx.stroke();
+    }
+    ctx.restore();
+  }
+  window.PRIM.enso = enso;
+})();

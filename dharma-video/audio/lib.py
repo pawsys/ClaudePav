@@ -864,3 +864,96 @@ def speak_timed(text, voice="af_heart", speed=1.0):
         acc += w + p
     starts[0] = 0.0
     return a, starts, words
+
+
+# ----------------------------------------------------------------- sound design FX
+def thunder(dur=4.0, seed=3, dist=0.6):
+    rng = np.random.default_rng(seed)
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    x = rng.standard_normal((n, 2)).astype(np.float32)
+    rumble = lp(x, 120 + 200 * (1 - dist), 2)
+    crack = bp(x, 300, 3000) * np.exp(-t / 0.15)[:, None] * (1 - dist)
+    env = (1 - np.exp(-t / 0.05)) * np.exp(-t / (dur * 0.35))
+    # rolling modulation
+    roll = 0.6 + 0.4 * np.abs(np.sin(2 * np.pi * (1.3 + rng.uniform(0, 1)) * t + rng.uniform(0, 3)))
+    y = (rumble * 6 * roll[:, None] + crack * 0.8) * env[:, None]
+    return (y * 0.5).astype(np.float32)
+
+
+def rain_bed(dur, density=1.0, seed=8):
+    rng = np.random.default_rng(seed)
+    n = int(dur * SR)
+    base = rng.standard_normal((n, 2)).astype(np.float32)
+    hiss = bp(base, 800, 9000) * 0.05
+    drops = np.zeros((n, 2), np.float32)
+    k = int(dur * 400 * density)
+    for i in rng.integers(0, n - 400, k):
+        L = rng.integers(40, 300)
+        f = rng.uniform(1500, 6000)
+        tt = np.arange(L) / SR
+        d = np.sin(2 * np.pi * f * tt * (1 + tt * 30)) * np.exp(-tt / 0.004) * rng.uniform(0.01, 0.06)
+        ch = rng.uniform(0, 1)
+        drops[i:i + L, 0] += d * ch
+        drops[i:i + L, 1] += d * (1 - ch)
+    return (hiss + drops).astype(np.float32)
+
+
+def whoosh(dur=0.7, pan_from=-1, pan_to=1, f0=400, f1=3000, seed=12, peak_at=0.6):
+    rng = np.random.default_rng(seed)
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    x = rng.standard_normal(n).astype(np.float32)
+    out = np.zeros(n, np.float32)
+    chunks = 40
+    for c in range(chunks):
+        a = c * n // chunks; b = (c + 1) * n // chunks
+        fr = c / (chunks - 1)
+        fc = f0 * (f1 / f0) ** fr
+        out[a:b] = bp(x[a:b], fc * 0.6, min(fc * 1.7, SR / 2 - 100), 1)
+    env = np.exp(-((t / dur - peak_at) ** 2) / 0.03)
+    out *= env
+    p = np.linspace(pan_from, pan_to, n)
+    a = (p + 1) * np.pi / 4
+    return (np.stack([out * np.cos(a), out * np.sin(a)], 1) * 0.6).astype(np.float32)
+
+
+def thwip(f0=300, f1=1400, dur=0.07, vel=1.0):
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    f = f0 * (f1 / f0) ** (t / dur)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    x = np.sin(ph) * np.sin(np.pi * t / dur) ** 0.5
+    return to_stereo(x * 0.25 * vel)
+
+
+def bzzt(dur=0.35, f=55, trem=12, vel=1.0):
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    saw = (2 * ((f * t) % 1) - 1) + (2 * ((f * 1.012 * t) % 1) - 1)
+    x = lp(saw.astype(np.float32), 500) * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * trem * t)))
+    env = np.minimum(1, t / 0.01) * np.minimum(1, (dur - t) / 0.05)
+    return to_stereo(x * env * 0.2 * vel)
+
+
+def tape_stop(x, dur, sr=SR):
+    """Slow the last `dur` seconds of x to a halt (pitch + speed down)."""
+    n = len(x)
+    k = int(dur * sr)
+    head, tail = x[: n - k], x[n - k:]
+    # playback rate goes 1 -> 0 ; position = integral of rate
+    rate = np.linspace(1, 0, k) ** 1.6
+    pos = np.cumsum(rate)
+    pos = np.clip(pos, 0, len(tail) - 1)
+    i0 = np.floor(pos).astype(int); i1 = np.minimum(i0 + 1, len(tail) - 1)
+    w = (pos - i0)[:, None]
+    y = tail[i0] * (1 - w) + tail[i1] * w
+    y *= np.linspace(1, 0.0, k)[:, None] ** 0.3
+    return np.concatenate([head, y]).astype(np.float32)
+
+
+def reverse_swell(x, tail_sec=2.0, rev_sec=3.0):
+    """Reverse-reverb swell leading INTO x's onset. Returns swell (to be placed ending at x onset)."""
+    w = reverb(to_stereo(x), rev_sec, wet=1.0, dry=0.0)
+    w = w[: int(tail_sec * SR)][::-1].copy()
+    return fade(w, 0.3, 0.02)
