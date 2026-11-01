@@ -20,6 +20,7 @@ VOICE = {"narrator": ("am_michael", 0.95), "narrator_soft": ("am_michael", 0.92)
 narr = np.zeros((N, 2), np.float32)
 guide = np.zeros((N, 2), np.float32)
 timing = {"lines": [], "choir": []}
+MEASURED = json.load(open(os.path.join(HERE, "word_onsets.json"))) if os.path.exists(os.path.join(HERE, "word_onsets.json")) else {}
 
 for ln in SCRIPT["spoken"]:
     v, spd = VOICE[ln["voice"]]
@@ -30,6 +31,11 @@ for ln in SCRIPT["spoken"]:
     a = a * db(ln.get("gain_db", 0.0))
     t0 = ln["t"]
     dur = len(a) / SR
+    # word onsets measured by forced alignment on the rendered stems (audio/word_onsets.json) override the
+    # phoneme-count estimates when the line's words are unchanged (TTS is deterministic)
+    m = MEASURED.get(ln["id"])
+    if m and m["words"] == words:
+        starts = m["offsets"]
     timing["lines"].append({"id": ln["id"], "t": t0, "end": t0 + dur, "words": words,
                             "word_t": [t0 + s for s in starts], "voice": ln["voice"]})
     for off in OFFS:

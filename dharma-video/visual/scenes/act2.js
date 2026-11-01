@@ -380,7 +380,7 @@
   function blobLook(t, cl) {
     return {
       hi: 1 - sm(R(t, 21.85, 22.2)), ol: sm(R(t, 21.95, 22.1)), spike: cl.jitter,
-      rim: (1 - sm(R(t, 21.75, 21.9))) * sm(R(t, 18.25, 18.6)),
+      rim: (1 - sm(R(t, 21.75, 21.9))) * sm(R(t, 18.4, 18.75)),
     };
   }
 
@@ -507,7 +507,7 @@
       const st = t < s ? 0 : Math.min(4, 1 + Math.floor((t - s) / UN_STEP + 1e-4));
       const p = sm(R(t, s, s + 4 * UN_STEP));
       const slot = lerp(adv[0][i] - 0.02 * em * 0, adv[4][i] + 0.3 * em, p);
-      const out = R(t, UN_OUT + i * 0.022, UN_OUT + i * 0.022 + 0.18);   // dissolve (vapor, L->R)
+      const d = 3.5 - Math.abs(i - 3.5); const out = R(t, UN_OUT + d * 0.03, UN_OUT + d * 0.03 + 0.15);   // dissolve (vapor, edges inward)
       return { ch, st, slot, out };
     });
     const total = g.reduce((a, q) => a + q.slot, 0);
@@ -565,9 +565,9 @@
     const owW = ow * Math.max(0.35, GS / 230);
     // attention light (computed first: the dust motes ride in the air BEHIND the fist)
     const fistS = toScreen(c, FIST.x - 30, FIST.y - 40);
-    const on = t >= 18.25 ? 1 : 0;
+    const on = t >= 18.4 ? 1 : 0;
     const wide = sm(R(t, 22.2, 23.3));
-    const amb0 = lerp(0.42, 0.075, sm(R(t, 18.25, 18.7)));
+    const amb0 = lerp(0.42, 0.075, sm(R(t, 18.4, 18.85)));
     const amb = lerp(amb0, 1, sm(R(t, 22.4, 23.2)));
     const L = {
       ax: 600, ay: -560, tx: fistS[0], ty: fistS[1],
@@ -1056,7 +1056,7 @@
     capt(t, { text: 'arrows pass through.', id: 'V17', style: 'serifRoman', y: 218, size: 90, t1: 32.3, shadow: true });
     capt(t, { text: "the sky doesn't mind.", id: 'V18', style: 'serif', y: 322, size: 96, color: PAL.warmWhite, t1: 32.75, shadow: true });
     rewardHack(t);
-    capt(t, { text: "don't close, | not even for this.", id: 'V20', style: 'serifRoman', y: 356, size: 88, t1: 35.5, shadow: true });
+    capt(t, { text: "don't close, | not even for this.", id: 'V20', style: 'serifRoman', y: 356, size: 88, t1: 35.7, shadow: true });
   }
 
   // "you are the sky": one word per sung syllable; 'sky' widens its tracking while held (left-anchored; the line
@@ -1080,10 +1080,10 @@
 
   // "the `reward hack`:"  (text leads the voice: 'the' -0.10, chip -0.14, typing -0.12, colon -0.08)
   let RH = null;
-  const RH_GAP = 16;
+  const RH_GAP = 6;
   function rewardHack(t) {
     const L = C.line('V19');
-    if (!L || t < L.word_t[0] - 0.1 || t > 35.95) return;
+    if (!L || t < L.word_t[0] - 0.1 || t > 36.0) return;
     const ctx = E.ctx;
     if (!RH) {
       ctx.save();
@@ -1093,7 +1093,7 @@
       const total = a + sp + tw + RH_GAP + colon;
       RH = { x0: W / 2 - total / 2, a, sp, tw, colon };
     }
-    const y = 194, t1 = 35.5;
+    const y = 194, t1 = 35.7;
     const exitA = 1 - sm(R(t, t1, t1 + 0.4));
     const wt = L.word_t;
     capt(t, { text: 'the', style: 'serifRoman', times: [wt[0] - 0.10], x: RH.x0, align: 'left', y, size: 88, t1, shadow: true });

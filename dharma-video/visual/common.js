@@ -123,7 +123,7 @@
         ctx.lineJoin = 'round'; ctx.lineWidth = sw; ctx.strokeStyle = stroke; ctx.strokeText(ch, cx, y);
         ctx.shadowColor = 'transparent';
       }
-      if (hair) { ctx.lineJoin = 'round'; ctx.lineWidth = 3; ctx.strokeStyle = hair; ctx.strokeText(ch, cx, y); }
+      if (hair) { ctx.lineJoin = 'round'; ctx.lineWidth = 6; ctx.strokeStyle = hair; ctx.strokeText(ch, cx, y); }
       ctx.fillStyle = col; ctx.fillText(ch, cx, y);
       ctx.shadowColor = 'transparent';
       cx += w + (sp || 0);

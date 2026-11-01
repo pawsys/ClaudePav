@@ -107,6 +107,7 @@
     // outline layer (cream, thick) then fill on top; erase clips the outline from the bottom up
     if (outlineA > 0) {
       o.save();
+      o.globalAlpha = Math.min(1, outlineA);
       if (erase > 0) { const yCut = E.lerp(cy + 1.3 * s, cy - 1.3 * s, erase); o.beginPath(); o.rect(-4000, -4000, 9000, yCut + 4000); o.clip(); }
       o.lineJoin = 'round'; o.strokeStyle = PAL.cream; o.lineWidth = 12;
       silPath(o, cx, cy, s); o.stroke();
@@ -159,7 +160,9 @@
     // sun rises from behind the little cloud
     const sp = ease(R(t, 36.0, 37.3));
     const sx = E.lerp(780, 690, sp), sy = E.lerp(760, 590, sp);
-    inkSun(t, sx, sy, E.lerp(40, 92, sp), { alpha: sm(R(t, 36.0, 36.25)), rays: sp });
+    // light flood on the downbeat (the bible's god rays)
+    P.godrays(t, sx, sy, 1.0 * sm(R(t, 36.0, 36.5)), { count: 11, len: 1700, spread: 1.7, dir: Math.PI * 0.62 });
+    inkSun(t, sx, sy, E.lerp(40, 92, sp), { alpha: sm(R(t, 36.0, 36.1)), rays: sp });
     // the little cloud, now gold-rimmed
     C.puff(B.cloud.x, B.cloud.y, B.cloud.r, { t, rim: sm(R(t, 36.3, 37.0)) });
     goldMotes(t, sm(R(t, 36.2, 37.0)));
@@ -172,6 +175,8 @@
       holding: (hx, hy) => { hp = [hx, hy]; },
     });
     if (hp) orb(hp[0] + B.orb.off[0], hp[1] + B.orb.off[1], B.orb.r, glow);
+    // warm bloom on the downbeat
+    { const fl = 0.5 * (1 - E.clamp((t - 36.0) / 0.2)); if (fl > 0) { ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = `rgba(255,240,210,${fl})`; ctx.fillRect(0, 0, E.W, E.H); ctx.restore(); } }
     // HUD meter
     if (t >= 36.0 && t < 37.42) {
       const pct = Math.round(78 * ease(R(t, 36.05, 37.1)));
@@ -180,10 +185,10 @@
       C.mono(t, `sunshinification ${bar} ${pct}%`, 540, 205, { size: 40, color: PAL.navy, align: 'center', weight: 600, t0: 36.0, t1: 37.42 });
     }
     // 'unclench.' blooms with the choir
-    C.caption(t, { text: 'unclench.', id: 'C4', style: 'serif', y: 330, size: 140, t1: 37.45, over: { spacing: 0 },
+    C.caption(t, { text: 'unclench.', id: 'C4', style: 'serif', y: 330, size: 140, t1: 37.28, over: { spacing: 0, exit: 4 / 30 },
       emph: { unclench: { spacing: 15 * sm(R(t, 36.0, 37.4)) } } });
     // 'turns out / the joy was free.'
-    C.caption(t, { text: 'turns out | the joy was free.', id: 'V22', style: 'serifRoman', y: 320, size: 100, color: PAL.navy, t1: 38.95,
+    C.caption(t, { text: 'turns out | the joy was free.', id: 'V22', style: 'serifRoman', y: 320, size: 100, color: PAL.navy, t1: 39.25,
       emph: { free: { italic: true, color: PAL.marigold, hair: PAL.navy, scale: 1.08 } } });
   });
 
@@ -192,9 +197,9 @@
     // o: winA, sunA, cloudA, motesA, tagA, grabbyEyes, orbGlow, skyOver, silFill, silOutline, silErase
     const ctx = E.ctx;
     silhouette(BODY.x, BODY.y, BODY.s, { fillA: o.silFill ?? 1, outlineA: o.silOutline ?? 1, erase: o.silErase ?? 0, window: o.winA ?? 0 });
-    // sun sits where the head should be
-    inkSun(t, HEAD.x, HEAD.y + 6, 62, { alpha: o.sunA ?? 1, rays: o.sunA ?? 1 });
-    C.puff(HEAD.x + 150, HEAD.y + 40, 62, { t, rim: 1, alpha: o.cloudA ?? 1, ow: 4 });
+    // head window holds only sky and a passing cloud (Harding); sun sits off to the right
+    inkSun(t, HEAD.x + 320, HEAD.y + 10, 46, { alpha: o.sunA ?? 1, rays: o.sunA ?? 1 });
+    C.puff(HEAD.x + E.lerp(170, 0, sm(R(t, 39.4, 42.0))), HEAD.y + 8, 54, { t, rim: 1, alpha: o.cloudA ?? 1, ow: 4 });
     goldMotes(t, o.motesA ?? 1);
     // grabbygrab in the cupped hands
     const gs = o.gs ?? 92;
@@ -217,8 +222,10 @@
     C.camera(sc, HEAD.x, HEAD.y);
     posterWorld(t, { winA: sm(R(t, 39.6, 40.4)) });
     ctx.restore();
+    // the thesis line holds across the cut for a beat
+    C.caption(t, { text: 'turns out | the joy was free.', id: 'V22', style: 'serifRoman', y: 320, size: 100, color: PAL.navy, t1: 39.25, emph: { free: { italic: true, color: PAL.marigold, hair: PAL.navy, scale: 1.08 } } });
     // lyric in the head-space
-    C.caption(t, { text: 'you are | the sky.', id: 'C5', style: 'serif', y: 255, size: 128, t1: 42.6, lead: 0.06 });
+    C.caption(t, { text: 'you are | the sky.', id: 'C5', style: 'serif', y: 255, size: 128, t1: 42.6, times: [39.62, 39.69, 40.44, 40.815] });
     C.mono(t, 'PLATE 02\nON HAVING\nNO HEAD', 92, 560, { size: 36, color: PAL.navy, weight: 600, t0: 39.9 });
   });
 
@@ -227,7 +234,7 @@
     skyAct3(t, { sun: 0.12, sunPos: [0.5, 0.64] });
     const ctx = E.ctx;
     // push in to the lap, then (48.75-49.5) ease back out to the poster
-    const inK = E.easeInOutSine(R(t, 42.75, 43.35));
+    const inK = E.easeInOutSine(R(t, 42.75, 43.05));
     const outK = E.easeInOutSine(R(t, 48.75, 49.5));
     const k = inK * (1 - outK);
     const sc = E.lerp(1.0, 1.85, k);
@@ -254,11 +261,11 @@
     ctx.restore();
     // words
     const mcol = k > 0.5 ? PAL.warmWhite : PAL.navy, msh = k > 0.5 ? 'rgba(10,14,30,0.5)' : null;
-    C.caption(t, { text: "don't fight him.", id: 'V24', style: 'serif', y: 300, size: 100, t1: 43.68, over: { exit: 3 / 30, exitBlur: 4 }, color: mcol, shadow: msh });
-    C.caption(t, { text: "he's just scared.", id: 'V24b', style: 'serif', y: 300, size: 100, t1: 44.95, color: mcol, shadow: msh });
-    C.caption(t, { text: 'love him open.', id: 'C6', style: 'serif', y: 300, size: 124, t1: 48.85, lead: 0.06, color: mcol, shadow: msh,
+    C.caption(t, { text: "don't fight him.", id: 'V24', times: C.wordTimes('V24', 3, 0.08).map(x => Math.max(x, 42.92)), style: 'serif', y: 300, size: 100, t1: 43.68, over: { exit: 3 / 30, exitBlur: 4 }, color: mcol, shadow: msh });
+    C.caption(t, { text: "he's just scared.", id: 'V24b', style: 'serif', y: 300, size: 100, t1: 44.84, over: { exit: 3 / 30, exitBlur: 4 }, color: mcol, shadow: msh });
+    C.caption(t, { text: 'love him open.', id: 'C6', style: 'serif', y: 240, size: 124, t1: 48.5, lead: 0.06, color: mcol, shadow: msh,
       emph: { open: { spacing: 22 * sm(R(t, 46.5, 48.0)) } } });
-    C.mono(t, '(may you be happy. even you.)', 540, 1130, { size: 40, color: PAL.warmWhite, align: 'center', t0: 47.0, t1: 48.7 });
+    C.mono(t, '(may you be happy. even you.)', 540, 1167, { size: 40, color: PAL.warmWhite, align: 'center', t0: 47.0, t1: 48.7 });
   });
   function waveArm(t) {
     // small shy open-handed wave 46.4 - 47.6
@@ -290,7 +297,7 @@
     posterWorld(t, {
       winA: 1 - pop(52.5) * sm(R(t, 52.5, 53.0)),
       sunA: 1 - think, cloudA: 1 - imagine, motesA: 1 - think,
-      silFill: 1 - sm(R(t, 52.5, 53.0)), silOutline: 1, silErase: ease(R(t, 52.85, 53.35)),
+      silFill: 1 - sm(R(t, 52.5, 53.0)), silOutline: 1 - sm(R(t, 53.0, 53.25)), silErase: ease(R(t, 52.85, 53.35)),
       eyes: t < 52.5 ? 'happy' : 'closed', orbGlow: 1.4 * (1 - think), orbA: 1 - think,
     });
     if (unp < 1) P.enso(LAP.x, LAP.y - 68, 112, 1, { width: 26, color: '255,200,97', glow: 8, seed: 4, unp });
@@ -298,7 +305,7 @@
     let cur = null;
     for (const L of TIL) if (t >= L[0] - 0.06) cur = L;
     if (cur) C.caption(t, { text: cur[1], style: 'serif', y: 255, size: cur[2], times: [cur[0] - 0.06, cur[0] - 0.06], over: { enter: 2 / 30, rise: 4, blur: 0 } });
-    C.mono(t, "tilopa's six words", 540, 1205, { size: 34, color: PAL.navy, align: 'center', alpha: 0.75, t0: 49.5, t1: 50.95 });
+    C.mono(t, "TILOPA'S\nSIX WORDS", 92, 560, { size: 36, color: PAL.navy, weight: 600, t0: 49.5, t1: 51.6 });
   });
 
   let _storm = null;
@@ -361,16 +368,17 @@
       });
     }
     // words
-    C.caption(t, { text: 'rest.', id: 'V31', style: 'serif', y: 560, size: 120, t1: 56.95 });
-    C.caption(t, { text: 'when he grabs again,', id: 'V32', style: 'serif', y: 720, size: 64, t1: 56.95, alpha: 0.85 });
+    C.caption(t, { text: 'rest.', id: 'V31', style: 'serif', y: 560, size: 120, t1: 56.8, over: { exit: 4 / 30 } });
+    C.caption(t, { text: 'when he grabs again,', id: 'V32', style: 'serif', y: 720, size: 64, t1: 56.8, alpha: 0.85, over: { exit: 4 / 30 } });
     C.mono(t, '(i will.)', 660, 840, { size: 44, color: PAL.navy, t0: 56.6, t1: 57.9 });
     C.caption(t, { text: 'just come back.', id: 'V33', style: 'serif', y: 600, size: 100, t1: 59.2 });
   });
 
   // global watermark
   window.WATERMARK = (t) => {
-    if (t >= 52.5 && t < 59.25) return null;
+    if (t >= 52.5 && t < 54.0) return null;               // lets go on "don't control"
+    if (t >= 54.0 && t < 59.25) return { color: 'rgba(30,43,71,0.6)' };
     const dark = t < 23.5 || t >= 59.25;
-    return { color: dark ? 'rgba(255,246,224,0.45)' : 'rgba(30,43,71,0.45)' };
+    return { color: dark ? 'rgba(255,246,224,0.45)' : 'rgba(30,43,71,0.85)' };
   };
 })();

@@ -1,0 +1,296 @@
+{
+ "V01": {
+  "words": [
+   "You're",
+   "clenching",
+   "something",
+   "right",
+   "now."
+  ],
+  "offsets": [
+   0.0,
+   0.13,
+   0.66,
+   1.13,
+   1.39
+  ]
+ },
+ "V03": {
+  "words": [
+   "Not",
+   "your",
+   "jaw."
+  ],
+  "offsets": [
+   0.01,
+   0.31,
+   0.52
+  ]
+ },
+ "V04": {
+  "words": [
+   "A",
+   "thought",
+   "about",
+   "later."
+  ],
+  "offsets": [
+   0.01,
+   0.07,
+   0.51,
+   0.85
+  ]
+ },
+ "V05": {
+  "words": [
+   "That",
+   "one."
+  ],
+  "offsets": [
+   0.0,
+   0.34
+  ]
+ },
+ "V06": {
+  "words": [
+   "Some",
+   "guy",
+   "found",
+   "the",
+   "cause",
+   "of"
+  ],
+  "offsets": [
+   0.01,
+   0.3,
+   0.61,
+   0.89,
+   0.95,
+   1.44
+  ]
+ },
+ "V07a": {
+  "words": [
+   "all"
+  ],
+  "offsets": [
+   0.01
+  ]
+ },
+ "V07b": {
+  "words": [
+   "suffering."
+  ],
+  "offsets": [
+   0.01
+  ]
+ },
+ "V08": {
+  "words": [
+   "Same",
+   "cause."
+  ],
+  "offsets": [
+   0.01,
+   0.35
+  ]
+ },
+ "V09": {
+  "words": [
+   "It's",
+   "this",
+   "little",
+   "guy."
+  ],
+  "offsets": [
+   0.0,
+   0.21,
+   0.45,
+   0.74
+  ]
+ },
+ "V11": {
+  "words": [
+   "It",
+   "buzzes.",
+   "So",
+   "he",
+   "squeezes.",
+   "So",
+   "it",
+   "buzzes."
+  ],
+  "offsets": [
+   0.0,
+   0.12,
+   0.6,
+   0.81,
+   0.89,
+   1.82,
+   2.01,
+   2.08
+  ]
+ },
+ "V13": {
+  "words": [
+   "Don't",
+   "let",
+   "go.",
+   "Just",
+   "look."
+  ],
+  "offsets": [
+   0.01,
+   0.24,
+   0.38,
+   0.96,
+   1.23
+  ]
+ },
+ "V16": {
+  "words": [
+   "The",
+   "cloud",
+   "can",
+   "stay."
+  ],
+  "offsets": [
+   0.0,
+   0.09,
+   0.48,
+   0.68
+  ]
+ },
+ "V17": {
+  "words": [
+   "Arrows",
+   "pass",
+   "through."
+  ],
+  "offsets": [
+   0.0,
+   0.39,
+   0.8
+  ]
+ },
+ "V18": {
+  "words": [
+   "The",
+   "sky",
+   "doesn't",
+   "mind."
+  ],
+  "offsets": [
+   0.0,
+   0.07,
+   0.48,
+   0.75
+  ]
+ },
+ "V19": {
+  "words": [
+   "The",
+   "reward",
+   "hack:"
+  ],
+  "offsets": [
+   0.0,
+   0.09,
+   0.6
+  ]
+ },
+ "V20": {
+  "words": [
+   "Don't",
+   "close,",
+   "not",
+   "even",
+   "for",
+   "this."
+  ],
+  "offsets": [
+   0.0,
+   0.18,
+   0.75,
+   0.98,
+   1.22,
+   1.36
+  ]
+ },
+ "V22": {
+  "words": [
+   "Turns",
+   "out",
+   "the",
+   "joy",
+   "was",
+   "free."
+  ],
+  "offsets": [
+   0.0,
+   0.32,
+   0.48,
+   0.56,
+   0.87,
+   1.1
+  ]
+ },
+ "V24": {
+  "words": [
+   "Don't",
+   "fight",
+   "him."
+  ],
+  "offsets": [
+   0.01,
+   0.27,
+   0.62
+  ]
+ },
+ "V24b": {
+  "words": [
+   "He's",
+   "just",
+   "scared."
+  ],
+  "offsets": [
+   0.01,
+   0.26,
+   0.48
+  ]
+ },
+ "V31": {
+  "words": [
+   "Rest."
+  ],
+  "offsets": [
+   0.01
+  ]
+ },
+ "V32": {
+  "words": [
+   "When",
+   "he",
+   "grabs",
+   "again,"
+  ],
+  "offsets": [
+   0.01,
+   0.15,
+   0.24,
+   0.65
+  ]
+ },
+ "V33": {
+  "words": [
+   "just",
+   "come",
+   "back."
+  ],
+  "offsets": [
+   0.05,
+   0.33,
+   0.53
+  ]
+ }
+}

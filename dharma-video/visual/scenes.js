@@ -28,7 +28,7 @@
     const wm = window.WATERMARK ? window.WATERMARK(t) : { color: 'rgba(255,246,224,0.45)' };
     if (wm) {
       ctx.save();
-      ctx.font = '500 28px "JBM"'; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+      ctx.font = '600 30px "JBM"'; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
       ctx.fillStyle = wm.color; ctx.fillText('pawel.world', 1000, 78);
       ctx.restore();
     }

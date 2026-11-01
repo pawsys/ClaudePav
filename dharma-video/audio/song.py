@@ -101,7 +101,7 @@ def sfr(notes, program, bank=0, drums=False, tail=4.0, dur=None):
 for off in OFFS:
     # ============================================================== HOOK 0-6
     # 0.00 sub thump B1 + muted grand Bm(add9) cluster stab
-    add("sub", sub_bass([(off + 0.0, 1.4, nm("B1"), 120)], 2.0, drive=2.0) * np.linspace(1, 0, int(2.0 * SR))[:, None] ** 2, 0)
+    add("sub", sub_bass([(0.0, 1.4, nm("B1"), 120)], 2.0, drive=2.0) * np.linspace(1, 0, int(2.0 * SR))[:, None] ** 2, off + 0.0)
     add("drums", kick(1.0, tone=46, decay=0.6), off + 0.0, 0.9)
 # piano stab notes collected per cycle below (soundfont render once)
 piano_notes, rhodes_notes, pad_notes, string_notes, aah_notes, ooh_notes = [], [], [], [], [], []
@@ -227,7 +227,7 @@ for off in OFFS:
     for k, n in enumerate(casc):
         celesta_notes.append((o + 34.5 + k * 0.11, 0.6, n, 46 - k * 2))
     # 35.6 glass ting
-    glock_notes.append((o + 35.6, 1.0, nm("A6"), 60))
+    glock_notes.append((o + 35.6, 1.0, nm("A6"), 100))
 
     # ---- CHORUS 2 DROP 36-42.75
     for (t0, d, s, v, bn) in chord_events([13, 14]):
@@ -312,7 +312,8 @@ stems["pad"] += sfr(pad_notes, 89)
 stems["strings"] += sfr(string_notes, 49)
 stems["oohs"] += sfr(ooh_notes, 53)
 stems["musicbox"] += sfr(mbox_notes, 10)
-stems["bells"] += sfr(celesta_notes, 8) + sfr(kalimba_notes, 108) * 0.9 + sfr(marimba_notes, 12) * 0.6 + sfr(glock_notes, 9) * 0.5
+stems["bells"] += sfr(celesta_notes, 8) + sfr(kalimba_notes, 108) * 0.9 + sfr(marimba_notes, 12) * 0.6
+stems["sfx"] += sfr(glock_notes, 9) * 1.5
 stems["harp"] += sfr(harp_notes, 46)
 stems["piano"] += sfr(felt_notes, 0) * 0.9
 stems["drums"] += sfr(gm_drums, 0, bank=128, drums=True)
@@ -348,8 +349,7 @@ saw2 = 2 * ((ph2 / (2 * np.pi)) % 1) - 1
 sine = np.sin(ph)
 trem_ph = 2 * np.pi * np.cumsum(trem_rate) / SR
 trem = 1 - 0.6 * buzzy * (0.5 + 0.5 * np.sign(np.sin(trem_ph)) * 0.8 + 0.5 * 0.2 * np.sin(trem_ph))
-buzz_raw = (sine * 0.6 + (saw1 + saw2) * 0.35 * buzzy)
-buzz_raw = lp(buzz_raw.astype(np.float32), 400)
+buzz_raw = lp((sine * 0.3).astype(np.float32), 400) + lp(((saw1 + saw2) * 0.5 * buzzy).astype(np.float32), 1800)
 # bitcrush blend
 crushed = np.round(buzz_raw * 512) / 512
 buzz_sig = (buzz_raw * (1 - buzzy) + crushed * buzzy) * trem
@@ -387,10 +387,11 @@ for off in OFFS:
     for k in range(2):
         sq_n = int(0.22 * SR); tt = np.arange(sq_n) / SR
         sq = bp(np.random.default_rng(k).standard_normal(sq_n).astype(np.float32), 2500, 6000) * np.sin(np.pi * tt / 0.22) * (0.6 + 0.4 * np.sin(2 * np.pi * 38 * tt))
-        add("sfx", to_stereo(sq * 0.1), o + 5.3 + k * 0.22)
+        add("sfx", to_stereo(sq * 0.05), o + 5.3 + k * 0.22)
     # 5.40-6.00 reverse snare swell
     sn = snare(1.0)
-    add("sfx", reverse_swell(sn, 0.6, 1.8) * 0.8, o + 5.4)
+    sw = reverse_swell(np.pad(sn, ((0, int(1.0 * SR)), (0, 0))), 0.6, 1.8)
+    add("sfx", sw * 0.35, o + 6.0 - len(sw) / SR)
     # 9.0 reversed piano swell peaking at 9.00 + sub drop on ALL
     rev = sf.render([(0, 1.5, nm(n), 70) for n in ["A2", "D3", "E3", "A3"]], 2.0, program=0, tail=0)
     rv = reverb(rev, 2.5, wet=0.8)[::-1].copy()
@@ -398,13 +399,13 @@ for off in OFFS:
     add("sfx", rv * 0.9, o + 9.0 - 1.5)
     sd_n = int(1.3 * SR); tt = np.arange(sd_n) / SR
     fdrop = 55 * (30 / 55) ** (tt / 1.2)
-    add("sub", to_stereo(np.sin(2 * np.pi * np.cumsum(fdrop) / SR) * np.exp(-tt / 0.9) * 0.6), o + 9.15)
+    add("sub", to_stereo(np.sin(2 * np.pi * np.cumsum(fdrop) / SR) * np.exp(-tt / 0.9) * 0.6), o + 9.02)
     # paper slide 13.5, paper tear 15.0
     ps_n = int(0.35 * SR); tt = np.arange(ps_n) / SR
     add("sfx", to_stereo(bp(np.random.default_rng(3).standard_normal(ps_n).astype(np.float32), 1500, 7000) * np.sin(np.pi * tt / 0.35) * 0.12), o + 13.35)
     pt_n = int(0.4 * SR); tt = np.arange(pt_n) / SR
     tear = bp(np.random.default_rng(5).standard_normal(pt_n).astype(np.float32), 900, 8000) * (0.5 + 0.5 * (np.random.default_rng(6).random(pt_n) > 0.7)) * np.exp(-tt / 0.18)
-    add("sfx", to_stereo(tear * 0.3), o + 15.0)
+    add("sfx", to_stereo(tear * 0.15), o + 15.0)
     # 16.5 noise riser to tape stop
     add("sfx", noise_riser(1.05, 300, 8000, peak=1.0), o + 16.5, 0.5)
     # 20.25 reverse swell into the chorus (done with choir later); harp gliss + reverse cymbal 23.6-24
@@ -415,12 +416,12 @@ for off in OFFS:
     add("sfx", singing_bowl(midi_hz(nm("D4")), 10.0, 1.0, seed=2), o + 54.0, 0.6)
     # arrows whooshes 30.75, 31.5, 32.25, 33.0 (L->R alternating)
     for k, ta in enumerate([30.75, 31.5, 32.25, 33.0]):
-        add("sfx", whoosh(0.7, -1 if k % 2 == 0 else 1, 1 if k % 2 == 0 else -1, seed=20 + k), o + ta, 0.7)
+        add("sfx", whoosh(0.7, -1 if k % 2 == 0 else 1, 1 if k % 2 == 0 else -1, seed=20 + k), o + ta, 0.3)
     # volley: 12 streaks on the picture's schedule (34.52 + k*0.062, 0.42 s crossings); each whoosh peaks
     # mid-crossing so the sound is gone with the last arrow, before the 35.6 ting
     for k in range(12):
         ta = 34.52 + k * 0.062
-        add("sfx", whoosh(0.42, -1 + 2 * ((k * 7) % 5) / 4, 1 - 2 * ((k * 3) % 5) / 4, f0=600, f1=4000, seed=40 + k, peak_at=0.5), o + ta, 0.16)
+        add("sfx", whoosh(0.42, -1 + 2 * ((k * 7) % 5) / 4, 1 - 2 * ((k * 3) % 5) / 4, f0=2500, f1=9000, seed=40 + k, peak_at=0.5), o + ta, 0.07)
     add("sfx", noise_riser(0.25, 800, 9000, peak=0.6, seed=11), o + 35.75, 0.4)
     # reverse cymbal into seam 59.25-59.97 (peaks at 59.97)
     add("sfx", noise_riser(0.72, 1500, 12000, peak=0.9, seed=13), o + 59.25, 0.65)
@@ -442,7 +443,7 @@ for off in OFFS:
         a = speak(fr_, vv, 1.05)
         a = bp(a, 300, 3000)
         st = off + 15.0 + k * 0.33
-        g = db(-24 + 8 * (k / 6))
+        g = db(-27 + 6 * (k / 6))
         place(chat, pan(a, -0.9 + 1.8 * ((k * 5) % 7) / 6) * g * 1.4, st)
 stems["sfx"] += reverb(chat, 1.2, wet=0.3)
 
