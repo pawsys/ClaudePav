@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<base href="../../">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block;position:absolute;top:0;left:0}</style>
+</head>
+<body>
+<canvas id="lxgl" width="1080" height="1350" style="display:none"></canvas>
+<canvas id="c" width="1080" height="1350"></canvas>
+<script src="engine.js"></script>
+<script src="timing.js"></script>
+<script src="lookdev/rays/lx.js"></script>
+<script src="lookdev/rays/glsl.js"></script>
+<script src="lookdev/rays/char.js"></script>
+<script src="lookdev/rays/type.js"></script>
+<script src="lookdev/rays/scenes.js"></script>
+<script src="lookdev/rays/scenes2.js"></script>
+<script>
+// UNCLENCH v2 lookdev, direction "everything made of rays".
+// renderFrame(t): deterministic, t in seconds (0..60 loop). Same contract as visual/index.html.
+(async () => {
+  await ENGINE.loadFonts();
+  ENGINE.init2d();
+  LX.ctx = ENGINE.ctx;
+  LX.initGL();
+  RAYS_INIT();
+  const QS = new URLSearchParams(location.search);
+  window.DBG_GL = QS.get('gl') === '1';
+  window.DBG_NOGLOW = QS.get('noglow') === '1';
+  window.DBG_NOTEXT = QS.get('notext') === '1';
+  window.DBG_NOCHAR = QS.get('nochar') === '1';
+  window.renderFrame = (t) => { RAYS_DRAW(t); };
+  window.READY = true;
+})();
+</script>
+</body></html>

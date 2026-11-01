@@ -1,0 +1,2 @@
+// mean of two bench.js runs (slot 4: single run after glow batching). pipeline-faithful ms/frame incl. ~97 ms capture, single worker. source: out/lookdev/tech/bench.json
+window.BENCH = {"0": {"scale1": 464, "scale0.5": 256}, "1": {"scale1": 210}, "2": {"scale1": 218}, "3": {"scale1": 460, "scale0.5": 225}, "4": {"scale1": 286}, "5": {"scale1": 283}, "6": {"scale1": 279}, "7": {"scale1": 264}, "8": {"scale1": 316}, "9": {"scale1": 195}, "10": {"scale1": 402, "scale0.5": 210}, "11": {"scale1": 673, "scale0.5": 340}, "12": {"scale1": 456, "scale0.5": 266}};

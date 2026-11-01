@@ -1,0 +1,53 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<base href="../../">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block;position:absolute;top:0;left:0}</style>
+</head>
+<body>
+<canvas id="lxgl" width="1080" height="1350" style="display:none"></canvas>
+<canvas id="gl" width="540" height="675" style="display:none"></canvas>
+<canvas id="c" width="1080" height="1350"></canvas>
+<script src="engine.js"></script>
+<script src="lookdev/tech/lib.js"></script>
+<script src="lookdev/tech/tech.js"></script>
+<script src="lookdev/tech/micro.js"></script>
+<script src="lookdev/tech/bench_numbers.js"></script>
+<script>
+// Technique lookdev page. renderFrame(t): technique k = floor(t), local time tau = 2 + 8*(t-k).
+// window.LX.scale (1 or 0.5) sets internal GL resolution for techniques that support it.
+(async () => {
+  await ENGINE.loadFonts();
+  // ?cpu=1 -> force the main 2D canvas (and LX scratch canvases) onto Skia's CPU rasterizer
+  const Q = new URLSearchParams(location.search);
+  LX.cpu = Q.get('cpu') === '1';
+  if (Q.get('scale')) LX.scale = +Q.get('scale');          // ?scale=0.5 -> half-res GL light layer
+  const SLOT = Q.get('slot') !== null ? +Q.get('slot') : null; // ?slot=k -> real-time clip of technique k (tau = t)
+  if (LX.cpu) document.getElementById('c').getContext('2d', { willReadFrequently: true });
+  ENGINE.init2d();
+  LX.ctx = ENGINE.ctx;
+  LX.initGL();
+  TECH_INIT();
+  const W = 1080, H = 1350;
+  window.renderFrame = (t) => {
+    const k = SLOT !== null ? SLOT : Math.floor(t + 1e-6), tau = SLOT !== null ? t : 2 + (t - k) * 8;
+    if (SLOT !== null) window.NO_LABEL = true;
+    const ctx = ENGINE.ctx;
+    const T = k >= 100 ? (MICRO_OPS[k - 100] && { name: MICRO_OPS[k - 100][0], detail: 'micro op', draw: (tau, c) => MICRO_OPS[k - 100][1](c) }) : TECH[k];
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over'; ctx.filter = 'none';
+    ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
+    if (!T) { window.LAST_MS = 0; ctx.getImageData(0, 0, 1, 1); return 0; }
+    LX.beginMarks();
+    const t0 = performance.now();
+    ctx.save(); T.draw(tau, ctx); ctx.restore();
+    if (!window.NO_SYNC) ctx.getImageData(0, 0, 1, 1);
+    const ms = performance.now() - t0;
+    window.LAST_MS = ms; window.LAST_MARKS = LX.marks.slice();
+    const B = window.BENCH && window.BENCH[k];
+    const perf = B ? 'render.js cost: ' + Object.entries(B).map(([s, v]) => (s === 'scale1' ? 'full ' : 'half ') + v + ' ms').join(' / ') + ' (incl. 99 ms capture)' : ms.toFixed(0) + ' ms (cold)';
+    if (!window.NO_LABEL) LX.label(ctx, k, T.name, perf);
+    return ms;
+  };
+  window.READY = true;
+})();
+</script>
+</body></html>
