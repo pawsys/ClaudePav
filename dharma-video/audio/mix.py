@@ -135,7 +135,7 @@ np.save(os.path.join(BUILD, 'prevoice.npy'), (voice_bus * 1.7)[int(CYC*SR):int(2
 # ---------------------------------------------------------------- master & export second cycle
 seg = mix[int(CYC * SR): int(2 * CYC * SR)]
 pre_lufs = lufs(seg)
-m = master2(seg, target_lufs=-14.0, ceiling_db=-1.0)
+m = master2(seg, target_lufs=-14.0, ceiling_db=-1.3)
 write(os.path.join(OUT, "unclench_audio.wav"), m)
 print("pre-master LUFS", round(pre_lufs, 2), "-> master LUFS", round(lufs(m), 2), "TP", round(true_peak_db(m), 2))
 

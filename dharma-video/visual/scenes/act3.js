@@ -162,7 +162,7 @@
     const sx = E.lerp(780, 690, sp), sy = E.lerp(760, 590, sp);
     // light flood on the downbeat (the bible's god rays)
     P.godrays(t, sx, sy, 1.0 * sm(R(t, 36.0, 36.5)), { count: 11, len: 1700, spread: 1.7, dir: Math.PI * 0.62 });
-    inkSun(t, sx, sy, E.lerp(40, 92, sp), { alpha: sm(R(t, 36.0, 36.1)), rays: sp });
+    inkSun(t, sx, sy, E.lerp(40, 92, sp), { alpha: 1, rays: sp });
     // the little cloud, now gold-rimmed
     C.puff(B.cloud.x, B.cloud.y, B.cloud.r, { t, rim: sm(R(t, 36.3, 37.0)) });
     goldMotes(t, sm(R(t, 36.2, 37.0)));
@@ -261,7 +261,7 @@
     ctx.restore();
     // words
     const mcol = k > 0.5 ? PAL.warmWhite : PAL.navy, msh = k > 0.5 ? 'rgba(10,14,30,0.5)' : null;
-    C.caption(t, { text: "don't fight him.", id: 'V24', times: C.wordTimes('V24', 3, 0.08).map(x => Math.max(x, 42.92)), style: 'serif', y: 300, size: 100, t1: 43.68, over: { exit: 3 / 30, exitBlur: 4 }, color: mcol, shadow: msh });
+    C.caption(t, { text: "don't fight him.", id: 'V24',  style: 'serif', y: 300, size: 100, t1: 43.68, over: { exit: 3 / 30, exitBlur: 4 }, color: mcol, shadow: msh });
     C.caption(t, { text: "he's just scared.", id: 'V24b', style: 'serif', y: 300, size: 100, t1: 44.84, over: { exit: 3 / 30, exitBlur: 4 }, color: mcol, shadow: msh });
     C.caption(t, { text: 'love him open.', id: 'C6', style: 'serif', y: 240, size: 124, t1: 48.5, lead: 0.06, color: mcol, shadow: msh,
       emph: { open: { spacing: 22 * sm(R(t, 46.5, 48.0)) } } });
@@ -297,7 +297,7 @@
     posterWorld(t, {
       winA: 1 - pop(52.5) * sm(R(t, 52.5, 53.0)),
       sunA: 1 - think, cloudA: 1 - imagine, motesA: 1 - think,
-      silFill: 1 - sm(R(t, 52.5, 53.0)), silOutline: 1 - sm(R(t, 53.0, 53.25)), silErase: ease(R(t, 52.85, 53.35)),
+      silFill: 1 - sm(R(t, 52.5, 53.0)), silOutline: 1 - sm(R(t, 52.75, 53.0)), silErase: ease(R(t, 52.85, 53.35)),
       eyes: t < 52.5 ? 'happy' : 'closed', orbGlow: 1.4 * (1 - think), orbA: 1 - think,
     });
     if (unp < 1) P.enso(LAP.x, LAP.y - 68, 112, 1, { width: 26, color: '255,200,97', glow: 8, seed: 4, unp });
