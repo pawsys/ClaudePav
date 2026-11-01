@@ -229,8 +229,10 @@
   // The frame-0 composition (minus text). Used by hook (0-2.25) and the seam (59.25-60).
   // pose params let the seam ease into it.
   // (act1 owner) Default opts == the poster. Act 1 reuses this with extra opts, all of which default to the
-  // poster state: cam/camX/camY, flash, blobR, jitter, sweatDrip, squeeze 0..1, dark 0..1 (blob -> #121117),
-  // eyes/mouth/look/pupil/blink, arm {overrides}, sky {extra storm params}, bg:false, over(info) callback (world space).
+  // poster state: cam/camX/camY, flash, blobR, jitter, sweatDrip, squeeze 0..1 (body squash .09, blob squash .22),
+  // dark 0..1 (blob -> #121117), underBlob(x, y, r, squash) callback (world space, drawn just before the blob),
+  // eyes/mouth/look/pupil/blink, arm {overrides}, sky {extra storm params}, bg:false, over(info) callback (world space),
+  // frontArm:false (skip the front noodle that is drawn automatically in the clutch pose).
   // The blob sits in front of his belly (dark on cream reads at thumbnail size); the mitten clamps it from the right.
   function hookBase(t, o = {}) {
     const ctx = E.ctx;
@@ -244,16 +246,37 @@
     let info = { r: blobR };
     const g = GRABBY.grabby(t, 540, 960, 300, {
       eyes: o.eyes || 'squeeze', mouth: o.mouth, look: o.look, pupil: o.pupil, blink: o.blink,
-      sweat: o.sweat ?? 1, sweatDrip: o.sweatDrip || 0, bob: 0.3, squash: 0.03 * sq,
+      sweat: o.sweat ?? 1, sweatDrip: o.sweatDrip || 0, bob: 0.3, squash: 0.09 * sq,
       arm,
       holding: (hx, hy) => {
         const a = arm.ang, d = 46 + (blobR - 78) * 0.6;
         info.x = hx + Math.cos(a) * d - Math.sin(a) * 14;
         info.y = hy + Math.sin(a) * d + Math.cos(a) * 14;
-        heldBlob(t, info.x, info.y, blobR, { jitter: o.jitter ?? 1, dark: o.dark || 0, squash: 0.08 * sq, seed: 5, body: [540, 960, 186, 210] });
+        if (o.underBlob) o.underBlob(info.x, info.y, blobR, 0.22 * sq);   // e.g. a rim stroke behind the blob
+        heldBlob(t, info.x, info.y, blobR, { jitter: o.jitter ?? 1, dark: o.dark || 0, squash: 0.22 * sq, seed: 5, body: [540, 960, 186, 210] });
       },
     });
     info.hand = g.hand; info.ang = g.ang;
+    // in the clutch pose the rig's noodle hides behind the body: redraw a short noodle IN FRONT, from the right
+    // side of the body over the blob into the mitten, then the mitten on top (reads as clutching on frame 0)
+    const holdD = Math.hypot(arm.tx - 740, arm.ty - 1052) + 80 * Math.abs(arm.ang - Math.PI * 0.97);
+    if (o.frontArm !== false && holdD < 2 && (arm.ext ?? 1) >= 0.999) {
+      const s = 300, ow = 5 * (s / 230), w = 0.11 * s;
+      const by = 960 + 0.3 * Math.sin(t * 3.1) * 0.025 * s, bw = 0.62 * s * (1 + 0.09 * sq), bh = 0.7 * s * (1 - 0.09 * sq);
+      const tr = arm.tremble || 0;
+      const ex = g.hand[0] + tr * Math.sin(t * 97), ey = g.hand[1] + tr * Math.cos(t * 83);
+      const S = [540 + 0.74 * bw, by - 0.2 * bh];
+      ctx.save();
+      ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      ctx.beginPath(); ctx.moveTo(S[0], S[1]);
+      ctx.bezierCurveTo(S[0] + 56, S[1] - 2, ex + 50, ey - 72, ex + 16, ey - 8);
+      ctx.strokeStyle = PAL.ink; ctx.lineWidth = w + ow * 2; ctx.stroke();
+      ctx.strokeStyle = GRABBY.CREAM; ctx.lineWidth = w; ctx.stroke();
+      // root melts into the body (no outline cap)
+      ctx.fillStyle = GRABBY.CREAM; ctx.beginPath(); ctx.arc(S[0] - 3, S[1], w / 2 + ow + 2, 0, Math.PI * 2); ctx.fill();
+      GRABBY.mitten(ctx, g.hand[0], g.hand[1], g.ang, 0.55 * s, arm.open ?? 0, { ow, tremble: tr, t });
+      ctx.restore();
+    }
     if (o.over) o.over(info);
     ctx.restore();
     return info;
@@ -333,7 +356,7 @@
   const SKY_MORNING = { top: '#3F78C0', bot: '#F4EFE6', horizon: '#F9DDB1', cloud: 0.32, storm: 0, warp: 1.1, zoom: 1.0, driftR: 0.6 };
   const BOUND = {
     // at t = 36.0 (act2 -> act3): grabby small, palm up, gold jhana orb resting in palm; one little white cloud
-    t36: { grabby: { x: 540, y: 880, s: 170 }, orb: { r: 30 }, cloud: { x: 760, y: 560, r: 120 }, sky: SKY_MORNING },
+    t36: { grabby: { x: 540, y: 880, s: 170 }, orb: { r: 30, front: true, off: [6, -30] }, cloud: { x: 760, y: 560, r: 120 }, sky: SKY_MORNING },
   };
 
   window.C = { puff, SKY_MORNING, BOUND, PAL, T, line, wordTimes, STY, caption, mono, leader, markerLoop, skyBG, stormBG, STORM, flashEnv, camera, hookBase, finish, FPS };

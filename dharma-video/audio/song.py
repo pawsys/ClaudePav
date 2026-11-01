@@ -416,9 +416,11 @@ for off in OFFS:
     # arrows whooshes 30.75, 31.5, 32.25, 33.0 (L->R alternating)
     for k, ta in enumerate([30.75, 31.5, 32.25, 33.0]):
         add("sfx", whoosh(0.7, -1 if k % 2 == 0 else 1, 1 if k % 2 == 0 else -1, seed=20 + k), o + ta, 0.7)
+    # volley: 12 streaks on the picture's schedule (34.52 + k*0.062, 0.42 s crossings); each whoosh peaks
+    # mid-crossing so the sound is gone with the last arrow, before the 35.6 ting
     for k in range(12):
-        ta = 34.5 + k * 0.075
-        add("sfx", whoosh(0.5, -1 + 2 * ((k * 7) % 5) / 4, 1 - 2 * ((k * 3) % 5) / 4, f0=600, f1=4000, seed=40 + k), o + ta, 0.16)
+        ta = 34.52 + k * 0.062
+        add("sfx", whoosh(0.42, -1 + 2 * ((k * 7) % 5) / 4, 1 - 2 * ((k * 3) % 5) / 4, f0=600, f1=4000, seed=40 + k, peak_at=0.5), o + ta, 0.16)
     add("sfx", noise_riser(0.25, 800, 9000, peak=0.6, seed=11), o + 35.75, 0.4)
     # reverse cymbal into seam 59.25-59.97 (peaks at 59.97)
     add("sfx", noise_riser(0.72, 1500, 12000, peak=0.9, seed=13), o + 59.25, 0.65)

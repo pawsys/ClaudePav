@@ -38,7 +38,7 @@ async function segment(start, end, out, quality) {
   const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
   const p = await openPage(browser);
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
-    '-c:v', 'libx264', '-preset', 'medium', '-crf', '14', '-pix_fmt', 'yuv420p', out]);
+    '-c:v', 'libx264', '-preset', 'medium', '-crf', '12', '-pix_fmt', 'yuv420p', out]);
   const f0 = Math.round(start * FPS), f1 = Math.round(end * FPS);
   for (let f = f0; f < f1; f++) {
     await p.evaluate(t => window.renderFrame(t), f / FPS);

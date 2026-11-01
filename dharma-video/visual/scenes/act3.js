@@ -165,10 +165,13 @@
     goldMotes(t, sm(R(t, 36.2, 37.0)));
     // grabbygrab palm-up, orb glowing in palm
     const glow = 1 + 0.5 * sm(R(t, 36.0, 36.6));
+    // orb rests IN FRONT of the open fingers (C.BOUND.t36.orb contract shared with act 2)
+    let hp = null;
     G.grabby(t, B.grabby.x, B.grabby.y, B.grabby.s, {
       eyes: t < 36.5 ? 'dots' : 'happy', arm: { ext: 0, open: 1, ang: -0.55 },
-      holding: (hx, hy) => orb(hx + 6, hy - 18, B.orb.r, glow),
+      holding: (hx, hy) => { hp = [hx, hy]; },
     });
+    if (hp) orb(hp[0] + B.orb.off[0], hp[1] + B.orb.off[1], B.orb.r, glow);
     // HUD meter
     if (t >= 36.0 && t < 37.42) {
       const pct = Math.round(78 * ease(R(t, 36.05, 37.1)));
@@ -195,11 +198,13 @@
     goldMotes(t, o.motesA ?? 1);
     // grabbygrab in the cupped hands
     const gs = o.gs ?? 92;
+    let hp = null;
     G.grabby(t, LAP.x, LAP.y - gs * 0.72, gs, {
       eyes: o.eyes || 'happy', blush: o.blush || 0, bob: 0.4, shadow: false,
       arm: o.arm || { ext: 0, open: 1, ang: -0.55 },
-      holding: (o.orbA ?? 1) > 0 ? (hx, hy) => orb(hx + 3, hy - 10, 17, o.orbGlow ?? 1.4, o.orbA ?? 1) : null,
+      holding: (hx, hy) => { hp = [hx, hy]; },
     });
+    if (hp && (o.orbA ?? 1) > 0) orb(hp[0] + 3, hp[1] - 16, 17, o.orbGlow ?? 1.4, o.orbA ?? 1);
   }
 
   SCN.add(39.0, 42.75, 'poster', (t) => {
@@ -249,7 +254,7 @@
     ctx.restore();
     // words
     const mcol = k > 0.5 ? PAL.warmWhite : PAL.navy, msh = k > 0.5 ? 'rgba(10,14,30,0.5)' : null;
-    C.caption(t, { text: "don't fight him.", id: 'V24', style: 'serif', y: 300, size: 100, t1: 43.8, color: mcol, shadow: msh });
+    C.caption(t, { text: "don't fight him.", id: 'V24', style: 'serif', y: 300, size: 100, t1: 43.68, over: { exit: 3 / 30, exitBlur: 4 }, color: mcol, shadow: msh });
     C.caption(t, { text: "he's just scared.", id: 'V24b', style: 'serif', y: 300, size: 100, t1: 44.95, color: mcol, shadow: msh });
     C.caption(t, { text: 'love him open.', id: 'C6', style: 'serif', y: 300, size: 124, t1: 48.85, lead: 0.06, color: mcol, shadow: msh,
       emph: { open: { spacing: 22 * sm(R(t, 46.5, 48.0)) } } });
@@ -293,7 +298,7 @@
     let cur = null;
     for (const L of TIL) if (t >= L[0] - 0.06) cur = L;
     if (cur) C.caption(t, { text: cur[1], style: 'serif', y: 255, size: cur[2], times: [cur[0] - 0.06, cur[0] - 0.06], over: { enter: 2 / 30, rise: 4, blur: 0 } });
-    C.mono(t, "— tilopa's six words", 540, 1205, { size: 34, color: PAL.navy, align: 'center', alpha: 0.75, t0: 49.5, t1: 50.95 });
+    C.mono(t, "tilopa's six words", 540, 1205, { size: 34, color: PAL.navy, align: 'center', alpha: 0.75, t0: 49.5, t1: 50.95 });
   });
 
   let _storm = null;
@@ -308,61 +313,52 @@
     // tiny grabbygrab asleep; one eye opens 56.25-57.4
     const oneEye = t >= 56.25 && t < 57.45;
     const micro = (t >= 56.25 && t < 56.25 + 2 / 30) ? 1.03 : 1.0;
-    // seam pose interpolation toward hookBase (540, 960, size 300)
-    const gx = 540, gy = E.lerp(960, 960, slam), gs = E.lerp(150, 300, E.easeInCubic(R(t, 59.25, 59.97)));
-    // wisp drifts in from the right 58.5 -> 59.25
+    // seam: from the grab (59.25) the frame-0 rig itself (C.hookBase) draws him, scaled about (540, 960) from
+    // size 150 to 300, so the last frames converge on frame 0 with no second pose to crossfade.
+    const gx = 540, gy = 960, gs = E.lerp(150, 300, E.easeInCubic(R(t, 59.25, 59.97)));
     const wispP = ease(R(t, 58.5, 59.25));
     const grabbed = t >= 59.25;
-    const armP = R(t, 59.25, 59.42);           // shoot out (5 frames)
-    const retract = ease(R(t, 59.42, 59.6));
     const wx = E.lerp(1180, 780, wispP), wy = 900;
-    ctx.save();
-    C.camera(micro, gx, gy);
-    let arm, eyes = 'closed', mouth = 'smile', sweat = 0;
-    if (oneEye) { eyes = 'one'; mouth = 'flat'; }
-    if (t >= 57.45) { eyes = 'closed'; mouth = 'smile'; }
-    if (grabbed) {
-      eyes = 'squeeze'; sweat = 1; mouth = 'zigzag';
-      // shoot to the wisp, then retract to the frame-0 clutch pose
-      const hookArm = { tx: gx + gs * 0.683, ty: gy + gs * 0.133, ang: -0.35 };
-      const toW = { tx: wx, ty: wy, ang: 0.0 };
-      const tx = retract > 0 ? E.lerp(toW.tx, hookArm.tx, retract) : E.lerp(gx + gs * 0.6, toW.tx, armP);
-      const ty = retract > 0 ? E.lerp(toW.ty, hookArm.ty, retract) : E.lerp(gy + gs * 0.3, toW.ty, armP);
-      arm = { tx, ty, ext: 1, open: armP < 1 ? 1 - armP : 0, ang: retract > 0 ? E.lerp(0, -0.35, retract) : 0 };
-    } else {
-      arm = { ext: 0, open: 1, ang: -0.55 };
-    }
-    // the wisp: white puff before grab; charcoal jittering blob after
-    const drawWisp = () => {
-      if (!grabbed) { if (wispP > 0) C.puff(wx, wy, 46, { t, ow: 4 }); }
-    };
-    drawWisp();
-    const blobPos = grabbed ? (hx, hy) => {
-      const k = sm(R(t, 59.25, 59.45));
-      P.blob(t, hx + 38 * (gs / 300), hy - 22 * (gs / 300), E.lerp(40, 78, sm(R(t, 59.25, 59.9))) * (gs / 300) * (300 / 300), { jitter: k, warm: 0, seed: 5 });
-    } : null;
-    G.grabby(t, gx, gy, gs, { eyes, mouth, sweat, bob: grabbed ? 0.3 : 0.6, arm, holding: blobPos, shadow: true });
-    ctx.restore();
-    // storm slams in from the edges (59.25-59.97); exact frame-0 composition takes over at the very end
-    if (slam > 0) {
+    // storm slams in from the edges (59.25-59.9), fully opaque from 59.9 (same call as frame 0)
+    if (slam >= 1) {
+      C.stormBG(t, { flash: 0 });
+    } else if (slam > 0) {
       E.sky(Object.assign({ t }, C.STORM));
       const oc = stormLayer();
       const o2 = oc.getContext('2d');
       o2.globalCompositeOperation = 'source-over';
       o2.clearRect(0, 0, E.W, E.H);
       o2.drawImage(E.glCanvas, 0, 0, E.W, E.H);
-      const r0 = E.lerp(950, 0, slam);
+      const r0 = E.lerp(950, -260, slam);
       const g = o2.createRadialGradient(540, 820, Math.max(1, r0 * 0.55), 540, 820, Math.max(2, r0 + 260));
       g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,1)');
       o2.globalCompositeOperation = 'destination-in';
       o2.fillStyle = g; o2.fillRect(0, 0, E.W, E.H);
       ctx.drawImage(oc, 0, 0);
     }
-    if (t >= 59.8) {
+    if (!grabbed) {
       ctx.save();
-      ctx.globalAlpha = E.clamp((t - 59.8) / 0.13);
-      C.hookBase(t, {});
+      C.camera(micro, gx, gy);
+      let eyes = 'closed', mouth = 'smile';
+      if (oneEye) { eyes = 'one'; mouth = 'flat'; }
+      if (wispP > 0) C.puff(wx, wy, 46, { t, ow: 4 });
+      G.grabby(t, gx, gy, gs, { eyes, mouth, bob: 0.6, arm: { ext: 0, open: 1, ang: -0.55 }, shadow: true });
       ctx.restore();
+    } else {
+      // arm in hookBase world (size 300 about 540,960): shoot to the wisp, then retract clockwise to the clutch pose
+      const k = gs / 300;
+      const armP = R(t, 59.25, 59.42), retract = ease(R(t, 59.42, 59.6));
+      const W = [540 + (wx - 540) / k, 960 + (wy - 960) / k];
+      const rest = [540 + 0.6 * 300, 960 + 0.3 * 300], hook = [740, 1052];
+      const tx = retract > 0 ? E.lerp(W[0], hook[0], retract) : E.lerp(rest[0], W[0], armP);
+      const ty = retract > 0 ? E.lerp(W[1], hook[1], retract) : E.lerp(rest[1], W[1], armP);
+      const ang = retract > 0 ? E.lerp(0, Math.PI * 0.97, retract) : 0;
+      const open = armP < 1 ? 1 - armP : 0;
+      C.hookBase(t, {
+        bg: false, cam: k, camX: 540, camY: 960,
+        arm: { tx, ty, ext: 1, open, ang, tremble: 0 },
+        blobR: E.lerp(40, 78, sm(R(t, 59.25, 59.9))), jitter: sm(R(t, 59.25, 59.45)),
+      });
     }
     // words
     C.caption(t, { text: 'rest.', id: 'V31', style: 'serif', y: 560, size: 120, t1: 56.95 });
