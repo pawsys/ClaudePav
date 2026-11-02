@@ -1,0 +1,315 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<base href="../">
+<!-- UNCLENCH v2 core contact page (LOOK.md 5.6 phase 0 gate). renderFrame(t): page = floor(t), see PAGES below.
+     Render: cd visual && node render.js --page v2/core_test.html --stills 0,1,2,...,16 --outdir ../out/v2/core/test
+     Sheet:  python3 -I v2/check/sheet.py ../out/v2/core/test ../out/v2/core/contact_sheet.png
+     Bench:  node v2/bench.js --page v2/core_test.html --times 0,1,...  (each page = one core primitive) -->
+<style>html,body{margin:0;background:#120A3E;overflow:hidden}canvas{display:block;position:absolute;top:0;left:0}</style>
+</head>
+<body>
+<canvas id="lxgl" width="540" height="675" style="display:none"></canvas>
+<canvas id="c" width="1080" height="1350"></canvas>
+<script src="engine.js"></script>
+<script src="timing.js"></script>
+<script src="v2/core/lx.js"></script>
+<script src="v2/core/clock.js"></script>
+<script src="v2/core/pal.js"></script>
+<script src="v2/core/light.js"></script>
+<script src="v2/core/pane.js"></script>
+<script src="v2/core/fx.js"></script>
+<script src="v2/core/type.js"></script>
+<script src="v2/core/glyphs.js"></script>
+<script src="v2/core/grab.js"></script>
+<script src="v2/core/window.js"></script>
+<script src="v2/core/hook.js"></script>
+<script src="v2/core/seq.js"></script>
+<script>
+(function () {
+  const U = V2.U, TAU = Math.PI * 2;
+  const label = (ctx, x, y, s, a = 0.9, size = 26) => { ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = a; ctx.fillStyle = '#FFFFFF'; ctx.font = `600 ${size}px "JBM"`; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic'; ctx.fillText(s, x, y); ctx.restore(); };
+  const title = (ctx, s) => { ctx.save(); ctx.fillStyle = 'rgba(10,6,24,0.72)'; ctx.fillRect(0, 1290, 1080, 60); ctx.restore(); label(ctx, 24, 1331, s, 1, 30); };
+  const cellGround = (ctx, x, y, w, h, key) => {
+    ctx.save(); ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
+    const p = V2.PAL[key]; const g = ctx.createLinearGradient(0, y, 0, y + h);
+    p.ground.forEach((c, i) => g.addColorStop(p.stops ? p.stops[i] : i / Math.max(1, p.ground.length - 1), c));
+    ctx.fillStyle = g; ctx.fillRect(x, y, w, h);
+    // something behind the glass to bend: three soft glass planes in the section's colours
+    const gl = p.glass && p.glass.length ? p.glass : ['#FFFFFF'];
+    for (let i = 0; i < 3; i++) { ctx.globalCompositeOperation = V2.luma(p.ground[0]) > 0.35 ? 'source-over' : 'screen'; ctx.globalAlpha = 0.22; ctx.fillStyle = gl[(i * 2) % gl.length];
+      ctx.beginPath(); ctx.moveTo(x + w * (0.1 + 0.3 * i), y); ctx.lineTo(x + w * (0.5 + 0.3 * i), y); ctx.lineTo(x + w * (0.2 + 0.3 * i), y + h); ctx.lineTo(x + w * (-0.2 + 0.3 * i), y + h); ctx.closePath(); ctx.fill(); }
+    ctx.restore();
+  };
+  // the 8 states (LOOK 3.2)
+  const STATE_GROUND = { CLENCHED: 'hook', WORRIED: 'saint', SQUEEZING: 'buzz', LOOKING: 'look', OPENING: 'unclench', HAPPY: 'sky', ASLEEP: 'rest', REGRAB: 'regrab' };
+  function drawState(ctx, t, name, x, y, s, cell) {
+    const [moodK, face0] = V2.grab.STATES[name];
+    let mood = moodK, face = Object.assign({}, face0), arm = { ext: 0, open: 0 };
+    if (name === 'OPENING') { arm = { ext: 0.5, tx: x + 0.9 * s, ty: y - 0.2 * s, fingers: [1, 1, 0.8, 0.5, 0.2] }; }
+    if (name === 'HAPPY') { arm = { ext: 0.8, tx: x + 0.85 * s, ty: y - 0.55 * s, open: 1, ang: -1.1 }; }
+    if (name === 'ASLEEP') { arm = { ext: 0, open: 0.7 }; }
+    if (name === 'REGRAB') { mood = V2.grab.mixMood('asleep', 'clench', 0.7); }
+    if (name === 'LOOKING') { face.look = [0.3, -0.6]; }
+    const G = V2.grab.geo(t, x, y, s, { arm, bob: 0.5 });
+    const knotR = 0.30 * s;
+    const before = (name === 'CLENCHED' || name === 'WORRIED' || name === 'SQUEEZING' || name === 'REGRAB' || name === 'LOOKING')
+      ? c => V2.grab.knot(c, t, G.hand.x + 0.28 * s, G.hand.y - 0.20 * s, knotR, { jit: name === 'SQUEEZING' ? 2 : 1, cracks: name === 'LOOKING' ? 0.6 : 0 }) : null;
+    V2.grab.draw(ctx, G, mood, face, { beforeHand: before, lead: moodK === 'clench' || moodK === 'worried' || moodK === 'squeeze' || moodK === 'look' ? 1 : 0 });
+    if (name === 'HAPPY') V2.grab.cloud(ctx, t, x - 0.75 * s, y - 0.95 * s, s / 300 * 0.9);
+    if (name === 'OPENING') V2.grab.jewel(ctx, t, G.hand.x + 0.15 * s, G.hand.y - 0.12 * s, 0.16 * s);
+  }
+  function statesPage(ctx, t, names, s, cols, rows) {
+    const cw = 1080 / cols, ch = 1290 / rows;
+    names.forEach((n, i) => {
+      const cx = (i % cols) * cw, cy = Math.floor(i / cols) * ch;
+      cellGround(ctx, cx, cy, cw, ch, STATE_GROUND[n]);
+      ctx.save(); ctx.beginPath(); ctx.rect(cx, cy, cw, ch); ctx.clip();
+      drawState(ctx, t, n, cx + cw * 0.44, cy + ch * 0.54, s, [cx, cy, cw, ch]);
+      ctx.restore();
+      V2.post(c => label(c, cx + 14, cy + 34, n, 0.95, Math.max(18, Math.min(26, cw / 12))));
+    });
+  }
+
+  const PAGES = [];
+  const page = (name, fn) => PAGES.push({ name, fn });
+  const ALL8 = ['CLENCHED', 'WORRIED', 'SQUEEZING', 'LOOKING', 'OPENING', 'HAPPY', 'ASLEEP', 'REGRAB'];
+
+  // 0: frame 0 (the poster)
+  page('frame 0: the hook rig (poster)', (t, ctx) => { V2.hook.frame(t, {}); });
+  // 1-2: states at s 370
+  page('states at s 370 (1/2)', (t, ctx) => { statesPage(ctx, t, ALL8.slice(0, 4), 370, 2, 2); title(ctx, 'grabbygrab states, s 370 (1/2)'); });
+  page('states at s 370 (2/2)', (t, ctx) => { statesPage(ctx, t, ALL8.slice(4), 370, 2, 2); title(ctx, 'grabbygrab states, s 370 (2/2)'); });
+  // 3-4: s 300
+  page('states at s 300 (1/2)', (t, ctx) => { statesPage(ctx, t, ALL8.slice(0, 4), 300, 2, 2); title(ctx, 'grabbygrab states, s 300 (1/2)'); });
+  page('states at s 300 (2/2)', (t, ctx) => { statesPage(ctx, t, ALL8.slice(4), 300, 2, 2); title(ctx, 'grabbygrab states, s 300 (2/2)'); });
+  // 5: s 150, 6: s 97 (mitten)
+  page('states at s 150', (t, ctx) => { statesPage(ctx, t, ALL8, 150, 4, 2); title(ctx, 'grabbygrab states, s 150 (mitten below 160)'); });
+  page('states at s 97', (t, ctx) => { statesPage(ctx, t, ALL8, 97, 4, 2); title(ctx, 'grabbygrab states, s 97 (joiner minis)'); });
+  // 7: hands
+  page('hands', (t, ctx) => {
+    cellGround(ctx, 0, 0, 1080, 1290, 'unclench');
+    const hs = 270;
+    const show = (x, y, lv, mode, name, mood = 'clench', ang = -Math.PI / 2) => {
+      const G = V2.grab.geo(t, -1000, -1000, hs / 0.55, { arm: { ext: 0 } });
+      G.hand = V2.grab.handGeo(x, y, ang, hs, lv, mode); G.s = hs / 0.55;
+      V2.grab.drawHand(ctx, G, mood, { lead: mood === 'clench' ? 1 : 0 });
+      V2.post(c => label(c, x - 120, y + 205, name, 0.95, 24));
+    };
+    show(200, 300, [0, 0, 0, 0, 0], 'hand', 'fist (closed)');
+    show(540, 300, [1, 0.62, 0.38, 0.12, 0], 'hand', 'opening (+0.24 s)', 'open');
+    show(880, 300, [1, 1, 1, 1, 1], 'hand', 'open (4 + thumb)', 'open');
+    show(200, 760, [0, 0, 0, 0, 0], 'mitten', 'mitten closed', 'clench');
+    show(540, 760, [1, 1, 1, 1, 1], 'mitten', 'mitten open', 'happy');
+    show(880, 760, [1, 1, 1, 1, 1], 'hand', 'open, waving', 'happy', -Math.PI / 2 + 0.35);
+    // opening order strip: thumb t0, index +0.12, middle +0.24, ring +0.36, pinky +0.48 (never a W)
+    for (let k = 0; k < 7; k++) {
+      const dt = k * 0.1, lv = [0, 0.12, 0.24, 0.36, 0.48].map(s0 => U.clamp((dt - s0) / 0.25));
+      const x = 90 + k * 150, y = 1130;
+      const G = V2.grab.geo(t, -1000, -1000, 200, { arm: { ext: 0 } });
+      G.hand = V2.grab.handGeo(x, y, -Math.PI / 2, 110, lv, 'hand'); G.s = 200;
+      V2.grab.drawHand(ctx, G, 'open', {});
+      V2.post(c => label(c, x - 40, y + 95, '+' + dt.toFixed(1) + 's', 0.9, 20));
+    }
+    title(ctx, 'hands: fist, opening, open, mitten; opening order strip');
+  });
+  // 8: knot family
+  page('knot family', (t, ctx) => {
+    cellGround(ctx, 0, 0, 1080, 645, 'hook'); cellGround(ctx, 0, 645, 1080, 645, 'sky');
+    const items = [
+      ['knot', c => V2.grab.knot(c, t, 180, 200, 111, {})],
+      ['knot, buzz x2', c => V2.grab.knot(c, t, 540, 200, 111, { jit: 2 })],
+      ['seen: gold cracks', c => V2.grab.knot(c, t, 900, 200, 111, { jit: 0.4, cracks: 0.8 })],
+      ['cracking 0.35', c => { V2.grab.jewel(c, t, 180, 500, 70, { hot: 0.6 }); V2.grab.knot(c, t, 180, 500, 111, { crack: 0.35 }); }],
+      ['cracking 0.8', c => { V2.grab.jewel(c, t, 540, 500, 70, { hot: 0.9 }); V2.grab.knot(c, t, 540, 500, 111, { crack: 0.8 }); }],
+      ['jewel', c => V2.grab.jewel(c, t, 900, 500, 70, {})],
+      ['cloud', c => V2.grab.cloud(c, t, 200, 900, 1.0)],
+      ['orb (jhana?)', c => V2.grab.orb(c, t, 540, 900, 56, {})],
+      ['orb, crusted', c => V2.grab.orb(c, t, 760, 900, 56, { crust: 0.85, lit: 0.2 })],
+      ['wisp', c => V2.grab.wisp(c, t, 960, 900, 40, {})],
+      ['regrab: crust forming', c => { V2.grab.wisp(c, t, 300, 1170, 40); V2.grab.knot(c, t, 300, 1170, 70, { form: 0.5, jit: 0.5 }); }],
+      ['knot 12 Hz seeds', c => { for (let i = 0; i < 4; i++) V2.grab.knot(c, t, 560 + i * 130, 1170, 50, { seed: i * 3 }); }],
+    ];
+    items.forEach(([n, f], i) => { f(ctx); const x = [80, 440, 800, 80, 440, 800, 70, 460, 700, 880, 200, 540][i], y = [345, 345, 345, 625, 625, 625, 1030, 1030, 1030, 1030, 1265, 1265][i]; V2.post(c => label(c, x, y, n, 0.95, 22)); });
+    title(ctx, 'knot, cracking, jewel, cloud, orb, wisp');
+  });
+  // 9: type states
+  page('type states', (t, ctx) => {
+    cellGround(ctx, 0, 0, 1080, 430, 'hook'); cellGround(ctx, 0, 430, 1080, 430, 'unclench'); cellGround(ctx, 0, 860, 1080, 430, 'sky');
+    // neon: four words in four states (unlit, ignite 0.35, ignite 0.6, lit, pulse halo)
+    const w = ['UNLIT', 'FLICK', 'LIT', 'PULSE'];
+    const lit = [0, 0.35, 1, 1]; lit.halo = [0, 0.35, 1, 1.25];
+    V2.type.neon(ctx, t, { words: w, rows: [{ n: 4, size: 120, y: 120 }], lit, pane: { rect: [40, 40, 1040, 210], hex: '#140C4A', a: 0.5 } });
+    V2.type.neon(ctx, t, { id: 'V03', rows: [{ n: 3, size: 100, y: 300 }], lit: [1, 0.6, 0], pane: false });
+    label(ctx, 40, 400, 'neon (Anton): unlit glass / flicker / lit / pulse', 0.85, 22);
+    const lv = [0.55, 1, 1]; lv.halo = [0.55, 1.3, 1];
+    V2.type.light(ctx, t, { words: ['pre-lit', 'blaze', 'lit'], rows: [{ n: 3, size: 96, y: 520 }], lit: lv, kind: 'sung', core: '#FFF6E6', halo: '#FF8FC0', haloMode: 'glow' });
+    V2.type.light(ctx, t, { words: ['written', 'in', 'light'], rows: [{ n: 3, size: 84, y: 640 }], lit: [1, 1, 1], kind: 'light', core: '#FFF6E6', halo: '#FF8FC0', haloMode: 'glow' });
+    V2.type.mono(ctx, 0.5, '(ok, also your jaw)', 540, 740, { align: 'center', t0: 0.1, cps: 40, cursor: true, col: '#FFF6E6', size: 44 });
+    label(ctx, 40, 830, 'light (Fraunces) on dark: pre-lit 0.55 / blaze / lit; mono typing with a block cursor', 0.85, 22);
+    const lv2 = [0.55, 1, 1, 1]; lv2.halo = [0.55, 1.3, 1, 1];
+    V2.shade(ctx, [80, 900, 1000, 1130], '#0A3F8F', 0.4);
+    V2.type.light(ctx, t, { words: ['you', 'are', 'the', 'sky'], rows: [{ n: 4, size: 140, y: 1010 }], lit: lv2, kind: 'sung', core: '#FFFFFF', halo: '#0B2A7A', haloMode: 'shadow' });
+    V2.type.mono(ctx, t, 'you (all of this)', 96, 1180, { col: '#FFFFFF', size: 40 });
+    label(ctx, 40, 1270, 'light on a light ground: deep shadow-halo #0B2A7A on a #0A3F8F pane', 0.85, 22);
+  });
+  // 10: light-writing
+  page('light-writing', (t, ctx) => {
+    cellGround(ctx, 0, 0, 1080, 1290, 'unclench');
+    [0.35, 0.7, 1.0].forEach((p, i) => V2.type.glyphWrite(ctx, 'unclench', 540, 200 + i * 230, 132, p, { core: '#FFF6E6', halo: '#FF8FC0', fill: i === 2 ? 1 : 0 }));
+    V2.type.glyphWrite(ctx, 'free', 540, 1040, 240, 1, { core: '#FFFFFF', halo: '#FF3D9A', fill: 1, w: 5 });
+    title(ctx, 'light-writing: "unclench." outline 35% / 70% / filled; "free." (900 italic)');
+  });
+  // 11: burst envelope strip
+  page('bursts', (t, ctx) => {
+    ctx.fillStyle = '#120A3E'; ctx.fillRect(0, 0, 1080, 1350);
+    const kinds = [['ring', 0.12], ['drop', 36.0], ['jewel', 22.25], ['inverse', 59.30]];
+    const ages = [0, 2 / 30, 0.15, 0.4];
+    V2.L.pane(g => V2.ground(g, 'drop'), 'test_burst');
+    kinds.forEach(([kd, t0], r) => ages.forEach((a, c) => {
+      const tt = t0 + a + (kd === 'ring' ? 3 / 30 : 0);
+      const u = V2.fx.burst(tt, t0, kd === 'ring' ? { kind: kd, x: 540, y: 675, K3: [111 * 1.1 / 0.6, 0, 0, 1], S: [70, 0.3, 9, 1.4] } : { kind: kd, x: 540, y: 675 });
+      V2.L.render('core_test_burst', u, { present: false, t: tt, pulse: false });
+      ctx.drawImage(LX.glc, 0, LX.glc.height - 675, 540, 675, c * 270, r * 300, 270, 300 * 1.0);
+      V2.post(cc => label(cc, c * 270 + 10, r * 300 + 28, kd + ' +' + Math.round(a * 30) + 'f', 0.95, 20));
+    }));
+    // envelopes over 1 s
+    ctx.save(); ctx.translate(40, 1210); ctx.strokeStyle = 'rgba(255,255,255,0.3)'; ctx.strokeRect(0, -1, 1000, -1);
+    const cols = ['#22E4FF', '#FFE45C', '#FF2E97', '#B6F03C'];
+    kinds.forEach(([kd, t0], i) => { ctx.strokeStyle = cols[i]; ctx.lineWidth = 3; ctx.beginPath(); for (let f = -3; f <= 30; f++) { const v = V2.fx.burst(t0 + f / 30, t0, { kind: kd }).uBurst[3]; const x = (f + 3) / 33 * 1000, y = -v * 60; f === -3 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); } ctx.stroke(); });
+    ctx.restore();
+    title(ctx, 'bursts: ring / drop / jewel / inverse at +0, +2f, +0.15 s, +0.4 s; envelopes');
+  });
+  // 12-13: window day and night
+  const windowPage = (mode, tt) => (t, ctx) => {
+    const wo = { mode, build: 1 };
+    V2.L.pane(g => { V2.ground(g, mode === 'day' ? 'saint' : 'rest'); V2.window.draw(tt, Object.assign({}, wo, { g })); }, 'test_win|' + V2.window.paneKey(wo));
+    const win = V2.window.draw(tt, Object.assign({}, wo, { g: null }));
+    const G = mode === 'night' ? V2.grab.geo(tt, 330, 1090, 150, { arm: { ext: 0, open: 0.7 } }) : V2.grab.geo(tt, 540, 780, 280, { arm: { ext: 0 } });
+    V2.L.render('core_stub_window', win.uniforms, { t: tt });
+    win.crisp(ctx, { cut: [[G.cx, G.cy, G.bw * 1.04, G.bh * 1.04]] });
+    if (mode === 'night') V2.grab.draw(ctx, G, 'asleep', { eyes: 'closed', mouth: 'smile' });
+    else V2.grab.draw(ctx, G, 'worried', { eyes: 'dots', brows: 'worried', mouth: 'o', sweat: 1 }, { beforeHand: c => V2.grab.knot(c, tt, G.hand.x + 75, G.hand.y - 55, 84, {}) });
+    title(ctx, mode === 'day' ? 'window, day (saint, 12.0): backlit panes, floor spill in its own colours' : 'window, night (Moon Room, 54.0): moon behind glass, floor projections');
+  };
+  page('window day', windowPage('day', 12.8));
+  page('window night', windowPage('night', 56.0));
+  // 14: squiggle field (+ lens through a happy grabbygrab + the cloud as a second lens)
+  page('squiggle field', (t, ctx) => {
+    const tt = 26.5;
+    V2.L.pane(g => V2.ground(g, 'sky'), 'test_sky');
+    const G = V2.grab.geo(tt, 420, 860, 220, { arm: { ext: 0.8, tx: 640, ty: 700, open: 1, ang: -0.9 }, bob: 1 });
+    // the pre-pass recipe (CORE_API 3): measure the caption and the cloud lens BEFORE the GL pass
+    const cap = V2.type.measure(ctx, tt, { id: 'C3', rows: [{ n: 4, size: 140, y: 220 }], kind: 'sung' });
+    const cl = V2.grab.cloudLens(780, 560, 1.0);
+    V2.L.render('core_test_sq', Object.assign({ uLens: 0.5, uSq: V2.L.SKY_SQ.uSq, uSqI: V2.L.SKY_SQ.uSqI, uSqRev: [1, 1, 420, 860] }, cl,
+      V2.grab.uniforms(G, 'happy'), V2.L.calm([{ rect: cap.box }, { ell: [G.cx, G.cy, G.bw * 1.3, G.bh * 1.3] }], { floor: 0.15 })), { t: tt, bloomK: 0.30, thresh: 0.8 });
+    V2.grab.cloud(ctx, tt, 780, 560, 1.0);
+    V2.grab.draw(ctx, G, 'happy', { eyes: 'happy', mouth: 'smile' }, { glass: 'gl' });
+    V2.shade(ctx, V2.type.box(cap.words, 70), '#0A3F8F', 0.4);
+    V2.type.light(ctx, tt, { id: 'C3', rows: [{ n: 4, size: 140, y: 220 }], kind: 'sung', mode: 'lit', core: '#FFFFFF', halo: '#0B2A7A', haloMode: 'shadow' });
+    title(ctx, 'SQUIGGLE (sky preset V2.L.SKY_SQ): lens bends them inside him and the cloud');
+  });
+  // 15: ray field (tinted by the panes it crosses), parallel beam, dashes in/out
+  page('ray field', (t, ctx) => {
+    const tt = 37.2;
+    V2.L.pane(g => {
+      V2.ground(g, 'drop');
+      V2.HOCKNEY6.forEach((c, i) => V2.P.glass(g, V2.P.shard(540 + Math.cos(i * 1.05) * 330, 640 + Math.sin(i * 1.05) * 330, i * 1.05, 520, 230), c, 0.55, { op: 'screen' }));
+    }, 'test_rays');
+    V2.L.render('core_test_rays', { uSrc: [540, 640, 0, 0], uTint: 0.8 }, { t: tt, bloomK: 0.42, thresh: 0.7 });
+    title(ctx, 'RAYS: hairline ray field tinted by the glass it crosses + outward dashes; beam at the top');
+  });
+  // 16: kaleidoscope, rosette, enso
+  page('kal rose enso', (t, ctx) => {
+    const tt = 46.8;
+    V2.L.pane(g => { V2.ground(g, 'metta'); g.fillStyle = '#2233D6'; g.fillRect(0, 0, 1080, 600); }, 'test_kre');
+    const op = new Float32Array(7); for (let i = 0; i < 7; i++) op[i] = 1;
+    V2.L.render('core_test_kre', {
+      uKal: [540, 300, V2.U.TAU / 24 * 3, 0.8], uKalCol: V2.linArr(V2.HOCKNEY6),
+      uRose: [540, 900, 150, 150], uRoseRot: -Math.PI / 2, uRoseCol: V2.linArr(['#FFF3C4', ...V2.PAL.metta.glass]), uRoseOpen: { v1: op },
+      uEnso: [540, 900, 330, 0.85], uEnsoW: [86, 40, 2.15, 0.885],
+    }, { t: tt, bloomK: 0.35, thresh: 0.75 });
+    title(ctx, 'KAL (12 facets, Hockney six) / ROSE (af Klint) / ENSO (dry brush, gap open)');
+  });
+  // 17: the seam (regrab at 59.6 over the rest window, frozen under-scene recipe)
+  const restWin = (T, c) => { const wo = { mode: 'night' }; V2.L.pane(g => { V2.ground(g, 'rest'); V2.window.draw(T, Object.assign({}, wo, { g })); }, 'test_rest|' + V2.window.paneKey(wo));
+    const win = V2.window.draw(T, Object.assign({}, wo, { g: null })); V2.L.render('core_stub_window', win.uniforms, { t: T, grain: 0 }); win.crisp(c); };
+  page('regrab 59.6', (t, ctx) => {
+    const tt = 59.6;
+    const R = V2.hook.regrab(tt, {}); R.underScene = { key: 'test_rest', draw: restWin };
+    V2.hook.frame(tt, R);
+  });
+  // 18: animated window (determinism probe: value and moonFall ramp with the sub-page time, pane recipe)
+  page('animated window', (t, ctx) => {
+    const wo = { mode: 'night', moonFall: U.clamp(t), value: 0.45 + 0.4 * U.clamp(t), build: U.clamp(0.3 + t) };
+    V2.L.pane(g => { V2.ground(g, 'rest'); V2.window.draw(54 + t, Object.assign({}, wo, { g })); }, 'test_anim|' + V2.window.paneKey(wo));
+    const win = V2.window.draw(54 + t, Object.assign({}, wo, { g: null }));
+    V2.L.render('core_stub_window', win.uniforms, { t: 54 + t });
+    win.crisp(ctx);
+    title(ctx, 'window night, animated: moonFall ' + wo.moonFall.toFixed(2) + ', value ' + wo.value.toFixed(2) + ' (pane recipe, keyed)');
+  });
+  // 19: 2D glass vs GL glass (the same mood, the same ground): the swatch check in colour.py --swatch
+  page('glass 2D vs GL', (t, ctx) => {
+    V2.L.pane(HK_PANE, 'test_sw');
+    const GL1 = V2.grab.geo(t, 300, 640, 230, { arm: { ext: 0 } }), GL2 = V2.grab.geo(t, 780, 640, 230, { arm: { ext: 0 } });
+    V2.L.render('core_test_sw', Object.assign({ uLens: 0.35 }, V2.grab.uniforms(GL1, 'clench')), { t, bloomK: 0.22, thresh: 0.85 });
+    V2.grab.draw(ctx, GL1, 'clench', { eyes: 'squeeze', mouth: 'zigzag' }, { glass: 'gl', lead: 1 });
+    V2.grab.draw(ctx, GL2, 'clench', { eyes: 'squeeze', mouth: 'zigzag' }, { lead: 1 });
+    const GL3 = V2.grab.geo(t, 300, 1110, 150, { arm: { ext: 0 } }), GL4 = V2.grab.geo(t, 780, 1110, 150, { arm: { ext: 0 } });
+    V2.grab.draw(ctx, GL3, 'look', { eyes: 'dots', mouth: 'flat' }, { lead: 1 });
+    V2.grab.draw(ctx, GL4, 'worried', { eyes: 'dots', mouth: 'o', brows: 'worried' }, { lead: 1 });
+    V2.post(c => { label(c, 150, 330, 'CLENCHED: GL glass', 0.95, 24); label(c, 640, 330, 'CLENCHED: 2D glass', 0.95, 24); label(c, 180, 1290 - 20, 'LOOKING 2D', 0.9, 22); label(c, 660, 1290 - 20, 'WORRIED 2D', 0.9, 22); });
+  });
+  const HK_PANE = g => { V2.hook.pane(g); };
+
+  // test programs
+  V2.L.program('core_test_burst', ['PANE', 'BURST'], `void main(){ vec2 P=canvasPx(vUv); vec3 c=pane(P); c=burst(P,c); o=vec4(c,1.); }`);
+  V2.L.program('core_test_sq', ['PANE', 'LENS', 'BODY', 'SQUIGGLE', 'CALM'], `
+vec3 world(vec2 P, float cm){ return pane(P)+squiggles(P)*cm; }
+void main(){ vec2 P=canvasPx(vUv); float cm=calm(P);
+  float in1=step(lensQ(P,uBody),1.)*step(0.,uLens), in2=(1.-in1)*step(lensQ(P,uBody2),1.)*step(1e-4,uLens2);
+  vec2 Q=in1>0.?lensPos(P,uBody,uLens,1.):(in2>0.?lensPos(P,uBody2,uLens2,1.):P);   // ONE world() call site
+  vec3 c=world(Q,cm);
+  if(in1>0.) c=bodyGlass(P,c);
+  o=vec4(c,1.); }`);
+  V2.L.program('core_test_rays', ['PANE', 'RAYS', 'DASHES'], `
+uniform vec4 uSrc;
+void main(){ vec2 P=canvasPx(vUv); vec3 g=pane(P); vec2 d=P-uSrc.xy; float r=length(d), a=atan(d.y,d.x);
+  vec2 h1=hair(r,a,150.,7.,700.,1800.,6.); vec2 h2=hair(r,a+.01,330.,13.,450.,1200.,2.);
+  vec3 rc=(h1.y<.5?HX(255.,230.,0.):h1.y<.8?HX(255.,61.,154.):HX(61.,231.,255.))*h1.x*.9+vec3(1.)*h2.x*.25;
+  rc*=smoothstep(60.,160.,r);
+  vec3 c=g+tintBy(rc,g);
+  c+=outflow(P,uSrc.xy,80.,120.,700.,3.,1.)*.5;
+  vec2 b=hairPar(P,normalize(vec2(.12,1.)),9.,2.,5.); c+=HX(255.,227.,163.)*b.x*.6*smoothstep(260.,0.,P.y)*smoothstep(170.,0.,abs(P.x-540.-.12*P.y));
+  c+=HX(255.,230.,180.)*exp(-r/90.)*1.2;
+  o=vec4(c,1.); }`);
+  V2.L.program('core_test_sw', ['PANE', 'LENS', 'BODY'], `
+void main(){ vec2 P=canvasPx(vUv); float in1=step(lensQ(P,uBody),1.); vec2 Q=in1>0.?lensPos(P,uBody,uLens,1.):P; vec3 c=pane(Q); if(in1>0.) c=bodyGlass(P,c); o=vec4(c,1.); }`);
+  V2.L.program('core_test_kre', ['PANE', 'KAL', 'ROSE', 'ENSO'], `
+void main(){ vec2 P=canvasPx(vUv); vec3 c=pane(P);
+  vec4 k=kal(P); c=mix(c,k.rgb,k.a*smoothstep(600.,560.,P.y));
+  vec4 r=rose(P); c=mix(c,r.rgb,r.a); vec4 en=enso(P); c=mix(c,en.rgb,en.a); o=vec4(c,1.); }`);
+
+  window.CORE_PAGES = PAGES;
+  (async () => {
+    await ENGINE.loadFonts();
+    const extra = [['Fraunces', 'fonts/fraunces-latin-400-normal.woff2', '400', 'normal'], ['Fraunces', 'fonts/fraunces-latin-600-italic.woff2', '600', 'italic'],
+      ['Fraunces', 'fonts/fraunces-latin-700-italic.woff2', '700', 'italic'], ['Fraunces', 'fonts/fraunces-latin-900-italic.woff2', '900', 'italic']];
+    await Promise.all(extra.map(async ([fam, url, weight, style]) => { try { const f = new FontFace(fam, `url(${url})`, { weight, style }); await f.load(); document.fonts.add(f); } catch (e) { console.warn('font fail', url, e.message); } }));
+    V2.init();
+    window.renderFrame = function (t) {
+      const k = Math.max(0, Math.min(PAGES.length - 1, Math.floor(t + 1e-6)));
+      const tt = t - k;                         // sub-page time (benching renders t + i/30)
+      const ctx = V2.ctx;
+      V2.T = tt; ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+      V2.glowJobs = []; V2.glowWideJobs = []; V2.postJobs = []; V2.camM = null;
+      ctx.fillStyle = '#120A3E'; ctx.fillRect(0, 0, 1080, 1350);
+      ctx.save(); PAGES[k].fn(tt, ctx); ctx.restore();
+      V2.camera(ctx, null); V2.flushGlow(ctx); V2.flushPost(ctx);
+      if (k === 0 || k === 17) V2.watermark(ctx, tt + (k === 17 ? 59.6 : 0));
+    };
+    window.READY = true;
+  })();
+})();
+</script>
+</body></html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<base href="../">
+<!-- UNCLENCH v2 "Light through glass". renderFrame(t) is a pure function of t (LOOK.md 5.5).
+     Render: cd visual && node render.js --page v2/index.html --stills 0,12.5 --outdir ../out/v2/stills
+     Flags: ?preview=1 lights every caption line (lookdev only), ?label=1 draws the scene name and time,
+     ?qa=1 records every laid-out word box per frame in V2.QA.words (check/contrast.js).
+     Act builders: edit ONLY your own marked HELPERS block below (and your actN.js). Everything else is core. -->
+<style>html,body{margin:0;background:#120A3E;overflow:hidden}canvas{display:block;position:absolute;top:0;left:0}</style>
+</head>
+<body>
+<canvas id="lxgl" width="540" height="675" style="display:none"></canvas>
+<canvas id="c" width="1080" height="1350"></canvas>
+<script src="engine.js"></script>
+<script src="timing.js"></script>
+<script src="v2/core/lx.js"></script>
+<script src="v2/core/clock.js"></script>
+<script src="v2/core/pal.js"></script>
+<script src="v2/core/light.js"></script>
+<script src="v2/core/pane.js"></script>
+<script src="v2/core/fx.js"></script>
+<script src="v2/core/type.js"></script>
+<script src="v2/core/glyphs.js"></script>
+<script src="v2/core/grab.js"></script>
+<script src="v2/core/window.js"></script>
+<script src="v2/core/hook.js"></script>
+<script src="v2/core/seq.js"></script>
+<!-- ===== ACT 1 HELPERS (owned by the act 1 builder): add <script src="v2/act1_*.js"></script> lines here ===== -->
+<script src="v2/act1_gl.js"></script>
+<!-- ===== end ACT 1 HELPERS ===== -->
+<script src="v2/act1.js"></script>
+<!-- ===== ACT 2 HELPERS (owned by the act 2 builder): add <script src="v2/act2_*.js"></script> lines here ===== -->
+<script src="v2/act2_util.js"></script>
+<script src="v2/act2_look.js"></script>
+<script src="v2/act2_sky.js"></script>
+<!-- ===== end ACT 2 HELPERS ===== -->
+<script src="v2/act2.js"></script>
+<!-- ===== ACT 3 HELPERS (owned by the act 3 builder): add <script src="v2/act3_*.js"></script> lines here ===== -->
+<script src="v2/act3_util.js"></script>
+<script src="v2/act3_gl.js"></script>
+<script src="v2/act3_drop.js"></script>
+<script src="v2/act3_lap.js"></script>
+<script src="v2/act3_rest.js"></script>
+<!-- ===== end ACT 3 HELPERS ===== -->
+<script src="v2/act3.js"></script>
+<script>
+(async () => {
+  await ENGINE.loadFonts();
+  // extra Fraunces faces for the open half (LOOK 2.11)
+  const extra = [
+    ['Fraunces', 'fonts/fraunces-latin-400-normal.woff2', '400', 'normal'],
+    ['Fraunces', 'fonts/fraunces-latin-600-italic.woff2', '600', 'italic'],
+    ['Fraunces', 'fonts/fraunces-latin-700-italic.woff2', '700', 'italic'],
+    ['Fraunces', 'fonts/fraunces-latin-900-italic.woff2', '900', 'italic'],
+    ['Anton', 'fonts/anton-latin-ext-400-normal.woff2', '400', 'normal'],
+  ];
+  await Promise.all(extra.map(async ([fam, url, weight, style]) => {
+    try { const f = new FontFace(fam, `url(${url})`, { weight, style }); await f.load(); document.fonts.add(f); } catch (e) { console.warn('font fail', url, e.message); }
+  }));
+  V2.init();                                   // GL + every registered program compiled before READY
+  window.renderFrame = t => V2.draw(t);
+  window.READY = true;
+})();
+</script>
+</body></html>
