@@ -3,26 +3,26 @@
   "name": "Do Nothing meditation",
   "shortName": "Do Nothing",
   "family": "meditation",
-  "alsoKnownAs": ["Do Nothing technique", "Auto Focus"],
-  "origin": "Named and taught by American meditation teacher Shinzen Young, who describes it in his free manual Five Ways to Know Yourself (versions from about 2011) and in his later ULTRA (Universal Library for Training Attention) system, and who links it to older practices such as Zen 'just sitting' and Tibetan Dzogchen and Mahamudra.",
-  "summary": "Do Nothing is a meditation with no object and a single instruction: let whatever happens happen, and whenever you notice an intention to control your attention, drop it. Even mind wandering is not corrected, since steering attention back would itself be a form of control. It sits at the effortless, receptive end of meditation, in contrast to methods that train focus or build up a feeling.",
-  "theoryOfChange": "Most meditation builds skill through effort, such as holding attention on an object; Do Nothing trains the opposite skill of letting go of control, which Jeff Warren, a teacher of the method, calls a training in equanimity (staying even-minded with whatever comes). Young writes that when the intention to focus is dropped, a focused state tends to arise on its own over time, which is why he says it could also be called Auto Focus. Mindfulness research suggests this hands-off attitude matters: Lindsay and Creswell's Monitor and Acceptance Theory proposes that awareness training alone can heighten emotional reactions, and that acceptance, which a related trial defines as receptivity, openness and equanimity, is what turns awareness into lower stress.",
-  "whatYouDo": "You sit comfortably, eyes open or closed, without choosing anything to focus on. Thoughts, sounds, body feelings and daydreams are all allowed to come and go. Whenever you notice an intention to control your attention, such as trying to focus, to fix a feeling or to meditate well, you let that intention go; if there is no such intention, there is nothing to do.",
-  "typicalDose": "Sitting practice, guided or alone, with no set length; the research app built on Young's system used one 20-minute audio lesson a day for two weeks. There is no fixed course: it is usually one technique within a broader mindfulness practice and can also be used on retreat.",
+  "alsoKnownAs": ["Do Nothing technique"],
+  "origin": "In recent decades the American meditation teacher Shinzen Young, who was ordained as a Shingon monk in Japan in 1970 and now teaches in the vipassana (insight) tradition, has presented this technique as Do Nothing in free manuals such as Five Ways to Know Yourself and An Introduction to ULTRA.",
+  "summary": "As Shinzen Young's materials describe it, Do Nothing is a meditation with no object and a single instruction: let whatever happens happen, and whenever you notice an intention to control your attention, drop it. Mind wandering is allowed rather than corrected, since steering attention back would itself be a form of control. It sits at the effortless, receptive end of meditation, in contrast to methods that train focus or build up a feeling.",
+  "theoryOfChange": "Most meditation builds skill through effort, such as holding attention on an object; Do Nothing instead practices letting go of control. Young's materials describe focus as arising by itself over time once the intention to focus is dropped. In research terms it trains acceptance, which Lindsay and colleagues define as receptivity, openness and equanimity, and Monitor and Acceptance Theory proposes that acceptance is what turns heightened awareness into less emotional reactivity and stress.",
+  "whatYouDo": "Following Young's instructions, you sit comfortably, eyes open or closed, without choosing anything to focus on. Thoughts, sounds, body feelings and daydreams are all allowed to come and go. Whenever you notice an intention to control your attention, such as trying to focus, to fix a feeling or to meditate well, you let that intention go; if there is no such intention, there is nothing to do.",
+  "typicalDose": "Sitting practice, guided or alone, with no set length; the research app built on Young's system used one 20-minute audio lesson a day for two weeks. There is no fixed course: in Young's system it is one technique among many, and his teaching includes residential retreats.",
   "keyTechniques": [
     "Let whatever happens happen",
     "Drop any intention to control attention",
     "No chosen object of focus",
     "Allow mind wandering instead of correcting it",
-    "Let focus arise by itself (Auto Focus)"
+    "Let focus arise by itself"
   ],
   "evidence": {
     "level": "limited",
-    "summary": "No controlled studies of the Do Nothing technique on its own were found, so its support is theory and practitioner accounts. The nearest research looks at open monitoring meditation, which has no explicit focus on an object (Lutz and colleagues, 2008), and at acceptance as an active ingredient of mindfulness (Lindsay and Creswell, 2017). In a 2019 randomized trial of 153 stressed adults, co-authored by Young, a 14-lesson app built on his Unified Mindfulness system cut daily loneliness by 22 percent and added about two social interactions a day when it trained both monitoring and acceptance, compared with monitoring alone or a control program; that app covered much more than Do Nothing, so the link is indirect."
+    "summary": "No controlled studies of the Do Nothing technique on its own were found, so its support is theory and practitioner accounts. The nearest research looks at open monitoring meditation, which has no explicit focus on an object (Lutz and colleagues, 2008), and at acceptance as an active ingredient of mindfulness (Lindsay and Creswell, 2017). In a 2019 randomized trial of 153 stressed adults, co-authored by Young, a 14-lesson app built on his Unified Mindfulness system cut daily loneliness by 22 percent and added about two social interactions a day when it trained both monitoring and acceptance, compared with monitoring alone or a control program; it was not a test of Do Nothing itself."
   },
   "goodFitFor": "People who find meditation effortful or strained, experienced meditators who want to rest in open awareness, and people who dislike detailed instructions.",
-  "cautions": "With no anchor, beginners may drift, doze or slide into worry, which is one reason it is usually taught alongside more focused techniques. Like any meditation, open sitting can bring up difficult emotions or memories; it is not a treatment for mental illness, and people with severe depression, trauma, psychosis or dissociation should practice with a qualified teacher and talk to a clinician.",
-  "namingNote": "'Do Nothing' is Shinzen Young's name for this technique (he notes it could also be called Auto Focus), and teachers such as Jeff Warren teach it under the same name. Young and others compare it to Zen shikantaza ('just sitting'), Tibetan Dzogchen and Mahamudra, and choiceless awareness, and Kagyu Mahamudra teaching gives a close instruction: no distraction, no control, no work. Those traditions have their own views and methods, so this point means the Young-style technique. Young also teaches in the vipassana (insight) tradition, but Do Nothing is kept apart from Vipassana, which actively observes and labels experience, and from Metta / Jhana, which deliberately builds a feeling and deep concentration.",
+  "cautions": "With no anchor, beginners may drift, doze or slide into worry, and in Young's system Do Nothing sits alongside more focused techniques. Like any meditation, open sitting can bring up difficult emotions or memories, and in a study of Western meditators from Zen, Theravada and Tibetan traditions, most difficulties began during or right after a retreat, with fear and panic the most common and some states resembling mania or psychosis (Lindahl and colleagues, 2017). It is not a treatment for mental illness: people with severe depression, trauma, psychosis or dissociation should practice with a qualified teacher, talk to a clinician, and be cautious about intensive retreats.",
+  "namingNote": "'Do Nothing' is the name Shinzen Young's materials give this technique. It resembles objectless 'just sitting' (shikantaza) in Zen, where, as some teachers put it, one does not focus on a specific object such as the breath, and the open monitoring styles that researchers also find in vipassana and Tibetan Buddhism (Lutz and colleagues, 2008); those traditions have their own views and methods, so this point means the Young-style technique. Young also teaches in the vipassana (insight) tradition, but Do Nothing is kept apart from Vipassana, which actively observes and labels experience, and from Metta / Jhana, which deliberately builds a feeling and deep concentration.",
   "sources": [
     {
       "title": "An Introduction to ULTRA",
@@ -35,19 +35,14 @@
       "kind": "primary"
     },
     {
-      "title": "Do Nothing",
-      "url": "https://jeffwarren.org/exploration/donothing/",
-      "kind": "primary"
-    },
-    {
-      "title": "6. Subtle Practices for Emptying the Six Realms",
-      "url": "https://unfetteredmind.org/series-chapter/monsters-under-the-bed-6/",
-      "kind": "primary"
-    },
-    {
       "title": "Shinzen Young",
       "url": "https://en.wikipedia.org/wiki/Shinzen_Young",
-      "kind": "org"
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Shikantaza",
+      "url": "https://en.wikipedia.org/wiki/Shikantaza",
+      "kind": "encyclopedia"
     },
     {
       "title": "Attention regulation and monitoring in meditation",
@@ -63,6 +58,11 @@
       "title": "Mindfulness training reduces loneliness and increases social contact in a randomized controlled trial",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6397548/",
       "kind": "trial"
+    },
+    {
+      "title": "The varieties of contemplative experience: A mixed-methods study of meditation-related challenges in Western Buddhists",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5443484/",
+      "kind": "primary"
     }
   ]
 }
