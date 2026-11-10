@@ -23,7 +23,7 @@
   ],
   "evidence": {
     "level": "limited",
-    "summary": "Most research on Focusing is process research rather than trials of the practice itself. Starting with Gendlin's work in the late 1950s and 1960s, studies used the Experiencing Scale to rate how much therapy clients speak from their felt sense, and early studies reported that clients with good outcomes did more of this. A later meta-analysis (Pascual-Leone and Yeryomenko) pooled studies testing the scale as a predictor of outcome, and Hendricks (2002) reviews this work alongside Focusing-oriented therapy. Few controlled trials have tested Focusing taught on its own, so its benefit as a stand-alone practice is not established."
+    "summary": "Most research on Focusing is process research, meaning studies of what happens inside therapy sessions, rather than trials that test the practice itself. Starting with Gendlin's work in the late 1950s and 1960s, researchers used the Experiencing Scale to rate how much clients speak from their felt sense, and early studies reported that clients with better outcomes did more of this. A later meta-analysis by Pascual-Leone and Yeryomenko pooled the studies linking clients' scores on this scale to therapy outcomes, and Hendricks (2002) reviews this research alongside Focusing-oriented therapy. Few controlled trials have tested Focusing taught on its own, so its benefit as a stand-alone practice is not established."
   },
   "goodFitFor": "People who feel stuck or keep circling in their heads, or who want to get clear on what they feel or want, and who like a quiet, body-aware way of exploring that can be done alone, with a partner or in therapy.",
   "cautions": "Usually gentle, but turning attention inward can bring up strong feelings or painful memories, and some people find the felt sense hard to notice at first. People with severe trauma, dissociation, psychosis or a current crisis should use it with a qualified therapist rather than alone. Because the evidence for Focusing on its own is limited, it should not replace better-tested treatments for conditions such as major depression.",
@@ -52,17 +52,17 @@
     {
       "title": "Focusing (psychotherapy) - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Focusing_(psychotherapy)",
-      "kind": "org"
+      "kind": "encyclopedia"
     },
     {
       "title": "Eugene Gendlin - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Eugene_Gendlin",
-      "kind": "org"
+      "kind": "encyclopedia"
     },
     {
       "title": "Inner Relationship Focusing - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Inner_Relationship_Focusing",
-      "kind": "org"
+      "kind": "encyclopedia"
     }
   ]
 }

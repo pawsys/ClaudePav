@@ -6,7 +6,7 @@
   "alsoKnownAs": [
     "Comprehensive distancing (its early form)"
   ],
-  "origin": "Developed by psychologist Steven C. Hayes with Kirk Strosahl and Kelly Wilson, growing out of behavior analysis research on language that began in the late 1970s (first as 'comprehensive distancing'), and set out in full in their 1999 book.",
+  "origin": "Developed by psychologist Steven C. Hayes from the early 1980s, first as a therapy called comprehensive distancing that grew out of behavior analysis research on language, and set out in full with Kirk Strosahl and Kelly Wilson in their 1999 book.",
   "summary": "ACT is a behavioral therapy that helps people stop struggling with painful thoughts and feelings and put their energy into living by what matters to them. It blends acceptance and mindfulness skills with commitment and behavior change, with the aim of building what it calls psychological flexibility. Steven Hayes describes it as part of a 'third wave' of behavioral and cognitive therapies.",
   "theoryOfChange": "ACT holds that trying to control or get rid of unwanted thoughts and feelings often backfires and makes the problem worse. Its account of language, relational frame theory, explains how words and mental rules can come to steer behavior rigidly, even when that no longer helps. Therapy builds psychological flexibility through six linked processes (acceptance, defusion, contact with the present moment, self-as-context, values and committed action), so that people can feel what they feel and still act on what they care about.",
   "whatYouDo": "Sessions mix conversation with experiential exercises, metaphors and short mindfulness practices, rather than debating whether thoughts are true. You practice noticing thoughts as just thoughts, making room for difficult feelings, and getting clear about what you value. You then commit to concrete steps in line with those values and look at what helped or got in the way.",
@@ -21,16 +21,16 @@
   ],
   "evidence": {
     "level": "strong",
-    "summary": "A 2020 review of 20 meta-analyses covering 12,477 participants found ACT efficacious for anxiety, depression, substance use, pain and mixed problems, generally outperforming waitlist, usual care and most other active treatments, but not CBT. A more critical 2014 meta-analysis of 60 randomized trials (Öst) found a modest average effect. Self-help versions show small benefits for depression and anxiety, and the evidence for single-session formats is still uncertain."
+    "summary": "A 2020 review of 20 meta-analyses covering 12,477 participants found ACT efficacious for anxiety, depression, substance use, pain and mixed problems, generally outperforming waitlist, usual care and most other active treatments, but not CBT. A more critical 2014 meta-analysis of 60 randomized trials (Öst) found a modest average effect. Self-help versions show small benefits for depression and anxiety, while for people with chronic health conditions the evidence for single-session formats is still uncertain, as most of those studies are pilot trials."
   },
   "goodFitFor": "People who feel stuck fighting anxiety, low mood, chronic pain or substance use, and who want to build a fuller life alongside difficult thoughts and feelings rather than waiting for them to go away first.",
   "cautions": "Generally low risk, though turning toward painful feelings can be uncomfortable at first. Acceptance means making room for inner experience, not putting up with harmful situations or giving up on change. Severe depression, suicidal thoughts, psychosis or serious substance problems call for a qualified clinician rather than self-help alone.",
   "namingNote": "Said as the word 'act', not as separate letters. Here ACT means Acceptance and Commitment Therapy as developed by Hayes, Strosahl and Wilson, not Assertive Community Treatment, an unrelated mental health service model with the same initials. Its early form, comprehensive distancing, is treated as part of the same lineage rather than as a separate point.",
   "sources": [
     {
-      "title": "About ACT (Association for Contextual Behavioral Science)",
-      "url": "https://contextualscience.org/about_act",
-      "kind": "primary"
+      "title": "Acceptance and commitment therapy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Acceptance_and_commitment_therapy",
+      "kind": "encyclopedia"
     },
     {
       "title": "Acceptance and Commitment Therapy: An Experiential Approach to Behavior Change",
@@ -44,7 +44,7 @@
     },
     {
       "title": "The evolution of a contextual approach to therapy: From comprehensive distancing to ACT",
-      "url": "https://contextualscience.org/files/Evolution+of+ACT_Zettle_2005.pdf",
+      "url": "https://doi.org/10.1037/h0100736",
       "kind": "review"
     },
     {
