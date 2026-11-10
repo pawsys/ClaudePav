@@ -1,0 +1,68 @@
+{
+  "id": "sensory",
+  "name": "Sensory mindfulness",
+  "shortName": "Mindful senses",
+  "family": "meditation",
+  "alsoKnownAs": ["mindfulness of the senses", "sensory awareness", "sense-based mindfulness"],
+  "origin": "It draws on Buddhist mindfulness of the six senses and on Elsa Gindler's awareness and exercise teaching in 1920s Berlin, which her student Charlotte Selver brought to the United States in 1938 as Sensory Awareness; Jon Kabat-Zinn's MBSR program, founded at the University of Massachusetts in 1979, then made sense-based exercises such as the body scan and the raisin exercise widely known.",
+  "summary": "Sensory mindfulness means giving full, open attention to raw sensory experience: what you see, hear, touch, taste and smell, and what you feel in the body, without judging it or getting lost in thoughts about it. It is used to settle and come back to the present moment through exercises such as the body scan, mindful eating and mindful listening. Unlike vipassana, where watching sensations serves insight into how experience arises, and unlike Do Nothing meditation, which sets no focus at all, here the senses themselves are the deliberate anchor and the aim is simple contact with the present.",
+  "theoryOfChange": "Worry and rumination are repetitive thinking about the future and the past, so turning attention to what you can sense right now is thought to interrupt them; in people with current or past depression, a review of 11 studies found that mindfulness-based therapy, mostly mindfulness-based cognitive therapy, reduced rumination moderately compared with usual care, a waiting list or a home walking program (7 studies, 516 people), though not more than other active treatments (3 studies). Charlotte Selver held that well-being depends on how far we find new confidence in natural, organic processes, which her work approached through direct experience of the senses.",
+  "whatYouDo": "You pick a sense and give it slow, curious attention: eating a single raisin with full attention, sitting or lying while moving attention through the body from the toes to the top of the head (the body scan), or listening to sounds as they come and go. When the mind wanders into thought, you notice this without judging it and return to what you can sense now. Shinzen Young, founder of the Unified Mindfulness program, teaches a related method called See Hear Feel, built around noticing what you see, hear and feel. Charlotte Selver's Sensory Awareness centers on consciously sensing the body and following physical sensations.",
+  "typicalDose": "In MBSR, these exercises are taught over an 8-week course of weekly group classes of about 2.5 hours, plus a one-day retreat and about 45 minutes of daily home practice; MBSR programs in trials typically gave 20 to 27.5 hours of training, and other mindfulness programs about half that. Single exercises can also be practiced on their own at any time.",
+  "keyTechniques": [
+    "Body scan",
+    "Mindful eating (the raisin exercise)",
+    "Mindful listening to sounds",
+    "See Hear Feel (Shinzen Young)",
+    "Sensory Awareness (Charlotte Selver)"
+  ],
+  "evidence": {
+    "level": "emerging",
+    "summary": "Research on sense-focused practice on its own is thin and mixed. Its exercises sit inside mindfulness programs such as MBSR, and a review of 47 meditation trials found moderate evidence that mindfulness programs ease anxiety, depression and pain by small to moderate amounts (Goyal and colleagues, 2014), but whole-program trials cannot show what the sensory exercises add. A meta-analysis of 14 randomized trials of the body scan on its own found only a small effect on mindfulness, low study quality and no clear health benefit (Gan and colleagues, 2022)."
+  },
+  "goodFitFor": "People who want a simple, portable way to settle and return to the present, including people with depression who tend to ruminate, since mindfulness-based therapy has reduced rumination in trials. It is also a common first step into mindfulness: MBSR opens in week one with basic practices such as the body scan.",
+  "cautions": "Meditation can sometimes bring up difficult experiences: in a study of Western Buddhist meditators, people described episodes of fear or panic, re-living traumatic memories and heightened sensitivity to light, sound or sensation, ranging from brief and mild to severe and lasting, and some first met these problems within days or months of starting to practice. Start gently, keep the freedom to stop, and seek a trained teacher or therapist if this happens, especially with a history of trauma. It is a self-care skill, not a stand-alone treatment for severe anxiety, PTSD or psychosis.",
+  "namingNote": "The request said 'mindful sensory mindfulness'. It is defined here as mindfulness that uses raw sensory experience (sight, sound, touch, taste, smell and body sensation) as its deliberate anchor, drawing on the MBSR body scan and raisin exercise, mindful listening, Charlotte Selver's Sensory Awareness and Shinzen Young's See Hear Feel. It is kept apart from vipassana (insight practice) and Do Nothing meditation (no chosen object), which are separate points. Two of its techniques have vipassana roots: the MBSR body scan was adapted from a body-sweeping practice taught in the vipassana retreats of S.N. Goenka, and See Hear Feel comes from Shinzen Young, who teaches the vipassana (insight) tradition. Here both are used only to keep attention on the senses, not as insight practice.",
+  "sources": [
+    {
+      "title": "Mindfulness",
+      "url": "https://en.wikipedia.org/wiki/Mindfulness",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Mindfulness-based stress reduction",
+      "url": "https://en.wikipedia.org/wiki/Mindfulness-based_stress_reduction",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Charlotte Selver",
+      "url": "https://en.wikipedia.org/wiki/Charlotte_Selver",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Shinzen Young",
+      "url": "https://en.wikipedia.org/wiki/Shinzen_Young",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Meditation Programs for Psychological Stress and Well-being: A Systematic Review and Meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4142584/",
+      "kind": "review"
+    },
+    {
+      "title": "The effects of body scan meditation: A systematic review and meta-analysis",
+      "url": "https://doi.org/10.1111/aphw.12366",
+      "kind": "review"
+    },
+    {
+      "title": "Mindfulness-based interventions for the treatment of depressive rumination: Systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30487903/",
+      "kind": "review"
+    },
+    {
+      "title": "The varieties of contemplative experience: A mixed-methods study of meditation-related challenges in Western Buddhists",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5443484/",
+      "kind": "primary"
+    }
+  ]
+}

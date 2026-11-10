@@ -1,0 +1,69 @@
+{
+  "id": "music",
+  "name": "Music (listening, making music and music therapy)",
+  "shortName": "Music",
+  "family": "arts",
+  "alsoKnownAs": ["music therapy", "music medicine", "music listening", "music-based interventions"],
+  "origin": "Music was used to treat soldiers' ailments as early as the Crimean War and the US Civil War, and music therapy as a modern profession grew out of the aftermath of the two World Wars, when musicians played in hospitals for soldiers with war-related trauma; the National Association for Music Therapy, a US professional association, formed in 1950.",
+  "summary": "This point covers the ways people use music for mental health, from everyday listening, singing and playing to formal music therapy. The American Music Therapy Association defines music therapy as the clinical and evidence-based use of music interventions to reach individualized goals within a therapeutic relationship, delivered by a credentialed professional who has completed an approved music therapy program. Therapists use active methods, making music together so emotions can be expressed or perceived, and receptive methods, listening to music to explore the feelings it brings up.",
+  "theoryOfChange": "Music can shift mood and arousal: even a single piece can change how a person feels, and music interventions lower both physical signs of stress, such as heart rate, and felt stress. In community choirs, people with mental health conditions describe enjoyment, better emotional states, a sense of belonging and more self-confidence. In music therapy, the shared experience of music and the conversation afterwards also build a relationship with the therapist or group, which offers a way to express and work through feelings.",
+  "whatYouDo": "In music therapy, a credentialed therapist assesses your needs, sets goals with you and then uses music experiences such as improvising on simple instruments, singing, writing songs, discussing lyrics or listening to chosen music, often followed by talking about what came up. Guided Imagery and Music (the Bonny Method) is one established approach that pairs music listening with imagery. Outside therapy, the same ingredients show up as joining a choir, learning an instrument or listening on purpose to self-chosen music to relax or ease anxiety.",
+  "typicalDose": "In depression trials, music therapy ran for 6 to 12 weeks, with 8 to 48 sessions of 20 to 120 minutes each; dementia trials used a median of 14 sessions of 30 minutes to 2 hours. Self-directed use ranges from a few minutes of chosen listening to regular choir or band rehearsals.",
+  "keyTechniques": [
+    "Improvising with voice or simple instruments",
+    "Songwriting and lyric discussion",
+    "Receptive listening to chosen music",
+    "Guided Imagery and Music (Bonny Method)",
+    "Group singing and choirs",
+    "Moving to rhythm and music"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "Many trials and several meta-analyses point the same way. For music therapy added to usual care, a Cochrane review (Aalbers and colleagues, 2017; 9 studies, 421 people) found moderate-quality evidence of short-term relief of depressive symptoms and low-quality evidence of gains in anxiety and daily functioning, and a 2024 meta-review across psychiatric conditions (Lassner and colleagues) found moderate benefits for depression, anxiety and quality of life but rated all the evidence low or very low in certainty and found the gains were not maintained at follow-up. For music interventions in general, including listening, a meta-analysis of 104 randomized trials found lower physical and self-reported stress (de Witte and colleagues, 2020). For community group singing, studies of adults with a mental health condition look promising but carry a moderate to high risk of bias (Williams and colleagues, 2018)."
+  },
+  "goodFitFor": "People who respond strongly to music or find it hard to put feelings into words, and anyone wanting an accessible, low-cost way to manage stress and mood, alone or with others. Formal music therapy suits people who want skilled support alongside usual care for conditions such as depression, anxiety or dementia.",
+  "cautions": "Music can stir strong feelings: for people prone to rumination, listening to sad music can deepen a low mood, so notice how a piece leaves you feeling. Keep the volume down, because about a quarter of young people listen at unsafe levels on headphones and other personal devices and an estimated half are exposed to unsafe levels at loud entertainment venues, which may put over a billion young people at risk of hearing loss. In trials, music therapy for depression was not linked to more or fewer adverse events than usual care, but it is an add-on to professional treatment for serious depression or other mental illness, not a replacement, and clinical work calls for a credentialed music therapist (MT-BC in the United States).",
+  "namingNote": "Defined broadly, as requested: listening, singing, playing and writing music, plus formal music therapy by a credentialed music therapist (MT-BC in the United States). Research separates music therapy (a trained therapist, a relationship and individual goals) from music medicine, where a person listens to self-chosen or prescribed music, with or without staff guidance, mainly for relaxation or anxiety relief; both belong to this point, and the evidence summary labels each finding as music therapy, music interventions in general or community group singing.",
+  "sources": [
+    {
+      "title": "What is Music Therapy?",
+      "url": "https://www.musictherapy.org/about/musictherapy/",
+      "kind": "org"
+    },
+    {
+      "title": "Music therapy",
+      "url": "https://en.wikipedia.org/wiki/Music_therapy",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Music therapy for depression",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6486188/",
+      "kind": "review"
+    },
+    {
+      "title": "Effects of music interventions on stress-related outcomes: a systematic review and two meta-analyses",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31167611/",
+      "kind": "review"
+    },
+    {
+      "title": "Evidence for music therapy and music medicine in psychiatry: transdiagnostic meta-review of meta-analyses",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11733488/",
+      "kind": "review"
+    },
+    {
+      "title": "A systematic review of mental health and wellbeing outcomes of group singing for adults with a mental health condition",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29982515/",
+      "kind": "review"
+    },
+    {
+      "title": "Music and People with Tendencies to Depression",
+      "url": "https://doi.org/10.1525/mp.2015.32.4.313",
+      "kind": "primary"
+    },
+    {
+      "title": "Prevalence and global estimates of unsafe listening practices in adolescents and young adults: a systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36379592/",
+      "kind": "review"
+    }
+  ]
+}

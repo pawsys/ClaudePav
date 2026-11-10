@@ -1,0 +1,68 @@
+{
+  "id": "animal",
+  "name": "Animal-assisted therapy",
+  "shortName": "Animal therapy",
+  "family": "animal",
+  "alsoKnownAs": ["animal-assisted intervention (AAI)", "pet therapy", "animal therapy", "canine-assisted therapy", "equine-assisted services"],
+  "origin": "Modern animal-assisted therapy is often traced to psychologist Boris Levinson, who in 1961 drew attention to the human-pet bond after finding a nonverbal child he was treating talking to his dog, and today the International Association of Human-Animal Interaction Organizations (IAHAIO) publishes standard definitions for the field (white paper 2014, updated 2018).",
+  "summary": "Animal-assisted therapy (AAT) brings a trained animal, most often a dog or a horse, into planned, goal-directed treatment led by a health, education or human-service professional, with progress tracked as in any other therapy. It is the formal end of a wider family called animal-assisted interventions, which also includes informal comfort visits by trained teams (animal-assisted activities) and school-based work (animal-assisted education).",
+  "theoryOfChange": "Companionship with a trained animal is thought to be an active ingredient of the therapy: a calm, friendly animal can ease stress and anxiety and make it easier to open up, as in Levinson's first case. Studies of horse-based work with veterans also suggest further benefits such as bonding, peer support, social connection and learning new skills.",
+  "whatYouDo": "A professional works with a trained animal, often alongside its handler, toward goals set in advance, such as easing anxiety, building trust or practicing social skills. You might sit with, stroke or play with a calm dog while talking through something hard, or take part in therapy, learning or horsemanship sessions with a horse. In animal-assisted activities, a trained team instead visits a hospital, care home or school for informal, comforting contact.",
+  "typicalDose": "In the 35 trials pooled in a 2026 meta-analysis, sessions lasted 10 to 180 minutes and most often ran once or twice a week, though schedules ranged from every two weeks to eight or more sessions a week. Dogs were used in about 7 of 10 programs, and about 1 in 10 used robotic animals instead of live ones.",
+  "keyTechniques": [
+    "Dog-assisted therapy sessions",
+    "Equine-assisted services (therapy, learning or horsemanship sessions)",
+    "Therapy with other animals, such as cats, birds or farm animals",
+    "Animal-assisted activity visits in hospitals, care homes and schools",
+    "Animal-assisted education in schools"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "A 2026 meta-analysis of 35 randomized trials with 2,391 adults (Shih and colleagues) found small to moderate reductions in depression and anxiety and a larger but less certain drop in stress, with no meaningful effect on pain or walking and substantial differences between studies. For horses, a 2024 review of 13 studies with 344 veterans found lower PTSD scores after equine-assisted services, but almost all of the studies were low quality (Provan and colleagues). An earlier systematic review found only 11 randomized trials, judged them relatively low in quality and too varied to pool, and concluded that benefits may hold mainly for people who like animals (Kamioka and colleagues, 2014)."
+  },
+  "goodFitFor": "People who like animals, including adults with anxiety, depression or stress, and veterans with PTSD who are open to working with horses. Dog-assisted therapy is generally used as a complement to other therapies rather than on its own.",
+  "cautions": "Possible risks include infections passed between animals and patients, allergies, fear of animals, and bites, scratches or other injuries, and around horses people can also be kicked or fall. Few studies have measured these risks and few data confirm infections actually passing from therapy animals to patients; trained animals, hygiene rules and supervision are used to keep risks low, no one should be pushed into contact, and anyone who needs treatment should look for a licensed health or mental health professional who offers AAT rather than a visiting program alone. Therapy dogs can show signs of work-related stress that depend on how often and how long sessions run, and IAHAIO has published guidelines on the wellbeing of the animals involved.",
+  "namingNote": "The request said 'animal therapy'. The professional term is animal-assisted therapy (AAT): a goal-oriented, planned and structured intervention directed or delivered by a health, education or human-service professional, as IAHAIO defines it. This point centers on AAT, mostly with dogs and horses, and also covers lighter animal-assisted activities (informal visits by trained teams) and animal-assisted education in schools, but not simply owning a pet. For horses, the term 'equine-assisted services' covers therapy, learning or horsemanship sessions. IAHAIO's own page could not be opened when this file was written, so its definitions here come from search-result summaries of it.",
+  "sources": [
+    {
+      "title": "IAHAIO White Paper on Animal Assisted Interventions, updated for 2018",
+      "url": "https://iahaio.org/?p=2101",
+      "kind": "org"
+    },
+    {
+      "title": "Animal-assisted therapy",
+      "url": "https://en.wikipedia.org/wiki/Animal-assisted_therapy",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Equestrianism",
+      "url": "https://en.wikipedia.org/wiki/Equestrianism",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Animal-assisted therapy on psychological and physical outcomes: a meta-analysis of randomised controlled trials",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13377760/",
+      "kind": "review"
+    },
+    {
+      "title": "Are equine-assisted services beneficial for military veterans with post-traumatic stress disorder? A systematic review and meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11293092/",
+      "kind": "review"
+    },
+    {
+      "title": "Effectiveness of animal-assisted therapy: A systematic review of randomized controlled trials",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24731910/",
+      "kind": "review"
+    },
+    {
+      "title": "Risks associated with animal-assisted intervention programs: A literature review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32379677/",
+      "kind": "review"
+    },
+    {
+      "title": "Current Perspectives on Therapy Dog Welfare in Animal-Assisted Interventions",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28157145/",
+      "kind": "review"
+    }
+  ]
+}
