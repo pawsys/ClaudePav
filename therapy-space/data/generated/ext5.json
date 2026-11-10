@@ -109,7 +109,7 @@
       "whatYouDo": "Two teams of seven play 10-minute rounds on a normal field, and each team can score with any of the three discs, while a score with one disc does not stop the others. Players call out names constantly so that passes can find them, and nobody tracks the total score. A session lasts about an hour, with short breaks between rounds.",
       "whoItsFor": "People who feel they must keep track of everything, at work or at home, and anyone who loves noisy, unpredictable games.",
       "cautions": "With several discs flying, the risk of being hit or colliding goes up, so use soft discs, play no-contact, keep your eyes up, stop playing after any knock to the head, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or joint problems. It is an untested idea, and the chaos may feel overwhelming to some players.",
-      "tweet": "Thought experiment: what if a team game had three discs in play at once? In Three Disc Mayhem there's far too much to track, so you stop trying to control everything and trust your teammates with what you can't see."
+      "tweet": "Thought experiment: what if a team game had three discs in play at once? Three Disc Mayhem has far too much to track, which may be the point: nobody can control it all, so you learn to trust teammates with what you can't see."
     },
     {
       "id": "vipassana__team-sport__5",
@@ -126,11 +126,11 @@
       "id": "hiit__team-sport__5",
       "name": "Slow Motion Rounds",
       "tagline": "Every other round played in dramatic, narrated slow motion.",
-      "whatItIs": "Slow Motion Rounds is a gentle, silly team game in which every other round is played in exaggerated slow motion, like a film replay, while someone on the sideline narrates it like a nature documentary. The other rounds are played at an easy jog, so the effort stays moderate throughout.",
+      "whatItIs": "Slow Motion Rounds is a silly team game in which every other round is played in exaggerated slow motion, like a film replay, while someone on the sideline narrates it like a nature documentary. The rounds in between are played at a steady running pace, so the session as a whole is moderate work.",
       "coreIdea": "Moving absurdly slowly in front of others, with everyone doing the same, is meant to dissolve self-consciousness and turn being watched into shared fun.",
-      "whatYouDo": "Mixed groups of 10 to 16 play six 8-minute rounds over an hour, alternating easy jogging rounds with slow-motion rounds in which throws, catches and celebrations are acted out at a crawl. Anyone can join whatever their fitness, and nobody keeps score in slow-motion rounds. The session ends with a vote for the most dramatic slow-motion moment.",
-      "whoItsFor": "People who feel self-conscious moving in front of others, newcomers to sport, and anyone who wants a laugh more than a workout.",
-      "cautions": "Slow, exaggerated moves can still strain muscles or cause falls, so keep them within a comfortable range, never dive, stop playing after any knock to the head and check with a doctor first if you have heart or joint problems. It is an untested idea, and the jokes should be about the game, never about anyone's body.",
+      "whatYouDo": "Mixed groups of 10 to 16 play six 8-minute rounds over an hour, alternating steady running rounds with slow-motion rounds in which throws, catches and celebrations are acted out at a crawl. In the running rounds you breathe harder but can still talk, and nobody keeps score in the slow-motion rounds. The session ends with a vote for the most dramatic slow-motion moment.",
+      "whoItsFor": "People who feel self-conscious moving in front of others, players who can manage steady running but not competitive sport, and anyone who wants a laugh with their workout.",
+      "cautions": "Running rounds and exaggerated slow moves can strain muscles or cause falls, so warm up, keep moves within a comfortable range, never dive, stop playing after any knock to the head, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or joint problems. It is an untested idea, and the jokes should be about the game, never about anyone's body.",
       "tweet": "Picture this: a team game where every other round is played in dramatic slow motion while someone narrates it like a nature documentary. Slow Motion Rounds is a new idea for anyone who feels self-conscious moving in front of people. 🐢"
     },
     {
@@ -181,11 +181,11 @@
       "id": "team-sport__socializing__1",
       "name": "Unison Openers",
       "tagline": "Every session starts with the whole team moving as one.",
-      "whatItIs": "Unison Openers start every team session with a short warm-up sequence that the whole squad performs in exact unison, counted out like a drill team, before any play begins. The sequence is learned once and refined over a season.",
+      "whatItIs": "Unison Openers start every team session with a fast, demanding sequence of moves that the whole squad performs in exact unison, counted out like a drill team, before hard play begins. The closeness comes from moving together, step for step and breath for breath, with no need to talk. The sequence is learned once and refined over a season.",
       "coreIdea": "Some studies link moving in time with others to feeling closer to them, so a shared opening may help a team feel like one group before the first point.",
-      "whatYouDo": "The team writes an eight-count sequence of warm-up moves (jogging, high knees, lunges, side shuffles) and learns it together, then performs it in a tight block at the start of every session, ending with one shared shout. A new move is added each month. The rest of the session is ordinary hard training and play.",
+      "whatYouDo": "The team writes an eight-count sequence of hard moves (sprints out and back, burpees, lunges, high knees) and performs it in a tight block for six minutes at the start of every session, ending with one shared shout. A new move is added each month. The rest of the session is hard training and full-speed play.",
       "whoItsFor": "Teams that feel like a collection of individuals, and people who bond more easily by doing than by talking.",
-      "cautions": "A shared tempo can push some players too fast, so keep the sequence moderate and build it up gradually, stop playing after any knock to the head during the session, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or joint problems. It is an untested idea.",
+      "cautions": "A shared fast tempo can push some players too hard, so build the sequence up over weeks, let anyone switch to an easier version without leaving the block, stop playing after any knock to the head, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or joint problems. It is an untested idea.",
       "tweet": "What if every team session began with the whole squad moving in exact unison, step for step, ending in one shared shout? Unison Openers is a speculative idea for building closeness by moving together rather than talking."
     },
     {
@@ -212,31 +212,31 @@
     },
     {
       "id": "team-sport__music__1",
-      "name": "Quiet Ones Call It",
-      "tagline": "The quietest players lead; the loudest play in silence.",
-      "whatItIs": "Quiet Ones Call It is a team game that flips who gets heard: the players who usually talk least make all the calls, choose the lines and lead the huddles, while the usual loud voices must stay silent. Who counts as quiet or loud is decided by the players themselves, privately, before the game.",
-      "coreIdea": "Giving the floor to the quietest voices, and asking the loudest to follow, may let each group feel what the other usually feels.",
-      "whatYouDo": "Before a 75-minute game, each player privately rates on a slip how much they usually talk on the field, and a volunteer names the three quietest and three loudest on each team. The quiet three call every play and settle every disputed call, and the loud three play in silence, using only signs. The roles are redrawn every week.",
-      "whoItsFor": "People who rarely speak up in groups, people who often take over without meaning to, and teams that want more balanced voices.",
-      "cautions": "Fast play brings risks of strains, collisions and head knocks, so warm up, play no-contact, stop playing after any knock to the head, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or joint problems. It is an untested idea, and anyone who finds being singled out stressful can opt out.",
-      "tweet": "What if the quietest players made every call and the loudest had to play in silence? Quiet Ones Call It is an untested team game that flips who gets heard, so each side feels what the other usually feels."
+      "name": "Start Four Down",
+      "tagline": "Every game, one team starts four points behind and plays all out.",
+      "whatItIs": "Start Four Down is a competitive team game in which one team, chosen by rota, begins every game four points behind. The aim for that team is not to win but to play the whole game with full effort and good spirit, whatever the score. Over a season, every player spends plenty of games starting from behind.",
+      "coreIdea": "Practicing full effort and good humor from a losing position, again and again, may make setbacks feel less like a reason to give up.",
+      "whatYouDo": "Two teams play a 60-minute game to 15 points, and the rota team starts at 0 against 4. After the game the trailing team names one moment when they kept going and one thing they did when the gap grew. The deficit swaps sides every week, and some weeks it rises to six.",
+      "whoItsFor": "People who give up when they fall behind, and players who only enjoy games they are winning.",
+      "cautions": "Hard competitive play brings risks of strains, collisions and head knocks, so warm up, play no-contact, stop playing after any knock to the head, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or joint problems. It is an untested idea, and starting behind should stay a challenge, never a way to humiliate a weaker side.",
+      "tweet": "What if your team started every game four points down? Start Four Down is an untested idea: the trailing team plays all out anyway, then names one moment they kept going. A season of practicing what to do when you fall behind."
     },
     {
       "id": "ipf__endurance__5",
       "name": "Rain Is the Reason",
       "tagline": "Go out because the weather turned, and feel all of it.",
-      "whatItIs": "Rain Is the Reason is a hard, self-led running habit triggered by the weather: when it starts to rain, the wind picks up or the air turns cold, that is your cue to go, and the run is about feeling it fully. Rain on the face, cold hands and wind in the chest, the conditions people usually avoid, become the whole point. There is no route and no plan, only the weather and your breathing.",
+      "whatItIs": "Rain Is the Reason is a hard, self-led running habit triggered by the weather: when it starts to rain, the wind picks up or the air turns cold, that is your cue to go, and the run is about feeling it fully. Rain on the face, cold hands and wind in the chest become sensations to explore rather than reasons to stay in. The only plan is a safe, familiar loop; everything else is the weather and your breathing.",
       "coreIdea": "Choosing to meet unpleasant weather head-on, and finding it bearable or even exhilarating, may make discomfort feel more like sensation and less like a threat.",
       "whatYouDo": "When the weather turns, you dress for it and run hard for 20 to 40 minutes on a safe, familiar route, letting your attention go to the rain, the wind and the cold rather than to getting it over with. Every few minutes you name one sensation to yourself, such as 'cold on the ears'. Back home you warm up properly and note one thing that felt better than you expected.",
       "whoItsFor": "People who brace against discomfort or cancel plans at the first bad forecast, and runners who want to feel more alive in their bodies.",
-      "cautions": "Bad weather brings slips, cold and poor visibility, so never run in lightning, on ice or in storms, wear bright clothing, choose familiar routes, warm up properly afterward, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or other health problems. It is an untested idea.",
+      "cautions": "Bad weather brings slips, cold and poor visibility, so never run in lightning, on ice or in storms, wear bright clothing and a light when it is dim, tell someone your route and carry a phone, warm up properly afterward, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or other health problems. It is an untested idea.",
       "tweet": "When it starts raining, that's your cue. Rain Is the Reason is an untested idea: go for a hard run because the weather turned, feel the rain on your face and the wind in your chest, and find out how bearable it really is. ☔"
     },
     {
       "id": "ifs__endurance__5",
       "name": "Promise Mile",
       "tagline": "One small, exact promise to yourself on every run, kept.",
-      "whatItIs": "Promise Mile is a running practice built on keeping your word to yourself: before one hard stretch of each run you make a single, exact promise, such as 'no walking until the bridge', and then you keep it or note honestly that you did not. Here one clear promise is made and kept, with no negotiating mid-run.",
+      "whatItIs": "Promise Mile is a running practice built on keeping your word to yourself: before one hard stretch of each run you make a single, exact promise, such as 'no walking until the bridge', and then you keep it or note honestly that you did not. The promise is made once, before the hard stretch, and is not renegotiated on the way.",
       "coreIdea": "Making small, exact promises to yourself and keeping them is meant to build self-trust: the sense that when you say you will do something, you do.",
       "whatYouDo": "Three times a week you run for 30 to 45 minutes, and before the hard section you say your promise out loud, keeping it small enough to be realistic. Afterward you mark a calendar with a tick for kept or a circle for not kept, and add no other comment. Promises grow only when most of the recent ones were kept.",
       "whoItsFor": "People who often break promises to themselves, or who no longer believe their own plans.",
@@ -263,7 +263,7 @@
       "whatYouDo": "Once a week you run your usual 30 to 50 minute route in reverse at a hard, steady effort, looking for at least three things you have never noticed before. The next day you do one everyday habit differently, such as the way you walk to work or the order of your morning. You note which changes felt strange and which you kept.",
       "whoItsFor": "People who feel stuck in routines, and runners who realize they no longer see their own route.",
       "cautions": "A reversed route brings unfamiliar crossings and traffic from new angles, so take extra care at roads, build up gradually, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or other health problems. It is an untested idea.",
-      "tweet": "Run your usual route backward and suddenly you see it. Usual Route Backward is a new idea: same streets, opposite direction, three things you never noticed, then one everyday habit done differently the next day. A small crack in autopilot."
+      "tweet": "Run your usual route backward and you may suddenly see it. Usual Route Backward is a new idea: same streets, opposite direction, three things you never noticed, then one everyday habit done differently the next day. A small crack in autopilot."
     },
     {
       "id": "coherence__endurance__5",
@@ -291,7 +291,7 @@
       "id": "focusing__endurance__5",
       "name": "Speech on the Move",
       "tagline": "Rehearse the words you dread, out loud, with a racing heart.",
-      "whatItIs": "Speech on the Move uses a hard, steady run to rehearse difficult words: the conversation you dread, the request you keep postponing or the talk you have to give, spoken out loud while your heart is pounding. Here the words are already chosen, and they get practiced under pressure.",
+      "whatItIs": "Speech on the Move uses a hard, steady run to rehearse difficult words: the conversation you dread, the request you keep postponing or the talk you have to give, spoken out loud while your heart is pounding. The words are chosen before you set out, and the run supplies the racing pulse that the real moment will bring.",
       "coreIdea": "Practicing hard words while the body is already activated may make the real conversation feel more familiar when your heart starts racing.",
       "whatYouDo": "Before the run you write down three or four sentences you need to say, then run for 25 to 40 minutes on a quiet route, saying them aloud at different points, especially near the top of climbs. You adjust the words until they feel natural even when you are out of breath. Afterward you note which sentence still feels hardest.",
       "whoItsFor": "People with a hard conversation, interview or speech coming up, and anyone whose voice disappears when they are nervous.",
@@ -300,14 +300,14 @@
     },
     {
       "id": "aletheia__endurance__5",
-      "name": "Least Favorite Run",
-      "tagline": "Once a week, run the route or condition you like least.",
-      "whatItIs": "Least Favorite Run is a weekly hard run chosen for being the one you would most like to skip: the steep hill you avoid, the windy seafront, the early slot. You choose it deliberately each Sunday for the week ahead, and the other runs stay the ones you enjoy.",
-      "coreIdea": "Choosing the thing you avoid, on purpose and in small doses, may shrink avoidance and leave you with proof that you can handle what you dreaded.",
-      "whatYouDo": "Each Sunday you list three runs you would rather not do and pick one for the coming week. You run it hard for 25 to 45 minutes and afterward write one sentence about it. Once a route stops feeling like the worst, you cross it off and choose a new one.",
-      "whoItsFor": "People who avoid the hard version of things, and runners who only ever run their favorite loop.",
-      "cautions": "Some routes are avoided for good reasons, so never choose anything unsafe (unlit, icy or isolated), build up gradually, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or other health problems. It is an untested idea.",
-      "tweet": "Which run would you most like to skip? Least Favorite Run is a new concept: once a week you pick exactly that one (the steep hill, the windy seafront, the 6am slot) and run it hard. When it stops being the worst, it comes off the list."
+      "name": "Quality of the Day",
+      "tagline": "After each hard run, name one quality you showed out there.",
+      "whatItIs": "Quality of the Day is a hard-running habit with one question at the end of every run: which quality did you show today? Patience on the climb, humor in the rain, stubbornness in the last kilometer, kindness to yourself when you slowed down. The answer goes on the fridge, and times and distances do not.",
+      "coreIdea": "Looking for a personal quality in each effort, rather than a time or a distance, may help you see yourself in terms of your strengths.",
+      "whatYouDo": "Three times a week you run hard for 30 to 50 minutes and, while cooling down, pick one quality you showed and the moment that proves it. Back home you write it on a sticky note, such as 'Today: patience, on the long hill', and put it on the fridge in place of the last one. The note is there to be seen the next time a hard day comes.",
+      "whoItsFor": "People who notice only their failings, and runners who judge every run by the watch.",
+      "cautions": "Hard running carries injury and heart strain risks, so build up gradually, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or other health problems. It is an untested idea.",
+      "tweet": "After every hard run, one question: what quality did you show out there? Patience on the climb, humor in the rain, stubbornness in the last kilometer. Quality of the Day is a new idea for seeing yourself in strengths, not split times."
     },
     {
       "id": "do-nothing__endurance__5",
@@ -412,7 +412,7 @@
       "id": "endurance__nature__1",
       "name": "Lamppost Vocabulary",
       "tagline": "Recall one word of a new language at every lamppost.",
-      "whatItIs": "Lamppost Vocabulary turns a hard, steady run along lit streets into a language lesson: you carry a short list of words in a language you are learning and test yourself on one at each lamppost. The route is a grid of streets rather than open countryside, and the mind gets a small, absorbing job.",
+      "whatItIs": "Lamppost Vocabulary turns a hard, steady run along lit streets into a language lesson: you carry a short list of words in a language you are learning and test yourself on one at each lamppost. The mind gets a small, absorbing job while the body works hard.",
       "coreIdea": "Giving a busy or worried mind a small learning game to play while the body works may crowd out rumination and leave you with something gained.",
       "whatYouDo": "Three times a week you run for 25 to 40 minutes along lit streets, with ten new words on a card in your pocket. At each lamppost you recall one word's meaning, checking the card only at junctions, and on the way back you test yourself in reverse. At home you mark the words you knew.",
       "whoItsFor": "People learning a language, and anyone whose mind loops on worries when it has nothing to do.",
@@ -439,7 +439,7 @@
       "whatYouDo": "Once a week you and a friend agree a start time and a rough duration, such as 40 minutes, and each of you runs hard on your own route. You leave the phone in your pocket until you finish, then send one sentence, such as 'windy, but the last hill felt good'. Over months the messages become a small shared diary.",
       "whoItsFor": "People with close friends or family far away, and solo runners who would like company without having to arrange a meeting.",
       "cautions": "Running alone carries safety risks, so tell someone your route, carry a phone, build up gradually, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or other health problems. It is an untested idea.",
-      "tweet": "Picture this: every Tuesday at 7, you and a friend 500 km away go for a hard run at the same moment. No talking, just knowing they're out there too, then one sentence each afterward. Same Time, Elsewhere: company in solitude. 🌍"
+      "tweet": "Picture this: every Tuesday at 7, you and a friend 500 km away go for a hard run at the same moment. No talking, then one sentence each afterward. Same Time, Elsewhere is a new idea for company in solitude. 🌍"
     },
     {
       "id": "ipf__strength__5",
@@ -476,14 +476,14 @@
     },
     {
       "id": "act__strength__5",
-      "name": "Effort Dial Sets",
-      "tagline": "The same lift at three, six and nine out of ten.",
-      "whatItIs": "Effort Dial Sets is strength training in which each lift is done at three deliberately different effort levels in a row: one set at 3 out of 10, one at 6 and one at 9, with the same weight but a different number of reps and a different intent. You learn to set your effort the way you would set a dial. The plan is strict and written in advance.",
-      "coreIdea": "Practicing exact levels of effort, rather than all or nothing, may make it easier to choose how much to give in other parts of life too.",
-      "whatYouDo": "Three times a week you do four lifts, each in three sets: an easy set you stop well before tiring, a moderate set, and a hard set that ends two reps short of your limit. Before each set you say the target number, and afterward you rate whether you hit it. Over the weeks you aim to land within one point every time.",
-      "whoItsFor": "All-or-nothing people who either go flat out or do nothing, and lifters who never learned to go easy.",
-      "cautions": "The hard set is close to your limit, so use safety bars or a spotter on squats and presses, keep breathing rather than holding your breath, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea.",
-      "tweet": "Are you all or nothing? Effort Dial Sets is a new idea: each lift done three times, at 3, 6 and 9 out of 10, with the target said first and checked after. Learning that effort is a dial, not an on-off switch."
+      "name": "Take Up Space Sets",
+      "tagline": "Lift big: wide stance, chest up, loud breath out, eyes forward.",
+      "whatItIs": "Take Up Space Sets is strict, hard strength training done in a deliberately big way: wide stance, chest up, eyes forward, a loud, full breath out on every hard rep, and your kit set out around you instead of tucked into a corner. Everything about the session says that you are allowed to be strong and to take up room. The program is fixed and the sets end close to your limit.",
+      "coreIdea": "Practicing a physically assertive way of moving, set after set, may make it feel more natural to take up space and be seen as strong outside the gym too.",
+      "whatYouDo": "Three times a week you follow a written plan of four or five lifts, each with 3 sets taken to within two reps of your limit, using safety bars or a spotter for squats and presses. Before each set you set up big (feet planted, shoulders open, gaze level), and on every hard rep you breathe out audibly rather than holding your breath. Afterward you note one moment outside the gym when you stood, spoke or moved the same way.",
+      "whoItsFor": "People who shrink themselves, apologize for their presence or feel uneasy being strong, and lifters who train hunched in a corner.",
+      "cautions": "Hard sets raise blood pressure, so breathe out on effort rather than holding your breath, use safety bars or a spotter, add weight gradually, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea, and taking up space should never crowd other people out.",
+      "tweet": "Do you lift tucked into a corner, trying not to be noticed? Take Up Space Sets is a new idea: hard sets done big, with a wide stance, chest up, eyes forward and a loud breath out on every rep. Practice in being allowed to be strong."
     },
     {
       "id": "coherence__strength__5",
@@ -513,21 +513,21 @@
       "tagline": "When anger hits, it gets one planned, safe, hard set.",
       "whatItIs": "Anger Gets One Set gives anger a structured, physical outlet: when you are angry, instead of reacting, you do one planned, hard 60-second set of a safe exercise with a weight you know well, then decide what to do about the situation. The rest of your training follows a normal strict plan.",
       "coreIdea": "Having a planned, safe place to put the energy of anger may create a pause between feeling it and acting on it.",
-      "whatYouDo": "You choose one 'anger set' in advance, such as 60 seconds of as many clean goblet squats as you can with a kettlebell you know well, and practice it in normal sessions. When anger rises, you do that set at full effort, breathing out on every rep, then sit for one minute before deciding your next step. You note what you decided and whether it still seems right the next day.",
+      "whatYouDo": "You choose one 'anger set' in advance, such as 60 seconds of as many clean goblet squats as you can with a kettlebell you know well, and practice it in normal sessions. When anger rises, you first do ten easy squats without weight and a few arm swings, then the set at full effort, breathing out on every rep, then sit for one minute before deciding your next step. You note what you decided and whether it still seems right the next day.",
       "whoItsFor": "People who snap, say things they regret or bottle anger up, and who want a structured option somewhere in between.",
-      "cautions": "Strong emotion raises heart rate and blood pressure and makes people lift carelessly, so the anger set uses a moderate weight you know well, never maximal loads or a barbell without safety bars; keep breathing rather than holding your breath, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea, and anger that feels out of control or leads to harm needs professional help.",
+      "cautions": "Anger and sudden hard effort both raise heart rate and blood pressure, so always do the easy warm-up reps first, use only the kettlebell you planned, never a barbell or heavy loads, keep breathing rather than holding your breath, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea, and anger that feels out of control or leads to harm needs professional help.",
       "tweet": "When anger hits, it gets one set. Anger Gets One Set is a new concept: 60 seconds of hard goblet squats with a kettlebell you know well, breathing out on every rep, then one minute sitting before you decide what to do. A planned place to put the energy."
     },
     {
       "id": "aletheia__strength__5",
-      "name": "Useful Strength",
-      "tagline": "Once a month, your training goes into a heavy job for someone.",
-      "whatItIs": "Useful Strength is a strict, self-run strength program with one monthly outing: you use your strength to do a heavy, practical job for someone who needs it, such as carrying a neighbor's shopping up the stairs or moving a friend's furniture. The weeks in between are training for that job. Progress is measured in what you were able to help with.",
-      "coreIdea": "Linking strength to being useful to someone may give training a purpose outside yourself and make getting stronger feel like a form of care.",
-      "whatYouDo": "Three times a week you follow a written plan of five lifts that build carrying, lifting and pushing strength, using safety bars or a spotter on heavy squats and presses. Once a month you offer one heavy job to a friend, an older neighbor or a community garden, and do it with the form you practiced. You note the job in your training log.",
-      "whoItsFor": "People who find training self-centered or pointless, and anyone who feels better when they are useful.",
-      "cautions": "Real-world loads are awkward and unpredictable, so only take jobs you can do safely, lift with a partner when needed, keep your back neutral, breathe rather than hold your breath, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea.",
-      "tweet": "Strength training with a monthly purpose: Useful Strength trains you for a heavy job you then do for someone else, like carrying a neighbor's shopping upstairs or moving a friend's sofa. An untested idea for people who find gyms self-centered."
+      "name": "The Impossible Lift",
+      "tagline": "Write down the lift you'll never do, then train for it.",
+      "whatItIs": "The Impossible Lift is a long, strict, self-run strength block aimed at one lift you are convinced you could never do, such as a full pull-up, a body-weight deadlift or a push-up from the floor. You write the belief down word for word on day one, train toward the lift for months and reread the sentence every four weeks. The training is hard, and the belief is treated as a question, not a fact.",
+      "coreIdea": "Testing a fixed belief about your limits against months of real training may loosen other beliefs of the 'I could never' kind.",
+      "whatYouDo": "On day one you write 'I could never...' with the lift you have in mind and seal it in your training notebook. Three times a week you follow a written plan that builds toward it with hard sets close to your limit, using safety bars or a spotter on heavy lifts. Every four weeks you reread the sentence and add one line on whether it still feels true, whether or not you have done the lift yet.",
+      "whoItsFor": "People who carry firm beliefs about what they can't do, in the gym or in life, and anyone who wants a long project with a clear question at its heart.",
+      "cautions": "Chasing a feared lift can tempt you to rush, so build up gradually, learn the technique from a qualified coach, use safety bars or a spotter, keep breathing rather than holding your breath, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea, and not reaching the lift is a result, not a verdict on you.",
+      "tweet": "Which lift do you believe you'll never do? The Impossible Lift is an untested idea: write 'I could never...' on day one, train hard toward it for months and reread the sentence every four weeks. Treating a belief about your limits as a question."
     },
     {
       "id": "do-nothing__strength__5",
@@ -588,12 +588,12 @@
       "id": "endurance__strength__5",
       "name": "Five Single Reps",
       "tagline": "Five separate reps, each one finished before the next.",
-      "whatItIs": "Five Single Reps is a very short strength session made of five separate repetitions, each a complete act: set up, one careful rep, set the weight down, step away and reset. Nothing runs into anything else.",
+      "whatItIs": "Five Single Reps is a short strength session made of five separate repetitions with a challenging weight, each a complete act: set up, one careful rep, set the weight down, step away and reset. Nothing runs into anything else.",
       "coreIdea": "Doing one thing completely before starting the next, five times in a row, may be a small antidote to a day spent half-doing many things at once.",
-      "whatYouDo": "A qualified coach teaches you one lift, such as a trap-bar deadlift or a goblet squat, and picks a moderate weight you can lift cleanly. Three times a week you do five single reps, each followed by setting the weight down, walking away and a full minute of stillness, with safety bars or pins for any barbell lift. The session takes about ten minutes.",
+      "whatYouDo": "A qualified coach teaches you one lift, such as a trap-bar deadlift or a goblet squat, and helps you find a challenging weight you can still lift cleanly once, around 80 percent of your best. Three times a week, after a gradual warm-up, you do five single reps at that weight, each followed by setting the weight down, walking away and two minutes of stillness, with safety bars or pins for any barbell lift. The session takes about twenty minutes.",
       "whoItsFor": "People who multitask all day and rarely finish anything fully, and anyone who wants a very short, very focused session.",
-      "cautions": "Single reps tempt people to go heavy, so keep the weight moderate, learn the lift from a coach, use safety bars or pins and breathe rather than hold your breath, and stop at once with chest pain, dizziness, faintness or unusual breathlessness; people with uncontrolled high blood pressure, heart problems or serious eye disease should get medical advice first. It is an untested idea.",
-      "tweet": "Set up, lift once, set it down, walk away, a minute of stillness, five times. Five Single Reps is a ten-minute concept for doing one thing fully before starting the next, after a day of half-doing everything."
+      "cautions": "Heavy single reps push blood pressure up, so learn the lift from a coach, never go beyond the weight you agreed, use safety bars or pins, breathe out through the effort rather than holding your breath, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea.",
+      "tweet": "Set up, lift one challenging rep, set it down, walk away, two minutes of stillness, five times. Five Single Reps is a twenty-minute concept for doing one thing fully before starting the next, after a day of half-doing everything."
     },
     {
       "id": "strength__animal__1",
@@ -620,13 +620,13 @@
     {
       "id": "strength__socializing__1",
       "name": "Ask No One Month",
-      "tagline": "A month of training decisions made by you alone.",
-      "whatItIs": "Ask No One Month is a solo strength block in which, after one session with a coach to set safe limits, you make every training decision yourself for four weeks: no asking anyone, no searching online, no app telling you what to do. The coach's limits are written on one card, and inside them the choices are yours. The month ends with one review session with the coach.",
-      "coreIdea": "Making your own decisions without checking with anyone, inside safe limits, may build confidence in your own judgment for people who habitually look to others first.",
-      "whatYouDo": "In a first session a qualified coach teaches you four or five lifts and writes your safe weight ranges and rest days on a card. For four weeks you train alone three times a week, choosing exercises, sets and weights within the card, and you write one line about each decision you were tempted to check with someone. At the end you and the coach review the month together.",
+      "tagline": "One coach-written card, four weeks, and no asking anyone.",
+      "whatItIs": "Ask No One Month is a solo strength block built on a fixed, coach-written program and one rule: for four weeks you ask nobody anything about it, not friends, not forums, not apps. Everything you need is on the coach's card, which lists the exact lifts, sets, reps, weight ranges and rest days, plus what to do if a machine is busy, you feel off or something hurts. The month ends with one review session with the coach.",
+      "coreIdea": "Going a month without asking for reassurance, trusting a written plan and your own reading of it, may weaken the habit of checking with others before every step.",
+      "whatYouDo": "In a first session a qualified coach teaches you four or five lifts and writes the full program on a card, with a short list of 'if this, then that' rules, and you do only the lifts on the card. For four weeks you train alone three times a week, following it exactly, and you write one line each time you are tempted to ask someone. At the end you and the coach go through the card and your lines together.",
       "whoItsFor": "People who seek reassurance before every decision, and lifters who cannot train without an app or a forum telling them what to do.",
-      "cautions": "Training alone means nobody can help if something goes wrong, so stay inside the coach's card, use safety bars or pins for heavy lifts, keep breathing rather than holding your breath, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea, and real safety questions should always be asked.",
-      "tweet": "Hypothetical training block: Ask No One Month. A coach sets safe limits on one card, then for four weeks you make every training decision yourself. No asking, no googling, no apps. For people who check with someone before every choice."
+      "cautions": "Training alone means nobody can help if something goes wrong, so do only the lifts the coach taught, stop any lift that hurts, use safety bars or pins for heavy lifts, keep breathing rather than holding your breath, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and get medical advice first if you have uncontrolled high blood pressure, heart problems or serious eye disease. It is an untested idea, and real safety or health questions should always be asked, rule or no rule.",
+      "tweet": "Four weeks, one coach-written card and one rule: ask nobody anything about your training. No forums, no apps, no 'is this right?'. Ask No One Month is a hypothetical block for people who need reassurance before every step."
     },
     {
       "id": "strength__nature__1",
