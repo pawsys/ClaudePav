@@ -29,28 +29,47 @@ Rules, each with the problem code it reports:
   tagline-words      tagline has at most 12 words
   sentences          whatItIs 2 to 3, coreIdea 1 to 2, whatYouDo 2 to 3, whoItsFor 1 to 2,
                      cautions 1 to 2 sentences (counted approximately)
-  tweet-length       at most 260 by X's weighted count (twitter-text v3: code points in
+  tweet-length       at most 260 by X's weighted count (twitter-text 3.1.0: code points in
                      U+0000-10FF, U+2000-200D, U+2010-201F, U+2032-2037 count 1, everything else
                      2, each emoji sequence 2, each URL 23; text NFC-normalized first). A URL is
-                     anything starting http(s):// or www., or a bare domain with any top-level
-                     domain of 2 or more letters, such as example.de or notes.health
+                     anything starting http:// or https://, or a domain (www. included) that ends
+                     in one of the top-level domains twitter-text 3.1.0 lists, as on X: example.de
+                     and notes.health are URLs, Node.js, foo.json and breath.Then are not
   tweet-hashtags     at most one hashtag
-  tweet-emoji        at most one emoji. A ZWJ sequence, flag or keycap counts as one. Symbols X
-                     draws as emoji count even without U+FE0F (for example U+2600, the sun),
-                     except the copyright, registered and trademark signs, which count only
-                     when U+FE0F follows them
+  tweet-emoji        at most one emoji. A flag, keycap, skin-tone or tag sequence counts as one,
+                     and so does a ZWJ sequence made of parts X joined in twitter-text 3.1.0
+                     (U+2764 U+FE0F U+200D U+1F525 is still two). Symbols X draws as emoji count
+                     even without U+FE0F (for example U+2600, the sun), except the copyright,
+                     registered and trademark signs, which count only when U+FE0F follows them;
+                     U+FE0E (text style) stops any of them counting. Non-BMP symbols count only
+                     when Unicode marks them Emoji (U+1F004 does, U+1F0A1 does not)
   tweet-new          the tweet signals a new concept: new, novel, concept, idea, what if,
                      imagine, picture this, suppose, invented, imagined, proposed, speculative,
                      experimental, untested, prototype, hypothetical or thought experiment
-  tweet-claim        no claim that it treats, cures, heals or fixes anything: any form of cure
-                     or heal, "treats", "treatment for", "can treat" (or will, may, helps...),
-                     "fixes", "fix your", "quick fix", "remedy for", "clinically proven",
-                     "proven", "guaranteed", "eliminates", "eradicates". A match is ignored when
-                     a negation (not, no, never, without...) or a caveat word (substitute,
-                     instead, replace, alongside) comes in the 5 words before it, so caveats
-                     such as "not a substitute for treatment", "alongside treatment, not
-                     instead of it" and "clinically untested" pass
-  tweet-mention      no @mentions (the generation brief allows none)
+  tweet-claim        no claim that it treats, cures, heals or fixes anything. Caught: any form
+                     of cure or heal, "guaranteed", "proven", "clinically/scientifically
+                     proven" (or tested, backed...), "can treat" (or will, may, helps...),
+                     "fix your/the/any", "fixes", "relief from anxiety", an effect verb (treat,
+                     fix, relieve, reverse, beat, end, eliminate...) on a condition ("treat your
+                     anxiety"), "treats" after a subject ("it treats"), and "treatment",
+                     "remedy", "fix for" or "quick fix" when the tweet calls the modality one
+                     ("a new treatment for", "this treatment", "it is a remedy for", "nature's
+                     remedy"). Not caught, so caveats pass:
+                     - a negation in the same clause, up to 8 words before the phrase (not, no,
+                       never, without, none, nothing, nobody, no one, zero, cannot, and any
+                       word ending in n't, written with or without the apostrophe); a clause
+                       ends at . ! ? ; : , or "but", so "Not medical advice, but it heals
+                       trauma" is still caught
+                     - "rather than" or "instead of" in the 3 words before it
+                     - someone else's care: "any treatment for", "about treatment for", "in
+                       treatment for", "a substitute for treatment", "treatment plan", "doctors
+                       treat anxiety", "therapy can heal"
+                     - "treats" as a noun ("dog treats") or idiom ("treats the walk like a
+                       game"), "quick fixes" as a noun, "fixes nothing"
+                     - a negated verb after it ("Healing isn't promised") and a question
+                       answered no ("Proven? No.", "Clinically tested? Not yet.")
+  tweet-mention      no @mentions, with the ASCII or full-width at sign (the generation brief
+                     allows none)
   tweet-link         no links (the generation brief allows none)
   dash               no em or en dash (or look-alike) in any string, keys included
 
@@ -148,37 +167,227 @@ EMOJI_TEXT_DEFAULT_BMP = [
     (0x27A1, 0x27A1), (0x2934, 0x2935), (0x2B05, 0x2B07), (0x3030, 0x3030), (0x303D, 0x303D),
     (0x3297, 0x3297), (0x3299, 0x3299),
 ]
-PICTOGRAPHIC_SMP = (0x1F000, 0x1FAFF)
+# Emoji code points outside the BMP (Unicode emoji-data, Emoji=Yes), apart from the regional
+# indicators, which pair into flags. Neighbors such as playing cards or enclosed letters are not emoji.
+EMOJI_SMP = [
+    (0x1F004, 0x1F004), (0x1F0CF, 0x1F0CF), (0x1F170, 0x1F171), (0x1F17E, 0x1F17F),
+    (0x1F18E, 0x1F18E), (0x1F191, 0x1F19A), (0x1F201, 0x1F202), (0x1F21A, 0x1F21A),
+    (0x1F22F, 0x1F22F), (0x1F232, 0x1F23A), (0x1F250, 0x1F251), (0x1F300, 0x1F321),
+    (0x1F324, 0x1F393), (0x1F396, 0x1F397), (0x1F399, 0x1F39B), (0x1F39E, 0x1F3F0),
+    (0x1F3F3, 0x1F3F5), (0x1F3F7, 0x1F4FD), (0x1F4FF, 0x1F53D), (0x1F549, 0x1F54E),
+    (0x1F550, 0x1F567), (0x1F56F, 0x1F570), (0x1F573, 0x1F57A), (0x1F587, 0x1F587),
+    (0x1F58A, 0x1F58D), (0x1F590, 0x1F590), (0x1F595, 0x1F596), (0x1F5A4, 0x1F5A5),
+    (0x1F5A8, 0x1F5A8), (0x1F5B1, 0x1F5B2), (0x1F5BC, 0x1F5BC), (0x1F5C2, 0x1F5C4),
+    (0x1F5D1, 0x1F5D3), (0x1F5DC, 0x1F5DE), (0x1F5E1, 0x1F5E1), (0x1F5E3, 0x1F5E3),
+    (0x1F5E8, 0x1F5E8), (0x1F5EF, 0x1F5EF), (0x1F5F3, 0x1F5F3), (0x1F5FA, 0x1F64F),
+    (0x1F680, 0x1F6C5), (0x1F6CB, 0x1F6D2), (0x1F6D5, 0x1F6D7), (0x1F6DC, 0x1F6E5),
+    (0x1F6E9, 0x1F6E9), (0x1F6EB, 0x1F6EC), (0x1F6F0, 0x1F6F0), (0x1F6F3, 0x1F6FC),
+    (0x1F7E0, 0x1F7EB), (0x1F7F0, 0x1F7F0), (0x1F90C, 0x1F93A), (0x1F93C, 0x1F945),
+    (0x1F947, 0x1F9FF), (0x1FA70, 0x1FA7C), (0x1FA80, 0x1FA89), (0x1FA8F, 0x1FAC6),
+    (0x1FACE, 0x1FADC), (0x1FADF, 0x1FAE9), (0x1FAF0, 0x1FAF8),
+]
+# Code points that may follow a ZWJ inside one emoji in twitter-text 3.1.0, whose emoji data is
+# about Unicode Emoji 12: families, couples, genders, jobs, hair, the rainbow and pirate flags,
+# service dog and people holding hands. Later sequences, such as the heart on fire, count there
+# as separate emoji joined by a ZWJ, so they count that way here too.
+ZWJ_JOINABLE = {
+    0x2620, 0x2640, 0x2642, 0x2695, 0x2696, 0x2708, 0x2764, 0x1F308, 0x1F33E, 0x1F373, 0x1F393,
+    0x1F3A4, 0x1F3A8, 0x1F3EB, 0x1F3ED, 0x1F466, 0x1F467, 0x1F468, 0x1F469, 0x1F48B, 0x1F4BB,
+    0x1F4BC, 0x1F527, 0x1F52C, 0x1F5E8, 0x1F680, 0x1F692, 0x1F91D, 0x1F9AF, 0x1F9B0, 0x1F9B1,
+    0x1F9B2, 0x1F9B3, 0x1F9BA, 0x1F9BC, 0x1F9BD, 0x1F9D1,
+}
 VS15, VS16, ZWJ, KEYCAP = 0xFE0E, 0xFE0F, 0x200D, 0x20E3
 KEYCAP_BASES = {ord(c) for c in "0123456789#*"}
+# The copyright, registered and trademark signs are drawn as emoji only when U+FE0F follows.
+TEXT_STYLE_ONLY = {0x00A9, 0x00AE, 0x2122}
 
-# A bare domain counts as a URL whatever its top-level domain (2 to 63 letters), so this can
-# over-count a rare token such as a file name, which errs on the safe side.
+# Top-level domains twitter-text 3.1.0 accepts for a URL written without http(s)://
+# (its validGTLD and validCCTLD lists, ASCII entries only: 1164 generic, 255 country).
+# A bare domain counts as a URL only when it ends in one of these, as on X.
+GENERIC_TLDS = (
+    "aaa aarp abarth abb abbott abbvie abc able abogado abudhabi academy accenture accountant "
+    "accountants aco active actor adac ads adult aeg aero aetna afamilycompany afl africa agakhan "
+    "agency aig aigo airbus airforce airtel akdn alfaromeo alibaba alipay allfinanz allstate ally "
+    "alsace alstom americanexpress americanfamily amex amfam amica amsterdam analytics android "
+    "anquan anz aol apartments app apple aquarelle arab aramco archi army arpa art arte asda asia "
+    "associates athleta attorney auction audi audible audio auspost author auto autos avianca aws "
+    "axa azure baby baidu banamex bananarepublic band bank bar barcelona barclaycard barclays "
+    "barefoot bargains baseball basketball bauhaus bayern bbc bbt bbva bcg bcn beats beauty beer "
+    "bentley berlin best bestbuy bet bharti bible bid bike bing bingo bio biz black blackfriday "
+    "blanco blockbuster blog bloomberg blue bms bmw bnl bnpparibas boats boehringer bofa bom bond "
+    "boo book booking boots bosch bostik boston bot boutique box bradesco bridgestone broadway "
+    "broker brother brussels budapest bugatti build builders business buy buzz bzh cab cafe cal "
+    "call calvinklein cam camera camp cancerresearch canon capetown capital capitalone car caravan "
+    "cards care career careers cars cartier casa case caseih cash casino cat catering catholic cba "
+    "cbn cbre cbs ceb center ceo cern cfa cfd chanel channel charity chase chat cheap chintai chloe "
+    "christmas chrome chrysler church cipriani circle cisco citadel citi citic city cityeats claims "
+    "cleaning click clinic clinique clothing cloud club clubmed coach codes coffee college cologne "
+    "com comcast commbank community company compare computer comsec condos construction consulting "
+    "contact contractors cooking cookingchannel cool coop corsica country coupon coupons courses "
+    "cpa credit creditcard creditunion cricket crown crs cruise cruises csc cuisinella cymru cyou "
+    "dabur dad dance data date dating datsun day dclk dds deal dealer deals degree delivery dell "
+    "deloitte delta democrat dental dentist desi design dev dhl diamonds diet digital direct "
+    "directory discount discover dish diy dnp docs doctor dodge dog doha domains doosan dot "
+    "download drive dtv dubai duck dunlop duns dupont durban dvag dvr earth eat eco edeka edu "
+    "education email emerck energy engineer engineering enterprises epost epson equipment ericsson "
+    "erni esq estate esurance etisalat eurovision eus events everbank exchange expert exposed "
+    "express extraspace fage fail fairwinds faith family fan fans farm farmers fashion fast fedex "
+    "feedback ferrari ferrero fiat fidelity fido film final finance financial fire firestone "
+    "firmdale fish fishing fit fitness flickr flights flir florist flowers flsmidth fly foo food "
+    "foodnetwork football ford forex forsale forum foundation fox free fresenius frl frogans "
+    "frontdoor frontier ftr fujitsu fujixerox fun fund furniture futbol fyi gal gallery gallo "
+    "gallup game games gap garden gay gbiz gdn gea gent genting george ggee gift gifts gives giving "
+    "glade glass gle global globo gmail gmbh gmo gmx godaddy gold goldpoint golf goo goodhands "
+    "goodyear goog google gop got gov grainger graphics gratis green gripe grocery group guardian "
+    "gucci guge guide guitars guru hair hamburg hangout haus hbo hdfc hdfcbank health healthcare "
+    "help helsinki here hermes hgtv hiphop hisamitsu hitachi hiv hkt hockey holdings holiday "
+    "homedepot homegoods homes homesense honda honeywell horse hospital host hosting hot hoteles "
+    "hotels hotmail house how hsbc htc hughes hyatt hyundai ibm icbc ice icu ieee ifm iinet ikano "
+    "imamat imdb immo immobilien inc industries infiniti info ing ink institute insurance insure "
+    "int intel international intuit investments ipiranga irish iselect ismaili ist istanbul itau "
+    "itv iveco iwc jaguar java jcb jcp jeep jetzt jewelry jio jlc jll jmp jnj jobs joburg jot joy "
+    "jpmorgan jprs juegos juniper kaufen kddi kerryhotels kerrylogistics kerryproperties kfh kia "
+    "kim kinder kindle kitchen kiwi koeln komatsu kosher kpmg kpn krd kred kuokgroup kyoto lacaixa "
+    "ladbrokes lamborghini lamer lancaster lancia lancome land landrover lanxess lasalle lat latino "
+    "latrobe law lawyer lds lease leclerc lefrak legal lego lexus lgbt liaison lidl life "
+    "lifeinsurance lifestyle lighting like lilly limited limo lincoln linde link lipsy live living "
+    "lixil llc llp loan loans locker locus loft lol london lotte lotto love lpl lplfinancial ltd "
+    "ltda lundbeck lupin luxe luxury macys madrid maif maison makeup man management mango map "
+    "market marketing markets marriott marshalls maserati mattel mba mcd mcdonalds mckinsey med "
+    "media meet melbourne meme memorial men menu meo merckmsd metlife miami microsoft mil mini mint "
+    "mit mitsubishi mlb mls mma mobi mobile mobily moda moe moi mom monash money monster montblanc "
+    "mopar mormon mortgage moscow moto motorcycles mov movie movistar msd mtn mtpc mtr museum "
+    "mutual mutuelle nab nadex nagoya name nationwide natura navy nba nec net netbank netflix "
+    "network neustar new newholland news next nextdirect nexus nfl ngo nhk nico nike nikon ninja "
+    "nissan nissay nokia northwesternmutual norton now nowruz nowtv nra nrw ntt nyc obi observer "
+    "off office okinawa olayan olayangroup oldnavy ollo omega one ong onion onl online onyourside "
+    "ooo open oracle orange org organic orientexpress origins osaka otsuka ott ovh page "
+    "pamperedchef panasonic panerai paris pars partners parts party passagens pay pccw pet pfizer "
+    "pharmacy phd philips phone photo photography photos physio piaget pics pictet pictures pid pin "
+    "ping pink pioneer pizza place play playstation plumbing plus pnc pohl poker politie porn post "
+    "pramerica praxi press prime pro prod productions prof progressive promo properties property "
+    "protection pru prudential pub pwc qpon quebec quest qvc racing radio raid read realestate "
+    "realtor realty recipes red redstone redumbrella rehab reise reisen reit reliance ren rent "
+    "rentals repair report republican rest restaurant review reviews rexroth rich richardli ricoh "
+    "rightathome ril rio rip rmit rocher rocks rodeo rogers room rsvp rugby ruhr run rwe ryukyu "
+    "saarland safe safety sakura sale salon samsclub samsung sandvik sandvikcoromant sanofi sap "
+    "sapo sarl sas save saxo sbi sbs sca scb schaeffler schmidt scholarships school schule schwarz "
+    "science scjohnson scor scot search seat secure security seek select sener services ses seven "
+    "sew sex sexy sfr shangrila sharp shaw shell shia shiksha shoes shop shopping shouji show "
+    "showtime shriram silk sina singles site ski skin sky skype sling smart smile sncf soccer "
+    "social softbank software sohu solar solutions song sony soy space spiegel sport spot "
+    "spreadbetting srl srt stada staples star starhub statebank statefarm statoil stc stcgroup "
+    "stockholm storage store stream studio study style sucks supplies supply support surf surgery "
+    "suzuki swatch swiftcover swiss sydney symantec systems tab taipei talk taobao target "
+    "tatamotors tatar tattoo tax taxi tci tdk team tech technology tel telecity telefonica temasek "
+    "tennis teva thd theater theatre tiaa tickets tienda tiffany tips tires tirol tjmaxx tjx tkmaxx "
+    "tmall today tokyo tools top toray toshiba total tours town toyota toys trade trading training "
+    "travel travelchannel travelers travelersinsurance trust trv tube tui tunes tushu tvs ubank ubs "
+    "uconnect unicom university uno uol ups vacations vana vanguard vegas ventures verisign "
+    "versicherung vet viajes video vig viking villas vin vip virgin visa vision vista vistaprint "
+    "viva vivo vlaanderen vodka volkswagen volvo vote voting voto voyage vuelos wales walmart "
+    "walter wang wanggou warman watch watches weather weatherchannel webcam weber website wed "
+    "wedding weibo weir whoswho wien wiki williamhill win windows wine winners wme wolterskluwer "
+    "woodside work works world wow wtc wtf xbox xerox xfinity xihuan xin xperia xxx xyz yachts "
+    "yahoo yamaxun yandex yodobashi yoga yokohama you youtube yun zappos zara zero zip zippo zone "
+    "zuerich "
+).split()
+COUNTRY_TLDS = (
+    "ac ad ae af ag ai al am an ao aq ar as at au aw ax az ba bb bd be bf bg bh bi bj bl bm bn bo "
+    "bq br bs bt bv bw by bz ca cc cd cf cg ch ci ck cl cm cn co cr cu cv cw cx cy cz de dj dk dm "
+    "do dz ec ee eg eh er es et eu fi fj fk fm fo fr ga gb gd ge gf gg gh gi gl gm gn gp gq gr gs "
+    "gt gu gw gy hk hm hn hr ht hu id ie il im in io iq ir is it je jm jo jp ke kg kh ki km kn kp "
+    "kr kw ky kz la lb lc li lk lr ls lt lu lv ly ma mc md me mf mg mh mk ml mm mn mo mp mq mr ms "
+    "mt mu mv mw mx my mz na nc ne nf ng ni nl no np nr nu nz om pa pe pf pg ph pk pl pm pn pr ps "
+    "pt pw py qa re ro rs ru rw sa sb sc sd se sg sh si sj sk sl sm sn so sr ss st su sv sx sy sz "
+    "tc td tf tg th tj tk tl tm tn to tp tr tt tv tw tz ua ug uk um us uy uz va vc ve vg vi vn vu "
+    "wf ws ye yt za zm zw "
+).split()
+
+_TLD_ALTERNATION = "|".join(sorted(set(GENERIC_TLDS) | set(COUNTRY_TLDS), key=lambda t: (-len(t), t)))
 URL_RE = re.compile(
-    r"(?i)(?<![\w@.])(?:https?://\S+|www\.\S+|"
-    r"(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,63}\b(?:/\S*)?)")
+    r"(?<![A-Za-z0-9@$#\U0000FF20\U0000FF03])https?://\S+"
+    r"|(?<![A-Za-z0-9@$#\U0000FF20\U0000FF03_./-])(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+"
+    r"(?:" + _TLD_ALTERNATION + r")(?![a-z0-9-])(?:/\S*)?",
+    re.IGNORECASE)
 URL_TRAILING = ".,;:!?)]}'\"\U00002019\U0000201D"
 HASHTAG_RE = re.compile(r"(?<![\w&])[#\U0000FF03](?![\U0000FE0F\U000020E3])(\w+)")
-MENTION_RE = re.compile(r"(?<![\w@])@[A-Za-z0-9_]{1,15}")
+MENTION_RE = re.compile(r"(?<![A-Za-z0-9_!#$%&*@\U0000FF20])[@\U0000FF20][A-Za-z0-9_]{1,20}(?![@\U0000FF20])")
 NOVELTY_RE = re.compile(
     r"(?i)\b(?:new|novel|concepts?|ideas?|what\s+if|imagine|imagining|"
     r"picture\s+(?:this|a|an|yourself)|suppose|invented|imagined|proposed|proposal|speculative|"
     r"experimental|untested|prototype|hypothetical|thought\s+experiment)\b")
-# Claim phrases. The bare noun "treatment" is not one: it appears in honest caveats such as
-# "not a substitute for treatment" or "alongside treatment".
+
+# ---- claim detection (tweet-claim)
+# Conditions that a claim verb can act on: "treat your anxiety", "fix low mood", "beat stress".
+CONDITIONS = (
+    "anxiety anxieties depression stress burnout insomnia trauma traumas ptsd cptsd pain grief "
+    "panic worry worries mood moods loneliness addiction addictions ocd adhd sleep sleeplessness "
+    "fatigue exhaustion illness illnesses disease diseases disorder disorders symptom symptoms "
+    "wound wounds phobia phobias rumination overthinking sadness anger rage shame guilt fear fears "
+    "tension headache headaches migraine migraines psychosis dementia heartbreak procrastination "
+    "perfectionism dread despair nerves blues injury injuries inflammation everything").split()
+_DETERMINER = r"(?:your|the|any|all|my|their|our|his|her|this|that|these|those|its|every)"
+_FREE_WORD = (r"(?:(?!(?:of|for|to|with|and|or|in|on|at|from|by|as|into|about|if|when|while|"
+              r"than)\b)[a-z']+\s+)")
+_CONDITION = r"(?:" + "|".join(CONDITIONS) + r")"
+_EFFECT_VERB = (r"(?:treat|treats|treated|treating|fix|fixes|relieve|relieves|relieved|relieving|"
+                r"reverse|reverses|reversed|beat|beats|overcome|overcomes|end|ends|stop|stops|"
+                r"eliminate|eliminates|eradicate|eradicates|cure|cures|heal|heals)")
+_ON_CONDITION = r"\s+(?:" + _DETERMINER + r"\s+)?" + _FREE_WORD + r"?" + _CONDITION + r"\b"
 CLAIM_RE = re.compile(
-    r"(?i)\b(?:cure[sd]?|curing|curative|heal(?:s|ed|ing)?|treats|treated|treating|"
-    r"treatments?\s+for|(?:can|will|to|may|could|helps?|helping)\s+(?:treat|fix|heal|cure)|"
-    r"fixes|fix\s+(?:your|the|any|every|all)|quick\s+fix|remed(?:y|ies)\s+for|"
-    r"(?:clinically|scientifically|medically)\s+(?:proven|tested|validated|shown|backed)|"
-    r"proven|guarantee[sd]?|eliminates|eradicates)\b")
-CLAIM_WINDOW = 5  # words before a claim phrase that are searched for a negation or caveat
-NEGATIONS = {"not", "no", "never", "isn't", "isnt", "doesn't", "doesnt", "without", "nor",
-             "won't", "wont", "can't", "cannot", "neither", "zero", "aren't", "arent",
-             "substitute", "substitutes", "replacement", "instead", "replace", "replaces",
-             "replacing", "alongside"}
-# The copyright, registered and trademark signs are drawn as emoji only when U+FE0F follows.
-TEXT_STYLE_ONLY = {0x00A9, 0x00AE, 0x2122}
+    r"(?P<evidence>\b(?:clinically|scientifically|medically)\s+"
+    r"(?:proven|tested|validated|shown|backed|approved|effective|significant|designed)\b)"
+    r"|(?P<relief>\brelief\s+(?:from|for|of)" + _ON_CONDITION + r")"
+    r"|(?P<noun_for>\bfix(?:es)?\s+for\b)"
+    r"|(?P<noun>\b(?:treatments?|remed(?:y|ies))\b)"
+    r"|(?P<quick_fix>\bquick\s+fix(?:es)?\b)"
+    r"|(?P<modal>\b(?:can|will|may|might|could|helps?|helping)\s+(?:treat|fix|heal|cure|relieve|"
+    r"reverse)\b)"
+    r"|(?P<fix_you>\bfix(?:es)?\s+(?:your|you|the|any|every|all|everything)\b)"
+    r"|(?P<verb>\b" + _EFFECT_VERB + _ON_CONDITION + r")"
+    r"|(?P<fixes>\bfixes\b)"
+    r"|(?P<treats>\btreats\b)"
+    r"|(?P<word>\b(?:cure[sd]?|curing|curative|heal(?:s|ed|ing)?|guarantee[sd]?|proven|"
+    r"eliminates?|eradicates?)\b)",
+    re.IGNORECASE)
+NEGATORS = {"not", "no", "never", "nor", "neither", "without", "none", "nothing", "nobody", "noone",
+            "zero", "cannot", "nope", "lack", "lacks", "dont", "doesnt", "isnt", "arent", "wasnt",
+            "werent", "hasnt", "havent", "hadnt", "didnt", "wont", "cant", "couldnt", "wouldnt",
+            "shouldnt", "aint"}
+# Extra words that answer a question about a claim in the negative ("Proven? Untested.").
+NEGATIVE_ANSWERS = NEGATORS | {"untested", "unproven", "unclear", "unknown"}
+PHRASE_NEGATORS = {("rather", "than"), ("instead", "of")}  # "an idea rather than a cure"
+# Someone else doing the treating: "doctors treat anxiety", "medication can help".
+AGENTS = {"doctor", "doctors", "therapist", "therapists", "clinician", "clinicians", "psychiatrist",
+          "psychiatrists", "physician", "physicians", "nurse", "nurses", "counselor", "counselors",
+          "counsellor", "counsellors", "professional", "professionals", "specialist", "specialists",
+          "medication", "medications", "medicine", "medicines", "drug", "drugs", "treatment",
+          "treatments", "therapy", "therapies", "experts", "time"}
+AGENT_MODALS = {"can", "will", "may", "might", "could", "should", "would", "does", "do", "often",
+                "usually"}
+# Words that make "a ... treatment" someone's own care rather than this modality.
+OWNED = {"your", "any", "my", "their", "our", "his", "her", "existing", "current", "usual",
+         "ongoing", "other", "standard", "regular", "prescribed", "own"}
+COPULAS = {"is", "as", "it's", "its", "becomes", "become", "be"}
+# "treatment plan", "treatment options": a medical compound, not a name for this modality.
+TREATMENT_COMPOUNDS = {"plan", "plans", "option", "options", "team", "teams", "center", "centers",
+                       "centre", "centres", "program", "programs", "programme", "provider",
+                       "providers", "goals", "history"}
+# "quick fixes", "easy fixes": the noun, not the verb.
+FIX_NOUN_MODIFIERS = {"quick", "easy", "fast", "simple", "instant", "miracle", "cheap", "temporary",
+                      "magic", "little", "small", "few", "some", "any", "no"}
+# Words before "treats" that make it the verb ("it treats", "this practice treats").
+TREATS_SUBJECTS = {"it", "this", "that", "which", "who", "walk", "practice", "idea", "concept",
+                   "method", "session", "ritual", "approach", "program", "programme", "exercise",
+                   "game", "routine", "movement", "music", "play", "breathing", "breathwork",
+                   "walking", "running", "sport", "class", "protocol", "technique", "also",
+                   "gently", "directly", "really", "actually", "simply", "quietly", "naturally"}
+CLAUSE_BREAK = re.compile(r"[.!?;:,]|\bbut\b", re.IGNORECASE)
+_WORD_RE = re.compile(r"[a-z0-9']+", re.IGNORECASE)
+_NEGATED_COPULA_AFTER = re.compile(
+    r"\s*(?:(?:is|are|was|were)\s+(?:not|never)\b|(?:isn't|aren't|wasn't|weren't|won't)\b)",
+    re.IGNORECASE)
 
 
 # ---------------------------------------------------------------- tweet measures
@@ -197,7 +406,7 @@ def _emoji_element(cps, i):
         if nxt == VS16 and i + 2 < len(cps) and cps[i + 2] == KEYCAP:
             return 3
         return 2 if nxt == KEYCAP else 0
-    if PICTOGRAPHIC_SMP[0] <= cp <= PICTOGRAPHIC_SMP[1] or _in(cp, EMOJI_PRESENTATION_BMP):
+    if _in(cp, EMOJI_SMP) or _in(cp, EMOJI_PRESENTATION_BMP):
         if nxt == VS15:
             return 0
     elif _in(cp, EMOJI_TEXT_DEFAULT_BMP):
@@ -218,7 +427,7 @@ def _emoji_element(cps, i):
 
 
 def emoji_spans(text):
-    """[(start, end)] of each emoji sequence, ZWJ sequences joined, in code point indexes."""
+    """[(start, end)] of each emoji, in code point indexes, with known ZWJ sequences joined."""
     cps = [ord(c) for c in text]
     spans, i = [], 0
     while i < len(cps):
@@ -227,7 +436,7 @@ def emoji_spans(text):
             i += 1
             continue
         j = i + n
-        while j + 1 < len(cps) and cps[j] == ZWJ:
+        while j + 1 < len(cps) and cps[j] == ZWJ and cps[j + 1] in ZWJ_JOINABLE:
             m = _emoji_element(cps, j + 1)
             if m == 0:
                 break
@@ -274,13 +483,82 @@ def hashtags(text):
     return [m.group(1) for m in HASHTAG_RE.finditer(text) if re.search(r"[^\W\d_]", m.group(1))]
 
 
+def _words(text):
+    return [w.lower() for w in _WORD_RE.findall(text)]
+
+
+def _is_negation(word, words=NEGATORS):
+    return word in words or word.endswith("n't")
+
+
+def _describes_the_modality(before, kind, after):
+    """For "treatment", "remedy", "fix for" and "quick fix": True when the phrase calls the
+    modality a treatment ("a new treatment for", "this treatment", "it is a remedy for", "the fix
+    for", "nature's remedy"), False when it is someone's own care ("any treatment for", "about
+    treatment for", "in treatment for", "not a substitute for treatment", "a treatment plan")."""
+    p1, p2, p3 = ([""] * 3 + before)[-1], ([""] * 3 + before)[-2], ([""] * 3 + before)[-3]
+    following = _words(after[:24])[:1]
+    if kind == "noun" and following and following[0] in TREATMENT_COMPOUNDS:
+        return False
+    if kind == "quick_fix" and re.match(r"\s+for\b", after, re.IGNORECASE):
+        return True
+    if p1 in {"a", "an", "this"} or (kind in ("noun", "noun_for") and p1 in COPULAS):
+        return True
+    if p2 in {"a", "an", "this"} and p1 not in OWNED and p1 not in {"for", "of", "to", "from"}:
+        return True
+    if p1 == "the" and (p2 == "" or p2 in COPULAS):
+        return True
+    if p1.endswith("'s") and p1 not in {"it's", "that's", "what's", "there's", "here's"} and (
+            p2 == "" or p2 in COPULAS):
+        return True
+    return p2 == "the" and p1 not in OWNED and (p3 == "" or p3 in COPULAS)
+
+
 def claims(text):
-    found = []
+    """Claim phrases in a tweet that are not negated or about someone else; see tweet-claim."""
     text = text.replace("\U00002019", "'")
+    found = []
     for match in CLAIM_RE.finditer(text):
-        before = re.findall(r"[\w']+", text[:match.start()].lower())[-CLAIM_WINDOW:]
-        if not any(word in NEGATIONS for word in before):
-            found.append(match.group(0))
+        kind = match.lastgroup
+        head = text[:match.start()]
+        cut = max((b.end() for b in CLAUSE_BREAK.finditer(head)), default=0)
+        before = _words(head[cut:])  # words of the same clause, before the phrase
+        after = text[match.end():]
+        if kind in ("noun", "noun_for", "quick_fix") and not _describes_the_modality(before, kind, after):
+            continue
+        if kind == "fixes" and before and before[-1] in FIX_NOUN_MODIFIERS:
+            continue
+        if kind == "treats":
+            # The verb only ("it treats the whole person"), never the noun ("dog treats"), and not
+            # the "treats the walk like a game" idiom.
+            if not before or before[-1] not in TREATS_SUBJECTS:
+                continue
+            brk_t = CLAUSE_BREAK.search(after)
+            if {"as", "like"} & set(_words(after[:brk_t.start()] if brk_t else after)[:6]):
+                continue
+        if any(_is_negation(w) for w in before[-8:]):
+            continue
+        near = before[-3:]
+        if any(pair in PHRASE_NEGATORS for pair in zip(near, near[1:])):
+            continue
+        if kind in ("modal", "fix_you", "verb", "word", "fixes", "treats"):
+            if before and before[-1] in AGENTS:
+                continue
+            if len(before) >= 2 and before[-2] in AGENTS and before[-1] in AGENT_MODALS:
+                continue
+            following = _words(after[:24])[:1]
+            if following and following[0] in {"nothing", "none", "nobody", "noone", "no"}:
+                continue
+        brk = CLAUSE_BREAK.search(after)
+        if _NEGATED_COPULA_AFTER.match(after[:brk.start()] if brk else after):
+            continue
+        if brk and brk.group(0) == "?":
+            rest = after[brk.end():]
+            nxt = CLAUSE_BREAK.search(rest)
+            answer = _words(rest[:nxt.start()] if nxt else rest)[:3]
+            if any(_is_negation(w, NEGATIVE_ANSWERS) for w in answer):
+                continue
+        found.append(match.group(0))
     return found
 
 
@@ -481,57 +759,171 @@ def _fixture_modality(mid, name, **changes):
     return mod
 
 
+# Claim detector test sentences. The first blocks are the reviewers' and dispatcher's examples
+# word for word; the rest guard against regressions (true claims the earlier checker caught).
+SELF_TEST_CAVEATS = [
+    # Reviewer round 2 and 3: honest caveats that must pass.
+    "A new idea, not a substitute for treatment.",
+    "New concept to try alongside treatment, not instead of it.",
+    "A new, clinically untested idea.",
+    "This is not a cure.",
+    "Not a quick fix, just a new idea to try.",
+    "No claims that it heals anything.",
+    "It won't fix your problems, but it might be fun.",
+    "Not therapy and not a treatment for anything.",
+    "We make no promise it will heal you.",
+    "It is not meant to treat anything.",
+    "There's zero proof it heals.",
+    "Untested and unproven: just an idea.",
+    "Don't expect a cure: it's just a new idea.",
+    "It hasn't been proven to do anything.",
+    "Nothing here is clinically proven.",
+    "None of this is proven, it's a new idea.",
+    "Nobody has tested whether it heals anything.",
+    "It doesn't cure anything and isn't medical advice.",
+    "This isn't a remedy for anything, just a new concept.",
+    "Talk to your doctor; this idea is not a cure.",
+    "A new idea for people who aren't looking for a cure.",
+    "Bring dog treats: a new idea for shelter walks.",
+    "You get treated to a sunrise: a new idea for early walks.",
+    "Proven? No. New? Yes.",
+    "A new idea. It has not been tested and is not proven.",
+    "Keep up any treatment for depression; this is just a new idea.",
+    "Ask your doctor about treatment for anxiety first.",
+    "Already in treatment for PTSD? Check with your therapist before trying it.",
+    # Further caveats and non-claims.
+    "Not a treatment, just an idea to try on a quiet afternoon.",
+    "Forget quick fixes: this is slow, steady practice.",
+    "No miracle cures here, just a new walk.",
+    "Healing isn't promised; it's a new idea.",
+    "Is it a cure? No, it's a new idea.",
+    "Can it heal? Nobody knows yet.",
+    "Clinically tested? Not yet.",
+    "Doctors treat anxiety; this is just a new walk.",
+    "Therapy can heal, and this walk is not therapy.",
+    "Ask your doctor about the best treatment for you.",
+    "An idea, rather than a cure.",
+    "It fixes nothing, it just slows you down.",
+    "Treat it as an experiment, not a cure.",
+    "Treat yourself to ten quiet minutes.",
+    "A treat for the senses: a new idea.",
+    "It won't cure anything, but it might be fun.",
+    "No promises, no guarantees: just a new walk.",
+    "Results not guaranteed, it's an untested idea.",
+    "If you are in treatment for depression, ask your clinician first.",
+    "Use it alongside, not instead of, any treatment for anxiety.",
+    "Stop if you feel pain, and check with a doctor first.",
+    "End the day with ten minutes of stillness.",
+    "A treatment plan is up to your doctor; this is a new idea.",
+    "This is a walk, not a treatment.",
+    "Folk remedies inspired it, but it is untested.",
+    "Quick fixes are tempting; this new idea is slow.",
+    "Dogs love treats, and so will you: a new idea for shelter walks.",
+    "It treats the walk like a game.",
+]
+SELF_TEST_CLAIMS = [
+    # Reviewer round 3: claims, including the 10 that came after a caveat or negation.
+    "It cures stress.", "It can treat anxiety.", "A treatment for low mood.",
+    "Clinically proven calm.", "Healing walks for everyone.", "It fixes your sleep.",
+    "Not medical advice, but it heals trauma.",
+    "No gym needed: this new walk heals anxiety.",
+    "Instead of pills, it heals.",
+    "Without drugs, it cures anxiety.",
+    "Use it alongside therapy to cure insomnia.",
+    "Never feel stuck again: it fixes your mood.",
+    "No talking needed. The body heals itself.",
+    "Not a pill. Not therapy. It cures burnout.",
+    "Shake it out without words: the body heals itself.",
+    "Treat your anxiety with this new walk.",
+    "Fix anxiety in ten minutes with this new idea.",
+    "It relieves depression, a new concept.",
+    "A natural remedy for anxiety.",
+    "Helps treat PTSD.",
+    "Guaranteed calm in a week.",
+    "Proven to calm you down.",
+    "Scientifically backed new idea.",
+    "It's a cure for burnout.",
+    # Further claims, and words the earlier checker caught on their own.
+    "This new walk will fix you.",
+    "Relief from anxiety in minutes.",
+    "Reverse burnout with this new idea.",
+    "Beat stress with a new walk.",
+    "The new treatment for insomnia.",
+    "It's the remedy for burnout.",
+    "Not just calming: it treats insomnia.",
+    "It heals not only the body but the mind.",
+    "Is it proven? Yes, no doubt.",
+    "Rest is treatment for burnout.",
+    "Unlike therapy, it treats anxiety.",
+    "It treats the whole person.",
+    "This treatment calms the mind.",
+    "A natural remedy.",
+    "Nature's remedy for stress.",
+    "It fixes the root cause.",
+    "Clinically effective and gentle.",
+    "It eliminates the need for pills.",
+    "Healed in a week.",
+]
+
+
 def self_test():
     """Run the checker on tiny fixture files and confirm it passes the good one and catches
     every rule in the bad one. Returns 0 when the checker behaves as expected."""
     failures = []
 
-    weight_cases = [
-        # Latin letters count 1.
-        ("a" * 260, 260),
-        # U+00E9 and the curly quotes U+201C/D count 1; the ellipsis U+2026 counts 2.
-        ("caf\U000000E9 \U0000201Cquotes\U0000201D \U00002026", 16),
-        # CJK characters count 2 each.
-        ("\U000065E5\U0000672C", 4),
-        # A URL counts 23 however long it is; the final period is not part of it.
-        ("see https://example.com/a/very/long/path/that/keeps/going.", 4 + 23 + 1),
-        # One ZWJ family emoji, a heart with U+FE0F and a flag each count 2.
-        ("\U0001F468\U0000200D\U0001F469\U0000200D\U0001F467", 2),
-        ("\U00002764\U0000FE0F", 2),
-        ("\U0001F1F5\U0001F1F1", 2),
-        # The copyright sign is in U+0000-10FF, so it counts 1 (twitter-text 3.1.0 gives 6).
-        ("\U000000A9 2026", 6),
-        # Bare domains count 23 whatever the top-level domain (twitter-text gives 33 and 23).
-        ("go to example.de now", 6 + 23 + 4),
-        ("notes.health", 23),
+    # Expected values from a run of twitter-text 3.1.0 (parseTweet weightedLength, extractUrls)
+    # and twemoji-parser (emoji count): (text, weight, urls, emoji count).
+    parity = [
+        ("a" * 260, 260, [], 0),
+        ("\U000000A9 2026", 6, [], 0), ("\U000000AE 2026", 6, [], 0), ("\U00002122 2026", 7, [], 0),
+        ("\U00002122\U0000FE0F 2026", 7, [], 1), ("\U000000A9\U0000FE0F 2026", 7, [], 1),
+        ("\U00002600 sunny", 8, [], 1), ("\U00002600\U0000FE0F sunny", 8, [], 1),
+        ("\U00002600\U0000FE0E sunny", 10, [], 0), ("\U00002764 love", 7, [], 1),
+        ("\U00002194 arrows", 9, [], 1), ("\U00002660 spade", 8, [], 1), ("\U0000203C wow", 6, [], 1),
+        ("\U00002B50 star", 7, [], 1), ("\U0001F30A and \U00002600\U0000FE0F", 9, [], 2),
+        ("\U0001F468\U0000200D\U0001F469\U0000200D\U0001F467", 2, [], 1),
+        ("\U0001F1F5\U0001F1F1", 2, [], 1), ("\U0001F44B\U0001F3FD hi", 5, [], 1),
+        ("\U0001F3F3\U0000FE0F\U0000200D\U0001F308", 2, [], 1),
+        ("\U00002764\U0000FE0F\U0000200D\U0001F525", 5, [], 2),
+        ("1\U0000FE0F\U000020E3 one", 6, [], 1),
+        ("\U0001F3F4\U000E0067\U000E0062\U000E0073\U000E0063\U000E0074\U000E007F scot", 7, [], 1),
+        ("\U0001F004 mahjong", 10, [], 1), ("\U0001F0A1 card", 7, [], 0), ("\U0001F170 blood", 8, [], 1),
+        ("\U0001F10D x", 4, [], 0),
+        ("caf\U000000E9 \U0000201Cquotes\U0000201D \U00002026", 16, [], 0),
+        ("\U000065E5\U0000672C", 4, [], 0), ("\U000000A0nbsp", 5, [], 0), ("\U00002028ls", 4, [], 0),
+        ("e\U00000301 combining", 11, [], 0),
+        ("see https://example.com/a/very/long/path/that/keeps/going.", 28,
+         ["https://example.com/a/very/long/path/that/keeps/going"], 0),
+        ("go to example.de now", 33, ["example.de"], 0), ("notes.health", 23, ["notes.health"], 0),
+        ("x.com", 23, ["x.com"], 0), ("t.co/abc", 23, ["t.co/abc"], 0),
+        ("www.example.com/x", 23, ["www.example.com/x"], 0),
+        ("(see example.org).", 30, ["example.org"], 0),
+        ("visit foo.json today", 20, [], 0), ("breath.Then rest", 16, [], 0),
+        ("wait...then", 11, [], 0), ("Node.js rocks", 13, [], 0), ("example.comfy", 13, [], 0),
+        ("mail me at a@b.co please", 24, [], 0), ("U.S. and e.g. stuff", 19, [], 0),
     ]
-    for text, want in weight_cases:
-        got = weighted_length(text)
-        if got != want:
-            failures.append(f"weighted_length({text[:20]!r}...) = {got}, expected {want}")
-    emoji_cases = [
-        ("\U0001F30A and \U00002600\U0000FE0F", 2),         # wave, and sun with U+FE0F
-        ("\U00002600 ok", 1),                                 # bare sun is drawn as emoji
-        ("\U00002600\U0000FE0E ok", 0),                       # sun with U+FE0E asks for text
-        ("\U000000A9 \U000000AE \U00002122 ok", 0),           # copyright, registered, trademark
-        ("\U00002122\U0000FE0F ok", 1),                       # trademark with U+FE0F
-    ]
-    for text, want in emoji_cases:
-        if len(emoji_spans(text)) != want:
-            failures.append(f"emoji count of {text!r} is {len(emoji_spans(text))}, expected {want}")
-    if hashtags("one #Calm and #two and a#nottag and #123") != ["Calm", "two"]:
-        failures.append("hashtag detection is wrong")
-    caveats = ["A new idea, not a substitute for treatment.",
-               "New concept to try alongside treatment, not instead of it.",
-               "A new, clinically untested idea.",
-               "This is not a cure.",
-               "Not a quick fix, just a new idea to try."]
-    real_claims = ["It cures stress.", "It can treat anxiety.", "A treatment for low mood.",
-                   "Clinically proven calm.", "Healing walks for everyone.", "It fixes your sleep."]
-    for text in caveats:
+    for text, weight, urls, n_emoji in parity:
+        nfc = unicodedata.normalize("NFC", text)
+        got = (weighted_length(text), [nfc[a:b] for a, b in url_spans(nfc)], len(emoji_spans(nfc)))
+        if got != (weight, urls, n_emoji):
+            failures.append(f"twitter-text parity for {text[:24]!r}: got {got}, expected "
+                            f"{(weight, urls, n_emoji)}")
+    tag_cases = [("one #Calm and #two and a#nottag and #123", ["Calm", "two"]),
+                 ("#mental_health #self-care #caf\U000000E9 #1stStep",
+                  ["mental_health", "self", "caf\U000000E9", "1stStep"]),
+                 ("\U0000FF03fullhash tag", ["fullhash"])]
+    for text, want in tag_cases:
+        if hashtags(text) != want:
+            failures.append(f"hashtags of {text!r}: {hashtags(text)}, expected {want}")
+    mention_cases = [("ask @someone, meet @ 7, mail a@b", ["@someone"]),
+                     ("\U0000FF20fullwidth", ["\U0000FF20fullwidth"])]
+    for text, want in mention_cases:
+        if MENTION_RE.findall(text) != want:
+            failures.append(f"mentions in {text!r}: {MENTION_RE.findall(text)}, expected {want}")
+    for text in SELF_TEST_CAVEATS:
         if claims(text):
             failures.append(f"caveat flagged as a claim: {text!r} -> {claims(text)}")
-    for text in real_claims:
+    for text in SELF_TEST_CLAIMS:
         if not claims(text):
             failures.append(f"claim not caught: {text!r}")
     openers = ["What if your weekly run ended with ten quiet minutes of noticing sounds?",
@@ -539,11 +931,10 @@ def self_test():
     for text in openers:
         if not NOVELTY_RE.search(text):
             failures.append(f"new-concept opener not recognized: {text!r}")
-    if MENTION_RE.findall("ask @someone, meet @ 7, mail a@b") != ["@someone"]:
-        failures.append("mention detection is wrong")
     print(f"self-test: tweet measures {'ok' if not failures else 'FAILED'} "
-          f"({len(weight_cases)} weighted-length cases, {len(emoji_cases)} emoji cases, hashtags, "
-          f"{len(caveats)} caveats and {len(real_claims)} claims, {len(openers)} openers, mentions)")
+          f"({len(parity)} twitter-text parity cases, {len(tag_cases)} hashtag and "
+          f"{len(mention_cases)} mention cases, {len(SELF_TEST_CAVEATS)} caveats that must pass, "
+          f"{len(SELF_TEST_CLAIMS)} claims that must be caught, {len(openers)} openers)")
 
     points = {
         "version": 1,
