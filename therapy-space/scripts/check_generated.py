@@ -49,25 +49,40 @@ Rules, each with the problem code it reports:
   tweet-claim        no claim that it treats, cures, heals or fixes anything. Caught: any form
                      of cure or heal, "guaranteed", "proven", "clinically/scientifically
                      proven" (or tested, backed...), "can treat" (or will, may, helps...),
-                     "fix your/the/any", "fixes", "relief from anxiety", an effect verb (treat,
-                     fix, relieve, reverse, beat, end, eliminate...) on a condition ("treat your
-                     anxiety"), "treats" after a subject ("it treats"), and "treatment",
-                     "remedy", "fix for" or "quick fix" when the tweet calls the modality one
-                     ("a new treatment for", "this treatment", "it is a remedy for", "nature's
-                     remedy"). Not caught, so caveats pass:
-                     - a negation in the same clause, up to 8 words before the phrase (not, no,
-                       never, without, none, nothing, nobody, no one, zero, cannot, and any
-                       word ending in n't, written with or without the apostrophe); a clause
-                       ends at . ! ? ; : , or "but", so "Not medical advice, but it heals
-                       trauma" is still caught
-                     - "rather than" or "instead of" in the 3 words before it
+                     "fix/fixes/fixed/fixing your" (or my, the...), "fixes", "relief from
+                     anxiety", an effect verb (treat, fix, fixed, fixing, relieve, reverse, beat,
+                     end, eliminate...) on a condition ("treat your anxiety"), "treats" after a
+                     subject ("it treats"), and "treatment", "remedy", "fix for" or a condition
+                     plus "fix" when the tweet calls the modality one ("a new anxiety
+                     treatment", "the ultimate stress remedy", "your new burnout remedy", "your
+                     fix for burnout", "a 10-minute anxiety fix"). Not caught, so caveats pass:
+                     - a negator in the same clause that governs the phrase. A clause ends at
+                       . ! ? ; : , or "but", except a comma in a list of denied effects ("not
+                       designed to treat, cure or prevent"). Negators: not, never, any n't word
+                       (with or without the apostrophe), cannot, hardly, no, zero, without,
+                       lacks, neither, nothing, nobody, no one, none, and "far from", "nowhere
+                       near", "rather than", "instead of" before a short phrase. A negator
+                       governs only what it denies, so these stay claims: what is not needed
+                       ("no pills needed to cure anxiety", "you don't need therapy to heal"),
+                       a new clause ("without pills it heals", "and it heals", "because it
+                       heals"), who knows ("not everyone knows it heals", "nobody told you a
+                       walk could heal"), comparisons ("nothing heals grief like this"),
+                       emphasis ("no wonder", "no other", "never before", "not only", "never
+                       fails to", "don't wait to"), double negatives ("nothing it can't heal")
+                       and a caveat taken back ("..., but it does"). Denials that pass: "no
+                       proof it heals", "nobody has tested whether it heals", "nothing here is
+                       proven", "no one should use it to treat anxiety", "no need to fix"
                      - someone else's care: "any treatment for", "about treatment for", "in
-                       treatment for", "a substitute for treatment", "treatment plan", "doctors
-                       treat anxiety", "therapy can heal"
+                       treatment for", "a substitute for treatment", "keep your treatment",
+                       "treatment plan", "doctors treat anxiety", "therapy can heal"
                      - "treats" as a noun ("dog treats") or idiom ("treats the walk like a
-                       game"), "quick fixes" as a noun, "fixes nothing"
+                       game"), "quick fixes" as a noun, "fixes nothing", "fix your gaze", "a
+                       fixed sleep schedule", "the healing professions", "healing takes time"
                      - a negated verb after it ("Healing isn't promised") and a question
-                       answered no ("Proven? No.", "Clinically tested? Not yet.")
+                       answered no ("Proven? No.", "Clinically tested? Not yet.", "Heals? Who
+                       knows.")
+                     Synonyms outside treat, cure, heal and fix ("reduces", "resolves") are not
+                     checked
   tweet-mention      no @mentions, with the ASCII or full-width at sign (the generation brief
                      allows none)
   tweet-link         no links (the generation brief allows none)
@@ -327,37 +342,104 @@ CONDITIONS = (
     "wound wounds phobia phobias rumination overthinking sadness anger rage shame guilt fear fears "
     "tension headache headaches migraine migraines psychosis dementia heartbreak procrastination "
     "perfectionism dread despair nerves blues injury injuries inflammation everything").split()
+CONDITION_WORDS = set(CONDITIONS) - {"everything"}
 _DETERMINER = r"(?:your|the|any|all|my|their|our|his|her|this|that|these|those|its|every)"
 _FREE_WORD = (r"(?:(?!(?:of|for|to|with|and|or|in|on|at|from|by|as|into|about|if|when|while|"
               r"than)\b)[a-z']+\s+)")
 _CONDITION = r"(?:" + "|".join(CONDITIONS) + r")"
-_EFFECT_VERB = (r"(?:treat|treats|treated|treating|fix|fixes|relieve|relieves|relieved|relieving|"
-                r"reverse|reverses|reversed|beat|beats|overcome|overcomes|end|ends|stop|stops|"
-                r"eliminate|eliminates|eradicate|eradicates|cure|cures|heal|heals)")
+_EFFECT_VERB = (r"(?:treat|treats|treated|treating|fix|fixes|fixed|fixing|relieve|relieves|relieved|"
+                r"relieving|reverse|reverses|reversed|beat|beats|overcome|overcomes|end|ends|stop|"
+                r"stops|eliminate|eliminates|eradicate|eradicates|cure|cures|heal|heals)")
 _ON_CONDITION = r"\s+(?:" + _DETERMINER + r"\s+)?" + _FREE_WORD + r"?" + _CONDITION + r"\b"
 CLAIM_RE = re.compile(
     r"(?P<evidence>\b(?:clinically|scientifically|medically)\s+"
     r"(?:proven|tested|validated|shown|backed|approved|effective|significant|designed)\b)"
     r"|(?P<relief>\brelief\s+(?:from|for|of)" + _ON_CONDITION + r")"
     r"|(?P<noun_for>\bfix(?:es)?\s+for\b)"
+    r"|(?P<cond_fix>\b(?:" + "|".join(sorted(CONDITION_WORDS)) + r")\s+fix(?:es)?\b)"
     r"|(?P<noun>\b(?:treatments?|remed(?:y|ies))\b)"
     r"|(?P<quick_fix>\bquick\s+fix(?:es)?\b)"
     r"|(?P<modal>\b(?:can|will|may|might|could|helps?|helping)\s+(?:treat|fix|heal|cure|relieve|"
     r"reverse)\b)"
-    r"|(?P<fix_you>\bfix(?:es)?\s+(?:your|you|the|any|every|all|everything)\b)"
+    r"|(?P<fix_you>\bfix(?:es)?\s+(?:your|you|my|me|our|us|the|any|every|all|everything)\b"
+    r"|\bfix(?:ed|ing)\s+(?:your|you|my|me|our|us|everything)\b)"
     r"|(?P<verb>\b" + _EFFECT_VERB + _ON_CONDITION + r")"
     r"|(?P<fixes>\bfixes\b)"
     r"|(?P<treats>\btreats\b)"
     r"|(?P<word>\b(?:cure[sd]?|curing|curative|heal(?:s|ed|ing)?|guarantee[sd]?|proven|"
     r"eliminates?|eradicates?)\b)",
     re.IGNORECASE)
-NEGATORS = {"not", "no", "never", "nor", "neither", "without", "none", "nothing", "nobody", "noone",
-            "zero", "cannot", "nope", "lack", "lacks", "dont", "doesnt", "isnt", "arent", "wasnt",
-            "werent", "hasnt", "havent", "hadnt", "didnt", "wont", "cant", "couldnt", "wouldnt",
-            "shouldnt", "aint"}
-# Extra words that answer a question about a claim in the negative ("Proven? Untested.").
-NEGATIVE_ANSWERS = NEGATORS | {"untested", "unproven", "unclear", "unknown"}
-PHRASE_NEGATORS = {("rather", "than"), ("instead", "of")}  # "an idea rather than a cure"
+
+# Negators, by how far their scope reaches (see _negation_governs).
+ADVERB_NEGATORS = {"not", "never", "nor", "cannot", "nope", "hardly", "scarcely", "dont", "doesnt",
+                   "isnt", "arent", "wasnt", "werent", "hasnt", "havent", "hadnt", "didnt", "wont",
+                   "cant", "couldnt", "wouldnt", "shouldnt", "aint"}
+DETERMINER_NEGATORS = {"no", "zero", "without", "lack", "lacks", "lacking", "neither"}
+PRONOUN_NEGATORS = {"nothing", "nobody", "noone", "none"}
+NEGATORS = ADVERB_NEGATORS | DETERMINER_NEGATORS | PRONOUN_NEGATORS
+# Two-word negators, which reach only a short noun phrase: "an idea rather than a cure".
+PHRASE_NEGATORS = {("rather", "than"), ("instead", "of"), ("far", "from"), ("nowhere", "near")}
+# Words that answer a question about a claim in the negative ("Proven? Untested.").
+NEGATIVE_ANSWERS = NEGATORS | {"untested", "unproven", "unclear", "unknown", "maybe", "perhaps"}
+# Negator plus next word that stress a claim instead of denying it: "no wonder it heals",
+# "no other walk heals", "never before has", "not only does it heal", "nothing else heals".
+EMPHATIC = {"no": {"wonder", "doubt", "other", "question"}, "never": {"before"},
+            "not": {"only", "just", "merely", "simply"}, "nothing": {"else"}, "nobody": {"else"},
+            "none": {"else"}, "wont": {"believe"}, "wouldnt": {"believe"}}
+# "not everyone knows it heals": the negator is about who, not about the claim.
+QUANTIFIERS = {"everyone", "everybody", "all", "every", "many", "most", "anyone", "anybody"}
+# Verbs whose negation denies the claim that follows: "nobody has tested whether it heals".
+DENIAL_VERBS = {"claim", "claims", "claimed", "claiming", "say", "says", "said", "saying", "promise",
+                "promises", "promised", "guarantee", "guarantees", "guaranteed", "prove", "proves",
+                "proved", "proven", "show", "shows", "showed", "shown", "test", "tests", "tested",
+                "study", "studies", "studied", "check", "checked", "verify", "verified", "find",
+                "finds", "found", "measure", "measured", "suggest", "suggests", "suggested", "think",
+                "thinks", "argue", "argues", "know", "knows", "knew", "pretend", "pretends",
+                "pretended", "pretending", "promising", "testing", "showing", "suggesting",
+                "guaranteeing", "tell", "tells", "telling", "swear", "swears", "insist", "insists",
+                "assert", "asserts", "meant", "designed", "intended", "supposed"}
+# Negator plus next word that stress a claim: "never fails to heal", "never doubt that it heals",
+# "don't wait to heal your trauma".
+EMPHATIC_VERBS = {"fail", "fails", "failed", "doubt", "wait", "hesitate"}
+EASIER = {"easier", "simpler", "better", "faster", "quicker"}  # "never been easier to heal"
+# Verbs that take the claim as a fact: "you'd never guess it heals", "never knew a walk could heal".
+FACTIVE_VERBS = {"know", "knows", "knew", "realize", "realized", "realise", "realised", "guess",
+                 "guessed", "imagine", "imagined", "notice", "noticed", "suspect", "suspected"}
+# Nouns whose negation denies the claim that follows: "no proof it heals", "no claims that it heals".
+EPISTEMIC_NOUNS = {"claim", "claims", "promise", "promises", "proof", "proofs", "evidence",
+                   "guarantee", "guarantees", "data", "study", "studies", "research", "trial",
+                   "trials", "sign", "signs", "suggestion", "reason", "way", "idea", "telling",
+                   "saying", "knowing", "word", "pretending", "pretence", "pretense"}
+# "no pills needed to cure anxiety", "you don't need therapy to heal": the negator is about what is
+# needed, and the purpose after "to" is still claimed.
+NEED_WORDS = {"need", "needs", "needed", "require", "requires", "required", "necessary", "involved",
+              "take", "takes", "took"}
+SUBJECT_WORDS = {"it", "this", "they", "you", "we", "i", "he", "she", "there"}
+TAIL_SUBJECTS = SUBJECT_WORDS - {"this", "there"}  # "treat this as a cure": "this" is the object
+SCOPE_ENDERS = {"how", "why"}
+# A new clause after the negator: "and it heals", "and still heals", "because it heals".
+COORDINATORS = {"and", "or", "so", "yet", "then"}
+SUBORDINATORS = {"because", "since", "once", "when", "after", "until", "although", "though",
+                 "whereas", "while"}
+PROHIBITING = {"should", "must", "ought"}  # "nobody should use it to treat anxiety"
+# Words skipped between a pronoun negator and its verb: "nothing here is", "none of this has ever".
+SKIPPABLE = {"has", "have", "had", "is", "are", "was", "were", "be", "been", "can", "could", "will",
+             "would", "should", "may", "might", "must", "does", "do", "did", "ever", "yet", "really",
+             "actually", "truly", "even", "here", "there", "so", "far", "seriously", "properly",
+             "formally", "else"}
+COMPARATIVES = {"like", "better", "faster", "quicker", "more", "quite", "compares", "rivals", "beats"}
+# Comma lists of denied effects stay in one clause: "not designed to treat, cure or prevent".
+LIST_ITEMS = {"treat", "treats", "cure", "cures", "heal", "heals", "fix", "fixes", "prevent",
+              "prevents", "diagnose", "diagnoses", "mitigate", "mitigates", "relieve", "relieves",
+              "reverse", "reverses", "resolve", "resolves", "manage", "address", "remedy",
+              "remedies", "treatment", "treatments", "substitute", "replacement", "solution",
+              "designed", "tested", "proven", "approved", "intended", "meant", "validated",
+              "studied", "shown", "evaluated"}
+LIST_LINKS = {"or", "and", "nor", "a", "an", "even", "any", "to"}
+LIST_EFFECTS = {"treat", "treats", "cure", "cures", "heal", "heals", "fix", "fixes", "prevent",
+                "prevents", "diagnose", "diagnoses", "mitigate", "mitigates", "relieve", "relieves",
+                "reverse", "reverses", "resolve", "resolves", "manage", "address", "remedy",
+                "treatment", "or", "and", "nor", "a", "an"}
 # Someone else doing the treating: "doctors treat anxiety", "medication can help".
 AGENTS = {"doctor", "doctors", "therapist", "therapists", "clinician", "clinicians", "psychiatrist",
           "psychiatrists", "physician", "physicians", "nurse", "nurses", "counselor", "counselors",
@@ -370,6 +452,15 @@ AGENT_MODALS = {"can", "will", "may", "might", "could", "should", "would", "does
 OWNED = {"your", "any", "my", "their", "our", "his", "her", "existing", "current", "usual",
          "ongoing", "other", "standard", "regular", "prescribed", "own"}
 COPULAS = {"is", "as", "it's", "its", "becomes", "become", "be"}
+# "Meet the new remedy", "Introducing the fix for".
+PRESENTING = {"meet", "try", "introducing", "presenting", "discover", "welcome"}
+# Words allowed between the determiner and "treatment", "remedy" or "fix": "a new anxiety
+# treatment", "the ultimate stress remedy", "a 10-minute anxiety fix".
+NOUN_MODIFIERS = CONDITION_WORDS | {
+    "new", "natural", "gentle", "ultimate", "perfect", "simple", "quick", "easy", "fast", "daily",
+    "real", "true", "best", "little", "holistic", "powerful", "effective", "drug", "free", "home",
+    "minute", "minutes", "day", "week", "one", "two", "three", "five", "ten", "fifteen", "twenty",
+    "thirty", "go", "favorite", "favourite", "secret", "weekly", "nightly", "morning", "evening"}
 # "treatment plan", "treatment options": a medical compound, not a name for this modality.
 TREATMENT_COMPOUNDS = {"plan", "plans", "option", "options", "team", "teams", "center", "centers",
                        "centre", "centres", "program", "programs", "programme", "provider",
@@ -377,6 +468,15 @@ TREATMENT_COMPOUNDS = {"plan", "plans", "option", "options", "team", "teams", "c
 # "quick fixes", "easy fixes": the noun, not the verb.
 FIX_NOUN_MODIFIERS = {"quick", "easy", "fast", "simple", "instant", "miracle", "cheap", "temporary",
                       "magic", "little", "small", "few", "some", "any", "no"}
+# "fix your gaze", "fix the date": fixing something that is not a condition.
+FIX_PLAIN_OBJECTS = {"gaze", "eyes", "eye", "attention", "focus", "sights", "stare", "hair", "bike",
+                     "tea", "coffee", "dinner", "lunch", "breakfast", "meal", "drink", "schedule",
+                     "date", "time", "spot", "position", "place", "feet", "hands", "posture",
+                     "route", "pace", "start"}
+# "a fixed sleep schedule": the adjective, not the verb.
+FIXED_ADJ_BEFORE = {"a", "an", "the", "at", "on", "in", "of", "with", "by", "for", "to"}
+FIXED_ADJ_AFTER = {"schedule", "schedules", "time", "times", "routine", "routines", "hours",
+                   "pattern", "patterns", "window", "windows"}
 # Words before "treats" that make it the verb ("it treats", "this practice treats").
 TREATS_SUBJECTS = {"it", "this", "that", "which", "who", "walk", "practice", "idea", "concept",
                    "method", "session", "ritual", "approach", "program", "programme", "exercise",
@@ -388,6 +488,9 @@ _WORD_RE = re.compile(r"[a-z0-9']+", re.IGNORECASE)
 _NEGATED_COPULA_AFTER = re.compile(
     r"\s*(?:(?:is|are|was|were)\s+(?:not|never)\b|(?:isn't|aren't|wasn't|weren't|won't)\b)",
     re.IGNORECASE)
+# "No one expected it to heal trauma, but it does": the caveat is taken back.
+_REVERSAL = re.compile(r"\bbut\s+(?:it|this|that|they|the\s+\w+)\s+(?:really\s+)?(?:does|did|do|will|"
+                       r"can|could|works|worked)\b", re.IGNORECASE)
 
 
 # ---------------------------------------------------------------- tweet measures
@@ -491,23 +594,163 @@ def _is_negation(word, words=NEGATORS):
     return word in words or word.endswith("n't")
 
 
-def _describes_the_modality(before, kind, after):
-    """For "treatment", "remedy", "fix for" and "quick fix": True when the phrase calls the
-    modality a treatment ("a new treatment for", "this treatment", "it is a remedy for", "the fix
-    for", "nature's remedy"), False when it is someone's own care ("any treatment for", "about
-    treatment for", "in treatment for", "not a substitute for treatment", "a treatment plan")."""
-    p1, p2, p3 = ([""] * 3 + before)[-1], ([""] * 3 + before)[-2], ([""] * 3 + before)[-3]
+def _negator_key(word):
+    return word.replace("'", "") if word.endswith("n't") else word
+
+
+def _scope_words(head):
+    """Words of the clause that ends where the phrase starts. A clause ends at . ! ? ; : , or
+    "but", except a comma inside a list of denied effects: in "not designed to treat, cure or
+    prevent" the words before "cure" reach back to "not"."""
+    end, words = len(head), []
+    for brk in reversed(list(CLAUSE_BREAK.finditer(head))):
+        seg = _words(head[brk.end():end])
+        words = seg + words
+        prev = _words(head[:brk.start()])[-1:]
+        listed = prev and prev[0] in LIST_ITEMS and all(w in LIST_ITEMS or w in LIST_LINKS for w in seg)
+        # "it is not, and is not meant to be, a cure": the comma closes an aside.
+        aside = prev and prev[0] in {"be", "is", "are", "was", "were"} and set(seg) <= {"a", "an", "the"}
+        if brk.group(0) == "," and (listed or aside):
+            end = brk.start()
+            continue
+        return words
+    return _words(head[:end]) + words
+
+
+def _purpose_after_need(mid, need_first_ok):
+    """True for "pills needed to cure", "need therapy to heal", "take long to heal": the phrase is
+    the purpose of what is (not) needed, so it is still claimed. "no need to fix" is not."""
+    for j, w in enumerate(mid):
+        if w in NEED_WORDS and "to" in mid[j + 1:]:
+            k = mid.index("to", j + 1)
+            if k > j + 1 or (need_first_ok and j > 0):
+                return True
+    return False
+
+
+def _pronoun_governs(rest, after_clause):
+    """Scope of "nothing", "nobody", "no one", "none" and "not everyone": True when it denies the
+    phrase, as in "nothing here is proven" or "nobody has tested whether it heals"."""
+    rest = list(rest)
+    if rest[:1] and rest[0] in {"of", "in", "about", "from", "on"}:
+        rest = rest[2:]  # "none of this", "nothing in it", "nothing about it"
+    skipped = set()
+    while rest and rest[0] in SKIPPABLE:
+        skipped.add(rest[0])
+        rest = rest[1:]
+    if not rest:  # the negator is the subject of the phrase: "nothing heals grief"
+        return not (COMPARATIVES & set(_words(after_clause)[:8])) and "as well" not in after_clause
+    if skipped & PROHIBITING:
+        return True
+    verb, tail = rest[0], rest[1:]
+    if verb in DENIAL_VERBS:
+        if verb in ("know", "knows", "knew"):
+            return bool({"whether", "if"} & set(tail[:2]))  # "nobody knows yet whether"
+        return True
+    if verb in FACTIVE_VERBS:
+        return False
+    return len(tail) <= 3 and "to" not in tail and not (TAIL_SUBJECTS & set(tail))
+
+
+def _negation_governs(word, mid, after_clause):
+    """Does the negator `word`, followed by the words `mid` and then the phrase, deny the phrase?"""
+    key = _negator_key(word)
+    if mid[:1] and mid[0] in EMPHATIC.get(key, ()):
+        return None  # not a denial at all; look further back
+    if key in ADVERB_NEGATORS and (mid[:1] and mid[0] in EMPHATIC_VERBS or (
+            mid[:1] == ["been"] and mid[1:2] and mid[1] in EASIER)):
+        return None
+    if SCOPE_ENDERS & set(mid):
+        return False
+    if any((a in COORDINATORS and (b in SUBJECT_WORDS or b == "still"))
+           or (a in SUBORDINATORS and b in SUBJECT_WORDS) for a, b in zip(mid, mid[1:])):
+        return False
+    if key == "no" and mid[:1] == ["one"]:
+        return False if _purpose_after_need(mid[1:], True) else _pronoun_governs(mid[1:], after_clause)
+    if key in PRONOUN_NEGATORS:
+        return False if _purpose_after_need(mid, True) else _pronoun_governs(mid, after_clause)
+    if key in ("not", "hardly", "scarcely") and mid[:1] and mid[0] in QUANTIFIERS:
+        rest = mid[1:]
+        if mid[0] in ("all", "every", "many", "most") and rest[:1] and not (
+                {rest[0]} & (SKIPPABLE | DENIAL_VERBS | FACTIVE_VERBS)):
+            rest = rest[1:]  # "not all studies show"
+        return False if _purpose_after_need(rest, True) else _pronoun_governs(rest, after_clause)
+    if key in DETERMINER_NEGATORS:
+        if mid[:1] == ["need"]:
+            return True  # "no need to fix anything"
+        if _purpose_after_need(mid, True):
+            return False
+        if (EPISTEMIC_NOUNS | DENIAL_VERBS) & set(mid):
+            return True
+        return not (SUBJECT_WORDS & set(mid))  # "without pills it cures anxiety" is a claim
+    # Adverb negators: not, never, n't, cannot, hardly.
+    if _purpose_after_need(mid, False):
+        return False
+    for j, w in enumerate(mid):
+        if w in FACTIVE_VERBS and mid[j + 1:j + 2] not in (["whether"], ["if"]):
+            return False  # "you'd never guess it heals"
+    return True
+
+
+def _negated(before, after_clause):
+    """True when a negator before the phrase, in the same clause, denies it. The nearest negator
+    decides, skipping emphatic ones such as "no wonder". A run of effects just before the phrase
+    ("treat, heal or" before "cure") does not use up the 10-word reach."""
+    words = list(before)
+    while words and words[-1] in LIST_EFFECTS:
+        words.pop()
+    window = words[-10:]
+    for i in range(len(window) - 1, -1, -1):
+        word, mid = window[i], window[i + 1:]
+        if i > 0 and (window[i - 1], word) in PHRASE_NEGATORS:
+            if len(mid) <= 3 and not (SUBJECT_WORDS & set(mid)):
+                return True
+            return False
+        if not _is_negation(word):
+            continue
+        verdict = _negation_governs(word, mid, after_clause)
+        if verdict is None:
+            continue
+        for j in range(max(0, i - 3), i):  # "nothing it can't heal", "no reason it won't heal"
+            k = _negator_key(window[j])
+            if k in PRONOUN_NEGATORS or (k in DETERMINER_NEGATORS and window[j + 1] not in SUBJECT_WORDS):
+                return False
+        return verdict
+    return False
+
+
+def _describes_the_modality(before, kind, phrase, after):
+    """For "treatment", "remedy" and "fix": True when the tweet calls the modality one ("a new
+    anxiety treatment", "this treatment", "it is a remedy for", "your new burnout remedy", "your fix
+    for burnout"), False when it is someone's own care ("any treatment for", "about treatment for",
+    "in treatment for", "not a substitute for treatment", "keep your treatment", "a treatment
+    plan")."""
+    rest, zone = list(before), []
+    while rest and len(zone) < 4:
+        if rest[-2:] == ["go", "to"]:  # "your go-to stress fix"
+            zone += [rest.pop(), rest.pop()]
+        elif rest[-1] in NOUN_MODIFIERS or rest[-1].isdigit():
+            zone.append(rest.pop())
+        else:
+            break
+    p1, p2, p3 = ([""] * 3 + rest)[-1], ([""] * 3 + rest)[-2], ([""] * 3 + rest)[-3]
     following = _words(after[:24])[:1]
+    noun = _words(phrase)[-1] if kind != "noun_for" else "fix"
     if kind == "noun" and following and following[0] in TREATMENT_COMPOUNDS:
         return False
     if kind == "quick_fix" and re.match(r"\s+for\b", after, re.IGNORECASE):
         return True
-    if p1 in {"a", "an", "this"} or (kind in ("noun", "noun_for") and p1 in COPULAS):
+    if p1 in {"a", "an", "this"}:
+        return True
+    if kind in ("noun", "noun_for", "cond_fix") and p1 in COPULAS:
         return True
     if p2 in {"a", "an", "this"} and p1 not in OWNED and p1 not in {"for", "of", "to", "from"}:
         return True
-    if p1 == "the" and (p2 == "" or p2 in COPULAS):
+    if p1 == "the" and (p2 == "" or p2 in COPULAS or p2 in PRESENTING):
         return True
+    if p1 in {"your", "my", "our"} and noun in {"fix", "remedy", "treatment"} and (
+            "new" in zone or noun != "treatment"):
+        return True  # "your new burnout remedy", "your fix for burnout", not "your treatment"
     if p1.endswith("'s") and p1 not in {"it's", "that's", "what's", "there's", "here's"} and (
             p2 == "" or p2 in COPULAS):
         return True
@@ -515,50 +758,63 @@ def _describes_the_modality(before, kind, after):
 
 
 def claims(text):
-    """Claim phrases in a tweet that are not negated or about someone else; see tweet-claim."""
+    """Claim phrases in a tweet that are not denied or about someone else; see tweet-claim."""
     text = text.replace("\U00002019", "'")
     found = []
     for match in CLAIM_RE.finditer(text):
-        kind = match.lastgroup
-        head = text[:match.start()]
-        cut = max((b.end() for b in CLAUSE_BREAK.finditer(head)), default=0)
-        before = _words(head[cut:])  # words of the same clause, before the phrase
-        after = text[match.end():]
-        if kind in ("noun", "noun_for", "quick_fix") and not _describes_the_modality(before, kind, after):
+        kind, phrase = match.lastgroup, match.group(0)
+        head, after = text[:match.start()], text[match.end():]
+        before = _scope_words(head)
+        brk = CLAUSE_BREAK.search(after)
+        after_clause = after[:brk.start()] if brk else after
+        following = _words(after[:24])[:1]
+        lowered = phrase.lower()
+        if kind in ("noun", "noun_for", "quick_fix", "cond_fix") and not _describes_the_modality(
+                before, kind, phrase, after):
             continue
         if kind == "fixes" and before and before[-1] in FIX_NOUN_MODIFIERS:
             continue
+        if kind == "fix_you" and following and following[0] in FIX_PLAIN_OBJECTS:
+            continue
+        if kind == "verb" and lowered.startswith("fixed") and (
+                (before and before[-1] in FIXED_ADJ_BEFORE)
+                or (following and following[0] in FIXED_ADJ_AFTER)):
+            continue
+        if kind == "word" and lowered.startswith("heal") and after.startswith("-"):
+            continue  # "heal-the-world anthems"
+        if kind == "word" and lowered == "healing" and following and following[0].startswith("profession"):
+            continue  # "the healing professions"
+        if kind == "word" and lowered == "healing" and not before and re.match(
+                r"\s+(?:takes|needs|requires)\s+(?:time|support|patience|work|effort|care|help)\b",
+                after, re.IGNORECASE):
+            continue  # "Healing takes time and support", a truism, not a claim about the modality
         if kind == "treats":
             # The verb only ("it treats the whole person"), never the noun ("dog treats"), and not
             # the "treats the walk like a game" idiom.
             if not before or before[-1] not in TREATS_SUBJECTS:
                 continue
-            brk_t = CLAUSE_BREAK.search(after)
-            if {"as", "like"} & set(_words(after[:brk_t.start()] if brk_t else after)[:6]):
+            if {"as", "like"} & set(_words(after_clause)[:6]):
                 continue
-        if any(_is_negation(w) for w in before[-8:]):
-            continue
-        near = before[-3:]
-        if any(pair in PHRASE_NEGATORS for pair in zip(near, near[1:])):
+        sentence_end = re.search(r"[.!?]", after)
+        if not _REVERSAL.search(after[:sentence_end.start()] if sentence_end else after) and _negated(
+                before, after_clause):
             continue
         if kind in ("modal", "fix_you", "verb", "word", "fixes", "treats"):
             if before and before[-1] in AGENTS:
                 continue
             if len(before) >= 2 and before[-2] in AGENTS and before[-1] in AGENT_MODALS:
                 continue
-            following = _words(after[:24])[:1]
             if following and following[0] in {"nothing", "none", "nobody", "noone", "no"}:
                 continue
-        brk = CLAUSE_BREAK.search(after)
-        if _NEGATED_COPULA_AFTER.match(after[:brk.start()] if brk else after):
+        if _NEGATED_COPULA_AFTER.match(after_clause):
             continue
         if brk and brk.group(0) == "?":
             rest = after[brk.end():]
             nxt = CLAUSE_BREAK.search(rest)
             answer = _words(rest[:nxt.start()] if nxt else rest)[:3]
-            if any(_is_negation(w, NEGATIVE_ANSWERS) for w in answer):
+            if any(_is_negation(w, NEGATIVE_ANSWERS) for w in answer) or answer[:2] == ["who", "knows"]:
                 continue
-        found.append(match.group(0))
+        found.append(phrase)
     return found
 
 
@@ -820,6 +1076,55 @@ SELF_TEST_CAVEATS = [
     "Quick fixes are tempting; this new idea is slow.",
     "Dogs love treats, and so will you: a new idea for shelter walks.",
     "It treats the walk like a game.",
+    # Reviewer round 4, findings 1 and 6, word for word: negated lists and missing negators.
+    "Not designed to treat, cure or prevent any condition.",
+    "This doesn't diagnose, treat, cure or prevent anything.",
+    "Can't treat, cure, or fix anything: it's a new idea.",
+    "It won't treat, heal, or cure anything.",
+    "It is not a treatment, cure, or fix.",
+    "Not intended to diagnose, treat or cure anything.",
+    "It does not treat or cure anything.",
+    "Far from a cure", "Hardly a cure", "Nowhere near a cure", "Far from proven",
+    "Healing takes time and support; this is just a new idea.",
+    "The healing professions inspired it, but it is untested.",
+    "Heal-the-world anthems ...",
+    "Fix your gaze on the horizon",
+    "Heals? Who knows.",
+    # Negation scope: denials that must stay denied.
+    "You don't need to fix anything: just walk, a new idea.",
+    "No need to heal anything, it's a new idea.",
+    "Nobody can promise it heals anything.",
+    "No one knows if it heals anything.",
+    "Nobody knows yet whether it heals anything.",
+    "No one claims it heals anything; it is a new idea.",
+    "Nobody pretends it heals anything.",
+    "Nobody has shown it cures anything.",
+    "Not all studies show it heals; this is a new idea.",
+    "No studies show it heals.",
+    "No test has shown it heals.",
+    "Nothing cures anxiety overnight, and this is just a new idea.",
+    "Nothing in it is meant to cure anxiety.",
+    "None of this has been shown to heal anything.",
+    "We don't claim it heals anything.",
+    "It is not designed, tested or proven to treat anything.",
+    "Not evaluated, tested or proven to treat any condition.",
+    "It is not, and is not meant to be, a cure.",
+    "It's far from proven to relieve, treat, or cure insomnia.",
+    "It has never been tested to see if it can heal, fix or cure anything.",
+    "No one should treat this as a cure.",
+    "Nobody should use it to treat anxiety.",
+    "No one should tell you it heals.",
+    "No one wants a quick fix; this is slow.",
+    "There's no way to know if it heals anything.",
+    "Don't expect it to heal anything.",
+    "Hardly anyone claims it heals.",
+    "No, it doesn't cure anything.",
+    "No it doesn't cure anything, it's a new idea.",
+    "Neither a cure nor a treatment: a new idea.",
+    "Keep up your anxiety treatment; this is just a new idea.",
+    "Ask your doctor about anxiety treatment first.",
+    "Keep a fixed sleep schedule: a new idea for night owls.",
+    "Fix the date and invite a friend: a new idea.",
 ]
 SELF_TEST_CLAIMS = [
     # Reviewer round 3: claims, including the 10 that came after a caveat or negation.
@@ -863,6 +1168,59 @@ SELF_TEST_CLAIMS = [
     "Clinically effective and gentle.",
     "It eliminates the need for pills.",
     "Healed in a week.",
+    # Reviewer round 4, findings 2, 3 and 4, word for word: fix forms, condition nouns, scope.
+    "Fixing burnout, one breath at a time.",
+    "Fixing your anxiety, one walk at a time.",
+    "It fixed my anxiety in a week.",
+    "Fixed my sleep in a week: a new idea.",
+    "It's been fixing my mood for months. New concept.",
+    "A new anxiety treatment.",
+    "The new insomnia treatment you can do at home.",
+    "The ultimate stress remedy.",
+    "Your new burnout remedy.",
+    "Meet your new burnout remedy.",
+    "A 10-minute anxiety fix: a new idea.",
+    "A new PTSD fix.",
+    "A gentle depression fix.",
+    "Your fix for burnout.", "My fix for burnout.", "Our fix for burnout.",
+    "Nothing heals grief like this new walk.",
+    "No meds required to heal your trauma.",
+    "No therapist needed to cure insomnia.",
+    "No pills needed to cure anxiety.",
+    "No drugs required to treat depression.",
+    "No other idea treats anxiety this well.",
+    "Not everyone knows it heals anxiety.",
+    "Nobody told you a walk could heal trauma.",
+    "No wonder it heals trauma so fast.",
+    "Never before has a walk healed trauma.",
+    "No one expected it to heal trauma, but it does.",
+    # Negation scope: the negator governs something else, so the claim stands.
+    "Without any pills it heals anxiety.",
+    "You don't need therapy to heal trauma.",
+    "It doesn't take long to heal your trauma.",
+    "No one heals trauma like this walk.",
+    "Nothing cures anxiety faster.",
+    "You'd never guess it heals trauma.",
+    "Never knew a walk could heal trauma.",
+    "Hardly anyone knows it heals trauma.",
+    "Not only does it heal trauma, it calms you.",
+    "It's not just a cure, it's a new way of life.",
+    "You won't believe it heals trauma.",
+    "It never fails to heal trauma.",
+    "Never doubt that it heals.",
+    "Don't wait to heal your trauma: try this new walk.",
+    "It's never been easier to heal your trauma.",
+    "There's nothing it can't heal.",
+    "There's no reason it can't heal you.",
+    "No pills or therapy and still heals anxiety.",
+    "No gym and no pills, and it heals anxiety.",
+    "Never stressed again because it heals your nerves.",
+    "You won't need pills once it heals your anxiety.",
+    "Doctors can't believe how fast it heals.",
+    "It's not supposed to heal anything, but it does.",
+    "Not a gimmick, a real cure.",
+    "Your new go-to stress fix.",
+    "This is my anxiety fix: a new idea.",
 ]
 
 
