@@ -4,36 +4,51 @@
   "shortName": "Vipassana",
   "family": "meditation",
   "alsoKnownAs": ["insight meditation", "vipassana bhavana"],
-  "origin": "Rooted in Theravada Buddhist teachings on the foundations of mindfulness, it was revived as a practice for lay people in late 19th and 20th century Burma (Myanmar) by teachers such as Ledi Sayadaw, Mahasi Sayadaw and U Ba Khin, and spread worldwide through Satya Narayan Goenka's 10-day courses and Western centers such as the Insight Meditation Society, founded in Massachusetts in 1975.",
-  "summary": "Vipassana means insight or clear seeing. Practitioners watch body sensations, feelings and thoughts closely, moment by moment, to see for themselves that experience keeps changing, cannot fully satisfy, and is not a fixed self. Its main styles are Mahasi noting, the U Ba Khin and Goenka body scan, and the blended Insight Meditation approach of Western centers.",
-  "theoryOfChange": "Buddhist teachers hold that seeing clearly, again and again, how sensations and thoughts arise and pass away weakens craving and aversion, the automatic grabbing and pushing away that keep suffering going. In psychological terms the practice trains two skills, noticing what is happening and accepting it without reacting, which Monitor and Acceptance Theory proposes are the working parts of mindfulness training. Together these skills may reduce repetitive negative thinking (rumination) and emotional reactivity.",
-  "whatYouDo": "You sit still, often cross-legged with eyes closed, steady the mind on the breath, and then observe whatever is most obvious: body sensations, sounds, emotions and thoughts. In the Mahasi style you make a soft mental label for each experience, such as 'rising', 'falling' or 'thinking'; in the Goenka style you sweep attention through the body part by part, noticing sensations without reacting. Retreats are held in silence and fill most of the day with sitting and, in many styles, walking meditation.",
-  "typicalDose": "Daily sitting of about 20 to 60 minutes, plus silent residential retreats from a weekend to several weeks or longer. Goenka courses last 10 days with about 10 hours of meditation a day, and students are asked to keep up an hour of practice each morning and evening afterward.",
+  "origin": "Rooted in Theravada Buddhist teachings on the foundations of mindfulness, it was popularized for lay people in Burma (Myanmar) by Ledi Sayadaw (1846 to 1923) and, in the 20th century, by Mahasi Sayadaw and the lay teacher U Ba Khin, whose student Satya Narayan Goenka spread the method worldwide through 10-day courses, while Western centers such as the Insight Meditation Society in Massachusetts followed in the mid-1970s.",
+  "summary": "Vipassana means insight or clear seeing. Practitioners watch body sensations, feelings and thoughts closely, moment by moment, to see for themselves that experience keeps changing, cannot fully satisfy, and is not a fixed self. Its main styles are Mahasi noting, the U Ba Khin and Goenka body sweep, and the blended Insight Meditation approach of Western centers.",
+  "theoryOfChange": "Buddhist teachers hold that seeing clearly, again and again, how sensations and thoughts arise and pass away weakens craving and aversion, the automatic grabbing and pushing away that keep suffering going. In psychological terms the practice trains two skills, noticing what is happening and accepting it without reacting, which Monitor and Acceptance Theory proposes are the working parts of mindfulness training. Together these skills may reduce emotional reactivity, negative mood and stress.",
+  "whatYouDo": "You sit still, steady the mind on the breath, and then observe whatever is most obvious: body sensations, sounds, emotions and thoughts. In the Mahasi style you silently label each experience as it happens, a practice called noting; in the Goenka style you sweep attention through the body section by section, noticing sensations without reacting to them. Either way, the aim is to watch each experience arise and pass rather than to settle into deep absorption.",
+  "typicalDose": "Regular daily sitting at home, deepened on silent residential retreats. Goenka courses are 10-day retreats that give three days to breath awareness and the rest to body sweeping, and Mahasi-style retreats can last several months with meditation from 3:00 in the morning to 11:00 at night.",
   "keyTechniques": [
     "Mental noting or labeling (Mahasi style)",
-    "Body scanning or sweeping (U Ba Khin and Goenka style)",
-    "Walking meditation",
+    "Body sweeping (U Ba Khin and Goenka style)",
     "Breath awareness (anapana) to steady attention",
+    "Moment-to-moment focus rather than deep absorption",
     "Observing change, unsatisfactoriness and not-self",
-    "Equanimity toward pleasant and unpleasant sensations"
+    "Equanimity: noticing sensations without reacting"
   ],
   "evidence": {
     "level": "moderate",
-    "summary": "Research on traditional vipassana is thinner than its popularity suggests: a 2010 systematic review found few, mostly low-quality studies, and said it remains unclear whether results replicate, how much they reflect who chooses to attend or placebo effects, and whether they last. A 2025 systematic review concluded that moderate evidence supports benefits for psychological and physical health. Secular programs that borrow from vipassana and Zen, such as Mindfulness-Based Stress Reduction (MBSR) and Mindfulness-Based Cognitive Therapy (MBCT), have been tested far more, but they are different packages, so their results do not transfer automatically."
+    "summary": "Direct research on traditional vipassana is thin: a 2010 systematic review found few, mostly low-quality studies (Chiesa, 2010), and a 2025 review of 11 studies, three of them randomized, concluded that moderate evidence supports benefits such as less stress and anxiety, while noting small samples and moderate to high risk of bias (Giridharan and colleagues, 2025). Reviews also report less alcohol and drug use among prisoners who practiced vipassana, from early studies such as one in an incarcerated population (Bowen and colleagues, 2006), but rate these designs as low quality (Chiesa and Serretti, 2010). More broadly, a meta-analysis of 47 randomized trials with active comparison groups, which counted vipassana among mindfulness programs, found moderate evidence of small to moderate improvements in anxiety, depression and pain, but no evidence that meditation beats other active treatments such as drugs or exercise (Goyal and colleagues, 2014)."
   },
   "goodFitFor": "People who want a structured, well-mapped way to understand their own minds and loosen habitual reactions, and who can commit to regular sitting or a silent retreat.",
-  "cautions": "Long silent retreats can bring up anxiety, panic, a sense of unreality, traumatic memories and, rarely, psychotic or manic episodes. People with a history of psychosis, bipolar disorder, severe trauma or a current crisis should talk to a clinician before an intensive retreat and may do better with shorter, gentler formats under an experienced teacher.",
-  "namingNote": "Vipassana here means traditional insight meditation from the Theravada lineages: Mahasi-style noting, the U Ba Khin and Goenka body scan, and the blended Insight Meditation style of Western centers. Researchers often group it with Zen practice and with programs such as MBSR and MBCT as 'mindfulness meditations' (Chiesa and Serretti, 2010), but those secular programs are not this point. It is kept apart from Do Nothing, which gives up all technique, and from Metta / Jhana, which builds a feeling and deep concentration rather than investigating change.",
+  "cautions": "Intensive practice can bring up hard experiences: in interviews with 60 Western Buddhist meditators from Theravada, Zen and Tibetan traditions, chosen because they had had such experiences, fear, anxiety, panic or paranoia was the most common (82 percent), for 72 percent of them the difficulties began on retreat, and some escalated into states resembling mania or psychosis that often needed hospital care (Lindahl and colleagues, 2017). This was a selected group, so the numbers show what can happen rather than how often. Because effects ranged from mild and brief to severe and lasting, people with a history of psychosis, bipolar disorder, severe trauma or a current crisis should talk to a clinician before an intensive retreat and may do better with shorter, gentler formats under an experienced teacher.",
+  "namingNote": "Vipassana here means traditional insight meditation from the Theravada lineages: Mahasi-style noting, the U Ba Khin and Goenka body sweep, and the blended Insight Meditation style of Western centers. Researchers class it as a 'deconstructive' practice that takes experience apart to see how it works, and often group it with Zen and with secular programs such as Mindfulness-Based Stress Reduction (MBSR) and Mindfulness-Based Cognitive Therapy (MBCT) as 'mindfulness meditations' (Chiesa and Serretti, 2010), but those programs are not this point. It is kept apart from Metta / Jhana because it aims at insight into change rather than absorption (the Mahasi method even skips the usual preliminary concentration practice), and from Do Nothing, which gives up all technique.",
   "sources": [
     {
-      "title": "Vipassana meditation: systematic review of current evidence",
+      "title": "Vipassana Meditation: Systematic Review of Current Evidence",
       "url": "https://pubmed.ncbi.nlm.nih.gov/20055558/",
       "kind": "review"
     },
     {
       "title": "The Impact of Vipassana Meditation on Health and Well-Being: A Systematic Review of Current Evidence",
-      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12558566/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12558566/",
       "kind": "review"
+    },
+    {
+      "title": "Meditation Programs for Psychological Stress and Well-being: A Systematic Review and Meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4142584/",
+      "kind": "review"
+    },
+    {
+      "title": "Mindfulness meditation and substance use in an incarcerated population",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16938074/",
+      "kind": "trial"
+    },
+    {
+      "title": "The varieties of contemplative experience: A mixed-methods study of meditation-related challenges in Western Buddhists",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5443484/",
+      "kind": "primary"
     },
     {
       "title": "A systematic review of neurobiological and clinical features of mindfulness meditations",
@@ -41,9 +56,14 @@
       "kind": "review"
     },
     {
-      "title": "Mechanisms of mindfulness training: Monitor and Acceptance Theory (MAT)",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5195874",
+      "title": "Mechanisms of Mindfulness Training: Monitor and Acceptance Theory (MAT)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5195874/",
       "kind": "review"
+    },
+    {
+      "title": "Vipassana movement",
+      "url": "https://en.wikipedia.org/wiki/Vipassana_movement",
+      "kind": "org"
     }
   ]
 }
