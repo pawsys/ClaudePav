@@ -19,10 +19,10 @@
   ],
   "evidence": {
     "level": "emerging",
-    "summary": "Large surveys link team sport with better mental health: among 1.2 million US adults, popular team sports went with the biggest drop in poor mental health days of any exercise type (about 22% fewer than in people who did not exercise), and among 11,235 US children aged 9 to 13, team sport went with fewer mental health difficulties. A 2023 review of 29 studies in adults found benefits from sport of any kind, with more favorable results for team sport, but this kind of research cannot rule out that happier, healthier people are simply more likely to join teams. Controlled trials are scarce: a 2026 systematic review found only six studies in adults (744 people, four randomized trials), with inconsistent results that looked better in supportive, recreational settings than in competitive ones. Exercise in general eases depression across many trials (218 in one 2024 review, though only one was rated at low risk of bias), but whether the team setting adds anything extra has not been tested well."
+    "summary": "Large surveys link team sport with better mental health: among 1.2 million US adults, popular team sports went with the biggest drop in poor mental health days of any exercise type (about 22% fewer than in people who did not exercise), and among 11,235 US children aged 9 to 13, team sport went with fewer mental health difficulties. A 2023 review of 29 studies in adults found benefits from sport of any kind, with more favorable results for team sport, but this kind of research cannot rule out that happier, healthier people are simply more likely to join teams. Controlled trials are scarce: a 2026 systematic review of in-person team sport programs for anxiety and mood, in adults not selected for a mental health diagnosis, found only six intervention studies that met its criteria (744 people, four randomized trials), with inconsistent results that looked better in supportive, recreational settings than in competitive ones. Exercise in general eases depression across many trials (218 in one 2024 review, though only one was rated at low risk of bias), but whether the team setting adds anything extra has not been tested well."
   },
   "goodFitFor": "People who find solo exercise hard to stick with, enjoy play and friendly competition, or want new friends and a sense of belonging. Ultimate in particular suits people who like running and want a sport culture built on fair play.",
-  "cautions": "Sprinting, cutting and jumping bring injury risk: in Ultimate the legs (knee, thigh and ankle) are the most commonly injured area, and in one survey of 338 players about a quarter had had a concussion, so warm up, build fitness gradually and stop playing after any knock to the head. High-pressure or elite competition can add stress rather than relieve it. Anyone with heart, joint or other health problems should check with a doctor first, and sport supports, but does not replace, treatment for a mental health condition.",
+  "cautions": "Sprinting, cutting and jumping bring injury risk: in Ultimate the legs (knee, thigh and ankle) are the most commonly injured area, and in one survey of 787 competitive players about a quarter had had at least one concussion, so warm up, build fitness gradually and stop playing after any knock to the head. High-pressure or elite competition can add stress rather than relieve it. Anyone with heart, joint or other health problems should check with a doctor first, and sport supports, but does not replace, treatment for a mental health condition.",
   "namingNote": "The requested 'group sport, for example ultimate frisbee' is treated as recreational team sport in general, with Ultimate as the worked example. The world governing body calls the game simply 'Ultimate', since Frisbee is a brand name for the disc; this point covers playing for enjoyment and health, not elite competition.",
   "sources": [
     {
@@ -61,9 +61,9 @@
       "kind": "org"
     },
     {
-      "title": "History of Ultimate",
-      "url": "https://wfdf.sport/2011/10/history-of-ultimate/",
-      "kind": "org"
+      "title": "Ultimate frisbee",
+      "url": "https://en.wikipedia.org/wiki/Ultimate_frisbee",
+      "kind": "encyclopedia"
     }
   ]
 }
