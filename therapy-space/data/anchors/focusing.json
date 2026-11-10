@@ -1,0 +1,68 @@
+{
+  "id": "focusing",
+  "name": "Focusing",
+  "shortName": "Focusing",
+  "family": "psychotherapy",
+  "alsoKnownAs": [
+    "Gendlin's Focusing",
+    "Focusing-Oriented Therapy (FOT)",
+    "Focusing-oriented/experiential psychotherapy"
+  ],
+  "origin": "Developed by philosopher and psychotherapist Eugene T. Gendlin at the University of Chicago, out of psychotherapy research he did with Carl Rogers from the 1950s on why some clients improve, described in a 1969 paper and set out for the public in his 1978 book Focusing.",
+  "summary": "Focusing is a learnable way of giving gentle, open, non-judging attention to a 'felt sense': a vague, bodily sense of a situation or problem that is not yet in words and is not the same as an emotion. By staying with that sense and letting words or images come from it, people often notice a 'felt shift', a small felt movement in the body that brings fresh insight or a next step. It can be done alone, with a listening partner, or within therapy, where it is called Focusing-Oriented Therapy.",
+  "theoryOfChange": "Gendlin's research suggested that progress in therapy depends less on the therapist's technique than on what clients do inwardly: those who improved tended to slow down and speak from an unclear bodily sense of their problem, rather than only analyzing it or reporting events. Focusing teaches that inner move directly. In Gendlin's view the felt sense always holds more than can yet be said, so when words fit it closely the body responds with a shift, and a stuck situation can start to move.",
+  "whatYouDo": "A session lasts from about 10 minutes to an hour, often with eyes closed and a listener who reflects back what you say. Following Gendlin's six steps, you clear a space by noticing the concerns you carry and setting them aside, let a felt sense of one issue form, find a word or image that fits it, check that handle against the felt sense, gently ask the felt sense open questions, and welcome whatever comes. With practice the steps become a loose guide rather than a fixed recipe.",
+  "typicalDose": "No fixed course: sessions of roughly 10 to 60 minutes, done alone, with a Focusing trainer or therapist, or with a trained lay listener. It is usually learned from a book or from a Focusing trainer, and in Focusing-Oriented Therapy it is woven into ordinary therapy sessions.",
+  "keyTechniques": [
+    "Clearing a space",
+    "Letting a felt sense form",
+    "Finding a handle (a word or image)",
+    "Resonating: checking the handle against the felt sense",
+    "Asking the felt sense open questions",
+    "Receiving whatever comes, kindly"
+  ],
+  "evidence": {
+    "level": "limited",
+    "summary": "Most research on Focusing is process research, meaning studies of what happens inside therapy sessions, rather than trials that test the practice itself. Starting with Gendlin's work in the late 1950s and 1960s, researchers used the Experiencing Scale to rate how much clients speak from their felt sense, and early studies reported that clients with better outcomes did more of this. A later meta-analysis by Pascual-Leone and Yeryomenko pooled the studies linking clients' scores on this scale to therapy outcomes, and Hendricks (2002) reviews this research alongside Focusing-oriented therapy. Few controlled trials have tested Focusing taught on its own, so its benefit as a stand-alone practice is not established."
+  },
+  "goodFitFor": "People who feel stuck or keep circling in their heads, or who want to get clear on what they feel or want, and who like a quiet, body-aware way of exploring that can be done alone, with a partner or in therapy.",
+  "cautions": "Usually gentle, but turning attention inward can bring up strong feelings or painful memories, and some people find the felt sense hard to notice at first. People with severe trauma, dissociation, psychosis or a current crisis should use it with a qualified therapist rather than alone. Because the evidence for Focusing on its own is limited, it should not replace better-tested treatments for conditions such as major depression.",
+  "namingNote": "Focusing with a capital F means Gendlin's specific practice, not concentration in general. This point covers Focusing done alone or with a partner, its use in therapy (Focusing-Oriented Therapy, also called Focusing-oriented/experiential psychotherapy) and later variants such as Inner Relationship Focusing by Ann Weiser Cornell and Barbara McGavin. It is filed under psychotherapy because it grew out of therapy research, though many people practice it as a self-help skill, and it is not the same as Emotion-Focused Therapy, a separate approach with a similar name.",
+  "sources": [
+    {
+      "title": "Experiencing: A Variable in the Process of Therapeutic Change",
+      "url": "https://doi.org/10.1176/appi.psychotherapy.1961.15.2.233",
+      "kind": "primary"
+    },
+    {
+      "title": "Focusing",
+      "url": "https://doi.org/10.1037/h0088716",
+      "kind": "primary"
+    },
+    {
+      "title": "Focusing-oriented/experiential psychotherapy",
+      "url": "https://doi.org/10.1037/10439-007",
+      "kind": "review"
+    },
+    {
+      "title": "The client \"experiencing\" scale as a predictor of treatment outcomes: A meta-analysis on psychotherapy process",
+      "url": "https://doi.org/10.1080/10503307.2016.1152409",
+      "kind": "review"
+    },
+    {
+      "title": "Focusing (psychotherapy) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Focusing_(psychotherapy)",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Eugene Gendlin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eugene_Gendlin",
+      "kind": "encyclopedia"
+    },
+    {
+      "title": "Inner Relationship Focusing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Inner_Relationship_Focusing",
+      "kind": "encyclopedia"
+    }
+  ]
+}
