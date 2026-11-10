@@ -1,0 +1,49 @@
+{
+  "id": "sensory",
+  "name": "Sensory mindfulness",
+  "shortName": "Mindful senses",
+  "family": "meditation",
+  "alsoKnownAs": ["mindfulness of the senses", "sensory awareness", "sense-based grounding"],
+  "origin": "It draws on Buddhist mindfulness of the senses and on Elsa Gindler's body-awareness teaching in early 1900s Berlin, which her student Charlotte Selver brought to the United States in 1938 as Sensory Awareness; Jon Kabat-Zinn's MBSR (University of Massachusetts, 1979) made sense-focused exercises such as the body scan standard in mindfulness teaching, and Shinzen Young later taught See Hear Feel, a method of noting sights, sounds and body feelings as they arise.",
+  "summary": "Sensory mindfulness means giving full, open attention to raw sensory experience: what you see, hear, touch, taste and smell, and what you feel in the body, without judging it or getting lost in thoughts about it. It is used to ground yourself, calm down and come back to the present moment, and it underlies familiar exercises such as the body scan, mindful eating and 5-4-3-2-1 grounding. Unlike vipassana, which watches sensations to gain insight into how experience works (for example, that it keeps changing), and unlike Do Nothing meditation, which drops every chosen focus, here the senses themselves are the deliberate anchor and the aim is simple contact with the present.",
+  "theoryOfChange": "Worry, rumination and self-criticism run mostly on thoughts about the past and future, so deliberately attending to what you can sense right now is thought to interrupt them. Noticing sensations with curiosity rather than judgment may train attention, lower stress arousal and build tolerance for discomfort. Concrete outside anchors, such as sounds, colors or the feel of your feet on the floor, are also widely used to help a person stay oriented during panic or dissociation.",
+  "whatYouDo": "You pick a sense and give it slow, curious attention: eating a single raisin as if for the first time, lying down and moving attention through the body (the body scan), listening to sounds come and go, or naming five things you see, four you can touch, three you hear, two you smell and one you taste. Shinzen Young's See Hear Feel method sorts each moment into seeing, hearing or feeling, often with a soft mental label for each. When the mind drifts into thought, you gently return to what you can sense now. In Charlotte Selver's Sensory Awareness classes, people explore plain acts such as standing, walking, breathing or touching an object, then share what they noticed.",
+  "typicalDose": "Grounding exercises take 1 to 5 minutes and can be used any time; formal practices such as the body scan, mindful eating or listening take about 10 to 45 minutes, ideally daily. In MBSR they are taught over an 8-week course of weekly classes of about 2.5 hours plus roughly 45 minutes of daily home practice; Sensory Awareness is taught in classes, workshops and retreats.",
+  "keyTechniques": [
+    "Body scan",
+    "Mindful eating (the raisin exercise)",
+    "Mindful listening and seeing",
+    "5-4-3-2-1 grounding",
+    "See Hear Feel noting (Shinzen Young)",
+    "Sensory Awareness explorations (Charlotte Selver)"
+  ],
+  "evidence": {
+    "level": "emerging",
+    "summary": "Direct research on sense-focused practice on its own is thin. Its main exercises sit inside programs such as MBSR and MBCT, which many randomized trials support as whole packages, but those trials cannot show how much the sensory exercises themselves add. Studies of single exercises such as the body scan are mostly small, sensory approaches used in mental health wards (sensory modulation) have mainly been tested in small or uncontrolled studies, and Sensory Awareness and 5-4-3-2-1 grounding rest mainly on practitioner experience."
+  },
+  "goodFitFor": "People who want a simple, portable way to calm down and return to the present, especially those caught in worry or rumination, or who find watching the breath or their thoughts hard. It is also a gentle first step into mindfulness.",
+  "cautions": "Turning attention to inner body sensations can sometimes stir up panic, dissociation or traumatic memories, so trauma survivors may do better with eyes open, outside anchors such as sounds or objects, short sessions and full permission to stop. People with sensory sensitivities may need gentler, shorter versions. It is a self-care skill, not a stand-alone treatment for severe anxiety, PTSD or psychosis, which call for a professional.",
+  "namingNote": "The request said 'mindful sensory mindfulness'. It is defined here as mindfulness that uses raw sensory experience (sight, sound, touch, taste, smell and body sensation) as its deliberate anchor, drawing on Charlotte Selver's Sensory Awareness, the MBSR body scan and raisin exercise, Shinzen Young's See Hear Feel and 5-4-3-2-1 grounding. It is kept apart from vipassana (insight practice) and Do Nothing meditation (no chosen object), which are separate points. Sensory modulation, an occupational therapy approach in mental health care that uses calming sensory input such as weighted blankets, textures or scents, is a close clinical cousin and is mentioned but not the core of this point.",
+  "sources": [
+    {
+      "title": "Sensory Awareness and Our Attitude Toward Life",
+      "url": "https://ibpj.org/issues/usabpj-articles/(3)_Selver__C._Sensory_Awareness_and_Our_Attitude_Toward_Life._USABPJ_3.1__2004.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "On Being in Touch with Oneself",
+      "url": "https://ibpj.org/issues/usabpj-articles/(1)_Selver__C._On_Being_in_Touch_with_Oneself._USABPJ_3.1__2004.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "The Influence of Elsa Gindler",
+      "url": "https://ibpj.org/issues/usabpj-articles/(6)_Weaver__J._O._The_Influence_of_Elsa_Gindler._USABPJ_3.1__2004.pdf",
+      "kind": "review"
+    },
+    {
+      "title": "Charlotte Selver",
+      "url": "https://en.wikipedia.org/wiki/Charlotte_Selver",
+      "kind": "review"
+    }
+  ]
+}

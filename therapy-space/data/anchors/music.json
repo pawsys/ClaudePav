@@ -1,0 +1,69 @@
+{
+  "id": "music",
+  "name": "Music (listening, making music and music therapy)",
+  "shortName": "Music",
+  "family": "arts",
+  "alsoKnownAs": ["music therapy", "music medicine", "music listening", "music-based interventions"],
+  "origin": "Music has been linked with healing in many cultures since ancient times, and the modern profession of music therapy took shape in the United States in the mid-1900s, after musicians played for wounded veterans in hospitals, with its first national association founded in 1950.",
+  "summary": "This point covers the ways people use music for mental health, from everyday listening, singing and playing to formal music therapy. The American Music Therapy Association defines music therapy as the clinical and evidence-based use of music interventions to reach individualized goals within a therapeutic relationship, delivered by a credentialed professional who has completed an approved music therapy program. Therapists use active methods (improvising, singing, playing, songwriting) and receptive methods (listening, sometimes with guided imagery).",
+  "theoryOfChange": "Music can shift arousal and mood quickly: calming music can dampen stress responses such as a racing heart, while strong rhythm energizes and organizes movement. Music people love engages the brain's reward system, and brain imaging has shown dopamine release in reward areas during the most moving moments of a favorite piece. Making music with others is thought to build connection and belonging, and in therapy music offers a nonverbal way to express and work through feelings inside a supportive relationship.",
+  "whatYouDo": "In music therapy, a credentialed therapist assesses your needs, sets goals with you and then uses music experiences such as improvising on simple instruments, singing, writing songs, discussing lyrics or listening to chosen music, often followed by talking about what came up. In Guided Imagery and Music (the Bonny Method), you listen to sequences of selected classical music in a relaxed state and describe the images, memories and feelings that arise to a trained guide. Outside therapy, the same ingredients show up as joining a choir, learning an instrument or using a playlist on purpose to calm down or lift your mood.",
+  "typicalDose": "Formal music therapy: individual or group sessions of about 30 to 90 minutes, usually once or twice a week for several weeks to months. Bonny Method sessions often run 90 minutes to 2 hours. Self-directed use ranges from a few minutes of chosen listening a day to a weekly choir or band rehearsal.",
+  "keyTechniques": [
+    "Improvising with voice or simple instruments",
+    "Songwriting and lyric discussion",
+    "Receptive listening to chosen music",
+    "Guided Imagery and Music (Bonny Method)",
+    "Group singing and choirs",
+    "Moving to rhythm and music"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "Many trials and several meta-analyses point the same way. A Cochrane review (Aalbers and colleagues, 2017; 9 studies, 421 people) found moderate-quality evidence that adding music therapy to usual care reduces depressive symptoms in the short term, with gains in anxiety and daily functioning too, and a meta-analysis of 104 randomized trials found that music interventions lower both physical and self-reported stress (de Witte and colleagues, 2020). A recent meta-review across psychiatric conditions (Lassner and colleagues, BJPsych Open) found moderate benefits for depression, anxiety and quality of life, but rated the certainty low or very low and found the gains did not last at follow-up. Trials are mostly small and cannot be blinded, and group singing studies look promising but carry a moderate to high risk of bias."
+  },
+  "goodFitFor": "People who respond strongly to music or find it hard to put feelings into words, and anyone wanting an accessible, low-cost way to manage stress and mood, alone or with others. Formal music therapy suits people who want skilled support alongside usual care for conditions such as depression, anxiety or dementia.",
+  "cautions": "Music can stir strong memories and emotions, so trauma work and deep imagery methods such as Guided Imagery and Music belong with a trained practitioner. For people prone to rumination, listening to sad music over and over can deepen a low mood, so notice how a piece leaves you feeling. Keep the volume moderate to protect your hearing, and use music alongside, not instead of, professional care for serious depression or other mental illness.",
+  "namingNote": "Defined broadly, as requested: listening, singing, playing and writing music, plus formal music therapy by a credentialed music therapist (MT-BC in the United States). Research separates music therapy (a trained therapist, a relationship and individual goals) from music medicine or plain listening (usually recorded music offered by other staff or used on your own); both belong to this point, and the evidence summary says which one each finding is about.",
+  "sources": [
+    {
+      "title": "What is Music Therapy?",
+      "url": "https://www.musictherapy.org/about/musictherapy/",
+      "kind": "org"
+    },
+    {
+      "title": "Music therapy for depression",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29144545/",
+      "kind": "review"
+    },
+    {
+      "title": "Effects of music interventions on stress-related outcomes: a systematic review and two meta-analyses",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31167611/",
+      "kind": "review"
+    },
+    {
+      "title": "Evidence for music therapy and music medicine in psychiatry: transdiagnostic meta-review of meta-analyses",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11733488/",
+      "kind": "review"
+    },
+    {
+      "title": "A systematic review of mental health and wellbeing outcomes of group singing for adults with a mental health condition",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29982515/",
+      "kind": "review"
+    },
+    {
+      "title": "The Bonny method of Guided Imagery and Music (GIM) in Europe",
+      "url": "https://journals.qmu.ac.uk/approaches/article/view/381",
+      "kind": "review"
+    },
+    {
+      "title": "Anatomically distinct dopamine release during anticipation and experience of peak emotion to music",
+      "url": "https://www.zlab.mcgill.ca/publications/docs/salimpoor_2011_nn.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Music and People With Tendencies to Depression",
+      "url": "https://remix.berklee.edu/mhi-music-mental-health/467",
+      "kind": "primary"
+    }
+  ]
+}
