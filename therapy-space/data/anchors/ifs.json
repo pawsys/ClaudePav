@@ -1,0 +1,74 @@
+{
+  "id": "ifs",
+  "name": "Internal Family Systems",
+  "shortName": "IFS",
+  "family": "psychotherapy",
+  "alsoKnownAs": [
+    "IFS",
+    "IFS therapy",
+    "Internal Family Systems therapy",
+    "Internal Family Systems Model"
+  ],
+  "origin": "Developed in the United States in the 1980s by family therapist Richard Schwartz, who noticed that clients, starting with people who had eating disorders, described their inner lives as conflicting parts; it is taught today through the IFS Institute, founded in 2000 as the Center for Self-Leadership.",
+  "summary": "Internal Family Systems is a form of psychotherapy that sees the mind as a family of sub-personalities, called parts, along with a core Self that can lead them. Instead of trying to get rid of unwanted feelings or habits, the client gets to know the parts behind them with curiosity and compassion. It treats having parts as a normal feature of every mind, not as a disorder.",
+  "theoryOfChange": "IFS holds that every part has a positive intent, but painful experiences push some into extreme roles: managers that try to keep control, firefighters that act on impulse to put out emotional pain, and exiles that carry old pain, shame or fear. Beneath the parts, everyone is thought to have a Self, a calm, curious and compassionate core that is not damaged by trauma. Change is thought to come when the Self rather than a protective part takes the lead, so protectors can relax and wounded parts can be heard and released from the painful beliefs and feelings they carry.",
+  "whatYouDo": "The therapist helps the client turn attention inward, find a feeling, thought or urge as a part, and get curious about it instead of fighting it. The client practices unblending, stepping back until they feel calm or curious toward the part, then learns what the part is trying to do and what it fears would happen if it stopped. Only with the protective parts' permission does the client approach the hurt, exiled parts they guard, witness their story, bring them out of the past, and help them release the painful feelings and beliefs they carry, a step IFS calls unburdening.",
+  "typicalDose": "Mostly individual therapy, with couple and group formats too. Studies have used 16 weeks of IFS for PTSD, a 9-month program for rheumatoid arthritis, and online programs of weekly 90-minute groups plus 50-minute individual sessions over 12 to 16 weeks; in everyday practice length varies, and getting to know protective parts can be slow.",
+  "keyTechniques": [
+    "Finding and focusing on a part (the 6 Fs)",
+    "Unblending from a part",
+    "Checking how you feel toward a part",
+    "Befriending protectors and asking their fears",
+    "Witnessing, retrieving and unburdening exiles",
+    "Direct access: the therapist speaks with a part"
+  ],
+  "evidence": {
+    "level": "emerging",
+    "summary": "A 2013 trial in 79 people with rheumatoid arthritis found less pain and better physical function after 9 months of IFS than with mailed education, and less depression a year later, but no lasting change in disease activity. A 2017 pilot trial in 37 college women with depression found symptoms improved about as much with IFS as with usual therapy (CBT or interpersonal therapy), and a 2026 trial in 60 people with PTSD found an online IFS group program no better at reducing PTSD symptoms than an active nature-based program, though both groups improved and the IFS group attended more sessions and reported higher satisfaction. An uncontrolled pilot in 17 adults with PTSD after childhood trauma reported that 92 percent of those who finished no longer met PTSD criteria. The authors of a 2025 online group pilot and of a 2025 scoping review both call for larger, more rigorous trials."
+  },
+  "goodFitFor": "Adults dealing with inner conflict, harsh self-criticism, shame, anxiety or low mood, and people working through trauma, including complex trauma, with a trained IFS therapist.",
+  "cautions": "Turning toward deeply hurt parts can bring up intense trauma memories, and the model itself warns that pushing past protective parts can provoke a strong backlash, so people with severe trauma, dissociation or a current mental health crisis should work with a licensed clinician trained in IFS rather than only with books or apps. A 2025 New York Magazine investigation alleged that careless parts work destabilized some clients and encouraged false memories of abuse; the IFS Institute says its protocol warns against both. Because its popularity has outpaced its research, it should not replace better tested treatments for PTSD or severe depression without professional advice.",
+  "namingNote": "Despite the name, IFS is mainly an individual therapy: family refers to the inner family of parts, an idea Schwartz carried over from family systems therapy. IFS-based group and online programs, such as PARTS for PTSD, are included in this entry's evidence.",
+  "sources": [
+    {
+      "title": "A randomized controlled trial of an internal family systems-based psychotherapeutic intervention on outcomes in rheumatoid arthritis: a proof-of-concept study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23950186/",
+      "kind": "trial"
+    },
+    {
+      "title": "The Efficacy of Internal Family Systems Therapy in the Treatment of Depression Among Female College Students: A Pilot Study",
+      "url": "https://doi.org/10.1111/jmft.12184",
+      "kind": "trial"
+    },
+    {
+      "title": "Internal Family Systems (IFS) Therapy for Posttraumatic Stress Disorder (PTSD) among Survivors of Multiple Childhood Trauma: A Pilot Effectiveness Study",
+      "url": "https://doi.org/10.1080/10926771.2021.2013375",
+      "kind": "trial"
+    },
+    {
+      "title": "A randomized controlled trial of an online group-based internal family systems treatment for posttraumatic stress disorder: The Program for Alleviating and Resolving Trauma and Stress (PARTS) study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41609644/",
+      "kind": "trial"
+    },
+    {
+      "title": "A pilot study of an online group-based Internal Family Systems intervention for comorbid posttraumatic stress disorder and substance use",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11983591/",
+      "kind": "trial"
+    },
+    {
+      "title": "Exploring the evidence for Internal Family Systems therapy: a scoping review of current research, gaps, and future directions",
+      "url": "https://doi.org/10.1080/13284207.2025.2533127",
+      "kind": "review"
+    },
+    {
+      "title": "Internal Family Systems: Exploring Its Problematic Popularity",
+      "url": "https://societyforpsychotherapy.org/internal-family-systems-exploring-its-problematic-popularity/",
+      "kind": "org"
+    },
+    {
+      "title": "Internal Family Systems Model",
+      "url": "https://en.wikipedia.org/wiki/Internal_Family_Systems_Model",
+      "kind": "encyclopedia"
+    }
+  ]
+}
