@@ -7,7 +7,7 @@
     "Comprehensive distancing (its early form)"
   ],
   "origin": "Developed by psychologist Steven C. Hayes with Kirk Strosahl and Kelly Wilson, growing out of behavior analysis research on language that began in the late 1970s (first as 'comprehensive distancing'), and set out in full in their 1999 book.",
-  "summary": "ACT is a behavioral therapy that helps people stop struggling with painful thoughts and feelings and put their energy into living by what matters to them. It blends acceptance and mindfulness skills with commitment and behavior change, with the aim of building what it calls psychological flexibility. It is usually grouped with the newer 'third wave' of cognitive behavioral therapies.",
+  "summary": "ACT is a behavioral therapy that helps people stop struggling with painful thoughts and feelings and put their energy into living by what matters to them. It blends acceptance and mindfulness skills with commitment and behavior change, with the aim of building what it calls psychological flexibility. Steven Hayes describes it as part of a 'third wave' of behavioral and cognitive therapies.",
   "theoryOfChange": "ACT holds that trying to control or get rid of unwanted thoughts and feelings often backfires and makes the problem worse. Its account of language, relational frame theory, explains how words and mental rules can come to steer behavior rigidly, even when that no longer helps. Therapy builds psychological flexibility through six linked processes (acceptance, defusion, contact with the present moment, self-as-context, values and committed action), so that people can feel what they feel and still act on what they care about.",
   "whatYouDo": "Sessions mix conversation with experiential exercises, metaphors and short mindfulness practices, rather than debating whether thoughts are true. You practice noticing thoughts as just thoughts, making room for difficult feelings, and getting clear about what you value. You then commit to concrete steps in line with those values and look at what helped or got in the way.",
   "typicalDose": "No standard course: delivered one to one or in groups, from a single session up to a series of weekly sessions, and also as guided or unguided self-help. Length varies widely between trials and services, depending on the problem and setting.",
@@ -38,12 +38,12 @@
       "kind": "book"
     },
     {
-      "title": "Acceptance and Commitment Therapy, Second Edition: The Process and Practice of Mindful Change",
-      "url": "https://www.guilford.com/books/Acceptance-and-Commitment-Therapy/Hayes-Strosahl-Wilson/9781462528943/authors",
-      "kind": "book"
+      "title": "Acceptance and commitment therapy, relational frame theory, and the third wave of behavioral and cognitive therapies",
+      "url": "https://doi.org/10.1016/S0005-7894(04)80013-3",
+      "kind": "primary"
     },
     {
-      "title": "The Evolution of a Contextual Approach to Therapy: From Comprehensive Distancing to ACT",
+      "title": "The evolution of a contextual approach to therapy: From comprehensive distancing to ACT",
       "url": "https://contextualscience.org/files/Evolution+of+ACT_Zettle_2005.pdf",
       "kind": "review"
     },

@@ -8,9 +8,9 @@
     "Cognitive behaviour therapy",
     "Cognitive therapy (Aaron Beck's original name)"
   ],
-  "origin": "Grew mainly from psychiatrist Aaron T. Beck's cognitive therapy, developed at the University of Pennsylvania in the 1960s, alongside Albert Ellis's rational therapy (now called REBT) from 1955 and the behavior therapy techniques of the same period.",
+  "origin": "Grew mainly from psychiatrist Aaron T. Beck's cognitive therapy, developed at the University of Pennsylvania in the 1960s and 1970s, alongside Albert Ellis's rational therapy (now called REBT) from 1955 and the behavior therapy techniques of the same period.",
   "summary": "CBT is a structured, time-limited talking therapy built on the idea that thoughts, feelings, body sensations and actions are interconnected. It focuses on current problems rather than the past, and teaches practical skills for noticing unhelpful thinking and changing the habits that keep distress going. It is less one method than a family of closely related protocols, with versions for depression, anxiety, OCD, PTSD, eating disorders and more.",
-  "theoryOfChange": "Because thoughts, feelings, body sensations and actions affect one another, changing how you interpret a situation, or what you do in it, can change how you feel. In Beck's cognitive model, distress is fed by quick, habitual interpretations called automatic thoughts, which grow out of deeper beliefs about yourself, other people, the world and the future, and by habits such as avoidance that stop those beliefs from being tested. Checking thoughts against the evidence and trying new behaviors loosens these patterns, and regular practice between sessions is linked to better results.",
+  "theoryOfChange": "Because thoughts, feelings, body sensations and actions affect one another, changing how you interpret a situation, or what you do in it, can change how you feel. In Beck's cognitive model, distress is fed by quick, habitual interpretations called automatic thoughts, which are often linked to deeper beliefs about yourself, other people, the world and the future, and by habits such as avoidance that stop those beliefs from being tested. Checking thoughts against the evidence and trying new behaviors loosens these patterns, and regular practice between sessions is linked to better results.",
   "whatYouDo": "You and a therapist agree on specific problems and goals, then work on them in structured sessions with a shared agenda, usually weekly or every two weeks. You learn to catch the thoughts that show up in hard moments, weigh them against the evidence, and try new behaviors, such as facing feared situations step by step or planning rewarding activities. Between sessions you practice with worksheets and small real-life experiments, so that by the end you can keep using the skills on your own.",
   "typicalDose": "One-to-one sessions of 30 to 60 minutes, weekly or every two weeks, usually for about 6 to 20 sessions (NHS guidance); also offered as group courses, guided self-help workbooks and online programs.",
   "keyTechniques": [
@@ -23,7 +23,7 @@
   ],
   "evidence": {
     "level": "strong",
-    "summary": "CBT is among the most studied psychotherapies: a 2012 review of 106 meta-analyses found the strongest support for anxiety disorders, somatoform disorders (distressing physical symptoms), bulimia, anger problems and general stress, while noting that few analyses had looked at specific groups such as ethnic minorities and people on low incomes. A 2023 meta-analysis of 409 depression trials (52,702 patients) found moderate to large benefits over waitlist or usual care that were still present 6 to 12 months later, with short-term results similar to antidepressants. Its edge over other established psychotherapies was very small and mostly vanished in stricter analyses, so being the best studied does not make it the best choice for everyone."
+    "summary": "CBT is among the most studied psychotherapies: a 2012 review of 106 meta-analyses found the strongest support for anxiety disorders, somatoform disorders (such as health anxiety and body dysmorphic disorder), bulimia, anger problems and general stress, while noting that, apart from children and older adults, no meta-analyses had yet looked at specific groups such as ethnic minorities and people on low incomes. A 2023 meta-analysis of 409 depression trials (52,702 patients) found moderate to large benefits over waitlist or usual care that were still present 6 to 12 months later, with short-term results similar to antidepressants. Its edge over other psychotherapies was very small and mostly vanished in stricter analyses, so being the best studied does not make it the best choice for everyone."
   },
   "goodFitFor": "People with depression, anxiety, phobias, OCD, PTSD or eating problems who want a structured, practical, present-focused approach and can set aside time to practice between sessions.",
   "cautions": "Generally low risk, but it takes steady effort, and exposure work means deliberately facing situations that make you anxious, in manageable steps. The NHS notes that it may suit people with more complex mental health needs less well. For more severe depression, NICE lists individual CBT, alone or combined with an antidepressant, among first-line options, and anyone with suicidal thoughts should get professional help promptly rather than rely on self-help.",
@@ -31,17 +31,17 @@
   "sources": [
     {
       "title": "The Efficacy of Cognitive Behavioral Therapy: A Review of Meta-analyses",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/23459093/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3584580/",
       "kind": "review"
     },
     {
       "title": "Cognitive behavior therapy vs. control conditions, other psychotherapies, pharmacotherapies and combined treatment for depression: a comprehensive meta-analysis including 409 trials with 52,702 patients",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36640411/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9840507/",
       "kind": "review"
     },
     {
       "title": "A Brief History of Aaron T. Beck, MD, and Cognitive Behavior Therapy",
-      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9667129/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9667129/",
       "kind": "primary"
     },
     {
