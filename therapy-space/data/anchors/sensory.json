@@ -3,47 +3,67 @@
   "name": "Sensory mindfulness",
   "shortName": "Mindful senses",
   "family": "meditation",
-  "alsoKnownAs": ["mindfulness of the senses", "sensory awareness", "sense-based grounding"],
-  "origin": "It draws on Buddhist mindfulness of the senses and on Elsa Gindler's body-awareness teaching in early 1900s Berlin, which her student Charlotte Selver brought to the United States in 1938 as Sensory Awareness; Jon Kabat-Zinn's MBSR (University of Massachusetts, 1979) made sense-focused exercises such as the body scan standard in mindfulness teaching, and Shinzen Young later taught See Hear Feel, a method of noting sights, sounds and body feelings as they arise.",
-  "summary": "Sensory mindfulness means giving full, open attention to raw sensory experience: what you see, hear, touch, taste and smell, and what you feel in the body, without judging it or getting lost in thoughts about it. It is used to ground yourself, calm down and come back to the present moment, and it underlies familiar exercises such as the body scan, mindful eating and 5-4-3-2-1 grounding. Unlike vipassana, which watches sensations to gain insight into how experience works (for example, that it keeps changing), and unlike Do Nothing meditation, which drops every chosen focus, here the senses themselves are the deliberate anchor and the aim is simple contact with the present.",
-  "theoryOfChange": "Worry, rumination and self-criticism run mostly on thoughts about the past and future, so deliberately attending to what you can sense right now is thought to interrupt them. Noticing sensations with curiosity rather than judgment may train attention, lower stress arousal and build tolerance for discomfort. Concrete outside anchors, such as sounds, colors or the feel of your feet on the floor, are also widely used to help a person stay oriented during panic or dissociation.",
-  "whatYouDo": "You pick a sense and give it slow, curious attention: eating a single raisin as if for the first time, lying down and moving attention through the body (the body scan), listening to sounds come and go, or naming five things you see, four you can touch, three you hear, two you smell and one you taste. Shinzen Young's See Hear Feel method sorts each moment into seeing, hearing or feeling, often with a soft mental label for each. When the mind drifts into thought, you gently return to what you can sense now. In Charlotte Selver's Sensory Awareness classes, people explore plain acts such as standing, walking, breathing or touching an object, then share what they noticed.",
-  "typicalDose": "Grounding exercises take 1 to 5 minutes and can be used any time; formal practices such as the body scan, mindful eating or listening take about 10 to 45 minutes, ideally daily. In MBSR they are taught over an 8-week course of weekly classes of about 2.5 hours plus roughly 45 minutes of daily home practice; Sensory Awareness is taught in classes, workshops and retreats.",
+  "alsoKnownAs": ["mindfulness of the senses", "sensory awareness", "sense-based mindfulness"],
+  "origin": "It draws on Buddhist mindfulness of the six senses and on Elsa Gindler's awareness and exercise teaching in 1920s Berlin, which her student Charlotte Selver brought to the United States in 1938 as Sensory Awareness; Jon Kabat-Zinn's MBSR program, founded at the University of Massachusetts in 1979, then made sense-based exercises such as the body scan and the raisin exercise widely known.",
+  "summary": "Sensory mindfulness means giving full, open attention to raw sensory experience: what you see, hear, touch, taste and smell, and what you feel in the body, without judging it or getting lost in thoughts about it. It is used to settle and come back to the present moment through exercises such as the body scan, mindful eating and mindful listening. Unlike vipassana, where watching sensations serves insight into how experience arises, and unlike Do Nothing meditation, which sets no focus at all, here the senses themselves are the deliberate anchor and the aim is simple contact with the present.",
+  "theoryOfChange": "Worry and rumination are repetitive thinking about the future and the past, so turning attention to what you can sense right now is thought to interrupt them, and mindfulness practice has been linked with less rumination and better emotion regulation. Charlotte Selver held that well-being depends on how far we find new confidence in natural, organic processes, which her work approached through direct experience of the senses. In mental health care, sensory approaches are used to help people bring physical and emotional arousal back under control, and people using them report less distress.",
+  "whatYouDo": "You pick a sense and give it slow, curious attention: eating a single raisin with full attention, sitting or lying while moving attention through the body from the toes to the top of the head (the body scan), or listening to sounds as they come and go. When the mind wanders into thought, you notice this without judging it and return to what you can sense now. Shinzen Young, founder of the Unified Mindfulness program, teaches a related method called See Hear Feel, built around noticing what you see, hear and feel. Charlotte Selver's Sensory Awareness centers on consciously sensing the body and following physical sensations.",
+  "typicalDose": "In MBSR, these exercises are taught over an 8-week course of weekly group classes of about 2.5 hours, plus a one-day retreat and about 45 minutes of daily home practice; MBSR programs in trials typically gave 20 to 27.5 hours of training, and other mindfulness programs about half that. Single exercises can also be practiced on their own at any time.",
   "keyTechniques": [
     "Body scan",
     "Mindful eating (the raisin exercise)",
-    "Mindful listening and seeing",
-    "5-4-3-2-1 grounding",
-    "See Hear Feel noting (Shinzen Young)",
-    "Sensory Awareness explorations (Charlotte Selver)"
+    "Mindful listening to sounds",
+    "See Hear Feel (Shinzen Young)",
+    "Sensory Awareness (Charlotte Selver)",
+    "Sensory approaches in mental health care"
   ],
   "evidence": {
     "level": "emerging",
-    "summary": "Direct research on sense-focused practice on its own is thin. Its main exercises sit inside programs such as MBSR and MBCT, which many randomized trials support as whole packages, but those trials cannot show how much the sensory exercises themselves add. Studies of single exercises such as the body scan are mostly small, sensory approaches used in mental health wards (sensory modulation) have mainly been tested in small or uncontrolled studies, and Sensory Awareness and 5-4-3-2-1 grounding rest mainly on practitioner experience."
+    "summary": "Research on sense-focused practice on its own is thin and mixed. Its exercises sit inside mindfulness programs such as MBSR, and a meta-analysis of 47 trials found moderate evidence that such programs ease anxiety, depression and pain by small to moderate amounts (Goyal and colleagues, 2014), but whole-program trials cannot show what the sensory exercises add. A meta-analysis of 14 randomized trials of the body scan on its own found only a small effect on mindfulness, low study quality and no clear health benefit (Gan and colleagues, 2022), while a scoping review of 17 studies of sensory approaches in mental health settings found that people reported less distress, though the studies had methodological limits (Scanlan and Novak, 2015)."
   },
-  "goodFitFor": "People who want a simple, portable way to calm down and return to the present, especially those caught in worry or rumination, or who find watching the breath or their thoughts hard. It is also a gentle first step into mindfulness.",
-  "cautions": "Turning attention to inner body sensations can sometimes stir up panic, dissociation or traumatic memories, so trauma survivors may do better with eyes open, outside anchors such as sounds or objects, short sessions and full permission to stop. People with sensory sensitivities may need gentler, shorter versions. It is a self-care skill, not a stand-alone treatment for severe anxiety, PTSD or psychosis, which call for a professional.",
-  "namingNote": "The request said 'mindful sensory mindfulness'. It is defined here as mindfulness that uses raw sensory experience (sight, sound, touch, taste, smell and body sensation) as its deliberate anchor, drawing on Charlotte Selver's Sensory Awareness, the MBSR body scan and raisin exercise, Shinzen Young's See Hear Feel and 5-4-3-2-1 grounding. It is kept apart from vipassana (insight practice) and Do Nothing meditation (no chosen object), which are separate points. Sensory modulation, an occupational therapy approach in mental health care that uses calming sensory input such as weighted blankets, textures or scents, is a close clinical cousin and is mentioned but not the core of this point.",
+  "goodFitFor": "People who want a simple, portable way to settle and return to the present, especially those caught in worry or rumination, or who find watching the breath or their thoughts hard. It is also a gentle first step into mindfulness.",
+  "cautions": "Meditation can sometimes bring up difficult experiences: in a study of experienced Western Buddhist meditators, people described episodes of fear or panic, re-living traumatic memories and heightened sensitivity to sights and sounds, ranging from brief and mild to severe and lasting. Start gently, keep the freedom to stop, and seek a trained teacher or therapist if this happens, especially with a history of trauma. It is a self-care skill, not a stand-alone treatment for severe anxiety, PTSD or psychosis.",
+  "namingNote": "The request said 'mindful sensory mindfulness'. It is defined here as mindfulness that uses raw sensory experience (sight, sound, touch, taste, smell and body sensation) as its deliberate anchor, drawing on the MBSR body scan and raisin exercise, mindful listening, Charlotte Selver's Sensory Awareness and Shinzen Young's See Hear Feel. It is kept apart from vipassana (insight practice) and Do Nothing meditation (no chosen object), which are separate points, even though the MBSR body scan was adapted from a body-sweeping practice taught in the vipassana retreats of S.N. Goenka. Sensory approaches used in mental health care to help people regulate arousal are a close clinical cousin and are mentioned, but they are not the core of this point.",
   "sources": [
     {
-      "title": "Sensory Awareness and Our Attitude Toward Life",
-      "url": "https://ibpj.org/issues/usabpj-articles/(3)_Selver__C._Sensory_Awareness_and_Our_Attitude_Toward_Life._USABPJ_3.1__2004.pdf",
-      "kind": "primary"
+      "title": "Mindfulness",
+      "url": "https://en.wikipedia.org/wiki/Mindfulness",
+      "kind": "review"
     },
     {
-      "title": "On Being in Touch with Oneself",
-      "url": "https://ibpj.org/issues/usabpj-articles/(1)_Selver__C._On_Being_in_Touch_with_Oneself._USABPJ_3.1__2004.pdf",
-      "kind": "primary"
-    },
-    {
-      "title": "The Influence of Elsa Gindler",
-      "url": "https://ibpj.org/issues/usabpj-articles/(6)_Weaver__J._O._The_Influence_of_Elsa_Gindler._USABPJ_3.1__2004.pdf",
+      "title": "Mindfulness-based stress reduction",
+      "url": "https://en.wikipedia.org/wiki/Mindfulness-based_stress_reduction",
       "kind": "review"
     },
     {
       "title": "Charlotte Selver",
       "url": "https://en.wikipedia.org/wiki/Charlotte_Selver",
       "kind": "review"
+    },
+    {
+      "title": "Shinzen Young",
+      "url": "https://en.wikipedia.org/wiki/Shinzen_Young",
+      "kind": "review"
+    },
+    {
+      "title": "Meditation Programs for Psychological Stress and Well-being: A Systematic Review and Meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4142584/",
+      "kind": "review"
+    },
+    {
+      "title": "The effects of body scan meditation: A systematic review and meta-analysis",
+      "url": "https://doi.org/10.1111/aphw.12366",
+      "kind": "review"
+    },
+    {
+      "title": "Sensory approaches in mental health: A scoping review",
+      "url": "https://doi.org/10.1111/1440-1630.12224",
+      "kind": "review"
+    },
+    {
+      "title": "The varieties of contemplative experience: A mixed-methods study of meditation-related challenges in Western Buddhists",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5443484/",
+      "kind": "primary"
     }
   ]
 }
