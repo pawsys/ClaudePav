@@ -1,0 +1,73 @@
+{
+  "id": "qigong",
+  "name": "Qigong",
+  "shortName": "Qigong",
+  "family": "movement",
+  "alsoKnownAs": [
+    "qi gong",
+    "chi kung",
+    "chi gung"
+  ],
+  "origin": "An ancient Chinese practice, older than tai chi and one of the historical roots of traditional Chinese medicine, that spread widely in China from the early 1980s and then around the world.",
+  "summary": "Qigong is a family of Chinese mind-body exercises that coordinate posture or slow movement, breathing and a calm, focused mind, which Chinese medicine calls the three regulations of body, breath and mind. Moving forms include Baduanjin (Eight Brocades, eight gentle movements with stretching and controlled breathing), Yi Jin Jing (Muscle-Tendon Change Classic), Wu Qin Xi (Five Animal Exercise) and walking Guolin qigong, while static forms are still, meditative standing or sitting postures. Tai chi is a close relative, but it is usually a long, complex choreographed sequence, whereas health qigong is simple, repetitive and quick to learn.",
+  "theoryOfChange": "Traditional Chinese medicine explains qigong as cultivating and balancing qi, a vital life energy. In modern terms it combines gentle exercise with slow breathing and meditative attention, which researchers think may shift the nervous system toward rest and recovery: some trials report lower heart rate and blood pressure, and one small trial found lower adrenaline and noradrenaline than in a wait-list group. Because it blends exercise with relaxation, it may also help mood and stress through the same routes as other exercise and relaxation practices, but how it works is not known.",
+  "whatYouDo": "Most sessions follow a set sequence of simple, repeated movements, such as the eight movements of Baduanjin, done slowly and in time with the breath while attention rests on the body. Static forms instead hold still standing or seated postures with breath awareness, and some styles add gentle shaking or slow walking. It is usually learned in a group class with a trained instructor and then practiced at home, standing or seated.",
+  "typicalDose": "Sessions of about 30 to 60 minutes, two to three or more times a week, and trials usually ran for about three months or longer. A meta-analysis on major depression suggested 45 to 60 minutes of moving qigong two to three times a week for 12 weeks, and a Baduanjin meta-analysis linked more total hours of practice with larger improvements.",
+  "keyTechniques": [
+    "Slow movement coordinated with breathing",
+    "Deep, regulated breathing",
+    "Calm, focused attention",
+    "Still standing or seated postures",
+    "Set forms such as Baduanjin",
+    "Gentle shaking or walking qigong"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "Meta-analyses of small randomized trials report meaningful drops in depression, for example across 7 trials in adults with major depression (Guo and colleagues, 2019), and less depression and anxiety with Baduanjin in people with physical or mental illness (Zou and colleagues, 2018), though an earlier review found only small effects and poor methods (Wang and colleagues, 2013). For blood pressure, a review of 20 trials in 2,349 people with hypertension found large drops compared with no treatment but smaller ones than regular exercise for systolic pressure (Xiong and colleagues, 2015), while a Cochrane review on preventing heart disease saw lower blood pressure in only 3 of 6 trials and had very low confidence in the results because most trials were at high risk of bias (Hartley and colleagues, 2015). An overview of systematic reviews concluded that the evidence rests mostly on poor quality research (Lee, Oh and Ernst, 2011). Trials are small, participants know which group they are in and qigong is often added to other treatment, so benefits look likely but their size is uncertain."
+  },
+  "goodFitFor": "People who want gentle, low-impact exercise that also calms the mind, including older adults, beginners and people living with chronic illness or limited fitness. It suits those who like a simple routine to repeat alone or in a group, and people who would rather meditate while moving than sit still.",
+  "cautions": "Qigong is generally safe: few trials tracked side effects, but those that did reported no serious ones, and the main risks are those of gentle exercise, so adapt movements to your body and keep up any prescribed treatment. Inappropriate practice has been linked to qigong deviation, unusual mental and bodily reactions that can include psychosis, often in people who were already vulnerable (a causal link is hard to prove), so anyone with a history of psychosis or another serious mental illness should get medical advice first and learn from an experienced teacher. Be cautious about claims that qigong cures disease, which the research does not support.",
+  "namingNote": "Qigong (also written qi gong or chi kung) is an umbrella term for thousands of styles; this entry covers internal, health-oriented qigong that people practice themselves, with Baduanjin as a widely studied example. Tai chi is closely related, and some reviews count it as a moving form of qigong, but it is treated as a separate practice here. External qigong, in which a practitioner claims to send healing qi into another person, is not included.",
+  "sources": [
+    {
+      "title": "A Comprehensive Review of Health Benefits of Qigong and Tai Chi",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3085832/",
+      "kind": "review"
+    },
+    {
+      "title": "Qigong for healthcare: an overview of systematic reviews",
+      "url": "https://doi.org/10.1258/shorts.2010.010091",
+      "kind": "review"
+    },
+    {
+      "title": "Qigong-Based Therapy for Treating Adults with Major Depressive Disorder: A Meta-Analysis of Randomized Controlled Trials",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6427394/",
+      "kind": "review"
+    },
+    {
+      "title": "Mindfulness-Based Baduanjin Exercise for Depression and Anxiety in People with Physical or Mental Illnesses: A Systematic Review and Meta-Analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5858390/",
+      "kind": "review"
+    },
+    {
+      "title": "The Effects of Qigong on Anxiety, Depression, and Psychological Well-Being: A Systematic Review and Meta-Analysis",
+      "url": "https://doi.org/10.1155/2013/152738",
+      "kind": "review"
+    },
+    {
+      "title": "Qigong for Hypertension: A Systematic Review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4602820/",
+      "kind": "review"
+    },
+    {
+      "title": "Qigong for the primary prevention of cardiovascular disease",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6956616/",
+      "kind": "review"
+    },
+    {
+      "title": "Qigong-Induced Mental Disorders: A Review",
+      "url": "https://doi.org/10.1046/j.1440-1614.1999.00536.x",
+      "kind": "review"
+    }
+  ]
+}
