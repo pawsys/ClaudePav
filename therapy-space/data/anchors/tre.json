@@ -1,0 +1,76 @@
+{
+  "id": "tre",
+  "name": "Tension & Trauma Releasing Exercises (TRE)",
+  "shortName": "TRE",
+  "family": "somatic",
+  "alsoKnownAs": [
+    "TRE",
+    "Tension and Trauma Releasing Exercises",
+    "Trauma Releasing Exercises",
+    "Trauma Release Exercises",
+    "trauma shaking",
+    "neurogenic tremoring"
+  ],
+  "origin": "Developed in the early 2000s by David Berceli, a trauma and conflict-resolution specialist with a PhD in social work, out of his work with war-affected communities while living in Africa and the Middle East.",
+  "summary": "TRE is a sequence of seven simple exercises that stretch and tire the muscles of the legs, hips and core until the body begins to shake or tremble on its own. The person then lies down and lets these mild tremors run, staying in charge of them and stopping whenever they choose. It is taught as a body-based self-help tool for stress, tension and trauma that does not require talking about what happened.",
+  "theoryOfChange": "Berceli proposes that shaking is a natural reflex for discharging stress, and that deliberately triggering these neurogenic tremors releases deep muscle tension, especially around the psoas (a deep hip muscle), and helps calm an over-activated nervous system. On this view the body can settle a stuck stress response without the person needing to put it into words. Critics, including writers at Science-Based Medicine, argue that the tremors may simply be the ordinary shaking of tired muscles, and this mechanism has not been demonstrated.",
+  "whatYouDo": "You do seven standing and floor exercises, including a wall sit held for a few minutes, that progressively stretch and tire the legs and hips. You then lie on your back with bent knees and let the tremors that start in the legs spread through the body for as long as feels comfortable, making them gentler by shifting your legs. You can stop at any time by straightening your legs or rolling onto your side, and providers recommend learning the method with a certified TRE provider before practicing alone.",
+  "typicalDose": "Learned from a certified TRE provider in private sessions or groups, then practiced at home as self-help, starting with short periods of tremoring and building up gradually. Research programs ran 6 to 10 weeks with instructor-led sessions (weekly in one trial).",
+  "keyTechniques": [
+    "Seven stretching and tiring exercises",
+    "Wall sit to tire the thigh muscles",
+    "Lying down to let tremors run",
+    "Adjusting tremor strength with leg position",
+    "Stopping by straightening the legs",
+    "Gradual, self-paced practice"
+  ],
+  "evidence": {
+    "level": "emerging",
+    "summary": "Evidence comes from a handful of small studies. Uncontrolled pilots with 21 caregivers and staff at a South African children's village (2014) and with 9 people with multiple sclerosis (2021) reported better quality of life and less fatigue and stress, and a 2025 randomized trial in 28 people with multiple sclerosis described promising effects on fatigue, spasticity and pain. A 2018 randomized trial for restless legs syndrome (18 people) found no difference between TRE and control discussion groups, which both improved. A 2026 scoping review of 22 studies found the designs were not consistently rigorous, and no large trial has shown that TRE treats PTSD."
+  },
+  "goodFitFor": "People who want a simple, body-based way to ease stress and muscle tension that they can learn once and then do on their own, including people who find it hard to talk about difficult experiences. It works best alongside other care rather than in place of it.",
+  "cautions": "Strong emotions or memories can surface, so people with severe or complex trauma, dissociation, psychosis, bipolar disorder or another serious mental health condition should learn it only with a clinically trained TRE provider and alongside their own treatment. Check with a doctor first if you have epilepsy or seizures, are pregnant, or have recent surgery, fractures or injuries, and pause if you feel overwhelmed, dissociated, in pain or panicky. TRE is not a substitute for medical care or trauma-focused therapy.",
+  "namingNote": "The trauma shaking practice is TRE. Its founder's current official name is Tension & Trauma Releasing Exercises (TRE, a trademark held by Berceli); his 2005 book called it Trauma Releasing Exercises, many providers say Trauma Release Exercises, and the 2014 caregiver study used the research term self-induced unclassified therapeutic tremors. This entry covers Berceli's method only, not shaking or tremor practices from other traditions.",
+  "sources": [
+    {
+      "title": "What Is TRE™?",
+      "url": "https://treglobal.org/about/",
+      "kind": "org"
+    },
+    {
+      "title": "About Dr. Berceli",
+      "url": "https://treglobal.org/about-dr-david-berceli/",
+      "kind": "org"
+    },
+    {
+      "title": "Effects of Self-induced Unclassified Therapeutic Tremors on Quality of Life Among Non-professional Caregivers: A Pilot Study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4268601",
+      "kind": "trial"
+    },
+    {
+      "title": "Tension and trauma releasing exercises for people with multiple sclerosis: An exploratory pilot study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34522632/",
+      "kind": "trial"
+    },
+    {
+      "title": "Tension and Trauma Releasing Exercises for People with Multiple Sclerosis: A Randomized Controlled Trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40064004/",
+      "kind": "trial"
+    },
+    {
+      "title": "Novel Exercises for Restless Legs Syndrome: A Randomized, Controlled Trial",
+      "url": "https://www.jabfm.org/content/31/5/783",
+      "kind": "trial"
+    },
+    {
+      "title": "Trauma Releasing Exercises as a Treatment Technique: A Scoping Review",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/07380577.2026.2726931",
+      "kind": "review"
+    },
+    {
+      "title": "Tension and Trauma Releasing Exercises (TRE)",
+      "url": "https://sciencebasedmedicine.org/tension-and-trauma-releasing-exercises-tre/",
+      "kind": "review"
+    }
+  ]
+}

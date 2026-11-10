@@ -1,0 +1,70 @@
+{
+  "id": "aletheia",
+  "name": "Aletheia Coaching",
+  "shortName": "Aletheia",
+  "family": "coaching",
+  "alsoKnownAs": [
+    "Aletheia",
+    "Aletheia Method",
+    "Aletheia Unfolding",
+    "Integral Unfoldment",
+    "unfoldment coaching"
+  ],
+  "origin": "Created by US coach Steve March, who began developing it in 2012 and founded the Aletheia coach training school in 2013, after years teaching Integral Coaching at New Ventures West and training in somatic coaching at the Strozzi Institute.",
+  "summary": "Aletheia Coaching is a presence-based coaching method for personal and adult development that aims at unfoldment rather than self-improvement: instead of trying to fix a person, the coach helps what they already feel and are come fully into awareness. One conversation can move through parts work (inspired by Internal Family Systems), felt-sense work in the body (inspired by Gendlin's Focusing), presence work and nondual awareness, and the method also borrows from the Enneagram and from Buddhist teachings on emptiness and nonduality. It calls itself trauma-sensitive coaching, not therapy.",
+  "theoryOfChange": "The method starts from the view that a person is already whole, the way an acorn does not need improving to become an oak, and that feeling stuck comes from protective parts and old emotional learnings that soften when they are met with slow, steady, loving attention. March ties this to memory reconsolidation, a brain process described by Bruce Ecker and Laurel Hulley (the creators of Coherence Therapy) and Robin Ticic, in which an old emotional learning is reactivated, meets a contradicting experience and is updated, so its emotional meaning changes while the memory of what happened stays the same. The work is meant to deepen step by step, from parts to felt bodily process to presence to nondual awareness, so that inner conflicts resolve without effortful self-improvement. These are the founder's explanations and have not been tested in controlled research.",
+  "whatYouDo": "Sessions are one-to-one conversations in which the client names something they feel stuck on, and the coach slows things down, asks what is felt in the body and mirrors back not only the words but how they are said (tracking and contacting). The client practices speaking from a feeling rather than about it (feeling-saying), gets to know reactive parts, and may settle into calm, open states the method calls qualities of presence, such as peace, strength, trust or joy. One practitioner describes the process as feeling like meditating together.",
+  "typicalDose": "One-to-one sessions of about 50 to 75 minutes, weekly or every two weeks, often for at least three months (for example 6 to 12 sessions over 3 to 6 months). Becoming an Aletheia coach takes a multi-level online training that the school describes as a nearly four-year path.",
+  "keyTechniques": [
+    "Parts work, informed by IFS",
+    "Process work with the bodily felt sense",
+    "Presence work with qualities of presence",
+    "Nondual work",
+    "Feeling-saying",
+    "Tracking and contacting"
+  ],
+  "evidence": {
+    "level": "limited",
+    "summary": "There are no published controlled trials, outcome studies or independent evaluations of Aletheia Coaching; the available material is the founder's own articles, including an annotated session transcript, plus practitioner accounts and testimonials. It draws on methods that have been studied separately, such as IFS, Focusing and mindfulness, but no study has tested this combination. A meta-analysis of coaching in organizations (Theeboom and colleagues, 2014, 18 studies) found positive effects on well-being, coping and goal-directed self-regulation, but that says nothing specific about this method."
+  },
+  "goodFitFor": "People who are not in crisis and want depth-oriented personal growth, such as working with inner conflict, harsh self-criticism or a sense of being stuck, in a slow, contemplative and body-aware style. It suits people already drawn to IFS, Focusing or meditation who prefer a coaching frame to a clinical one.",
+  "cautions": "This is coaching, not therapy, and Aletheia coaches are trained as coaches rather than necessarily as licensed clinicians; the school itself says coaches must recognize trauma and know when to refer a client to trauma therapy. People with severe depression, PTSD, psychosis, suicidal thoughts or another serious mental health condition should work with a qualified mental health professional. Strong feelings and deep meditative states can come up, so choose a well-trained coach and go at your own pace.",
+  "namingNote": "Aletheia coaching here means Aletheia Coaching, the unfoldment method created by Steve March and taught by his Aletheia school (integralunfoldment.com). It was chosen because it is the only coaching method of that name the research found, and it fits this map, since it openly blends IFS, Focusing, presence and meditation work. Aletheia is a Greek word for truth, and the school speaks of unconcealing a person's innate wholeness. Unrelated businesses use the name for general life or executive coaching (for example Aletheia Life Coaching, Aletheia Discoveries and Aletheia Executive Coaching), and the spelling Alethia mostly leads to individual coaches; this entry describes March's method only.",
+  "sources": [
+    {
+      "title": "Who We Are - Aletheia Coach",
+      "url": "https://integralunfoldment.com/who-we-are",
+      "kind": "org"
+    },
+    {
+      "title": "The Neuroscience of Enduring Transformation",
+      "url": "https://libraryofprofessionalcoaching.com/research/brain-behavior/the-neuroscience-of-enduring-transformation/",
+      "kind": "primary"
+    },
+    {
+      "title": "The Unfolding of Aletheia Coaching",
+      "url": "https://www.coachesrising.com/wp-content/uploads/2018/09/The-Unfolding-of-Aletheia-Coaching-2021.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Level 1: Foundations of Unfoldment",
+      "url": "https://steve-march.squarespace.com/level-1",
+      "kind": "org"
+    },
+    {
+      "title": "Trauma Sensitive Coaching",
+      "url": "https://steve-march.squarespace.com/trauma-sensitive-coaching",
+      "kind": "org"
+    },
+    {
+      "title": "Aletheia Coaching: An Evolution in Enneagram-based Coaching",
+      "url": "https://steve-march.squarespace.com/enneagram-coaching",
+      "kind": "primary"
+    },
+    {
+      "title": "Does coaching work? A meta-analysis on the effects of coaching on individual level outcomes in an organizational context",
+      "url": "https://dare.uva.nl/record/1/403451",
+      "kind": "review"
+    }
+  ]
+}
