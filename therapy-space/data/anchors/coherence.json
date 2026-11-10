@@ -22,7 +22,7 @@
   ],
   "evidence": {
     "level": "limited",
-    "summary": "Support comes mainly from case reports, many by the developers, and from theory tying the method to memory reconsolidation research. The main controlled study, from 2011, compared brief Coherence Therapy (18 people) with cognitive behavioral self-help reading; its abstract reports a larger drop in harmful, self-critical perfectionism, while a later meta-analysis noted only a small change in procrastination and no inactive comparison group. A later registered trial for procrastination was stopped early; its registry entry says the therapy could not be delivered in a reliable and valid way. The developers' claim that the method permanently erases symptom-producing emotional learning has not been tested in controlled trials of the therapy itself."
+    "summary": "Support comes mainly from case reports, many by the developers, and from theory tying the method to memory reconsolidation research. The only completed outcome study found, from 2011, looked at procrastination and perfectionism; a later meta-analysis describes it as having 18 participants and no inactive comparison group, and as finding only a small change in procrastination. A later registered trial for procrastination was stopped early; its registry entry says the therapy could not be delivered in a reliable and valid way. The developers' claim that the method permanently erases symptom-producing emotional learning has not been tested in controlled trials of the therapy itself."
   },
   "goodFitFor": "People with a specific, persistent symptom or pattern, such as anxiety, low mood, self-criticism or a compulsive habit, who want to understand why it keeps happening and are open to emotionally vivid work in session.",
   "cautions": "Uncovering hidden emotional learnings can be intense, so people with severe trauma, dissociation or a current crisis should work with a licensed clinician experienced in trauma care. Its developers say it does not apply to symptoms that are not driven by emotional learning, such as depression caused by an underactive thyroid, so medical causes need ruling out. Because controlled evidence is thin, it should not replace well-tested treatments for conditions such as major depression or PTSD without professional advice.",
@@ -66,7 +66,7 @@
     {
       "title": "Coherence therapy",
       "url": "https://en.wikipedia.org/wiki/Coherence_therapy",
-      "kind": "review"
+      "kind": "encyclopedia"
     }
   ]
 }
