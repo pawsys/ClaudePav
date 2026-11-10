@@ -3,7 +3,7 @@
 
 Usage (from the repository root):
   python3 -B therapy-space/scripts/build_points.py [--anchors DIR] [--dimensions FILE]
-      [--scores FILE] [--out FILE] [--allow-missing-anchors]
+      [--scores FILE] [--out FILE]
 
 Every pair of established practices (a before b in canonical order) defines one line,
 210 lines in all. With t measured along the line (A at t = 0, B at t = 1), each line
@@ -23,8 +23,8 @@ the same axes, so the five points of every line stay on one straight line in the
 and stay evenly spaced. Each axis has a fixed sign (see SIGN_REFERENCE), so reruns
 give the same picture, and the same inputs always give the same output file.
 
---allow-missing-anchors lets the build run before every anchor file has landed: a
-missing anchor listed in PROVISIONAL_META gets that name, shortName and family.
+The name, shortName and family of each established point come from its anchor file, so
+all 21 anchor files must be present.
 """
 import argparse
 import json
@@ -43,14 +43,6 @@ CANONICAL_IDS = [
     "metta-jhana", "vipassana", "hiit", "team-sport", "endurance", "strength", "animal",
     "qigong", "socializing", "nature", "sensory", "music",
 ]
-
-# Used only with --allow-missing-anchors, for the anchors still being researched.
-# Once their files land, the name, shortName and family come from the files.
-PROVISIONAL_META = {
-    "focusing": {"name": "Gendlin's Focusing", "shortName": "Focusing", "family": "somatic"},
-    "qigong": {"name": "Qigong", "shortName": "Qigong", "family": "movement"},
-    "nature": {"name": "Hiking and nature walks", "shortName": "Nature walks", "family": "nature"},
-}
 
 # Points added on every line: (index on the line, t, position name).
 LINE_POINTS = [
@@ -82,27 +74,22 @@ def load_json(path):
         raise BuildError(f"{path} is not valid JSON: {exc}") from None
 
 
-def load_anchor_meta(anchors_dir, allow_missing=False):
-    """Return ({id: {name, shortName, family}}, [ids that used provisional metadata])."""
+def load_anchor_meta(anchors_dir):
+    """Return {id: {name, shortName, family}} read from the 21 anchor files."""
     anchors_dir = Path(anchors_dir)
-    meta, provisional = {}, []
+    meta = {}
     for aid in CANONICAL_IDS:
         path = anchors_dir / f"{aid}.json"
-        if path.is_file():
-            doc = load_json(path)
-            if not isinstance(doc, dict) or doc.get("id") != aid:
-                raise BuildError(f"{path} does not hold an anchor with id {aid!r}")
-            try:
-                meta[aid] = {key: doc[key] for key in ("name", "shortName", "family")}
-            except KeyError as exc:
-                raise BuildError(f"{path} has no {exc.args[0]!r} key") from None
-        elif allow_missing and aid in PROVISIONAL_META:
-            meta[aid] = dict(PROVISIONAL_META[aid])
-            provisional.append(aid)
-        else:
-            hint = " (or pass --allow-missing-anchors)" if aid in PROVISIONAL_META else ""
-            raise BuildError(f"missing anchor file {path}{hint}")
-    return meta, provisional
+        if not path.is_file():
+            raise BuildError(f"missing anchor file {path}")
+        doc = load_json(path)
+        if not isinstance(doc, dict) or doc.get("id") != aid:
+            raise BuildError(f"{path} does not hold an anchor with id {aid!r}")
+        try:
+            meta[aid] = {key: doc[key] for key in ("name", "shortName", "family")}
+        except KeyError as exc:
+            raise BuildError(f"{path} has no {exc.args[0]!r} key") from None
+    return meta
 
 
 def dimension_ids(dimensions_doc):
@@ -256,14 +243,12 @@ def main(argv=None):
     parser.add_argument("--dimensions", type=Path, default=DATA_DIR / "dimensions.json")
     parser.add_argument("--scores", type=Path, default=DATA_DIR / "scores.json")
     parser.add_argument("--out", type=Path, default=DATA_DIR / "points.json")
-    parser.add_argument("--allow-missing-anchors", action="store_true",
-                        help="use provisional metadata for anchors still being researched")
     args = parser.parse_args(argv)
 
     try:
         dimensions_doc = load_json(args.dimensions)
         scores_doc = load_json(args.scores)
-        meta, provisional = load_anchor_meta(args.anchors, args.allow_missing_anchors)
+        meta = load_anchor_meta(args.anchors)
         doc = build(dimensions_doc, scores_doc, meta)
         text = dumps_points(doc)
     except BuildError as exc:
@@ -282,8 +267,6 @@ def main(argv=None):
         weight = proj["axes"][k]["loadings"][ref]
         note = "  WARNING: small, so the axis sign may be unstable" if abs(weight) < 0.15 else ""
         print(f"  axis {k + 1} sign reference {ref}: loading {weight:+.3f}{note}")
-    if provisional:
-        print(f"  provisional metadata (anchor file missing): {', '.join(provisional)}")
     return 0
 
 

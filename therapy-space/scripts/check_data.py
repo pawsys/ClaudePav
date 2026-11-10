@@ -2,13 +2,15 @@
 """Validate the therapy-space map data and print a quality report.
 
 Usage (from the repository root):
-  python3 -B therapy-space/scripts/check_data.py [--anchors DIR] [--allow-missing-anchors]
-      [--table] [--strict-quality] [--dimensions FILE] [--scores FILE] [--points FILE]
+  python3 -B therapy-space/scripts/check_data.py [--anchors DIR] [--table] [--strict-quality]
+      [--dimensions FILE] [--scores FILE] [--points FILE]
 (the paths default to therapy-space/data/anchors, dimensions.json, scores.json, points.json)
 
 What it checks:
-  anchors          each file: exact contract keys and types, enum values, id equal to the
-                   file name and one of the 21 canonical ids, no em or en dash in any string
+  anchors          all 21 files present; each file: exact contract keys and types, enum
+                   values, id equal to the file name and one of the 21 canonical ids, no em
+                   or en dash in any string, and every source on en.wikipedia.org (or its
+                   mobile host en.m.wikipedia.org) has kind "encyclopedia"
   dimensions.json  8 or 9 dimensions with every field, field lengths, example ids that
                    really score low (3 or less) and high (7 or more)
   scores.json      all 21 anchors x every dimension, scores 0 to 10 with at most one
@@ -24,8 +26,6 @@ dimension pairs (Pearson r) and the 10 closest anchor pairs, against these targe
 of at least 6, no |r| above 0.8, every two anchors at least 2.0 apart. Missed targets are
 reported but only fail the run with --strict-quality.
 
---allow-missing-anchors accepts the anchors still being researched (focusing, qigong,
-nature) as missing, with a warning, and expects their provisional metadata in points.json.
 --table prints a Markdown table of all scores.
 
 Exit code 0 when every check passes, 1 on any failure.
@@ -37,6 +37,7 @@ import math
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import numpy as np
 
@@ -51,7 +52,9 @@ ANCHOR_STRING_KEYS = ["id", "name", "shortName", "family", "origin", "summary", 
 FAMILIES = {"psychotherapy", "coaching", "somatic", "meditation", "movement", "relational",
             "nature", "arts", "animal"}
 EVIDENCE_LEVELS = {"strong", "moderate", "emerging", "limited"}
-SOURCE_KINDS = {"primary", "review", "trial", "book", "org"}
+SOURCE_KINDS = {"primary", "review", "trial", "book", "org", "encyclopedia"}
+# Sources on these hosts must have kind "encyclopedia" (en.m. is the mobile host of the same site).
+WIKIPEDIA_HOSTS = {"en.wikipedia.org", "en.m.wikipedia.org"}
 
 DIMENSION_KEYS = ["id", "name", "question", "lowLabel", "highLabel", "lowMeans", "highMeans",
                   "description", "whyItMatters", "examplesLow", "examplesHigh"]
@@ -66,6 +69,8 @@ PROJECTION_OPTIONAL = {"center", "signConvention"}
 POSITION_OF_INDEX = {1: ("beyond-a", -0.5), 3: ("midpoint", 0.5), 5: ("beyond-b", 1.5)}
 
 LINE_TOLERANCE = 1e-9
+# xy recomputed from the stored center and loadings (12 decimals) agrees to about 1e-11.
+PROJECTION_TOLERANCE = 1e-8
 MAX_SHOWN_PER_SECTION = 25
 TARGET_SPREAD = 6.0
 TARGET_MAX_R = 0.8
@@ -218,17 +223,23 @@ def check_anchor(doc, aid, rep):
                 if not all(nonempty_str(src[k]) for k in ("title", "url", "kind")):
                     rep.fail(sec, f"{where}: sources[{n}] has an empty or non-string field")
                     continue
-                if src["kind"] not in SOURCE_KINDS:
+                kind_ok = src["kind"] in SOURCE_KINDS
+                if not kind_ok:
                     rep.fail(sec, f"{where}: sources[{n}].kind {src['kind']!r} is not one of "
                                   f"{sorted(SOURCE_KINDS)}")
                 if not src["url"].startswith(("https://", "http://")):
                     rep.fail(sec, f"{where}: sources[{n}].url is not an http(s) URL")
+                    continue
+                host = urlsplit(src["url"]).hostname
+                if kind_ok and host in WIKIPEDIA_HOSTS and src["kind"] != "encyclopedia":
+                    rep.fail(sec, f"{where}: sources[{n}] ({src['title']!r}) is on {host} but has "
+                                  f"kind {src['kind']!r}; Wikipedia sources need kind 'encyclopedia'")
     for path, label in find_dashes(doc):
         rep.fail(sec, f"{where}: {label} in {path}")
 
 
-def check_anchors(anchors_dir, allow_missing, rep):
-    """Return {id: anchor doc} for the anchor files found."""
+def check_anchors(anchors_dir, rep):
+    """Return {id: anchor doc} for the anchor files found; every canonical id must have one."""
     found = {}
     if not anchors_dir.is_dir():
         rep.fail("anchors", f"anchors folder not found: {anchors_dir}")
@@ -243,29 +254,19 @@ def check_anchors(anchors_dir, allow_missing, rep):
         check_anchor(doc, path.stem, rep)
         found[path.stem] = doc
     for aid in bp.CANONICAL_IDS:
-        if aid in found:
-            continue
-        if allow_missing and aid in bp.PROVISIONAL_META:
-            rep.warn("anchors", f"{aid}.json is missing (allowed: still being researched, "
-                                f"provisional metadata used)")
-        else:
+        if aid not in found:
             rep.fail("anchors", f"{aid}.json is missing")
     return found
 
 
 def anchor_meta(found):
-    """Metadata as build_points would use it, or None when something is unusable."""
+    """Metadata as build_points would use it, or None when an anchor is missing or unusable."""
     meta = {}
     for aid in bp.CANONICAL_IDS:
         doc = found.get(aid)
-        if doc is None:
-            if aid not in bp.PROVISIONAL_META:
-                return None
-            meta[aid] = dict(bp.PROVISIONAL_META[aid])
-        elif all(isinstance(doc.get(k), str) for k in ("name", "shortName", "family")):
-            meta[aid] = {k: doc[k] for k in ("name", "shortName", "family")}
-        else:
+        if doc is None or not all(isinstance(doc.get(k), str) for k in ("name", "shortName", "family")):
             return None
+        meta[aid] = {k: doc[k] for k in ("name", "shortName", "family")}
     return meta
 
 
@@ -486,7 +487,7 @@ def check_points(doc, dims, table, meta, rep):
         if projection is not None:
             center, w = projection
             want_xy = (np.array([table[aid][d] for d in dim_ids]) - center) @ w.T
-            if np.abs(want_xy - est_xy[aid]).max() > 1e-6:
+            if np.abs(want_xy - est_xy[aid]).max() > PROJECTION_TOLERANCE:
                 rep.fail(sec, f"established {aid}: xy does not match the stored projection")
 
     # Generated points.
@@ -571,7 +572,7 @@ def check_points(doc, dims, table, meta, rep):
         if projection is not None:
             center, w = projection
             want_xy = (np.array([raw[d] for d in dim_ids]) - center) @ w.T
-            if np.abs(want_xy - by_id[gid]).max() > 1e-6:
+            if np.abs(want_xy - by_id[gid]).max() > PROJECTION_TOLERANCE:
                 rep.fail(sec, f"{where}: xy does not match the stored projection of raw")
 
     # Lines: 5 points per pair, collinear and evenly spaced in xy.
@@ -687,8 +688,6 @@ def main(argv=None):
     parser.add_argument("--dimensions", type=Path, default=bp.DATA_DIR / "dimensions.json")
     parser.add_argument("--scores", type=Path, default=bp.DATA_DIR / "scores.json")
     parser.add_argument("--points", type=Path, default=bp.DATA_DIR / "points.json")
-    parser.add_argument("--allow-missing-anchors", action="store_true",
-                        help="accept focusing, qigong and nature as not yet written")
     parser.add_argument("--table", action="store_true", help="print a Markdown table of the scores")
     parser.add_argument("--strict-quality", action="store_true",
                         help="treat missed quality targets as failures")
@@ -696,7 +695,7 @@ def main(argv=None):
     rep = Report()
 
     print(f"check_data: anchors {args.anchors}")
-    found = check_anchors(args.anchors, args.allow_missing_anchors, rep)
+    found = check_anchors(args.anchors, rep)
     print(f"  [anchors]    {len(found)} of {len(bp.CANONICAL_IDS)} files checked, "
           f"{rep.count('anchors')} failures")
 

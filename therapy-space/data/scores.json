@@ -4,39 +4,39 @@
     "ipf": {
       "body": {
         "score": 3.0,
-        "why": "It works mainly through guided imagery and the therapist's words, with some attention to felt safety and warmth in the body."
+        "why": "It works mainly through guided imagery and the therapist's words, beginning with a short body-scan relaxation and inviting the client to feel the imagined care in the body."
       },
       "exertion": {
         "score": 0.0,
-        "why": "The client sits still with eyes closed while the therapist guides the imagery."
+        "why": "It is a still, guided imagery exercise that begins with a short body-scan relaxation."
       },
       "arousal": {
         "score": 2.0,
-        "why": "The relaxed inward focus and images of protection and comfort aim to build a calm, felt sense of safety, although grief or anger can surface."
+        "why": "A body-scan relaxation and images of parents who protect and soothe aim at a calm, felt sense of security, although painful childhood memories can surface."
       },
       "social": {
         "score": 3.0,
-        "why": "It is usually done one to one, with the therapist's voice guiding an inward experience, though group and online formats exist."
+        "why": "It is usually part of individual therapy, with the therapist's voice guiding an inward experience."
       },
       "structure": {
         "score": 7.0,
-        "why": "It is a named protocol built around five set conditions of secure attachment and repeated across sessions, while the therapist tunes the wording to what the client reports."
+        "why": "It is a named protocol built around five qualities of ideal parents and repeated across sessions, though the developers advise tailoring the imagery to each client's attachment needs."
       },
       "stance": {
         "score": 7.0,
-        "why": "It deliberately builds new experiences of being cared for so that the mind can form a new attachment template, rather than only observing what is there."
+        "why": "It deliberately builds new experiences of being cared for so that new inner models of self and others can form, rather than only observing what is there."
       },
       "depth": {
         "score": 9.0,
-        "why": "It targets the childhood roots of insecure attachment directly, offering imagined parents who give the care that early life lacked."
+        "why": "It targets the early roots of insecure attachment directly, with the client imagining being a child cared for by ideal parents."
       },
       "perception": {
         "score": 1.0,
-        "why": "Almost all of the work happens in imagined scenes of ideal parents, with eyes closed, rather than in contact with the outside world."
+        "why": "Almost all of the work happens in vividly imagined scenes with ideal parents rather than in contact with the outside world."
       },
       "guide": {
         "score": 9.5,
-        "why": "The therapist guides the imagery throughout, and it is best done with a therapist trained in both the method and trauma care."
+        "why": "A therapist guides the imagery in every session, with recordings only for home practice, and it is best done with someone trained in both the method and trauma care."
       }
     },
     "ifs": {
@@ -54,7 +54,7 @@
       },
       "social": {
         "score": 3.0,
-        "why": "It is mainly a one-to-one therapy in which the client turns inward, although group and online programs exist."
+        "why": "It is mainly a one-to-one therapy in which the client turns inward, although couple, group and online formats exist."
       },
       "structure": {
         "score": 5.0,
@@ -66,7 +66,7 @@
       },
       "depth": {
         "score": 8.0,
-        "why": "It works with exiled parts that carry old hurt and shame, which often means witnessing painful experiences from the past."
+        "why": "It works with exiled parts that carry old pain and shame, which means witnessing their story and bringing them out of the past."
       },
       "perception": {
         "score": 2.0,
@@ -156,7 +156,7 @@
     "coherence": {
       "body": {
         "score": 2.0,
-        "why": "It works through words and emotional meaning, such as sentence completion and index cards, aiming at felt emotional knowing rather than bodily practice."
+        "why": "It works through feeling and putting into words the emotional truth behind a symptom, rather than through bodily practice."
       },
       "exertion": {
         "score": 0.0,
@@ -164,7 +164,7 @@
       },
       "arousal": {
         "score": 6.0,
-        "why": "It deliberately brings the emotional learning behind a symptom into awareness and makes its contradiction vivid, so sessions are often emotionally intense."
+        "why": "It deliberately brings the emotional learning behind a symptom into awareness and makes a contradicting experience vivid, so sessions can be emotionally intense."
       },
       "social": {
         "score": 4.0,
@@ -172,23 +172,23 @@
       },
       "structure": {
         "score": 6.0,
-        "why": "It moves through a defined sequence, from uncovering the symptom's hidden purpose to juxtaposition and checking that the change lasts, using named techniques."
+        "why": "It moves through a defined sequence, from finding the emotional truth behind a symptom to juxtaposition and checking that old triggers no longer evoke the reaction."
       },
       "stance": {
         "score": 6.5,
-        "why": "It aims to dissolve the old emotional learning rather than manage the symptom, though it starts by discovering why the symptom makes sense."
+        "why": "It aims to dissolve the old emotional learning rather than manage the symptom, though it never opposes the symptom and starts by feeling the truth behind it."
       },
       "depth": {
         "score": 7.0,
-        "why": "It uncovers emotional learnings that are often formed early in life and held outside awareness."
+        "why": "It uncovers mostly unconscious emotional learnings, formed in response to earlier experiences, that still make a symptom feel necessary."
       },
       "perception": {
         "score": 3.0,
-        "why": "It works with imagined scenarios, such as life without the symptom, and with emotional knowledge put into words, rather than with the senses."
+        "why": "It works with inner emotional knowledge, felt and put into words and then set against a vivid contradicting experience, rather than with the senses."
       },
       "guide": {
         "score": 9.0,
-        "why": "It relies on a skilled therapist to find the hidden emotional purpose and set up the contradiction, and one trial was stopped because the therapy could not be delivered reliably."
+        "why": "It relies on a skilled therapist to find the hidden emotional truth and set up the contradiction, and a registered trial was stopped because the therapy could not be delivered in a reliable and valid way."
       }
     },
     "tre": {
@@ -232,39 +232,39 @@
     "focusing": {
       "body": {
         "score": 6.0,
-        "why": "It works through the felt sense, a vague bodily feel of a whole situation, while also finding words or images that fit it."
+        "why": "It works through the felt sense, a vague bodily sense of a situation that is not yet in words, and lets words or images come from it."
       },
       "exertion": {
         "score": 0.0,
-        "why": "It is done sitting or lying quietly."
+        "why": "It is quiet inner attention, often with eyes closed, with no physical effort."
       },
       "arousal": {
         "score": 2.0,
-        "why": "It asks for slow, gentle and friendly attention, beginning by clearing a space, which tends to settle rather than activate."
+        "why": "It asks for gentle, open, non-judging attention, starting by clearing a space, though strong feelings can come up."
       },
       "social": {
         "score": 3.0,
-        "why": "It is often practiced with a listening partner or a Focusing-oriented therapist, though it can also be done alone."
+        "why": "It is often done with a listener who reflects back what you say, a partner or a therapist, though it can also be done alone."
       },
       "structure": {
         "score": 5.0,
-        "why": "Gendlin's six steps (clearing a space, felt sense, handle, resonating, asking and receiving) give a clear outline, but they are used loosely, following what the felt sense brings."
+        "why": "Gendlin's six steps give a clear sequence, from clearing a space to receiving whatever comes, but with practice they become a loose guide rather than a fixed recipe."
       },
       "stance": {
         "score": 2.5,
-        "why": "It meets the felt sense with patient, friendly attention and waits for a felt shift to come by itself rather than pushing for change."
+        "why": "It gives open, non-judging attention to the felt sense and receives whatever comes kindly, letting a felt shift happen rather than forcing change."
       },
       "depth": {
-        "score": 4.0,
-        "why": "It starts from the present felt sense of a current situation, which can lead into older material without setting out to dig into the past."
+        "score": 3.0,
+        "why": "It works with the present felt sense of a current situation or problem, though turning inward can bring up painful memories."
       },
       "perception": {
         "score": 5.0,
-        "why": "The felt sense is sensed directly in the body, but the work also involves finding a word, phrase or image that fits it."
+        "why": "The felt sense is sensed directly in the body, but the work also means finding a word or image that fits it."
       },
       "guide": {
         "score": 3.0,
-        "why": "It can be learned from Gendlin's book, a teacher or a partner and then practiced alone or in partnerships without a professional."
+        "why": "It is usually learned from a book or a Focusing trainer and then done alone, with a lay listener or within therapy."
       }
     },
     "aletheia": {
@@ -320,7 +320,7 @@
       },
       "social": {
         "score": 1.0,
-        "why": "It is usually practiced alone, sometimes with a guided recording or a live broadcast."
+        "why": "It is sitting practice done alone, sometimes guided by a recording such as a daily audio lesson."
       },
       "structure": {
         "score": 0.5,
@@ -358,7 +358,7 @@
       },
       "social": {
         "score": 1.5,
-        "why": "It is practiced sitting alone or on silent retreats, with other people present mainly as the imagined recipients of goodwill."
+        "why": "It is practiced sitting alone or on retreats, with other people present mainly as the imagined recipients of goodwill."
       },
       "structure": {
         "score": 7.0,
@@ -370,7 +370,7 @@
       },
       "depth": {
         "score": 1.0,
-        "why": "It cultivates goodwill in the present and does not explore personal history, although wishing yourself well can stir old grief."
+        "why": "It cultivates goodwill in the present and does not explore personal history, although wishing yourself well can stir up grief."
       },
       "perception": {
         "score": 2.5,
@@ -378,7 +378,7 @@
       },
       "guide": {
         "score": 4.0,
-        "why": "Loving-kindness can be learned from a short guided session, but deeper jhana is usually learned on retreat with regular guidance from a teacher."
+        "why": "Loving-kindness is often self-guided or taught in short courses, but deeper jhana is usually learned on retreat with guidance from a teacher."
       }
     },
     "vipassana": {
@@ -387,12 +387,12 @@
         "why": "Body sensations are its main field of observation, through noting the breath or sweeping attention through the body, alongside feelings and thoughts."
       },
       "exertion": {
-        "score": 1.0,
-        "why": "It is mostly still sitting, with periods of slow walking meditation."
+        "score": 0.0,
+        "why": "You sit still throughout, steadying the mind on the breath and then observing whatever is most obvious."
       },
       "arousal": {
         "score": 1.5,
-        "why": "Steady, non-reactive observation tends to calm, although long silent retreats can bring up anxiety or panic."
+        "why": "Steady, non-reactive observation tends to calm, although intensive retreats can bring up fear, anxiety or panic."
       },
       "social": {
         "score": 1.5,
@@ -400,15 +400,15 @@
       },
       "structure": {
         "score": 7.5,
-        "why": "It uses specific techniques, such as Mahasi noting or the Goenka body sweep, and retreats run on a fixed daily schedule."
+        "why": "It uses specific techniques, such as Mahasi noting or the Goenka body sweep, and retreats follow a set plan, such as three days of breath awareness before body sweeping."
       },
       "stance": {
         "score": 2.0,
         "why": "It observes sensations, feelings and thoughts without reacting to them, seeking insight rather than trying to change them."
       },
       "depth": {
-        "score": 1.5,
-        "why": "It watches experience moment by moment and does not explore personal history, though long retreats can bring up traumatic memories."
+        "score": 1.0,
+        "why": "It watches each experience arise and pass moment by moment and does not explore personal history."
       },
       "perception": {
         "score": 8.0,
@@ -426,7 +426,7 @@
       },
       "exertion": {
         "score": 10.0,
-        "why": "Each hard bout takes you close to your limit, often above about 85% of maximum heart rate, the most strenuous effort on the map."
+        "why": "Each hard bout takes you close to your limit, breathing hard and barely able to talk or flat out in sprint versions, the most strenuous effort on the map."
       },
       "arousal": {
         "score": 10.0,
@@ -530,7 +530,7 @@
       },
       "guide": {
         "score": 1.0,
-        "why": "Anyone can start alone with walk-run intervals, and coaches, clubs and supervised running therapy are optional."
+        "why": "Anyone can start alone with walk-run intervals, and clubs, coaches and group running therapy are optional."
       }
     },
     "strength": {
@@ -574,19 +574,19 @@
     "animal": {
       "body": {
         "score": 5.0,
-        "why": "It mixes talk with physical contact, such as stroking a dog or grooming and leading a horse, and attention to how the animal responds."
+        "why": "It mixes talk with physical contact, such as sitting with, stroking or playing with a calm dog, or working with a horse in therapy or horsemanship sessions."
       },
       "exertion": {
         "score": 2.0,
-        "why": "Activities are physically light, such as stroking, grooming or leading a horse on the ground."
+        "why": "Most sessions are physically light, such as sitting with or stroking a dog, the animal used in about 7 of 10 programs."
       },
       "arousal": {
         "score": 2.0,
-        "why": "A calm, friendly animal is thought to lower stress and make the setting feel safer."
+        "why": "A calm, friendly animal is thought to comfort through body contact and to ease stress and anxious feelings."
       },
       "social": {
         "score": 5.0,
-        "why": "Sessions bring together a therapist, often a handler and an animal, in individual or small-group formats, and the animal's live reactions become part of the relationship."
+        "why": "Sessions bring together a professional, often a handler and a trained animal whose companionship is thought to be an active ingredient, and horse-based work points to bonding and peer support."
       },
       "structure": {
         "score": 5.0,
@@ -594,15 +594,15 @@
       },
       "stance": {
         "score": 4.0,
-        "why": "It works toward set goals such as easing anxiety or building trust, mainly by letting the animal's calm presence and reactions do the work."
+        "why": "It works toward goals set in advance, such as easing anxiety or building trust, mainly through the comfort and companionship of a calm animal rather than by pushing for change."
       },
       "depth": {
         "score": 2.0,
-        "why": "It focuses on present goals such as anxiety, trust or social skills, although hard topics can come up while stroking a dog."
+        "why": "It works toward present goals such as easing anxiety, building trust or practicing social skills, although you may talk through something hard while stroking a dog."
       },
       "perception": {
         "score": 9.0,
-        "why": "The work rests on direct contact with a living animal and its reactions in the moment."
+        "why": "The work rests on direct, physical contact with an animal, usually a live dog or horse, in the moment."
       },
       "guide": {
         "score": 8.5,
@@ -612,39 +612,39 @@
     "qigong": {
       "body": {
         "score": 9.0,
-        "why": "It works through slow, coordinated movement, posture and breathing, with attention guided through the body."
+        "why": "It works through posture, slow movement and breathing, with attention resting on the body."
       },
       "exertion": {
         "score": 2.5,
-        "why": "Forms such as Baduanjin are slow and low in intensity, closer to gentle walking than to a workout."
+        "why": "It is gentle, low-impact exercise: slow forms such as Baduanjin, or still standing and seated postures."
       },
       "arousal": {
         "score": 1.5,
-        "why": "Slow movement paired with slow, deep breathing aims to calm and settle body and mind."
+        "why": "Slow movement, slow breathing and meditative attention are thought to shift the nervous system toward rest, and some trials report lower heart rate and blood pressure."
       },
       "social": {
-        "score": 3.5,
-        "why": "It is often practiced in classes or groups, for example in parks, though many people also practice alone."
+        "score": 3.0,
+        "why": "It is usually learned in a group class and then practiced at home, alone or in a group."
       },
       "structure": {
         "score": 8.5,
-        "why": "Forms such as the eight movements of Baduanjin are set sequences repeated the same way each time."
+        "why": "Most sessions follow a set sequence of simple, repeated movements, such as the eight movements of Baduanjin."
       },
       "stance": {
         "score": 5.0,
-        "why": "It actively regulates body, breath and mind, with the traditional aim of cultivating qi, but with soft, unforced effort."
+        "why": "It deliberately regulates body, breath and mind, which Chinese medicine describes as cultivating and balancing qi, but with gentle effort."
       },
       "depth": {
         "score": 0.5,
         "why": "It works with the present body and breath and does not explore personal history."
       },
       "perception": {
-        "score": 6.0,
-        "why": "Attention rests mostly on direct body sensation and breath, with some imagery, such as picturing energy moving through the body."
+        "score": 7.0,
+        "why": "Attention rests on the body and the breath as you move or hold a posture, so it works with direct sensation rather than imagery or story."
       },
       "guide": {
         "score": 4.0,
-        "why": "It is usually learned from an instructor and then practiced alone or in groups, from memory or with a video."
+        "why": "It is usually learned from a trained instructor in a group class and then practiced at home."
       }
     },
     "socializing": {
@@ -688,39 +688,39 @@
     "nature": {
       "body": {
         "score": 6.5,
-        "why": "It works through walking and the senses outdoors, with room for thinking along the way."
+        "why": "It works through walking and the senses, with attention drifting to sights, sounds and smells, while leaving room to think."
       },
       "exertion": {
         "score": 4.0,
-        "why": "Effort ranges from a gentle nature walk to a strenuous hike, and a typical outing is light to moderate walking."
+        "why": "It ranges from a gentle park stroll to hours of steady effort on a hike, so a typical outing is light to moderate."
       },
       "arousal": {
         "score": 2.0,
-        "why": "Time in natural settings is linked to lower stress and calmer attention, as stress reduction and attention restoration theories describe."
+        "why": "Natural settings are thought to calm body and mood and to hold attention gently, as stress reduction and attention restoration theories describe."
       },
       "social": {
         "score": 4.0,
-        "why": "People walk alone, with friends or in organized group walks."
+        "why": "People walk alone, with friends or with a walking group, and walking with others adds social contact."
       },
       "structure": {
         "score": 1.0,
-        "why": "There are no set steps beyond choosing a route and letting the walk unfold."
+        "why": "There are no set steps: you choose a place or route and let the walk unfold, with forest bathing adding a loose focus on each sense."
       },
       "stance": {
         "score": 2.0,
-        "why": "It lets the natural setting restore attention through gentle fascination rather than working to change anything."
+        "why": "It lets natural settings hold attention gently so that tired attention can recover, rather than working to change thoughts or feelings."
       },
       "depth": {
         "score": 0.0,
-        "why": "It is about the present walk and surroundings, not personal history."
+        "why": "It stays with the present walk and its surroundings rather than exploring personal history."
       },
       "perception": {
         "score": 9.5,
-        "why": "Its core is direct contact with the outside world: views, sounds, smells, weather and terrain."
+        "why": "Attention drifts to what you see, hear and smell outdoors, and forest bathing uses each of the senses on purpose."
       },
       "guide": {
         "score": 1.0,
-        "why": "Anyone can do it alone, and guided walks or walking groups are optional."
+        "why": "Anyone can walk alone or with friends, and walking groups and referred nature programs are optional."
       }
     },
     "sensory": {
@@ -729,24 +729,24 @@
         "why": "It works through raw sensory experience, such as the body scan, touch and taste, rather than through thoughts about it."
       },
       "exertion": {
-        "score": 0.5,
-        "why": "It is done sitting, lying or moving slowly, as in the body scan or Sensory Awareness explorations of standing and walking."
+        "score": 0.0,
+        "why": "It is done sitting or lying still, as in the body scan, or while eating or listening with full attention."
       },
       "arousal": {
         "score": 1.5,
-        "why": "It is used to ground and calm down, interrupting worry by attending to what can be sensed now."
+        "why": "It is used to settle and come back to the present, interrupting worry and rumination by attending to what can be sensed now."
       },
       "social": {
         "score": 1.5,
-        "why": "It is mostly done alone, though MBSR and Sensory Awareness classes practice together and share what they noticed."
+        "why": "It is mostly practiced alone, though MBSR teaches it in weekly group classes."
       },
       "structure": {
         "score": 5.0,
-        "why": "It uses short set exercises, such as 5-4-3-2-1 grounding or the raisin exercise, inside an open and curious attitude."
+        "why": "It uses short set exercises, such as the body scan, the raisin exercise or mindful listening, inside an open and curious attitude."
       },
       "stance": {
         "score": 2.5,
-        "why": "It gives open, non-judging attention to sensation rather than trying to change it, although it is often used on purpose to calm down."
+        "why": "It gives open, non-judging attention to sensation rather than trying to change it, although it is often used on purpose to settle."
       },
       "depth": {
         "score": 0.0,
@@ -758,7 +758,7 @@
       },
       "guide": {
         "score": 1.5,
-        "why": "Short grounding exercises can be done by anyone at any time, and formal courses such as MBSR are optional."
+        "why": "Single exercises can be practiced on your own at any time, and formal courses such as MBSR are optional."
       }
     },
     "music": {
@@ -771,8 +771,8 @@
         "why": "Most uses, such as listening, singing or playing simple instruments, are physically light, with more effort only when moving to the music."
       },
       "arousal": {
-        "score": 5.0,
-        "why": "It can calm or energize, since calming music dampens stress responses while strong rhythm raises activation, so the typical score sits in the middle."
+        "score": 4.0,
+        "why": "Music can shift arousal either way, but its best-studied effect is lowering physical signs of stress, such as heart rate, and felt stress, so on balance it leans calming."
       },
       "social": {
         "score": 5.0,
@@ -784,15 +784,15 @@
       },
       "stance": {
         "score": 5.0,
-        "why": "People often use music on purpose to shift their mood, while improvising and receptive listening also make room for whatever feelings arise."
+        "why": "People often listen on purpose to relax or ease anxiety, while improvising and receptive listening make room to express and explore whatever feelings arise."
       },
       "depth": {
-        "score": 4.0,
-        "why": "Music readily brings back memories and feelings, which methods such as Guided Imagery and Music explore with a trained guide."
+        "score": 3.0,
+        "why": "It works with the feelings that music stirs, which music therapy and Guided Imagery and Music explore, rather than deliberately reaching into the past."
       },
       "perception": {
         "score": 5.0,
-        "why": "It rests on hearing real sound but also invites inner images and memories, most deliberately in Guided Imagery and Music."
+        "why": "It rests on hearing real sound but also invites inner images and feelings, most deliberately in Guided Imagery and Music."
       },
       "guide": {
         "score": 4.0,
