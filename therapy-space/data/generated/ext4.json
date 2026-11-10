@@ -49,12 +49,12 @@
       "id": "coherence__metta-jhana__5",
       "name": "Your Own Name, Kindly",
       "tagline": "Wish yourself well by name, the way a friend would.",
-      "whatItIs": "Picture saying of a friend, 'may Sam be at ease today', and then say exactly that about yourself, using your own name. That is Your Own Name, Kindly: an untested, self-led practice of plain, kind words to yourself in the third person, with no digging into why you feel as you do. It is calm and stays in the present.",
+      "whatItIs": "Think of how you might speak of a friend by name, 'may they be at ease today', and then say exactly that about yourself, using your own first name instead of 'I'. That is Your Own Name, Kindly: an untested, self-led practice of plain, kind words to yourself in the third person, with no digging into why you feel as you do. It is calm and stays in the present.",
       "coreIdea": "Using your own name puts a little distance into self-kindness, and the idea is that kind words may land more easily when they sound like something said about a friend.",
-      "whatYouDo": "Sit or lie comfortably for 10 minutes, say your name silently and offer yourself four plain wishes in the third person, for example 'may Sam be at ease, may Sam rest, may Sam go gently today, may Sam enjoy one small thing'. Repeat the four slowly a few times, pausing between them. If the words stir up old questions about why things are the way they are, leave those for another time and return to the next wish.",
+      "whatYouDo": "Sit or lie comfortably for 10 minutes and offer yourself four plain wishes in the third person, with your own first name in place of the brackets: 'may [your name] be at ease, may [your name] rest, may [your name] go gently today, may [your name] enjoy one small thing'. Repeat the four slowly a few times, pausing between them. If the words stir up old questions about why things are the way they are, leave those for another time and return to the next wish.",
       "whoItsFor": "People who freeze up when wishing themselves well in the first person, and anyone who is far kinder to friends than to themselves.",
       "cautions": "Kindness toward yourself can bring up grief or a sense of not deserving it, so keep sessions short and stop if it becomes overwhelming. It is an untested idea; if self-criticism feels relentless, talk to a therapist.",
-      "tweet": "'May Sam be at ease.' Now say it about yourself, with your own name. Your Own Name, Kindly: an untested practice of plain third-person kindness, the way you'd talk about a friend. Ten calm minutes, no digging into why."
+      "tweet": "'May [your name] be at ease.' Wish yourself well the way you'd talk about a friend: by name, in the third person. Your Own Name, Kindly: an untested practice of plain kindness. Ten calm minutes, no digging into why."
     },
     {
       "id": "tre__metta-jhana__5",
@@ -85,7 +85,7 @@
       "whatItIs": "How long does it take you to feel genuine warmth toward a named person? How Fast Warmth Comes measures exactly that, with a stopwatch, a shuffled deck of name cards and a notebook, run entirely by yourself. It is quick, mechanical and measurable, an untested opposite to an open, unhurried coaching conversation.",
       "coreIdea": "Warmth toward some people arrives in seconds and toward others hardly at all, and timing it is meant to make that pattern visible and, with daily practice, perhaps shorter.",
       "whatYouDo": "Write about twenty names on cards (family, friends, coworkers and a few mildly difficult people) and shuffle them. Each day, draw five cards one at a time, start a stopwatch, picture the person and stop it at the first real flicker of warmth, or at 60 seconds if none comes. Log the times, and every few weeks look at which names have changed.",
-      "whoItsFor": "People who like data and self-tracking, and anyone curious about where their goodwill comes easily and where it stalls.",
+      "whoItsFor": "Numbers-minded people who like to track their habits, and anyone curious about where their goodwill comes easily and where it stalls.",
       "cautions": "Timing feelings can turn into pressure or self-judgment, so take a 60-second blank as information, not failure. Leave anyone who harmed you out of the deck; it is a new idea with no research behind it.",
       "tweet": "How many seconds until you feel real warmth for someone? Shuffle name cards, draw one, start a stopwatch, stop it at the first flicker. How Fast Warmth Comes: an untested way to see where goodwill flows and where it stalls."
     },
@@ -169,13 +169,13 @@
     {
       "id": "metta-jhana__qigong__1",
       "name": "Back and Forth Wishing",
-      "tagline": "Alternate quickly between someone easy and someone hard to love.",
-      "whatItIs": "In Back and Forth Wishing you alternate, breath by breath, between someone easy to love and someone you find difficult: a quick, lively rally of goodwill rather than a slow sequence. The body stays still and all the movement happens in the imagination. It is an untested practice, learned from a short guide or teacher and then done alone.",
-      "coreIdea": "Switching quickly from easy warmth to a harder person is meant to carry some of the easy warmth across before resistance has time to build.",
-      "whatYouDo": "Choose two people: one easy to love and one mildly difficult, such as a prickly coworker. Sit for 10 minutes and alternate on every breath, a short wish for the easy person on the in-breath and the same wish for the difficult one on the out-breath, at a brisk, lively pace. If the difficult person stirs strong feelings, slow down, spend a few breaths on the easy one only, then return.",
-      "whoItsFor": "People who stall when they reach the difficult person in loving-kindness, and anyone who likes a quick, energetic practice.",
+      "tagline": "Alternate, breath by breath, between someone easy and someone hard to love.",
+      "whatItIs": "In Back and Forth Wishing you alternate, breath by breath, between someone easy to love and someone you find difficult: a steady, even exchange of goodwill rather than one person at a time. The body stays still and all the movement happens in the imagination. It is an untested practice, learned from a short guide or teacher and then done alone.",
+      "coreIdea": "Pairing each wish for a harder person with one for someone easy is meant to carry some of the easy warmth across before resistance has time to build.",
+      "whatYouDo": "Choose two people: one easy to love and one mildly difficult, such as a prickly coworker. Sit for 10 minutes and alternate on every breath, a short wish for the easy person on the in-breath and the same wish for the difficult one on the out-breath, at a calm, even pace. If the difficult person stirs strong feelings, spend a few breaths on the easy one only, then return.",
+      "whoItsFor": "People who stall when they reach the difficult person in loving-kindness, and anyone who likes a simple practice with a clear rhythm.",
       "cautions": "Choose someone mildly difficult, never someone who harmed or endangered you, and stop if anger or distress builds. It is an untested idea, not a way to settle a real conflict.",
-      "tweet": "In-breath: a wish for someone easy to love. Out-breath: the same wish for someone you find hard. Back and Forth Wishing, an untested practice, keeps that rally going for 10 brisk minutes to carry warmth across."
+      "tweet": "In-breath: a wish for someone easy to love. Out-breath: the same wish for someone you find hard. Back and Forth Wishing, an untested practice, keeps that calm exchange going for 10 minutes to carry warmth across."
     },
     {
       "id": "metta-jhana__socializing__1",
@@ -300,14 +300,14 @@
     },
     {
       "id": "aletheia__vipassana__5",
-      "name": "Clicker Tally Log",
-      "tagline": "Count each change in one fingertip's sensation, and log it.",
-      "whatItIs": "You watch one small patch of the body, a fingertip, and click a hand counter each time its sensation changes, then log the total after every sit. Clicker Tally Log is rigid, measurable and done entirely on your own, an untested practice with no coach and nothing left open-ended.",
-      "coreIdea": "Counting the changes in one small patch of sensation makes constant change concrete and visible, and is meant to keep attention alert.",
-      "whatYouDo": "Sit for 20 minutes holding a hand clicker, rest attention on one fingertip and click once each time its sensation clearly changes, such as a tingle starting, a pulse appearing or warmth fading. After the sit, write the total and one sentence about what you noticed in a notebook. Every few weeks, look back over the numbers for patterns, such as busier mornings or quieter evenings.",
-      "whoItsFor": "People who like data and self-tracking, and meditators who want a concrete, self-run way to stay alert during a sit.",
-      "cautions": "Counting can turn into scorekeeping or self-judgment, so regard high and low numbers as equally interesting and drop the clicker if it becomes a source of stress. It is an untested idea, and if tracking starts to feed checking or worry, stop.",
-      "tweet": "Meditation, but with a clicker: watch one fingertip and click each time its sensation changes, then log the total after a 20-minute sit. Clicker Tally Log is an experimental, very data-friendly way to watch change pile up."
+      "name": "A Week Around the Body",
+      "tagline": "Seven body regions, one for each day's whole sit.",
+      "whatItIs": "A printed seven-day chart gives each day one body region, the hands on Monday, the feet on Tuesday, the face on Wednesday and so on, and that region is the only object of the whole day's sit. You run it yourself, week after week, with no coach and no variation; A Week Around the Body is an untested, rigidly structured practice.",
+      "coreIdea": "Spending a whole sit on one region, and returning to it a week later, is meant to show how much one small part of the body holds and how differently it shows up each time.",
+      "whatYouDo": "Each day, sit for 20 minutes and rest attention only on the day's region (hands, feet, face, belly, back, shoulders, then the whole body on the seventh day), noticing whatever sensations are there without moving on. After the sit, write one line on the chart. After four weeks, read across each row to compare the same region week by week.",
+      "whoItsFor": "People who like a fixed, simple schedule they can keep alone, and meditators who find moving through the whole body in one sit too hurried.",
+      "cautions": "Staying a long time with one region can bring numbness, strong sensations or memories, especially in areas linked to past injury or trauma, so swap the region or open your eyes if needed. Intensive practice can bring difficult experiences; the idea itself has not been studied.",
+      "tweet": "Monday the hands, Tuesday the feet, Wednesday the face. A Week Around the Body, an untested practice: one body region for each day's whole 20-minute sit, one line on a chart, and the same region again next week."
     },
     {
       "id": "do-nothing__vipassana__5",
@@ -333,14 +333,14 @@
     },
     {
       "id": "vipassana__hiit__1",
-      "name": "Mood Weather Watch",
-      "tagline": "Watch your mood shift like weather, without trying to change it.",
-      "whatItIs": "Your overall mood, the background emotional weather, is the object here, and you watch it shift on its own without trying to lift or lower it. Mood Weather Watch asks for no effort and no target, only a light structure of checking in about once a minute; this proposed practice is introduced by a teacher and then done alone.",
-      "coreIdea": "Moods, like weather, keep changing by themselves, and the practice is simply to watch that happen without pushing.",
-      "whatYouDo": "Sit or recline for 15 minutes and, every minute or so, silently name the weather inside, such as 'gray', 'bright', 'stormy' or 'still'. You do not try to improve the mood or find its cause; you only notice how it shifts, even slightly, over the session. On some days you add three brief check-ins (morning, afternoon and evening) and notice how the weather has changed in between.",
-      "whoItsFor": "People who feel run by their moods, and anyone who is tired of effortful self-improvement and wants a gentle way to watch rather than manage.",
-      "cautions": "If low mood is persistent, severe or comes with thoughts of self-harm, watching it is not enough: talk to a doctor or mental health professional promptly. It is an untested idea and does not replace care for depression or anxiety.",
-      "tweet": "Gray, bright, stormy, still. Every minute or so, silently name the weather inside and watch it change, without trying to improve it. Mood Weather Watch, a proposed 15-minute practice for people whose moods seem to run them."
+      "name": "The Unknown Bell",
+      "tagline": "Sit until a bell rings, at a time you do not know.",
+      "whatItIs": "A timer is set by someone else, or by an app, to ring at an unknown moment between 5 and 20 minutes, and you simply sit until it does, watching what waiting does to the mind. The Unknown Bell asks for no effort and sets no target, the far end from interval training, where every bout is timed and pushed; this proposed practice is introduced by a teacher and then done alone.",
+      "coreIdea": "Not knowing when something will end brings guessing, impatience and leaning forward to the surface, and watching those come and go without acting on them is the practice.",
+      "whatYouDo": "Ask a housemate or an app to set a timer you cannot see for a random time between 5 and 20 minutes, then sit or recline with eyes closed. Notice the guesses ('it must be soon'), the impatience, the leaning toward the bell and the stretches when you forget it, without trying to relax or to concentrate harder. When the bell rings, notice the moment itself, then sit for one more minute before getting up.",
+      "whoItsFor": "People who are always checking how much time is left, and anyone curious about what waiting does to the mind.",
+      "cautions": "Waiting without knowing can stir restlessness or anxiety, so keep the upper limit short at first and stop if it becomes distressing. It is an untested idea and does not replace care for anxiety or depression.",
+      "tweet": "Sit until a bell rings, but you don't know when: somewhere between 5 and 20 minutes. The Unknown Bell, an untested practice, turns waiting itself into the thing you watch: the guessing, the impatience, the moment it rings."
     },
     {
       "id": "vipassana__team-sport__1",
@@ -377,14 +377,14 @@
     },
     {
       "id": "vipassana__animal__1",
-      "name": "Contact Rounds",
-      "tagline": "Rounds of attention through everywhere your body touches something.",
-      "whatItIs": "Attention moves in rounds through every place where the body is touching something: floor, chair, clothing and your own resting hands. Contact Rounds explores touch alone and self-led, with no companion, animal or team present, following a fixed order that is easy to learn from a short guide.",
-      "coreIdea": "Touch is always happening, and moving through every point of contact in turn shows each one as a changing stream of pressure, warmth and texture.",
-      "whatYouDo": "Sit alone for 20 minutes and move attention in a fixed round: feet on the floor, seat on the chair, back against the chair, hands resting on each other, clothes on the shoulders, air on the face. Stay with each contact for three breaths, noticing pressure, temperature and texture and how they shift, then move on. Repeat the round, a little more slowly each time.",
-      "whoItsFor": "People who want a simple, concrete practice they can do anywhere on their own, and meditators who find the breath too subtle to follow.",
-      "cautions": "Attention to touch can sometimes bring up memories or discomfort, especially after trauma, so keep your eyes open and skip any contact point that feels unsafe. Intensive practice can bring difficult experiences, so people with a history of psychosis or severe trauma should talk to a clinician first; it is a new idea with no research behind it.",
-      "tweet": "Small new practice: Contact Rounds. Move attention through every place you're touching something (feet on floor, seat on chair, hands on each other) for three breaths each, noticing pressure and warmth shift. Alone, anywhere, no gear."
+      "name": "Where Nothing Touches",
+      "tagline": "Attend to the skin that touches nothing at all.",
+      "whatItIs": "Most body practices start where you touch something; this one goes to skin that touches nothing at all, such as the backs of the hands, the neck or the face, where only air moves. Where Nothing Touches is done alone and self-led, with no companion, animal or team, under a few fixed rules that are easy to learn from a short guide; it is a proposed practice.",
+      "coreIdea": "Skin that touches nothing still has faint, changing sensations of air, warmth and tingling, and finding them asks for very fine, patient attention.",
+      "whatYouDo": "Sit still for 20 minutes in a room without strong drafts, hands resting so that their backs touch nothing. Let attention settle on whichever bare, untouched patch of skin is most noticeable (the back of a hand, a cheek, the neck), notice the faintest air, warmth, coolness or tingling there, and if nothing is there, rest with the nothing until something appears. When a patch fades from notice, move to the next untouched one.",
+      "whoItsFor": "People who want a very subtle, quiet practice they can do anywhere on their own, and meditators curious about the faintest edges of sensation.",
+      "cautions": "Searching for faint sensations can bring frustration or odd tingling, so keep it light and stop if it becomes uncomfortable. Intensive practice can bring difficult experiences, so people with a history of psychosis or severe trauma should talk to a clinician first; it is a new idea with no research behind it.",
+      "tweet": "Not where you touch the chair: where you touch nothing at all. Where Nothing Touches, a novel practice: rest on the bare skin of the hands, face or neck and wait for the faintest air, warmth or tingle to appear."
     },
     {
       "id": "vipassana__qigong__1",
@@ -395,7 +395,7 @@
       "whatYouDo": "When a tune is stuck, sit or stand still for 10 minutes and listen to it inwardly as if it were playing in the room. Notice which fragment repeats, whether it speeds up, slows or changes, the moments it drops out and comes back, and any irritation along the way, all without singing along or trying to push it out. End when it fades or the time is up, whichever comes first.",
       "whoItsFor": "People who are often bothered by tunes stuck in their heads, and meditators curious about how the mind runs on its own.",
       "cautions": "This is for ordinary stuck songs; if intrusive sounds, voices or repetitive thoughts are distressing or feel out of your control, talk to a doctor or mental health professional rather than practicing with them. People with a history of psychosis should check with a clinician first; this is an untested idea.",
-      "tweet": "Got a song stuck in your head? Don't hum it away. Sit for 10 minutes and watch it loop, change and fade on its own. When a Song Gets Stuck: a novel, harmless lesson in how the mind runs by itself."
+      "tweet": "Got a song stuck in your head? Don't hum it away. Sit for 10 minutes and watch it loop, change and fade on its own. When a Song Gets Stuck: a novel, simple look at how the mind runs by itself."
     },
     {
       "id": "vipassana__socializing__1",
@@ -537,7 +537,7 @@
       "coreIdea": "Doing a simple mental task while working hard asks for full engagement of body and attention together, and the idea is that practicing both at once trains composure when things are demanding.",
       "whatYouDo": "After a 10-minute warm-up, do six 30-second hard bouts on a bike or rower with 90 seconds easy between, while your partner stands beside you. During each bout the partner gives one task (count back in threes from a random number, name animals from A to Z, spell a word backwards) and you answer aloud, slowly if needed. Cool down for 10 minutes, then swap roles and run your partner's session.",
       "whoItsFor": "People who find hard intervals mindless or boring, and anyone curious to see how their thinking holds up under effort.",
-      "cautions": "Keep the tasks simple, and drop the task, or the bout, if you feel dizzy, confused or more breathless than normal hard effort. Get medical advice first if you have heart disease, chest pain, fainting or high blood pressure, and stop at chest pain or dizziness; the idea itself has not been studied.",
+      "cautions": "Keep the tasks simple, and because your attention is split, the partner also watches your form and any warning signs and calls a stop if you look dizzy, confused or more breathless than normal hard effort. Get medical advice first if you have heart disease, chest pain, fainting or high blood pressure, and stop at chest pain or dizziness; the idea itself has not been studied.",
       "tweet": "Count back from 100 in threes. Now do it in the middle of a hard 30-second bout. In Count Back by Threes, an untested partner session, your body works flat out while a partner hands your mind a small puzzle."
     },
     {
@@ -608,25 +608,25 @@
     },
     {
       "id": "hiit__qigong__1",
-      "name": "Freestyle Bursts",
-      "tagline": "Strict timer, free movement: no form, just vigorous play.",
-      "whatItIs": "In Freestyle Bursts the timer is strict but the movement is free: for each hard bout you move however you like, as vigorously as you can, with no set form, no repeated sequence and no right way to do it. It turns qigong's slow, exact, repeated forms inside out, keeping only the clock fixed. It is a proposed session, learned from a coach and then done alone.",
-      "coreIdea": "Hard effort is usually locked into a set exercise, and freeing the movement while keeping the timing strict is meant to make intensity feel playful and self-expressive.",
-      "whatYouDo": "Clear a safe space and warm up for 10 minutes with easy, loose movement. Then do eight 20-second bursts of any vigorous movement you choose (dancing, shadow-boxing, running on the spot, big arm swings), changing it as you like, with 40 seconds of easy walking between. Avoid jumps or twists your joints dislike, and cool down with slow walking and stretching.",
-      "whoItsFor": "People bored by drills and set exercises, and anyone who enjoys moving freely and would like that to count as hard exercise.",
-      "cautions": "Free movement at full effort can lead to awkward landings or twists, so keep a clear floor, wear supportive shoes and choose movements you know are safe for you. Get medical advice first if you have heart disease, chest pain, fainting or high blood pressure, and stop at chest pain, dizziness or sharp pain; as a new concept, it has no track record yet.",
-      "tweet": "Strict timer, free body. Freestyle Bursts, an experimental session: eight 20-second bursts of any vigorous movement you like (dance, shadow-box, run on the spot), no set form, no right way. Hard effort as play."
+      "name": "Into the Heavy Gear",
+      "tagline": "Short, strictly set bouts against heavy resistance, every stroke forced.",
+      "whatItIs": "Each hard bout is ridden on a stationary bike set to a heavy, fixed resistance at a slow, prescribed cadence, so every pedal stroke has to be forced round. Into the Heavy Gear is the opposite of qigong's soft, yielding movement: more forceful and even more tightly prescribed than ordinary intervals, with resistance, cadence, bout length and rest all fixed in advance. It is a proposed session, learned from a coach and then done alone.",
+      "coreIdea": "Pushing against a heavy, unchanging load, stroke by stroke, makes effort feel like force rather than speed, and fixing every number in advance leaves nothing to improvise.",
+      "whatYouDo": "Warm up for 10 minutes at light resistance, then set the bike to the heavy level chosen when you learned the session and do eight 20-second bouts at about 60 pedal turns a minute, each stroke pushed hard and smooth, with 100 seconds of very light pedaling between. The resistance, cadence and timing stay exactly as written for a whole block of weeks, and you raise the resistance one step only when all eight bouts are completed cleanly. Cool down for 10 minutes at light resistance.",
+      "whoItsFor": "People who like the feeling of force more than speed, and anyone who wants hard intervals with no impact and nothing left to chance.",
+      "cautions": "Heavy pushing raises blood pressure sharply, so get medical advice first if you have heart disease, high blood pressure, a history of stroke or knee problems, and breathe out on each push rather than holding your breath. Start at a moderate setting, keep the saddle at the right height and stop at chest pain, dizziness or sharp knee pain; this is an untested concept.",
+      "tweet": "Heavy resistance, 60 turns a minute, every stroke forced round. Into the Heavy Gear, an experimental bike session: eight 20-second bouts with every number fixed in advance, and the load goes up only when all eight are clean."
     },
     {
       "id": "hiit__socializing__1",
-      "name": "In Your Own Voice",
-      "tagline": "A recording of your own calm voice coaches you through every bout.",
-      "whatItIs": "A recording you made yourself on a calm day calls every warm-up minute, bout, rest and cool-down, and you follow it alone. In Your Own Voice has no class, no chat and no one else, only the scripted voice of your rested self guiding your tired self; a coach helps you write the script once, and this proposed session then runs on its own.",
-      "coreIdea": "The calm, rested you may be a better guide for the tired you than whatever mood shows up mid-session, and a recording lets that calmer self do the coaching.",
-      "whatYouDo": "With a coach, write a script second by second: a 10-minute warm-up, eight 30-second hard bouts with 90 seconds easy between, a cool-down and the stop rules, all in your own words. Record it on your phone on a calm day, then play it at each session and do exactly what it says. Re-record it whenever the coach adjusts the plan.",
-      "whoItsFor": "People who train alone and miss having a coach's voice, and those whose self-talk turns harsh when they are tired.",
-      "cautions": "Put the stop rules in the recording, and stop at chest pain, dizziness or sharp pain whatever the voice says. Get medical advice first if you have heart disease, chest pain, fainting or high blood pressure, and keep the volume low enough to hear your surroundings; this is an untested concept.",
-      "tweet": "Your coach, but it's you on a calm day. Record yourself calling every bout, rest and stop rule, then play it back when training alone. In Your Own Voice: a proposed way to let the rested you guide the tired you."
+      "name": "Less Rest Each Round",
+      "tagline": "Same hard bout every round, a little less rest each time.",
+      "whatItIs": "The hard bout stays the same all session, but a coach-written schedule cuts the rest after it by a fixed amount every round, from two minutes down to forty seconds. Less Rest Each Round is done alone, with no class, chat or company, and every number is set in advance; it is a proposed, tightly structured session.",
+      "coreIdea": "Going again a little sooner each round is meant to make recovery itself the thing you train, while the fixed schedule removes every decision about when to start.",
+      "whatYouDo": "After a 10-minute warm-up on a bike or rower, do six 30-second hard bouts, with rests that shrink round by round: 120, 100, 80, 60, 50 and 40 seconds. Hold the same effort in every bout and notice whether you can, rather than pushing harder as the rests get shorter. Cool down for 10 minutes; the coach adjusts the schedule every few weeks.",
+      "whoItsFor": "People who like a clear, rising challenge they can take on alone, and anyone curious about how quickly their body recovers.",
+      "cautions": "Shrinking rests make the last rounds the hardest, so get medical advice first if you have heart disease, chest pain, fainting or high blood pressure, and never cut a rest below the written schedule. If you cannot hold the effort or your breathing will not settle, end the session there, and stop at once at chest pain or dizziness; this is an untested concept.",
+      "tweet": "Same hard 30-second bout every round, but the rest shrinks: 120 seconds, 100, 80, 60, 50, 40. Less Rest Each Round, a proposed solo session where recovery itself becomes the thing you train."
     },
     {
       "id": "hiit__nature__1",
@@ -641,14 +641,14 @@
     },
     {
       "id": "hiit__sensory__1",
-      "name": "Say What Just Happened",
-      "tagline": "After each hard bout, put it into one spoken sentence.",
-      "whatItIs": "After every hard bout, early in the recovery, you say one sentence aloud to a partner about what just happened: how you paced it, where your form went, what you would change. Say What Just Happened leads attention with words and reflection rather than plain sensation; this proposed practice is learned in a few coached small-group sessions and then done with a training partner.",
-      "coreIdea": "Putting a hard effort into words straight afterward is meant to turn a blur of sensation into something you can learn from, bout by bout.",
-      "whatYouDo": "Warm up for 10 minutes, then do eight 40-second hard bouts on bikes, rowers or a track with 80 seconds easy between. About 20 seconds into each recovery, once you can speak, say one plain sentence to your partner, such as 'went out too fast, faded at the end', and hear theirs, then use the rest of the recovery to settle. In the first sessions a coach listens and helps you make the sentences specific, and every session ends with a 10-minute cool-down.",
-      "whoItsFor": "People who finish hard sessions with only a vague memory of how they went, and anyone who learns best by putting things into words.",
-      "cautions": "Get medical advice first if you have heart disease, chest pain, fainting or high blood pressure, and wait until you can breathe comfortably before speaking. Work at your own effort rather than matching your partner, stop at chest pain, dizziness or sharp pain and keep easy days between sessions; this is an untested concept.",
-      "tweet": "'Went out too fast, faded at the end.' In Say What Just Happened, a prototype practice, you put each hard 40-second bout into one spoken sentence to a partner, then settle. Eight bouts, eight sentences, a clearer picture of your effort."
+      "name": "Plan Your Partner's Bout",
+      "tagline": "Partners design each other's next bout, within set limits.",
+      "whatItIs": "Two training partners take turns designing each other's next hard bout, choosing its length and effort from a coach's card of safe limits. Attention moves away from plain sensing toward watching, judging and planning for someone else; this proposed practice is learned in a few coached small-group sessions and then done in pairs.",
+      "coreIdea": "Deciding what someone else can handle next asks you to read their effort closely and think ahead, which is meant to make hard training a shared exercise in judgment.",
+      "whatYouDo": "Warm up together for 10 minutes on bikes or rowers. Before each of eight bouts, each partner picks the other's bout from the card (20, 30 or 40 seconds, at an effort of 6 to 9 out of 10) and says it aloud, then you both ride or row your bouts at the same time, followed by 90 seconds easy. Either partner can always swap a chosen bout for an easier one, and you finish with a 10-minute cool-down and a word about how well each of you judged.",
+      "whoItsFor": "Training partners who want more engagement than following a fixed plan, and people who learn by watching and judging others.",
+      "cautions": "Get medical advice first if you have heart disease, chest pain, fainting or high blood pressure, and keep strictly to the card's limits. You always have the final say over your own bout, so turn down anything that feels too much and stop at chest pain, dizziness or sharp pain; this is an untested concept.",
+      "tweet": "You pick your partner's next bout, they pick yours: 20, 30 or 40 seconds, effort 6 to 9 out of 10, from a coach's card. Plan Your Partner's Bout: a prototype partner session in reading someone else's effort."
     },
     {
       "id": "hiit__music__1",
