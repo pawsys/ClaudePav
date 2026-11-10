@@ -1,0 +1,64 @@
+{
+  "id": "socializing",
+  "name": "Socializing (regular, intentional social connection)",
+  "shortName": "Socializing",
+  "family": "relational",
+  "alsoKnownAs": ["Social connection", "Social engagement", "Social participation", "Spending time with people"],
+  "origin": "Socializing is an everyday human activity rather than a designed therapy; decades of research tie social connection to health, and it became a stated public health priority with the US Surgeon General's 2023 advisory on loneliness and the WHO Commission on Social Connection, set up in 2023.",
+  "summary": "Socializing here means deliberately making regular time for other people: friends, family, neighbors, clubs, classes, faith or volunteer groups, or simple chats with acquaintances. As a wellbeing practice it treats connection like exercise, something you plan and repeat rather than leave to chance. It targets loneliness (feeling less connected than you want), which the WHO estimates affects about 1 in 6 people worldwide, and social isolation (having few social contacts).",
+  "theoryOfChange": "Social connection is thought to protect health in several ways: support from others softens the impact of stress, belonging gives meaning and routine, and people tend to look after themselves better when others care about them. Long-term loneliness is thought to make people more alert to rejection, which can keep them withdrawn, and the loneliness programs that work best tackle those thoughts directly. In a review pooling 148 studies, strong social relationships predicted survival about as much as well-known risk factors such as smoking.",
+  "whatYouDo": "You choose a few kinds of contact you can repeat and put them in your calendar: a weekly call or meal with a friend, a club, class, choir, team or volunteer shift, and small daily exchanges with neighbors or shop staff. You say yes to invitations more often and follow up with people you like, so acquaintances have a chance to become friends. If nerves or gloomy predictions get in the way, you start small and compare how each interaction actually went with what you expected. In some countries, such as the UK, a doctor can refer you to a social prescribing link worker, who helps you find local groups and activities.",
+  "typicalDose": "There is no agreed dose. Structured loneliness programs often run as weekly sessions for several weeks, and social prescribing links you to ongoing local groups; in daily life a practical aim is a few real conversations each week plus at least one regular group or standing date.",
+  "keyTechniques": [
+    "Standing social dates in the calendar",
+    "Joining a group built around a shared activity",
+    "Volunteering",
+    "Following up after first meetings",
+    "Testing fearful predictions about other people",
+    "Social prescribing through a link worker"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "Evidence that connection matters is strong but mostly observational: a review pooling 148 studies (about 309,000 people) found that people with stronger social relationships were about 50% more likely to survive over the follow-up periods, and the US Surgeon General reports that people who often feel lonely have more than double the risk of depression. Evidence that deliberately socializing more improves mental health is weaker. A 2011 review of loneliness programs found a small effect in randomized trials, and programs that worked on negative thoughts about others did better than those that mainly added chances to meet people. Reviews of social prescribing report mostly positive results, including a recent pooled analysis of trials in older adults that found moderate drops in loneliness, but the studies vary so much in design that most reviews could not combine them."
+  },
+  "goodFitFor": "People who feel lonely or cut off, especially around life changes such as moving, retirement, a new baby, illness or bereavement. It also suits anyone whose mood lifts around others, and it fits well alongside other treatment, because low mood often comes with pulling away from people.",
+  "cautions": "Quality matters more than quantity: favor people and settings that feel safe, and step back from contact that is hostile, controlling or abusive. If social situations bring intense fear, panic or avoidance, or low mood persists, this may be social anxiety or depression, which are treatable, so talk to a doctor or therapist rather than pushing through alone.",
+  "namingNote": "'Socializing' is not a branded method. This point covers deliberately making time for other people in everyday life, which research studies under the headings social connection, loneliness and social isolation; arranged routes such as social prescribing and loneliness programs count as ways of doing it, while therapy for social anxiety does not.",
+  "sources": [
+    {
+      "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000316",
+      "kind": "review"
+    },
+    {
+      "title": "A Meta-Analysis of Interventions to Reduce Loneliness",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3865701",
+      "kind": "review"
+    },
+    {
+      "title": "Our Epidemic of Loneliness and Isolation: The U.S. Surgeon General's Advisory on the Healing Effects of Social Connection and Community",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK595227/",
+      "kind": "org"
+    },
+    {
+      "title": "From loneliness to social connection: charting a path to healthier societies: report of the WHO Commission on Social Connection",
+      "url": "https://iris.who.int/items/39134dc6-4753-4900-b942-b7e0e16f5758",
+      "kind": "org"
+    },
+    {
+      "title": "Effectiveness and active ingredients of social prescribing interventions targeting mental health: a systematic review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9328101/",
+      "kind": "review"
+    },
+    {
+      "title": "Understanding loneliness: a systematic review of the impact of social prescribing initiatives on loneliness",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8295963/",
+      "kind": "review"
+    },
+    {
+      "title": "Impact of social prescribing on quality of life and loneliness in geriatric populations: A comprehensive meta-analysis of RCTs with implications for nursing practice",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42167082/",
+      "kind": "review"
+    }
+  ]
+}

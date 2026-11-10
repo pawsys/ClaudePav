@@ -1,0 +1,69 @@
+{
+  "id": "team-sport",
+  "name": "Recreational team sport (such as ultimate frisbee)",
+  "shortName": "Team sport",
+  "family": "movement",
+  "alsoKnownAs": ["Group sport", "Team sports", "Ultimate", "Ultimate frisbee"],
+  "origin": "Team sport has no single founder; the worked example here, Ultimate, was developed by students at Columbia High School in Maplewood, New Jersey, USA, in the late 1960s and is now governed worldwide by the World Flying Disc Federation (WFDF).",
+  "summary": "Team sport means playing a sport regularly with and against other people, for enjoyment and health rather than as a career. Ultimate, the example here, is a fast running game with a flying disc: two teams (seven a side outdoors) pass the disc and score by catching it in the end zone they are attacking. It is non-contact and self-officiated, so players make and settle their own calls under a shared code called the Spirit of the Game.",
+  "theoryOfChange": "Team sport bundles two ingredients that each have support on their own: regular physical activity, and belonging to a group with a shared goal. The 'Mental Health through Sport' model (Eather and colleagues, 2023) proposes that the physical and social sides of sport each help and probably add to each other. Likely routes include fitness, fun, friendships, a sense of competence and an identity beyond work or illness. In Ultimate, refereeing yourselves adds regular practice in honest, calm disagreement, although that has not been tested as a mental health ingredient.",
+  "whatYouDo": "You join a club, league, school, workplace or pickup game and play on a regular schedule, usually a warm-up and skill drills followed by a game. In Ultimate you cannot run while holding the disc, so the team moves it by passing, and when there is a foul or a disputed catch the players involved talk it through and agree on what happens. Many games end with both teams standing together in a 'spirit circle' to thank each other and share highlights, and the time spent together before and after play is part of the point.",
+  "typicalDose": "Typically one or two sessions a week of 1 to 2 hours (practice or games) over a season of a few months, sometimes with weekend tournaments. In a large US survey covering all kinds of exercise, sessions of about 45 minutes, 3 to 5 times a week, went with the best mental health, and more was not always better: very frequent or very long sessions (over about 90 minutes) went with worse mental health. This is an association, not a tested prescription.",
+  "keyTechniques": [
+    "Regular practices and games with the same group",
+    "Warm-up and skill drills",
+    "Shared goals and clear team roles",
+    "Self-officiating and calm dispute talks (Spirit of the Game)",
+    "Post-game spirit circle with both teams",
+    "Social time around the game"
+  ],
+  "evidence": {
+    "level": "emerging",
+    "summary": "Large surveys link team sport with better mental health: among 1.2 million US adults, team sports (a category that also included racquet sports) went with the biggest drop in poor mental health days of any exercise type, and among 11,235 US children aged 9 to 13, team sport went with fewer mental health difficulties. A 2023 review of 29 studies in adults found benefits from sport of any kind, with more favorable results for team sport, but this kind of research cannot rule out that happier, healthier people are simply more likely to join teams. Controlled trials are scarce: a 2026 systematic review found only six studies in adults (744 people, four randomized trials), with inconsistent results. Exercise in general has strong trial evidence for easing depression, but whether the team setting adds extra benefit has not yet been shown in trials."
+  },
+  "goodFitFor": "People who find solo exercise hard to stick with, enjoy play and friendly competition, or want new friends and a sense of belonging. Ultimate in particular suits people who like running and want a sport culture built on fair play.",
+  "cautions": "Sprinting, cutting and jumping bring injury risk: in Ultimate the legs (knee, thigh and ankle) are the most commonly injured area, and in some studies about a quarter of players report having had a concussion, so warm up, build fitness gradually and stop playing after any knock to the head. High-pressure or elite competition can add stress rather than relieve it. Anyone with heart, joint or other health problems should check with a doctor first, and sport supports, but does not replace, treatment for a mental health condition.",
+  "namingNote": "The requested 'group sport, for example ultimate frisbee' is treated as recreational team sport in general, with Ultimate as the worked example. The world governing body calls the game simply 'Ultimate', since Frisbee is a brand name for the disc; this point covers playing for enjoyment and health, not elite competition.",
+  "sources": [
+    {
+      "title": "The impact of sports participation on mental health and social outcomes in adults: a systematic review and the 'Mental Health through Sport' conceptual model",
+      "url": "https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-023-02264-8",
+      "kind": "review"
+    },
+    {
+      "title": "Are Team Sports Effective in Improving Mental Health? A Systematic Review on the Primary Outcomes of Anxiety and Mood",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42582748/",
+      "kind": "review"
+    },
+    {
+      "title": "Associations between organized sport participation and mental health difficulties: Data from over 11,000 US children and adolescents",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9159603/",
+      "kind": "primary"
+    },
+    {
+      "title": "Association between physical exercise and mental health in 1·2 million individuals in the USA between 2011 and 2015: a cross-sectional study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30099000/?dopt=Abstract",
+      "kind": "primary"
+    },
+    {
+      "title": "Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38355154/?dopt=Abstract",
+      "kind": "review"
+    },
+    {
+      "title": "Epidemiology of Injuries in Ultimate (Frisbee): A Systematic Review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7767421/",
+      "kind": "review"
+    },
+    {
+      "title": "WFDF Rules of Ultimate 2025-2028 Official Version effective 2025-01-01",
+      "url": "https://rules.wfdf.sport/wp-content/uploads/2024/12/WFDF-Rules-of-Ultimate-2025-2028.pdf",
+      "kind": "org"
+    },
+    {
+      "title": "History of Ultimate",
+      "url": "https://wfdf.sport/2011/10/history-of-ultimate/",
+      "kind": "org"
+    }
+  ]
+}
