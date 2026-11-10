@@ -1,0 +1,67 @@
+{
+  "id": "coherence",
+  "name": "Coherence Therapy",
+  "shortName": "Coherence",
+  "family": "psychotherapy",
+  "alsoKnownAs": [
+    "Depth-Oriented Brief Therapy",
+    "DOBT"
+  ],
+  "origin": "Developed in the United States by psychotherapists Bruce Ecker and Laurel Hulley from the late 1980s, first published in 1996 as Depth-Oriented Brief Therapy and renamed Coherence Therapy in 2005.",
+  "summary": "Coherence Therapy is a brief, experiential psychotherapy built on the idea that symptoms make emotional sense: they are produced by emotional learnings, often formed early and held outside awareness, that still feel true. The therapist helps the client discover the hidden reason the symptom feels necessary and then experience something that clearly contradicts it, aiming to dissolve the old learning rather than manage the symptom. It is used with individuals, couples and families.",
+  "theoryOfChange": "The approach holds that many symptoms are driven by implicit emotional knowledge, such as a deep felt sense that showing needs leads to rejection, which made sense when it was learned and now makes the symptom feel necessary. Ecker and colleagues link the method to memory reconsolidation, a process studied in laboratory research in which a reactivated emotional memory can be revised when it meets a clear mismatch with what it predicts. Feeling the old learning and a vivid contradiction at the same time is thought to unlock and rewrite it, so the symptom stops without ongoing effort.",
+  "whatYouDo": "Work starts from a specific symptom the client wants gone, and the therapist uses experiential methods, such as imagining life without the symptom or finishing sentences on the spot, to bring its hidden emotional purpose into awareness. The client puts that purpose into plain words and often reads it from an index card between sessions so it stays conscious. The therapist then helps the client find and vividly feel knowledge that contradicts it, holding both at once, and later checks whether the old reaction has stopped coming back.",
+  "typicalDose": "Individual, couple or family sessions, usually weekly and about 50 to 60 minutes. It is designed to be brief, and the developers' case reports often describe a focal symptom ending within a handful of sessions, though length varies.",
+  "keyTechniques": [
+    "Symptom deprivation (imagining being without the symptom)",
+    "Sentence completion",
+    "Index card reminders between sessions",
+    "Finding knowledge that contradicts the old learning",
+    "Juxtaposition: feeling old and new knowing at once",
+    "Verifying that the change lasts"
+  ],
+  "evidence": {
+    "level": "limited",
+    "summary": "Support comes mainly from the developers' case reports and from theory tying the method to memory reconsolidation research. The only randomized trial found compared brief Coherence Therapy with cognitive behavioral self-help reading in 37 adults and reported a larger drop in harmful, self-critical perfectionism but no clear effect on procrastination. A later trial of Coherence Therapy for procrastination was stopped because the therapy could not be delivered in a reliable and valid way, and the proposed reconsolidation mechanism has not been tested in trials of the therapy itself."
+  },
+  "goodFitFor": "People with a specific, persistent symptom or pattern, such as anxiety, low mood, self-criticism or a compulsive habit, who want to understand why it keeps happening and are open to emotionally vivid work in session.",
+  "cautions": "Uncovering hidden emotional learnings can be intense, so people with severe trauma, dissociation or a current crisis should work with a licensed clinician experienced in trauma care. Because controlled evidence is thin, it should not replace well-tested treatments for conditions such as major depression or PTSD without professional advice.",
+  "namingNote": "Called Depth-Oriented Brief Therapy until 2005. It is not the same as heart coherence or coherent breathing, slow-breathing practices that share the word; this entry is the psychotherapy developed by Bruce Ecker and Laurel Hulley and taught through the Coherence Psychology Institute.",
+  "sources": [
+    {
+      "title": "Coherence Therapy",
+      "url": "https://www.coherencetherapy.org/discover/what.htm",
+      "kind": "org"
+    },
+    {
+      "title": "Unlocking the Emotional Brain: Memory Reconsolidation and the Psychotherapy of Transformational Change",
+      "url": "https://www.routledge.com/Unlocking-the-Emotional-Brain-Memory-Reconsolidation-and-the-Psychotherapy-of-Transformational-Change/Ecker-Ticic-Hulley/p/book/9781032139128",
+      "kind": "book"
+    },
+    {
+      "title": "Depotentiation of symptom-producing implicit memory in coherence therapy",
+      "url": "https://narrativestudies.lib.unb.ca/bibcite/reference/16930",
+      "kind": "primary"
+    },
+    {
+      "title": "Memory Reconsolidation Understood and Misunderstood",
+      "url": "https://www.coherencetherapy.org/files/Ecker_2015_MR-Understood-%26-Misunderstood.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Efficacy of Coherence Therapy in the Treatment of Procrastination and Perfectionism",
+      "url": "https://journals.sagepub.com/doi/10.1177/2150137811417975",
+      "kind": "trial"
+    },
+    {
+      "title": "Efficacy of Coherence Therapy for Procrastination",
+      "url": "https://clinicaltrials.gov/study/NCT02058797",
+      "kind": "trial"
+    },
+    {
+      "title": "Memory reconsolidation, emotional arousal, and the process of change in psychotherapy: New insights from brain science",
+      "url": "https://experts.arizona.edu/en/publications/memory-reconsolidation-emotional-arousal-and-the-process-of-chang/",
+      "kind": "review"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "ifs",
+  "name": "Internal Family Systems",
+  "shortName": "IFS",
+  "family": "psychotherapy",
+  "alsoKnownAs": [
+    "IFS",
+    "IFS therapy",
+    "Internal Family Systems therapy",
+    "Internal Family Systems Model"
+  ],
+  "origin": "Developed in the United States in the 1980s by family therapist Richard C. Schwartz, who applied ideas from family systems therapy to the inner family of parts his clients described; it is taught today through the IFS Institute.",
+  "summary": "Internal Family Systems is a form of psychotherapy that sees the mind as a family of sub-personalities, called parts, along with a core Self that can lead them. Instead of trying to get rid of unwanted feelings or habits, the client gets to know the parts behind them with curiosity and compassion. It treats having parts as a normal feature of every mind, not as a disorder.",
+  "theoryOfChange": "IFS holds that every part is trying to help, but painful experiences push some into extreme roles: managers that plan and control, firefighters that rush to numb or distract from pain, and exiles that carry old hurt and shame. Beneath the parts, everyone is thought to have a Self, a calm, curious and compassionate core that cannot be damaged. Change is thought to come when the Self rather than a protective part takes the lead, so protectors can relax and wounded parts can be heard and released from the painful beliefs and feelings they carry.",
+  "whatYouDo": "The therapist helps the client turn attention inward, notice a feeling, thought or urge as a part, and get curious about it instead of fighting it. The client practices unblending, stepping back enough to feel calm or compassion toward the part, then asks what it is trying to do and what it fears would happen if it stopped. With the protective parts' permission, the client gets to know the hurt, exiled parts they guard, witnesses their story, and helps them let go of what they carry, a step IFS calls unburdening.",
+  "typicalDose": "Usually weekly individual sessions of about 50 to 90 minutes, open-ended over months or longer. Studies have used 16 sessions (some 90 minutes long), a 16-week online group program with some individual sessions, and a 9-month program in the arthritis trial.",
+  "keyTechniques": [
+    "Finding and focusing on a part",
+    "Unblending from a part",
+    "Checking how you feel toward a part",
+    "Befriending protectors and their fears",
+    "Witnessing and unburdening exiles",
+    "Direct access: the therapist speaks with a part"
+  ],
+  "evidence": {
+    "level": "emerging",
+    "summary": "The controlled evidence is small: a 2013 trial in 79 adults with rheumatoid arthritis found less pain and better physical function after 9 months of IFS than with mailed education, and a 2017 pilot trial in 37 college women with depression found symptoms improved about as much with IFS as with usual therapy. A 2022 uncontrolled pilot reported that 12 of 13 adults who finished 16 sessions no longer met criteria for PTSD, but a 2026 randomized trial of a 16-week online IFS group for PTSD found no significant difference from an active nature-based program, with both groups improving. IFS was listed in 2015 on NREPP, a US federal registry closed in 2018, as effective for general functioning and well-being, yet a 2025 scoping review found that most published IFS studies are case studies, with only two randomized trials up to 2024."
+  },
+  "goodFitFor": "Adults dealing with inner conflict, harsh self-criticism, shame or reactions they do not understand, and people working through trauma with a trained IFS therapist.",
+  "cautions": "Turning toward deeply hurt parts can bring up intense trauma memories and feelings, so people with severe trauma, dissociation or a current mental health crisis should work with a licensed clinician trained in IFS rather than only with books or apps. Critics note that its popularity has grown much faster than its research base, so it should not replace better tested treatments for PTSD or severe depression without professional advice.",
+  "namingNote": "Despite the name, IFS is mainly an individual therapy: family refers to the inner family of parts, an idea Schwartz carried over from family systems therapy. IFS-based group and online programs, such as PARTS for PTSD, are included in this entry's evidence.",
+  "sources": [
+    {
+      "title": "A Randomized Controlled Trial of an Internal Family Systems-based Psychotherapeutic Intervention on Outcomes in Rheumatoid Arthritis: A Proof-of-Concept Study",
+      "url": "https://www.jrheum.org/content/40/11/1831",
+      "kind": "trial"
+    },
+    {
+      "title": "The Efficacy of Internal Family Systems Therapy in the Treatment of Depression Among Female College Students: A Pilot Study",
+      "url": "https://experts.umn.edu/en/publications/the-efficacy-of-internal-family-systems-therapy-in-the-treatment--2/",
+      "kind": "trial"
+    },
+    {
+      "title": "Internal Family Systems (IFS) therapy for posttraumatic stress disorder (PTSD) among survivors of multiple childhood trauma: A pilot effectiveness study",
+      "url": "https://ifs-institute.com/resources/research/internal-family-systems-ifs-therapy-posttraumatic-stress-disorder-ptsd-among",
+      "kind": "trial"
+    },
+    {
+      "title": "A randomized controlled trial of an online group-based internal family systems treatment for posttraumatic stress disorder: The Program for Alleviating and Resolving Trauma and Stress (PARTS) study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41609644/",
+      "kind": "trial"
+    },
+    {
+      "title": "Exploring the evidence for Internal Family Systems therapy: a scoping review of current research, gaps, and future directions",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13284207.2025.2533127",
+      "kind": "review"
+    },
+    {
+      "title": "Internal Family Systems: Exploring Its Problematic Popularity",
+      "url": "https://societyforpsychotherapy.org/internal-family-systems-exploring-its-problematic-popularity/",
+      "kind": "review"
+    },
+    {
+      "title": "New Research Milestone: First RCT of a Group-Based IFS PTSD Program",
+      "url": "https://ifs-institute.com/resources/research/new-research-milestone-first-rct-group-based-ifs-ptsd-program",
+      "kind": "org"
+    }
+  ]
+}

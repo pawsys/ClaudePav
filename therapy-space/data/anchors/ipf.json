@@ -1,0 +1,59 @@
+{
+  "id": "ipf",
+  "name": "Ideal Parent Figure Protocol",
+  "shortName": "IPF",
+  "family": "psychotherapy",
+  "alsoKnownAs": [
+    "IPF",
+    "IPF Protocol",
+    "Ideal Parent Figure method",
+    "Ideal parent figure imagery"
+  ],
+  "origin": "Developed in the United States by psychologists Daniel P. Brown of Harvard Medical School and David S. Elliott, and set out in their 2016 book Attachment Disturbances in Adults: Treatment for Comprehensive Repair (W. W. Norton).",
+  "summary": "The Ideal Parent Figure Protocol is a guided imagery method for adults with insecure attachment, meaning lasting patterns of anxiety, avoidance or confusion in close relationships that attachment research links to early care. With a therapist's guidance, the client imagines a different set of parents who are ideally suited to them and who provide the five conditions the developers link to secure attachment: feeling safe and protected, being seen and known, being comforted, being delighted in, and being encouraged to become one's best self. It is one of three pillars in Brown and Elliott's treatment, alongside work on reflecting about one's own and other people's minds and on building cooperation in relationships.",
+  "theoryOfChange": "Attachment research suggests that the way caregivers responded to us in childhood leaves inner templates that shape how safe, worthy and trusting we feel with others as adults. The method assumes that vividly and repeatedly experiencing, in imagination, the specific kinds of care that build secure attachment lets the mind form a new template. Over time this is thought to support earned security, a shift toward secure attachment in adulthood that shows up as calmer, more trusting relationships.",
+  "whatYouDo": "The client usually sits with eyes closed while the therapist guides a relaxed, inward focus and invites images of parents who are not their real parents but are perfectly suited to them. The therapist describes in detail how these figures protect, notice, soothe, delight in and encourage the client, adapting to what the client reports and asking them to notice any feelings of safety or warmth in body and mind. The same imagery is returned to across many sessions so that the felt sense of being securely cared for grows stronger and more stable.",
+  "typicalDose": "Usually part of weekly individual therapy sessions of about an hour, with the imagery repeated over many months, since lasting attachment change is described as long-term work. Group and online formats also exist, and the 2017 pilot study tested a brief course of four sessions.",
+  "keyTechniques": [
+    "Guided imagery of ideal parent figures",
+    "Imagining safety, being seen, comfort, delight and encouragement",
+    "Therapist phrasing tuned to the client's unmet needs",
+    "Noticing and strengthening felt security in the body",
+    "Repeating the imagery across sessions",
+    "Pairing with work on reflecting about minds and on cooperation"
+  ],
+  "evidence": {
+    "level": "limited",
+    "summary": "The main published outcome study is a 2017 pilot in which 17 adults with complex PTSD linked to childhood trauma received a short four-session version of the method; their symptoms and markers of attachment trauma fell, quality of life rose, and the gains held at eight months. The pilot had no control group and a small sample, so the improvement cannot be firmly credited to the method. No randomized controlled trials were found, and most other support comes from the developers' clinical cases and practitioner reports."
+  },
+  "goodFitFor": "Adults who feel anxious about being left, uneasy with closeness, or confused about trust in close relationships and want to work on the early roots of that with a trained therapist, including people with complex trauma from childhood. Because it relies on imagery and inner felt experience, it may suit people who are comfortable working that way.",
+  "cautions": "Imagining caring parents may stir up grief, longing or anger about one's actual childhood, and for people with severe trauma or dissociation it can surface overwhelming material, so it is best done with a therapist trained in both the method and trauma care. Given the thin evidence, it should not replace well-tested treatments for PTSD, depression or other conditions without professional advice.",
+  "namingNote": "IPF here means the Ideal Parent Figure Protocol, not interpersonal psychotherapy (IPT) and not idiopathic pulmonary fibrosis, a lung disease with the same abbreviation. This entry covers the imagery protocol; the wider Three Pillars treatment in Brown and Elliott's book also includes metacognitive work (reflecting on minds) and collaborative work (cooperation in relationships). David Elliott continues to teach the method, now within a broader approach called Integrative Attachment Therapy.",
+  "sources": [
+    {
+      "title": "Attachment Disturbances in Adults: Treatment for Comprehensive Repair",
+      "url": "https://www.semanticscholar.org/paper/Attachment-Disturbances-in-Adults:-Treatment-for-Brown-Elliott/03aa381a8eb2669d86ed10078f69cf3e61abda47",
+      "kind": "book"
+    },
+    {
+      "title": "Ideal Parent Figure method in the treatment of complex posttraumatic stress disorder related to childhood trauma: a pilot study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5700488/",
+      "kind": "trial"
+    },
+    {
+      "title": "Co-creating secure attachment imagery to enhance relational healing",
+      "url": "https://adultattachmenthealing.com/wp-content/uploads/2021/09/Elliott.AttachmentRelationalHealing.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "About Daniel P Brown",
+      "url": "https://drdanielpbrown.com/about-dan-summary",
+      "kind": "primary"
+    },
+    {
+      "title": "Ideal Parent Figure",
+      "url": "https://adultattachmenthealing.com/ideal-parent-figure-ipf-therapy/",
+      "kind": "org"
+    }
+  ]
+}
