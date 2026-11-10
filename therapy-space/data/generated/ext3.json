@@ -251,7 +251,7 @@
       "coreIdea": "Old emotional material may need to finish its own arc, and letting the body's sense of completion mark the end may avoid stopping halfway.",
       "whatYouDo": "You book a half-day block with a licensed therapist trained in trauma care, and lie or sit comfortably while noticing what the body brings up, with the therapist reflecting what you notice and checking that you feel steady. When a wave of feeling has passed and the body feels quiet, you both agree the session is done, whether that took 50 minutes or two hours.",
       "whoItsFor": "People who often feel cut off mid-feeling by the end of a 50-minute session and want deep work at the body's pace.",
-      "cautions": "Open-ended deep work can be intense, so it belongs only with a licensed clinician experienced in trauma, with breaks, a firm outer time limit and a plan for staying grounded afterwards. It is an untested concept, not suitable during a crisis, and not a replacement for well-tested treatments for PTSD or depression.",
+      "cautions": "It works only with feelings and memories you already have, treats images and sensations as experiences rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma leads it with breaks and a firm outer time limit, you can stop at any moment, and this untested idea is not for times of crisis or a replacement for well-tested treatments for PTSD or depression.",
       "tweet": "Fifty minutes is the clock's idea of a session, not your body's. When the Body Is Done is a new concept: deep work with a licensed therapist, trained in trauma care, that ends when your body feels settled. Untested."
     },
     {
@@ -262,7 +262,7 @@
       "coreIdea": "Regret is often rushed into lessons or pushed away, and simply letting it be felt, with steady company, may let it soften on its own.",
       "whatYouDo": "In weekly 75-minute sessions with a licensed therapist trained in trauma care, you bring one regret, from a recent choice to something from long ago, and describe the moment slowly. You notice where the regret sits in the body and what younger feelings it touches, while the therapist keeps the pace bearable and never asks for a lesson or a plan.",
       "whoItsFor": "People who replay old choices, carry guilt about the past, or have been told too often to \"just move on\".",
-      "cautions": "Regret can bring up shame, grief or self-blame, so this belongs with a licensed clinician experienced in trauma, at a pace you control. If regret comes with thoughts of suicide or self-harm, seek urgent professional help; it is an untested idea.",
+      "cautions": "It works only with memories you already have, treats feelings as experiences rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma leads it at a pace you control, you can stop at any point, and if regret comes with thoughts of suicide or self-harm, seek urgent help; it is an untested idea.",
       "tweet": "Replaying a choice you regret? Regrets, Felt Through is a proposed practice: with a therapist who specializes in trauma, you let a regret be felt in your body without turning it into a lesson or a plan. For people told to just move on."
     },
     {
@@ -280,12 +280,12 @@
       "id": "tre__aletheia__5",
       "name": "Read Aloud by a Friend",
       "tagline": "Hear your own life story read aloud by someone you trust.",
-      "whatItIs": "Read Aloud by a Friend is a new concept that takes Aletheia Coaching away from body exercises and toward words, memory and relationship. You write part of your life story, and a trusted friend or partner reads it aloud to you in a session led by a licensed therapist trained in trauma care, so you hear your own history in another voice.",
+      "whatItIs": "Read Aloud by a Friend is a new concept that takes Aletheia Coaching away from body exercises and toward words, memory and relationship. You write part of your life story, and a trusted friend who was not part of that history reads it aloud to you in a session led by a licensed therapist trained in trauma care, so you hear your own history in another voice.",
       "coreIdea": "Hearing your own story in someone else's voice may let you feel it as a listener would, with more compassion than you usually give yourself.",
-      "whatYouDo": "Between sessions you write a few pages, however rough, about one period of your life. In a 90-minute session led by a licensed therapist trained in trauma care, your companion reads it slowly while you listen, the therapist helps you notice what you feel as the words land, and the reader adds no comment or advice.",
-      "whoItsFor": "People who tell their own story flatly or harshly, and who have someone close they would trust to read it.",
-      "cautions": "Hearing painful history aloud can be intense, so this needs a licensed clinician trained in trauma care, you choose what to share, and the reader must agree to keep it private. It is an untested idea, not suitable during a crisis.",
-      "tweet": "New concept: Read Aloud by a Friend. You write a chapter of your life, and someone you trust reads it aloud while a licensed therapist helps you notice what you feel. Hearing your story in another voice may change how it sounds to you."
+      "whatYouDo": "Between sessions you write a few pages, however rough, about one period of your life that you already remember well. In a 90-minute session led by a licensed therapist trained in trauma care, a companion who was not involved in that period reads it slowly while you listen, and the therapist helps you notice what you feel as the words land. You can stop the reading at any line, and each session ends with time to settle.",
+      "whoItsFor": "People who tell their own story flatly or harshly, and who have a trusted friend, outside the events, they would let read it.",
+      "cautions": "You write only what you already remember, the story is treated as your experience rather than evidence of what happened, and it is never used to uncover forgotten events. The reader must be someone safe who was not part of that history and who keeps it private, a licensed clinician trained in trauma care leads every session, and this untested idea is not for times of crisis.",
+      "tweet": "New concept: Read Aloud by a Friend. You write a chapter of your life, and a trusted friend who wasn't part of it reads it aloud while a licensed therapist helps you notice what you feel. Your own story, heard in another voice."
     },
     {
       "id": "focusing__aletheia__5",
@@ -295,30 +295,30 @@
       "coreIdea": "Old writing holds a younger self's feelings in their own words, and meeting them with company may let you understand that self more kindly.",
       "whatYouDo": "You bring a diary or a bundle of letters and, in weekly 60-minute sessions with a licensed therapist trained in trauma care, read a short passage aloud or silently. You pause on what stirs you, notice how you feel toward the person who wrote it, and decide each week how much more to read.",
       "whoItsFor": "People who kept diaries or letters in their teens or twenties and feel curious, or uneasy, about who they were.",
-      "cautions": "Old diaries can hold painful memories or shame, so this belongs with a licensed clinician experienced in trauma, and you can stop reading at any point. It is an untested idea, not suitable during a crisis.",
+      "cautions": "Old diaries show how you saw things then, so they are read alongside memories you already have, as feelings and points of view rather than proof of events, and the work is never used to uncover forgotten memories. A licensed clinician experienced in trauma leads it, you can stop reading at any point, and this untested idea is not for times of crisis.",
       "tweet": "Still have your teenage diary somewhere? Teenage Diary, Reread is a new idea: with a licensed clinician beside you, you read a few pages a week and notice how the person who wrote them feels to you now."
     },
     {
       "id": "aletheia__do-nothing__1",
-      "name": "Six-Seat Unfolding Circle",
-      "tagline": "A small group, a clear format and guided deep inner work.",
-      "whatItIs": "Six-Seat Unfolding Circle is a speculative practice that moves Aletheia Coaching away from open, instruction-free meditation and toward a structured small-group format. Six people meet with a licensed therapist trained in trauma care and group work, and each takes guided turns at slow, feeling-based exploration while the group listens with full attention.",
-      "coreIdea": "Being witnessed by a small, steady group, within a clear and safe format, may deepen inner work that feels lonely one to one.",
-      "whatYouDo": "The circle meets for three hours every two weeks over six months; each meeting opens with ten minutes of shared silence, then two or three people take a 30-minute turn led by the licensed therapist trained in trauma care, while the others hold quiet attention. Each turn ends with listeners saying one thing they felt while witnessing, without advice or analysis.",
-      "whoItsFor": "People who want depth work but also want to feel less alone in it, and who like a reliable format.",
-      "cautions": "Group depth work can stir strong feelings and shame, so the therapist leading it must be a licensed clinician trained in trauma and group work, members should be screened beforehand, and anyone can pass. It is an untested idea and not suitable for people in crisis.",
-      "tweet": "An idea for doing deep inner work without feeling alone: the Six-Seat Unfolding Circle. Six people, a licensed therapist skilled in trauma and groups, guided turns, and listeners who give no advice. New and untested."
+      "name": "The Missing Quality Circle",
+      "tagline": "In a small group, feel a quality your old learning never allowed.",
+      "whatItIs": "The Missing Quality Circle is a speculative practice that pushes Aletheia Coaching away from open, effortless sitting, toward deliberate, structured group work on long-held emotional learning. Each person names an old belief they already know well, such as \"I have to manage everything alone\", and is guided to find in the body a quality of presence that belief never allowed, like trust or ease, while the group holds quiet attention.",
+      "coreIdea": "An old emotional learning may loosen when it is felt at the same moment as a lived experience that contradicts it, and a steady group can make that experience easier to reach and hold.",
+      "whatYouDo": "Five people meet every two weeks for three hours with a licensed therapist trained in trauma care and group work, and each takes a 30-minute turn: name the belief in one sentence, feel where it lives in the body, then let the therapist guide you toward the missing quality and feel both side by side. Listeners stay silent until the turn ends, then each says one word for what they witnessed, and anyone can pause their turn at any moment.",
+      "whoItsFor": "People who already know their core beliefs well but find that insight alone has not changed how they feel.",
+      "cautions": "The work uses only beliefs and memories you already know, treats feelings as experiences rather than evidence of what happened, and is never used to uncover forgotten events. Members are screened by the licensed clinician trained in trauma who leads the group, anyone can stop at any time, and this untested idea is not suitable during a crisis.",
+      "tweet": "Insight isn't always enough. The Missing Quality Circle is a new idea: in a small group led by a licensed therapist, you feel an old belief like \"I must manage alone\" right alongside the steadiness it never allowed."
     },
     {
       "id": "aletheia__metta-jhana__1",
       "name": "Left Unsweetened",
-      "tagline": "Hard feelings may stay hard, and someone witnesses them.",
-      "whatItIs": "Left Unsweetened is a new concept that takes Aletheia Coaching away from meditations that build warm, positive feelings. Grief, anger, envy or despair are met in the body and allowed to stay exactly as they are, without being turned into compassion or goodwill, while a licensed therapist trained in trauma care keeps you company.",
-      "coreIdea": "Feelings that are always softened or reframed may never be fully felt, and letting them stay unsweetened, with support, may let them run their course.",
-      "whatYouDo": "In 75-minute one-to-one sessions with a licensed therapist trained in trauma care, you name a hard feeling, find where it lives in the body and let it be felt at a pace the therapist helps keep bearable, while they reflect what they notice. You can bring a trusted friend to sit in silently, and you never have to forgive, reframe or find a lesson.",
-      "whoItsFor": "People who feel pushed to be positive, forgiving or grateful and want a place where hard feelings are allowed.",
-      "cautions": "Strong grief or anger can be overwhelming, so sessions belong only with a licensed clinician trained in trauma, with a steady pace and time to settle before leaving. If anger comes with urges to harm anyone, or despair with thoughts of suicide, tell your therapist at once or contact emergency services; this is an untested idea.",
-      "tweet": "Tired of being told to look on the bright side? Left Unsweetened is a new concept: grief or anger is felt in the body and allowed to stay as it is, with a qualified trauma therapist beside you. No forced forgiveness, no lessons."
+      "tagline": "Feel the hard feelings you learned early to sweeten or hide.",
+      "whatItIs": "Left Unsweetened is a new concept that takes Aletheia Coaching away from meditations that build warmth and goodwill, toward the hard feelings you learned long ago to sweeten. With a licensed therapist trained in trauma care, you notice the early rule that turned anger into politeness or grief into gratitude, and let the feeling underneath be felt as it is.",
+      "coreIdea": "Many people learned in childhood that some feelings were not welcome, and having such a feeling fully accepted by another person may contradict that old learning from the inside.",
+      "whatYouDo": "In 75-minute one-to-one sessions with a licensed therapist trained in trauma care, when you catch yourself softening a feeling (\"I'm not angry, just disappointed\"), the therapist invites you to pause, sense what was being sweetened and notice the old sense of what would happen if you showed it. You let the plain feeling be there at a pace the therapist helps keep bearable, a trusted friend may sit in silently if you wish, and you never have to forgive, reframe or find a lesson.",
+      "whoItsFor": "People who feel pushed to be positive, forgiving or grateful, and who sense they learned early to tidy their feelings away.",
+      "cautions": "The work uses only memories you already have, treats feelings as experiences rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma leads it, you can stop at any moment, and if anger comes with urges to harm anyone, or despair with thoughts of suicide, tell your therapist at once or contact emergency services; it is an untested idea.",
+      "tweet": "\"I'm not angry, just disappointed.\" Left Unsweetened is a new concept: with a licensed therapist, you notice the feelings you learned early to sweeten, and let the plain feeling be felt as it is. No forced forgiveness, no lessons."
     },
     {
       "id": "aletheia__vipassana__1",
@@ -328,7 +328,7 @@
       "coreIdea": "A daydream that has returned across a lifetime may be a way of soothing a familiar feeling, and noticing the moment it starts may bring that feeling, and its history, into view.",
       "whatYouDo": "Between sessions you jot down, in a word or two, when the daydream starts and what had just happened. In 60-minute sessions with a licensed therapist trained in trauma care, one to one or in a small group of three screened people, you talk loosely about those moments, the feeling underneath and how far back it goes, while the daydream itself is left alone, neither retold nor analyzed.",
       "whoItsFor": "People who notice the same fantasies returning and are curious about what they say.",
-      "cautions": "Daydreams can touch grief and early hurts, so this needs a licensed clinician trained in trauma care, and group members must be screened. Daydreaming that takes over many hours a day deserves a professional assessment; it is an untested idea.",
+      "cautions": "Daydreams are treated as feelings and wishes, not as evidence of anything that happened, the work uses only memories you already have, and it is never used to uncover forgotten events. A licensed clinician trained in trauma care screens group members and leads every session, you can pause or stop at any time, and daydreaming that takes over many hours a day deserves a professional assessment; it is an untested idea.",
       "tweet": "A daydream you've had since childhood may switch on at very particular moments. Lifelong Daydreams is a proposed practice: with a licensed therapist, you notice when it starts and what you were feeling just before. An untested idea."
     },
     {
@@ -339,7 +339,7 @@
       "coreIdea": "Radical slowness may be what makes deep material bearable: at half speed there is always time to notice, settle and choose whether to go on.",
       "whatYouDo": "In 75-minute sessions with a licensed therapist trained in trauma, you sit or lie very still, and both of you speak in short phrases separated by long pauses. Whenever something old or painful stirs, the therapist slows things down further and checks that you feel steady before you stay with it.",
       "whoItsFor": "People who talk fast, rush past their feelings or feel flooded when deep material comes too quickly.",
-      "cautions": "Slowness lowers but does not remove the intensity of deep work, so it needs a licensed clinician experienced in trauma and a pace you can stop at any time. It is an untested idea, not suitable during a crisis, and not a replacement for well-tested trauma treatment.",
+      "cautions": "It works only with memories you already have, treats images and feelings as experiences rather than evidence of what happened, and is never used to uncover forgotten events. Slowness lowers but does not remove the intensity of deep work, so a licensed clinician experienced in trauma leads it, you can stop at any time, and this untested idea is not for times of crisis or a replacement for well-tested trauma treatment.",
       "tweet": "New concept: At Half Speed. Deep inner work where everything happens at half the usual pace, with long pauses after every sentence and a licensed clinician beside you. An idea for people who rush past their own feelings."
     },
     {
@@ -350,30 +350,30 @@
       "coreIdea": "Long stretches of solitude can let deep feelings surface that never appear in a busy week, and a daily meeting with a therapist gives a regular place to make sense of them.",
       "whatYouDo": "For three to five days you stay alone in a simple retreat cabin with your phone switched off and put away, spending the days resting, sitting, writing and noticing images, memories and moods. A licensed therapist trained in trauma care stays on site for the whole retreat, meets you for an hour each day with short check-ins every morning and evening, and can be reached at any hour on a landline in the cabin.",
       "whoItsFor": "Experienced inner explorers, not in crisis, who want an extended, solitary stretch of depth work with a safety net.",
-      "cautions": "Solitude and intensive inner work can bring up difficult experiences, including fear, panic or unreal feelings, so a licensed clinician trained in trauma should screen participants first, and people with a history of psychosis, mania, dissociation or severe trauma should not do this without their clinician's agreement. It is an untested idea, and you can end the stay early at any time.",
+      "cautions": "Solitude and intensive inner work can bring up fear, panic or unreal feelings, so a licensed clinician trained in trauma screens participants first, people with a history of psychosis, mania, dissociation or severe trauma should not take part without their own clinician's agreement, and you can end the stay at any time. Memories and images that surface are treated as experiences rather than evidence of what happened, nobody prompts you to search beyond memories you already have, and the stay is never used to uncover forgotten events; it is an untested idea.",
       "tweet": "Thought experiment: three days alone in a quiet cabin, phone off, letting old feelings surface in their own time, with a licensed therapist on site who checks in daily. Guided Cabin Solitude, an untested idea for experienced inner explorers."
     },
     {
       "id": "aletheia__endurance__1",
-      "name": "The Long Interval",
-      "tagline": "One deep session, then weeks for life to do its part.",
-      "whatItIs": "The Long Interval is a new concept that takes Aletheia Coaching away from steady, sustained effort and toward deliberate gaps. Deep sessions with a licensed therapist trained in trauma care are spaced a month or more apart, with no homework in between, because the time between sessions is treated as part of the work.",
-      "coreIdea": "What shifts in a deep session may need weeks of ordinary life to settle, so spacing sessions widely puts rest, not persistence, at the center.",
-      "whatYouDo": "Every four to six weeks you have a 90-minute session with a licensed therapist trained in trauma care, where you slowly feel into what has been stirring and let it be met. Between sessions you do nothing special, apart from a short check-in message two weeks later and the option to call if something difficult comes up.",
-      "whoItsFor": "People who cannot manage weekly sessions, feel overloaded by homework, or prefer to let things settle in their own time.",
-      "cautions": "Deep material opened in one session can stir things up in the weeks that follow, so it belongs only with a licensed clinician trained in trauma care who is reachable between sessions. It is an untested idea and not suitable for anyone in crisis or needing regular treatment.",
-      "tweet": "Here's a speculative one: The Long Interval. One deep session with a licensed therapist every month or so, no homework, and the weeks in between treated as part of the work. For people who feel overloaded by weekly sessions."
+      "name": "Anniversary Feelings",
+      "tagline": "Explore the mood that returns at the same time every year.",
+      "whatItIs": "Anniversary Feelings is a speculative practice that takes Aletheia Coaching away from steady, self-driven endurance, toward the slow cycles of feeling that return by themselves. With a licensed therapist trained in trauma care, you explore a mood that comes back at the same time each year, such as a heaviness every November or unease around a birthday, and the long-held loss or emotional learning it may carry.",
+      "coreIdea": "Some feelings keep their own calendar, and gently feeling an annual mood, rather than pushing through it, may show which old losses or learnings it still holds.",
+      "whatYouDo": "You meet a licensed therapist trained in trauma care for a few 60-minute sessions in the weeks around the recurring time, and talk calmly about how the season feels and what you already know about why. Nothing is forced to connect: if a link to an old loss or learning appears, you feel it slowly, and you can pause or end any session whenever you need.",
+      "whoItsFor": "People who notice the same low or tense season every year and want to understand it rather than simply endure it.",
+      "cautions": "The work uses only memories and links you already know, treats feelings as experiences rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma leads it, seasonal low mood can also be a treatable condition worth raising with a doctor, and this untested idea is not suitable during a crisis.",
+      "tweet": "Same heavy mood every November? Anniversary Feelings is a proposed practice: with a licensed therapist, you explore a feeling that returns at the same time each year and what old loss or learning it may carry, instead of just enduring it."
     },
     {
       "id": "aletheia__strength__1",
-      "name": "Sickbed Memories",
-      "tagline": "How you were cared for when ill as a child.",
-      "whatItIs": "Sickbed Memories is a new concept that moves Aletheia Coaching as far as possible from building a strong, capable body, toward the times your body was weak. With a licensed therapist trained in trauma care, you talk openly about being ill, injured or in hospital as a child, and feel how you were, or were not, looked after.",
-      "coreIdea": "How we were cared for when ill can quietly shape how we treat our own weakness as adults, and feeling those memories may make that pattern visible.",
-      "whatYouDo": "In weekly 60-minute sessions with a licensed therapist trained in trauma care, you talk freely about childhood illnesses, injuries or hospital stays as they come to mind, with no set order or exercise. You notice the feelings that come with them, such as comfort, fear or loneliness, and how they echo in the way you handle being unwell today.",
-      "whoItsFor": "People who feel ashamed or panicky when they are ill, or who push on through sickness, and wonder where that comes from.",
-      "cautions": "Memories of childhood illness or hospital can be traumatic, so this belongs with a licensed clinician experienced in trauma, and current health worries still need your doctor. It is an untested idea, not suitable during a crisis.",
-      "tweet": "How were you looked after when you were ill as a child? Sickbed Memories is a new concept: with a therapist trained in trauma care, you explore those memories and how they echo in the way you treat yourself when unwell now."
+      "name": "The Comparison Reflex",
+      "tagline": "Follow the habit of measuring yourself against others to its roots.",
+      "whatItIs": "The Comparison Reflex is a new concept that moves Aletheia Coaching as far as possible from measuring progress and building strength, toward the long-held habit of measuring yourself against others. With a licensed therapist trained in trauma care, you notice the quick sting of comparison in daily life, at work, online or in your family, and feel what old emotional learning about your worth it carries.",
+      "coreIdea": "Constant comparison often rests on an early learning that worth has to be proven against someone else, and letting that learning be felt, without trying to correct it, may soften its grip.",
+      "whatYouDo": "In open, weekly 60-minute conversations with a licensed therapist trained in trauma care, you bring recent moments when comparison stung and describe them in your own words, with no exercises or set order. When the sting is present, you slow down, notice what it says about you and how old it feels, and let it be there; you can pause or change the subject whenever you need.",
+      "whoItsFor": "People who constantly measure themselves against siblings, colleagues or strangers online, and wonder where that started.",
+      "cautions": "The work uses only memories you already have, treats feelings as experiences rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma leads it, you can stop at any point, and this untested idea is not suitable during a crisis.",
+      "tweet": "That quick sting when someone else seems ahead? New concept: The Comparison Reflex. In open conversation with a therapist trained in trauma care, you follow the habit of measuring yourself against others to the old learning about worth underneath."
     },
     {
       "id": "aletheia__animal__1",
@@ -383,19 +383,19 @@
       "coreIdea": "Places hold feelings, and slowly revisiting remembered rooms in imagination may bring old emotional learnings gently into awareness.",
       "whatYouDo": "In 60-minute sessions, a licensed therapist trained in trauma care invites you to picture the front door of a childhood home and move at your own pace from room to room, describing what you see and feel in the body. You choose which doors to open and can step back outside at any moment, and the therapist never suggests what you should find.",
       "whoItsFor": "People curious about how their early home shaped their feelings today, who think easily in pictures.",
-      "cautions": "Imagery of childhood can bring up painful memories, and imagined scenes are not a reliable record of what happened, so this needs a licensed clinician trained in trauma who avoids leading questions. People with severe trauma, dissociation or a current crisis should only do it as part of their own treatment; it is an untested idea.",
+      "cautions": "You visit only a home you already remember, the images are treated as feelings rather than a record of what happened, and the work is never used to uncover forgotten events, so the therapist, a licensed clinician trained in trauma, avoids leading questions. People with severe trauma, dissociation or a current crisis should only do it within their own treatment, you can step back outside at any moment, and it is an untested idea.",
       "tweet": "Places hold feelings. Childhood Rooms Revisited is a proposed practice: with a therapist trained in trauma care, you imagine walking through the home you grew up in, room by room, choosing which doors to open. A new idea, done slowly."
     },
     {
       "id": "aletheia__qigong__1",
-      "name": "Names You Were Given",
-      "tagline": "Explore the nicknames and labels you grew up with.",
-      "whatItIs": "Names You Were Given is a new concept that moves Aletheia Coaching away from body forms and toward the words that shaped you. With a licensed therapist trained in trauma care, you explore nicknames, labels and family descriptions from childhood, such as \"the clever one\" or \"the difficult one\", and feel how each still lands in you.",
-      "coreIdea": "Labels given early can become quiet rules about who we are, and feeling each one may loosen its hold.",
-      "whatYouDo": "There is no list and no set exercise: in open, weekly 60-minute conversations with a licensed therapist trained in trauma care, nicknames and labels are noticed as they turn up in what you say. When one appears, you both slow down, let its feeling and memories come in whatever order they do, and follow wherever that leads.",
-      "whoItsFor": "People who feel boxed in by an old family role or a label from school.",
-      "cautions": "Hurtful names can bring up shame or memories of bullying or abuse, so this belongs with a licensed clinician trained in trauma care, at your pace. It is an untested idea, not suitable during a crisis.",
-      "tweet": "\"The clever one.\" \"The difficult one.\" Names You Were Given is an untested idea: in open conversation with a licensed clinician, the labels you grew up with are noticed as they come up, and you feel how each still lands."
+      "name": "The Type You Always Choose",
+      "tagline": "Explore the kind of person you keep being drawn to.",
+      "whatItIs": "The Type You Always Choose is a speculative practice that moves Aletheia Coaching away from set body forms and into open conversation about a pattern in your relationships. With a licensed therapist trained in trauma care, you explore the kind of partner, friend or boss you keep being drawn to, and the early attachment learning that may make that kind of person feel familiar.",
+      "coreIdea": "What feels like chemistry is often familiarity, and feeling why a certain kind of person draws you may bring an old attachment learning into awareness.",
+      "whatYouDo": "There are no exercises or set steps: in weekly 60-minute conversations with a licensed therapist trained in trauma care, you talk about the people you have been drawn to and what being near them feels like in the body. When a pattern stands out, such as always choosing people who are hard to reach, you stay with what is familiar in it, and you can pause or stop whenever you need.",
+      "whoItsFor": "People who notice they keep ending up in the same kind of relationship and want to understand why.",
+      "cautions": "The work uses only memories you already have, treats feelings and impressions as experiences rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma leads it, and if a current relationship is abusive or unsafe, safety and support services come first; it is an untested idea.",
+      "tweet": "Keep falling for the same kind of person? The Type You Always Choose is a new idea: in open conversation with a licensed clinician, you explore why that kind of person feels so familiar, and what old attachment learning it echoes."
     },
     {
       "id": "aletheia__socializing__1",
@@ -405,30 +405,30 @@
       "coreIdea": "Some people can only let deep feelings come when no one is watching, and knowing skilled help is a door away may make that privacy safe enough to use.",
       "whatYouDo": "Each 90-minute session starts and ends with ten minutes together with a licensed therapist trained in trauma care, who then moves to the next room. In between you lie or sit and let feelings and memories come in the body, with a bell to call the therapist, who also knocks gently every 20 minutes to check you are steady.",
       "whoItsFor": "People who freeze or perform when watched, and who want depth work with privacy but not isolation.",
-      "cautions": "Being alone with old feelings can become overwhelming, so this belongs only with a licensed clinician experienced in trauma who has assessed you first, and you can call them in at any moment. It is an untested idea, not suitable during a crisis or for people prone to dissociation.",
+      "cautions": "Feelings and memories that come are treated as experiences rather than evidence of what happened, the work uses only memories you already have, and it is never used to uncover forgotten events. A licensed clinician experienced in trauma assesses you first, can be called in at any moment and will end the session whenever you ask, and this untested idea is not suitable during a crisis or for people prone to dissociation.",
       "tweet": "Can't let feelings come while someone watches? New concept: The Therapist Next Door. You spend the session alone with whatever rises, while a licensed clinician waits in the next room, checks in every 20 minutes and comes the moment you ring."
     },
     {
       "id": "aletheia__nature__1",
-      "name": "Old Childhood Fears",
-      "tagline": "Revisit what frightened you as a child, slowly and with support.",
-      "whatItIs": "Old Childhood Fears is a speculative practice that moves Aletheia Coaching indoors and deep into early history through the fears you had as a child, such as the dark, being left behind or a parent's anger. With a licensed therapist trained in trauma care, you picture one fear at a time and feel what it was like and what it was protecting.",
-      "coreIdea": "Childhood fears often carry early emotional learnings, and meeting them again with adult support may show which still quietly shape your reactions.",
-      "whatYouDo": "In 75-minute sessions with a licensed therapist trained in trauma care, you follow the same simple sequence for one fear: name it, picture where you were when it was strongest, notice what you feel in the body now, and return to the room you are in. You choose which fears to visit and when to stop, and the therapist never suggests what you should remember.",
-      "whoItsFor": "Adults whose reactions to the dark, to being left or to raised voices seem bigger than the situation.",
-      "cautions": "Revisiting childhood fear can bring back intense or traumatic memories, so this belongs only with a licensed clinician experienced in trauma who keeps the pace slow. It is an untested idea, not suitable during a crisis.",
-      "tweet": "Afraid of the dark at six, or of being left behind? Old Childhood Fears is a new concept: with a licensed clinician, you revisit one childhood fear at a time and feel what it was protecting, then come back to the present room."
+      "name": "The Critic's Borrowed Voice",
+      "tagline": "Notice whose tone your inner critic uses, and feel what it learned.",
+      "whatItIs": "The Critic's Borrowed Voice is a new concept that moves Aletheia Coaching indoors and inward, away from open landscapes and toward the voice of your inner critic. With a licensed therapist trained in trauma care, you notice the tone and phrasing of your harsh inner comments, sense whose voice they echo among people you already know shaped you, and feel the emotional learning they carry.",
+      "coreIdea": "An inner critic often speaks in a borrowed tone, and hearing it as an echo rather than as the truth may let the old learning behind it be felt and loosened.",
+      "whatYouDo": "In 60-minute sessions you follow a simple sequence with a licensed therapist trained in trauma care: say a recent self-criticism aloud, imagine its tone of voice, notice whether it sounds like anyone you know, and feel what it seems to be protecting you from. Then you return to your own present voice, and you can stop at any step.",
+      "whoItsFor": "People with a harsh inner critic who want to understand where its tone comes from.",
+      "cautions": "The work uses only what you already know about the people in your life, treats images and resemblances as feelings rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma leads it at your pace, and this untested idea is not suitable during a crisis.",
+      "tweet": "Ever noticed your inner critic has a familiar accent? The Critic's Borrowed Voice is a proposed practice: with a licensed therapist, you hear whose tone your harsh inner comments echo, and feel the old learning behind them."
     },
     {
       "id": "aletheia__sensory__1",
-      "name": "First Friends Remembered",
-      "tagline": "Explore your earliest friendships and what they taught you about trust.",
-      "whatItIs": "First Friends Remembered is a new concept that moves Aletheia Coaching away from sensory, present-moment work and toward the remembered world of your earliest friendships. With a licensed therapist trained in trauma care, one to one or in a small screened group of three, you recall childhood friends, fallings-out and moments of belonging, and feel what they taught you about trust.",
-      "coreIdea": "Early friendships, not only family, shape how safe it feels to be close to people, and feeling those memories may show patterns you still carry.",
-      "whatYouDo": "In 75-minute sessions with a licensed therapist trained in trauma care, you talk loosely about friends from your early school years, picturing faces, games and places as they come back. When a memory carries feeling, such as being chosen, left out or let down, you stay with it in the body, and in the group version the others listen without comment.",
-      "whoItsFor": "People who find friendship hard, or who sense that a childhood friendship still affects how they trust others.",
-      "cautions": "Memories of bullying or exclusion can be painful, so this needs a licensed clinician experienced in trauma, and group members must be screened and agree to confidentiality. It is an untested idea, not suitable during a crisis.",
-      "tweet": "Remember your first best friend, or the day you were left out? First Friends Remembered is a proposed practice: with a qualified trauma therapist, you revisit early friendships and feel what they taught you about trust."
+      "name": "Grieving What Was Missing",
+      "tagline": "Mourn the care you needed early on and did not get.",
+      "whatItIs": "Grieving What Was Missing is a new concept that moves Aletheia Coaching away from present sensory contact and toward something that cannot be sensed at all: what was absent. With a licensed therapist trained in trauma care, and a small screened group if you wish, you let yourself grieve the care, attention or safety you needed early on and did not get, imagined as it might have been.",
+      "coreIdea": "Unmet early needs often go unmourned because nothing visibly happened, and grieving the absence, with others present, may let a long-held ache finally be felt.",
+      "whatYouDo": "In 75-minute sessions led by a licensed therapist trained in trauma care, you name a need you already know went unmet, such as being comforted or praised, picture what receiving it might have been like, and let the grief of its absence be felt in the body. In the group version, three people take turns while the others listen without comment, and anyone can pause or stop whenever they need.",
+      "whoItsFor": "People who say \"nothing really bad happened\" yet carry a sense that something important was missing.",
+      "cautions": "The work uses only what you already know about your past, treats imagined scenes as wishes rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma screens members and leads every session, and this untested idea is not suitable during a crisis or in early, acute grief.",
+      "tweet": "\"Nothing really bad happened\", yet something was missing. Grieving What Was Missing is a new concept: with a licensed therapist and a small, screened group, you mourn the care you needed early on and did not get."
     },
     {
       "id": "aletheia__music__1",
@@ -438,7 +438,7 @@
       "coreIdea": "Holding back was once protective, and feeling the holding itself, rather than forcing release, may let it relax when it is ready.",
       "whatYouDo": "In weekly 60-minute sessions with a licensed therapist trained in trauma care, you notice where you hold back in the body, such as a tight throat or a clenched jaw, and let a memory of when that began come into view. The therapist helps you stay with the holding gently and never asks you to cry, shout or perform a release.",
       "whoItsFor": "People who cannot cry or speak up when they want to, and who are wary of methods that push for catharsis.",
-      "cautions": "Old reasons for holding back can be painful or traumatic, so this needs a licensed clinician experienced in trauma and a pace you control. It is an untested idea and not suitable during a crisis.",
+      "cautions": "It works only with memories you already have, treats images and feelings as experiences rather than evidence of what happened, and is never used to uncover forgotten events. A licensed clinician experienced in trauma leads it at a pace you control, you can stop at any point, and this untested idea is not suitable during a crisis.",
       "tweet": "Can't cry, or swallow your words? The Held-Back Feeling is a proposed practice: with a licensed clinician, you explore the tight throat or clenched jaw itself, and where it began, with no push to let it all out."
     },
     {
@@ -493,7 +493,7 @@
       "coreIdea": "Warmth and light are among the simplest comforts, and resting in them with nothing to work on may let the body settle on its own.",
       "whatYouDo": "On a sunny day, find where light falls through a window, sit or lie in it with your eyes open or closed and let whatever happens happen. Stay as long as it feels pleasant, or until the patch has moved off you, and then get on with your day.",
       "whoItsFor": "People who spend most of the day indoors, and anyone who wants a no-skill, no-equipment way to rest.",
-      "cautions": "Sunlight through glass can still burn and overheat you, so keep sessions short in strong sun, drink water and never look straight at the sun. It is an untested idea and not a substitute for care when low mood or anxiety persists.",
+      "cautions": "Strong sun through a window can overheat you, so keep sessions short in hot weather, drink water and never look straight at the sun. It is an untested idea and not a substitute for care when low mood or anxiety persists.",
       "tweet": "Ever envied a cat in a sunbeam? The Sun Patch is a new idea: when sunlight falls into a room, sit or lie in it and do nothing until it moves on. No skill, no app, no equipment. Just warmth."
     },
     {
@@ -535,7 +535,7 @@
       "tagline": "Let dull, ordinary time stay dull, and stay with it.",
       "whatItIs": "Welcome the Boredom is a new concept that moves Do Nothing meditation away from practices that build up warm, pleasant feelings. Instead of cultivating goodwill or bliss, you welcome the flat, dull, boring moments that most meditation tries to get past.",
       "coreIdea": "Boredom is usually escaped within seconds, and letting it be, without making it pleasant, may make ordinary life easier to sit with.",
-      "whatYouDo": "Sit somewhere unremarkable for 15 minutes with no phone, music or book, and let the time feel as dull as it does. When you notice an urge to make it nicer (a pleasant thought, a plan, a fidget), let the urge be and stay with the plain, flat feel of the moment.",
+      "whatYouDo": "Sit somewhere unremarkable for 15 minutes with no phone, music or book, and let the time feel as dull as it does. When you notice an urge to make it nicer (a pleasant thought, a plan, a fidget), let the urge be and let the moment stay as flat as it is.",
       "whoItsFor": "People who reach for their phone at every quiet moment and want to get comfortable with ordinary, unexciting time.",
       "cautions": "Feeling flat for a few minutes is normal, but a lasting loss of interest or pleasure can be a sign of depression that deserves a talk with a doctor. It is an untested idea, not a treatment.",
       "tweet": "Welcome the Boredom is a new idea: fifteen minutes somewhere unremarkable, no phone or music, letting the time feel as dull as it is. No bliss to chase, just getting comfortable with ordinary time. 📵"
@@ -642,7 +642,7 @@
     {
       "id": "do-nothing__sensory__1",
       "name": "After the Last Page",
-      "tagline": "When a story ends, stay with its echo before moving on.",
+      "tagline": "When a story ends, sit a while before starting the next.",
       "whatItIs": "After the Last Page is a speculative practice that moves Do Nothing meditation away from the senses and into the imagination a story leaves behind. When you finish a book, film or episode, you do not reach for the next one; you sit for a while doing nothing and let the story's images and feelings linger or fade on their own.",
       "coreIdea": "Stories leave an afterglow that is usually cut short by the next thing, and staying with it without steering may be a rest in itself.",
       "whatYouDo": "After reading a short guide, close the book or switch off the screen at the end, stay seated and keep the room quiet for 10 minutes. Scenes, characters and feelings may replay, drift or vanish, and you neither analyze them nor push them away; then you get up and carry on.",
