@@ -1,0 +1,69 @@
+{
+  "id": "nature",
+  "name": "Hiking and nature walks",
+  "shortName": "Nature walks",
+  "family": "nature",
+  "alsoKnownAs": ["Hiking", "Nature walking", "Green exercise", "Forest bathing", "Shinrin-yoku"],
+  "origin": "Walking in nature is an old, widespread pastime; as a health practice it draws on environmental psychology from the 1980s and 1990s, mainly attention restoration theory (Rachel and Stephen Kaplan) and stress reduction theory (Roger Ulrich), and on forest bathing (shinrin-yoku), which emerged in Japan in the 1980s as part of preventive health care.",
+  "summary": "Hiking and nature walks means walking for pleasure in green or blue places such as parks, woods, hills, coasts and trails, from a short local stroll to a day or multi-day hike. As a wellbeing practice it pairs gentle to vigorous exercise with time away from traffic, screens and daily demands, while attention drifts to sights, sounds and smells. Forest bathing (shinrin-yoku) is a slower version in which you immerse yourself in a forest using all of your senses.",
+  "theoryOfChange": "Attention restoration theory holds that daily life drains the effortful attention we use to concentrate and block distractions, while natural settings hold attention gently ('soft fascination') and give a sense of being away, so that capacity can recover. Stress reduction theory proposes that natural scenes calm body and mood, a stress recovery response that may come from an inborn preference for nature. Nature walks may also interrupt brooding: in a small randomized study, a 90-minute walk in nature, but not one along a busy road, reduced rumination and activity in a brain area linked to it. Walking adds the mood benefits of physical activity, and walking with others adds social contact.",
+  "whatYouDo": "You walk regularly in the greenest or wildest places you can reach, from a park loop near home to trails in hills, forests or along the coast, alone, with friends or with a walking group. Many people put the phone away and slow down to notice what they see, hear and smell; forest bathing does this on purpose, using slow walking, breathing and attention to each of the senses. Longer hikes add route planning, navigation and steady effort over several hours, and in the UK some health services refer people to nature-based group programs, often lasting about 12 weeks.",
+  "typicalDose": "Anything from a 20-minute park walk to a full-day hike. In a review of structured outdoor programs, the most effective ran for 8 to 12 weeks with sessions of 20 to 90 minutes. A survey of about 20,000 adults in England found that people who spent at least 120 minutes a week in nature, whether in one visit or several, were more likely to report good health and wellbeing, with gains leveling off around 200 to 300 minutes (an association, not proof of cause).",
+  "keyTechniques": [
+    "Regular walks in green or blue spaces",
+    "Phone away: noticing sights, sounds and smells",
+    "Forest bathing: slow, sense-focused time among trees",
+    "Day hikes and longer trail walks",
+    "Walking with a friend or a walking group",
+    "Building up to about 2 hours a week outdoors"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "Pooled trials show short-term mental health gains: a 2021 meta-analysis of 50 studies, 16 of them randomized trials, found that structured outdoor nature programs (green exercise, gardening and nature-based therapy such as forest bathing) reduced depressed mood and anxiety and lifted positive mood, and a meta-analysis of 20 forest bathing studies found short-term drops in symptoms, especially anxiety. In a small randomized study of 38 city dwellers, a 90-minute nature walk reduced rumination compared with an urban walk. The limits are real: results vary widely between studies, follow-up is mostly short, few studies isolate hiking itself, and the popular 120 minutes a week figure comes from a cross-sectional survey that cannot show cause and effect."
+  },
+  "goodFitFor": "People who feel stressed, mentally tired or stuck in repetitive worry, and anyone who wants exercise that feels like a break rather than a workout. It suits most fitness levels, since a short walk in a city park counts, though cost and disability can be real barriers to access.",
+  "cautions": "Outdoor walking carries real but manageable risks, including slips and falls, sprains and strains, heat, cold and sudden weather changes, getting lost, and ticks in some regions, so plan the route, check the weather, carry water and tell someone where you are going. Time in nature can support, but not replace, treatment for depression, anxiety or other mental health conditions; if low mood or anxiety persists, talk to a doctor or therapist.",
+  "namingNote": "The requested 'hiking/nature walks' is treated as one point covering walking in natural settings at any length, from a park stroll to a long hike. Forest bathing (shinrin-yoku) is included as a slow, sense-focused form of nature walking, while gardening and wilderness therapy programs are related but not the core of this point.",
+  "sources": [
+    {
+      "title": "The restorative benefits of nature: Toward an integrative framework",
+      "url": "https://doi.org/10.1016/0272-4944(95)90001-2",
+      "kind": "primary"
+    },
+    {
+      "title": "Stress recovery during exposure to natural and urban environments",
+      "url": "https://doi.org/10.1016/S0272-4944(05)80184-7",
+      "kind": "primary"
+    },
+    {
+      "title": "Nature experience reduces rumination and subgenual prefrontal cortex activation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4507237/",
+      "kind": "trial"
+    },
+    {
+      "title": "Spending at least 120 minutes a week in nature is associated with good health and wellbeing",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6565732/",
+      "kind": "primary"
+    },
+    {
+      "title": "Nature-based outdoor activities for mental and physical health: Systematic review and meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8498096/",
+      "kind": "review"
+    },
+    {
+      "title": "Effects of Shinrin-Yoku (Forest Bathing) and Nature Therapy on Mental Health: a Systematic Review and Meta-analysis",
+      "url": "https://doi.org/10.1007/s11469-020-00363-4",
+      "kind": "review"
+    },
+    {
+      "title": "Shinrin-Yoku (Forest Bathing) and Nature Therapy: A State-of-the-Art Review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5580555/",
+      "kind": "review"
+    },
+    {
+      "title": "An integrative review of the physical, mental, and socioeconomic benefits of outdoor hiking",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12819716/",
+      "kind": "review"
+    }
+  ]
+}
