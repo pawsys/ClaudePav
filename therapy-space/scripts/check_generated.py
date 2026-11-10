@@ -31,16 +31,27 @@ Rules, each with the problem code it reports:
                      cautions 1 to 2 sentences (counted approximately)
   tweet-length       at most 260 by X's weighted count (twitter-text v3: code points in
                      U+0000-10FF, U+2000-200D, U+2010-201F, U+2032-2037 count 1, everything else
-                     2, each emoji sequence 2, each URL 23; text NFC-normalized first; the
-                     copyright and registered signs count 2, as twitter-text treats them as emoji)
+                     2, each emoji sequence 2, each URL 23; text NFC-normalized first). A URL is
+                     anything starting http(s):// or www., or a bare domain with any top-level
+                     domain of 2 or more letters, such as example.de or notes.health
   tweet-hashtags     at most one hashtag
-  tweet-emoji        at most one emoji (a ZWJ sequence, flag or keycap counts as one)
-  tweet-new          the tweet signals a new concept (new, novel, concept, idea, invented,
-                     imagined, proposed, speculative, experimental, untested, prototype,
-                     hypothetical or thought experiment)
-  tweet-claim        no claim that it treats or cures anything (cure, treat, heal, fix, remedy,
-                     clinically, proven, guaranteed, eliminate, eradicate), unless negated by a
-                     word such as not, no or never just before it
+  tweet-emoji        at most one emoji. A ZWJ sequence, flag or keycap counts as one. Symbols X
+                     draws as emoji count even without U+FE0F (for example U+2600, the sun),
+                     except the copyright, registered and trademark signs, which count only
+                     when U+FE0F follows them
+  tweet-new          the tweet signals a new concept: new, novel, concept, idea, what if,
+                     imagine, picture this, suppose, invented, imagined, proposed, speculative,
+                     experimental, untested, prototype, hypothetical or thought experiment
+  tweet-claim        no claim that it treats, cures, heals or fixes anything: any form of cure
+                     or heal, "treats", "treatment for", "can treat" (or will, may, helps...),
+                     "fixes", "fix your", "quick fix", "remedy for", "clinically proven",
+                     "proven", "guaranteed", "eliminates", "eradicates". A match is ignored when
+                     a negation (not, no, never, without...) or a caveat word (substitute,
+                     instead, replace, alongside) comes in the 5 words before it, so caveats
+                     such as "not a substitute for treatment", "alongside treatment, not
+                     instead of it" and "clinically untested" pass
+  tweet-mention      no @mentions (the generation brief allows none)
+  tweet-link         no links (the generation brief allows none)
   dash               no em or en dash (or look-alike) in any string, keys included
 
 Exit code 0 when every checked file passes, 1 on any problem (or when no files are found).
@@ -141,20 +152,33 @@ PICTOGRAPHIC_SMP = (0x1F000, 0x1FAFF)
 VS15, VS16, ZWJ, KEYCAP = 0xFE0E, 0xFE0F, 0x200D, 0x20E3
 KEYCAP_BASES = {ord(c) for c in "0123456789#*"}
 
+# A bare domain counts as a URL whatever its top-level domain (2 to 63 letters), so this can
+# over-count a rare token such as a file name, which errs on the safe side.
 URL_RE = re.compile(
     r"(?i)(?<![\w@.])(?:https?://\S+|www\.\S+|"
-    r"(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+"
-    r"(?:com|org|net|edu|gov|io|co|ai|app|dev|me|info|ly|so|xyz|uk)\b(?:/\S*)?)")
+    r"(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,63}\b(?:/\S*)?)")
 URL_TRAILING = ".,;:!?)]}'\"\U00002019\U0000201D"
 HASHTAG_RE = re.compile(r"(?<![\w&])[#\U0000FF03](?![\U0000FE0F\U000020E3])(\w+)")
+MENTION_RE = re.compile(r"(?<![\w@])@[A-Za-z0-9_]{1,15}")
 NOVELTY_RE = re.compile(
-    r"(?i)\b(?:new|novel|concepts?|ideas?|invented|imagined|proposed|proposal|speculative|"
-    r"experimental|untested|prototype|hypothetical|thought experiment)\b")
+    r"(?i)\b(?:new|novel|concepts?|ideas?|what\s+if|imagine|imagining|"
+    r"picture\s+(?:this|a|an|yourself)|suppose|invented|imagined|proposed|proposal|speculative|"
+    r"experimental|untested|prototype|hypothetical|thought\s+experiment)\b")
+# Claim phrases. The bare noun "treatment" is not one: it appears in honest caveats such as
+# "not a substitute for treatment" or "alongside treatment".
 CLAIM_RE = re.compile(
-    r"(?i)\b(?:cures?|cured|curing|curative|treats?|treated|treating|treatments?|heals?|healed|"
-    r"healing|fix|fixes|remedy|remedies|clinically|proven|guarantee[sd]?|eliminates?|eradicates?)\b")
+    r"(?i)\b(?:cure[sd]?|curing|curative|heal(?:s|ed|ing)?|treats|treated|treating|"
+    r"treatments?\s+for|(?:can|will|to|may|could|helps?|helping)\s+(?:treat|fix|heal|cure)|"
+    r"fixes|fix\s+(?:your|the|any|every|all)|quick\s+fix|remed(?:y|ies)\s+for|"
+    r"(?:clinically|scientifically|medically)\s+(?:proven|tested|validated|shown|backed)|"
+    r"proven|guarantee[sd]?|eliminates|eradicates)\b")
+CLAIM_WINDOW = 5  # words before a claim phrase that are searched for a negation or caveat
 NEGATIONS = {"not", "no", "never", "isn't", "isnt", "doesn't", "doesnt", "without", "nor",
-             "won't", "wont", "can't", "cannot", "neither", "zero", "aren't", "arent"}
+             "won't", "wont", "can't", "cannot", "neither", "zero", "aren't", "arent",
+             "substitute", "substitutes", "replacement", "instead", "replace", "replaces",
+             "replacing", "alongside"}
+# The copyright, registered and trademark signs are drawn as emoji only when U+FE0F follows.
+TEXT_STYLE_ONLY = {0x00A9, 0x00AE, 0x2122}
 
 
 # ---------------------------------------------------------------- tweet measures
@@ -177,7 +201,9 @@ def _emoji_element(cps, i):
         if nxt == VS15:
             return 0
     elif _in(cp, EMOJI_TEXT_DEFAULT_BMP):
-        if not (nxt == VS16 or (nxt is not None and 0x1F3FB <= nxt <= 0x1F3FF)):
+        # X draws these as emoji even without U+FE0F, unless text style is asked for (U+FE0E);
+        # the copyright, registered and trademark signs need U+FE0F.
+        if nxt == VS15 or (cp in TEXT_STYLE_ONLY and nxt != VS16):
             return 0
     else:
         return 0
@@ -222,10 +248,7 @@ def url_spans(text):
 
 
 def _char_weight(char):
-    cp = ord(char)
-    if cp in (0x00A9, 0x00AE):  # twitter-text's emoji regex takes these even without U+FE0F
-        return EMOJI_WEIGHT
-    return 1 if _in(cp, WEIGHT_ONE_RANGES) else 2
+    return 1 if _in(ord(char), WEIGHT_ONE_RANGES) else 2
 
 
 def _plain_weight(text):
@@ -255,7 +278,7 @@ def claims(text):
     found = []
     text = text.replace("\U00002019", "'")
     for match in CLAIM_RE.finditer(text):
-        before = re.findall(r"[\w']+", text[:match.start()].lower())[-3:]
+        before = re.findall(r"[\w']+", text[:match.start()].lower())[-CLAIM_WINDOW:]
         if not any(word in NEGATIONS for word in before):
             found.append(match.group(0))
     return found
@@ -401,10 +424,18 @@ def check_files(paths, points_doc, anchors_dir=None):
                     problem(item, "tweet-emoji", f"tweet has {len(emojis)} emoji, at most 1")
                 if not NOVELTY_RE.search(tweet):
                     problem(item, "tweet-new", "tweet does not signal that this is a new concept "
-                                               "(say new, novel, concept, idea, untested and so on)")
+                                               "(say new concept, idea, what if, imagine, untested "
+                                               "and so on)")
                 said = claims(tweet)
                 if said:
                     problem(item, "tweet-claim", f"tweet claims a treatment effect: {said}")
+                mentions = MENTION_RE.findall(tweet)
+                if mentions:
+                    problem(item, "tweet-mention", f"tweet has @mentions {mentions}; none allowed")
+                nfc = unicodedata.normalize("NFC", tweet)
+                links = [nfc[a:b] for a, b in url_spans(nfc)]
+                if links:
+                    problem(item, "tweet-link", f"tweet has links {links}; none allowed")
     return problems, stats
 
 
@@ -468,23 +499,51 @@ def self_test():
         ("\U0001F468\U0000200D\U0001F469\U0000200D\U0001F467", 2),
         ("\U00002764\U0000FE0F", 2),
         ("\U0001F1F5\U0001F1F1", 2),
-        # The copyright sign counts 2, as in twitter-text.
-        ("\U000000A9 2026", 7),
+        # The copyright sign is in U+0000-10FF, so it counts 1 (twitter-text 3.1.0 gives 6).
+        ("\U000000A9 2026", 6),
+        # Bare domains count 23 whatever the top-level domain (twitter-text gives 33 and 23).
+        ("go to example.de now", 6 + 23 + 4),
+        ("notes.health", 23),
     ]
     for text, want in weight_cases:
         got = weighted_length(text)
         if got != want:
             failures.append(f"weighted_length({text[:20]!r}...) = {got}, expected {want}")
-    two_emoji = "\U0001F30A and \U00002600\U0000FE0F"
-    no_emoji = "\U000000A9 \U00002600 ok"  # text-style signs without U+FE0F are not emoji
-    if len(emoji_spans(two_emoji)) != 2 or emoji_spans(no_emoji):
-        failures.append("emoji counting is wrong")
+    emoji_cases = [
+        ("\U0001F30A and \U00002600\U0000FE0F", 2),         # wave, and sun with U+FE0F
+        ("\U00002600 ok", 1),                                 # bare sun is drawn as emoji
+        ("\U00002600\U0000FE0E ok", 0),                       # sun with U+FE0E asks for text
+        ("\U000000A9 \U000000AE \U00002122 ok", 0),           # copyright, registered, trademark
+        ("\U00002122\U0000FE0F ok", 1),                       # trademark with U+FE0F
+    ]
+    for text, want in emoji_cases:
+        if len(emoji_spans(text)) != want:
+            failures.append(f"emoji count of {text!r} is {len(emoji_spans(text))}, expected {want}")
     if hashtags("one #Calm and #two and a#nottag and #123") != ["Calm", "two"]:
         failures.append("hashtag detection is wrong")
-    if claims("This is not a cure.") or not claims("It cures stress."):
-        failures.append("claim detection is wrong")
+    caveats = ["A new idea, not a substitute for treatment.",
+               "New concept to try alongside treatment, not instead of it.",
+               "A new, clinically untested idea.",
+               "This is not a cure.",
+               "Not a quick fix, just a new idea to try."]
+    real_claims = ["It cures stress.", "It can treat anxiety.", "A treatment for low mood.",
+                   "Clinically proven calm.", "Healing walks for everyone.", "It fixes your sleep."]
+    for text in caveats:
+        if claims(text):
+            failures.append(f"caveat flagged as a claim: {text!r} -> {claims(text)}")
+    for text in real_claims:
+        if not claims(text):
+            failures.append(f"claim not caught: {text!r}")
+    openers = ["What if your weekly run ended with ten quiet minutes of noticing sounds?",
+               "Imagine a run that ends in silence.", "An idea: walk slowly.", "New concept: rest."]
+    for text in openers:
+        if not NOVELTY_RE.search(text):
+            failures.append(f"new-concept opener not recognized: {text!r}")
+    if MENTION_RE.findall("ask @someone, meet @ 7, mail a@b") != ["@someone"]:
+        failures.append("mention detection is wrong")
     print(f"self-test: tweet measures {'ok' if not failures else 'FAILED'} "
-          f"({len(weight_cases)} weighted-length cases, emoji, hashtags, claims)")
+          f"({len(weight_cases)} weighted-length cases, {len(emoji_cases)} emoji cases, hashtags, "
+          f"{len(caveats)} caveats and {len(real_claims)} claims, {len(openers)} openers, mentions)")
 
     points = {
         "version": 1,
@@ -495,15 +554,21 @@ def self_test():
         "generated": [{"id": f"alpha__beta__{k}"} for k in (1, 3, 5)],
     }
     good = {"lane": "good", "modalities": [
-        _fixture_modality("alpha__beta__1", "Quiet Harbor Walk"),
-        _fixture_modality("alpha__beta__3", "Lantern Step Practice"),
+        _fixture_modality("alpha__beta__1", "Quiet Harbor Walk",
+                          tweet="What if your weekly walk ended with ten quiet minutes of noticing "
+                                "sounds? Quiet Harbor Walk: something to try alongside treatment, "
+                                "not instead of it \U0001F30A #SlowWalk"),
+        _fixture_modality("alpha__beta__3", "Lantern Step Practice",
+                          tweet="New concept: Lantern Step Practice, a clinically untested idea for "
+                                "slow evening walks. Not a substitute for treatment. \U00002600"),
     ]}
     long_tweet = "A new idea for slow mornings. " + "Breathe, notice, rest. " * 12
     bad = {"lane": "not-the-file-name", "modalities": [
         _fixture_modality("alpha__beta__1", "Beta Method", extra="not allowed"),   # id-duplicate with good
         _fixture_modality("alpha__gamma__9", "Walk",                              # unknown id, 1 word
                           tagline="This tagline keeps going well past the twelve word limit that "
-                                  "the contract sets for it"),
+                                  "the contract sets for it",
+                          tweet="New idea: a slow walk. Thoughts, @someone? More at example.org"),
         _fixture_modality("alpha__beta__5", "APX Breath Loop",
                           whatItIs="One. Two. Three. Four. Five.",
                           coreIdea="Rest \U00002014 then move.",
@@ -513,7 +578,7 @@ def self_test():
     ]}
     expected_bad = {"keys", "lane", "id-unknown", "name-words", "name-taken", "name-acronym",
                     "tagline-words", "sentences", "tweet-length", "tweet-hashtags", "tweet-emoji",
-                    "tweet-new", "tweet-claim", "dash", "type"}
+                    "tweet-new", "tweet-claim", "tweet-mention", "tweet-link", "dash", "type"}
 
     with tempfile.TemporaryDirectory(prefix="check-generated-") as tmp:
         folder = Path(tmp)
