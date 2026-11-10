@@ -1,0 +1,59 @@
+{
+  "id": "hiit",
+  "name": "High-intensity interval training (HIIT)",
+  "shortName": "HIIT",
+  "family": "movement",
+  "alsoKnownAs": [
+    "HIT",
+    "interval training",
+    "high-intensity intermittent training",
+    "sprint interval training (SIT), its all-out form"
+  ],
+  "origin": "Interval training comes from track coaching: German coach Woldemar Gerschler and cardiologist Herbert Reindell formalized it in the mid-20th century, Czech runner Emil Zátopek popularized it in the 1950s, and in recent decades short, very hard versions have become a popular time-saving workout for health.",
+  "summary": "HIIT alternates short bursts of very hard effort with periods of rest or easy movement, for example 20 seconds to 4 minutes of hard cycling, running, rowing or body-weight exercise, repeated several times. Each hard bout takes you close to your limit (often above about 85% of maximum heart rate, or an all-out sprint), so a full session, warm-up included, often takes 30 minutes or less. Unlike steady endurance exercise, the effort rises and falls on purpose, and unlike strength training, the aim is to challenge the heart and lungs rather than to lift heavy loads.",
+  "theoryOfChange": "Hard intervals raise heart and lung fitness quickly, and reviews link HIIT to better fitness and to lower levels of some inflammation markers, while low fitness and inflammation are both associated with depression. Like other exercise, HIIT is thought to help mood through brain changes (such as more of the growth factor BDNF), better sleep and the sense of mastery that comes from finishing something hard. Reviews of depression trials also suggest that more vigorous exercise tends to help more, and short sessions remove a common barrier: lack of time.",
+  "whatYouDo": "After a 5 to 10 minute warm-up, you alternate hard bouts with recovery, for example 4 bouts of 4 minutes hard with 3 minutes easy in between, or 10 bouts of 1 minute hard with 1 minute easy, on a bike, a track, a rowing machine or with body-weight moves. During the hard bouts breathing is heavy and talking is difficult, and during recovery you slow right down or rest. A few minutes of easy movement cools you down at the end, and many people follow a class, a coach or an interval timer app.",
+  "typicalDose": "Usually 2 to 3 sessions a week with easier days in between; each session lasts about 15 to 40 minutes including warm-up and cool-down, of which only a few minutes up to about 20 minutes are hard work. Studied programs mostly last a few weeks to a few months, but it can be kept up as an ongoing habit.",
+  "keyTechniques": [
+    "Work and rest intervals, such as 4 x 4 minutes or 10 x 1 minute",
+    "Effort near your limit, judged by heart rate or how hard it feels",
+    "Easy active recovery between bouts",
+    "Warm-up and cool-down",
+    "Any mode: cycling, running, rowing, swimming or body-weight circuits",
+    "Gradual build-up in the number and length of hard bouts"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "A 2022 review in the British Journal of Sports Medicine (Martland and colleagues, 58 randomized trials) found that HIIT moderately improved wellbeing, depression symptoms and perceived stress compared with no exercise, and slightly improved wellbeing compared with other exercise. A 2024 meta-analysis of 34 trials (Tao and colleagues) found a small to moderate drop in depressive symptoms compared with control groups and no clear difference from other kinds of exercise, while a smaller 2024 review of 8 trials in healthy adults found no clear effect on depression or anxiety. Most trials are small, short and differ in design, so HIIT looks helpful for mood, but there is no clear evidence that it beats other exercise."
+  },
+  "goodFitFor": "People who are short on time, like to push hard or get bored by long steady sessions, and want a fitness and mood boost from a small weekly time commitment. In short-term studies, people on average enjoyed HIIT at least as much as steady exercise.",
+  "cautions": "Hard bouts put a heavy short-term load on the heart, so people with heart disease, chest pain, fainting, uncontrolled high blood pressure or other serious conditions should get medical advice first and may do best in a supervised program. Beginners should build some base fitness and add hard bouts gradually, because sudden extreme sessions can cause injury and, rarely, dangerous muscle breakdown (rhabdomyolysis). Some people find the hard bouts unpleasant, and whether people stick with HIIT over the long term is not well studied.",
+  "namingNote": "The request listed this point as cardio, for example HIT. In exercise research HIT is often used as another abbreviation for high-intensity interval training, so this point is HIIT, including its all-out form, sprint interval training. In weight-training circles HIT can also mean a strength method built on single sets taken to failure, which belongs with the strength point, and steady cardio such as running is the separate endurance point.",
+  "sources": [
+    {
+      "title": "Can high-intensity interval training improve mental health outcomes in the general population and those with physical illnesses? A systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34531186/",
+      "kind": "review"
+    },
+    {
+      "title": "Effects of high-intensity interval training on depressive symptoms: A systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38603999/",
+      "kind": "review"
+    },
+    {
+      "title": "Can high-intensity interval training improve physical and mental health outcomes? A meta-review of 33 systematic reviews across the lifespan",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31889469/",
+      "kind": "review"
+    },
+    {
+      "title": "Affective and enjoyment responses in high intensity interval training and continuous training: A systematic review and meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5991400",
+      "kind": "review"
+    },
+    {
+      "title": "Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials",
+      "url": "https://jyx.jyu.fi/handle/123456789/93572?show=full",
+      "kind": "review"
+    }
+  ]
+}

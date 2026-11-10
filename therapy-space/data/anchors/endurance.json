@@ -1,0 +1,76 @@
+{
+  "id": "endurance",
+  "name": "Endurance training (running and other steady aerobic exercise)",
+  "shortName": "Endurance",
+  "family": "movement",
+  "alsoKnownAs": [
+    "running",
+    "jogging",
+    "aerobic exercise",
+    "steady-state cardio",
+    "moderate-intensity continuous training (MICT)",
+    "running therapy"
+  ],
+  "origin": "People have run long distances for thousands of years, jogging for health became a mass movement in the 1960s and 1970s, and in 1979 psychiatrist John Greist and colleagues at the University of Wisconsin published one of the first trials of running as a treatment for depression.",
+  "summary": "Endurance training means moving continuously at a steady effort you can keep up for a long time, such as running, jogging, cycling, swimming or rowing for 20 minutes or more. Running is the example here, and steady aerobic exercise like it is the most studied kind of exercise for depression. Unlike the bursts and rests of HIIT or the lifting of strength training, its defining feature is an even rhythm kept up over time.",
+  "theoryOfChange": "Regular aerobic exercise builds heart and lung fitness and tends to improve sleep, and it is thought to lift mood through brain changes such as more of the growth factor BDNF. Single runs can also bring a short-term lift: in a 2021 trial, 45 minutes of running, compared with walking, raised euphoria, eased anxiety and increased the body's own cannabis-like chemicals (endocannabinoids), and blocking opioids did not stop these effects, which challenges the old idea that endorphins cause the runner's high. A running habit also adds routine, a sense of progress and, in groups, company, which may help too.",
+  "whatYouDo": "You move at a steady pace you can hold, usually still able to speak in short sentences, for about 20 to 60 minutes, and beginners often start with walk-run intervals and build up over weeks. People run alone, with a friend or in a club, outdoors or on a treadmill, and cycling, swimming and rowing work the same way. In the 2023 Dutch MOTAR study, running therapy meant 16 weeks of supervised group running sessions.",
+  "typicalDose": "Guidelines, including the WHO 2020 guidelines, advise adults to get 150 to 300 minutes of moderate activity or 75 to 150 minutes of vigorous activity each week (running usually counts as vigorous), for example 3 to 5 sessions of 20 to 60 minutes. Depression trials usually last about 8 to 16 weeks, but the habit is meant to continue.",
+  "keyTechniques": [
+    "Steady, conversational pace (the talk test)",
+    "Walk-run intervals for beginners",
+    "Gradual increases in time or distance",
+    "Easy days and rest days between harder sessions",
+    "Group or club runs for company and routine",
+    "Cross-training with cycling, swimming or rowing"
+  ],
+  "evidence": {
+    "level": "strong",
+    "summary": "Steady aerobic exercise is the most studied exercise for depression, and many meta-analyses find that it reduces symptoms. A 2024 BMJ network meta-analysis (Noetel and colleagues, 218 trials, about 14,000 people) found walking or jogging among the most effective exercise types, with larger benefits at higher intensity, although certainty was rated low because very few trials had a low risk of bias. In the 2023 Dutch MOTAR study of 141 patients with depression or anxiety, 16 weeks of group running led to remission about as often as antidepressants (43% versus 45%) and improved physical health more, but most patients chose their own treatment rather than being randomized, and fewer runners stuck to the plan (52% versus 82%)."
+  },
+  "goodFitFor": "People with low mood, stress or anxiety who like rhythm, routine and measurable progress, and want a low-cost practice they can do alone or with others. It can also suit people with depression who want a non-drug option alongside other care, chosen together with their clinician.",
+  "cautions": "Injuries are common: across studies about 4 in 10 runners got injured during follow-up, most often around the knee, lower leg and ankle, so build up time and distance gradually and include rest. Training hard without enough recovery can lead to lasting fatigue, low mood and poor sleep (overreaching, and in severe cases overtraining syndrome), and for a minority exercise becomes compulsive, which deserves professional attention, especially alongside disordered eating. People with heart disease or other medical conditions should get advice first, and no one should stop antidepressants without talking to their doctor.",
+  "namingNote": "The request listed this point as endurance sport, for example running. It covers any steady, continuous aerobic exercise (running, cycling, swimming, rowing), with running as the example and the source of most of the research cited here. Interval cardio is the HIIT point and leisurely walking in nature is the nature point, although some cited trials group walking and jogging together.",
+  "sources": [
+    {
+      "title": "Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials",
+      "url": "https://jyx.jyu.fi/handle/123456789/93572?show=full",
+      "kind": "review"
+    },
+    {
+      "title": "Antidepressants or running therapy: Comparing effects on mental and physical health in patients with depression and anxiety disorders",
+      "url": "https://pure.amsterdamumc.nl/ws/files/163472548/Antidepressants-or-running-therapy.pdf",
+      "kind": "trial"
+    },
+    {
+      "title": "Exercise-induced euphoria and anxiolysis do not depend on endogenous opioids in humans",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33582575/",
+      "kind": "trial"
+    },
+    {
+      "title": "Running as treatment for depression",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/759100/",
+      "kind": "trial"
+    },
+    {
+      "title": "A Scoping Review of the Relationship between Running and Mental Health",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33139666/",
+      "kind": "review"
+    },
+    {
+      "title": "A systematic review of running-related musculoskeletal injuries in runners",
+      "url": "https://repository.lboro.ac.uk/articles/journal_contribution/A_systematic_review_of_running-related_musculoskeletal_injuries_in_runners/13720687",
+      "kind": "review"
+    },
+    {
+      "title": "Prevention, diagnosis and treatment of the overtraining syndrome: Joint consensus statement of the European College of Sport Science (ECSS) and the American College of Sports Medicine (ACSM)",
+      "url": "https://hal.inrae.fr/hal-02651426",
+      "kind": "org"
+    },
+    {
+      "title": "World Health Organization 2020 guidelines on physical activity and sedentary behaviour",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7719906/",
+      "kind": "org"
+    }
+  ]
+}

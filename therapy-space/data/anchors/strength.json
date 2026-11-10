@@ -1,0 +1,70 @@
+{
+  "id": "strength",
+  "name": "Strength training (weight and resistance training)",
+  "shortName": "Strength",
+  "family": "movement",
+  "alsoKnownAs": [
+    "resistance training",
+    "resistance exercise training (RET)",
+    "weight training",
+    "lifting weights",
+    "muscle-strengthening activity"
+  ],
+  "origin": "Lifting heavy things to get stronger is ancient, but modern progressive resistance training was set out in 1945 by American physician Thomas DeLorme to rehabilitate injured World War II servicemen, and a 1987 trial by Doyne and colleagues was among the first to test weight lifting as a treatment for depression.",
+  "summary": "Strength training means making your muscles work against a load, such as free weights, machines, resistance bands or your own body weight, usually in sets of about 6 to 15 repetitions with short rests in between. The load is raised gradually as you get stronger, a principle called progressive overload. Unlike HIIT and endurance training, the main aim is stronger muscles rather than keeping the heart rate up, yet trials show it can also ease symptoms of depression and anxiety.",
+  "theoryOfChange": "Getting measurably stronger week by week gives repeated, concrete proof that effort pays off, which may build confidence and a sense of mastery. In a 1987 trial in women with depression, weight lifting relieved depression about as well as running, and the authors concluded that the benefit did not depend on gains in aerobic fitness, which suggests the mood effects do not rest only on heart and lung changes. Brain growth factors, lower inflammation and better sleep are also proposed as routes, but none is proven.",
+  "whatYouDo": "A session usually starts with a light warm-up, then 6 to 10 exercises covering the main muscle groups, such as squats, push-ups or presses, rows or pull-downs, and hip hinges like deadlifts, each for 2 to 3 sets with a minute or two of rest between sets. You pick a weight that feels hard by the last few repetitions while keeping good form through a full range of motion, and add weight or repetitions as it gets easier. It can be done in a gym, at home with bands or body weight, alone, with a coach or in a class.",
+  "typicalDose": "At least 2 sessions a week that work all major muscle groups (the minimum in WHO and ACSM guidance), each about 30 to 60 minutes; heavier loads (about 80% or more of the most you can lift once) build the most strength. Mood trials have mostly run for a few months, and one review found that the benefit for depression did not depend on how much total training was prescribed.",
+  "keyTechniques": [
+    "Progressive overload: add weight or repetitions over time",
+    "Compound lifts such as squats, deadlifts, presses and rows",
+    "Sets of about 6 to 15 repetitions with rest between sets",
+    "Good technique through a full range of motion",
+    "Each major muscle group at least twice a week",
+    "Free weights, machines, bands or body weight"
+  ],
+  "evidence": {
+    "level": "strong",
+    "summary": "A 2018 JAMA Psychiatry meta-analysis (Gordon and colleagues, 33 randomized trials, 1,877 people) found that resistance training reduced depressive symptoms by a moderate amount, with the best results in people with mild to moderate symptoms, and a 2017 meta-analysis by the same team (16 trials, 922 people) found a smaller but consistent reduction in anxiety. A 2024 BMJ network meta-analysis of 218 depression trials also placed strength training among the most effective and best tolerated forms of exercise. The limits: participants always know they are exercising, effects were smaller in trials with blinded allocation or assessment, the 2018 review had no head-to-head comparisons with medication or therapy, and newer reviews still report wide variation between studies."
+  },
+  "goodFitFor": "People who like clear, measurable goals, dislike long cardio sessions, or want to stay strong and capable as they age, including people with mild to moderate depressive symptoms. It needs little space or equipment, and trials found it well tolerated.",
+  "cautions": "Poor technique or adding weight too fast can strain muscles, joints and the lower back, so beginners benefit from instruction and gradual progression. Heavy lifting with breath-holding briefly pushes blood pressure very high, so people with uncontrolled high blood pressure, recent heart problems or serious eye disease such as advanced diabetic retinopathy should get medical advice first. A strong focus on size or appearance can sometimes feed body image worries, muscle dysmorphia or anabolic steroid use, which call for professional help.",
+  "namingNote": "The request listed this point as strength sport with weights. It covers resistance training in general (free weights, machines, bands and body weight), because the mood research pools these together, and competitive lifting such as powerlifting fits inside it. Steady cardio is the endurance point and interval cardio is the HIIT point.",
+  "sources": [
+    {
+      "title": "Association of Efficacy of Resistance Exercise Training With Depressive Symptoms: Meta-analysis and Meta-regression Analysis of Randomized Clinical Trials",
+      "url": "https://dr.lib.iastate.edu/entities/publication/678d2a9c-4a2d-4cb3-9170-807faced6055",
+      "kind": "review"
+    },
+    {
+      "title": "The Effects of Resistance Exercise Training on Anxiety: A Meta-Analysis and Meta-Regression Analysis of Randomized Controlled Trials",
+      "url": "https://pure.ul.ie/en/publications/the-effects-of-resistance-exercise-training-on-anxiety-a-meta-ana/",
+      "kind": "review"
+    },
+    {
+      "title": "Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials",
+      "url": "https://jyx.jyu.fi/handle/123456789/93572?show=full",
+      "kind": "review"
+    },
+    {
+      "title": "Running versus weight lifting in the treatment of depression",
+      "url": "https://bvbvf1.bib-bvb.de/vufind/PrimoRecord/cdi_proquest_miscellaneous_78056386",
+      "kind": "trial"
+    },
+    {
+      "title": "Thomas L. DeLorme and the Science of Progressive Resistance Exercise",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22592167/",
+      "kind": "review"
+    },
+    {
+      "title": "World Health Organization 2020 guidelines on physical activity and sedentary behaviour",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7719906/",
+      "kind": "org"
+    },
+    {
+      "title": "Resistance Training Position Stand infographic",
+      "url": "https://acsm.org/wp-content/uploads/2026/03/Resistance-Training-Position-Stand-infographic.pdf",
+      "kind": "org"
+    }
+  ]
+}
