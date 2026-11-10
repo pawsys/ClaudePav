@@ -1,0 +1,61 @@
+{
+  "id": "metta-jhana",
+  "name": "Metta (loving-kindness) and jhana (absorption) meditation",
+  "shortName": "Metta / Jhana",
+  "family": "meditation",
+  "alsoKnownAs": [
+    "loving-kindness meditation",
+    "metta bhavana",
+    "brahmavihara practice",
+    "metta jhana",
+    "absorption meditation",
+    "advanced concentrative absorption meditation (ACAM)"
+  ],
+  "origin": "Both come from early Buddhist teachings of ancient India, preserved in the Pali texts and in later commentaries such as Buddhaghosa's Visuddhimagga, and in recent decades Western teachers such as Leigh Brasington have taught them to lay students, often on silent retreats.",
+  "summary": "Metta is the deliberate cultivation of goodwill: silently wishing yourself and others well until a warm, friendly feeling fills the mind. Jhanas are a series of deeply absorbed states of attention, marked first by joy and happiness and then by deep calm and even-mindedness (equanimity). This point covers loving-kindness practice, metta taken all the way into absorption, and jhana practice in general.",
+  "theoryOfChange": "Repeatedly generating goodwill is thought to build positive emotions and a felt sense of connection, which may soften self-criticism and hostility. Taking that warm feeling into absorption trains very steady attention and gives direct access to calm, non-sensual pleasure; Buddhist teachers say this loosens the pull of craving and prepares the mind for insight practice. A brain imaging study of one experienced meditator linked jhana joy to the brain's reward system, which fits the idea that the pleasure is generated from within.",
+  "whatYouDo": "Sitting quietly, you bring someone to mind and silently repeat phrases such as 'May you be happy, may you be well', moving from yourself or someone easy to love toward neutral people, difficult people and finally all beings. For jhana, once a warm, pleasant feeling is steady, you rest attention on the feeling itself and let it grow without grasping until attention becomes absorbed. Deeper jhanas are usually learned on silent retreats with regular guidance from a teacher.",
+  "typicalDose": "Loving-kindness: from a single short guided session to courses of several weeks with daily home practice. Jhana: often learned on silent retreats of a week or longer with several hours of sitting a day, then kept up with daily sitting.",
+  "keyTechniques": [
+    "Goodwill phrases such as 'May you be happy'",
+    "Widening circle: self, loved ones, neutral and difficult people, all beings",
+    "Resting attention on the pleasant feeling itself",
+    "Letting joy and happiness grow without grasping",
+    "Moving through the jhanas from joy toward calm and equanimity",
+    "Related heart practices: compassion, shared joy, equanimity"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "Loving-kindness is fairly well studied: a meta-analysis (a pooled analysis) of 24 studies with 1,759 people found that it increases positive emotions, with medium effects for programs focused on loving-kindness and small effects for those focused on compassion (Zeng and colleagues, 2015), while an earlier review of 22 randomized trials warned that most were small, so its estimates were imprecise (Galante and colleagues, 2014). No controlled trials of jhana were found: the evidence is brain imaging of single expert meditators (Hagerty and colleagues, 2013; Yang, Sacchet and colleagues, 2024), which shows the states are distinct and can be entered at will, not that they improve mental health. The moderate rating therefore reflects the loving-kindness research, not jhana."
+  },
+  "goodFitFor": "People who want more warmth, kindness and positive emotion in daily life, and practitioners with a steady sitting habit who want deep calm and concentration.",
+  "cautions": "Wishing yourself well can stir up grief, anger or a sense of unworthiness, especially after trauma or with strong self-criticism, so starting with someone easy to love and keeping sessions short can help. Intensive jhana practice can bring strong energy, body sensations or altered states, and some people start chasing the pleasant states; it is best learned with an experienced teacher, and anyone with a history of psychosis, mania or dissociation should talk to a clinician first.",
+  "namingNote": "Often written 'meta', the Pali word is metta, meaning goodwill or loving-kindness. In this map metta and jhana form one point: loving-kindness practice, metta developed until it becomes absorbing (the brahmavihara or 'divine abiding' jhanas), and jhana practice in general, whatever the starting object. Meditation manuals disagree on how deep jhana is, from the lighter states read from the early discourses to the very deep absorption of the Visuddhimagga (Sparby and Sacchet, 2024), and this point covers the whole range. It is kept apart from Vipassana, which investigates change in experience, and from Do Nothing, which has no object at all.",
+  "sources": [
+    {
+      "title": "Effect of kindness-based meditation on health and well-being: a systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24979314/",
+      "kind": "review"
+    },
+    {
+      "title": "The effect of loving-kindness meditation on positive emotions: a meta-analytic review",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4630307/",
+      "kind": "review"
+    },
+    {
+      "title": "Case Study of Ecstatic Meditation: fMRI and EEG Evidence of Self-Stimulating a Reward System",
+      "url": "https://depts.washington.edu/fetzweb/assets/hagerty-et-al-case-study-of-ecstatic-meditation-neural-plassticity-2013.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Intensive whole-brain 7T MRI case study of volitional control of brain activity in deep absorptive meditation states",
+      "url": "https://researchinformation.umcutrecht.nl/en/publications/intensive-whole-brain-7t-mri-case-study-of-volitional-control-of-/",
+      "kind": "primary"
+    },
+    {
+      "title": "Toward a Unified Account of Advanced Concentrative Absorption Meditation: A Systematic Definition and Classification of Jhāna",
+      "url": "https://link.springer.com/article/10.1007/s12671-024-02367-w",
+      "kind": "review"
+    }
+  ]
+}
