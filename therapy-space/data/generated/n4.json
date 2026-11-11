@@ -1,0 +1,269 @@
+{
+  "lane": "n4",
+  "modalities": [
+    {
+      "id": "ipf__metta__1",
+      "name": "The Awaited Child",
+      "tagline": "Imagined parents who wanted you before you arrived.",
+      "whatItIs": "The Awaited Child is a new, untested variation on ideal parent imagery that goes to the very start of the story. With a trauma-trained therapist, you imagine ideal parents preparing for your arrival, choosing your name and welcoming you as the particular person you are.",
+      "coreIdea": "Loving-kindness meditation offers the same goodwill to everyone; this goes the other way, toward the most particular care there is, on the idea that a felt sense of having been wanted, specifically and from the beginning, may be one of the deepest layers of feeling secure.",
+      "whatYouDo": "In weekly sessions the therapist guides imagined scenes in a set order: the ideal parents getting a room ready, talking about the child they hope for, choosing a name with care and greeting the newborn with delight. You notice in the body what it is like to be expected and wanted, while the therapist keeps the scenes clearly imaginary and never treats them as a search for real memories of birth or infancy. The same order repeats across weeks, with time at the end to settle and talk.",
+      "whoItsFor": "Adults who carry a quiet sense of being unwanted, a burden or an accident, and who want to work on that feeling through imagery with a trained therapist.",
+      "cautions": "These scenes can stir grief for people whose real beginnings were hard, such as adoption, loss or an unplanned birth, so this belongs only with a therapist trained in attachment and trauma work. The images are imagination, not memories or evidence of anything, and the method is never used to uncover or recover early events.",
+      "tweet": "Being wanted, from the very start. The Awaited Child is an untested concept: with a trauma-trained therapist, you imagine ideal parents getting your room ready, choosing your name and greeting you with delight. Imagination only, never a hunt for memories."
+    },
+    {
+      "id": "ipf__jhana__1",
+      "name": "Raised by a Village",
+      "tagline": "Imagined care from a whole circle of kind grown-ups.",
+      "whatItIs": "Raised by a Village is a new, untested idea that widens ideal parent imagery from two figures to a whole imagined circle of carers: grandparents, an aunt, an older cousin, a neighbor. A trauma-trained therapist guides scenes in which the imagined child is looked after by one caring adult after another, each with their own way of doing it.",
+      "coreIdea": "Concentration meditation gathers the mind onto one object and needs no one else; this moves the opposite way, on the idea that security might feel sturdier as a web of many carers than as a single bond, so that when one imagined carer is busy, another is there.",
+      "whatYouDo": "Over the first sessions you and the therapist build a cast of four to six invented carers, each with a name, a manner and a usual place in the imagined child's week. Later sessions guide 20-minute scenes, such as a family meal or a day when a parent is ill, in which the child moves between carers and is never left without someone. You end each session by naming which carer felt closest that day.",
+      "whoItsFor": "Adults with a sense that care could vanish if one person let them down, who are working on attachment with a trained therapist and find rich imagery easy.",
+      "cautions": "Imagined family scenes can bring up painful comparisons with your real family, so this belongs with a therapist trained in attachment and trauma work. The carers are invented, the scenes are not memories or evidence of anything, and they are never used to uncover forgotten events.",
+      "tweet": "What if imagined care came from a whole circle, not just two parents? Raised by a Village is an untested idea: a trauma-trained therapist guides scenes of grandparents, aunts and neighbors who each care for the child you picture. Invented carers, not memories."
+    },
+    {
+      "id": "ipf__dance__1",
+      "name": "The Child's Conclusions",
+      "tagline": "Spelling out what a well-loved child would come to believe.",
+      "whatItIs": "The Child's Conclusions is an untested concept that adds a quiet, word-based step to ideal parent imagery. After each scripted scene of care, you put into plain sentences what a child raised that way would come to believe about themselves and other people, and a trauma-trained therapist reviews them with you.",
+      "coreIdea": "Dance lets feeling move out through the body; this takes the opposite route, keeping the body still and turning imagined care into explicit beliefs, on the idea that early care teaches lessons and that writing those lessons down might help a new inner model take clearer shape.",
+      "whatYouDo": "Each session follows the same order: a few minutes of seated settling, a 15-minute scripted scene with the ideal parents, then about 20 minutes in which you write alone and in silence, completing sentences such as 'a child cared for like this would expect that...' and choosing the truest version. The therapist reads the list with you only at the end, you reread it at the start of the next session, and you mark any line that has started to feel true for you.",
+      "whoItsFor": "Adults with attachment worries who think best in words and want imagery work to leave a clear, written thread from session to session.",
+      "cautions": "Comparing the imagined child's beliefs with your own can sting or stir grief, so this is for work with a therapist trained in attachment and trauma care. The scenes are imagination, never memories or evidence of what happened, and they are not used to search for forgotten events.",
+      "tweet": "An idea: picture ideal parents caring for the child you were, then write down what a child loved like that would come to believe. The Child's Conclusions is untested and meant for work with a trauma-trained therapist. Imagination, never memory."
+    },
+    {
+      "id": "ifs__metta__1",
+      "name": "Kindness Turned Down",
+      "tagline": "Meeting the inner sides that do not want compassion.",
+      "whatItIs": "Kindness Turned Down is a new, untested take on parts work for the sides of you that bristle when anyone, including you, tries to be kind to them. Instead of offering more warmth, the therapist helps you let the refusal stand and get to know it.",
+      "coreIdea": "Loving-kindness meditation sends goodwill on purpose; this steps back from that, on the idea that some inner sides learned long ago that kindness came with a catch, and that respecting their 'no' may build more trust than pushing compassion at them.",
+      "whatYouDo": "With a trauma-trained therapist who works with parts, you notice a side that tenses, scoffs or goes cold when you turn toward it kindly, and you stop trying to soften it. You ask what kindness has meant to it and what it fears would happen if it let some in, staying with the refusal itself and with memories you already have rather than digging for events. The session ends by thanking the side for its honesty, with no warmth required in return.",
+      "whoItsFor": "People doing parts work who find that self-compassion exercises feel fake, irritating or unsafe.",
+      "cautions": "Refusals of kindness often guard old hurt, so this belongs with a therapist trained in trauma care, and anyone with severe dissociation or in crisis should start there rather than alone. Work only with memories you already have; nothing that surfaces is treated as evidence of past events, and the method is never used to uncover forgotten ones.",
+      "tweet": "Some inner voices hate being told to be kind to themselves. Kindness Turned Down is an untested parts-work concept: with a trauma-trained therapist, you let that side say no and ask what kindness used to cost it. No forced warmth."
+    },
+    {
+      "id": "ifs__jhana__1",
+      "name": "Interruptions Welcome",
+      "tagline": "Treating each distraction in inner work as a part arriving.",
+      "whatItIs": "Interruptions Welcome is a new, untested twist on parts work in which nothing counts as a distraction. Every stray thought, itch, plan or sudden urge to joke that breaks in during a session is greeted as a side of you with something to say.",
+      "coreIdea": "Concentration meditation trains you to drop interruptions and return to one object; this goes the other way, on the idea that the moments when attention gets pulled away may be protective sides stepping in, and that following them might show what they are guarding.",
+      "whatYouDo": "With a trauma-trained therapist you begin on any topic, and whenever attention is pulled away you pause and ask the interruption what it wanted you to notice or avoid just then. You follow it rather than returning to the topic, sometimes through several interruptions in a row, using only memories you already have when a side links itself to the past. At the end the therapist reads back the chain of interruptions so you can see who turned up.",
+      "whoItsFor": "People in parts work whose sessions keep drifting into jokes, plans or side topics, and who are curious what that drift is doing.",
+      "cautions": "Following interruptions can lead quickly toward painful material, so the therapist sets the pace, pauses to ground you if you feel spaced out or unreal, and anyone with dissociation, severe trauma or a current crisis should only try it with a trauma-trained clinician. What surfaces is not evidence of past events, and the work is never used to uncover forgotten memories.",
+      "tweet": "In most meditation, a distraction is something to drop. Here each one is treated as a part of you with a message. Interruptions Welcome is an untested parts-work idea, done with a trauma-trained therapist, where every drift gets a hearing."
+    },
+    {
+      "id": "ifs__dance__1",
+      "name": "Picture-Only Dialogue",
+      "tagline": "Talking with inner parts in pictures instead of words.",
+      "whatItIs": "Picture-Only Dialogue is an untested concept for parts work done in still, wordless imagery. You and an inner part trade simple mental pictures, and a trauma-trained therapist helps you notice how each picture lands.",
+      "coreIdea": "Dance expresses feeling through the moving body; this sets the body aside and works only in inner images, on the idea that some parts may never have had words and might answer a picture more readily than a question.",
+      "whatYouDo": "Sitting still with eyes closed while the therapist stays mostly silent, you find a part and offer it an image rather than a question, such as a door left open or a light in a window, then wait for an image to come back. Every few exchanges the therapist asks you to describe them in a few words and keeps the pace slow, and after the session you sketch or note the sequence of pictures.",
+      "whoItsFor": "People in parts work who get stuck when parts are asked to explain themselves in words, and who find that images come easily.",
+      "cautions": "Images from young parts can carry strong feeling, so this belongs with a therapist trained in trauma care, especially for anyone with dissociation. The pictures are imagination, not memories or evidence of anything that happened, and they are never used to uncover forgotten events.",
+      "tweet": "Imagine talking to a hurt part of yourself with pictures instead of words: you offer an image, it answers with one. Picture-Only Dialogue is an untested idea for parts work with a trauma-trained therapist. Images, never evidence."
+    },
+    {
+      "id": "cbt__metta__1",
+      "name": "Guess and Check Circle",
+      "tagline": "Checking what you think others think against what they say.",
+      "whatItIs": "Guess and Check Circle is a new, untested group format for testing beliefs about what other people think of you. In a tightly run group, members write down guesses about how the others see them, then compare those guesses with the others' anonymous answers.",
+      "coreIdea": "Loving-kindness meditation answers harsh views of people with warmth; this answers them with evidence instead, on the idea that many painful beliefs are guesses about other minds that are rarely checked against what those minds actually report.",
+      "whatYouDo": "Six to eight people meet weekly for 90 minutes with a trained facilitator, who runs a fixed sequence: everyone writes guesses about how the group sees them, such as 'they find me boring', then answers set questions about each other on cards, using only agreed, respectful wording. The facilitator collects the cards, reads each person's answers back to them privately and helps them compare guess with answer line by line, and each week ends with one prediction to test outside the group.",
+      "whoItsFor": "People who often assume others are judging them and who are ready for a structured, somewhat nerve-racking way to find out.",
+      "cautions": "Hearing how others see you can sting, so the facilitator screens answers for respectful wording and members can pass on any question; anyone with severe social anxiety or depression should do this alongside treatment with a clinician. It is a new concept, not a substitute for established treatment.",
+      "tweet": "Think everyone finds you boring? An untested idea: in Guess and Check Circle, a small group writes guesses about how the others see them, then checks them against anonymous, respectful answers. Structured, a bit nerve-racking, with a trained facilitator."
+    },
+    {
+      "id": "cbt__jhana__1",
+      "name": "Pin It Down",
+      "tagline": "Turning vague painful verdicts into specific, checkable statements.",
+      "whatItIs": "Pin It Down is a new, untested group method for sharpening sweeping thoughts such as 'everything is falling apart' into statements precise enough to check. Under a strict format, members question each other until each statement says who, what, how often and how you would know.",
+      "coreIdea": "Concentration meditation quiets words so the mind can rest on a wordless object; this goes the other way, into the precision of language, on the idea that a painful conclusion often stays heavy because it is too vague to test.",
+      "whatYouDo": "In a weekly 75-minute group with a trained facilitator, each member reads out one sweeping thought, and the others take turns asking set questions such as 'over what time?', 'compared with what?' and 'what would you see if it were true?'. The member rewrites the thought after each round until it is specific, then picks one way to check it before the next session and reports the result.",
+      "whoItsFor": "People whose low moods come with big, foggy verdicts about their life, and who like the brisk energy of a group working on words.",
+      "cautions": "Pinning a thought down can make it feel more real for a while, especially when a check confirms part of it, so the facilitator helps members word checks fairly and discuss results kindly. Anyone with severe depression or suicidal thoughts should be in treatment with a clinician rather than relying on a group concept like this.",
+      "tweet": "Idea: take a foggy verdict like 'everything is falling apart' and, with a small group asking 'over what time?' and 'compared with what?', rewrite it until you could actually check it. Pin It Down is a new, untested group format with a trained facilitator."
+    },
+    {
+      "id": "cbt__dance__1",
+      "name": "Fear Forecast Scorecard",
+      "tagline": "Scoring your own worried predictions to see how well calibrated they are.",
+      "whatItIs": "Fear Forecast Scorecard is a new, untested way to treat worry as a forecasting skill. Over several weeks you put a percentage on many of your own feared outcomes, record what happened, and check how often, for example, your 70 percent fears actually came true.",
+      "coreIdea": "Dance lives in the moving body and the present moment; this stays still and on paper, on the idea that one checked prediction is easy to dismiss, but a scorecard built from dozens may show how far your fear estimates drift from what happens.",
+      "whatYouDo": "Each evening, alone, you write two or three specific feared outcomes for the coming days, each with a probability, and later mark whether each one happened. Every two weeks a therapist helps you group the forecasts by the probability you gave and compare that with how often they came true, and you practice choosing numbers closer to your own track record next time.",
+      "whoItsFor": "Worriers who like numbers and records and want a concrete way to see how their fears compare with what actually happens.",
+      "cautions": "Some fears do come true, and the scorecard is meant to calibrate, not to dismiss real risks, so health, safety or money worries need proper advice whatever the numbers say. Anxiety that disrupts daily life calls for a clinician, and this untested idea is not a replacement for treatment.",
+      "tweet": "Your worries make predictions. What if you scored them? Fear Forecast Scorecard is an untested concept: write down feared outcomes with a percentage, check what happened, and review the pattern with a therapist every two weeks."
+    },
+    {
+      "id": "act__metta__1",
+      "name": "Room for Annoyance",
+      "tagline": "Cooperating on a shared task while making room for irritation.",
+      "whatItIs": "Room for Annoyance is a new, untested group format built on ideas from acceptance and commitment therapy. Small groups work together on a hands-on task and pause now and then to name the irritations and judgments they feel, then carry on cooperating.",
+      "coreIdea": "Loving-kindness meditation tries to replace aversion with goodwill; this lets the aversion stay, on the idea that you can feel annoyed with someone and still act on caring about the shared work and the people in it.",
+      "whatYouDo": "Five or six people meet for two hours with a facilitator and work on a practical task with their hands, such as building a shelf or cooking a meal together. When the facilitator rings a bell, everyone pauses for a minute, notices any annoyance, impatience or judgment, names it in the form 'there's irritation that...' without blaming anyone, and then chooses one helpful action to take as the task goes on.",
+      "whoItsFor": "People who think they must stop being annoyed with others before they can be kind or cooperative, and who would rather practice this with their hands than talk about it.",
+      "cautions": "Naming irritation in a group can hurt if it turns into blame, so the facilitator sets firm ground rules, keeps statements about your own reactions and stops any exchange that becomes personal. Tools and cooking come with ordinary safety rules, and this untested idea is no substitute for help with anger or relationship problems that are causing harm.",
+      "tweet": "New idea: build or cook something with a small group, and when a bell rings, name the irritation you feel ('there's impatience') without blaming anyone, then pick one helpful next move. Room for Annoyance is an untested take on acceptance skills."
+    },
+    {
+      "id": "act__jhana__1",
+      "name": "Let Good Moments Go",
+      "tagline": "Letting pleasant feelings end as freely as painful ones.",
+      "whatItIs": "Let Good Moments Go is a new, untested group practice drawn from acceptance and commitment therapy. It treats clinging to pleasant feelings as the twin of fighting painful ones, and practices letting good moments come and go while you keep doing what matters.",
+      "coreIdea": "Concentration meditation can train people to enter and hold blissful states; this goes the other way, on the idea that grasping at good feelings and trying to repeat them may narrow a life as much as avoiding bad ones.",
+      "whatYouDo": "In weekly 75-minute groups with a facilitator, members share one recent moment they tried to hold onto or recreate, such as the glow after praise or the last day of a holiday, and notice together what the grasping felt like and what it cost. In a short exercise each person savors something small, such as a piece of fruit or a favorite song, then notices the wanting for more and chooses whether to act on it, and the session ends with one valued step for the week that does not depend on feeling good.",
+      "whoItsFor": "People who chase highs, praise or perfect days and feel flat when they end, and who want a lighter grip on good feelings.",
+      "cautions": "Looking at how you chase pleasant feelings can stir low mood or touch on compulsive habits, so anyone with an addiction, an eating disorder or depression should do this with a qualified clinician involved. The savoring exercise never needs to involve food and can use a song or an object instead.",
+      "tweet": "We practice letting bad feelings pass. What about good ones? Let Good Moments Go is an untested group idea from acceptance therapy: notice the urge to hold onto a high, let the moment end, and keep doing what matters anyway."
+    },
+    {
+      "id": "act__dance__1",
+      "name": "Willingly Bored",
+      "tagline": "Staying with a dull but meaningful task while boredom comes along.",
+      "whatItIs": "Willingly Bored is a new, untested coaching format that applies acceptance and commitment ideas to boredom. You pick a task that matters to you but feels tedious and practice staying with it, still and unplugged, while boredom does whatever it does.",
+      "coreIdea": "Dance answers restlessness with music and movement; this does the opposite, on the idea that boredom often pushes people away from things they value, such as studying, paperwork or caring for someone, and that making room for it may keep those things within reach.",
+      "whatYouDo": "With a coach trained in acceptance-based methods, you choose one valued but dull task and agree on a block of 15 to 30 minutes with no music, phone or snacks. During the block you keep working, and whenever boredom shows up you silently name how it shows up, such as heavy eyelids or 'this is pointless', then return to the task; in a weekly 30-minute session you look at what boredom said and what got done.",
+      "whoItsFor": "People whose plans for study, admin or care keep losing out to the urge for something more interesting.",
+      "cautions": "Persistent boredom with no interest in anything can be a sign of depression or another condition that deserves a clinician's attention. Take breaks to move and stretch during long blocks, and stop if a task leaves you feeling trapped or very distressed.",
+      "tweet": "Boredom quietly cancels a lot of plans. An idea: Willingly Bored has you pick a dull task you actually care about, do it unplugged for 15 to 30 minutes, and simply name what boredom says while you keep going. New and untested, with a coach."
+    },
+    {
+      "id": "coherence__metta__1",
+      "name": "Niceness With a Reason",
+      "tagline": "Finding what your automatic agreeableness may be protecting you from.",
+      "whatItIs": "Niceness With a Reason is a new, untested idea that applies coherence-style work to compulsive niceness: always agreeing, smoothing things over and never saying no. Rather than training more kindness or more assertiveness, it looks for the emotional learning that makes being nice feel necessary.",
+      "coreIdea": "Loving-kindness meditation builds goodwill on purpose; this moves the other way and treats goodwill that cannot be switched off as a possible symptom, on the idea that it may be driven by an old, strongly felt expectation such as 'if I upset anyone, I will be left'.",
+      "whatYouDo": "In one-to-one sessions with a therapist trained in this kind of work and in trauma care, you replay a recent moment when you went along with something you did not want and imagine, vividly, not being nice, until the feeling and its hidden expectation come into words. Once the expectation is clear and felt, a trusted friend may join one session, with your consent and after meeting the therapist, to say plainly how they would actually feel if you said no to them, while the therapist helps you hold the old expectation and their answer at the same time.",
+      "whoItsFor": "People-pleasers who are tired of saying yes when they mean no and want to understand why no feels so dangerous.",
+      "cautions": "Imagining not being nice can bring a surge of fear, guilt or old anger, so this belongs with a therapist experienced in trauma care, and the friend is prepared beforehand and never asked to judge your past. Work only with memories you already have; nothing that comes up is treated as evidence about past events or used to uncover forgotten ones.",
+      "tweet": "Could relentless niceness be protecting you from something? Niceness With a Reason is an untested concept: with a trauma-trained therapist, you find the old fear behind never saying no, then hear from a trusted friend what a no would really mean."
+    },
+    {
+      "id": "coherence__jhana__1",
+      "name": "The Alarm in Calm",
+      "tagline": "Finding out why relaxing sets off alarm bells.",
+      "whatItIs": "The Alarm in Calm is a new, untested idea for people who get tense, guilty or uneasy precisely when they try to rest. Working in a coherence-style way, it treats that reaction as meaningful and looks for the old emotional learning that makes calm feel risky.",
+      "coreIdea": "Concentration meditation aims for deep calm; this starts from the opposite experience, on the idea that if calm reliably sets off alarm, some old learning, such as 'if I let my guard down, something bad happens', may be making vigilance feel necessary.",
+      "whatYouDo": "With a therapist trained in this approach and in trauma care, you let yourself relax for a minute or two at a time, sitting up with eyes open, and stop as soon as unease rises. You and the therapist then describe that moment in words, asking what the unease is warning about, until a sentence that feels emotionally true appears, and in later sessions you hold that sentence beside a vivid present-day experience that contradicts it.",
+      "whoItsFor": "People who feel on edge on holidays, in meditation classes or on quiet evenings, and who want to understand the reaction rather than force themselves to relax.",
+      "cautions": "Anxiety triggered by relaxing can be intense and is sometimes linked to trauma, so this belongs only with a therapist trained in trauma care, and anyone with panic attacks, dissociation or possible medical causes for their symptoms should be assessed first. Use only memories you already have; what surfaces is not evidence of past events and is never used to uncover forgotten ones.",
+      "tweet": "Some people tense up the moment they try to relax. The Alarm in Calm is an untested idea: with a trauma-trained therapist, you rest briefly, stop when unease rises, and look for the old lesson that makes calm feel risky."
+    },
+    {
+      "id": "coherence__dance__1",
+      "name": "Caught Mid-Song",
+      "tagline": "Why being seen enjoying yourself can feel so dangerous.",
+      "whatItIs": "Caught Mid-Song is a new, untested concept for the freeze that hits when you are seen being playful, silly or carried away. In coherence-style sessions that stay seated and use imagery only, you look for the emotional learning that makes holding back feel necessary.",
+      "coreIdea": "Dance invites feeling to move freely in front of others; this stays still and turns toward the brake, on the idea that self-consciousness in joyful moments may be the felt trace of a lesson such as 'if they see me carried away, I will be mocked', which might lose its grip once it is fully felt and set beside contrary experience.",
+      "whatYouDo": "With a therapist trained in this approach and in trauma care, you imagine a small scene, such as singing in the kitchen when someone walks in, notice the clamp in your chest and what it expects to happen next, and put that expectation into one written sentence. Over the next sessions the therapist helps you find a time, recent or already remembered, when someone saw you carried away and met it with warmth, and you hold both in mind together.",
+      "whoItsFor": "People who would love to sing, dance or be silly in front of others but freeze as soon as anyone is watching.",
+      "cautions": "Old shame can surface strongly, so this is for work with a therapist experienced in trauma care, and you set the pace. Stay with memories you already have; nothing that comes up is evidence of past events, and the method is never used to uncover forgotten ones.",
+      "tweet": "Ever freeze the second someone sees you singing in the kitchen? An idea: Caught Mid-Song, untested and done with a trauma-trained therapist, traces that clamp to the old lesson behind it and sets it beside times when being seen went fine."
+    },
+    {
+      "id": "tre__metta__1",
+      "name": "Hold Until It Shakes",
+      "tagline": "Staying with the wobble of working muscles instead of quitting.",
+      "whatItIs": "Hold Until It Shakes is a new, untested variation on tremor practice that centers on the shaking that appears during effort, not only after it. You hold a moderately hard position until the muscles tremble, stay a little longer with plain attention, then lie down and let any after-tremor run.",
+      "coreIdea": "Loving-kindness meditation fills the mind with chosen words and wishes; this sets both aside and rests on raw sensation, on the idea that letting a working body shake, without words or stories, might make strong sensation feel less alarming.",
+      "whatYouDo": "After five minutes of easy warm-up, you hold a wall sit or a gentle lunge until your legs start to shake, then stay for 20 to 40 more seconds, breathing normally and noticing heat, burn and wobble without commenting, before releasing, and you repeat this three or four times. You then lie on your back with knees bent for up to ten minutes and let any tremor run, ending it whenever you like by straightening your legs or rolling onto your side.",
+      "whoItsFor": "People who tend to quit or tense up at the first strong body sensation and want a physical way to practice staying with it.",
+      "cautions": "Check with a doctor first if you have heart, blood pressure, joint or balance problems, epilepsy or seizures, pregnancy, or recent surgery, fractures or injuries, and stop at once for chest pain, dizziness, faintness or unusual breathlessness. Never hold your breath during the holds, learn the tremor part from a certified TRE provider, and if strong emotions or memories surface, end the round and get a clinician's support.",
+      "tweet": "Most of us quit the moment our legs start to shake. Hold Until It Shakes is an untested idea: hold a wall sit just past the wobble, breathe, then lie down and let the tremor fade. Doctor check first, and stop for chest pain or dizziness."
+    },
+    {
+      "id": "tre__jhana__1",
+      "name": "Wherever the Tremor Goes",
+      "tagline": "Letting attention ride the tremor as it moves through you.",
+      "whatItIs": "Wherever the Tremor Goes is a new, untested approach to tremor practice with no fixed anchor for attention. Once a tremor starts, attention simply follows it as it travels from the legs to the hips, back, shoulders or jaw, staying with whatever is moving now.",
+      "coreIdea": "Concentration meditation fixes attention on one steady object; this lets attention move with a moving body instead, on the idea that following sensation wherever it goes, rather than holding a single point, may feel more natural and less effortful for some people.",
+      "whatYouDo": "After a short warm-up you do about 15 minutes of moderately hard leg-tiring exercises, such as wall sits, slow lunges and calf raises, until the thighs feel shaky. Then you lie on your back with knees bent for up to 15 minutes and let attention go wherever the tremor is strongest, without steering it, ending the round at any moment by straightening your legs or rolling onto your side.",
+      "whoItsFor": "People who already know basic tremor practice and find that trying to hold one focus makes them tense.",
+      "cautions": "Check with a doctor first if you have heart or joint problems, epilepsy or seizures, pregnancy, or recent surgery, fractures or injuries, always warm up, and stop for chest pain, dizziness, faintness or unusual breathlessness. Learn tremor practice from a certified provider first, and if emotions or memories become overwhelming or you feel spaced out, end the round and get support from a clinician.",
+      "tweet": "Forget holding one point of focus. Wherever the Tremor Goes is an untested take on tremor practice: tire the legs, lie down, let attention follow the shaking wherever it travels, and stop any time. Doctor check and warm-up first."
+    },
+    {
+      "id": "tre__dance__1",
+      "name": "The Quiet After",
+      "tagline": "A short tremor, then a long, still rest as the main course.",
+      "whatItIs": "The Quiet After is a new, untested variation on tremor practice, done entirely alone, in which the stillness after shaking matters more than the shaking. A brief tremor round is followed by a much longer period of lying completely still and feeling the body settle.",
+      "coreIdea": "Dance keeps the body moving in rhythm with others; this does the opposite, on the idea that the contrast between movement and complete, solitary stillness might be where settling is felt most clearly.",
+      "whatYouDo": "Alone, you warm up gently for two minutes, do about five minutes of light leg-tiring exercises, then lie on your back with knees bent and let a tremor run for five minutes, ending it sooner if you wish by straightening your legs or rolling onto your side. You then stay lying still with legs stretched out for 15 minutes on a timer, noticing the fading buzz, the weight of the body and the quiet, before rolling onto your side to get up slowly.",
+      "whoItsFor": "People who like tremor practice but find the calm that follows matters more to them than the shaking, and who want a fixed, private routine.",
+      "cautions": "Check with a doctor first if you have epilepsy or seizures, pregnancy, recent surgery, fractures or injuries, or a heart condition, and stop for chest pain, dizziness, faintness, pain or panic. Long stillness can bring up difficult feelings or a sense of unreality, so people with trauma or dissociation should learn this with a clinically trained TRE provider, and anyone can end early by sitting up and looking around the room.",
+      "tweet": "An untested idea: shake briefly, then lie completely still for 15 minutes and feel the body settle. The Quiet After treats the stillness as the main course. Learn tremor practice from a certified provider first, and check with a doctor."
+    },
+    {
+      "id": "focusing__metta__1",
+      "name": "Back to Back Sensing",
+      "tagline": "Two people sensing inward in silence, backs lightly touching.",
+      "whatItIs": "Back to Back Sensing is a new, untested partner practice in the style of Focusing. Two people who know the basic steps sit with their backs lightly touching, each sensing inward in silence, and then share a word or two about what formed.",
+      "coreIdea": "Loving-kindness meditation sends imagined warmth and wishes to another person; this offers real, wordless contact with no wish attached, on the idea that feeling another person breathing at your back, while asking nothing of each other, may make it easier to rest with your own felt sense just as it is.",
+      "whatYouDo": "You and a partner agree beforehand on the contact and on a simple way to end it, such as leaning forward, then sit back to back on cushions, fully clothed, for 20 minutes. Each of you lets a felt sense of something in your life form, staying with sensations, the rise and fall of breathing and whatever comes, without trying to change any of it, and afterwards each says one word or image while the other repeats it back without comment.",
+      "whoItsFor": "Friends or partners who already practice Focusing and want a quieter, more bodily way to keep each other company.",
+      "cautions": "Touch must be fully consensual and easy to stop at any moment, and anyone for whom contact can bring up trauma, or who feels unsure, should skip the contact or work with a qualified therapist. Turning inward can stir strong feelings, so stop if it becomes too much, and anyone in crisis should seek professional help.",
+      "tweet": "Two people, backs lightly touching, each sensing inward in silence for 20 minutes, then sharing one word. Back to Back Sensing is an untested idea built on Focusing. Agree on the contact first, and either of you can lean away at any time."
+    },
+    {
+      "id": "focusing__jhana__1",
+      "name": "A Friend's Question",
+      "tagline": "A friend asks one open question; your body answers first.",
+      "whatItIs": "A Friend's Question is a new, untested Focusing-style practice in which someone who knows you well chooses the starting point. They ask one gentle, open question about your life, and you let a bodily felt sense of the answer form before any words come.",
+      "coreIdea": "Concentration meditation has you pick one fixed object and hold it alone; this hands the opening to another person and holds nothing, on the idea that a friend may notice what you keep stepping around, and that sensing their question in the body, instead of answering it at once, may let something fresh come.",
+      "whatYouDo": "You and a friend who both know the basic Focusing steps meet for about 45 minutes and take turns. The asker offers one open question, such as 'what has been on your mind that you haven't mentioned?' or 'what are you looking forward to?', then stays quiet while the other lets a felt sense form and says words or images only as they come, and the asker reflects back just those words, with no follow-up questions or advice.",
+      "whoItsFor": "Close friends or partners who already listen to each other well and want a gentle way to explore what is going on beneath the everyday.",
+      "cautions": "Either person can decline a question or stop at any time, and the asker avoids questions about painful history or anything shared in confidence. Anyone with severe trauma, dissociation or a current crisis should explore difficult material with a qualified therapist instead.",
+      "tweet": "Let a friend who knows you pick one gentle question, then answer it with your body first: pause, notice what forms, and only then find words. A Friend's Question is an untested idea built on Focusing, and either of you can stop at any time."
+    },
+    {
+      "id": "focusing__dance__1",
+      "name": "Felt but Unsaid",
+      "tagline": "Sensing something you have never said, without planning to say it.",
+      "whatItIs": "Felt but Unsaid is a new, untested solo practice in the style of Focusing that turns attention to something you have long wanted to say to someone but never have. The aim is not to say it or plan to, only to let a felt sense of carrying it form and be known.",
+      "coreIdea": "Dance lets feeling out through movement in front of others; this keeps everything inside and still, on the idea that an unsaid thing carries a bodily feel of its own, and that sensing it quietly, with no pressure to express it, may clarify what it is about.",
+      "whatYouDo": "Alone and sitting still for about 20 minutes, after learning basic Focusing from a book or teacher, you bring to mind one unsaid thing, such as a thank-you, a complaint or a question, and notice where and how holding it is felt in the body. You let a word or image come for that sense, check that it fits, and gently ask what it has been like to carry this, then end by writing one line for yourself that you do not send.",
+      "whoItsFor": "People who carry unspoken words toward someone and want to understand them better before deciding anything, or without ever deciding.",
+      "cautions": "Unspoken words can be tied to painful relationships or old hurts, so stop if feelings become overwhelming, and anyone with severe trauma, dissociation or a current crisis should do this with a qualified therapist. If the unsaid thing involves harm or danger to you or someone else, talk to a professional or the right service rather than keeping it inside.",
+      "tweet": "Nearly everyone carries something they've never said to someone. Felt but Unsaid is an untested idea: sit quietly, notice how carrying it feels in your body, find a word for it, and write one line you don't send. No pressure to say it."
+    },
+    {
+      "id": "aletheia__metta__1",
+      "name": "No Forgiveness Asked",
+      "tagline": "Old resentment felt fully, with no push to forgive.",
+      "whatItIs": "No Forgiveness Asked is a new, untested idea in the spirit of presence-based coaching, delivered one to one by a licensed therapist trained in trauma care. Instead of cultivating goodwill toward someone who hurt you long ago, you let the resentment itself be felt slowly in the body, with no expectation that it should turn into forgiveness.",
+      "coreIdea": "Loving-kindness practice works to grow goodwill even toward difficult people; this moves the other way, on the idea that long-held resentment may be guarding something, and that meeting it with steady, unhurried attention, rather than pressure to let go, may let it settle in its own time, or not.",
+      "whatYouDo": "In unstructured 75-minute sessions, you name one long-held resentment from what you already remember and notice where it lives in the body, such as the jaw, the chest or the hands. The therapist slows you down, reflects back what you say and how you say it, and never suggests forgiving, understanding or contacting the person.",
+      "whoItsFor": "People who have been told to forgive and let go, who could not, and who want their resentment met rather than corrected.",
+      "cautions": "Old resentment often sits on top of real harm, so this belongs with a licensed therapist trained in trauma care, and people with PTSD, severe depression or a current crisis should start with established treatment. Work only with memories you already have; nothing felt here is evidence of past events, it is never used to uncover forgotten ones, and it never asks you to confront anyone.",
+      "tweet": "Told to forgive and let go, and you can't? An untested idea: No Forgiveness Asked lets old resentment be felt in the body, slowly, with a trauma-trained therapist, and nobody asks you to forgive. Real harm deserves real support first."
+    },
+    {
+      "id": "aletheia__jhana__1",
+      "name": "Unhurried Feeling Circle",
+      "tagline": "A small group sitting in silence, speaking only from feeling.",
+      "whatItIs": "Unhurried Feeling Circle is a new, untested group format inspired by presence-based coaching and led by a licensed therapist trained in trauma care. A few screened people sit together with no agenda and no turns, and anyone speaks only when a feeling moves them, in the present tense and from the feeling rather than about it.",
+      "coreIdea": "Concentration meditation withdraws into one object, alone; this opens into a shared, unstructured silence, on the idea that deep feelings may surface more naturally when no one has a task or a turn and the quiet attention of others holds the room.",
+      "whatYouDo": "Five or six people meet for two hours, starting and ending with ten minutes of silence and a short check-in with the therapist. In between there is no plan: when someone feels something, they say it in a sentence or two, such as 'I'm noticing sadness in my throat as I listen', and the others receive it without advice or comment, while the therapist slows things down and checks in with anyone who seems overwhelmed.",
+      "whoItsFor": "People drawn to depth work and meditation who want to practice feeling and speaking honestly in company, without the structure of a therapy group.",
+      "cautions": "Unstructured group silence can stir old feelings, a sense of unreality or the urge to withdraw, so members are screened for psychosis, bipolar disorder, severe trauma and dissociation, and anyone can step out or pause at any time. Members draw only on memories they already have, and nothing that arises is treated as evidence of past events or used to uncover forgotten ones.",
+      "tweet": "Imagine a small circle with no agenda and no turns: you speak only when a feeling moves you, and nobody gives advice. Unhurried Feeling Circle is an untested idea led by a trauma-trained therapist, with screening first."
+    },
+    {
+      "id": "aletheia__dance__1",
+      "name": "Wider Than the Feeling",
+      "tagline": "Meeting old feelings from a sense of wide, open awareness.",
+      "whatItIs": "Wider Than the Feeling is a new, untested concept that takes the stillest, most open end of presence-based coaching as its whole focus. Sitting almost motionless, you let a long-familiar feeling be there and gently turn attention to the open awareness in which it appears, rather than to the feeling's story.",
+      "coreIdea": "Dance moves feeling and expresses it through the body; this does the opposite, on the idea that an old feeling may need neither expression nor fixing, and that sensing the wide space around it might make it easier to bear.",
+      "whatYouDo": "In 60-minute one-to-one sessions with a licensed therapist trained in trauma care and experienced with meditation-related difficulties, you sit comfortably, name a long-familiar feeling such as loneliness, and let it be present without discussing where it came from. In long pauses the therapist invites you to notice what is aware of the feeling, how large that awareness seems and whether the feeling sits inside it, and before you leave you return to ordinary talk about the room and the day.",
+      "whoItsFor": "People with some meditation experience who live with a long-standing feeling and want to explore it from a calm, spacious stance rather than through analysis.",
+      "cautions": "Inquiry into awareness can sometimes bring a sense of unreality, detachment or fear, so people are screened for psychosis, bipolar disorder, severe trauma and dissociation, and the session stops to ground you if this happens. Only memories you already have are touched on, and nothing here is evidence of past events or used to uncover forgotten ones.",
+      "tweet": "New concept: Wider Than the Feeling. You let an old feeling like loneliness sit with you, still and unhurried, and notice the wide awareness it appears in. Untested, and done with a trauma-trained therapist who knows meditation's rough edges."
+    }
+  ]
+}
