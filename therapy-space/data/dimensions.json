@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "dimensions": [
+    {
+      "id": "body",
+      "name": "Mind or body",
+      "question": "Where does the work happen, in the mind or in the body?",
+      "lowLabel": "Mind",
+      "highLabel": "Body",
+      "lowMeans": "It works mainly through thoughts, words, images and meaning.",
+      "highMeans": "It works mainly through sensation, breath, posture and movement.",
+      "description": "This measures the main channel a practice uses: thoughts, words, images and meaning, or sensation, breath, posture and movement. A score near 0 means it is almost all talking, thinking or imagining, as in CBT, and a score near 10 means it is almost all physical, as in TRE or strength training. Middle scores mean both matter, as in Focusing, where a bodily felt sense is put into words.",
+      "whyItMatters": "Researchers describe two routes in mind-body practice: top-down, where thoughts and attention shape how the body feels, and bottom-up, where breath, movement and sensation shape mood and thinking (Taylor and colleagues, 2010). In an empirical classification of meditation techniques, the amount of body orientation was one of the two main ways techniques differed (Matko and Sedlmeier, 2019), and some practices on this map, such as TRE and music, are suggested for people who find it hard to talk about difficult experiences or put feelings into words.",
+      "examplesLow": [
+        "cbt",
+        "coherence",
+        "socializing"
+      ],
+      "examplesHigh": [
+        "tre",
+        "strength",
+        "hiit"
+      ]
+    },
+    {
+      "id": "exertion",
+      "name": "Physical effort",
+      "question": "How hard does your body work?",
+      "lowLabel": "Still",
+      "highLabel": "Strenuous",
+      "lowMeans": "You stay seated, lying down or nearly still.",
+      "highMeans": "You work close to your physical limit, breathing hard.",
+      "description": "This measures the level of physical effort a typical session is built around, roughly in line with exercise intensity. Around 2 is gentle movement such as slow qigong, around 4 is a walk or an easy hike, around 7 is a steady run or challenging weights, and 10 is a session built around repeated near-maximal efforts, as in HIIT. A practice that only sometimes involves hard effort, such as a long hike, scores by what it usually asks of you.",
+      "whyItMatters": "Effort matters in exercise research: a 2024 network meta-analysis of 218 depression trials found that benefits grew with the intensity prescribed, though it rated its confidence in these findings low or very low (Noetel and colleagues, BMJ). It also sets practical limits, since strenuous practices carry more risk of injury and heart strain, and people with heart problems are advised to get medical advice first.",
+      "examplesLow": [
+        "ipf",
+        "do-nothing",
+        "focusing"
+      ],
+      "examplesHigh": [
+        "hiit",
+        "team-sport",
+        "strength"
+      ]
+    },
+    {
+      "id": "arousal",
+      "name": "Nervous system activation",
+      "question": "Does it calm you down or fire you up?",
+      "lowLabel": "Calming",
+      "highLabel": "Energizing",
+      "lowMeans": "It settles the nervous system and slows you down.",
+      "highMeans": "It raises heart rate, alertness and activation.",
+      "description": "This measures which way a practice typically moves your level of activation, during and just after it. Low scores settle you, middle scores mean a mix or moderate activation, such as an engaging conversation, and high scores fire you up. It is separate from physical effort: TRE and qigong move the body but aim to calm, while socializing and exposure work in CBT can be activating with little movement.",
+      "whyItMatters": "Calm versus activated is one of the two basic dimensions people use to describe how they feel (Russell, 1980), and activation was also one of the two main ways meditation techniques differed in an empirical classification (Matko and Sedlmeier, 2019). Someone wound up by anxiety may look for settling and someone flat and low may need activation, while some methods, such as exposure in CBT, raise anxiety on purpose in manageable steps.",
+      "examplesLow": [
+        "do-nothing",
+        "qigong",
+        "vipassana"
+      ],
+      "examplesHigh": [
+        "hiit",
+        "team-sport",
+        "endurance"
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social setting",
+      "question": "Do you do it alone or with other people?",
+      "lowLabel": "Alone",
+      "highLabel": "With others",
+      "lowMeans": "You practice on your own, or silently alongside others.",
+      "highMeans": "Interacting with several people is the heart of the practice.",
+      "description": "This measures how many people take part and how much interacting with them is part of the practice itself. Around 3 or 4 means a one-to-one relationship with a practitioner, around 5 means small groups or a companion such as a therapy animal, and 10 means the practice is made of interaction, as in team sport. Practices done in a group but in silence, such as a meditation retreat, stay low.",
+      "whyItMatters": "Social connection predicts survival: a review pooling 148 studies found that people with stronger relationships were about 50% more likely to survive over the follow-up periods, about as strong an effect as well-known risk factors such as smoking (Holt-Lunstad and colleagues, 2010). In team sport the social side is thought to add to the physical side (Eather and colleagues, 2023), so the setting of a practice can be part of how it helps rather than a detail of delivery.",
+      "examplesLow": [
+        "do-nothing",
+        "vipassana",
+        "metta-jhana"
+      ],
+      "examplesHigh": [
+        "team-sport",
+        "socializing"
+      ]
+    },
+    {
+      "id": "structure",
+      "name": "Built-in structure",
+      "question": "Is there a set method to follow?",
+      "lowLabel": "Open",
+      "highLabel": "Structured",
+      "lowMeans": "There are no fixed steps, and the practice follows whatever arises.",
+      "highMeans": "It follows a set protocol with steps, counts or timing.",
+      "description": "This measures how much of a practice is laid down in advance. Low scores mean an open process with few or no instructions, as in Do Nothing meditation or a nature walk, middle scores mean a loose framework adapted in the moment, as in IFS or ACT, and high scores mean set steps, agendas, intervals or repetitions, as in CBT, HIIT or a qigong form.",
+      "whyItMatters": "Set protocols spell out each step, from the shared agenda and homework of CBT to the timed intervals of HIIT, while open practices such as Do Nothing meditation leave room for whatever comes up. People differ in which they prefer, and a meta-analysis of 53 studies found that clients who received the kind of therapy they preferred were less likely to drop out and did somewhat better (Swift and colleagues, 2018).",
+      "examplesLow": [
+        "do-nothing",
+        "nature",
+        "socializing"
+      ],
+      "examplesHigh": [
+        "cbt",
+        "hiit",
+        "strength"
+      ]
+    },
+    {
+      "id": "stance",
+      "name": "Stance toward experience",
+      "question": "Do you let experience be, or work to change it?",
+      "lowLabel": "Allowing",
+      "highLabel": "Changing",
+      "lowMeans": "It lets thoughts, feelings and sensations be as they are.",
+      "highMeans": "It works directly to change thoughts, feelings, behavior or the body.",
+      "description": "This measures the attitude a practice takes toward what you are experiencing. Low scores welcome experience without trying to alter it, as in Do Nothing or vipassana, middle scores combine acceptance with deliberate change, as in ACT, and high scores set out to change something, such as unhelpful thoughts in CBT, a feeling of goodwill built up in metta, or the body itself in strength training.",
+      "whyItMatters": "The balance between accepting experience and changing it is a central question in modern therapy: traditional CBT works to change unhelpful thoughts, while ACT and mindfulness methods change how people relate to them instead. Monitor and Acceptance Theory (Lindsay and Creswell, 2017) proposes that acceptance is what turns heightened awareness into lower stress, so allowing practices train an active skill rather than being passive.",
+      "examplesLow": [
+        "do-nothing",
+        "aletheia",
+        "vipassana"
+      ],
+      "examplesHigh": [
+        "cbt",
+        "strength",
+        "hiit"
+      ]
+    },
+    {
+      "id": "depth",
+      "name": "Reach into the past",
+      "question": "Does it stay with the present or work with your history?",
+      "lowLabel": "Here and now",
+      "highLabel": "Deep history",
+      "lowMeans": "It stays with present experience and current problems.",
+      "highMeans": "It works with old emotional memories and early attachment.",
+      "description": "This measures how far back in your life a practice deliberately reaches. Low scores stay with the present moment or present problems, middle scores may touch personal history when it comes up, and high scores target old emotional learning or early attachment directly, as IPF, IFS and Coherence Therapy do. Old feelings can surface in almost any practice, so the score reflects what the method sets out to do.",
+      "whyItMatters": "Practices that work with old emotional memories, such as IPF, IFS and Coherence Therapy, aim at the roots of long-standing patterns, and all three come with the warning that this can bring up intense material best handled with a trained therapist. Most present-focused practices on this map, from running to sensory mindfulness, can be started on your own, which is why this dimension tends to rise with the need for a guide.",
+      "examplesLow": [
+        "nature",
+        "sensory",
+        "hiit"
+      ],
+      "examplesHigh": [
+        "ipf",
+        "ifs",
+        "coherence"
+      ]
+    },
+    {
+      "id": "perception",
+      "name": "Imagined or perceived",
+      "question": "Does it work with inner images and stories, or with what your senses meet right now?",
+      "lowLabel": "Imagination",
+      "highLabel": "Perception",
+      "lowMeans": "It works with imagined scenes, inner figures, memories and stories.",
+      "highMeans": "It rests on direct contact with what you see, hear, touch and feel right now.",
+      "description": "This measures what a practice gives your attention to work with. Low scores mean an inner world of imagery and story, such as the imagined parents of IPF or the parts of IFS, middle scores mix thoughts or images with direct sensing, and high scores mean plain contact with the senses and the outside world, as in sensory mindfulness, a nature walk or a game of Ultimate.",
+      "whyItMatters": "Imagery can be emotionally powerful: research reviewed by Holmes and Mathews (2010) suggests that picturing events stirs stronger emotion than thinking about them in words, which imagery methods such as IPF put to use. At the other end, turning attention to what you can sense right now is thought to interrupt worry and rumination, and in people with current or past depression a review of 11 studies found that mindfulness-based therapy reduced rumination moderately compared with usual care, a waiting list or a home walking program (7 studies), though not more than other active treatments (3 studies).",
+      "examplesLow": [
+        "ipf",
+        "ifs",
+        "metta-jhana"
+      ],
+      "examplesHigh": [
+        "sensory",
+        "nature",
+        "team-sport"
+      ]
+    },
+    {
+      "id": "guide",
+      "name": "Need for a guide",
+      "question": "Can you do it on your own, or do you need a trained practitioner?",
+      "lowLabel": "Self-led",
+      "highLabel": "Professional-led",
+      "lowMeans": "Anyone can start it alone, without instruction.",
+      "highMeans": "It needs a trained practitioner throughout.",
+      "description": "This measures how much a practice depends on a trained professional as it is typically done. Low scores mean you can start alone today, around 3 or 4 means it is usually learned from a teacher, provider or book and then practiced alone, and high scores mean a trained therapist, coach or animal team leads every session.",
+      "whyItMatters": "Whether you need a professional affects cost, access and safety. For many practices on this map, including IFS, Coherence Therapy, TRE, Focusing and intensive meditation retreats, people with severe trauma, dissociation or other serious conditions are advised to work with a qualified practitioner, while self-led practices such as running, nature walks and socializing can be started on your own.",
+      "examplesLow": [
+        "endurance",
+        "socializing",
+        "nature"
+      ],
+      "examplesHigh": [
+        "ipf",
+        "coherence",
+        "ifs"
+      ]
+    }
+  ]
+}
