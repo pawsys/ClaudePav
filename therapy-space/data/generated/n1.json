@@ -1,0 +1,247 @@
+{
+  "lane": "n1",
+  "modalities": [
+    {
+      "id": "ipf__metta__5",
+      "name": "Today's Guest List",
+      "tagline": "Wish well, each morning, to everyone you expect to meet today.",
+      "whatItIs": "Today's Guest List is a new, untested concept that takes loving-kindness practice further away from therapies that revisit childhood with a guide. It stays entirely with the day ahead: each morning, on your own, you silently wish well to the specific people you expect to see or speak to before nightfall.",
+      "coreIdea": "Goodwill aimed at the actual people on today's path, rather than at people from your past or at whole categories, is meant to make the practice feel immediate and usable within hours.",
+      "whatYouDo": "Over breakfast, spend 5 to 10 minutes going through your plan, calendar or route for the day and write down each person you are likely to meet, from a colleague to the bus driver. For each name, picture the person briefly and repeat one short wish, such as 'may today go easily for you', then move on without reviewing any history with them.",
+      "whoItsFor": "People who want a short, self-led kindness habit that connects directly to the day they are about to live.",
+      "cautions": "Some names may bring up irritation or worry, and it is fine to skip a name or keep the wish brief rather than force a feeling. This is an untested idea, not a substitute for care, and anyone in crisis or struggling with severe low mood should talk to a mental health professional.",
+      "tweet": "New concept: Today's Guest List. Each morning, list the people you expect to meet today, from a coworker to the bus driver, and silently wish each one an easy day. Ten minutes, on your own, meant to start the day on friendlier terms."
+    },
+    {
+      "id": "ifs__metta__5",
+      "name": "Future Birthdays",
+      "tagline": "Silent birthday wishes for the person you will be, years ahead.",
+      "whatItIs": "Future Birthdays is a new, untested concept that moves loving-kindness away from therapies that turn back toward younger parts of you. Instead, you face forward: alone, you picture yourself on a few birthdays still to come and wish that whole future person well, one birthday at a time.",
+      "coreIdea": "Treating your future self as someone you can already wish well, rather than as a stranger, is meant to make looking after that person feel more natural.",
+      "whatYouDo": "Sit for 15 minutes and choose three future birthdays, for example 5, 15 and 30 years from now. For each, picture yourself at that age on that day in plain, ordinary detail and repeat the same three wishes (may you be well, may you be at ease, may you have people around you who care), then move to the next birthday.",
+      "whoItsFor": "People who find it easier to be kind to others than to themselves, or who tend to neglect their own long-term wellbeing.",
+      "cautions": "Picturing aging can bring up worry about health, money or loss, so keep the scenes gentle and stop if dread takes over. It is an untested idea, and if thoughts about the future feel hopeless, please speak to a doctor or mental health professional.",
+      "tweet": "Birthday wishes, sent ahead to yourself: you at 45, at 60, at 80, each pictured on an ordinary birthday and wished well. A quiet 15-minute practice, untested, called Future Birthdays, meant to make looking after your future self feel less abstract."
+    },
+    {
+      "id": "cbt__metta__5",
+      "name": "The Wandering Wish",
+      "tagline": "Wish one person well, then let the next one find you.",
+      "whatItIs": "The Wandering Wish is a new, untested concept that loosens loving-kindness practice, moving it away from step-by-step, agenda-driven therapy. You start by wishing one person well, then let your mind bring up whoever comes next by association, and follow the chain wherever it goes without a list or a plan.",
+      "coreIdea": "Letting goodwill drift along the natural links between people, from a friend to her sister to the sister's new baby, may feel softer and less effortful than working through a set order.",
+      "whatYouDo": "Sit or lie comfortably for 10 to 20 minutes, picture someone easy to like and offer a simple wish, noticing any warmth in your chest without chasing it. When another face or name drifts in, let the wish move to them, and if the chain stalls or turns toward someone painful, return to the first person or simply rest.",
+      "whoItsFor": "People who find structured meditation scripts rigid and would like a gentler, more playful way into kindness practice.",
+      "cautions": "An open chain may lead toward people linked with grief or conflict, so it helps to know you can stop, open your eyes or go back to an easy person at any time. This is an untested idea, and anyone with severe depression, trauma symptoms or a current crisis should seek professional support.",
+      "tweet": "An idea for softer kindness practice: wish one person well, then let your mind pick the next by association. A friend, her sister, the sister's new baby. No list, no order. The Wandering Wish is untested, but it may feel lighter than a script."
+    },
+    {
+      "id": "act__metta__5",
+      "name": "Turn Up the Warmth",
+      "tagline": "Raise a feeling of goodwill on purpose, one step at a time.",
+      "whatItIs": "Turn Up the Warmth is a new, untested concept that pushes loving-kindness further toward deliberately changing how you feel, away from approaches that accept feelings as they come. In a set routine, you rate how warm you feel toward one person, then use richer images and phrases to try to raise that rating step by step.",
+      "coreIdea": "Treating warmth as a skill you can try to turn up on purpose, with a simple 0 to 10 rating as a guide, is meant to show that kind feelings may be built rather than only waited for.",
+      "whatYouDo": "Sit alone for 15 minutes with one person in mind, rate your warmth toward them from 0 to 10 and write the number down. Then do three rounds of about two minutes, each time adding one detail to the scene (their face, a moment they laughed, a wish for something they care about), and rate again after each round.",
+      "whoItsFor": "People who like measurable practice and want to explore whether they can grow kind feelings on purpose.",
+      "cautions": "Chasing a higher number can turn into pressure, so treat a flat rating as normal and stop after three rounds whatever it shows. It is an untested idea, and grief, anger or a sense of being unworthy that keeps coming up is a reason to slow down and, if it persists, to talk to a professional.",
+      "tweet": "Can kind feelings be grown on purpose? An untested idea: rate how warm you feel toward one person from 0 to 10, spend three short rounds adding detail to the picture, then rate again. Turn Up the Warmth, and a flat score counts as normal."
+    },
+    {
+      "id": "coherence__metta__5",
+      "name": "Lights-Out Goodwill",
+      "tagline": "Three quiet wishes in bed, and nothing to figure out.",
+      "whatItIs": "Lights-Out Goodwill is a new, untested concept that takes loving-kindness further away from therapies that search for the hidden emotional reasons behind a problem. It is a very calm bedtime routine: lights off, you offer three short wishes to three people from your day, and you deliberately leave every question about why you feel as you do for another time.",
+      "coreIdea": "Ending the day with a few simple wishes and no analysis is meant to give the mind something gentle to settle on instead of reviewing problems.",
+      "whatYouDo": "Once you are in bed with the lights off, bring to mind three people you saw today, one at a time, and give each the same short phrase, such as 'rest well tonight'. Keep it under five minutes, and if your mind starts analyzing a conversation, note 'tomorrow' and return to the next wish or simply let sleep come.",
+      "whoItsFor": "People who want a calm, self-led way to end the day and tend to lie awake picking apart what happened.",
+      "cautions": "If the routine stirs worry or keeps you more awake, drop it on those nights. This untested idea is not a sleep treatment, so ongoing sleep problems, or low mood that keeps you up at night, are worth raising with a doctor.",
+      "tweet": "What if the last thing you did each night was wish three people from your day a good rest? Under five minutes in bed, no analyzing, just three quiet wishes, and if it keeps you awake, skip it. Working name for this untested idea: Lights-Out Goodwill."
+    },
+    {
+      "id": "tre__metta__5",
+      "name": "Their Good Tuesday",
+      "tagline": "Imagine, hour by hour, an ordinary day going well for someone.",
+      "whatItIs": "Their Good Tuesday is a new, untested concept that moves loving-kindness away from body-based practices and entirely into imagination. Instead of repeating phrases, you tell yourself a detailed story of one ordinary day going well for a person you care about, from waking up to falling asleep.",
+      "coreIdea": "A wish that unfolds as a concrete story, with a decent breakfast, a kind word at work and an easy journey home, may feel more real and specific than a general wish for happiness.",
+      "whatYouDo": "Sit for 15 to 20 minutes, choose one person and silently narrate their next ordinary weekday in about eight scenes, picturing each small thing that goes right. Keep the day realistic rather than magical, end with them falling asleep content, and then let the story go.",
+      "whoItsFor": "People with a strong imagination who find stock phrases flat and would rather picture good things happening.",
+      "cautions": "Imagining someone's day can drift toward worry about their real problems, so if that happens, shorten the story or choose an easier person. It is an untested idea, not a substitute for professional care if you are in crisis or struggling with severe low mood.",
+      "tweet": "Instead of saying 'may you be happy', narrate one ordinary day going well for someone: breakfast, a kind word at work, an easy trip home. Their Good Tuesday, an untested sketch, turns a wish into a small story you tell in your head."
+    },
+    {
+      "id": "focusing__metta__5",
+      "name": "No Time to Check",
+      "tagline": "A new wish at every chime, with no pause to check.",
+      "whatItIs": "No Time to Check is a new, untested concept that takes loving-kindness further away from the slow, body-felt listening of Focusing, where you wait for words that fit and check each one against an inner sense. Here a repeating chime sets a brisk pace, and at each chime you give one person a different wish, the first that comes to mind, with no pause to check whether it fits or feels warm.",
+      "coreIdea": "When an outside pace leaves no time to weigh each wish, goodwill may become something you do in plain words rather than a feeling you have to find first.",
+      "whatYouDo": "After reading the steps once, sit alone with a phone timer set to chime every 10 seconds and bring one person to mind. At each chime, silently offer them a new wish in a few words, such as 'may you sleep well tonight' or 'may the new job get easier', even if it comes out ordinary or odd, and stop after five minutes, about 30 wishes, with one more round for a second person if you like.",
+      "whoItsFor": "People who stall in kindness practice because they keep asking whether they feel enough, and anyone who likes a brisk, clear format.",
+      "cautions": "If the pace feels stressful, lengthen the interval or stop, and choose someone who is easy to wish well rather than anyone who has harmed you. This is an untested idea, not a substitute for care, and anyone struggling with persistent low mood or anxiety should talk to a mental health professional.",
+      "tweet": "Draft idea, untested: hold one person in mind, set a chime for every 10 seconds, and at each chime give them a different wish, the first that comes. No pausing to check whether it fits or feels warm. No Time to Check is meant to keep goodwill moving."
+    },
+    {
+      "id": "aletheia__metta__5",
+      "name": "The Four-Week Thaw",
+      "tagline": "A four-week plan to warm one cooled relationship, in your head first.",
+      "whatItIs": "The Four-Week Thaw is a new, untested concept that pushes loving-kindness toward a fixed program with one goal, away from coaching that slowly uncovers what is true for you. You choose one everyday relationship that has gone cool, such as with a coworker or neighbor, and follow a daily routine of goodwill toward that person for four weeks, deliberately leaving aside the question of who was right.",
+      "coreIdea": "Setting aside the case for and against someone, and simply practicing goodwill toward them every day, is meant to test whether your own stance toward them can shift.",
+      "whatYouDo": "Each day, sit alone for 10 minutes, picture the person in a neutral, present-day moment and repeat four set wishes for them, then write one line about how you feel toward them today. Once a week, read the lines back and, if the relationship is safe, consider one small friendly act such as a greeting, with no obligation to talk things through.",
+      "whoItsFor": "People with a strained but safe everyday relationship who would like to approach it differently without first settling every grievance.",
+      "cautions": "Do not use this with anyone who has harmed, threatened or abused you: goodwill practice is never a reason to stay close to someone unsafe, and boundaries come first. It is an untested idea, and if resentment or distress grows over the weeks, stop and consider talking it through with a counselor.",
+      "tweet": "Picture a four-week plan for one relationship that has gone cool: ten minutes a day wishing that coworker or neighbor well, leaving aside who was right. The Four-Week Thaw is an untested concept, and never for anyone who has harmed you."
+    },
+    {
+      "id": "do-nothing__metta__5",
+      "name": "Every Second Scripted",
+      "tagline": "Loving-kindness with nothing left to chance: every minute set.",
+      "whatItIs": "Every Second Scripted is a new, untested concept that takes loving-kindness as far as possible from practices that drop all technique. Every element is fixed in advance on a printed card: start time, posture, the exact phrases, the image for each person, the number of repetitions and the length of each block.",
+      "coreIdea": "When nothing is left to decide, all the effort can go into the wish itself, and a fixed card may make daily practice easier to keep.",
+      "whatYouDo": "Start a timer and follow a 12-minute card: four 3-minute blocks, each with one named person, one set image and one phrase repeated exactly ten times, with a bell between blocks. You can learn the card from a teacher, or write it once and keep it unchanged for a month.",
+      "whoItsFor": "People who like clear routines and find that open-ended meditation leaves them unsure whether they are doing it right.",
+      "cautions": "A rigid script can turn into self-criticism when the feeling does not appear, so count the repetitions as the practice, whatever you feel. It is an untested idea, and meditation can occasionally stir anxiety or low mood, so stop and seek professional advice if that persists.",
+      "tweet": "A prototype for routine lovers: 12 minutes, four blocks, and in each one person, one image and one phrase repeated exactly ten times, with a bell between. Nothing is left to decide. Call it Every Second Scripted, a new and untested take on loving-kindness."
+    },
+    {
+      "id": "metta__jhana__1",
+      "name": "Rhyme Them Well",
+      "tagline": "Make up a silly two-line rhyming wish for each friend.",
+      "whatItIs": "Rhyme Them Well is a new, untested concept that takes loving-kindness in the opposite direction from jhana, the deep, still and serious absorption usually reached on long retreats with a teacher. It keeps goodwill short, wordy and a little funny: for a few people you know, you make up a clumsy two-line rhyming wish and say it to yourself.",
+      "coreIdea": "The small puzzle of finding a rhyme, and the grin a bad one brings, are meant to make goodwill feel like play you can pick up on any day, rather than a deep state you have to reach.",
+      "whatYouDo": "Take five minutes on your own, wherever you are, and bring three people to mind one after another. For each, make up a two-line rhyming wish, the clumsier the better, such as 'may your heart feel light and your worries feel small, and may Monday be kind, or not happen at all', say it to yourself, let yourself smile if a smile comes, and, if it suits you, send it to them later.",
+      "whoItsFor": "People who find loving-kindness practice too solemn or effortful, and anyone who enjoys wordplay or shows affection through jokes.",
+      "cautions": "Keep the rhymes kind rather than teasing, and leave out anyone going through something serious, where a joke could feel out of place. It is an untested idea and no substitute for professional help with persistent low mood or anxiety.",
+      "tweet": "Loving-kindness doesn't have to be solemn. Make up a clumsy two-line rhyme for a friend: 'may your heart feel light and your worries feel small, and may Monday be kind, or not happen at all.' Smile, then on to the next. Five minutes, untested: Rhyme Them Well."
+    },
+    {
+      "id": "metta__vipassana__1",
+      "name": "Kindness Toward Characters",
+      "tagline": "Practice goodwill on people who exist only in stories.",
+      "whatItIs": "Kindness Toward Characters is a new, untested concept that moves loving-kindness away from close observation of real sensations and fully into invented worlds. You practice wishing well to characters from novels, films or games, people who exist only in imagination, before or alongside real people.",
+      "coreIdea": "Fictional people share no history with you, so they may offer a low-stakes place to practice goodwill, even toward characters you find annoying or villainous.",
+      "whatYouDo": "Choose a book, film or series you know well and sit for 10 to 15 minutes, going through its cast one character at a time, minor figures and the villain included. Picture each in a scene from the story and wish them well in your own words, for example that the anxious sidekick finds some peace, then notice afterward whether anything carries over to a real person.",
+      "whoItsFor": "Readers, gamers and film lovers who find practicing on real people too loaded or too awkward at first.",
+      "cautions": "Some stories touch on your own painful experiences, so pick ones that feel safe to dwell on. It is an untested idea that may simply feel playful rather than deep, and it is not a substitute for professional care if you are struggling.",
+      "tweet": "What if you practiced loving-kindness on the characters of a favorite book or series, villain included? Low stakes and no shared history: goodwill tried out in a story world first. The untested concept has a plain name, Kindness Toward Characters."
+    },
+    {
+      "id": "metta__hiit__1",
+      "name": "A Single Unhurried Wish",
+      "tagline": "Say one wish, then rest in long, untimed silence.",
+      "whatItIs": "A Single Unhurried Wish is a new, untested concept that takes loving-kindness as far as possible from fast, timed, high-effort routines. You offer a single wish once, then sit in long, untimed silence and let whatever warmth comes rise and fade, with no repetitions to count and no targets.",
+      "coreIdea": "One unhurried wish, given plenty of room, may let calm and kindness settle more fully than many quick repetitions.",
+      "whatYouDo": "Sit or lie somewhere quiet for 20 to 30 minutes, bring one person to mind and say a single wish slowly, once. Then rest without a timer until the feeling has faded, offer the same wish once more if you like, and finish when it feels complete rather than when a clock says so.",
+      "whoItsFor": "People who find repeated phrases mechanical or rushed and would like the calmest possible version of kindness practice.",
+      "cautions": "Long silence can leave room for worries or old feelings to surface, so open your eyes, move or end early whenever you need to. It is an untested idea, and anyone with severe anxiety, trauma symptoms or depression should check with a professional before long quiet sittings.",
+      "tweet": "An idea at the opposite end from interval training: one wish, said once and slowly, then long untimed silence while it fades. A Single Unhurried Wish is meant to be the calmest kindness practice possible, and you can open your eyes anytime."
+    },
+    {
+      "id": "metta__team-sport__1",
+      "name": "Your Name, Gently",
+      "tagline": "Say your own name inwardly, in the kindest voice you can.",
+      "whatItIs": "Your Name, Gently is a new, untested concept that takes loving-kindness as far as possible from team sport, with its crowd, noise, speed and constant contact. You stay completely still and alone, and the only person in the practice is you: you say your own first name inwardly, again and again, in the gentlest tone you can find, the way someone fond of you might say it.",
+      "coreIdea": "A name is usually said quickly, loudly or in passing, so hearing your own in your mind in a slow, warm tone is meant to make kindness toward yourself very simple and very calm.",
+      "whatYouDo": "Learn the steps from a short card, then lie down in a quiet room with your eyes closed for 15 minutes. Say your first name silently, leave a pause of a few seconds and say it again a little more gently, and every few minutes add one short wish after it, such as 'may you rest', going back to the name alone whenever the wish starts to feel forced.",
+      "whoItsFor": "People who find wishing themselves well awkward or abstract, and anyone who wants a very calm, simple practice for time alone.",
+      "cautions": "If your name is tied to being shouted at or criticized, use a nickname you like or stop, and there is no need to go into any memories it brings up. This is an untested idea and no substitute for professional help with persistent self-criticism, low mood or anxiety.",
+      "tweet": "Lying still, eyes closed, you say your own first name in your head, slowly and in the gentlest tone you can, the way someone fond of you might. Now and then you add 'may you rest'. Your Name, Gently is an untested idea, and a nickname works too."
+    },
+    {
+      "id": "metta__endurance__1",
+      "name": "Stop at the First Glow",
+      "tagline": "End each sitting the moment real warmth appears.",
+      "whatItIs": "Stop at the First Glow is a new, untested concept that takes loving-kindness away from the logic of going longer and pushing through. You follow a short, set sequence and end the sitting as soon as the first moment of genuine warmth appears, even if that is after one minute.",
+      "coreIdea": "Stopping while the feeling is fresh, rather than grinding on, may leave a pleasant memory of the practice that makes you want to come back to it.",
+      "whatYouDo": "Learn a simple set of three phrases from a teacher, a book or a recording, then sit for at most 10 minutes and repeat them slowly for one person. The moment you notice any real warmth, even faint, open your eyes and stop, and if none comes within 10 minutes, stop anyway and count it as a complete session.",
+      "whoItsFor": "People who have given up on meditation because sessions felt like a slog, or who tend to overdo whatever they start.",
+      "cautions": "Some days no warmth comes, which is normal and not a failure. It is an untested idea, and if practice repeatedly brings up grief, anger or a sense of being unworthy, slow down and talk it over with an experienced teacher or a mental health professional.",
+      "tweet": "Experimental rule for kindness meditation: stop the moment real warmth shows up, even after one minute, and never go past 10. Stop at the First Glow is meant to leave you wanting to come back rather than dreading another long sit."
+    },
+    {
+      "id": "metta__strength__1",
+      "name": "Wherever They Ended Up",
+      "tagline": "Goodwill for someone who drifted away, with nothing to show for it.",
+      "whatItIs": "Wherever They Ended Up is a new, untested concept that takes loving-kindness further away from strength training, where each week brings concrete proof that effort pays off. Alone and at ease, you wish well to one person who drifted out of your life long ago and whom you will probably never hear from again, so there is nothing to measure and no way to know whether the wish arrives.",
+      "coreIdea": "Goodwill that expects no result, no reply and no reunion is meant to loosen the habit of treating kindness as an effort that has to pay off.",
+      "whatYouDo": "Following a short written guide, sit or lie comfortably for about 10 minutes and think of one person from an earlier chapter of your life whom you lost touch with on ordinary terms, such as a former flatmate or a classmate from years ago, using only what you already remember. Picture them briefly as you knew them, then picture them now, somewhere you cannot see, living a day you know nothing about, offer one slow wish such as 'wherever you are, may life be kind to you', and let them go without looking them up afterward.",
+      "whoItsFor": "People who tend to measure everything they do, and anyone who sometimes wonders what became of people from earlier years.",
+      "cautions": "Choose people you parted from easily, leave out anyone who harmed you, and if a memory brings up regret, grief or loneliness, keep it short or pick someone else. This is an untested idea, not a substitute for professional help with persistent low mood.",
+      "tweet": "Think of someone who drifted out of your life on good terms: an old flatmate, a classmate from years ago. Picture them now, somewhere you will never see, and wish them well, with no looking them up afterward. Proposed and untested: Wherever They Ended Up."
+    },
+    {
+      "id": "metta__animal__1",
+      "name": "Said Every Day, Meant",
+      "tagline": "Turn 'take care' and 'safe trip' into wishes you fully mean.",
+      "whatItIs": "Said Every Day, Meant is a new, untested concept that moves loving-kindness away from wordless contact with a living creature and fully into language. Alone, you take the stock phrases you already say many times a week, such as 'take care', 'safe trip' and 'sleep well', and practice meaning each one completely as a wish for someone else.",
+      "coreIdea": "Everyday farewells are wishes we usually say on autopilot, so rehearsing them deliberately in private may let them carry real goodwill the next time you say them.",
+      "whatYouDo": "Write down five farewell or well-wishing phrases you use often, then sit alone for 10 minutes, take one phrase at a time and silently say it to a few people you usually say it to, slowly and as if for the first time. Keep the same five phrases for a week of daily sittings.",
+      "whoItsFor": "People who want kindness practice that blends into ordinary speech, without special phrases or rituals.",
+      "cautions": "A phrase like 'sleep well' may be tied to someone who is ill or gone, and it is fine to set that phrase or person aside. This is an untested idea and not a substitute for professional help if you are struggling.",
+      "tweet": "We say 'take care' and 'safe trip' dozens of times a week without thinking. New concept: Said Every Day, Meant. Alone for 10 minutes, you say those stock phrases silently to the people you use them with, and try to mean every word."
+    },
+    {
+      "id": "metta__qigong__1",
+      "name": "Following the Sunrise",
+      "tagline": "Send goodwill around the globe, following the line of dawn.",
+      "whatItIs": "Following the Sunrise is a new, untested concept that takes loving-kindness away from slow practice rooted in your own body and the spot where you stand. Instead, your imagination travels: you follow morning as it moves west around the planet and wish well to the people waking up there right now.",
+      "coreIdea": "Tying goodwill to the real movement of dawn across time zones gives it an order and a scale, and is meant to make distant strangers feel like people having a morning much like yours.",
+      "whatYouDo": "Sit for 15 minutes with your eyes closed, picture a globe and find where the sun is rising right now. Every two or three minutes, move one region west, picture one ordinary person waking there, such as a baker opening up or a student heading to school, and offer them one wish for their day, finishing back where you are.",
+      "whoItsFor": "People who feel cut off or small and like the idea of a practice with a sense of the whole world.",
+      "cautions": "Thinking about distant places can bring news of war or disaster to mind, so keep to ordinary people and ordinary mornings, and stop if it turns into distress. It is an untested idea and not a substitute for professional support.",
+      "tweet": "Untested idea for a 15-minute sit: follow the sunrise west around the globe in your mind, a commuter in Manila, a teacher in Nairobi, a baker in Lima, each getting one wish for their day. Following the Sunrise is meant to make distant strangers feel near."
+    },
+    {
+      "id": "metta__socializing__1",
+      "name": "Both Ends of a Wish",
+      "tagline": "Send a wish, then imagine receiving it as the other person.",
+      "whatItIs": "Both Ends of a Wish is a new, untested concept that takes loving-kindness away from real-time conversation and into a structured exchange held entirely in your own mind. Alone, you offer a wish to someone, then switch places in imagination and picture what it would be like for that person to receive it from you.",
+      "coreIdea": "Stepping into the receiver's position after each wish is meant to make goodwill feel two-sided, holding both the giving and a sense of how it might land.",
+      "whatYouDo": "After learning the steps from a teacher or written guide, sit alone for 15 minutes and work through four people in a set rhythm: one minute offering a wish, then one minute imagining yourself as them, hearing that wish from you. Close each pair with a short pause before moving on.",
+      "whoItsFor": "People who are comfortable alone but want their kindness practice to keep the other person's point of view in mind.",
+      "cautions": "Imagining how someone receives your goodwill can stir doubts about whether they would welcome it, so it helps to choose people you feel at ease with. This is an untested idea, not a substitute for real connection or for professional help if you feel isolated or low.",
+      "tweet": "A speculative twist on kindness practice: spend a minute silently wishing someone well, then a minute imagining you are them, hearing that wish from you. Four people, 15 minutes, alone. Both Ends of a Wish keeps the other side of kindness in view."
+    },
+    {
+      "id": "metta__nature__1",
+      "name": "Ten Boxes, One Person",
+      "tagline": "One person, ten areas of life, one written wish for each.",
+      "whatItIs": "Ten Boxes, One Person is a new, untested concept that takes loving-kindness indoors and onto paper, as far as possible from a nature walk, which is open, loose and led by whatever you happen to notice. Here everything is laid out in advance: at a table, you work through a printed grid of ten areas of one person's life and write a wish for each, in a fixed order and without skipping any.",
+      "coreIdea": "Goodwill tends to gather around the one part of someone's life we already think about, so a fixed list of areas is meant to spread it evenly, including to parts of their life you rarely consider.",
+      "whatYouDo": "Twice a week, sit at a table for 15 minutes with the grid, whose ten boxes always run in the same order: sleep, health, home, work or study, money, friends, family, rest, learning and fun. Choose one person, write one short wish starting with 'may' in each box, such as 'may your evenings feel unhurried' for rest, write a plain general wish wherever you know little about that part of their life, and then read all ten through once, slowly.",
+      "whoItsFor": "People who like lists and clear rules, and anyone who notices that their care for someone keeps narrowing to one topic, such as that person's health or job.",
+      "cautions": "Keep each wish for the person rather than about what you would like them to change, and leave out anyone whose life feels too painful to look at in this much detail. This is an untested idea, not a substitute for practical help or for professional support if you are struggling.",
+      "tweet": "Most of our goodwill for someone circles one topic: their job, their health. An idea: a grid of ten fixed areas (sleep, money, friends, fun and more), one person, one written wish per box, twice a week. Ten Boxes, One Person, untested and just a draft."
+    },
+    {
+      "id": "metta__sensory__1",
+      "name": "Only a Username",
+      "tagline": "Goodwill for people you know only as words on a screen.",
+      "whatItIs": "Only a Username is a new, untested concept that takes loving-kindness practice further away from sensory mindfulness. Sensory practice rests on what you can see, hear and touch right now; this one turns to the people who give your senses nothing at all, the strangers and acquaintances you meet only as text in messages, comments, reviews and support chats.",
+      "coreIdea": "People who appear only as a name and a line of text are easy to treat as less than real, so deliberately picturing a person behind the words and wishing them well is meant to stretch goodwill into the part of life that happens on screens.",
+      "whatYouDo": "At the end of the day, put your devices out of reach and sit for 10 minutes with a short card of steps learned from a teacher or a book. Recall up to five people you met today only as text, such as someone who answered a question in a forum, the writer of a review you read or the agent in a support chat, imagine an ordinary person typing those words and offer each the same three set wishes.",
+      "whoItsFor": "People who spend much of their day online and want their kindness practice to include the many people they only ever meet as text.",
+      "cautions": "Leave out anyone who has harassed, threatened or deceived you, and do not go back online to look anyone up. This is an untested idea, not a substitute for professional help with persistent low mood or anxiety.",
+      "tweet": "Much of the day we meet people only as words: a reply in a forum, a review, a support chat. At night, screens away, picture an ordinary person behind five of those lines of text and quietly wish each one well. An untested proposal: Only a Username."
+    },
+    {
+      "id": "metta__music__1",
+      "name": "Handed Over in Silence",
+      "tagline": "Imagine choosing and handing over a small gift, without a word.",
+      "whatItIs": "Handed Over in Silence is a new, untested concept that takes loving-kindness away from sound, rhythm and expression into complete silence, inner speech included. Instead of phrases, you imagine choosing a small, fitting gift for one person and handing it over, letting the image carry the goodwill without a single word.",
+      "coreIdea": "An imagined act of giving may express goodwill directly, without the inner chatter of phrases, and may suit people for whom repeated words feel hollow.",
+      "whatYouDo": "Sit alone in a quiet room for 12 minutes and work through three people in a fixed order, about four minutes each. For each, picture yourself choosing a simple gift that suits them, such as a warm scarf or a favorite fruit, walking up and handing it over, and seeing them receive it, all without inner words.",
+      "whoItsFor": "People who find meditation phrases awkward or repetitive and think more easily in pictures than in words.",
+      "cautions": "Imagining a gift for someone you have lost or are estranged from can bring up grief, so start with people who are easy to picture. It is an untested idea, and if sadness or distress lingers after practice, talk to someone you trust or a professional.",
+      "tweet": "No words, not even in your head. You picture choosing a small gift for someone, a warm scarf, a ripe mango, and handing it over, and let that one quiet image carry the goodwill. A new, untested concept: Handed Over in Silence."
+    },
+    {
+      "id": "metta__dance__1",
+      "name": "When Two of Yours Meet",
+      "tagline": "Picture two people you care about meeting and wishing each other well.",
+      "whatItIs": "When Two of Yours Meet is a new, untested concept that takes loving-kindness practice further away from dance. Dance is connection acted out with your own body among other people; here you are alone, still and not even in the picture, quietly imagining two people from different parts of your life meeting for the first time and wishing each other well.",
+      "coreIdea": "Watching goodwill pass between two other people, rather than sending it yourself, is meant to take away the pressure to produce warmth and to let you enjoy kindness as something that flows between others.",
+      "whatYouDo": "Sit alone and still for about 12 minutes with your eyes closed, and choose two people you like who have never met, such as a childhood friend and a current colleague. Following a fixed sequence, picture them being introduced, picture each saying a simple wish to the other, such as 'I hope things go well for you', picture them parting warmly, and then, if there is time, repeat the scene with a new pair.",
+      "whoItsFor": "People who feel self-conscious or blocked when they send wishes directly, and anyone who enjoys the thought of the people they care about getting along.",
+      "cautions": "Choose pairs who are easy to like and have no conflict between them, and remember that the meeting is imagined, with no need to arrange a real one. This is an untested idea, not a substitute for professional help with persistent low mood or anxiety.",
+      "tweet": "Picture two people you love who have never met, an old school friend and a new colleague, being introduced and wishing each other well. Kindness you get to watch rather than produce, alone and still. The name for this untested idea: When Two of Yours Meet."
+    }
+  ]
+}
