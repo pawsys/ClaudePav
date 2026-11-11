@@ -1,0 +1,247 @@
+{
+  "lane": "n3",
+  "modalities": [
+    {
+      "id": "ipf__dance__5",
+      "name": "Heelstrike Circles",
+      "tagline": "A self-run circle that makes its own music from stamps and claps.",
+      "whatItIs": "A peer-run dance circle with no recorded music: the rhythm comes from the dancers' own feet, hands and chests. It takes dance as far as it goes from imagined, therapist-guided inner scenes, toward loud, sweaty, present-tense contact with real people in a real room. Nobody leads for long, and nothing is pictured, remembered or explained.",
+      "coreIdea": "When every beat is something you can hear, see and feel being made by the people around you, there is little left to imagine. Making the music together, with the whole body, is meant to keep attention in the room and on each other.",
+      "whatYouDo": "Eight to twenty people meet in a hall with a wooden or sprung floor, warm up for ten minutes, then stand in a circle and build a rhythm from stamps, claps and light slaps on the thighs and chest. Anyone can step into the middle to dance over it for a few bars, and anyone can start a new rhythm, so the 45 minutes move from steady grooves to fast, loud peaks and back. The session ends with the rhythm slowing to a single shared clap.",
+      "whoItsFor": "People who spend a lot of time in their heads and want something loud, physical and shared that asks for no reflection at all. It also suits anyone curious about rhythm who cannot find or afford a teacher.",
+      "cautions": "Hard stamping is tough on knees, ankles and feet, so wear supportive shoes, use a forgiving floor, warm up, check with a doctor first if you have heart or joint problems, and stop at once for chest pain, dizziness, faintness or unusual breathlessness. Keep slaps light, and protect your hearing in small, echoing rooms.",
+      "tweet": "No speakers needed. A new idea for a dance circle where the group is the band: stamping, clapping and slapping out a beat while people take turns dancing in the middle. Loud, sweaty and fully in the room. Warm up first and go easy on your knees."
+    },
+    {
+      "id": "ifs__dance__5",
+      "name": "Fifteen-Minute Crews",
+      "tagline": "Small crews invent a short routine against the clock, then show it.",
+      "whatItIs": "A self-organized dance night where small crews of three to five invent a short routine against the clock and show it to the room. IFS turns attention inward, to many inner voices and their history, with a therapist; this turns dance fully outward, to a few real people, a shared task and a deadline. There is no teacher and no talk about feelings.",
+      "coreIdea": "A tight deadline and a shared creative puzzle leave little room for inner commentary, and agreeing on moves with others in real time is meant to make cooperation physical and immediate.",
+      "whatYouDo": "After a ten-minute warm-up, crews are drawn at random and given one song and 15 minutes to build 32 counts of movement, with every member adding at least one move. Each crew then performs once for the room, everyone applauds, crews are redrawn, and the cycle runs two or three times in 90 minutes.",
+      "whoItsFor": "People who enjoy making things with others and want a lively, low-stakes way to do it with the whole body. It may suit anyone whose mind goes quiet when they are absorbed in a shared job.",
+      "cautions": "Inventing moves at speed tempts people into lifts, jumps or floor work they have not trained for, so agree on no lifts, keep the floor clear, ask before any touch, warm up and stop for pain, chest pain, dizziness or unusual breathlessness. Check with a doctor first if you have heart or joint problems, and anyone can sit out a showing without explaining why.",
+      "tweet": "Idea: a dance night with no teacher. Small crews get one song and 15 minutes to make up 32 counts together, then show the room. Crews reshuffle and go again. A deadline and a shared puzzle may leave the inner chatter less airtime. No lifts, ask before touch."
+    },
+    {
+      "id": "cbt__dance__5",
+      "name": "Off the Count",
+      "tagline": "Energetic group dancing to music with no steady beat to count.",
+      "whatItIs": "A group dance session set to energetic music with no steady beat, such as free jazz, live improvised percussion that never settles into a pulse, or driving electronic music without drums. CBT counts, schedules, measures and corrects; this takes dance the other way, to movement that cannot be counted, scored or done wrong. There is no teaching, no goal and no review afterwards.",
+      "coreIdea": "Without a beat there is no right timing to hit and nothing to check yourself against, so the habit of grading every move has little to hold on to. The practice is to let the body move however it does and leave it unjudged.",
+      "whatYouDo": "Ten to twenty people meet in a cleared room for an hour while a volunteer plays a prepared set of beatless music, and everyone moves as fully as they like, alone or loosely near others, eyes open. Comments on anyone's dancing, your own included, are off limits during and after, and the session simply ends when the music does.",
+      "whoItsFor": "People who find that dance classes turn into a test they keep failing, or who catch themselves grading everything they do. It may also suit anyone who wants to move hard without counting.",
+      "cautions": "Long, vigorous stretches of free movement are real exercise, so warm up, keep the floor clear and dry, check with a doctor first if you have heart or joint problems and stop for chest pain, dizziness, faintness or unusual breathlessness. If moving with no structure at all feels unsettling rather than freeing, a structured class is a fine alternative.",
+      "tweet": "What if a dance class had nothing to count? New concept: an hour of moving hard to music with no steady beat, so there's no right timing, no steps and nobody grading you, yourself included. Warm up, and stop if your chest or head objects."
+    },
+    {
+      "id": "act__dance__5",
+      "name": "The Unbroken Hour",
+      "tagline": "Sixty minutes of continuous group dancing, with no pauses to talk.",
+      "whatItIs": "A weekly group session of one continuous hour of dancing to a mixed playlist, with no breaks for instruction, sharing or reflection. ACT works largely through language, metaphors and talk about values; this goes the other way, into long, wordless, physical engagement shared with others. The hour is planned, but nothing in it is explained.",
+      "coreIdea": "Staying with movement for a whole hour, through boredom, tiredness and a second wind, is meant to keep you in the body rather than stepping back into commentary. Doing it alongside others makes it easier to keep going and to find your own pace within the room.",
+      "whatYouDo": "A volunteer plays a 70-minute mix that starts with a slow warm-up, builds to two or three energetic peaks and ends with a long slow-down. Dancers move however they like, can ease to walking or swaying at any point and sip water on the move, and when the music stops everyone simply leaves or chats, with no circle and no debrief.",
+      "whoItsFor": "People who are tired of talking about their lives and want time fully inside their bodies alongside others. It may suit anyone drawn to a steady, sweaty hour with no technique to think about.",
+      "cautions": "An hour of dancing is real exercise, so check with a doctor first if you have heart, lung or joint problems, use the warm-up, drink water and stop at once for chest pain, dizziness, faintness or unusual breathlessness. Easing down to a sway is always allowed, and the floor must stay clear and dry.",
+      "tweet": "Proposed: one unbroken hour of dancing with other people. No instruction, no sharing circle, just a mix that warms you up, peaks twice and winds down. Ease to a sway whenever you like, and check with a doctor first if your heart is a worry."
+    },
+    {
+      "id": "coherence__dance__5",
+      "name": "Shapes Without Stories",
+      "tagline": "Turn the visible shapes around you into moves, with no meaning attached.",
+      "whatItIs": "A peer-led dance game in which every move is copied from something you can see: the arc of a window, the zigzag of a staircase, the lean of a coat stand. Coherence Therapy works with a therapist to find the hidden emotional sense behind a problem; this goes to the far side of dance, where a movement means nothing beyond its shape. Nobody asks what a move expresses.",
+      "coreIdea": "Taking movement from outside objects rather than from feelings frees dance from having to mean anything. Pure shape, rhythm and effort are meant to offer a rest from searching for reasons.",
+      "whatYouDo": "In a hall or a park, a group of six to fifteen warms up, then takes turns pointing at a visible shape and inventing a move from it, which everyone repeats and links into a growing phrase. After 30 to 40 minutes the phrase is danced through several times at full energy to a fast song, and the session ends without any talk about what it meant.",
+      "whoItsFor": "People who have done a lot of searching for reasons and would like an afternoon where nothing needs interpreting. It also suits groups who want a playful, self-run way to make up dances.",
+      "cautions": "Copying corners and steps can tempt people into deep squats, twists or jumps, so keep moves within what your joints allow, warm up, check with a doctor first if you have heart or joint problems and stop for chest pain, dizziness or unusual breathlessness. Outdoors, check the ground for holes, wet grass and slopes before you start.",
+      "tweet": "Untested idea: make up a dance from what you can see. A window's arc becomes an arm sweep, the stairs become a zigzag step, and the group strings them into one phrase and dances it hard. Nothing has to mean anything. Keep twists and jumps kind to your joints."
+    },
+    {
+      "id": "tre__dance__5",
+      "name": "Call and Answer Lines",
+      "tagline": "Two facing lines hold a lively conversation in deliberate moves.",
+      "whatItIs": "A taught group dance game in which two lines face each other and trade short movement phrases, like a conversation across a room. TRE lets the body shake on its own, alone and toward calm; this takes dance the other way, to movement that is fully chosen, aimed at someone and lively. Every move is a reply to what the other side just did.",
+      "coreIdea": "Moving on purpose toward another person, and watching them answer, is meant to make movement a form of contact rather than something private. The playful back-and-forth tends to lift the energy in the room.",
+      "whatYouDo": "A teacher warms up a group of 12 to 30 and splits it into two lines about four meters apart. One line dances four counts toward the other, which answers with four counts of its own, matching, contrasting or teasing, and every few rounds the lines shift one place so everyone faces a new partner, for about 45 minutes with no touching.",
+      "whoItsFor": "People who want lively contact with others but find partner dancing with touch too close. It may also suit anyone who would like to practice being expressive with strangers inside a playful, clear structure.",
+      "cautions": "Dancing toward people at speed risks collisions, so keep a clear gap between the lines, no contact, a non-slip floor and a warm-up, and stop for pain, chest pain, dizziness or unusual breathlessness. Anyone can step out of a line for a round, since being faced and answered by strangers can feel exposing at first.",
+      "tweet": "A new kind of dance conversation: two lines face each other, one dances four counts, the other answers. Then everyone shifts and faces someone new. No touching, plenty of grinning, and every move is aimed at a real person. Keep a clear gap between the lines."
+    },
+    {
+      "id": "focusing__dance__5",
+      "name": "Hit the Accent",
+      "tagline": "Sharp, decisive moves that land exactly on the music's accents.",
+      "whatItIs": "A taught group dance class built around crisp movements that start and stop exactly on the accents in fast music. Focusing waits patiently for a vague inner sense to take shape; this takes dance to the opposite pole, where every move is sharp, finished and chosen in a split second. Clarity of shape is the whole aim.",
+      "coreIdea": "Practicing clean starts and full stops, over and over, is meant to make decisiveness something the body can feel. The music supplies the cue, so there is no time to wait or weigh things up.",
+      "whatYouDo": "A teacher leads a warm-up, then teaches short combinations in which each move ends in a crisp freeze on a drum hit, a cymbal crash or a vocal shout, first slowly and then at full tempo. In the last 20 minutes of the hour the class splits into small groups that call out accents for each other to hit, cheering clean landings.",
+      "whoItsFor": "People who tend to deliberate, hedge and wait for certainty, and would like a playful place to practice committing at once. It also suits anyone who enjoys punchy music and sharp movement.",
+      "cautions": "Sudden stops and hard freezes load the knees, back and neck, so warm up well, freeze with soft knees, check with a doctor first if you have heart or joint problems and stop for pain, chest pain, dizziness or unusual breathlessness. Keep plenty of space between dancers so sharp arm moves hit no one.",
+      "tweet": "Concept: a dance class where every move snaps to a stop exactly on the music's accents, a drum hit, a crash, a shout. No waiting to feel your way in, just commit and land it. Maybe good practice for chronic hedgers. Soft knees on the freezes!"
+    },
+    {
+      "id": "aletheia__dance__5",
+      "name": "Step List Season",
+      "tagline": "Friends write a list of dance moves and master them together.",
+      "whatItIs": "A self-run, goal-driven dance practice in which a small group of friends writes a list of moves they want to master, then drills them together until each one is ticked off. Aletheia coaching gently uncovers what is already true, with a coach, and lets it be; this takes dance the other way, toward deliberate change, measured progress and no coach at all.",
+      "coreIdea": "A concrete list and a visible tick give effort a clear direction, and learning with friends adds accountability without a teacher. The point is the plain pleasure of getting better at something on purpose.",
+      "whatYouDo": "Three to six friends agree on ten to fifteen moves from videos, such as a spin, a footwork pattern or a basic partner turn, and meet twice a week for an hour in a room or garage. Each session starts with a warm-up and a run-through of mastered moves, then drills one new move until everyone has filmed a clean version, and the season ends with a party where the whole list is danced to a favorite song.",
+      "whoItsFor": "People who like goals and visible progress and want a sociable, sweaty skill to aim them at. It may suit those who find open-ended reflection frustrating and prefer to learn by doing.",
+      "cautions": "Moves copied from videos can be beyond your current strength or flexibility, so learn them slowly, skip lifts, flips and drops, warm up, check with a doctor first if you have heart or joint problems and stop for pain, chest pain, dizziness or unusual breathlessness. Film only people who agree to it, and keep the floor clear and non-slip.",
+      "tweet": "An idea: grab a few friends, write a list of 12 dance moves you've always wanted to nail, and meet twice a week until each one is ticked off. No coach, just a list, a phone camera and a party at the end. Learn slowly and skip the flips."
+    },
+    {
+      "id": "do-nothing__dance__5",
+      "name": "The Street Fair Piece",
+      "tagline": "A big community group rehearses one dance for a public show.",
+      "whatItIs": "A community dance project in which a large group rehearses one choreographed piece over ten weeks and performs it at a public event, such as a street fair or a school fete. Do Nothing meditation drops all effort and goals; this goes as far the other way as dance can, into a shared goal, a fixed schedule, hard work and a date everyone is working toward. Every person has a part the whole piece needs.",
+      "coreIdea": "Working hard toward something real, alongside many others who are counting on you, is meant to give effort a purpose and the week a backbone. The performance date turns practice into a shared commitment.",
+      "whatYouDo": "A choreographer teaches 20 to 60 people of any level a five-minute piece in weekly 90-minute rehearsals, each starting with a warm-up and building one section at a time, with small groups owning different parts. In the final weeks the group runs the whole piece at full energy, then performs it once, outdoors or in a hall, followed by a shared meal.",
+      "whoItsFor": "People who feel adrift or unmotivated and want a clear, shared project that asks something of them every week. It also suits anyone who has always wanted to perform but would never do it alone.",
+      "cautions": "Rehearsals build to full-energy run-throughs, so check with a doctor first if you have heart or joint problems, never skip the warm-up and stop at once for chest pain, dizziness, faintness or unusual breathlessness. Performing can be nerve-racking and outdoor stages bring weather and uneven ground, so the choreographer should offer a simpler version of every move and check the site beforehand.",
+      "tweet": "A concept for a neighborhood: ten weeks of rehearsals, up to sixty people, one five-minute dance, performed once at the street fair. Everyone has a part the piece can't do without. The opposite of doing nothing, with a goal that asks something of you weekly."
+    },
+    {
+      "id": "metta__dance__5",
+      "name": "Style Swap Partners",
+      "tagline": "Watch a partner dance freely, then dance exactly the way they do.",
+      "whatItIs": "A partner dance practice in which you watch another person dance freely for a minute, then dance in their style as faithfully as you can while they watch you. Metta sends good wishes to people held in mind through repeated phrases; this takes dance the other way, toward a real person in front of you, met through close looking rather than any feeling you try to create. Nobody is asked to like or praise anyone.",
+      "coreIdea": "Copying someone's way of moving accurately requires seeing them as they are, their timing, weight and quirks, without adding a story or a wish. Being seen that closely in return may feel like a plain, physical kind of regard.",
+      "whatYouDo": "Led by a teacher, pairs take turns: one dances freestyle to a lively track for 60 seconds while the other watches, then the watcher dances the next 60 seconds in that person's style, and then both dance together in a blend of the two. Partners change every three rounds across an hour that ends with the whole room dancing one shared style built from everyone's.",
+      "whoItsFor": "People curious about how others move and willing to be watched closely, who want contact that is attentive without being touchy or sentimental. It may also suit dancers stuck in their own habits.",
+      "cautions": "Copying someone else's moves can push your body into ranges it is not used to, so take the shape rather than the extremes, warm up, check with a doctor first if you have heart or joint problems and stop for pain, chest pain, dizziness or unusual breathlessness. Copies must never mock, and anyone can pass on being watched for a round.",
+      "tweet": "Try this new idea with a partner: they dance freestyle for a minute while you watch, then you dance their way, timing, quirks and all. Then swap. A way of really looking at someone, with no forced warmth needed. Copy the shape, not the extremes."
+    },
+    {
+      "id": "jhana__dance__5",
+      "name": "Wider Floor Sessions",
+      "tagline": "Dance while keeping the whole moving room in view at once.",
+      "whatItIs": "A group dance practice in which you keep your attention as wide as possible, taking in the whole moving room at once rather than fixing on any one person, step or thought. Jhana trains steady, narrow concentration on one object, in stillness and alone; this pushes dance the other way, to panoramic, ever-shifting attention among many moving people. The structure is loose and the energy high.",
+      "coreIdea": "Wide, soft attention takes in many things without gripping any of them, and a busy dance floor gives it plenty to take in. Practicing it while moving is meant to make broad awareness feel lively rather than vague.",
+      "whatYouDo": "After a short warm-up led by a teacher, 15 to 40 people dance freely to upbeat music with a soft, wide gaze, letting the edges of their vision guide them around the room and around each other. Every few minutes the teacher calls 'wider', inviting you to take in more of the room, and the hour ends with everyone moving slowly through the space while still keeping all of it in view.",
+      "whoItsFor": "People who tend to tunnel in on one worry, task or person and would like to try a broader kind of attention in a playful setting. It may also suit dancers who stare at their own feet.",
+      "cautions": "Moving without fixing on any one spot can lead to collisions, so use a large, clear room, keep speeds moderate in a crowd, warm up, check with a doctor first if you have heart or joint problems and stop for chest pain, dizziness or unusual breathlessness. People prone to dizziness or motion sickness may prefer a steadier gaze.",
+      "tweet": "Suppose the only instruction on a dance floor was 'wider'. Instead of watching your feet or one partner, you keep the whole moving room in view at once. Panoramic attention, practiced at a lively tempo. Needs a big, clear space so nobody collides."
+    },
+    {
+      "id": "vipassana__dance__5",
+      "name": "Build the Room Up",
+      "tagline": "A crowd raises its energy together, song by song, on purpose.",
+      "whatItIs": "A group dance session in which the whole room deliberately builds its energy, song by song, adding one bigger element each time, then brings it back down together. Vipassana watches experience silently and alone without trying to change it; this goes the other way, toward a crowd choosing to change its own state, out loud and on purpose.",
+      "coreIdea": "Raising and lowering energy together, by choice, is meant to show that a group's mood is partly something it makes rather than something that only happens to it. The shared climb gives each person permission to go bigger than they would alone.",
+      "whatYouDo": "A facilitator plays a set of eight songs of rising tempo, and before each one the room adds something: bigger arm swings, travelling steps, claps, a shout on the chorus, small optional jumps. After the peak, three slower songs take each layer away again, ending in a minute of stillness, for about an hour in all.",
+      "whoItsFor": "People who feel stuck in a low or flat mood and want to try lifting it with others rather than waiting for it to pass. It also suits shy people who would only go big if everyone else did too.",
+      "cautions": "Each round gets more vigorous, so check with a doctor first if you have heart, lung or joint problems, keep the jumps optional, warm up and stop at once for chest pain, dizziness, faintness or unusual breathlessness. A loud, high-energy crowd can feel overwhelming, so anyone can stay at any level or step out.",
+      "tweet": "Can a room choose its own mood? New concept: a dance session that climbs song by song as the group adds bigger arms, claps, a shout, small jumps, then peels it all back down to a minute of stillness. Stay at any level you like."
+    },
+    {
+      "id": "hiit__dance__5",
+      "name": "Easy Sway Afternoons",
+      "tagline": "Slow, gentle dancing and chatting to unhurried songs.",
+      "whatItIs": "A relaxed social dance afternoon set to slow songs, where nobody breaks a sweat and nobody is pushed. HIIT drives the body to its limit in timed bursts; this takes dance the other way, to the gentlest effort that still counts as dancing together. People sway, shuffle, sit out, chat and remember where they first heard a song.",
+      "coreIdea": "Dancing does not have to be exercise to be worth doing, and slow movement in company may be enough to lift a quiet afternoon. With no targets and little effort, the body and the conversation set the pace.",
+      "whatYouDo": "Once a week a host in a community hall plays two hours of slow songs from several decades, with chairs around the edge and tea on a table. Guests sway alone, in pairs or in a loose circle and sit down whenever they like, and between songs anyone may say where a song takes them, though no one is asked to.",
+      "whoItsFor": "People who are older, worn out or simply not interested in fitness and would like gentle movement with company. It also suits anyone who misses dancing but no longer wants it to be strenuous.",
+      "cautions": "Even slow dancing carries some risk of falls, so keep the floor dry and clear, wear steady shoes, keep chairs close and ask before taking anyone's hand or waist. Old songs can stir strong memories, so people can step out quietly at any time, and anyone with balance problems can sway while holding a chair.",
+      "tweet": "Not every dance has to be a workout. An idea: slow-song afternoons in a local hall, chairs around the edge and tea on the table, where people sway, chat and sit out whenever they like. Gentle movement and good company, with no targets at all."
+    },
+    {
+      "id": "team-sport__dance__5",
+      "name": "Two Gestures, One Duet",
+      "tagline": "Two people build one slow duet from gestures in their lives.",
+      "whatItIs": "A guided practice in which two people spend six weeks building one slow, two-minute duet, starting from a single familiar gesture that each brings from their own life. Team sport is fast, crowded and competitive; this takes dance the other way, to one partner, a slow tempo and no winner. The finished duet is danced only for the pair and their guide.",
+      "coreIdea": "Everyday gestures, like the way someone waved goodbye or folded laundry, carry a little of a person's history, and weaving two of them together slowly is meant to build trust and cooperation one small decision at a time.",
+      "whatYouDo": "In weekly hour-long sessions with a dance teacher or dance movement therapist, the pair warms up, shares the gesture each chose and why, then slowly develops and links the two, deciding together on timing, distance and any touch. Each session ends with the duet danced once from the start, and in the final week the pair dances it for each other and the guide.",
+      "whoItsFor": "Friends, couples, parents and adult children, or new acquaintances who would like a quiet, cooperative project that asks for attention rather than performance. It may suit anyone who finds group sport too loud or competitive.",
+      "cautions": "Choose gestures from memories you already have and are comfortable sharing, swap a gesture if it stirs up more than you want, and do not use the practice to dig for forgotten events; painful history belongs with a qualified therapist. Agree on any touch before trying it, keep the movement easy on knees and backs, and use a clear, non-slip floor.",
+      "tweet": "Two people, two everyday gestures, six weeks. In this proposed practice you each bring a movement from your life, the way a grandparent waved, how you fold a shirt, and a guide helps you weave them into one slow duet. No audience, no score."
+    },
+    {
+      "id": "endurance__dance__5",
+      "name": "Ten Tiny Lessons",
+      "tagline": "Ten dance styles, ten partners, three minutes each, one teacher.",
+      "whatItIs": "A teacher-led sampler class where the hour is split into ten short lessons, each a different dance style with a different partner. Endurance training is one long, steady effort you mostly do alone and pace yourself; this takes dance the other way, to many brief, varied, guided encounters with other people. Nobody masters anything, and that is fine.",
+      "coreIdea": "Short bursts of novelty and company may keep attention fresh and make it easy to meet many people without the pressure of a long commitment. Each three-minute lesson is a small, complete beginning.",
+      "whatYouDo": "After a warm-up, the teacher shows one basic step, such as a cha-cha basic, a folk grapevine, a swing rock step or a simple line-dance pattern, and everyone tries it with a new partner for three minutes before partners rotate and the style changes. After ten rounds, the last ten minutes are free dancing, at an easy pace, to whichever styles people liked.",
+      "whoItsFor": "People who get bored easily, who want to try dance without choosing a style first, or who would like to meet many people lightly in one evening. It may suit those who find long solo exercise lonely.",
+      "cautions": "Quick changes of style and partner mean many unfamiliar steps, so keep each step small, wear shoes that turn easily, ask before any hold and accept a no without fuss. The pace is moderate, but anyone with heart or joint problems should check with a doctor first and stop for pain, dizziness or unusual breathlessness.",
+      "tweet": "Ten dance styles, ten partners, three minutes each. A new concept for a class where nobody masters anything and everybody meets everybody: cha-cha, swing, folk, line dance, then free dancing to what you liked. Ask before any hold, of course."
+    },
+    {
+      "id": "strength__dance__5",
+      "name": "Balloon Ballroom",
+      "tagline": "Dance as lightly as possible while keeping balloons afloat together.",
+      "whatItIs": "A playful group dance session where the aim is lightness: moving softly while keeping balloons and scarves floating in the air together. Strength training pushes against heavy loads in strict sets to change the body; this takes dance the other way, toward weightless, loose, unplanned play where nothing is lifted and nothing is counted. Losing a balloon is part of the fun.",
+      "coreIdea": "Treating the body as light and the task as play, rather than as a load to overcome, may let effort feel easy and shared. Balloons give everyone a slow, floating target that invites soft, unhurried movement, and for some people an echo of childhood games.",
+      "whatYouDo": "A facilitator plays gentle, bouncy music while 10 to 25 people move freely around a hall, tapping balloons upward with any part of the body and floating scarves to each other, adding balloons as the group finds its rhythm. Halfway through the group tries to keep every balloon up for a whole song, and the 50-minute session ends with everyone drifting slowly as the balloons settle.",
+      "whoItsFor": "People who feel heavy, stiff or weighed down and want a light, silly way to move with others. It may also suit anyone who has only ever exercised to build muscle or lose weight and wants movement that asks for nothing.",
+      "cautions": "Reaching and lunging for balloons can cause collisions and falls, so use a clear room and soft-soled shoes, walk rather than run, and use latex-free balloons in case of allergies. Anyone with balance problems can tap balloons from a chair.",
+      "tweet": "What if exercise asked you to be light instead of strong? New concept: an hour of dancing to keep balloons and scarves afloat together, moving softly, losing them, laughing. Nothing lifted, nothing counted. Latex-free balloons and a clear floor."
+    },
+    {
+      "id": "animal__dance__5",
+      "name": "Hallway Dance Breaks",
+      "tagline": "Self-run ten-minute dance bursts with housemates or coworkers, no instructor.",
+      "whatItIs": "A self-organized habit where housemates, classmates or coworkers stop what they are doing for one energetic ten-minute dance in a hallway, kitchen or break room. Animal-assisted therapy depends on a trained team, a special setting and a gentle, non-human partner; this takes dance the other way, to ordinary people, ordinary rooms, no professional and a quick, lively burst. Whoever is around can join in.",
+      "coreIdea": "A dance break that needs no teacher, booking or special place can happen whenever it is wanted, and doing it with the people you already share a space with is meant to turn them into dance partners for a few minutes. The shortness keeps the bar to joining low.",
+      "whatYouDo": "Someone starts a ten-minute playlist at an agreed time, often mid-afternoon, and anyone nearby dances however they like, gently for the first two songs and then livelier. A different person picks the playlist each day, and the break ends with the last song, when everyone goes straight back to what they were doing.",
+      "whoItsFor": "People who share a home, class or workplace and want a quick, sociable way to move together without signing up for anything. It may also suit those who like the idea of dancing but not of classes.",
+      "cautions": "Ordinary rooms have hard floors, corners and furniture, so clear a space, wear proper shoes and never pressure anyone to join, since being watched by colleagues can feel exposing. Check with a doctor first if you have heart or joint problems, and stop for chest pain, dizziness or unusual breathlessness.",
+      "tweet": "A small idea for any shared kitchen, hallway or break room: at 3 pm someone hits play and whoever's around dances for ten minutes. No teacher, no sign-up, a new playlist picker each day. Clear the chairs, and never pressure anyone to join."
+    },
+    {
+      "id": "qigong__dance__5",
+      "name": "Scrambled Sequence Nights",
+      "tagline": "Learn a short routine, then dance it scrambled, faster each round.",
+      "whatItIs": "A group dance class that teaches a short routine and then deliberately breaks it, calling the moves in a shuffled order at rising speed until the room dissolves into laughter and improvisation. Qigong repeats slow, fixed forms calmly and largely alone; this takes dance the other way, toward a form that falls apart, fast, loud and shared. Getting it wrong together is the point.",
+      "coreIdea": "Watching a careful structure fall apart, at no cost and in good company, is meant to make disorder feel playful instead of threatening. Each round asks you to adapt rather than to repeat.",
+      "whatYouDo": "A teacher spends the first 20 minutes teaching eight short moves, each with a name, to upbeat music. Then the teacher calls the names in random order, a little faster every round, with dancers taking turns as caller, and the last ten minutes are free dancing that mixes the moves however people like.",
+      "whoItsFor": "People who cling to routine or perfection and want a light-hearted place to practice letting a plan fall apart. It also suits anyone who enjoys games and quick reactions.",
+      "cautions": "Faster and faster calls invite rushed, sloppy steps, so keep moves simple and low to the floor, warm up, keep good spacing and stop for pain, chest pain, dizziness or unusual breathlessness. Check with a doctor first if you have heart or joint problems.",
+      "tweet": "Picture this: you learn eight dance moves, then the teacher starts calling them out of order, faster each round, until the whole room is laughing and improvising. A playful experiment in letting a plan fall apart. Simple steps, plenty of space."
+    },
+    {
+      "id": "socializing__dance__5",
+      "name": "Steps, Not Small Talk",
+      "tagline": "A technique class where you share a room but need not chat.",
+      "whatItIs": "A structured dance technique class where the teacher demonstrates, students practice side by side, and nobody is expected to chat. Socializing is made of talk and loose, unplanned contact; this takes dance the other way, toward precise physical skill, a clear plan and company that asks for no conversation. Being among people is enough.",
+      "coreIdea": "Working on the same demanding skill in the same room may offer a quiet kind of belonging that does not depend on small talk. Attention stays on the body and on the teacher's demonstration.",
+      "whatYouDo": "Twice a week a teacher leads a 75-minute class in a style with clear technique, such as jazz, contemporary or tap, starting with a set warm-up and drills across the floor and ending with a combination. Instructions are mostly shown rather than explained, students work individually in lines, and there is no partner work and no expectation to linger afterwards.",
+      "whoItsFor": "People who find conversation draining or nerve-racking but still want to be among others regularly. It also suits anyone who wants to improve their dance technique with clear guidance.",
+      "cautions": "Technique drills are demanding on ankles, knees and backs, so build up gradually, never skip the warm-up, check with a doctor first if you have heart or joint problems and stop for pain, chest pain, dizziness or unusual breathlessness. If the quiet starts to feel isolating rather than restful, add a more social activity alongside it.",
+      "tweet": "Want company without the small talk? New concept: a demanding dance technique class where the teacher mostly shows rather than tells, you work in lines beside other people and nobody expects you to chat. Belonging through shared effort."
+    },
+    {
+      "id": "nature__dance__5",
+      "name": "Taped Floor Patterns",
+      "tagline": "Indoor group dances that trace exact paths across a taped floor.",
+      "whatItIs": "A teacher-led indoor dance class where the floor is marked with taped lines, circles and grids, and every dance follows exact paths across them. A nature walk wanders freely through open, living terrain; this goes the other way, into a built room where the space itself is designed and every route is planned. Dancers learn to move as shapes on a map.",
+      "coreIdea": "A clearly mapped space removes the question of where to go, and tracing exact paths with others turns the group into a visible, changing pattern. The precision is meant to be absorbing and energizing rather than calming.",
+      "whatYouDo": "Before class the teacher tapes a pattern onto a hall floor, and after a warm-up 10 to 24 people learn a lively routine that sends them along the lines in groups, crossing, circling and meeting at marked points. Each week brings a new floor pattern, and in the last session students design one themselves and teach it to the group.",
+      "whoItsFor": "People who like order, puzzles and clear rules, or who feel lost in open, unstructured settings. It may also suit those who want lively exercise indoors whatever the weather.",
+      "cautions": "Tape edges can lift and trip people, and crossing paths at speed risks collisions, so use flat, well-stuck floor tape, keep speeds moderate and warm up first. Check with a doctor first if you have heart or joint problems, and stop for pain, chest pain, dizziness or unusual breathlessness.",
+      "tweet": "Tape lines, circles and a grid onto a hall floor, then dance the routes together, crossing and meeting at marked points like a living diagram. A new concept for people who like order with their energy, indoors in any weather. Mind the tape edges."
+    },
+    {
+      "id": "sensory__dance__5",
+      "name": "Dance in Character",
+      "tagline": "A lively class where everyone dances as invented characters.",
+      "whatItIs": "A teacher-led group class in which everyone invents a character, such as a grumpy king, a sleepy cat or a nervous robot, and dances as that character through a series of lively scenes. Sensory mindfulness rests quietly on plain sensations, alone; this takes dance the other way, into imagination, energy and play with others. The body becomes a costume you can change.",
+      "coreIdea": "Moving as someone else may loosen your usual way of moving and let you try out other energies, such as bold, silly or grand, inside a safe pretend frame. Meeting other characters on the floor turns it into shared play.",
+      "whatYouDo": "After a warm-up each person draws a character card, and the teacher guides the group through scenes set to different music, such as a market, a storm or a royal ball, where characters meet, react and dance together. Halfway through everyone swaps to a character unlike their first, and the 75-minute class ends with everyone dropping their characters and shaking out as themselves.",
+      "whoItsFor": "People who feel boxed in by how they usually move or come across, and those who loved pretend play as children. It may also suit shy people who find it easier to be bold as someone else.",
+      "cautions": "Big character moves can be strenuous, so warm up, keep plenty of space, check with a doctor first if you have heart or joint problems and stop for chest pain, dizziness or unusual breathlessness. Characters must never mock real people or groups, and the closing shake-out as yourself keeps the pretend frame clear.",
+      "tweet": "Ever wanted to dance as a grumpy king or a nervous robot? Proposed: a class where everyone invents a character and dances through scenes, a market, a storm, a royal ball, then swaps to someone completely different. Bold is easier in costume."
+    },
+    {
+      "id": "music__dance__5",
+      "name": "No Music, One Pulse",
+      "tagline": "A group dances in total silence, keeping time by watching.",
+      "whatItIs": "A group dance practice done in complete silence, where dancers keep a shared rhythm only by watching and feeling each other. Music therapy works through sound, listening and playing; this takes dance the other way, removing sound entirely so that timing has to live in bodies and eyes. The quiet makes every breath and footstep noticeable.",
+      "coreIdea": "Without music to follow, a group has to find and hold its own tempo together, which asks for close, wordless attention to each other. The shared pulse is meant to come from the people, not from a speaker.",
+      "whatYouDo": "A teacher warms the group up, then starts a simple stepping pattern in silence that the group picks up by eye and keeps going, adding arms, turns and travel when the teacher shows them, never by spoken cue. After about 40 minutes of silent dancing, the session ends with everyone stopping together on a shared visual signal and standing still for a minute.",
+      "whoItsFor": "People who find loud music or crowded sound overwhelming, or who are curious what rhythm feels like with nothing to listen to. It may also work well for groups that mix deaf and hearing dancers, since nobody relies on hearing.",
+      "cautions": "Watching others instead of the floor can lead to trips and bumps, so use a clear, even floor, keep good spacing and warm up first. Check with a doctor first if you have heart or joint problems, and stop for chest pain, dizziness or unusual breathlessness.",
+      "tweet": "Imagine a dance floor with no music at all. The group finds a beat by watching each other, holds it, then builds steps, turns and travel in silence until everyone stops on one signal. Rhythm that lives in bodies, not speakers. Clear floor, good spacing."
+    }
+  ]
+}
