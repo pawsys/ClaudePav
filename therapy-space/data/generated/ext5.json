@@ -334,13 +334,13 @@
     {
       "id": "team-sport__endurance__5",
       "name": "No Task Miles",
-      "tagline": "A long solo run with no task for your mind at all.",
-      "whatItIs": "No Task Miles is a long, solitary, steady run with no job for the mind: no question to solve, no plan, no podcast and no mindfulness technique. Thoughts can wander anywhere, daydreams included, and nothing has to come of them.",
-      "coreIdea": "Giving a busy mind a regular hour with nothing to do and no one to answer to may feel like rest, even while the body works.",
-      "whatYouDo": "Once a week you run for 45 to 75 minutes at a steady, comfortable effort on a familiar, safe route, without headphones and with your phone set to emergencies only. If you notice yourself planning or problem-solving, you let it drift rather than chase it. Nothing is written down afterward.",
+      "tagline": "An easy half-hour solo run with no task for the mind.",
+      "whatItIs": "No Task Miles is a short, solitary, steady run with no job for the mind: no question to solve, no plan, no podcast and no mindfulness technique. Thoughts can wander anywhere, daydreams included, and nothing has to come of them.",
+      "coreIdea": "Giving a busy mind a regular half hour with nothing to do and no one to answer to may feel like rest, even while the body works.",
+      "whatYouDo": "Twice a week you run for 30 to 40 minutes at a steady, comfortable effort you could still talk at, out along one quiet, well-lit street or path and back the same way, turning at the halfway time, with no headphones and the phone set to emergencies only. Whenever a thought turns into a job, such as a plan, a reply to draft or a problem to crack, you leave it unfinished and let the next thought come. Back at your door you stand still for one minute before going in, so the run ends before the day's tasks start again.",
       "whoItsFor": "People whose minds are always on duty at work or at home, and anyone who is never alone with their own thoughts.",
       "cautions": "Running alone and lost in thought carries safety risks, so use safe, familiar routes, tell someone your route and return time, avoid isolated places after dark, warm up with a few easy minutes, build up gradually, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or other health problems. It is an untested idea, and if wandering thoughts keep turning dark, talk to someone you trust or a professional.",
-      "tweet": "A long solo run with no task for your mind: no podcast, no question to solve, no technique, nothing written afterward. Daydreams allowed. No Task Miles is a new idea for one hour a week when your head is off the clock."
+      "tweet": "Twice a week, a steady half-hour solo run with no task for your mind: no podcast, no question to solve, no technique. A thought that turns into a job gets left unfinished. No Task Miles is a new idea for when your head needs to be off the clock."
     },
     {
       "id": "endurance__strength__1",
@@ -362,7 +362,7 @@
       "whatYouDo": "Before you go, you write one question on a card, such as 'what do I want from this job?', and leave it at home. You run for 30 to 50 minutes alone at a hard, steady pace, coming back to the question whenever your mind wanders. When you get home, you spend five minutes writing down whatever came up.",
       "whoItsFor": "People who think better on the move, and anyone stuck on a decision who wants a different way to approach it.",
       "cautions": "Being lost in thought on a hard run makes you less alert to traffic and terrain, so use safe, familiar routes, warm up with a few easy minutes, build up gradually, stop at once with chest pain, dizziness, faintness or unusual breathlessness, and check with a doctor first if you have heart or other health problems. It is an untested idea, and big personal decisions may still need talking through with someone you trust or a professional.",
-      "tweet": "Untested idea: Carry One Question. Write one question on a card, leave it at home, then go for a hard solo run and let your mind turn it over. Write down what came up when you get back. Made for people who think best when their legs are busy."
+      "tweet": "Untested idea: Carry One Question. Write one question on a card, leave it at home, then go for a hard solo run and let your mind turn it over. Write down what came up when you get back. Safe, familiar routes only, since a busy mind notices less."
     },
     {
       "id": "endurance__qigong__1",
@@ -575,14 +575,14 @@
     },
     {
       "id": "strength__qigong__1",
-      "name": "Lift on the Call",
-      "tagline": "Heavy sets that start only on a partner's call.",
-      "whatItIs": "Lift on the Call is a proposed strength routine in which every heavy set starts only when a training partner calls 'go', after an unpredictable wait, and the bar goes back only when they call 'rack', a little like the commands at a powerlifting meet. It takes strength training further from qigong, whose slow movements unfold at the pace of your own breath: here the timing comes from outside, and the effort is meant to be total and immediate.",
-      "coreIdea": "Holding yourself ready through a wait you do not control, and then answering the call at once, is meant to rehearse readiness on someone else's timing, for people who find it hard to perform when they cannot choose the moment.",
-      "whatYouDo": "Three times a week you follow a coach-written plan of three main lifts, such as squats, bench presses and deadlifts, in sets of one to three heavy repetitions with full rest between them. For each set you take your position at the bar without the weight in your hands, your partner says 'ready', waits anywhere from two to six seconds and calls 'go', and you unrack or lift at once and finish only on 'rack'; afterwards you note how quickly you started and how the wait felt.",
-      "whoItsFor": "People who already lift and who find it hard to perform when the timing is not theirs, such as being called on in a meeting, at an audition or at a starting whistle.",
-      "cautions": "Learn the lifts from a qualified coach first, use safety bars or spotters on every squat and bench set, warm up with lighter sets, check with a doctor first if you have heart disease, high blood pressure, eye problems or joint injuries, breathe out through the effort rather than holding your breath for long, and stop at once for sharp pain, chest pain, dizziness, faintness or unusual breathlessness. Your own 'stop' always overrides the call, and if the wait makes you anxious enough to feel unwell, use lighter weights or drop the wait; the idea is untested.",
-      "tweet": "Most lifting runs on your own timing. Lift on the Call, a new idea: a partner says 'ready', waits a few unpredictable seconds, then calls 'go'; you lift at once and hold until 'rack'. Practice for being ready on cue. Coach, spotters, doctor check first."
+      "name": "Excuse Set Aside",
+      "tagline": "Name your ready-made excuse, set it aside, then give one set everything.",
+      "whatItIs": "Excuse Set Aside is a proposed strength routine built around one top set per lift that you deliberately give your full effort, after first writing down the excuse you would reach for if it went badly and leaving that slip beside the rack. It takes strength training further from qigong, which stays inside a comfortable, unforced range and calms the body: here effort goes to the edge of what is safe, on purpose, and the aim is to change a habit of holding back rather than to accept it.",
+      "coreIdea": "Some people quietly keep part of their effort in reserve, so that a poor result can always be put down to not really trying; naming that ready-made excuse in advance and then trying fully, in a safe setup, is meant to make finding out what you can actually do feel less risky.",
+      "whatYouDo": "Three times a week you follow a plan of three main lifts written by a qualified coach, such as squats, bench presses and rows, and after your warm-up sets you do one top set of each at the weight the coach set, for as many clean repetitions as you can, inside a rack with safety bars set just below the bottom of the lift. Before that set you write on a slip of paper the excuse you would use if it went badly, such as 'slept badly' or 'busy week', put it on the floor beside the rack and give the set everything you have, stopping when the next repetition would break your form. Afterwards you read the slip once more and throw it away.",
+      "whoItsFor": "Lifters who suspect they always leave a lot in the tank, and people who hold back effort at work, in study or in sport so that nobody, themselves included, ever sees what their real best looks like.",
+      "cautions": "Learn the lifts from a qualified coach first, use safety bars set at the right height on every squat and bench set, warm up with lighter sets, check with a doctor first if you have heart disease, high blood pressure, eye problems or joint injuries, breathe out through each repetition rather than holding your breath for long, and stop at once for sharp pain, chest pain, dizziness, faintness or unusual breathlessness. Pain and those warning signs are never excuses to push past, because they always end the set, and the idea is untested.",
+      "tweet": "Before your hardest set, write the excuse you'd use if it went badly, like 'slept badly', and leave it on the floor. Then give that set everything, with safety bars set. Excuse Set Aside is an untested strength idea. Pain or dizziness always ends the set."
     },
     {
       "id": "strength__socializing__1",
