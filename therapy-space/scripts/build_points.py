@@ -6,11 +6,11 @@ Usage (from the repository root):
       [--scores FILE] [--out FILE]
 
 Every pair of established practices (a before b in canonical order) defines one line,
-210 lines in all. With t measured along the line (A at t = 0, B at t = 1), each line
+253 lines in all. With t measured along the line (A at t = 0, B at t = 1), each line
 has five evenly spaced points: t = -0.5 (point 1, beyond A, away from B), 0 (point 2,
 A itself), 0.5 (point 3, the midpoint), 1 (point 4, B itself) and 1.5 (point 5, beyond
 B, away from A). Points 2 and 4 are the established practices, so each line adds three
-generated points: 630 in total, with ids "<a>__<b>__1", "<a>__<b>__3", "<a>__<b>__5".
+generated points: 759 in total, with ids "<a>__<b>__1", "<a>__<b>__3", "<a>__<b>__5".
 
 Raw coordinates of points 1 and 5 can fall outside 0 to 10. They are kept as "raw"
 and also stored clamped to 0..10 and rounded to 0.1 as "coords"; "clampedDims" lists
@@ -24,7 +24,7 @@ and stay evenly spaced. Each axis has a fixed sign (see SIGN_REFERENCE), so reru
 give the same picture, and the same inputs always give the same output file.
 
 The name, shortName and family of each established point come from its anchor file, so
-all 21 anchor files must be present.
+all 23 anchor files must be present.
 """
 import argparse
 import json
@@ -37,11 +37,13 @@ import numpy as np
 SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 
-# Canonical order and fixed ids of the 21 established practices.
+# Canonical order and fixed ids of the 23 established practices. Metta and jhana take the
+# place of the earlier combined metta-jhana point and dance comes last, so every generated
+# id that involves neither keeps its a__b order.
 CANONICAL_IDS = [
     "ipf", "ifs", "cbt", "act", "coherence", "tre", "focusing", "aletheia", "do-nothing",
-    "metta-jhana", "vipassana", "hiit", "team-sport", "endurance", "strength", "animal",
-    "qigong", "socializing", "nature", "sensory", "music",
+    "metta", "jhana", "vipassana", "hiit", "team-sport", "endurance", "strength", "animal",
+    "qigong", "socializing", "nature", "sensory", "music", "dance",
 ]
 
 # Points added on every line: (index on the line, t, position name).
@@ -75,7 +77,7 @@ def load_json(path):
 
 
 def load_anchor_meta(anchors_dir):
-    """Return {id: {name, shortName, family}} read from the 21 anchor files."""
+    """Return {id: {name, shortName, family}} read from the anchor files of CANONICAL_IDS."""
     anchors_dir = Path(anchors_dir)
     meta = {}
     for aid in CANONICAL_IDS:
