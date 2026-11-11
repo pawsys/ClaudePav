@@ -2,17 +2,6 @@
   "lane": "mid5",
   "modalities": [
     {
-      "id": "aletheia__metta-jhana__3",
-      "name": "Closer by Degrees",
-      "tagline": "Kindness offered from a distance a wary part can bear, then closer.",
-      "whatItIs": "Closer by Degrees is a coaching concept for people who flinch when kindness comes too close, even their own. With a coach, you find the distance and dose of warmth that a guarded part of you can tolerate, perhaps kindness pictured from across a field or offered for a single breath, and bring it nearer only as fast as that part allows.",
-      "coreIdea": "The idea is that a wary part may refuse warmth that arrives too close or too fast, the way a nervous animal backs away from a reaching hand. Letting it set the distance, and closing the gap by degrees, aims to make kindness something it can actually take in.",
-      "whatYouDo": "In a 50-minute session, you bring a self-critical voice or a stuck feeling, find where it sits in your body, and picture a kind presence or a phrase of goodwill at a distance that feels safe, sometimes across a room or a valley, sometimes only for a moment. Each time the part stays settled, the coach invites you to let the warmth come a little closer or last a little longer, and each time it tenses you move it back without judging. You end by noting the distance you reached, and between sessions you practice at that distance for five minutes a day.",
-      "whoItsFor": "People who want more self-kindness but find that warmth, even from themselves, makes them tense, numb or suspicious, and who like a slow, body-aware coaching style.",
-      "cautions": "Turning kindness toward yourself can stir grief, anger or a sense of unworthiness, and this is coaching rather than therapy, so people with trauma, severe depression or suicidal thoughts should work with a qualified mental health professional. The idea is untested, so keep the pace slow and stop if it becomes overwhelming.",
-      "tweet": "Some kindness is too close to take in. In Closer by Degrees, a new coaching concept, you picture warmth from far away, across a field and for just one breath, then let it come nearer only as fast as the wary part of you allows."
-    },
-    {
       "id": "aletheia__vipassana__3",
       "name": "Retreat in Installments",
       "tagline": "A silent retreat spread over two weeks, growing a little each time.",
@@ -134,17 +123,6 @@
       "tweet": "How you say something can carry more feeling than what you say. So imagine a coach who turns the tune of your voice, its rises, pauses and sighs, into a few soft notes and plays it back. The Tune of Your Talk: hear what's under your words."
     },
     {
-      "id": "do-nothing__metta-jhana__3",
-      "name": "Whoever Arrives",
-      "tagline": "Sit with no focus, and wish well whoever drifts into mind.",
-      "whatItIs": "Whoever Arrives is a meditation idea halfway between doing nothing and loving-kindness. You sit without choosing anyone to focus on, and when someone comes to mind on their own, whether a friend, a stranger from the bus or someone you resent, you offer them one brief, silent wish of goodwill and let them go.",
-      "coreIdea": "Goodwill does not need a planned list: letting the mind bring people of its own accord, and offering each a light wish, is meant to keep kindness relaxed, and it may show you who is actually on your mind.",
-      "whatYouDo": "After learning basic loving-kindness phrases from a teacher or recording, you sit comfortably for about 20 minutes with no chosen focus, letting thoughts, sounds and daydreams come and go. Whenever a person appears in your mind, you silently offer one short wish, such as 'may you be well', and then drop any effort; if a plan, a sound or a memory arrives instead, you simply let it be. Afterward you get up, with nothing to record or review.",
-      "whoItsFor": "People who find structured loving-kindness practice effortful or forced, and people who like open, relaxed sitting but want a little more warmth in it.",
-      "cautions": "Difficult people may arrive, and wishing them or yourself well can stir anger, grief or unworthiness, so keep sessions short and let a wish go if it feels false. Open sitting can bring up hard emotions or memories, so anyone with trauma, severe depression or psychosis should practice with a qualified teacher and check with a clinician before trying this untested idea.",
-      "tweet": "New meditation idea: Whoever Arrives. Sit with no focus, and whenever someone pops into your head (a friend, a stranger, an ex), give them one quiet wish of goodwill and let them go. Kindness without the to-do list."
-    },
-    {
       "id": "do-nothing__vipassana__3",
       "name": "Caught Unawares",
       "tagline": "Do nothing, until a random bell asks what was just there.",
@@ -264,72 +242,6 @@
       "whoItsFor": "People who were told they were unmusical, musicians who have lost the fun of playing, and anyone who finds silent meditation too empty but wants something just as open.",
       "cautions": "Sounds can bring back strong memories or moods, so notice how a session leaves you feeling, stop if it pulls you down and keep the volume comfortable; such memories are only ones you already have, the images and feelings they bring are not evidence of what happened, and the practice is never used to uncover forgotten events. It is an untested idea, not music therapy, and no substitute for professional help with depression or other conditions.",
       "tweet": "Told you're 'not musical'? This one's for you: sit with a kalimba or tongue drum and let your hands play whatever they play, no aim to make it good, silence welcome. It's a new idea called Aimless Noodling. Doing nothing, with a soundtrack."
-    },
-    {
-      "id": "metta-jhana__vipassana__3",
-      "name": "The Friendly Narrator",
-      "tagline": "Label each passing experience in a kind, friendly inner voice.",
-      "whatItIs": "The Friendly Narrator is a meditation concept that joins the clear seeing of insight practice with the goodwill of loving-kindness. You silently label each experience as it arises, such as 'hearing', 'thinking' or 'aching', but each label is spoken inwardly in the warm tone you would use with a friend.",
-      "coreIdea": "The inner voice that observes experience has a tone, and making that tone friendly is meant to turn each moment of seeing clearly into a moment of practicing goodwill as well.",
-      "whatYouDo": "After learning basic noting from a teacher or guided recording, you sit for 20 to 40 minutes in three phases: five minutes warming up the tone with a few goodwill phrases, most of the session noting experiences in that warm voice every second or two, and a few minutes resting in whatever is there. If the inner voice turns harsh or rushed, you note 'harsh' kindly and carry on. It can be practiced daily at home or on retreat.",
-      "whoItsFor": "Meditators whose noting has become cold or self-critical, and loving-kindness practitioners who want to bring warmth into moment-by-moment awareness.",
-      "cautions": "Intensive meditation, especially on retreat, can bring fear, panic or other hard experiences, and kindness toward yourself can stir grief or unworthiness, so start with short sittings and an experienced teacher. People with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician before trying this untested idea.",
-      "tweet": "Novel twist for meditators: The Friendly Narrator. You silently label each experience as it comes ('hearing', 'thinking', 'aching'), but in the warm voice you'd use with a friend. Clear seeing and kindness in the same breath."
-    },
-    {
-      "id": "metta-jhana__hiit__3",
-      "name": "Dear Legs, Dear Lungs",
-      "tagline": "Timed bursts where each out-breath carries a kind wish to your body.",
-      "whatItIs": "Dear Legs, Dear Lungs is a proposed interval workout in which each hard burst is paired with silent goodwill toward the parts of your body doing the work. On each out-breath you address your legs, lungs or heart with a short phrase such as 'may these legs be strong' or 'may this heart be steady', and the easy minutes between bursts are spent in silence, feeling what the phrases leave behind.",
-      "coreIdea": "Self-talk during a hard workout is often harsh, aimed at a body that seems to be failing, and turning that voice into goodwill for the body that is working may make effort feel like an act of care rather than punishment.",
-      "whatYouDo": "After a 5-minute warm-up on a bike, rower or incline walk, you do eight rounds of one minute at about 7 out of 10 effort and one minute easy. In each hard minute you choose the part of the body working hardest and silently repeat one phrase for it on every out-breath, and in each easy minute you stay quiet and notice the breath settling. The 25-minute session ends with a cool-down and a minute of standing still with a hand on your chest, feeling what is there.",
-      "whoItsFor": "People whose self-talk turns harsh when exercise gets hard, and people who already like interval workouts and want them to feel kinder.",
-      "cautions": "Hard bouts load the heart, so people with heart disease, chest pain, fainting or uncontrolled high blood pressure should get medical advice first, and everyone should build up gradually with easy days between hard sessions. Kind phrases toward your own body can stir grief or feel false, especially with body image worries, so let a phrase go if it does; this is an untested idea.",
-      "tweet": "'May these legs be strong.' 'May this heart be steady.' Dear Legs, Dear Lungs is a new concept: interval bursts where every out-breath carries a kind wish to the part of your body doing the work. For anyone whose workout voice is a drill sergeant."
-    },
-    {
-      "id": "metta-jhana__team-sport__3",
-      "name": "Kind Rivals League",
-      "tagline": "A gentle weekly game where wishing your opponent well is the practice.",
-      "whatItIs": "Kind Rivals League is an imagined weekly game that builds goodwill toward opponents into friendly, easy-paced team play. At set moments in every game, players silently wish the person they are marking well, and at half time some players swap teams so rivals become teammates.",
-      "coreIdea": "Competition is one of the places where goodwill is most easily lost, so practicing kindness toward the people trying to beat you may build warmth where it is often hardest to find, while keeping the fun of play.",
-      "whatYouDo": "Ten to fourteen people meet weekly for 75 minutes to play a simple non-contact game, such as a walking-pace version of ultimate or another slow ball game. Before the start each player silently offers a phrase like 'may you play well and stay safe' to the person they will mark, and after every point the scorer and the defender each send the other a silent wish. After the half-time swap, the session ends with a handshake between each pair of markers.",
-      "whoItsFor": "People who enjoy friendly competition but get too heated, people who want sport with a warmer culture, and loving-kindness practitioners who want to practice in a lively, social setting.",
-      "cautions": "Even gentle games carry a risk of sprains, falls and collisions, so warm up, keep play non-contact, stop after any knock to the head and check with a doctor first if you have heart or joint problems. Goodwill toward rivals can feel forced at first, which is fine, and this untested idea does not replace treatment for a mental health condition.",
-      "tweet": "Silently wishing the player you're marking well, after every single point: that's the twist in Kind Rivals League, a new idea for anyone who gets too heated in friendly sport. At half time some players swap teams, so rivals become teammates."
-    },
-    {
-      "id": "metta-jhana__endurance__3",
-      "name": "Unseen Neighbors",
-      "tagline": "An easy run that wishes well the people behind the windows.",
-      "whatItIs": "Unseen Neighbors is a proposed loving-kindness run through ordinary streets. As you jog or walk at an easy pace past houses, flats, shops and schools, you silently wish well the people inside, whom you cannot see and will probably never meet, letting the rhythm of your steps carry a short phrase.",
-      "coreIdea": "Every building on a familiar route holds lives you rarely think about, and wishing them well as you pass may turn a routine run into goodwill for a whole neighborhood, while the steady rhythm keeps the phrases going without strain.",
-      "whatYouDo": "Two or three times a week you go out for 30 to 45 minutes at a conversational pace on a route through streets rather than parks. As each building comes into view you loosely picture the people who might be inside, someone cooking, a child doing homework, someone ill in bed, and silently offer a phrase such as 'may you be well' over a few footfalls before moving on to the next. You finish by standing still for a minute and letting whatever warmth is there be there.",
-      "whoItsFor": "Runners and walkers who want their regular route to feel warmer and less anonymous, and people who find it hard to sit still for loving-kindness practice.",
-      "cautions": "Build up time and distance gradually to avoid knee, ankle and shin injuries, keep your eyes on traffic and the pavement rather than drifting too far inward, and get medical advice first if you have heart or other medical conditions. Keep the wishes silent, never linger or look into homes, and remember that this is an untested idea.",
-      "tweet": "Every house you jog past is full of people you'll never meet. Unseen Neighbors, a new idea, turns an easy run into a quiet wish for each of them, 'may you be well' over a few footfalls, building after building. For a route that feels less anonymous."
-    },
-    {
-      "id": "metta-jhana__strength__3",
-      "name": "A Name on the Bar",
-      "tagline": "Every set dedicated to someone, with a silent wish for them.",
-      "whatItIs": "A Name on the Bar is a proposed strength routine in which every set is dedicated to a particular person, along with a silent wish of goodwill for them. Getting stronger becomes a way of caring: you train to be able to carry a child, help a parent move house or simply show up with energy for the people in your life, yourself included.",
-      "coreIdea": "Strength can mean more when it is for something, and linking each set to a specific person is meant to turn a solitary, numbers-driven routine into a structured practice of goodwill.",
-      "whatYouDo": "Two or three times a week, you do a simple routine of five or six moves with moderate weights, two or three sets of 8 to 12 repetitions each, with good form. Before each set you picture one person and silently offer a wish such as 'may you be safe and supported', then do the set with them in mind, and you can write their names in your training log next to the weights. Over the weeks you can add names as people come to mind, yourself included.",
-      "whoItsFor": "People who find strength training dull or lonely, and people who want their workouts to connect them with the people they care about, even when they train alone.",
-      "cautions": "Learn technique from a qualified instructor, add weight gradually, breathe steadily instead of holding your breath, and get medical advice first if you have high blood pressure, heart problems or eye disease. Wishing people well can stir grief or other strong feelings, and this is an untested idea, not a treatment.",
-      "tweet": "The gym can be lonely. A Name on the Bar dedicates every set of your strength workout to a person, with a silent wish for them before you lift. A new idea: getting stronger as a way of caring, not just a number in a log."
-    },
-    {
-      "id": "metta-jhana__animal__3",
-      "name": "Borrowed Warmth",
-      "tagline": "Start kindness with a calm animal, then pass the warmth on.",
-      "whatItIs": "Borrowed Warmth is a new loving-kindness session idea held with a calm therapy animal and its trained handler. Because warm feelings often flow most easily toward an animal, you begin by silently wishing the animal well while in gentle contact with it, notice where the warmth sits in your body, and then turn that same warmth toward yourself and other people.",
-      "coreIdea": "Loving-kindness teachers often suggest starting with someone easy to love, and for many people a living animal right in front of them may be the easiest, lending a real, felt warmth that can then be carried to harder places.",
-      "whatYouDo": "In a 30-minute session, you sit with a calm dog, cat or rabbit, or stand at a horse's shoulder while the handler holds it, and stroke it slowly for a few minutes while silently repeating phrases like 'may you be happy and at ease'. You then turn the same phrases toward yourself, and perhaps toward one person you love, returning your attention to the animal whenever the warmth fades, with contact only while it chooses to stay. The handler watches the animal's comfort throughout and ends contact if it shows signs of stress.",
-      "whoItsFor": "People who find it hard to feel warmth toward themselves or others but feel it easily with animals, and people who want loving-kindness practice to feel less abstract.",
-      "cautions": "Allergies, fear of animals, bites and scratches are possible, and around horses you can also be kicked or stepped on or fall, so this needs a trained animal and handler, good hygiene, short sessions for the animal's sake and the freedom to stop, and you never sit or kneel close to a horse's legs. Turning warmth toward yourself can stir grief or unworthiness, so go slowly; this untested idea can sit alongside professional care but does not replace it.",
-      "tweet": "Some people find kindness easiest with animals. Borrowed Warmth is a new idea built on that: sit with a calm therapy dog, silently wish it well as you stroke it, then turn that same warmth toward yourself and other people."
     }
   ]
 }
