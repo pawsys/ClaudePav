@@ -1,0 +1,76 @@
+{
+  "id": "metta",
+  "name": "Metta (loving-kindness) meditation",
+  "shortName": "Metta",
+  "family": "meditation",
+  "alsoKnownAs": [
+    "loving-kindness meditation",
+    "metta bhavana",
+    "maitri",
+    "kindness-based meditation",
+    "compassion meditation",
+    "brahmavihara practice"
+  ],
+  "origin": "Metta, in Sanskrit maitri, is a word for goodwill found in the Upanishads, Jain sutras and Buddhist discourses; Buddhism made it the first of four 'sublime states' (with compassion, shared joy and equanimity), expounded it in the Metta Sutta and set out step-by-step instructions in the 5th century Visuddhimagga, which modern teachers and research programs have adapted.",
+  "summary": "Metta is the deliberate cultivation of goodwill: you silently wish yourself and others well until a warm, friendly feeling fills the mind. It is usually taught together with its sister heart practices, compassion for those who suffer, joy in other people's good fortune and equanimity, and research often pools it with compassion meditation under the label kindness-based meditation. This point covers metta as an everyday practice and as a course, not metta taken into deep absorption, which belongs to the Jhana point.",
+  "theoryOfChange": "Repeatedly generating goodwill is thought to build positive emotions that add up over time into lasting personal resources. In a randomized trial with 139 working adults, a loving-kindness course raised daily positive emotions, which went with gains in mindfulness, purpose in life and social support, and these in turn predicted higher life satisfaction and fewer depressive symptoms (Fredrickson and colleagues, 2008). Directing warmth toward yourself and toward difficult people may also soften self-criticism and hostility, and a review suggests that, combined with treatments such as CBT, loving-kindness and compassion meditation may help with problems that involve other people, such as depression, social anxiety, anger and relationship conflict (Hofmann and colleagues, 2011).",
+  "whatYouDo": "Sitting quietly, you bring someone to mind and silently repeat phrases such as 'may you be happy' or 'may you be free from suffering', sometimes picturing the person or a light spreading from your heart toward them. A common sequence moves from easier to harder: yourself, a good friend, a neutral person you see often, a difficult person, all of them equally, and finally all beings everywhere. Compassion practice works the same way but wishes people free from suffering, and many courses add teaching and discussion to the meditation; one review found smaller effects in courses without such teaching (Zeng and colleagues, 2015).",
+  "typicalDose": "Studied formats range from a single 6-hour day, or 15 minutes a week for 12 weeks, to weekly classes of 1 to 2 hours over 6 to 12 weeks with practice at home in between. A review of 24 studies found that neither the length of a course nor the time spent meditating predicted the rise in positive emotions, though its authors note that these analyses had low statistical power (Zeng and colleagues, 2015).",
+  "keyTechniques": [
+    "Goodwill phrases such as 'may you be happy'",
+    "Widening circle: self, friend, neutral person, difficult person, all beings",
+    "Picturing the person, or light spreading from the heart",
+    "Radiating goodwill in every direction",
+    "Compassion practice: wishing others free from suffering",
+    "Shared joy and equanimity, the other sublime states"
+  ],
+  "evidence": {
+    "level": "moderate",
+    "summary": "A meta-analysis of 22 randomized trials of kindness-based meditation, which pools loving-kindness and compassion practices, found it moderately effective in reducing self-reported depression and in raising mindfulness, compassion and self-compassion compared with passive (no-treatment or waiting-list) control groups, and it raised positive emotions more than progressive relaxation; but results were inconclusive for some outcomes, especially against active comparison treatments, study quality was low to moderate and the small trials gave imprecise estimates (Galante and colleagues, 2014). A review of 24 studies with 1,759 people found that loving-kindness courses raised daily positive emotions with a medium effect, and that programs focused on loving-kindness had medium effects while those focused on compassion had small ones (Zeng and colleagues, 2015). A meta-analysis of 21 randomized trials of compassion-based interventions with 1,285 people found medium-sized improvements in depression, anxiety, psychological distress and wellbeing that held when active comparison groups were included, though most studies were small (Kirby and colleagues, 2017). The benefits point the same way across reviews but rest mostly on small trials, many against no treatment, so the rating is moderate rather than strong."
+  },
+  "goodFitFor": "People who want more warmth, kindness and positive emotion in daily life, including those who are harsh with themselves or hold resentment toward others. It suits beginners too, since it needs no special posture and works in short sessions or as a weekly course.",
+  "cautions": "Wishing yourself well can at first stir up grief, anger or a sense of being unworthy, especially with strong self-criticism or after trauma, and the 2014 meta-analysis notes that the practice may be challenging for some people at first, so starting with someone easy to love and keeping sessions short can help. A small uncontrolled pilot with veterans who had PTSD found a 12-week course safe and acceptable (Kearney and colleagues, 2013), but metta is not a substitute for treatment, and anyone in crisis or with severe depression or trauma symptoms should see a mental health professional. Meditation in general can bring unwanted effects, most often anxiety and low mood: a review of 83 studies found them in about 8 percent of participants overall, about 4 percent in experimental studies and about 33 percent in observational ones (Farias and colleagues, 2020).",
+  "namingNote": "Often written 'meta', the Pali word is metta (Sanskrit maitri), meaning goodwill or loving-kindness. This point covers loving-kindness practice and the closely related heart practices (compassion, shared joy and equanimity) as they are usually taught and studied, which is why it draws on research that pools loving-kindness with compassion meditation. The original request grouped metta with jhana; they are now separate points, and metta used as a doorway into deep absorption belongs to the Jhana point. It is also kept apart from Vipassana, which investigates how experience changes, and from Do Nothing, which drops every technique.",
+  "sources": [
+    {
+      "title": "Effect of kindness-based meditation on health and well-being: a systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24979314/",
+      "kind": "review"
+    },
+    {
+      "title": "The effect of loving-kindness meditation on positive emotions: a meta-analytic review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4630307/",
+      "kind": "review"
+    },
+    {
+      "title": "A Meta-Analysis of Compassion-Based Interventions: Current State of Knowledge and Future Directions",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29029675/",
+      "kind": "review"
+    },
+    {
+      "title": "Loving-kindness and compassion meditation: potential for psychological interventions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3176989/",
+      "kind": "review"
+    },
+    {
+      "title": "Open hearts build lives: positive emotions, induced through loving-kindness meditation, build consequential personal resources",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3156028/",
+      "kind": "trial"
+    },
+    {
+      "title": "Loving-kindness meditation for posttraumatic stress disorder: a pilot study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23893519/",
+      "kind": "trial"
+    },
+    {
+      "title": "Adverse events in meditation practices and meditation-based therapies: a systematic review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32820538/",
+      "kind": "review"
+    },
+    {
+      "title": "Maitrī",
+      "url": "https://en.wikipedia.org/wiki/Maitr%C4%AB",
+      "kind": "encyclopedia"
+    }
+  ]
+}

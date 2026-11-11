@@ -1,0 +1,71 @@
+{
+  "id": "jhana",
+  "name": "Jhana (concentration absorption) meditation",
+  "shortName": "Jhana",
+  "family": "meditation",
+  "alsoKnownAs": [
+    "absorption meditation",
+    "dhyana",
+    "advanced concentrative absorption meditation (ACAM)",
+    "samatha (calm) meditation",
+    "concentration meditation",
+    "metta jhana"
+  ],
+  "origin": "The jhanas are described in the early Buddhist discourses preserved in Pali, where some scholars see the four form jhanas as the Buddha's own contribution and the four formless states as taken from older ascetic traditions; long cultivated mostly in monasteries, they are now taught openly to lay people through modern manuals and retreats by teachers such as Ayya Khema and Leigh Brasington.",
+  "summary": "Jhanas are a series of deeply absorbed states of attention, traditionally eight, reached by concentrating on one object until outside awareness fades and attention becomes steady and one-pointed. The first four move from strong bodily pleasure, to joy that fills the body, to deep contentment and then to equanimity, a profound peace and stillness; the four formless states that follow are described as boundless space, boundless consciousness, nothingness and neither perception nor non-perception. Researchers now call this advanced concentrative absorption meditation (ACAM).",
+  "theoryOfChange": "Buddhist tradition treats the qualities of jhana as antidotes to the five hindrances, such as sensual desire and ill will, and jhana as a calm, stable base from which to develop insight; the first jhana is built from five factors, directed attention, sustained attention, bliss, happiness and one-pointedness. A brain imaging case study of one meditator linked the joy of jhana to the brain's dopamine and opioid reward system, which fits the idea that the pleasure is generated from within rather than from outside rewards (Hagerty and colleagues, 2013). A 2024 review suggests that learning to produce calm and joy at will, and the afterglow practitioners report afterwards, might support motivation, attention and therapy, but it calls the evidence preliminary at best (Yang and colleagues, Heliyon, 2024).",
+  "whatYouDo": "You first steady attention on one object, most often the breath, until distractions settle into a calm, stable state called access concentration. In lighter 'sutta-style' methods you keep using the breath and body feelings as the object and move through the jhanas in order, while stricter methods based on the 5th century Visuddhimagga commentary, such as the Pa Auk method, wait for a nimitta, a mental image usually seen as light, which takes very deep concentration. Early Chinese meditation manuals, the dhyana sutras, list loving-kindness among the main methods, and the deeper jhanas are often developed on silent retreats with many hours of sitting a day, usually with a teacher's guidance.",
+  "typicalDose": "Jhana is a long-term skill. In a preliminary EEG study, 29 experienced practitioners had 4 to more than 40 years of practice, most of them sitting 30 to 60 minutes a day with a 7 to 10 day retreat every 1 to 3 years (Dennison, 2019), and the two experts in the brain imaging case studies had about 6,000 hours over 17 years and an estimated 23,110 hours over more than 25 years.",
+  "keyTechniques": [
+    "Steadying attention on the breath (access concentration)",
+    "Using the breath and body feelings as the object (sutta style)",
+    "Waiting for an inner image of light, the nimitta (Visuddhimagga style)",
+    "Five jhana factors: directed and sustained attention, bliss, happiness, one-pointedness",
+    "Moving through the jhanas in order and back again",
+    "Mastery: entering quickly, staying a set time, leaving and reviewing each state"
+  ],
+  "evidence": {
+    "level": "limited",
+    "summary": "No controlled trials of jhana on any mental health outcome were found. The research so far is two brain imaging case studies of single expert meditators, which found distinct patterns of brain activity in jhana that the meditators produced at will (Hagerty and colleagues, 2013; Yang and colleagues, Cerebral Cortex, 2024), and a preliminary EEG study of 29 experienced practitioners with no control group of its own, in which most showed sleep-like brain wave bursts called spindles while staying alert (Dennison, 2019). These studies show that the states have distinct brain signatures, not that the practice improves mental health, and a 2024 review of the field calls the evidence for its possible benefits preliminary at best (Yang and colleagues, Heliyon, 2024)."
+  },
+  "goodFitFor": "Practitioners with a steady daily sitting habit who want deep calm, joy and concentration and can attend retreats with an experienced teacher. It is less suited as a first meditation or as a way to manage a current mental health problem.",
+  "cautions": "Intensive concentration retreats can bring strong energy, body sensations, altered perception and fear: in interviews with 60 Western Buddhist meditators chosen because they had had difficult meditation experiences, 72 percent said the difficulties began during or right after a retreat, a third were doing concentration practice when they began, and bliss and euphoria were sometimes followed by low mood or agitation (Lindahl and colleagues, 2017); this was a selected group, so the numbers show what can happen rather than how often. Researchers have also raised the open question of whether repeatedly stimulating the brain's reward system in jhana could bring addiction-like craving or tolerance (Hagerty and colleagues, 2013). Learn with an experienced teacher and build up gradually, and anyone with a history of psychosis, mania or bipolar disorder, dissociation or severe trauma, or in a current crisis, should talk to a clinician before an intensive retreat.",
+  "namingNote": "Jhana (Pali; Sanskrit dhyana) means meditative absorption. The original request grouped jhana with metta; they are now separate points, and this one covers concentration practice taken into absorption, from access concentration through the eight jhanas, whatever the starting object, including metta used as a way in. Teachers disagree on how deep jhana must be, from lighter 'sutta-oriented' states to the very deep absorption described in the Visuddhimagga, a dispute nicknamed the 'jhana wars', and Sparby and Sacchet (2024), comparing eight modern manuals, distinguish three types; this point covers the whole range. It is kept apart from Vipassana, which investigates change in experience rather than building absorption, and from Do Nothing, which has no object at all.",
+  "sources": [
+    {
+      "title": "Toward a Unified Account of Advanced Concentrative Absorption Meditation: A Systematic Definition and Classification of Jhāna",
+      "url": "https://doi.org/10.1007/s12671-024-02367-w",
+      "kind": "review"
+    },
+    {
+      "title": "Volitional mental absorption in meditation: Toward a scientific understanding of advanced concentrative absorption meditation and the case of jhana",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11129010/",
+      "kind": "review"
+    },
+    {
+      "title": "Case Study of Ecstatic Meditation: fMRI and EEG Evidence of Self-Stimulating a Reward System",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3659471/",
+      "kind": "primary"
+    },
+    {
+      "title": "Intensive whole-brain 7T MRI case study of volitional control of brain activity in deep absorptive meditation states",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10793575/",
+      "kind": "primary"
+    },
+    {
+      "title": "The Human Default Consciousness and Its Disruption: Insights From an EEG Study of Buddhist Jhāna Meditation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6582244/",
+      "kind": "primary"
+    },
+    {
+      "title": "The varieties of contemplative experience: A mixed-methods study of meditation-related challenges in Western Buddhists",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5443484/",
+      "kind": "primary"
+    },
+    {
+      "title": "Dhyana in Buddhism",
+      "url": "https://en.wikipedia.org/wiki/Dhyana_in_Buddhism",
+      "kind": "encyclopedia"
+    }
+  ]
+}
