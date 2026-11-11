@@ -1,0 +1,247 @@
+{
+  "lane": "n2",
+  "modalities": [
+    {
+      "id": "ipf__jhana__5",
+      "name": "What Holds You Now",
+      "tagline": "Deep, steady attention on the real support under your body.",
+      "whatItIs": "What Holds You Now is a proposed concentration practice whose only object is the actual feeling of being held up: the seat carrying your weight and the floor carrying your feet. It keeps the steady, deepening focus of absorption meditation but uses nothing imagined, no remembered people and no guide, so you can learn it from a printed card and practice alone.",
+      "coreIdea": "Steadiness does not have to come from an imagined or remembered figure: the chair and the floor are holding you right now, and resting attention on that plain fact, again and again, is meant to build a calm, absorbed focus out of real contact.",
+      "whatYouDo": "Sit upright on a firm, flat chair for 20 minutes without leaning back, feet flat and eyes closed or lowered, and follow the three steps on the card: feel how the seat carries the weight of your body, feel how the floor carries your feet and legs, and then feel both at once as one upward support that asks nothing of you. Whenever an image, a memory or a story appears, let it go without following it and return to the support that is actually there, and end with a minute of opening your eyes and looking around the room.",
+      "whoItsFor": "People who find guided imagery or inner figures hard or unwelcome and want a calming focus they can check against what is really there, and anyone who wants a simple, self-taught way into deeper concentration.",
+      "cautions": "Long or intensive concentration sits can bring strong sensations, altered perception or fear, so keep sessions short at first and seek out a teacher experienced with meditation-related difficulties if anything unsettling persists. It is meant for short daily sits rather than intensive retreats, where such difficulties are reported more often, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician before practicing; it is an untested idea.",
+      "tweet": "Nothing imagined, nobody to picture. An idea for a calming practice: 20 minutes resting your attention on the chair and floor that are actually holding you up, until that plain feeling of support is all you notice. Learnable from a card."
+    },
+    {
+      "id": "ifs__jhana__5",
+      "name": "One Undivided Body",
+      "tagline": "Feel the whole body at once, as one undivided sensation.",
+      "whatItIs": "One Undivided Body is a proposed absorption practice in which you sense the entire body at once, as a single field of sensation, instead of attending to any one part of it or to any inner voice. It follows a fixed sequence that you learn in a short course with a teacher and then practice alone, and it stays entirely with the present.",
+      "coreIdea": "Many approaches divide inner life into parts, voices or regions; this one gathers all of attention into a single whole, so that the felt sense of being one undivided body becomes the steady object of concentration.",
+      "whatYouDo": "Sitting still for 25 minutes, with no attention on the breath, you widen attention in set stages: first the torso felt as one shape, then torso and head together, then the whole body including hands and feet, felt all at once. Whenever attention narrows to one spot, such as an itch, or splits off into an inner conversation, you notice it and widen back out to the whole. For the last ten minutes you simply stay with the whole-body field as one steady sensation, then open your eyes slowly.",
+      "whoItsFor": "People who feel scattered or pulled in many directions inside and want a structured way to feel collected and whole, without any talk about inner parts.",
+      "cautions": "Widening into a whole-body sense can sometimes feel strange, floaty or unreal, so open your eyes and feel your feet on the floor if it does, and stop if it keeps happening. Such experiences are reported more often on intensive retreats than in short daily sits, so learn with a teacher experienced in meditation-related difficulties, and anyone with a history of psychosis, bipolar disorder, severe trauma or dissociation should check with a clinician first; this is an untested concept.",
+      "tweet": "What if you felt your whole body at once, as one single sensation, instead of zooming in on its parts? A new concept: a 25-minute sit that widens attention in set stages until the body feels like one steady whole. Might suit anyone who feels scattered."
+    },
+    {
+      "id": "cbt__jhana__5",
+      "name": "Wordless Warmth",
+      "tagline": "Rest in plain warmth on your belly, with no words at all.",
+      "whatItIs": "Wordless Warmth is a proposed lying-down concentration practice built on one bodily feeling: the mild warmth of a covered warm water bottle resting on your belly. It drops every kind of thinking work, such as labeling, weighing evidence or judging how it is going, and lets a calm, pleasant feeling in the body become the whole object.",
+      "coreIdea": "Thinking about how you feel can keep the mind busy and switched on, so this practice gives the mind nothing to analyze and lets a simple, physical sense of ease do the steadying instead.",
+      "whatYouDo": "Lie on your back on a mat or bed for 20 minutes with a covered bottle of warm, not hot, water resting on your belly, and let attention settle where its warmth and gentle weight are felt as they rise and fall with each breath. When a thought starts to comment, compare or check progress, let it go without answering it and come back to the warmth. You learn the method from a teacher or a recording and then use it on your own, often in the evening.",
+      "whoItsFor": "People whose minds keep analyzing and checking, even while relaxing, and who want a soft, body-based way into deep calm.",
+      "cautions": "Use warm rather than hot water in a covered bottle and take it off if your skin feels too hot; strong pleasant states can also be followed by flatness or restlessness, and researchers have asked whether chasing such feelings could turn into craving, so keep the aim gentle and the sessions modest. Deep calm practice can bring up difficult experiences, more often on intensive retreats than in short sits like these, so learn with a teacher who knows about them, and check with a clinician first if you have a history of psychosis, bipolar disorder, severe trauma or dissociation; it is untested.",
+      "tweet": "Picture this: lying down, a warm water bottle on your belly, no labels and no analysis, just its warmth and gentle weight rising and falling with your breath. Wordless Warmth is an untested idea for minds that keep checking, even while trying to relax."
+    },
+    {
+      "id": "act__jhana__5",
+      "name": "The Unvarying Sit",
+      "tagline": "Same seat, same time, same object, every day for eight weeks.",
+      "whatItIs": "The Unvarying Sit is a proposed concentration practice in which nothing is allowed to change: the place, the time, the posture, the planned length and the object of attention stay the same for eight weeks, though any single sit may be cut short. Where many approaches prize flexibility and variety, this one bets on total sameness as a way to build a deeply steady, absorbed attention.",
+      "coreIdea": "Doing exactly the same sit in exactly the same setting, day after day, is meant to turn the setting itself into a cue, so that sitting down in that seat at that hour may come to bring steady attention almost by itself.",
+      "whatYouDo": "With a teacher you choose once, at the start, a seat, a time of day, a session length of 20 or 30 minutes and one object, such as the rise and fall of the belly, and write them on a card. Every day you sit at that time in that seat and rest attention only on that object, coming back to it whenever it slips, and you keep the plan the same even on days that feel dull or restless, though you may shorten or stop any sit. You mark each day's sit with a single tick, and the teacher checks in every two weeks.",
+      "whoItsFor": "People who tinker endlessly with their practice or their apps and want to find out what steady repetition alone might do.",
+      "cautions": "Rigid daily concentration can feel grinding, and deep sits can bring up strange or frightening experiences, so it is fine to shorten or stop a session and to talk it over with a teacher experienced in meditation-related difficulties. Such difficulties are reported more often on intensive retreats than in short daily sits, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician first; this concept is untested.",
+      "tweet": "Eight weeks, zero changes. Same chair, same time, same object of attention, every single day. The Unvarying Sit is a new idea that tests whether total sameness, rather than variety, might let your focus settle deeper. Fine to stop any day."
+    },
+    {
+      "id": "coherence__jhana__5",
+      "name": "The Moment of Landing",
+      "tagline": "Lower one hand very slowly and catch the instant it lands.",
+      "whatItIs": "The Moment of Landing is a proposed solitary concentration practice built on one small, repeated event: your hand, lowered as slowly as you can manage, touching down on your thigh. Attention gathers on the first instant of contact, the newest sensation there is, and the whole routine comes from a printed card, so you can learn it and practice it alone.",
+      "coreIdea": "Coherence Therapy deals with emotional learnings laid down long ago and searches beneath a symptom for what they mean; this practice moves as far from that as it can, to the first instant of a plain touch, so new that it has no history and nothing beneath it to find.",
+      "whatYouDo": "Sit upright with eyes closed for 20 minutes, rest one forearm on an armrest or a cushion so the hand is held a few centimeters above your thigh, and let the hand sink from the wrist as slowly as you can, with attention on the narrowing gap. Catch the exact instant the palm first touches, leave it resting for three slow breaths, then lift it again and repeat, counting landings up to ten before starting a new round. If you miss the moment or lose the count, you simply take up the next landing.",
+      "whoItsFor": "People who feel wound up and caught in their heads and want a calm, physical way to settle, with nothing to dig into or explain.",
+      "cautions": "Keep the movement tiny and the forearm supported, and rest the arm if the wrist or shoulder starts to ache. Deep calm sits can bring up difficult experiences, more often on intensive retreats than in short daily sits like this, so talk to a teacher experienced with meditation-related difficulties if anything unsettling comes up, and see a clinician first if you have a history of psychosis, bipolar disorder, severe trauma or dissociation; it is untested.",
+      "tweet": "How slowly can you lower your hand onto your thigh? This untested idea makes that the whole practice: 20 calm minutes catching the exact instant your palm lands, again and again, with nothing to dig up or explain. You can learn it from a printed card."
+    },
+    {
+      "id": "tre__jhana__5",
+      "name": "Turned Only by Choice",
+      "tagline": "Nothing in the mind moves unless you decide to move it.",
+      "whatItIs": "Turned Only by Choice is a proposed concentration practice in which the body stays still and the mind holds one plain imagined cube that moves only when you deliberately turn it, a quarter turn at a time. It reverses body-led practices in which movement starts on its own and aims instead for the most deliberate, mind-led kind of steadiness, and it is learned in a small, silent class.",
+      "coreIdea": "In shaking practices the body moves by itself and you let it; here nothing moves unless you choose, so each small, willed turn followed by a steady hold is meant to train attention that stays exactly where you put it.",
+      "whatYouDo": "After the teacher introduces the image, you sit upright and still for 20 minutes with eyes closed and picture a plain wooden cube with a single dot on one face, hold it still for about half a minute, then decide to turn it a quarter turn to the right and hold it still again. If the cube drifts, wobbles or turns without your deciding, you put it back where you last left it, and if no clear picture comes, you work with the idea of the cube instead. The class meets weekly for six weeks, and between classes you practice once a day at home.",
+      "whoItsFor": "People who think in pictures and like a clear sense of control, including those who prefer a practice that asks nothing of the body.",
+      "cautions": "Effortful imagery can bring headaches or eye strain, and pictures can sometimes turn vivid or unsettling, so keep the effort light, open your eyes if needed and tell the teacher, who should be experienced with meditation-related difficulties. Such difficulties are reported more often on long, intensive retreats, which this is not, and anyone with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician before starting; it is an untested concept.",
+      "tweet": "Picture a plain wooden cube. It stays perfectly still until you decide to turn it a quarter turn, and then it stays still again. A new idea for training attention that goes only where you send it. Untested, and learned in a small, silent class."
+    },
+    {
+      "id": "focusing__jhana__5",
+      "name": "Place, Hold, Release",
+      "tagline": "Timed drills that train you to aim attention and keep it there.",
+      "whatItIs": "Place, Hold, Release is a proposed attention-training class built on the two skills that open the way into absorption meditation: directing attention to an object and keeping it there. Instead of waiting for something to emerge or listening for what a feeling means, you practice aiming and holding attention on purpose, in timed drills called by a teacher.",
+      "coreIdea": "Placing attention and keeping it in place may be learnable like any other skill, through short, repeated drills with clear feedback, without asking what anything means.",
+      "whatYouDo": "In a weekly 45-minute class of a few people sitting in silence, the teacher calls out a small spot, such as the tip of the nose, the center of the left palm or the top of the head, and you place attention there and hold it until the next call, which comes after 30 seconds at first and after up to five minutes by the end of the course. At each 'release' you let attention go wide for a few breaths and silently count how many times it slipped. You repeat a shorter set at home each day and tell the teacher how the counts change.",
+      "whoItsFor": "People who like learning by drills and want a clear, practical way to train concentration before trying longer meditation.",
+      "cautions": "Hard, effortful focus can bring headaches, tension or fatigue, and long concentration practice can bring up unsettling experiences, so keep the effort moderate and have a teacher experienced with meditation-related difficulties. The drills are kept short and are not a retreat format, where such experiences are reported more often, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician first; it is a new, untested concept.",
+      "tweet": "Concentration as a trainable skill: a teacher calls a spot, like the center of your palm, and you aim attention there and hold it until the next call, building from 30 seconds to 5 minutes. Place, Hold, Release is an untested class idea."
+    },
+    {
+      "id": "aletheia__jhana__5",
+      "name": "The Written Target",
+      "tagline": "Describe the calm you are training toward, then steer toward it.",
+      "whatItIs": "The Written Target is a proposed self-run concentration practice in which you write down, in advance and in plain words, the exact state you are training toward, then steer each sit toward it and score how close you came. Rather than an open, coach-led conversation that lets whatever is present unfold, it is a deliberate self-improvement plan that you run alone from a short printed guide.",
+      "coreIdea": "Aletheia Coaching lets qualities such as peace arise on their own and sets nothing to improve; here, by contrast, a clearly described target and an honest score after each sit may turn the vague wish to concentrate better into something you can steer toward on purpose.",
+      "whatYouDo": "On the first day you fill in a small card with four plain features of the sit you are aiming for, for example 'body upright and still', 'attention resting on the feel of the hands in the lap', 'lapses noticed quickly' and 'no checking the clock', and you read it before every daily 20-minute sit. Afterward you give each feature a score from 0 to 10 for how closely the sit matched it, and once a week you make one small change aimed at the lowest score, chosen from a fixed list in the guide, such as sitting earlier in the day, shortening the sit or sitting more upright. Every month you may reword one feature to describe the state more exactly.",
+      "whoItsFor": "People who are motivated by clear goals and simple scores and want a do-it-yourself way to work on their concentration.",
+      "cautions": "Scoring your own meditation can breed striving, frustration or self-criticism, so treat low scores as information, take weeks off when you need them, and talk to a teacher experienced in meditation-related difficulties if unusual or frightening experiences come up. It is meant for short daily sits rather than intensive retreats, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician first; this is an untested idea.",
+      "tweet": "Write down four plain features of the sit you are aiming for. Sit for 20 minutes, score each from 0 to 10, and once a week change one small thing to lift the lowest score. The Written Target is a new, untested self-improvement take on concentration."
+    },
+    {
+      "id": "do-nothing__jhana__5",
+      "name": "Intention Every Breath",
+      "tagline": "Renew the choice to attend before every single breath.",
+      "whatItIs": "Intention Every Breath is a proposed, tightly structured concentration practice in which you renew a deliberate intention to attend before each breath, so nothing about where attention goes is left to drift. It is the furthest possible step from practices that drop all control: every moment is chosen, and a teacher sets the exact form and checks it with you.",
+      "coreIdea": "Attention usually wanders in the gaps where no one is steering, so filling every gap with a fresh, quiet decision to stay is meant to train the firmest possible hold over where attention rests.",
+      "whatYouDo": "In a small silent group led by a teacher, you sit for 20 minutes and, in the pause before each in-breath, silently form one short intention, such as 'this breath', then follow that breath from its start to its end at the belly. If you notice that a breath went by without an intention, you simply renew it at the next pause, with no scolding. After the sit the teacher asks each person how often the intention was lost and adjusts the length of the next week's sits.",
+      "whoItsFor": "People who drift off whenever they meditate and want the most structured, deliberate form of concentration, with a teacher alongside.",
+      "cautions": "Such tight control can bring tension, headaches or anxious striving, so keep the intention light, and very focused practice can bring up unusual or distressing experiences that need a teacher experienced in meditation-related difficulties. Short sits like these carry less of that risk than intensive retreats, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should check with a clinician first; it is untested.",
+      "tweet": "Before every in-breath, one silent decision: 'this breath'. Then you follow it to its end and choose again. A new concept for chronic drifters: meditation where no moment is left unsteered, practiced in a small group with a teacher."
+    },
+    {
+      "id": "metta__jhana__5",
+      "name": "Neutral Touch Point",
+      "tagline": "Steady attention on a touch that is neither pleasant nor unpleasant.",
+      "whatItIs": "Neutral Touch Point is a proposed concentration practice whose object is deliberately plain: the light touch of one big toe against the other, a sensation with no person, no warmth and no wish attached. It aims for a cool, even calm rather than a warm or loving feeling, and a teacher introduces it in a short course before you practice alone.",
+      "coreIdea": "Calm does not need to be warm or emotional: a sensation that is neither pleasant nor unpleasant gives attention nothing to want or push away, which is meant to let a cool, even steadiness grow.",
+      "whatYouDo": "Sitting barefoot and still for 20 minutes with your feet side by side, you let the inner edges of your two big toes rest lightly against each other, and keep attention on that small point of contact: its pressure, temperature and faint pulse. When feelings, wishes or thoughts of people arise, you let them pass and return to the plain contact, and if the touch starts to feel pleasant or uncomfortable, you note that and keep attending to the touch itself. The course has four weekly sessions in which the teacher answers questions, and afterwards you practice daily at home.",
+      "whoItsFor": "People who find warm, heart-centered practices uncomfortable or too emotional, and anyone who wants a cool, even form of calm.",
+      "cautions": "Steady concentration can sometimes bring numbness, strange sensations or fear rather than calm, so stop if that happens and talk it over with a teacher experienced in meditation-related difficulties. It is meant for short daily sits, not intensive retreats, where such experiences are reported more often, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician before practicing; this is an untested idea.",
+      "tweet": "Not every calm has to feel warm and loving. An idea: 20 minutes resting attention on the plain touch of one big toe against the other, a sensation that is neither nice nor nasty, so there is nothing to want or push away. A teacher shows you first."
+    },
+    {
+      "id": "jhana__vipassana__1",
+      "name": "The Endless Pen Stroke",
+      "tagline": "Draw one imagined line and keep it from breaking.",
+      "whatItIs": "The Endless Pen Stroke is a proposed concentration practice in which you picture a single line being drawn slowly across an inner page and keep it continuous for as long as you can. It moves in the opposite direction from insight practices that break experience into passing moments: the aim is one seamless thread of attention, taught in a short class and then practiced daily.",
+      "coreIdea": "Insight meditation watches experience split into countless separate moments; this practice deliberately joins attention into one continuous stream, using the picture of a line that must not break.",
+      "whatYouDo": "With eyes closed, you picture a fine line starting at the left of an inner page and extending slowly to the right, at about the speed of an unhurried pen, and when it reaches the edge it simply carries on along a new row, like writing without letters. When attention lapses and the line breaks, you notice the gap without studying it and start drawing again from the point where it broke. Sits last 20 minutes, and the teacher checks in weekly on how long the line tends to stay unbroken.",
+      "whoItsFor": "People who find watching every changing moment tiring or fragmenting and want a smooth, continuous kind of focus.",
+      "cautions": "Mental pictures can sometimes turn vivid or unsettling, so open your eyes if that happens, keep sessions moderate and have a teacher experienced with meditation-related difficulties on hand. It is not meant for long retreats, where difficulties are reported more often, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician before starting; it has no track record.",
+      "tweet": "Draw a line in your mind and never let it break. If it snaps, you pick it up exactly where it broke and keep going, for 20 quiet minutes. The Endless Pen Stroke is a new concept for minds that feel chopped into a thousand little bits."
+    },
+    {
+      "id": "jhana__hiit__1",
+      "name": "The Farthest Line",
+      "tagline": "Rest attention on an imagined horizon, as far away as possible.",
+      "whatItIs": "The Farthest Line is a proposed lying-down concentration practice in which you picture a level horizon, where a calm sea meets a pale sky, and let attention rest out there, as far from your body as imagination can reach. You learn it from a teacher in a few guided sessions and then practice alone, with occasional check-ins.",
+      "coreIdea": "Hard interval training pulls every bit of attention into the body's nearest, loudest sensations, a pounding heart and burning legs; this sends attention the opposite way, out to the most distant thing you can picture, where nothing presses or pushes, as a calm place for a busy mind to rest.",
+      "whatYouDo": "Lie on your back for about 20 minutes with eyes closed and, after a few settling breaths, picture a flat, gray-blue sea stretching away to a thin line on the horizon, and let attention travel out to that line and stay there. Whenever it is pulled back close, to an itch, a sound or a thought, you let it travel out again without hurrying, and if no clear picture comes, you keep a plain sense of great distance in front of you. The teacher leads the first three sessions and then checks in once a month.",
+      "whoItsFor": "People who feel revved up in the evenings and keep noticing every twinge and heartbeat, and who want an easy, low-effort way to slow down.",
+      "cautions": "Picturing great distance can occasionally feel lonely, floaty or unreal, so open your eyes and feel the bed or floor under you if it does, and stop if it keeps happening; lying still may also lead to sleep, which is harmless. Such difficulties are reported more often on long or intensive retreats than in short daily sits like this, so see a teacher experienced in meditation-related difficulties if anything unsettling persists, and talk to a clinician first if you have a history of psychosis, bipolar disorder, severe trauma or dissociation; this concept is untested.",
+      "tweet": "Interval training drags all your attention into a pounding heart and burning legs. An untested idea to balance that: lie back, eyes closed, and send your attention out to an imagined horizon, the farthest line you can picture, for 20 calm minutes."
+    },
+    {
+      "id": "jhana__team-sport__1",
+      "name": "Down to a Pinpoint",
+      "tagline": "Shrink an imagined circle, stage by stage, to a single point.",
+      "whatItIs": "Down to a Pinpoint is a proposed solitary concentration practice in which you picture a circle and narrow it in set stages until only a single point remains, then rest there. It is the opposite of tracking many people and moving things at once: alone, still and quiet, with one ever smaller object, following a teacher's instructions.",
+      "coreIdea": "Attention may steady most easily when it has less and less to hold, so narrowing one imagined shape step by step is meant to gather a scattered mind into the smallest possible object.",
+      "whatYouDo": "Sitting alone in a quiet room, you follow the teacher's recorded instructions to picture a circle the size of a dinner plate and then, every four minutes, a smaller one: a saucer, a coin, a pea and finally a single point. You stay with the point for the last ten minutes, and if it blurs or vanishes, you go back to the coin and narrow again. You meet the teacher every two weeks to talk through what happened and decide whether to lengthen the final stage.",
+      "whoItsFor": "People whose days are full of other people and fast demands, and who want a solitary practice that narrows everything down to one point.",
+      "cautions": "Very narrow focus can bring tension, headaches or odd visual effects, and deep solitary concentration can bring up frightening experiences, so stop if it feels wrong and stay in touch with a teacher experienced in meditation-related difficulties. Sessions are kept short rather than retreat-length, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician first; it is untested.",
+      "tweet": "Plate, saucer, coin, pea, point. A new solitary practice: alone in a quiet room, you picture a circle and shrink it in stages until only a pinpoint is left, then rest your attention there. Might suit people whose days are full of noise and other people."
+    },
+    {
+      "id": "jhana__endurance__1",
+      "name": "Resting in Enough",
+      "tagline": "A guided practice of settling into the feeling of enough.",
+      "whatItIs": "Resting in Enough is a proposed teacher-led practice that takes contentment, one of the qualities described in absorption meditation, as the object of concentration. Instead of pushing on through effort and distance, you call up the plain feeling of 'that's enough', settle into it and stay there, following a fixed script that a teacher reads in every session.",
+      "coreIdea": "Many people know how to keep going but rarely notice the moment of having enough, and dwelling in that feeling on purpose is meant to make it familiar and steady and to give the mind a quiet place to rest.",
+      "whatYouDo": "In a seated 30-minute session, the teacher reads the same script each week: first you settle with a few breaths, then you call up a recent, ordinary moment of having enough, such as putting down an empty plate after a good meal or sitting down at the end of a walk. As soon as the feeling of enough is there, you let the scene go and rest attention on the feeling alone, returning to the scene briefly only if the feeling fades. The session ends with a few minutes of quiet and one sentence to the teacher about what the feeling was like.",
+      "whoItsFor": "People who always push for more and find it hard to stop, and who want a gentle, guided way to practice feeling satisfied.",
+      "cautions": "Use only recent, everyday moments you clearly remember, never old or painful memories, never as a way to uncover forgotten events and never as evidence of anything, and if a scene brings up sadness or anything difficult, open your eyes and tell the teacher, who should be experienced in meditation-related difficulties. It is a short weekly session rather than an intensive retreat, and anyone with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician first; it is an untested concept.",
+      "tweet": "What if you practiced the feeling of 'that's enough' the way runners practice going further? A new, teacher-led idea: recall a small, recent moment of having enough, like an empty plate after a good meal, then let the scene go and rest in the feeling."
+    },
+    {
+      "id": "jhana__strength__1",
+      "name": "Holding a Soap Bubble",
+      "tagline": "Keep attention on an imagined bubble without gripping it.",
+      "whatItIs": "Holding a Soap Bubble is a proposed concentration practice built around the lightest possible effort: you hold an imagined soap bubble in attention, firmly enough to keep it and gently enough not to burst it. It turns away from practices built on pushing against a load, and a teacher introduces it before you practice alone.",
+      "coreIdea": "Concentration can fail by gripping too hard as well as by letting go, and a fragile imagined object gives quick, gentle feedback about which one is happening.",
+      "whatYouDo": "Seated comfortably for 15 to 20 minutes, you picture a soap bubble resting in your open palms and keep attention on it lightly. If you catch yourself straining, frowning or holding the breath, you imagine the bubble bursting, let a new one appear and soften your effort, and if your mind wanders off, you imagine the bubble drifting away and bring a new one back. Over a few weeks the teacher helps you notice what kind of effort keeps the bubble longest.",
+      "whoItsFor": "People who try too hard at everything, including relaxing, and want to feel what gentle effort is like.",
+      "cautions": "Mental pictures can sometimes become vivid or unsettling, and deeper concentration can bring strong or frightening experiences, so open your eyes if needed and learn with a teacher experienced in meditation-related difficulties. Intensive retreats carry more of this risk than a short daily sit, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should check with a clinician first; this is a new, untested idea.",
+      "tweet": "Grip too hard and it bursts. Let go and it drifts away. A new idea for chronic over-triers: hold an imagined soap bubble in your attention for 15 minutes, using exactly as much effort as it takes to keep it, and not an ounce more."
+    },
+    {
+      "id": "jhana__animal__1",
+      "name": "Your Own Inner Emblem",
+      "tagline": "Design a simple symbol in your mind and make it your focus.",
+      "whatItIs": "Your Own Inner Emblem is a proposed self-led concentration practice whose object is a simple symbol you design yourself, describe in one written line and then hold in your mind's eye each day. Nothing about it is alive, responsive or unpredictable: it is a still, private object of your own making, practiced alone with a short written guide.",
+      "coreIdea": "An object you made yourself stays exactly as you made it and asks nothing of you, which may make it an especially steady and personal place for attention to rest.",
+      "whatYouDo": "On the first day you imagine a plain symbol of two or three strokes, such as a small gray circle crossed by one upright line, and write a one-line description of it in a notebook. Each day after that you sit for 20 minutes with eyes closed, call up the emblem once from that description and hold it for the whole sit, letting go of any changes, colors or extra details that creep in, and rereading the line only if the picture is lost completely. You keep the same emblem for at least two months before changing anything.",
+      "whoItsFor": "People who prefer to practice alone, without a teacher, an animal or anyone else, and who like a personal object they shaped themselves.",
+      "cautions": "Mental pictures can occasionally turn vivid, change on their own or feel unsettling, so open your eyes and stop if that happens, and talk any strong experience through with a teacher experienced in meditation-related difficulties. It is designed for short daily sits rather than retreats, where such experiences are reported more often, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician before starting; it is untested.",
+      "tweet": "Design a simple symbol in your mind, write one line describing it, and from then on that is your object of focus, called up from memory each day for 20 quiet minutes. Your Own Inner Emblem: an untested idea, made to be practiced entirely on your own."
+    },
+    {
+      "id": "jhana__qigong__1",
+      "name": "The Unhitched Count",
+      "tagline": "A slow inner count that never follows the breath.",
+      "whatItIs": "The Unhitched Count is a proposed concentration practice in which the object is a slow, silent count that runs at its own even pace, deliberately out of step with the breath and with no movement at all. Where body-based practices tie the mind to breathing and posture, this one cuts that tie and lets attention rest on a purely mental rhythm.",
+      "coreIdea": "Freeing attention from the breath may show that the mind can hold a steady object of its own, and a plain count is about as simple and neutral as such an object can be.",
+      "whatYouDo": "After learning the method from a teacher, you sit still for 20 minutes and count silently from one to ten at an even pace of roughly one number every three seconds, then start again at one, letting the breath do whatever it does. If you notice the count slipping into step with the breath or speeding up, you leave the breath alone and return to the even pace, and if you lose the count, you begin again at one without judging it. Once a month you check in with the teacher about how steady the count has become.",
+      "whoItsFor": "People who find that focusing on the breath makes them tense or self-conscious, and who want a calm, simple mental object instead.",
+      "cautions": "Repetitive counting can become dull or tense, so keep the pace easy, and long concentration practice can bring up unusual or distressing experiences that call for a teacher experienced with meditation-related difficulties. Sits stay short rather than retreat-length, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician first; it is an untested concept.",
+      "tweet": "Breath-focused meditation makes some people tense. So here is a new idea: count silently from one to ten at an even pace, about one number every three seconds, deliberately out of step with your breath, and let that steady count be the whole focus."
+    },
+    {
+      "id": "jhana__socializing__1",
+      "name": "One Touch, Kept",
+      "tagline": "A single light tap, then keep its feel in mind.",
+      "whatItIs": "One Touch, Kept is a proposed teacher-led practice in which you give yourself one light tap on the back of the hand and then keep the feel of that touch present in your mind, as if it were still happening, long after it has ended. It is done in silence, to a fixed timetable, and brings attention to rest on one small, remembered sensation instead of on other people.",
+      "coreIdea": "Time with other people is a constant exchange of fresh contact, each word, look or touch answered and replaced by the next; here, one touch that nobody else gave, with nothing to answer, is kept steady in the mind, which is meant to gather attention into a quiet, solitary calm.",
+      "whatYouDo": "In a silent class the teacher's soft chime sounds every two minutes for 20 minutes, and at each chime you tap the back of your left hand once, lightly, with two fingertips of the right hand. Between chimes you keep that touch present in the mind at the same strength, resting attention on it, and when it fades or attention wanders, you call up its feel again instead of tapping a second time. The class ends with a few minutes of silence, and the teacher answers questions individually before anyone leaves.",
+      "whoItsFor": "People who spend all day responding to others, at work or online, and want a solitary, body-based calm with a teacher setting every step.",
+      "cautions": "Keep the taps light, and swap hands or skip the tap if your skin is sore or sensitive. Deep concentration can bring up unusual or distressing experiences, especially on intensive retreats rather than short classes like this, so the teacher should be experienced with meditation-related difficulties, and anyone with a history of psychosis, bipolar disorder, severe trauma or dissociation should check with a clinician first; this concept is untested.",
+      "tweet": "One light tap on the back of your hand. Then, for two quiet minutes, you keep the feel of it in mind as if it were still there, until the next chime and the next tap. A new, untested concept for anyone who spends all day answering other people."
+    },
+    {
+      "id": "jhana__nature__1",
+      "name": "Four Pale Walls",
+      "tagline": "The same plain imagined room, built again and again in order.",
+      "whatItIs": "Four Pale Walls is a proposed teacher-led imagery practice in which you construct one plain, enclosed room in your mind, always in the same order and with the same few features, then let it go and build it again, many times in one sit. It is the reverse of a walk outdoors: indoors instead of open, made instead of wild, and identical every time instead of always changing.",
+      "coreIdea": "Unlike a personal comfort scene, the room is bare and the same for everyone, and building one never-changing place over and over, step by step in the same order, is meant to turn the building itself into a dependable, quiet track for attention.",
+      "whatYouDo": "In weekly guided sessions, the teacher leads you through the same build in the same order: a plain wooden floor, four pale walls, one closed door, soft light from above and a single cushion in the middle. In each 20-minute sit you build the room in that order, rest in the finished room for a minute, let it dissolve and build it again from the floor up, about eight times, never adding features or changing the order. Between sessions you practice with the teacher's recording.",
+      "whoItsFor": "People who find open, changing surroundings distracting and who like a fixed, step-by-step routine with a guide.",
+      "cautions": "An enclosed imagined space can feel confining for some people, so it is fine to picture the door open or to stop, and imagery can occasionally become vivid or unsettling, which calls for a teacher experienced with meditation-related difficulties. Keep to short sessions rather than retreat-length practice, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician first; it is untested.",
+      "tweet": "No wild hills or open sky here: a guide teaches you to build the same bare imagined room in the same order, and in each 20-minute sit you build it, rest in it, let it go and build it again. A new concept for minds that like a fixed routine."
+    },
+    {
+      "id": "jhana__sensory__1",
+      "name": "Scent Without a Source",
+      "tagline": "A guided practice of holding one imagined scent, with nothing to smell.",
+      "whatItIs": "Scent Without a Source is a proposed teacher-led concentration practice whose object is a single smell that exists only in your mind, such as freshly cut grass, called up and held with nothing real to smell. It turns away from whatever the senses actually bring in, toward the inward, secluded focus described in absorption meditation, and it follows a fixed weekly routine.",
+      "coreIdea": "Sensory mindfulness rests on real sights, sounds and smells; at the far extreme from that, a scent made entirely by the mind is faint, private and easily lost, so keeping it present asks for the gentlest, steadiest kind of attention.",
+      "whatYouDo": "In a small, silent weekly class, the teacher names one scent for the whole course and guides a 30-minute sit: a few minutes of settling, then calling up the scent and noticing, in a fixed order, how strong it is, whether it is sweet or sharp and where it seems to sit. For the last fifteen minutes you hold the scent as one whole, calling it up again whenever it fades, and if it never quite appears, you rest on the idea of it. Between classes you repeat a shorter version at home with the teacher's recording.",
+      "whoItsFor": "People worn out by screens and noise who are curious about a sense they almost never use on purpose, and who want a guided way to turn attention inward.",
+      "cautions": "Imagined smells can occasionally linger or turn unpleasant, so open your eyes and get some fresh air if that happens, and see a doctor about any smell that has no source and keeps coming back outside practice. Difficult meditation experiences are reported more often on intensive retreats than in short classes like this, but the class should still be led by a teacher experienced with them, and people with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician first; this is an untested idea.",
+      "tweet": "Can you smell cut grass in an empty room? In this new concept a teacher names one scent, and you call it up in your mind and hold it, quietly, for a whole sit. Nothing real is used, and it is untested, a practice for a sense we rarely train."
+    },
+    {
+      "id": "jhana__music__1",
+      "name": "One Note, No Song",
+      "tagline": "Hold one imagined, unchanging note, with no melody or beat.",
+      "whatItIs": "One Note, No Song is a proposed concentration practice that strips music down to a single imagined tone, held steady with no melody, rhythm, words or company. You hear the note only in your mind, feel it as a faint inner hum in the chest, and keep it the same from start to finish, following a fixed routine learned from a teacher.",
+      "coreIdea": "Music moves feelings by changing, so one note that never changes is meant to give attention something calm and constant to rest on, without the pull of a tune.",
+      "whatYouDo": "At your first lesson the teacher plays one low, steady tone for a minute so you can remember it, and after that you practice alone in silence. You sit for 20 minutes, call up the note in your mind and keep it at the same pitch and loudness, feeling it as if it were humming quietly in your chest without making any sound. When a tune, a rhythm or a different note sneaks in, you let it go and return to the one note, and if the note vanishes, you simply call it up again.",
+      "whoItsFor": "People who love sound and find silent breath practice too dry, and who want a steady, musical-feeling anchor with no performing involved.",
+      "cautions": "Imagined sounds can sometimes become loud, persistent or hard to stop, so end the session and tell the teacher, who should be experienced with meditation-related difficulties, if that happens, and people with ringing in the ears may want to try it only briefly at first. It is meant for short sits rather than intensive retreats, and anyone with a history of psychosis, bipolar disorder, severe trauma or dissociation should talk to a clinician before starting; it is untested.",
+      "tweet": "No melody, no beat, no lyrics. One imagined note, held at the same pitch for 20 minutes like a quiet hum in your chest, as your only anchor. One Note, No Song is an untested idea for sound lovers who find silent breath practice too dry."
+    },
+    {
+      "id": "jhana__dance__1",
+      "name": "The Still Globe",
+      "tagline": "Sense the space within arm's reach as utterly still.",
+      "whatItIs": "The Still Globe is a proposed solitary concentration practice whose object is the space around your body as far as your fingertips could reach, pictured and sensed as completely still and empty. In dance that space is constantly cut through by arms, legs and partners; here the body stays still and attention rests on the space itself, following a fixed routine learned from a teacher.",
+      "coreIdea": "Dancers fill the space around them with movement and expression; here, an empty, motionless space held in the mind gives attention something wide yet steady to rest on, with nothing in it to follow or show.",
+      "whatYouDo": "After a few lessons, you sit with back support or lie down for 20 minutes with eyes closed, and from the first minute you picture the whole space within arm's reach at once, in front, behind, to the sides and above, as a still, empty globe around you. Whenever you notice an imagined movement in it, such as a reaching hand, a sway or a step, you let the space go still and empty again, and if your real body needs to shift, you move slowly and then return to the space. Once a month you check in with the teacher about how steady the space has become.",
+      "whoItsFor": "Restless people who find a single point of focus too narrow, and dancers curious about the quiet opposite of filling space.",
+      "cautions": "Imagining the space around you can sometimes feel floaty, unreal or disorienting, so open your eyes, press your feet or hands into the floor and stop if it keeps happening, and get up slowly afterward to avoid dizziness or a fall. Such experiences are more likely in long or intensive sitting such as retreats, so keep sessions short, learn with a teacher experienced in meditation-related difficulties, and talk to a clinician first if you have a history of psychosis, bipolar disorder, severe trauma or dissociation; it is untested.",
+      "tweet": "Dancers fill the space around them with movement. Picture the opposite: sitting still, eyes closed, sensing the whole space within arm's reach as an empty, motionless globe for 20 minutes, and letting any imagined movement in it settle. A new, untested idea."
+    }
+  ]
+}
