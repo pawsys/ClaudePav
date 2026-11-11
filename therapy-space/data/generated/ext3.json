@@ -109,7 +109,7 @@
       "whatYouDo": "When you wake, stay lying down with your eyes closed for 10 minutes, with the phone out of reach. Let a felt sense of how you are and of the coming day form, welcome any image or mood left from the night without analyzing it, and jot one word on a bedside notepad before you get up.",
       "whoItsFor": "People whose days start at full speed with messages and news, and who want a quiet, self-led check-in before that happens.",
       "cautions": "Waking moods can be heavy, so if you regularly wake with dread or very low mood, talk to a doctor or therapist. Do not use it as a reason to stay in bed when that makes you feel worse; it is an untested idea.",
-      "tweet": "Before your phone tells you how the day is going, check how you are. Stay lying down for ten minutes after waking, let the feeling of the day ahead form, jot one word, then get up. That's all there is to First Minutes Awake, untested so far."
+      "tweet": "First Minutes Awake asks you to check how you are before your phone tells you how the day is going: stay lying down for ten minutes after waking, let the feeling of the day ahead form, jot one word, then get up. Untested so far."
     },
     {
       "id": "focusing__team-sport__1",
@@ -175,14 +175,14 @@
       "whatYouDo": "After learning the routine from a teacher, lie down alone for 30 minutes and move through six regions (feet and legs, belly, chest, throat, face, back), asking each \"what is the sense here about my life right now?\". Write one word per region, and over the weeks look back at how the map changes.",
       "whoItsFor": "People who need solitude to recharge and like a calm, orderly practice they can do alone.",
       "cautions": "This is not a medical check, so new or persistent pain needs a doctor. Some body areas can hold painful associations, so skip any region that feels unsafe, and people with trauma or dissociation should work with a qualified therapist; it is an untested idea.",
-      "tweet": "Lying down, alone, you visit six body regions in order and ask each what it senses about your life now, writing one word per region. Over weeks, a private map may appear. The new concept goes by Region by Region Sensing."
+      "tweet": "In Region by Region Sensing you lie down alone, visit six body regions in turn and ask each what it senses about your life right now, writing one word for each. Over weeks, a private map may appear. Untested; skip any region that feels unsafe."
     },
     {
       "id": "focusing__nature__1",
       "name": "Daily Prompt Card",
       "tagline": "Draw one prompt card each morning and focus on what it stirs.",
       "whatItIs": "Daily Prompt Card is a speculative practice that moves Focusing indoors and into a fixed daily routine built around imagined situations. A Focusing teacher gives you a small deck of prompt cards, such as \"something I haven't said\" or \"a place I miss\", and each day you draw one and let the felt sense it stirs form.",
-      "coreIdea": "A random prompt can reach feelings you would not choose to visit, and a set daily routine keeps that reaching gentle and regular.",
+      "coreIdea": "A random prompt can reach feelings you would not choose to visit, and a set daily routine is meant to keep that reaching gentle and regular.",
       "whatYouDo": "Each morning, sit at the same table for 15 minutes, draw one card, picture what it brings to mind and follow a fixed sequence: sense, find a word, check it, write one line. Memories that come are noted rather than dug into, and once a month you bring the cards that stirred most to a session with the teacher.",
       "whoItsFor": "People who like routines and small rituals, and who want a structured way to reach feelings they tend to avoid.",
       "cautions": "Some prompts can touch painful memories, so you can put a card back unread, and recurring distress belongs with a therapist. A card only calls up what you already remember, what comes is treated as a feeling rather than evidence of what happened, and the deck is never used to uncover forgotten events; it is an untested concept, not a treatment.",
@@ -329,7 +329,7 @@
       "whatYouDo": "For three to five days you stay alone in a simple retreat cabin with your phone switched off and put away, spending the days resting, sitting, writing and noticing images, memories and moods. A licensed therapist trained in trauma care stays on the retreat site for the whole stay, in a separate house out of sight of the cabin, meets you for an hour each day, phones for short check-ins every morning and evening, and can be reached at any hour on a landline in the cabin.",
       "whoItsFor": "Experienced inner explorers, not in crisis, who want an extended, solitary stretch of depth work with a safety net.",
       "cautions": "Solitude and intensive inner work can bring up fear, panic or unreal feelings, so a licensed clinician trained in trauma screens participants first, people with a history of psychosis, mania, dissociation or severe trauma should not take part without their own clinician's agreement, and you can end the stay at any time. Memories and images that surface are treated as experiences rather than evidence of what happened, nobody prompts you to search beyond memories you already have, and the stay is never used to uncover forgotten events; it is an untested idea.",
-      "tweet": "Thought experiment: three days alone in a quiet cabin, phone off, letting old feelings surface in their own time, with a licensed therapist on site, met daily, reachable at any hour. That is Guided Cabin Solitude. Screening first; end the stay any time."
+      "tweet": "Thought experiment: Guided Cabin Solitude means three days alone in a quiet cabin, phone off, letting old feelings surface in their own time, with a licensed therapist on site, met daily and reachable at any hour. Screening first; end the stay any time."
     },
     {
       "id": "aletheia__endurance__1",
@@ -538,7 +538,7 @@
       "whatYouDo": "Tell anyone who depends on you that you will be unavailable for half an hour, switch your phone off (not just to silent) and close the door. Sit or lie however you like and let whatever happens happen, until the half hour is over.",
       "whoItsFor": "Parents, carers, managers and anyone who is always on call and rarely has time that belongs to nobody else.",
       "cautions": "Only do this when someone else is covering anyone who needs supervision, such as young children or a person you care for. Solitude can let low mood surface, so if it regularly leaves you feeling worse, talk to someone; it is an untested idea.",
-      "tweet": "Phone off (not on silent), door closed, someone else covering the kids or the person you care for, and thirty minutes when nobody can need anything from you. That's The Unreachable Half Hour. Untested, but easy to try."
+      "tweet": "For The Unreachable Half Hour you need your phone off (not on silent), the door closed, someone else covering the kids or the person you care for, and thirty minutes when nobody can need anything from you. Untested, but easy to try."
     },
     {
       "id": "do-nothing__endurance__1",
@@ -589,7 +589,7 @@
       "name": "Talk-Free Evening",
       "tagline": "An evening of not speaking after a socially full week.",
       "whatItIs": "Talk-Free Evening is a new concept that moves Do Nothing meditation as far as possible from talk and social contact. After days full of people, you spend an evening alone without speaking, messaging or listening to talk, and simply let the quiet be.",
-      "coreIdea": "Speech keeps the social mind running, and a stretch of not talking at all may let it wind down more fully than ordinary rest.",
+      "coreIdea": "Speech can keep the social mind running, and a stretch of not talking at all may let it wind down more fully than ordinary rest.",
       "whatYouDo": "Once you have learned the idea from a short guide, pick an evening, tell the people you live with, and put away your phone and anything with voices in it. Move slowly through ordinary things like making tea or lying on the bed, and in between, sit and do nothing until bedtime.",
       "whoItsFor": "Introverts, people in people-heavy jobs and anyone who feels talked out by the end of the week.",
       "cautions": "Make sure someone can still reach you in an emergency, and do not use silence to avoid people you need to talk to. If you avoid company because of fear or low mood, or the quiet makes you feel worse, talk to a doctor or therapist; it is an untested idea.",
