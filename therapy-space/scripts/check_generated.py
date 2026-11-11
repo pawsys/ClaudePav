@@ -9,7 +9,9 @@ Usage (from the repository root):
   python3 -B therapy-space/scripts/check_generated.py              all files in the folder
   python3 -B therapy-space/scripts/check_generated.py --only lane-03 lane-04
                                                                   just these files (lane ids or paths)
-  python3 -B therapy-space/scripts/check_generated.py --complete   also require all 630 ids
+  python3 -B therapy-space/scripts/check_generated.py --complete   also require all 759 ids
+  python3 -B therapy-space/scripts/check_generated.py --complete --list-missing
+                                                                  and name every missing id
   python3 -B therapy-space/scripts/check_generated.py --self-test  fixture test of this checker
 Options: --generated DIR (default therapy-space/data/generated), --points FILE (default
 therapy-space/data/points.json), --anchors DIR (default therapy-space/data/anchors; used
@@ -87,6 +89,11 @@ Rules, each with the problem code it reports:
                      allows none)
   tweet-link         no links (the generation brief allows none)
   dash               no em or en dash (or look-alike) in any string, keys included
+  incomplete         with --complete: every generated id in points.json has a modality (one
+                     problem that gives the count and the first 3 missing ids)
+  missing            with --complete --list-missing: the same rule, reported as one problem
+                     per missing id instead of the single incomplete problem, so the full list
+                     can be compared with an expected list
 
 Exit code 0 when every checked file passes, 1 on any problem (or when no files are found).
 """
@@ -973,6 +980,21 @@ def check_files(paths, points_doc, anchors_dir=None):
     return problems, stats
 
 
+def completeness_problems(points_doc, covered_ids, list_missing=False):
+    """Problems for generated ids in points_doc that no checked modality covers: one
+    "incomplete" problem with the count, or with list_missing one "missing" problem per id,
+    in points.json order."""
+    order = [g["id"] for g in points_doc.get("generated", []) if isinstance(g, dict)]
+    missing = [gid for gid in order if gid not in covered_ids]
+    if not missing:
+        return []
+    if list_missing:
+        return [("-", gid, "missing", "generated id in points.json has no modality")
+                for gid in missing]
+    return [("-", "-", "incomplete", f"{len(missing)} generated ids have no modality, "
+                                     f"for example {sorted(missing)[:3]}")]
+
+
 def print_summary(paths, problems, stats, total_ids, complete):
     by_file = {}
     for fname, *_ in problems:
@@ -1364,6 +1386,33 @@ def self_test():
         print("self-test: invalid JSON file reported as json problem: "
               f"{'yes' if {p[2] for p in problems} == {'json'} else 'no'}")
 
+    # Completeness: the summary problem, the per-id list, and full coverage.
+    three = {"generated": [{"id": f"alpha__beta__{k}"} for k in (1, 3, 5)]}
+    cases = [
+        ({"alpha__beta__1", "alpha__beta__3"}, False,
+         [("incomplete", "-")]),
+        ({"alpha__beta__1", "alpha__beta__3"}, True,
+         [("missing", "alpha__beta__5")]),
+        ({"alpha__beta__3"}, True,
+         [("missing", "alpha__beta__1"), ("missing", "alpha__beta__5")]),
+        ({"alpha__beta__1", "alpha__beta__3", "alpha__beta__5"}, True, []),
+        ({"alpha__beta__1", "alpha__beta__3", "alpha__beta__5"}, False, []),
+        (set(), False, [("incomplete", "-")]),
+    ]
+    complete_ok = True
+    for covered, list_missing, want in cases:
+        got = [(p[2], p[1]) for p in completeness_problems(three, covered, list_missing)]
+        if got != want:
+            complete_ok = False
+            failures.append(f"completeness with {sorted(covered)}, list_missing={list_missing}: "
+                            f"got {got}, expected {want}")
+    summary = completeness_problems(three, {"alpha__beta__3"})
+    if not (len(summary) == 1 and summary[0][3].startswith("2 generated ids have no modality")):
+        complete_ok = False
+        failures.append(f"incomplete problem does not give the count: {summary}")
+    print(f"self-test: completeness ({len(cases) + 1} cases, with and without --list-missing): "
+          f"{'ok' if complete_ok else 'FAILED'}")
+
     for message in failures:
         print(f"SELF-TEST FAIL: {message}")
     print("SELF-TEST PASSED" if not failures else f"SELF-TEST FAILED ({len(failures)} failures)")
@@ -1381,8 +1430,12 @@ def main(argv=None):
                         help="check only these files: lane ids (file names without .json) or paths")
     parser.add_argument("--complete", action="store_true",
                         help="also fail unless all generated ids in points.json are covered")
+    parser.add_argument("--list-missing", action="store_true",
+                        help="with --complete, report every missing id as its own problem")
     parser.add_argument("--self-test", action="store_true", help="run the fixture test and exit")
     args = parser.parse_args(argv)
+    if args.list_missing and not args.complete:
+        parser.error("--list-missing needs --complete")
 
     if args.self_test:
         return self_test()
@@ -1411,10 +1464,8 @@ def main(argv=None):
     scope = f"subset of {len(paths)}" if args.only else f"all {len(paths)}"
     print(f"check_generated: {scope} file(s) in {args.generated}, "
           f"{sum(stats['files'].values())} modalities")
-    if args.complete and len(stats["ids"]) < total_ids:
-        missing = sorted({g["id"] for g in points_doc["generated"]} - stats["ids"])
-        problems.append(("-", "-", "incomplete", f"{len(missing)} generated ids have no modality, "
-                                                 f"for example {missing[:3]}"))
+    if args.complete:
+        problems.extend(completeness_problems(points_doc, stats["ids"], args.list_missing))
     print_summary(paths, problems, stats, total_ids, args.complete)
     print("RESULT: PASS" if not problems else f"RESULT: FAIL ({len(problems)} problems)")
     return 0 if not problems else 1

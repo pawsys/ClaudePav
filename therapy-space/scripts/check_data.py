@@ -7,16 +7,16 @@ Usage (from the repository root):
 (the paths default to therapy-space/data/anchors, dimensions.json, scores.json, points.json)
 
 What it checks:
-  anchors          all 21 files present; each file: exact contract keys and types, enum
-                   values, id equal to the file name and one of the 21 canonical ids, no em
+  anchors          all 23 files present; each file: exact contract keys and types, enum
+                   values, id equal to the file name and one of the 23 canonical ids, no em
                    or en dash in any string, and every source on en.wikipedia.org (or its
                    mobile host en.m.wikipedia.org) has kind "encyclopedia"
   dimensions.json  8 or 9 dimensions with every field, field lengths, example ids that
                    really score low (3 or less) and high (7 or more)
-  scores.json      all 21 anchors x every dimension, scores 0 to 10 with at most one
+  scores.json      all 23 anchors x every dimension, scores 0 to 10 with at most one
                    decimal, one-sentence reasons, no dashes
-  points.json      21 established points in canonical order matching the scores and anchors,
-                   630 unique generated ids, every pair once with indexes 1, 3 and 5, the line
+  points.json      23 established points in canonical order matching the scores and anchors,
+                   759 unique generated ids, every pair once with indexes 1, 3 and 5, the line
                    formula, clamping and rounding, nearest anchors, the projection, and the 5
                    points of each line collinear and evenly spaced in xy (within 1e-9); also
                    that the file equals a fresh build_points.py build, so it is not stale
@@ -246,7 +246,7 @@ def check_anchors(anchors_dir, rep):
         return found
     for path in sorted(anchors_dir.glob("*.json")):
         if path.stem not in bp.CANONICAL_IDS:
-            rep.fail("anchors", f"{path.name}: not one of the 21 canonical ids")
+            rep.fail("anchors", f"{path.name}: not one of the {len(bp.CANONICAL_IDS)} canonical ids")
             continue
         doc = load(path, "anchors", rep)
         if doc is None:
@@ -348,7 +348,7 @@ def check_scores(doc, dims, rep):
     missing = [a for a in bp.CANONICAL_IDS if a not in scores]
     extra = [a for a in scores if a not in bp.CANONICAL_IDS]
     if missing or extra:
-        rep.fail(sec, f"anchors differ from the canonical 21 (missing {missing}, extra {extra})")
+        rep.fail(sec, f"anchors differ from the canonical {len(bp.CANONICAL_IDS)} (missing {missing}, extra {extra})")
     table = {}
     for aid in bp.CANONICAL_IDS:
         row = scores.get(aid)
@@ -462,7 +462,7 @@ def check_points(doc, dims, table, meta, rep):
     est = doc["established"]
     if not (isinstance(est, list) and [e.get("id") if isinstance(e, dict) else None for e in est]
             == bp.CANONICAL_IDS):
-        rep.fail(sec, "established must list the 21 practices in canonical order")
+        rep.fail(sec, f"established must list the {len(bp.CANONICAL_IDS)} practices in canonical order")
         return
     est_xy = {}
     for entry in est:

@@ -343,42 +343,80 @@
         "why": "It has a single instruction and can be practiced guided or alone, as one technique among many in Young's system."
       }
     },
-    "metta-jhana": {
+    "metta": {
       "body": {
-        "score": 3.0,
-        "why": "It works mainly through silently repeated phrases and the warm feeling they evoke, and in many modern jhana methods attention then rests on that pleasant feeling."
+        "score": 2.5,
+        "why": "It works through silently repeated phrases such as 'may you be happy', sometimes picturing the person or a light spreading from your heart, until a warm, friendly feeling fills the mind."
       },
       "exertion": {
         "score": 0.0,
-        "why": "It is practiced sitting quietly."
+        "why": "You sit quietly, and it needs no special posture."
       },
       "arousal": {
         "score": 2.5,
-        "why": "Metta fills the mind with a warm, friendly feeling and jhana moves toward deep calm, though the first jhanas bring joy and intensive practice can bring strong energy."
+        "why": "You sit quietly until a warm, friendly feeling fills the mind, though wishing yourself well can at first stir up grief or anger."
       },
       "social": {
-        "score": 1.5,
-        "why": "You sit quietly and bring people to mind to wish them well, whether practicing on your own, in a course or on retreat."
+        "score": 2.0,
+        "why": "You sit quietly and bring people to mind to wish them well, in short sessions or in weekly courses, many of which add teaching and discussion."
       },
       "structure": {
         "score": 7.0,
-        "why": "It uses set phrases and a fixed widening circle from self to all beings, and jhana practice follows a mapped progression of states."
+        "why": "It uses set phrases and a common sequence that widens from yourself to a friend, a neutral person, a difficult person and finally all beings, following step-by-step instructions set out in the 5th century Visuddhimagga."
       },
       "stance": {
         "score": 7.0,
-        "why": "It is the deliberate cultivation of goodwill, wishing yourself and others well until a warm, friendly feeling fills the mind, and taking that warm feeling into absorption trains very steady attention."
+        "why": "It is the deliberate cultivation of goodwill, silently wishing yourself and others well until a warm, friendly feeling fills the mind."
       },
       "depth": {
         "score": 1.0,
-        "why": "It cultivates goodwill toward yourself and others, though wishing yourself well can stir up grief, anger or a sense of unworthiness, especially after trauma."
+        "why": "It cultivates goodwill toward yourself and others, though wishing yourself well can at first stir up grief, anger or a sense of being unworthy, especially after trauma."
       },
       "perception": {
-        "score": 2.5,
-        "why": "You bring people to mind and silently repeat phrases, and in jhana attention is steadied, often on the breath, before resting on a pleasant feeling, an inner sign or image, or the breath and body feelings, depending on the lineage."
+        "score": 2.0,
+        "why": "You bring people to mind, sometimes picturing them or a light spreading from your heart, and silently repeat phrases to them."
       },
       "guide": {
+        "score": 3.0,
+        "why": "It suits beginners and works in short sessions or as a weekly course, with studied formats ranging from a single day to weekly classes over 6 to 12 weeks with practice at home in between."
+      }
+    },
+    "jhana": {
+      "body": {
+        "score": 5.0,
+        "why": "Attention is steadied on the breath and the first jhanas bring strong bodily pleasure and joy that fills the body, while stricter methods wait for a mental image of light and the formless states are described in terms such as boundless space."
+      },
+      "exertion": {
+        "score": 0.0,
+        "why": "It is sitting practice, from 30 to 60 minutes a day for most experienced practitioners in one study to many hours a day on silent retreats."
+      },
+      "arousal": {
+        "score": 2.0,
+        "why": "The jhanas move from strong bodily pleasure and joy to deep contentment and then equanimity, a profound peace and stillness, though intensive retreats can bring strong energy and fear."
+      },
+      "social": {
+        "score": 1.5,
+        "why": "The deeper jhanas are often developed on silent retreats, usually with a teacher's guidance, alongside a steady daily sitting habit."
+      },
+      "structure": {
+        "score": 8.0,
+        "why": "It moves through a mapped series of eight states in order and back again, the first built from five named factors, and mastery means entering quickly, staying a set time, leaving and reviewing each state."
+      },
+      "stance": {
+        "score": 6.5,
+        "why": "It deliberately builds absorption, concentrating on one object until outside awareness fades and attention becomes steady and one-pointed."
+      },
+      "depth": {
+        "score": 0.5,
+        "why": "It trains attention on one object and the absorbed states that follow, from bodily pleasure to equanimity."
+      },
+      "perception": {
         "score": 4.0,
-        "why": "Loving-kindness has been studied as self-guided practice and in courses, while deeper jhanas are usually learned on retreat with guidance from a teacher."
+        "why": "Attention starts on a felt object, most often the breath, until outside awareness fades, and stricter methods wait for a mental image of light, the nimitta."
+      },
+      "guide": {
+        "score": 5.0,
+        "why": "It is learned from modern manuals and on retreats, usually with a teacher's guidance, and is less suited as a first meditation."
       }
     },
     "vipassana": {
@@ -797,6 +835,44 @@
       "guide": {
         "score": 4.0,
         "why": "Clinical work calls for a credentialed music therapist, while self-directed use ranges from chosen listening to choir or band rehearsals."
+      }
+    },
+    "dance": {
+      "body": {
+        "score": 8.5,
+        "why": "It works through moving to music, learning steps and mirroring other people's movements, and dance movement therapy ends by talking about what came up."
+      },
+      "exertion": {
+        "score": 5.0,
+        "why": "It is physical exercise, from learning steps in a class to dancing at social dances or in clubs, with the ordinary risks of exercise such as sprains and falls."
+      },
+      "arousal": {
+        "score": 6.0,
+        "why": "It is exercise set to music and aimed at enjoyment, fitness and skill, though studies suggest it can also ease low mood and anxiety."
+      },
+      "social": {
+        "score": 7.0,
+        "why": "Classes are usually in a group and often with a partner, moving in time with other people, and dance movement therapy is often in groups, though many people also dance on their own at home."
+      },
+      "structure": {
+        "score": 5.0,
+        "why": "Classes teach set steps and routines and therapy sessions move from a warm-up to structured improvisation and a closing talk, while many people also dance on their own at home, at social dances or in clubs."
+      },
+      "stance": {
+        "score": 5.0,
+        "why": "Recreational dance aims at enjoyment, fitness and skill, while in therapy movement is used to express and work through feelings that are hard to put into words."
+      },
+      "depth": {
+        "score": 2.5,
+        "why": "Dance movement therapy uses movement to express and work through feelings and can bring up strong feelings or memories, while recreational dance aims at enjoyment, fitness and skill."
+      },
+      "perception": {
+        "score": 7.5,
+        "why": "You move to music you hear, in time with partners and groups, and mirroring follows another person's movements."
+      },
+      "guide": {
+        "score": 4.0,
+        "why": "Dance classes are taught by dancers or exercise instructors and dance movement therapy by a trained therapist, while many people also dance on their own at home, at social dances or in clubs."
       }
     }
   }
